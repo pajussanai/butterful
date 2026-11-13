@@ -1,0 +1,161 @@
+{
+  "id": "hotel",
+  "lang": "ko",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "프런트 도착",
+      "text": "안녕하세요, 어서 오세요. 체크인하시겠어요?",
+      "pron": "annyeonghaseyo, eoseo oseyo. chekeuinhasigesseoyo?",
+      "trans": "Hello, welcome. Are you checking in?",
+      "replies": [
+        { "id": "greet_1", "text": "네, 예약했어요.", "pron": "ne, yeyakaesseoyo.", "trans": "Yes, I have a reservation.", "next": "name" },
+        { "id": "greet_2", "text": "아니요. 오늘 밤에 빈방 있어요?", "pron": "aniyo. oneul bame binbang isseoyo?", "trans": "No. Do you have a room available tonight?", "next": "walkin" }
+      ]
+    },
+    {
+      "id": "name",
+      "stage": "예약 확인",
+      "text": "네, 예약자 성함이 어떻게 되세요?",
+      "pron": "ne, yeyakja seonghami eotteoke doeseyo?",
+      "trans": "Sure, what name is the reservation under?",
+      "replies": [
+        { "id": "name_1", "text": "김민준이에요.", "pron": "gimminjunieyo.", "trans": "It's Kim Minjun.", "next": "passport" }
+      ]
+    },
+    {
+      "id": "walkin",
+      "stage": "예약 확인",
+      "text": "잠시만요, 확인해 볼게요. 오늘은 더블룸이 하나 남아 있는데, 괜찮으세요?",
+      "pron": "jamsimanyo, hwaginhae bolgeyo. oneureun deobeullumi hana nama inneunde, gwaenchaneuseyo?",
+      "trans": "One moment, let me check. We have one double room left today. Would that be okay?",
+      "replies": [
+        { "id": "walkin_1", "text": "네, 그 방으로 할게요.", "pron": "ne, geu bangeuro halgeyo.", "trans": "Yes, I'll take that room.", "next": "passport" },
+        { "id": "walkin_2", "text": "조식도 포함이에요?", "pron": "josikdo pohamieyo?", "trans": "Is breakfast included too?", "next": "breakfast_q" },
+        { "id": "walkin_3", "text": "음, 다른 데 좀 알아볼게요. 감사합니다.", "pron": "eum, dareun de jom arabolgeyo. gamsahamnida.", "trans": "Hmm, I'll look somewhere else. Thank you.", "next": "end_other" }
+      ]
+    },
+    {
+      "id": "breakfast_q",
+      "stage": "예약 확인",
+      "text": "네, 조식 포함이고요. 아침 일곱 시부터 열 시까지 드실 수 있어요.",
+      "pron": "ne, josik pohamigoyo. achim ilgop sibuteo yeol sikkaji deusil su isseoyo.",
+      "trans": "Yes, breakfast is included. You can have it from seven to ten in the morning.",
+      "replies": [
+        { "id": "breakfast_q_1", "text": "좋네요. 그 방으로 할게요.", "pron": "jonneyo. geu bangeuro halgeyo.", "trans": "Great. I'll take that room.", "next": "passport" }
+      ]
+    },
+    {
+      "id": "passport",
+      "stage": "신분 확인",
+      "text": "감사합니다. 여권 좀 보여 주시겠어요?",
+      "pron": "gamsahamnida. yeogwon jom boyeo jusigesseoyo?",
+      "trans": "Thank you. Could you show me your passport?",
+      "replies": [
+        { "id": "passport_1", "text": "여기 있어요.", "pron": "yeogi isseoyo.", "trans": "Here you are.", "next": "room_pref" }
+      ]
+    },
+    {
+      "id": "room_pref",
+      "stage": "객실 선택",
+      "text": "시내가 보이는 방이 좋으세요, 아니면 정원 쪽 조용한 방이 좋으세요?",
+      "pron": "sinaega boineun bangi joeuseyo, animyeon jeongwon jjok joyonghan bangi joeuseyo?",
+      "trans": "Would you like a room with a city view, or a quiet room facing the garden?",
+      "replies": [
+        { "id": "room_pref_1", "text": "시내가 보이는 방으로 주세요.", "pron": "sinaega boineun bangeuro juseyo.", "trans": "A room with a city view, please.", "next": "key" },
+        { "id": "room_pref_2", "text": "조용한 방으로 주세요.", "pron": "joyonghan bangeuro juseyo.", "trans": "A quiet room, please.", "next": "key" }
+      ]
+    },
+    {
+      "id": "key",
+      "stage": "키 받기",
+      "text": "여기 카드 키예요. 방은 팔 층이에요.",
+      "pron": "yeogi kadeu kiyeyo. bangeun pal cheungieyo.",
+      "trans": "Here's your key card. Your room is on the eighth floor.",
+      "replies": [
+        { "id": "key_1", "text": "체크아웃은 몇 시예요?", "pron": "chekeuauseun myeot siyeyo?", "trans": "What time is checkout?", "next": "checkout" },
+        { "id": "key_2", "text": "엘리베이터는 어디에 있어요?", "pron": "elribeiteoneun eodie isseoyo?", "trans": "Where is the elevator?", "next": "elevator" },
+        { "id": "key_3", "text": "방에 와이파이 돼요?", "pron": "bange waipai dwaeyo?", "trans": "Is there Wi-Fi in the room?", "next": "wifi" }
+      ]
+    },
+    {
+      "id": "checkout",
+      "stage": "이용 안내",
+      "text": "체크아웃은 오전 열한 시예요.",
+      "pron": "chekeuauseun ojeon yeolhan siyeyo.",
+      "trans": "Checkout is at eleven in the morning.",
+      "replies": [
+        { "id": "checkout_1", "text": "체크아웃하고 짐 맡길 수 있어요?", "pron": "chekeuautago jim matgil su isseoyo?", "trans": "Can I leave my bags after checkout?", "next": "luggage" },
+        { "id": "checkout_2", "text": "알겠습니다. 감사합니다.", "pron": "algetseumnida. gamsahamnida.", "trans": "Got it. Thank you.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "luggage",
+      "stage": "이용 안내",
+      "text": "그럼요. 프런트에서 짐 보관해 드려요.",
+      "pron": "geureomyo. peureonteueseo jim bogwanhae deuryeoyo.",
+      "trans": "Of course. We'll keep your bags at the front desk.",
+      "replies": [
+        { "id": "luggage_1", "text": "다행이네요. 감사합니다.", "pron": "dahaengineyo. gamsahamnida.", "trans": "That's a relief. Thank you.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "elevator",
+      "stage": "이용 안내",
+      "text": "엘리베이터는 저 모퉁이 돌아서 바로 오른쪽에 있어요.",
+      "pron": "elribeiteoneun jeo motungi doraseo baro oreunjjoge isseoyo.",
+      "trans": "The elevator is just around that corner, on the right.",
+      "replies": [
+        { "id": "elevator_1", "text": "감사합니다.", "pron": "gamsahamnida.", "trans": "Thank you.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "wifi",
+      "stage": "이용 안내",
+      "text": "네, 무료로 쓰실 수 있어요. 비밀번호는 카드 키 뒷면에 있어요.",
+      "pron": "ne, muryoro sseusil su isseoyo. bimilbeonhoneun kadeu ki dwinmyeone isseoyo.",
+      "trans": "Yes, it's free to use. The password is on the back of your key card.",
+      "replies": [
+        { "id": "wifi_1", "text": "좋네요. 감사합니다.", "pron": "jonneyo. gamsahamnida.", "trans": "Great. Thank you.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "anything",
+      "stage": "마무리",
+      "text": "더 필요하신 건 없으세요?",
+      "pron": "deo piryohasin geon eopseuseyo?",
+      "trans": "Is there anything else you need?",
+      "replies": [
+        { "id": "anything_1", "text": "아니요, 괜찮아요. 감사합니다!", "pron": "aniyo, gwaenchanayo. gamsahamnida!", "trans": "No, I'm fine. Thank you!", "next": "end_stay" },
+        { "id": "anything_2", "text": "근처에 괜찮은 식당 있어요?", "pron": "geuncheoe gwaenchaneun sikdang isseoyo?", "trans": "Is there a good restaurant nearby?", "next": "nearby" }
+      ]
+    },
+    {
+      "id": "nearby",
+      "stage": "마무리",
+      "text": "두 블록만 가시면 현지인들이 자주 가는 식당이 있어요. 지도에 표시해 드릴게요.",
+      "pron": "du beullongman gasimyeon hyeonjiindeuri jaju ganeun sikdangi isseoyo. jidoe pyosihae deurilgeyo.",
+      "trans": "Just two blocks away there's a restaurant locals love. I'll mark it on the map for you.",
+      "replies": [
+        { "id": "nearby_1", "text": "와, 감사합니다!", "pron": "wa, gamsahamnida!", "trans": "Wow, thank you!", "next": "end_stay" }
+      ]
+    },
+    {
+      "id": "end_stay",
+      "stage": "마무리",
+      "text": "천만에요. 편안하게 지내세요!",
+      "pron": "cheonmaneyo. pyeonanhage jinaeseyo!",
+      "trans": "You're welcome. Have a comfortable stay!",
+      "replies": []
+    },
+    {
+      "id": "end_other",
+      "stage": "마무리",
+      "text": "네, 알겠습니다. 조심히 가시고 즐거운 여행 되세요!",
+      "pron": "ne, algetseumnida. josimhi gasigo jeulgeoun yeohaeng doeseyo!",
+      "trans": "Okay, I understand. Take care and have a great trip!",
+      "replies": []
+    }
+  ]
+}

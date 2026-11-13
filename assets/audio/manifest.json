@@ -1,0 +1,3381 @@
+{
+ "engine": "supertonic-3",
+ "license": "Supertonic 3 model: BigScience OpenRAIL-M (machine-generated voice)",
+ "files": {
+  "en/ellie/hotel__anything.mp3": {
+   "hash": "321d985d21f7",
+   "sec": 3.13,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__breakfast_q.mp3": {
+   "hash": "88c7bb21b88b",
+   "sec": 4.81,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__checkout.mp3": {
+   "hash": "6d311fdde7f6",
+   "sec": 2.86,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__elevator.mp3": {
+   "hash": "23d291b20e72",
+   "sec": 4.25,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__end_other.mp3": {
+   "hash": "93c5c9551f76",
+   "sec": 4.46,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__end_stay.mp3": {
+   "hash": "45c2449b1fff",
+   "sec": 2.93,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__greet.mp3": {
+   "hash": "551a98b963e7",
+   "sec": 4.11,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__key.mp3": {
+   "hash": "d732ac6c28e1",
+   "sec": 4.32,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__luggage.mp3": {
+   "hash": "29c9e55e131c",
+   "sec": 4.39,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__name.mp3": {
+   "hash": "ff5da606c3ec",
+   "sec": 3.48,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__nearby.mp3": {
+   "hash": "851a7623f060",
+   "sec": 5.99,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__passport.mp3": {
+   "hash": "0a0af5f25426",
+   "sec": 3.9,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__room_pref.mp3": {
+   "hash": "dd30acd4f398",
+   "sec": 5.36,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__walkin.mp3": {
+   "hash": "6b8d10fb5d6b",
+   "sec": 5.85,
+   "voice": "F3"
+  },
+  "en/ellie/hotel__wifi.mp3": {
+   "hash": "2c2d53a66c27",
+   "sec": 4.95,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__after_wait.mp3": {
+   "hash": "09be3a6a0955",
+   "sec": 5.99,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__box.mp3": {
+   "hash": "8ca47bae76e2",
+   "sec": 2.3,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__card.mp3": {
+   "hash": "b0d670c1572f",
+   "sec": 4.18,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__cash.mp3": {
+   "hash": "49ee7c118e69",
+   "sec": 4.18,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__check.mp3": {
+   "hash": "36a1db55ecd9",
+   "sec": 4.88,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__check_ask.mp3": {
+   "hash": "37a64231b50b",
+   "sec": 3.97,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__dessert.mp3": {
+   "hash": "d7d76bfacd83",
+   "sec": 4.18,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__end_leave.mp3": {
+   "hash": "a31b64e0aa37",
+   "sec": 5.02,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__extra.mp3": {
+   "hash": "4bf9a903cc0f",
+   "sec": 3.34,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__food.mp3": {
+   "hash": "77356d9f11ef",
+   "sec": 3.13,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__full_four.mp3": {
+   "hash": "95b015dc7507",
+   "sec": 6.69,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__later.mp3": {
+   "hash": "574efe801721",
+   "sec": 5.36,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__menu.mp3": {
+   "hash": "80eebc3eb1cb",
+   "sec": 4.32,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__order.mp3": {
+   "hash": "e1a5fc35f66f",
+   "sec": 5.22,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__order_more.mp3": {
+   "hash": "2837864bf1c0",
+   "sec": 3.27,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__outside.mp3": {
+   "hash": "f816b6f516f5",
+   "sec": 5.02,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__recommend.mp3": {
+   "hash": "0b359207c8a7",
+   "sec": 5.64,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__seat_solo.mp3": {
+   "hash": "d9d79a7e4c99",
+   "sec": 5.71,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__seat_two.mp3": {
+   "hash": "4068d0dd0b1b",
+   "sec": 4.53,
+   "voice": "F3"
+  },
+  "en/ellie/restaurant__welcome.mp3": {
+   "hash": "2f8551340b7d",
+   "sec": 4.53,
+   "voice": "F3"
+  },
+  "en/guide/hotel__anything_1.mp3": {
+   "hash": "b25af7855e3f",
+   "sec": 2.37,
+   "voice": "M4"
+  },
+  "en/guide/hotel__anything_2.mp3": {
+   "hash": "6a32a42888d3",
+   "sec": 2.93,
+   "voice": "M4"
+  },
+  "en/guide/hotel__breakfast_q_1.mp3": {
+   "hash": "49547dd4950a",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "en/guide/hotel__checkout_1.mp3": {
+   "hash": "c779ee7e9cf7",
+   "sec": 2.86,
+   "voice": "M4"
+  },
+  "en/guide/hotel__checkout_2.mp3": {
+   "hash": "27e98db56021",
+   "sec": 1.95,
+   "voice": "M4"
+  },
+  "en/guide/hotel__elevator_1.mp3": {
+   "hash": "8da5373197ff",
+   "sec": 1.39,
+   "voice": "M4"
+  },
+  "en/guide/hotel__greet_1.mp3": {
+   "hash": "26178c972908",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "en/guide/hotel__greet_2.mp3": {
+   "hash": "03947f4320f8",
+   "sec": 3.41,
+   "voice": "M4"
+  },
+  "en/guide/hotel__key_1.mp3": {
+   "hash": "16b971eb5297",
+   "sec": 1.88,
+   "voice": "M4"
+  },
+  "en/guide/hotel__key_2.mp3": {
+   "hash": "0e086d9e0da5",
+   "sec": 1.88,
+   "voice": "M4"
+  },
+  "en/guide/hotel__key_3.mp3": {
+   "hash": "10af366a4d5d",
+   "sec": 2.16,
+   "voice": "M4"
+  },
+  "en/guide/hotel__luggage_1.mp3": {
+   "hash": "544db6af1146",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "en/guide/hotel__name_1.mp3": {
+   "hash": "44f7c1320d34",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "en/guide/hotel__nearby_1.mp3": {
+   "hash": "79d535078c5d",
+   "sec": 2.65,
+   "voice": "M4"
+  },
+  "en/guide/hotel__passport_1.mp3": {
+   "hash": "b3e9accd23f9",
+   "sec": 1.46,
+   "voice": "M4"
+  },
+  "en/guide/hotel__room_pref_1.mp3": {
+   "hash": "cd99d91c6c79",
+   "sec": 1.88,
+   "voice": "M4"
+  },
+  "en/guide/hotel__room_pref_2.mp3": {
+   "hash": "b3f643f263e4",
+   "sec": 1.88,
+   "voice": "M4"
+  },
+  "en/guide/hotel__walkin_1.mp3": {
+   "hash": "b18b53378e5c",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "en/guide/hotel__walkin_2.mp3": {
+   "hash": "eff823880016",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "en/guide/hotel__walkin_3.mp3": {
+   "hash": "582c124ecdd5",
+   "sec": 3.55,
+   "voice": "M4"
+  },
+  "en/guide/hotel__wifi_1.mp3": {
+   "hash": "ac9602bff847",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__after_wait_1.mp3": {
+   "hash": "8da5373197ff",
+   "sec": 1.39,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__box_1.mp3": {
+   "hash": "1b0c7974ca25",
+   "sec": 2.79,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__check_1.mp3": {
+   "hash": "c5116130e3c5",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__check_2.mp3": {
+   "hash": "30d3374df269",
+   "sec": 1.81,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__check_ask_1.mp3": {
+   "hash": "725cf4ac7408",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__check_ask_2.mp3": {
+   "hash": "30fb967af7e6",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__check_ask_3.mp3": {
+   "hash": "c4b9b17fdddb",
+   "sec": 2.37,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__dessert_1.mp3": {
+   "hash": "b1a24bc9457f",
+   "sec": 2.65,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__extra_1.mp3": {
+   "hash": "4d94016825cc",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__food_1.mp3": {
+   "hash": "10401a944ebb",
+   "sec": 2.93,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__full_four_1.mp3": {
+   "hash": "f567e179b111",
+   "sec": 1.74,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__full_four_2.mp3": {
+   "hash": "c0ee3e56427a",
+   "sec": 2.65,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__later_1.mp3": {
+   "hash": "ac361501f567",
+   "sec": 2.86,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__menu_1.mp3": {
+   "hash": "fa48e979f332",
+   "sec": 1.88,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__menu_2.mp3": {
+   "hash": "9b082b8f09ee",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__order_1.mp3": {
+   "hash": "6424e55a2867",
+   "sec": 2.58,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__order_2.mp3": {
+   "hash": "df36860cff5c",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__order_more_1.mp3": {
+   "hash": "2fd9c841906e",
+   "sec": 1.88,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__order_more_2.mp3": {
+   "hash": "db54693c8564",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__outside_1.mp3": {
+   "hash": "ac9602bff847",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__recommend_1.mp3": {
+   "hash": "d2aabd54992b",
+   "sec": 1.81,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__recommend_2.mp3": {
+   "hash": "5de2889314b3",
+   "sec": 2.86,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__seat_solo_1.mp3": {
+   "hash": "40ae6a8e0c3c",
+   "sec": 1.81,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__seat_solo_2.mp3": {
+   "hash": "f15ab21bed9d",
+   "sec": 1.81,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__seat_two_1.mp3": {
+   "hash": "8da5373197ff",
+   "sec": 1.39,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__seat_two_2.mp3": {
+   "hash": "965aa52be274",
+   "sec": 2.16,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__welcome_1.mp3": {
+   "hash": "786ccd2b1f4d",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__welcome_2.mp3": {
+   "hash": "d4a2c2b73866",
+   "sec": 1.81,
+   "voice": "M4"
+  },
+  "en/guide/restaurant__welcome_3.mp3": {
+   "hash": "cf59b28d386c",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "en/hana/hotel__anything.mp3": {
+   "hash": "f16673fd381f",
+   "sec": 2.79,
+   "voice": "F2"
+  },
+  "en/hana/hotel__breakfast_q.mp3": {
+   "hash": "511efd6c1c8d",
+   "sec": 4.18,
+   "voice": "F2"
+  },
+  "en/hana/hotel__checkout.mp3": {
+   "hash": "e25f927d9de2",
+   "sec": 2.58,
+   "voice": "F2"
+  },
+  "en/hana/hotel__elevator.mp3": {
+   "hash": "db9389b5abad",
+   "sec": 3.76,
+   "voice": "F2"
+  },
+  "en/hana/hotel__end_other.mp3": {
+   "hash": "d8e4152b354d",
+   "sec": 3.97,
+   "voice": "F2"
+  },
+  "en/hana/hotel__end_stay.mp3": {
+   "hash": "6e65211586c5",
+   "sec": 2.58,
+   "voice": "F2"
+  },
+  "en/hana/hotel__greet.mp3": {
+   "hash": "6f09625533fe",
+   "sec": 3.62,
+   "voice": "F2"
+  },
+  "en/hana/hotel__key.mp3": {
+   "hash": "826cf99b952b",
+   "sec": 3.76,
+   "voice": "F2"
+  },
+  "en/hana/hotel__luggage.mp3": {
+   "hash": "257602c0673c",
+   "sec": 3.83,
+   "voice": "F2"
+  },
+  "en/hana/hotel__name.mp3": {
+   "hash": "0517af6cf038",
+   "sec": 3.13,
+   "voice": "F2"
+  },
+  "en/hana/hotel__nearby.mp3": {
+   "hash": "8983ad9fcc9d",
+   "sec": 5.29,
+   "voice": "F2"
+  },
+  "en/hana/hotel__passport.mp3": {
+   "hash": "228874555e2f",
+   "sec": 3.41,
+   "voice": "F2"
+  },
+  "en/hana/hotel__room_pref.mp3": {
+   "hash": "56fb1e8adc2c",
+   "sec": 4.74,
+   "voice": "F2"
+  },
+  "en/hana/hotel__walkin.mp3": {
+   "hash": "6e6a8e8abadd",
+   "sec": 5.15,
+   "voice": "F2"
+  },
+  "en/hana/hotel__wifi.mp3": {
+   "hash": "c570131a16db",
+   "sec": 4.39,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__after_wait.mp3": {
+   "hash": "c092baa95ffd",
+   "sec": 5.29,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__box.mp3": {
+   "hash": "aedbb9dedaaa",
+   "sec": 2.09,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__card.mp3": {
+   "hash": "ca9ab022ebef",
+   "sec": 3.69,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__cash.mp3": {
+   "hash": "fc05a8ed3b17",
+   "sec": 3.69,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__check.mp3": {
+   "hash": "f147bacf1e7e",
+   "sec": 4.25,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__check_ask.mp3": {
+   "hash": "70b146e4b1af",
+   "sec": 3.48,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__dessert.mp3": {
+   "hash": "8d6f8ab10e10",
+   "sec": 3.69,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__end_leave.mp3": {
+   "hash": "b50bcb02aa5a",
+   "sec": 4.39,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__extra.mp3": {
+   "hash": "cd3c59c26488",
+   "sec": 2.93,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__food.mp3": {
+   "hash": "7d08b4359259",
+   "sec": 2.79,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__full_four.mp3": {
+   "hash": "b1b7874d5b9d",
+   "sec": 5.85,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__later.mp3": {
+   "hash": "7ff79455f344",
+   "sec": 4.74,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__menu.mp3": {
+   "hash": "40fc0ea4cc08",
+   "sec": 3.76,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__order.mp3": {
+   "hash": "021a671bc18f",
+   "sec": 4.6,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__order_more.mp3": {
+   "hash": "bc658d3bbc80",
+   "sec": 2.86,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__outside.mp3": {
+   "hash": "86bb26eec347",
+   "sec": 4.46,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__recommend.mp3": {
+   "hash": "5951c78373de",
+   "sec": 4.95,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__seat_solo.mp3": {
+   "hash": "ab3ebbaf518b",
+   "sec": 5.02,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__seat_two.mp3": {
+   "hash": "29255b8889ac",
+   "sec": 4.04,
+   "voice": "F2"
+  },
+  "en/hana/restaurant__welcome.mp3": {
+   "hash": "52c65592214f",
+   "sec": 3.97,
+   "voice": "F2"
+  },
+  "en/leo/hotel__anything.mp3": {
+   "hash": "4a794a6db183",
+   "sec": 3.13,
+   "voice": "M1"
+  },
+  "en/leo/hotel__breakfast_q.mp3": {
+   "hash": "d0afdec2810c",
+   "sec": 4.81,
+   "voice": "M1"
+  },
+  "en/leo/hotel__checkout.mp3": {
+   "hash": "f0e66a82a77f",
+   "sec": 2.86,
+   "voice": "M1"
+  },
+  "en/leo/hotel__elevator.mp3": {
+   "hash": "adb0d6722761",
+   "sec": 4.25,
+   "voice": "M1"
+  },
+  "en/leo/hotel__end_other.mp3": {
+   "hash": "ca5e24e30419",
+   "sec": 4.46,
+   "voice": "M1"
+  },
+  "en/leo/hotel__end_stay.mp3": {
+   "hash": "12720d4c9f1f",
+   "sec": 2.93,
+   "voice": "M1"
+  },
+  "en/leo/hotel__greet.mp3": {
+   "hash": "00d3c914d4d9",
+   "sec": 4.11,
+   "voice": "M1"
+  },
+  "en/leo/hotel__key.mp3": {
+   "hash": "c62fe6ddadf0",
+   "sec": 4.32,
+   "voice": "M1"
+  },
+  "en/leo/hotel__luggage.mp3": {
+   "hash": "44e5d18051ec",
+   "sec": 4.39,
+   "voice": "M1"
+  },
+  "en/leo/hotel__name.mp3": {
+   "hash": "e25bc9aae789",
+   "sec": 3.48,
+   "voice": "M1"
+  },
+  "en/leo/hotel__nearby.mp3": {
+   "hash": "7426e05f3df3",
+   "sec": 5.99,
+   "voice": "M1"
+  },
+  "en/leo/hotel__passport.mp3": {
+   "hash": "7efaa6159426",
+   "sec": 3.9,
+   "voice": "M1"
+  },
+  "en/leo/hotel__room_pref.mp3": {
+   "hash": "81cb573945e7",
+   "sec": 5.36,
+   "voice": "M1"
+  },
+  "en/leo/hotel__walkin.mp3": {
+   "hash": "f27a11da77d6",
+   "sec": 5.85,
+   "voice": "M1"
+  },
+  "en/leo/hotel__wifi.mp3": {
+   "hash": "1744d0667f45",
+   "sec": 4.95,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__after_wait.mp3": {
+   "hash": "6a0eaf07cc41",
+   "sec": 5.99,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__box.mp3": {
+   "hash": "9a79a2061e6f",
+   "sec": 2.3,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__card.mp3": {
+   "hash": "4d7c6bebdb1e",
+   "sec": 4.18,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__cash.mp3": {
+   "hash": "ce14a53eeca8",
+   "sec": 4.18,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__check.mp3": {
+   "hash": "4ebd5bdc66fd",
+   "sec": 4.88,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__check_ask.mp3": {
+   "hash": "bb3418eb2a3b",
+   "sec": 3.97,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__dessert.mp3": {
+   "hash": "d9afffa20b43",
+   "sec": 4.18,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__end_leave.mp3": {
+   "hash": "1f8e4a668203",
+   "sec": 5.02,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__extra.mp3": {
+   "hash": "a12aee10d554",
+   "sec": 3.34,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__food.mp3": {
+   "hash": "0ed6b0ea473f",
+   "sec": 3.13,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__full_four.mp3": {
+   "hash": "8b1ecadf078a",
+   "sec": 6.69,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__later.mp3": {
+   "hash": "a04fb11f46ed",
+   "sec": 5.43,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__menu.mp3": {
+   "hash": "4d4beb61ebfe",
+   "sec": 4.32,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__order.mp3": {
+   "hash": "2b64da743224",
+   "sec": 5.22,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__order_more.mp3": {
+   "hash": "43b3edf70cf0",
+   "sec": 3.27,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__outside.mp3": {
+   "hash": "ff999d271afa",
+   "sec": 5.02,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__recommend.mp3": {
+   "hash": "a175b0c3ec7c",
+   "sec": 5.64,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__seat_solo.mp3": {
+   "hash": "4a008a821921",
+   "sec": 5.71,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__seat_two.mp3": {
+   "hash": "ce6c352980d1",
+   "sec": 4.53,
+   "voice": "M1"
+  },
+  "en/leo/restaurant__welcome.mp3": {
+   "hash": "8bdf4df527d0",
+   "sec": 4.53,
+   "voice": "M1"
+  },
+  "en/mia/hotel__anything.mp3": {
+   "hash": "d690b2c0b202",
+   "sec": 2.93,
+   "voice": "F1"
+  },
+  "en/mia/hotel__breakfast_q.mp3": {
+   "hash": "d664bfc3f568",
+   "sec": 4.39,
+   "voice": "F1"
+  },
+  "en/mia/hotel__checkout.mp3": {
+   "hash": "7317e5ac889f",
+   "sec": 2.65,
+   "voice": "F1"
+  },
+  "en/mia/hotel__elevator.mp3": {
+   "hash": "73bfbcd8a5c1",
+   "sec": 3.97,
+   "voice": "F1"
+  },
+  "en/mia/hotel__end_other.mp3": {
+   "hash": "7f3ba03c22e4",
+   "sec": 4.11,
+   "voice": "F1"
+  },
+  "en/mia/hotel__end_stay.mp3": {
+   "hash": "2ce35af78bb3",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "en/mia/hotel__greet.mp3": {
+   "hash": "1f4d3f62a973",
+   "sec": 3.76,
+   "voice": "F1"
+  },
+  "en/mia/hotel__key.mp3": {
+   "hash": "d12fb20bed59",
+   "sec": 3.97,
+   "voice": "F1"
+  },
+  "en/mia/hotel__luggage.mp3": {
+   "hash": "d50855117cb4",
+   "sec": 4.04,
+   "voice": "F1"
+  },
+  "en/mia/hotel__name.mp3": {
+   "hash": "21313e719330",
+   "sec": 3.2,
+   "voice": "F1"
+  },
+  "en/mia/hotel__nearby.mp3": {
+   "hash": "0c5547e7355c",
+   "sec": 5.5,
+   "voice": "F1"
+  },
+  "en/mia/hotel__passport.mp3": {
+   "hash": "54686b4ffd6d",
+   "sec": 3.62,
+   "voice": "F1"
+  },
+  "en/mia/hotel__room_pref.mp3": {
+   "hash": "9254d29b4aef",
+   "sec": 4.95,
+   "voice": "F1"
+  },
+  "en/mia/hotel__walkin.mp3": {
+   "hash": "1e7669bbad39",
+   "sec": 5.36,
+   "voice": "F1"
+  },
+  "en/mia/hotel__wifi.mp3": {
+   "hash": "646192e7983c",
+   "sec": 4.6,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__after_wait.mp3": {
+   "hash": "6ad090b8a0b5",
+   "sec": 5.5,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__box.mp3": {
+   "hash": "efe3f5d41277",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__card.mp3": {
+   "hash": "24314540a8f6",
+   "sec": 3.9,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__cash.mp3": {
+   "hash": "c4de8789dcf4",
+   "sec": 3.83,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__check.mp3": {
+   "hash": "893cbea82493",
+   "sec": 4.46,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__check_ask.mp3": {
+   "hash": "a3171a250a5d",
+   "sec": 3.69,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__dessert.mp3": {
+   "hash": "3ca71358cacb",
+   "sec": 3.83,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__end_leave.mp3": {
+   "hash": "b064b25e93b5",
+   "sec": 4.6,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__extra.mp3": {
+   "hash": "342f118023ac",
+   "sec": 3.07,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__food.mp3": {
+   "hash": "958c1a34a2d4",
+   "sec": 2.86,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__full_four.mp3": {
+   "hash": "40f9efd34a52",
+   "sec": 6.13,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__later.mp3": {
+   "hash": "32e314726915",
+   "sec": 4.95,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__menu.mp3": {
+   "hash": "4238f6b2d669",
+   "sec": 3.97,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__order.mp3": {
+   "hash": "a8a0841b5149",
+   "sec": 4.81,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__order_more.mp3": {
+   "hash": "b45d2b27f40f",
+   "sec": 3.0,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__outside.mp3": {
+   "hash": "cbd0940e162a",
+   "sec": 4.67,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__recommend.mp3": {
+   "hash": "0f4a2ef17ece",
+   "sec": 5.22,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__seat_solo.mp3": {
+   "hash": "82ef871c6500",
+   "sec": 5.29,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__seat_two.mp3": {
+   "hash": "26235d9d1caf",
+   "sec": 4.18,
+   "voice": "F1"
+  },
+  "en/mia/restaurant__welcome.mp3": {
+   "hash": "c17f698d9820",
+   "sec": 4.18,
+   "voice": "F1"
+  },
+  "en/theo/hotel__anything.mp3": {
+   "hash": "6e9ba2cad6ee",
+   "sec": 2.65,
+   "voice": "M2"
+  },
+  "en/theo/hotel__breakfast_q.mp3": {
+   "hash": "d3e6f93197a9",
+   "sec": 4.04,
+   "voice": "M2"
+  },
+  "en/theo/hotel__checkout.mp3": {
+   "hash": "0e4c65b77416",
+   "sec": 2.44,
+   "voice": "M2"
+  },
+  "en/theo/hotel__elevator.mp3": {
+   "hash": "ac9f35b65671",
+   "sec": 3.62,
+   "voice": "M2"
+  },
+  "en/theo/hotel__end_other.mp3": {
+   "hash": "08867a9a4f37",
+   "sec": 3.83,
+   "voice": "M2"
+  },
+  "en/theo/hotel__end_stay.mp3": {
+   "hash": "61bb6289b1aa",
+   "sec": 2.51,
+   "voice": "M2"
+  },
+  "en/theo/hotel__greet.mp3": {
+   "hash": "9494bb11a175",
+   "sec": 3.48,
+   "voice": "M2"
+  },
+  "en/theo/hotel__key.mp3": {
+   "hash": "0859388e20b6",
+   "sec": 3.69,
+   "voice": "M2"
+  },
+  "en/theo/hotel__luggage.mp3": {
+   "hash": "9e49cce34b03",
+   "sec": 3.69,
+   "voice": "M2"
+  },
+  "en/theo/hotel__name.mp3": {
+   "hash": "b33e425d868f",
+   "sec": 3.0,
+   "voice": "M2"
+  },
+  "en/theo/hotel__nearby.mp3": {
+   "hash": "fb5336fca46c",
+   "sec": 5.09,
+   "voice": "M2"
+  },
+  "en/theo/hotel__passport.mp3": {
+   "hash": "66cc26d93ce8",
+   "sec": 3.34,
+   "voice": "M2"
+  },
+  "en/theo/hotel__room_pref.mp3": {
+   "hash": "b4a8f75694e0",
+   "sec": 4.53,
+   "voice": "M2"
+  },
+  "en/theo/hotel__walkin.mp3": {
+   "hash": "eb2918758c63",
+   "sec": 4.95,
+   "voice": "M2"
+  },
+  "en/theo/hotel__wifi.mp3": {
+   "hash": "edb666b7a5d9",
+   "sec": 4.18,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__after_wait.mp3": {
+   "hash": "cda27a9e594f",
+   "sec": 5.09,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__box.mp3": {
+   "hash": "dc0f1d29af5c",
+   "sec": 1.95,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__card.mp3": {
+   "hash": "d39b2c122662",
+   "sec": 3.55,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__cash.mp3": {
+   "hash": "9198ece49779",
+   "sec": 3.55,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__check.mp3": {
+   "hash": "f5cb0306ef72",
+   "sec": 4.11,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__check_ask.mp3": {
+   "hash": "481ebe9a5767",
+   "sec": 3.41,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__dessert.mp3": {
+   "hash": "ec21ff5e6834",
+   "sec": 3.55,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__end_leave.mp3": {
+   "hash": "9c37e48d5a78",
+   "sec": 4.25,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__extra.mp3": {
+   "hash": "6fe99a248f3a",
+   "sec": 2.86,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__food.mp3": {
+   "hash": "e11a85ae0a72",
+   "sec": 2.65,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__full_four.mp3": {
+   "hash": "a652583a91ad",
+   "sec": 5.64,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__later.mp3": {
+   "hash": "c39d9562b34f",
+   "sec": 4.6,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__menu.mp3": {
+   "hash": "55bfd5e19342",
+   "sec": 3.69,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__order.mp3": {
+   "hash": "1606d279b889",
+   "sec": 4.46,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__order_more.mp3": {
+   "hash": "8e3e247a5f9e",
+   "sec": 2.79,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__outside.mp3": {
+   "hash": "a59682a4d361",
+   "sec": 4.25,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__recommend.mp3": {
+   "hash": "483825f90cf5",
+   "sec": 4.81,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__seat_solo.mp3": {
+   "hash": "ba0a3036232b",
+   "sec": 4.88,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__seat_two.mp3": {
+   "hash": "c313f1e56f08",
+   "sec": 3.83,
+   "voice": "M2"
+  },
+  "en/theo/restaurant__welcome.mp3": {
+   "hash": "02a30b76e6a1",
+   "sec": 3.83,
+   "voice": "M2"
+  },
+  "ja/ellie/hotel__anything.mp3": {
+   "hash": "bcb1baf96f42",
+   "sec": 4.25,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__breakfast_q.mp3": {
+   "hash": "f1eca8bd0612",
+   "sec": 5.99,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__checkout.mp3": {
+   "hash": "067584e4f17e",
+   "sec": 3.69,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__elevator.mp3": {
+   "hash": "428e8c89612f",
+   "sec": 5.99,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__end_other.mp3": {
+   "hash": "67857ee82776",
+   "sec": 5.09,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__end_stay.mp3": {
+   "hash": "0c0f06c119be",
+   "sec": 5.02,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__greet.mp3": {
+   "hash": "a4cb85154bef",
+   "sec": 3.69,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__key.mp3": {
+   "hash": "1dd8b439cb92",
+   "sec": 5.15,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__luggage.mp3": {
+   "hash": "2931d3e12cc2",
+   "sec": 3.07,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__name.mp3": {
+   "hash": "854c7dc6f069",
+   "sec": 4.32,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__nearby.mp3": {
+   "hash": "333726637c0c",
+   "sec": 8.36,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__passport.mp3": {
+   "hash": "7b4129bf3aa1",
+   "sec": 4.81,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__room_pref.mp3": {
+   "hash": "753cec33fe4d",
+   "sec": 6.55,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__walkin.mp3": {
+   "hash": "d4d5f9421c0b",
+   "sec": 7.8,
+   "voice": "F3"
+  },
+  "ja/ellie/hotel__wifi.mp3": {
+   "hash": "6ec67e30fa6d",
+   "sec": 6.9,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__after_wait.mp3": {
+   "hash": "80d5cf92f693",
+   "sec": 4.88,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__box.mp3": {
+   "hash": "509d4e60890a",
+   "sec": 4.18,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__card.mp3": {
+   "hash": "4e2e8cc5711d",
+   "sec": 6.48,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__cash.mp3": {
+   "hash": "332f23682a51",
+   "sec": 6.27,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__check.mp3": {
+   "hash": "17bface82e56",
+   "sec": 4.18,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__check_ask.mp3": {
+   "hash": "a286f4cfa80d",
+   "sec": 4.95,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__dessert.mp3": {
+   "hash": "bb17915ba334",
+   "sec": 4.18,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__end_leave.mp3": {
+   "hash": "a03eb97a03e2",
+   "sec": 5.36,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__extra.mp3": {
+   "hash": "5370abe71523",
+   "sec": 2.58,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__food.mp3": {
+   "hash": "7bc6484c145b",
+   "sec": 3.76,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__full_four.mp3": {
+   "hash": "3add7c5f2a34",
+   "sec": 6.55,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__later.mp3": {
+   "hash": "e9bdf68e1b9e",
+   "sec": 5.92,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__menu.mp3": {
+   "hash": "17664210cd3f",
+   "sec": 4.39,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__order.mp3": {
+   "hash": "1cb2bfd12359",
+   "sec": 2.51,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__order_more.mp3": {
+   "hash": "39a11450fa1f",
+   "sec": 4.32,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__outside.mp3": {
+   "hash": "8a3d6a59b817",
+   "sec": 5.02,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__recommend.mp3": {
+   "hash": "eb4512906026",
+   "sec": 4.88,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__seat_solo.mp3": {
+   "hash": "6ff03bf1198f",
+   "sec": 4.25,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__seat_two.mp3": {
+   "hash": "c8f3c44469d1",
+   "sec": 4.04,
+   "voice": "F3"
+  },
+  "ja/ellie/restaurant__welcome.mp3": {
+   "hash": "cb104b32aae2",
+   "sec": 2.72,
+   "voice": "F3"
+  },
+  "ja/guide/hotel__anything_1.mp3": {
+   "hash": "2426903783ab",
+   "sec": 3.76,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__anything_2.mp3": {
+   "hash": "7eb3bc50053f",
+   "sec": 3.76,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__breakfast_q_1.mp3": {
+   "hash": "c470b743cd94",
+   "sec": 2.79,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__checkout_1.mp3": {
+   "hash": "e02899a4bc8f",
+   "sec": 2.93,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__checkout_2.mp3": {
+   "hash": "de3c3e589890",
+   "sec": 3.0,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__elevator_1.mp3": {
+   "hash": "f8f25e86801f",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__greet_1.mp3": {
+   "hash": "011ace7c1b3e",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__greet_2.mp3": {
+   "hash": "195878e433c2",
+   "sec": 3.34,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__key_1.mp3": {
+   "hash": "636ce535bf1f",
+   "sec": 2.3,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__key_2.mp3": {
+   "hash": "d6471ec94ccd",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__key_3.mp3": {
+   "hash": "7f538fa91bac",
+   "sec": 2.44,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__luggage_1.mp3": {
+   "hash": "d4792b615a96",
+   "sec": 2.86,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__name_1.mp3": {
+   "hash": "1f3700ac7793",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__nearby_1.mp3": {
+   "hash": "1e880714263f",
+   "sec": 2.93,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__passport_1.mp3": {
+   "hash": "d7b49b5afd12",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__room_pref_1.mp3": {
+   "hash": "d39481237460",
+   "sec": 2.51,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__room_pref_2.mp3": {
+   "hash": "cf142e8352f3",
+   "sec": 2.16,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__walkin_1.mp3": {
+   "hash": "6040926c7d49",
+   "sec": 2.86,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__walkin_2.mp3": {
+   "hash": "22e0d9104345",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__walkin_3.mp3": {
+   "hash": "e2771c3dc6a9",
+   "sec": 3.97,
+   "voice": "M4"
+  },
+  "ja/guide/hotel__wifi_1.mp3": {
+   "hash": "438642d6dffa",
+   "sec": 2.65,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__after_wait_1.mp3": {
+   "hash": "f8f25e86801f",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__box_1.mp3": {
+   "hash": "5fad93739849",
+   "sec": 3.76,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__check_1.mp3": {
+   "hash": "27e28ee81f95",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__check_2.mp3": {
+   "hash": "df0cf1a1bde4",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__check_ask_1.mp3": {
+   "hash": "fb2e5a020d15",
+   "sec": 2.16,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__check_ask_2.mp3": {
+   "hash": "f9e9fed91c10",
+   "sec": 2.86,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__check_ask_3.mp3": {
+   "hash": "3c9cfdb0a632",
+   "sec": 2.44,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__dessert_1.mp3": {
+   "hash": "14cb7bd62f5d",
+   "sec": 3.62,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__extra_1.mp3": {
+   "hash": "f8f25e86801f",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__food_1.mp3": {
+   "hash": "092b73f957aa",
+   "sec": 2.44,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__full_four_1.mp3": {
+   "hash": "5a7afb2188b7",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__full_four_2.mp3": {
+   "hash": "104451947f71",
+   "sec": 2.37,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__later_1.mp3": {
+   "hash": "630fc85c43f9",
+   "sec": 2.72,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__menu_1.mp3": {
+   "hash": "7b676bcdab03",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__menu_2.mp3": {
+   "hash": "eaf598c22804",
+   "sec": 2.16,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__order_1.mp3": {
+   "hash": "50ed51428e8e",
+   "sec": 2.3,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__order_2.mp3": {
+   "hash": "ef5ccebd0b4c",
+   "sec": 2.3,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__order_more_1.mp3": {
+   "hash": "4768efbe7e8c",
+   "sec": 1.46,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__order_more_2.mp3": {
+   "hash": "c32bf023227b",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__outside_1.mp3": {
+   "hash": "2dde70e75088",
+   "sec": 2.72,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__recommend_1.mp3": {
+   "hash": "93cab9c23300",
+   "sec": 2.37,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__recommend_2.mp3": {
+   "hash": "f83ea9fa56a2",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__seat_solo_1.mp3": {
+   "hash": "a15bea425400",
+   "sec": 1.88,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__seat_solo_2.mp3": {
+   "hash": "9bd9bf0d5697",
+   "sec": 2.37,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__seat_two_1.mp3": {
+   "hash": "f8f25e86801f",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__seat_two_2.mp3": {
+   "hash": "35acef4adad8",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__welcome_1.mp3": {
+   "hash": "b481f06014aa",
+   "sec": 1.53,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__welcome_2.mp3": {
+   "hash": "2fc892e6c208",
+   "sec": 1.53,
+   "voice": "M4"
+  },
+  "ja/guide/restaurant__welcome_3.mp3": {
+   "hash": "4dea1dfd4217",
+   "sec": 2.79,
+   "voice": "M4"
+  },
+  "ja/hana/hotel__anything.mp3": {
+   "hash": "4f53cd096fc4",
+   "sec": 3.76,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__breakfast_q.mp3": {
+   "hash": "fa42422ae247",
+   "sec": 5.36,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__checkout.mp3": {
+   "hash": "ffd421008b1d",
+   "sec": 3.34,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__elevator.mp3": {
+   "hash": "13b07d4b381c",
+   "sec": 5.36,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__end_other.mp3": {
+   "hash": "417686978239",
+   "sec": 4.53,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__end_stay.mp3": {
+   "hash": "3767fd0628a6",
+   "sec": 4.46,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__greet.mp3": {
+   "hash": "54c7a6395fae",
+   "sec": 3.27,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__key.mp3": {
+   "hash": "cfe08e1a00a0",
+   "sec": 4.6,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__luggage.mp3": {
+   "hash": "21e4d342b36b",
+   "sec": 2.72,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__name.mp3": {
+   "hash": "fe2c59e26b88",
+   "sec": 3.83,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__nearby.mp3": {
+   "hash": "adb7a35570db",
+   "sec": 7.52,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__passport.mp3": {
+   "hash": "31d215557c5b",
+   "sec": 4.25,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__room_pref.mp3": {
+   "hash": "0a6588cdc526",
+   "sec": 5.92,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__walkin.mp3": {
+   "hash": "970adab1c4b6",
+   "sec": 6.97,
+   "voice": "F2"
+  },
+  "ja/hana/hotel__wifi.mp3": {
+   "hash": "6b1a9b7dea75",
+   "sec": 6.2,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__after_wait.mp3": {
+   "hash": "ee2028974b5b",
+   "sec": 4.32,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__box.mp3": {
+   "hash": "f6300759c193",
+   "sec": 3.76,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__card.mp3": {
+   "hash": "e5330d928dfa",
+   "sec": 5.78,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__cash.mp3": {
+   "hash": "afe46cf4e634",
+   "sec": 5.64,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__check.mp3": {
+   "hash": "88d525ba6047",
+   "sec": 3.69,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__check_ask.mp3": {
+   "hash": "cd49fc95ea8b",
+   "sec": 4.39,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__dessert.mp3": {
+   "hash": "a53c5af47850",
+   "sec": 3.76,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__end_leave.mp3": {
+   "hash": "df12136138e1",
+   "sec": 4.81,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__extra.mp3": {
+   "hash": "56dc3cb91e3e",
+   "sec": 2.37,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__food.mp3": {
+   "hash": "7551154c2208",
+   "sec": 3.34,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__full_four.mp3": {
+   "hash": "6bb9be6695c1",
+   "sec": 5.85,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__later.mp3": {
+   "hash": "bc5fe98078d6",
+   "sec": 5.29,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__menu.mp3": {
+   "hash": "84c15a86da6c",
+   "sec": 3.9,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__order.mp3": {
+   "hash": "c2809125bbe6",
+   "sec": 2.3,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__order_more.mp3": {
+   "hash": "c184b53ba086",
+   "sec": 3.83,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__outside.mp3": {
+   "hash": "d02b7de733f2",
+   "sec": 4.46,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__recommend.mp3": {
+   "hash": "3869441d7a11",
+   "sec": 4.32,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__seat_solo.mp3": {
+   "hash": "2cdbdbe3659d",
+   "sec": 3.76,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__seat_two.mp3": {
+   "hash": "b9685800d4fe",
+   "sec": 3.62,
+   "voice": "F2"
+  },
+  "ja/hana/restaurant__welcome.mp3": {
+   "hash": "d6275354bd24",
+   "sec": 2.44,
+   "voice": "F2"
+  },
+  "ja/leo/hotel__anything.mp3": {
+   "hash": "c0dbe057be27",
+   "sec": 4.25,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__breakfast_q.mp3": {
+   "hash": "9c7878ef8d56",
+   "sec": 5.99,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__checkout.mp3": {
+   "hash": "b27d158ed773",
+   "sec": 3.69,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__elevator.mp3": {
+   "hash": "4e96b1c7855d",
+   "sec": 6.06,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__end_other.mp3": {
+   "hash": "023bc3e7c77d",
+   "sec": 5.09,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__end_stay.mp3": {
+   "hash": "7989ad07d9f1",
+   "sec": 5.02,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__greet.mp3": {
+   "hash": "4027841fa2f1",
+   "sec": 3.69,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__key.mp3": {
+   "hash": "5a613345f3df",
+   "sec": 5.15,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__luggage.mp3": {
+   "hash": "eb6bc3eb45e1",
+   "sec": 3.07,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__name.mp3": {
+   "hash": "122d58be4c83",
+   "sec": 4.32,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__nearby.mp3": {
+   "hash": "0ca6811861b5",
+   "sec": 8.43,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__passport.mp3": {
+   "hash": "465a74c953d7",
+   "sec": 4.81,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__room_pref.mp3": {
+   "hash": "6348c1aea4a8",
+   "sec": 6.62,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__walkin.mp3": {
+   "hash": "baf52d69eb3d",
+   "sec": 7.8,
+   "voice": "M1"
+  },
+  "ja/leo/hotel__wifi.mp3": {
+   "hash": "d685985197af",
+   "sec": 6.97,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__after_wait.mp3": {
+   "hash": "c4af12e29826",
+   "sec": 4.88,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__box.mp3": {
+   "hash": "d86cd1cfe7b0",
+   "sec": 4.18,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__card.mp3": {
+   "hash": "bae37c3fff8d",
+   "sec": 6.55,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__cash.mp3": {
+   "hash": "ba316b4324cf",
+   "sec": 6.34,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__check.mp3": {
+   "hash": "b4fe1c395617",
+   "sec": 4.18,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__check_ask.mp3": {
+   "hash": "03a555d8f5f3",
+   "sec": 4.95,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__dessert.mp3": {
+   "hash": "3499fb748599",
+   "sec": 4.18,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__end_leave.mp3": {
+   "hash": "7f9ad7897957",
+   "sec": 5.36,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__extra.mp3": {
+   "hash": "625390bdbb14",
+   "sec": 2.58,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__food.mp3": {
+   "hash": "fcff60e9d12c",
+   "sec": 3.76,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__full_four.mp3": {
+   "hash": "0b4d43ec4d66",
+   "sec": 6.62,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__later.mp3": {
+   "hash": "dccb5e53249e",
+   "sec": 5.92,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__menu.mp3": {
+   "hash": "1ba9862dd44d",
+   "sec": 4.39,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__order.mp3": {
+   "hash": "f383b724c69e",
+   "sec": 2.51,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__order_more.mp3": {
+   "hash": "450183c11775",
+   "sec": 4.32,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__outside.mp3": {
+   "hash": "7076b4105500",
+   "sec": 5.02,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__recommend.mp3": {
+   "hash": "134744dab26e",
+   "sec": 4.88,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__seat_solo.mp3": {
+   "hash": "4d968d51dd84",
+   "sec": 4.25,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__seat_two.mp3": {
+   "hash": "e795f2195d28",
+   "sec": 4.04,
+   "voice": "M1"
+  },
+  "ja/leo/restaurant__welcome.mp3": {
+   "hash": "bc695c334117",
+   "sec": 2.72,
+   "voice": "M1"
+  },
+  "ja/mia/hotel__anything.mp3": {
+   "hash": "d5a3aeade116",
+   "sec": 3.9,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__breakfast_q.mp3": {
+   "hash": "513a31284476",
+   "sec": 5.5,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__checkout.mp3": {
+   "hash": "3506454b90a2",
+   "sec": 3.41,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__elevator.mp3": {
+   "hash": "54eb8909f548",
+   "sec": 5.57,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__end_other.mp3": {
+   "hash": "4c5858228c10",
+   "sec": 4.67,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__end_stay.mp3": {
+   "hash": "753224e7e5a3",
+   "sec": 4.6,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__greet.mp3": {
+   "hash": "6b582169d144",
+   "sec": 3.41,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__key.mp3": {
+   "hash": "857688edd899",
+   "sec": 4.74,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__luggage.mp3": {
+   "hash": "d8ff8a0760b1",
+   "sec": 2.79,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__name.mp3": {
+   "hash": "fd49f83e09ee",
+   "sec": 3.97,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__nearby.mp3": {
+   "hash": "754ce4786a06",
+   "sec": 7.73,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__passport.mp3": {
+   "hash": "af75eb280dce",
+   "sec": 4.39,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__room_pref.mp3": {
+   "hash": "6ed70aebac95",
+   "sec": 6.06,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__walkin.mp3": {
+   "hash": "2a71cad7eb54",
+   "sec": 7.17,
+   "voice": "F1"
+  },
+  "ja/mia/hotel__wifi.mp3": {
+   "hash": "4821ccb3a47a",
+   "sec": 6.41,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__after_wait.mp3": {
+   "hash": "88b524fff846",
+   "sec": 4.46,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__box.mp3": {
+   "hash": "cd32d2276b31",
+   "sec": 3.9,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__card.mp3": {
+   "hash": "743b7500c0d6",
+   "sec": 5.99,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__cash.mp3": {
+   "hash": "60c35b9d9fdf",
+   "sec": 5.78,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__check.mp3": {
+   "hash": "ef0cacb5b4ce",
+   "sec": 3.83,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__check_ask.mp3": {
+   "hash": "23f61275c358",
+   "sec": 4.53,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__dessert.mp3": {
+   "hash": "423873c02f96",
+   "sec": 3.9,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__end_leave.mp3": {
+   "hash": "a00f5a3b74c9",
+   "sec": 4.95,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__extra.mp3": {
+   "hash": "207601a1cfac",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__food.mp3": {
+   "hash": "776cf7c5cb2f",
+   "sec": 3.41,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__full_four.mp3": {
+   "hash": "ce73fa0a9950",
+   "sec": 6.06,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__later.mp3": {
+   "hash": "2e9f3b0c534b",
+   "sec": 5.5,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__menu.mp3": {
+   "hash": "d5846efb7b0a",
+   "sec": 4.04,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__order.mp3": {
+   "hash": "690702ad4a30",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__order_more.mp3": {
+   "hash": "84657aad08fa",
+   "sec": 3.97,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__outside.mp3": {
+   "hash": "7bb446cdb6c9",
+   "sec": 4.6,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__recommend.mp3": {
+   "hash": "44e8387ea858",
+   "sec": 4.46,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__seat_solo.mp3": {
+   "hash": "21931cddc92c",
+   "sec": 3.9,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__seat_two.mp3": {
+   "hash": "8ca0e7c09fe5",
+   "sec": 3.69,
+   "voice": "F1"
+  },
+  "ja/mia/restaurant__welcome.mp3": {
+   "hash": "d0a38f7e5973",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ja/theo/hotel__anything.mp3": {
+   "hash": "8be614dff86e",
+   "sec": 3.62,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__breakfast_q.mp3": {
+   "hash": "3e056fceda06",
+   "sec": 5.15,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__checkout.mp3": {
+   "hash": "237bf48dcfad",
+   "sec": 3.13,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__elevator.mp3": {
+   "hash": "433c196a6550",
+   "sec": 5.15,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__end_other.mp3": {
+   "hash": "511f77bb9530",
+   "sec": 4.32,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__end_stay.mp3": {
+   "hash": "adc7749c0b36",
+   "sec": 4.25,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__greet.mp3": {
+   "hash": "b248b6d4cbbe",
+   "sec": 3.13,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__key.mp3": {
+   "hash": "9dcaf5eef9d0",
+   "sec": 4.39,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__luggage.mp3": {
+   "hash": "79624e532d68",
+   "sec": 2.58,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__name.mp3": {
+   "hash": "8b2b5b8880a5",
+   "sec": 3.69,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__nearby.mp3": {
+   "hash": "5a0028e490ad",
+   "sec": 7.17,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__passport.mp3": {
+   "hash": "f6c62237b489",
+   "sec": 4.04,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__room_pref.mp3": {
+   "hash": "27dea14552f0",
+   "sec": 5.64,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__walkin.mp3": {
+   "hash": "bfef629ba070",
+   "sec": 6.69,
+   "voice": "M2"
+  },
+  "ja/theo/hotel__wifi.mp3": {
+   "hash": "a742ffd12578",
+   "sec": 5.92,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__after_wait.mp3": {
+   "hash": "5348ef0a607f",
+   "sec": 4.11,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__box.mp3": {
+   "hash": "d2ddeba58d56",
+   "sec": 3.62,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__card.mp3": {
+   "hash": "c533d2698e95",
+   "sec": 5.57,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__cash.mp3": {
+   "hash": "912e6edd367f",
+   "sec": 5.36,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__check.mp3": {
+   "hash": "a256d93331e8",
+   "sec": 3.55,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__check_ask.mp3": {
+   "hash": "49fe173ebafa",
+   "sec": 4.18,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__dessert.mp3": {
+   "hash": "add3d89c40a7",
+   "sec": 3.55,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__end_leave.mp3": {
+   "hash": "acd1e798de39",
+   "sec": 4.6,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__extra.mp3": {
+   "hash": "45719852978f",
+   "sec": 2.23,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__food.mp3": {
+   "hash": "d11a94e08094",
+   "sec": 3.2,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__full_four.mp3": {
+   "hash": "d3746b4b159b",
+   "sec": 5.64,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__later.mp3": {
+   "hash": "f7b30419dfa0",
+   "sec": 5.09,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__menu.mp3": {
+   "hash": "b99bb2f89337",
+   "sec": 3.76,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__order.mp3": {
+   "hash": "74e70efb0617",
+   "sec": 2.16,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__order_more.mp3": {
+   "hash": "2a09dcc7ecdf",
+   "sec": 3.62,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__outside.mp3": {
+   "hash": "5200b009d218",
+   "sec": 4.32,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__recommend.mp3": {
+   "hash": "7ccec1e775bf",
+   "sec": 4.18,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__seat_solo.mp3": {
+   "hash": "3b0098adab40",
+   "sec": 3.62,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__seat_two.mp3": {
+   "hash": "2ba937d09a19",
+   "sec": 3.41,
+   "voice": "M2"
+  },
+  "ja/theo/restaurant__welcome.mp3": {
+   "hash": "cf791271ca58",
+   "sec": 2.3,
+   "voice": "M2"
+  },
+  "ko/ellie/hotel__anything.mp3": {
+   "hash": "9f4ae3c416db",
+   "sec": 2.37,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__breakfast_q.mp3": {
+   "hash": "f2bff7cb714b",
+   "sec": 6.48,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__checkout.mp3": {
+   "hash": "9323ac2350b3",
+   "sec": 3.0,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__elevator.mp3": {
+   "hash": "9db56805aed4",
+   "sec": 5.22,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__end_other.mp3": {
+   "hash": "591b5856585b",
+   "sec": 5.29,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__end_stay.mp3": {
+   "hash": "10e661c98492",
+   "sec": 3.62,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__greet.mp3": {
+   "hash": "5eacc3bad46b",
+   "sec": 4.81,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__key.mp3": {
+   "hash": "2663fc063ca2",
+   "sec": 3.9,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__luggage.mp3": {
+   "hash": "8c889966cb53",
+   "sec": 3.9,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__name.mp3": {
+   "hash": "1ce554c58459",
+   "sec": 3.34,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__nearby.mp3": {
+   "hash": "95d03b00d267",
+   "sec": 7.17,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__passport.mp3": {
+   "hash": "99371094e6db",
+   "sec": 3.97,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__room_pref.mp3": {
+   "hash": "87799ff1649c",
+   "sec": 6.27,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__walkin.mp3": {
+   "hash": "13aeb02036fb",
+   "sec": 7.38,
+   "voice": "F3"
+  },
+  "ko/ellie/hotel__wifi.mp3": {
+   "hash": "f2fc9dbd80b3",
+   "sec": 5.99,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__after_wait.mp3": {
+   "hash": "16c443c9387e",
+   "sec": 5.64,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__box.mp3": {
+   "hash": "bb5b61675a64",
+   "sec": 3.0,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__card.mp3": {
+   "hash": "f5f27a15c609",
+   "sec": 5.64,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__cash.mp3": {
+   "hash": "e245ba5f23c1",
+   "sec": 5.09,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__check.mp3": {
+   "hash": "19a7019ff265",
+   "sec": 4.18,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__check_ask.mp3": {
+   "hash": "be7f11bbc5d2",
+   "sec": 4.32,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__dessert.mp3": {
+   "hash": "88b05f08d9d8",
+   "sec": 4.95,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__end_leave.mp3": {
+   "hash": "a7c07bfd2fd6",
+   "sec": 4.32,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__extra.mp3": {
+   "hash": "d04906f8b9ef",
+   "sec": 2.51,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__food.mp3": {
+   "hash": "c7b5254ced7b",
+   "sec": 4.46,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__full_four.mp3": {
+   "hash": "49ac7bf11d51",
+   "sec": 7.17,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__later.mp3": {
+   "hash": "37a9800a9fb4",
+   "sec": 3.34,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__menu.mp3": {
+   "hash": "cf4f6944b04e",
+   "sec": 4.11,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__order.mp3": {
+   "hash": "7cc85dcd9113",
+   "sec": 1.81,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__order_more.mp3": {
+   "hash": "b1bba3f6118e",
+   "sec": 4.11,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__outside.mp3": {
+   "hash": "4141bf185129",
+   "sec": 5.22,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__recommend.mp3": {
+   "hash": "e42859580ad3",
+   "sec": 5.02,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__seat_solo.mp3": {
+   "hash": "598885209460",
+   "sec": 4.18,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__seat_two.mp3": {
+   "hash": "b7d79bc93e2e",
+   "sec": 2.58,
+   "voice": "F3"
+  },
+  "ko/ellie/restaurant__welcome.mp3": {
+   "hash": "52c818240437",
+   "sec": 3.13,
+   "voice": "F3"
+  },
+  "ko/guide/hotel__anything_1.mp3": {
+   "hash": "d0839e816847",
+   "sec": 3.34,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__anything_2.mp3": {
+   "hash": "78f7379b9182",
+   "sec": 2.37,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__breakfast_q_1.mp3": {
+   "hash": "ac795544471c",
+   "sec": 2.79,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__checkout_1.mp3": {
+   "hash": "83c41427e564",
+   "sec": 2.86,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__checkout_2.mp3": {
+   "hash": "68ec422ec0af",
+   "sec": 2.86,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__elevator_1.mp3": {
+   "hash": "2d7c5b3110a8",
+   "sec": 1.53,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__greet_1.mp3": {
+   "hash": "6317da993fdb",
+   "sec": 1.74,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__greet_2.mp3": {
+   "hash": "013ccff1724b",
+   "sec": 3.13,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__key_1.mp3": {
+   "hash": "f5ca72af87e5",
+   "sec": 2.16,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__key_2.mp3": {
+   "hash": "fe6d8f94c572",
+   "sec": 2.3,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__key_3.mp3": {
+   "hash": "131a1f1bba60",
+   "sec": 1.88,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__luggage_1.mp3": {
+   "hash": "01ac80c3c1c4",
+   "sec": 2.79,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__name_1.mp3": {
+   "hash": "c7d8b99293c1",
+   "sec": 1.6,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__nearby_1.mp3": {
+   "hash": "1f95d90b91d0",
+   "sec": 1.95,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__passport_1.mp3": {
+   "hash": "a8805d63d488",
+   "sec": 1.46,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__room_pref_1.mp3": {
+   "hash": "8a77a0f9d4e9",
+   "sec": 2.51,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__room_pref_2.mp3": {
+   "hash": "099df6819a02",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__walkin_1.mp3": {
+   "hash": "697090e2aa51",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__walkin_2.mp3": {
+   "hash": "302d0d9f7951",
+   "sec": 1.88,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__walkin_3.mp3": {
+   "hash": "dbc811cf38e0",
+   "sec": 4.11,
+   "voice": "M4"
+  },
+  "ko/guide/hotel__wifi_1.mp3": {
+   "hash": "1fd2f32de33c",
+   "sec": 2.51,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__after_wait_1.mp3": {
+   "hash": "2d7c5b3110a8",
+   "sec": 1.53,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__box_1.mp3": {
+   "hash": "05f9f092e684",
+   "sec": 3.55,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__check_1.mp3": {
+   "hash": "c642b8a8652c",
+   "sec": 1.53,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__check_2.mp3": {
+   "hash": "0612e6e84468",
+   "sec": 1.74,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__check_ask_1.mp3": {
+   "hash": "5d2d85d370c5",
+   "sec": 1.67,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__check_ask_2.mp3": {
+   "hash": "41f75d208421",
+   "sec": 2.3,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__check_ask_3.mp3": {
+   "hash": "75f6e9545c17",
+   "sec": 2.58,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__dessert_1.mp3": {
+   "hash": "5dd1b3ba7f69",
+   "sec": 3.69,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__extra_1.mp3": {
+   "hash": "2d7c5b3110a8",
+   "sec": 1.53,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__food_1.mp3": {
+   "hash": "93613241b638",
+   "sec": 3.2,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__full_four_1.mp3": {
+   "hash": "1963ddef1568",
+   "sec": 1.81,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__full_four_2.mp3": {
+   "hash": "38e7723f7b57",
+   "sec": 1.95,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__later_1.mp3": {
+   "hash": "647d340fdbc3",
+   "sec": 2.51,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__menu_1.mp3": {
+   "hash": "e7ab042db41f",
+   "sec": 1.6,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__menu_2.mp3": {
+   "hash": "f4f0e997854a",
+   "sec": 1.6,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__order_1.mp3": {
+   "hash": "9142df923f49",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__order_2.mp3": {
+   "hash": "7afd12ecd15f",
+   "sec": 2.23,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__order_more_1.mp3": {
+   "hash": "c8c6b47138d3",
+   "sec": 1.39,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__order_more_2.mp3": {
+   "hash": "a3a212f2a1d6",
+   "sec": 2.16,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__outside_1.mp3": {
+   "hash": "ed7f3e803184",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__recommend_1.mp3": {
+   "hash": "e3b160e2dd24",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__recommend_2.mp3": {
+   "hash": "f7bc121f58d1",
+   "sec": 1.74,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__seat_solo_1.mp3": {
+   "hash": "b44867f97795",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__seat_solo_2.mp3": {
+   "hash": "34ceeb7d4e11",
+   "sec": 2.02,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__seat_two_1.mp3": {
+   "hash": "2d7c5b3110a8",
+   "sec": 1.53,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__seat_two_2.mp3": {
+   "hash": "fc89fd20f0c3",
+   "sec": 2.16,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__welcome_1.mp3": {
+   "hash": "a593aaf151a2",
+   "sec": 1.39,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__welcome_2.mp3": {
+   "hash": "4ba448699fc8",
+   "sec": 1.39,
+   "voice": "M4"
+  },
+  "ko/guide/restaurant__welcome_3.mp3": {
+   "hash": "48ca370d4357",
+   "sec": 2.09,
+   "voice": "M4"
+  },
+  "ko/hana/hotel__anything.mp3": {
+   "hash": "f511a95f4c0a",
+   "sec": 2.09,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__breakfast_q.mp3": {
+   "hash": "c1db70bcec8e",
+   "sec": 5.71,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__checkout.mp3": {
+   "hash": "c7ddb6732a75",
+   "sec": 2.65,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__elevator.mp3": {
+   "hash": "78b4b0303bcf",
+   "sec": 4.6,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__end_other.mp3": {
+   "hash": "47d7e170557c",
+   "sec": 4.67,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__end_stay.mp3": {
+   "hash": "fc20ea82c4e9",
+   "sec": 3.2,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__greet.mp3": {
+   "hash": "5bdf26000b8b",
+   "sec": 4.25,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__key.mp3": {
+   "hash": "21f0c70088d0",
+   "sec": 3.48,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__luggage.mp3": {
+   "hash": "9599ab226d92",
+   "sec": 3.48,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__name.mp3": {
+   "hash": "175b08a276b7",
+   "sec": 2.93,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__nearby.mp3": {
+   "hash": "dd77e040d63e",
+   "sec": 6.34,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__passport.mp3": {
+   "hash": "d418654c55ec",
+   "sec": 3.48,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__room_pref.mp3": {
+   "hash": "86fb9eb8df5b",
+   "sec": 5.5,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__walkin.mp3": {
+   "hash": "297e0faf48ea",
+   "sec": 6.55,
+   "voice": "F2"
+  },
+  "ko/hana/hotel__wifi.mp3": {
+   "hash": "d09298cfac08",
+   "sec": 5.29,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__after_wait.mp3": {
+   "hash": "38a17b0453c0",
+   "sec": 4.95,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__box.mp3": {
+   "hash": "471554bf984f",
+   "sec": 2.65,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__card.mp3": {
+   "hash": "82069274b564",
+   "sec": 4.95,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__cash.mp3": {
+   "hash": "a02011474b09",
+   "sec": 4.53,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__check.mp3": {
+   "hash": "93b72c1549fe",
+   "sec": 3.69,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__check_ask.mp3": {
+   "hash": "9a5141649200",
+   "sec": 3.83,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__dessert.mp3": {
+   "hash": "c000b70d5677",
+   "sec": 4.39,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__end_leave.mp3": {
+   "hash": "6de44561837d",
+   "sec": 3.83,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__extra.mp3": {
+   "hash": "68bac80d2cd8",
+   "sec": 2.23,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__food.mp3": {
+   "hash": "df94836cfd4c",
+   "sec": 3.97,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__full_four.mp3": {
+   "hash": "c4132acd1d11",
+   "sec": 6.34,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__later.mp3": {
+   "hash": "99af57352de4",
+   "sec": 2.93,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__menu.mp3": {
+   "hash": "a24a632c26e1",
+   "sec": 3.62,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__order.mp3": {
+   "hash": "4f92f007b0cf",
+   "sec": 1.67,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__order_more.mp3": {
+   "hash": "d46425c548ad",
+   "sec": 3.62,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__outside.mp3": {
+   "hash": "84edde95ae99",
+   "sec": 4.6,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__recommend.mp3": {
+   "hash": "516aa76010cf",
+   "sec": 4.46,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__seat_solo.mp3": {
+   "hash": "938708b37955",
+   "sec": 3.69,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__seat_two.mp3": {
+   "hash": "cb20b5b0891d",
+   "sec": 2.37,
+   "voice": "F2"
+  },
+  "ko/hana/restaurant__welcome.mp3": {
+   "hash": "8322ac81abea",
+   "sec": 2.79,
+   "voice": "F2"
+  },
+  "ko/leo/hotel__anything.mp3": {
+   "hash": "b36a8b16b4de",
+   "sec": 2.37,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__breakfast_q.mp3": {
+   "hash": "93569e39356c",
+   "sec": 6.48,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__checkout.mp3": {
+   "hash": "f0ce350284fc",
+   "sec": 3.0,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__elevator.mp3": {
+   "hash": "1954614bc68f",
+   "sec": 5.22,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__end_other.mp3": {
+   "hash": "763e48ef5549",
+   "sec": 5.29,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__end_stay.mp3": {
+   "hash": "886a6687abe7",
+   "sec": 3.62,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__greet.mp3": {
+   "hash": "60e1eb379b64",
+   "sec": 4.88,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__key.mp3": {
+   "hash": "4590d56c7c3c",
+   "sec": 3.97,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__luggage.mp3": {
+   "hash": "8a7c882da377",
+   "sec": 3.9,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__name.mp3": {
+   "hash": "1e780e1881b1",
+   "sec": 3.34,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__nearby.mp3": {
+   "hash": "b52bcbf4ec9d",
+   "sec": 7.17,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__passport.mp3": {
+   "hash": "7b33a73a8197",
+   "sec": 3.97,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__room_pref.mp3": {
+   "hash": "4ef8c2d6d170",
+   "sec": 6.27,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__walkin.mp3": {
+   "hash": "dc00eacefc02",
+   "sec": 7.38,
+   "voice": "M1"
+  },
+  "ko/leo/hotel__wifi.mp3": {
+   "hash": "1fe304d17fbd",
+   "sec": 5.99,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__after_wait.mp3": {
+   "hash": "7ff49639395c",
+   "sec": 5.64,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__box.mp3": {
+   "hash": "14714104f0cf",
+   "sec": 3.0,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__card.mp3": {
+   "hash": "36aaeaca04d6",
+   "sec": 5.64,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__cash.mp3": {
+   "hash": "c54ad1df3543",
+   "sec": 5.09,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__check.mp3": {
+   "hash": "3269df87cbe0",
+   "sec": 4.18,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__check_ask.mp3": {
+   "hash": "bb8737110a39",
+   "sec": 4.32,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__dessert.mp3": {
+   "hash": "6eb2224a73d6",
+   "sec": 4.95,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__end_leave.mp3": {
+   "hash": "e46162939c99",
+   "sec": 4.32,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__extra.mp3": {
+   "hash": "7f91b7a464e4",
+   "sec": 2.51,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__food.mp3": {
+   "hash": "aa4de429b09c",
+   "sec": 4.53,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__full_four.mp3": {
+   "hash": "2c6b159f8baa",
+   "sec": 7.17,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__later.mp3": {
+   "hash": "f1d213cbf02e",
+   "sec": 3.34,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__menu.mp3": {
+   "hash": "a6e63c604ea0",
+   "sec": 4.11,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__order.mp3": {
+   "hash": "dea91c03fd52",
+   "sec": 1.81,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__order_more.mp3": {
+   "hash": "af15661a1cd3",
+   "sec": 4.11,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__outside.mp3": {
+   "hash": "16d21141e8df",
+   "sec": 5.22,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__recommend.mp3": {
+   "hash": "437003b03cca",
+   "sec": 5.02,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__seat_solo.mp3": {
+   "hash": "26e8b8bf21f2",
+   "sec": 4.18,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__seat_two.mp3": {
+   "hash": "f0d6197667a9",
+   "sec": 2.58,
+   "voice": "M1"
+  },
+  "ko/leo/restaurant__welcome.mp3": {
+   "hash": "7b856568b3a0",
+   "sec": 3.13,
+   "voice": "M1"
+  },
+  "ko/mia/hotel__anything.mp3": {
+   "hash": "1b7da5e54ac6",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__breakfast_q.mp3": {
+   "hash": "897cd1313ddd",
+   "sec": 5.99,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__checkout.mp3": {
+   "hash": "6709b31fd386",
+   "sec": 2.79,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__elevator.mp3": {
+   "hash": "b9bf965da656",
+   "sec": 4.81,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__end_other.mp3": {
+   "hash": "81a7d8318e32",
+   "sec": 4.88,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__end_stay.mp3": {
+   "hash": "0b4158cb42f0",
+   "sec": 3.34,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__greet.mp3": {
+   "hash": "a54181d6e863",
+   "sec": 4.46,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__key.mp3": {
+   "hash": "d95aab2754a9",
+   "sec": 3.62,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__luggage.mp3": {
+   "hash": "03b8c3c04b24",
+   "sec": 3.62,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__name.mp3": {
+   "hash": "2727c3bec199",
+   "sec": 3.13,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__nearby.mp3": {
+   "hash": "69c19732ea07",
+   "sec": 6.62,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__passport.mp3": {
+   "hash": "93fe800b7665",
+   "sec": 3.69,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__room_pref.mp3": {
+   "hash": "24414404f8cf",
+   "sec": 5.78,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__walkin.mp3": {
+   "hash": "9a03f0d46b7a",
+   "sec": 6.83,
+   "voice": "F1"
+  },
+  "ko/mia/hotel__wifi.mp3": {
+   "hash": "e19e21bfd3e1",
+   "sec": 5.5,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__after_wait.mp3": {
+   "hash": "e2a3523e89e5",
+   "sec": 5.15,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__box.mp3": {
+   "hash": "264347f990fb",
+   "sec": 2.79,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__card.mp3": {
+   "hash": "4af5928a158d",
+   "sec": 5.15,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__cash.mp3": {
+   "hash": "8cd961838e7e",
+   "sec": 4.74,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__check.mp3": {
+   "hash": "1cfa113c9fbe",
+   "sec": 3.9,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__check_ask.mp3": {
+   "hash": "6bcf38dfcd7c",
+   "sec": 3.97,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__dessert.mp3": {
+   "hash": "f98e70e5f6d3",
+   "sec": 4.53,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__end_leave.mp3": {
+   "hash": "973c7044a922",
+   "sec": 3.97,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__extra.mp3": {
+   "hash": "bf32e246d405",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__food.mp3": {
+   "hash": "3ec694e80d27",
+   "sec": 4.11,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__full_four.mp3": {
+   "hash": "b979ead2a19b",
+   "sec": 6.62,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__later.mp3": {
+   "hash": "83ca8018ce97",
+   "sec": 3.07,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__menu.mp3": {
+   "hash": "dea9b684209d",
+   "sec": 3.83,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__order.mp3": {
+   "hash": "aaf1dbac36de",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__order_more.mp3": {
+   "hash": "69ff3724bdc9",
+   "sec": 3.83,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__outside.mp3": {
+   "hash": "249fd738e96d",
+   "sec": 4.81,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__recommend.mp3": {
+   "hash": "992e4520015e",
+   "sec": 4.67,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__seat_solo.mp3": {
+   "hash": "e41927577ab6",
+   "sec": 3.83,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__seat_two.mp3": {
+   "hash": "d7df4daca3b8",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ko/mia/restaurant__welcome.mp3": {
+   "hash": "8dee170cfe65",
+   "sec": 2.86,
+   "voice": "F1"
+  },
+  "ko/theo/hotel__anything.mp3": {
+   "hash": "8cb4130b637b",
+   "sec": 2.02,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__breakfast_q.mp3": {
+   "hash": "28e08fda345e",
+   "sec": 5.5,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__checkout.mp3": {
+   "hash": "5fac302fb195",
+   "sec": 2.58,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__elevator.mp3": {
+   "hash": "e02d7e789188",
+   "sec": 4.46,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__end_other.mp3": {
+   "hash": "e33c0e057cf6",
+   "sec": 4.46,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__end_stay.mp3": {
+   "hash": "056324d3df50",
+   "sec": 3.07,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__greet.mp3": {
+   "hash": "2bb3eff73fbb",
+   "sec": 4.11,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__key.mp3": {
+   "hash": "14a846b0071a",
+   "sec": 3.34,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__luggage.mp3": {
+   "hash": "1b371e7a27d9",
+   "sec": 3.34,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__name.mp3": {
+   "hash": "76202b9145f6",
+   "sec": 2.86,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__nearby.mp3": {
+   "hash": "26bbba1e8392",
+   "sec": 6.06,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__passport.mp3": {
+   "hash": "db38a1c62749",
+   "sec": 3.41,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__room_pref.mp3": {
+   "hash": "7bccd704edf0",
+   "sec": 5.29,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__walkin.mp3": {
+   "hash": "bda1ce5bbc80",
+   "sec": 6.27,
+   "voice": "M2"
+  },
+  "ko/theo/hotel__wifi.mp3": {
+   "hash": "a2a7d7307ca0",
+   "sec": 5.09,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__after_wait.mp3": {
+   "hash": "228046dff3b9",
+   "sec": 4.81,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__box.mp3": {
+   "hash": "7f95794b7e9f",
+   "sec": 2.58,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__card.mp3": {
+   "hash": "1952bd78365f",
+   "sec": 4.81,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__cash.mp3": {
+   "hash": "0d29f804b88c",
+   "sec": 4.32,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__check.mp3": {
+   "hash": "8364b4c0e359",
+   "sec": 3.55,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__check_ask.mp3": {
+   "hash": "999058e681f5",
+   "sec": 3.69,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__dessert.mp3": {
+   "hash": "ba0f94c9866f",
+   "sec": 4.18,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__end_leave.mp3": {
+   "hash": "e5ca24fedcc2",
+   "sec": 3.69,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__extra.mp3": {
+   "hash": "22e3e8671c6d",
+   "sec": 2.16,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__food.mp3": {
+   "hash": "39803d9db341",
+   "sec": 3.83,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__full_four.mp3": {
+   "hash": "daaea8c5e9bf",
+   "sec": 6.13,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__later.mp3": {
+   "hash": "5482b83d31cb",
+   "sec": 2.86,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__menu.mp3": {
+   "hash": "63a4aef0379c",
+   "sec": 3.48,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__order.mp3": {
+   "hash": "ef807beead96",
+   "sec": 1.53,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__order_more.mp3": {
+   "hash": "1097467f265a",
+   "sec": 3.48,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__outside.mp3": {
+   "hash": "b0b52b5c1e1d",
+   "sec": 4.46,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__recommend.mp3": {
+   "hash": "5a98b20f379e",
+   "sec": 4.25,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__seat_solo.mp3": {
+   "hash": "ccc93e503e39",
+   "sec": 3.55,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__seat_two.mp3": {
+   "hash": "4e6c9d2c4285",
+   "sec": 2.23,
+   "voice": "M2"
+  },
+  "ko/theo/restaurant__welcome.mp3": {
+   "hash": "3ac60851dcfa",
+   "sec": 2.65,
+   "voice": "M2"
+  }
+ }
+}

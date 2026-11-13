@@ -1,0 +1,49 @@
+name: butterful
+description: "BUTTERFUL - listen, repeat, and talk with native voices"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  just_audio: ^0.10.6
+  shared_preferences: ^2.5.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # 언어별 대화(JSON)와 미리 만든 음성(MP3). 폴더마다 적어야 한다.
+  # 언어·캐릭터를 늘리면 tool/tts/generate_audio.py로 음성을 만든 뒤 여기에 폴더를 더한다.
+  assets:
+    - assets/content/
+    - assets/content/en/
+    - assets/content/ja/
+    - assets/content/ko/
+    - assets/audio/
+    - assets/audio/en/mia/
+    - assets/audio/en/leo/
+    - assets/audio/en/hana/
+    - assets/audio/en/theo/
+    - assets/audio/en/ellie/
+    - assets/audio/en/guide/
+    - assets/audio/ja/mia/
+    - assets/audio/ja/leo/
+    - assets/audio/ja/hana/
+    - assets/audio/ja/theo/
+    - assets/audio/ja/ellie/
+    - assets/audio/ja/guide/
+    - assets/audio/ko/mia/
+    - assets/audio/ko/leo/
+    - assets/audio/ko/hana/
+    - assets/audio/ko/theo/
+    - assets/audio/ko/ellie/
+    - assets/audio/ko/guide/

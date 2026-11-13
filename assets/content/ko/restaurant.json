@@ -1,0 +1,213 @@
+{
+  "id": "restaurant",
+  "lang": "ko",
+  "start": "welcome",
+  "nodes": [
+    {
+      "id": "welcome",
+      "stage": "입장",
+      "text": "어서 오세요! 몇 분이세요?",
+      "pron": "eoseo oseyo! myeot buniseyo?",
+      "trans": "Welcome! How many people?",
+      "replies": [
+        { "id": "welcome_1", "text": "한 명이요.", "pron": "han myeong-iyo.", "trans": "Just one.", "next": "seat_solo" },
+        { "id": "welcome_2", "text": "두 명이요.", "pron": "du myeong-iyo.", "trans": "Two people.", "next": "seat_two" },
+        { "id": "welcome_3", "text": "네 명인데 자리 있어요?", "pron": "ne myeong-inde jari isseoyo?", "trans": "There are four of us. Do you have a table?", "next": "full_four" }
+      ]
+    },
+    {
+      "id": "seat_solo",
+      "stage": "자리 안내",
+      "text": "창가 자리랑 바 자리 중에 어디가 좋으세요?",
+      "pron": "changga jarirang ba jari junge eodiga joeuseyo?",
+      "trans": "Would you like a window seat or a seat at the bar?",
+      "replies": [
+        { "id": "seat_solo_1", "text": "창가 자리로 주세요.", "pron": "changga jariro juseyo.", "trans": "The window seat, please.", "next": "menu" },
+        { "id": "seat_solo_2", "text": "바 자리도 괜찮아요.", "pron": "ba jarido gwaenchanayo.", "trans": "The bar is fine too.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "seat_two",
+      "stage": "자리 안내",
+      "text": "네, 이쪽으로 앉으세요.",
+      "pron": "ne, ijjogeuro anjeuseyo.",
+      "trans": "Sure, please have a seat over here.",
+      "replies": [
+        { "id": "seat_two_1", "text": "감사합니다.", "pron": "gamsahamnida.", "trans": "Thank you.", "next": "menu" },
+        { "id": "seat_two_2", "text": "혹시 밖에 앉아도 돼요?", "pron": "hoksi bakke anjado dwaeyo?", "trans": "Could we sit outside, by any chance?", "next": "outside" }
+      ]
+    },
+    {
+      "id": "full_four",
+      "stage": "인원 확인",
+      "text": "죄송합니다. 지금 자리가 다 차서 십 분 정도 기다리셔야 하는데, 괜찮으세요?",
+      "pron": "joesonghamnida. jigeum jariga da chaseo sip bun jeongdo gidarisyeoya haneunde, gwaenchaneuseyo?",
+      "trans": "I'm sorry. We're full right now, so you'd need to wait about ten minutes. Is that okay?",
+      "replies": [
+        { "id": "full_four_1", "text": "네, 기다릴게요.", "pron": "ne, gidarilgeyo.", "trans": "Sure, we'll wait.", "next": "after_wait" },
+        { "id": "full_four_2", "text": "그럼 다음에 올게요.", "pron": "geureom daeume olgeyo.", "trans": "Then we'll come next time.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "outside",
+      "stage": "자리 안내",
+      "text": "네, 오늘은 테라스도 열려 있어요. 이쪽으로 오세요.",
+      "pron": "ne, oneureun teraseudo yeollyeo isseoyo. ijjogeuro oseyo.",
+      "trans": "Sure, the terrace is open today. This way, please.",
+      "replies": [
+        { "id": "outside_1", "text": "좋아요, 감사합니다.", "pron": "joayo, gamsahamnida.", "trans": "Great, thank you.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "after_wait",
+      "stage": "자리 안내",
+      "text": "오래 기다리셨죠? 자리 준비됐습니다. 이쪽으로 오세요.",
+      "pron": "orae gidarisyeotjyo? jari junbidwaetseumnida. ijjogeuro oseyo.",
+      "trans": "Thanks for waiting. Your table is ready. This way, please.",
+      "replies": [
+        { "id": "after_wait_1", "text": "감사합니다.", "pron": "gamsahamnida.", "trans": "Thank you.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "menu",
+      "stage": "메뉴 확인",
+      "text": "여기 메뉴판이요. 음료 먼저 드릴까요?",
+      "pron": "yeogi menyupaniyo. eumnyo meonjeo deurilkkayo?",
+      "trans": "Here's the menu. Can I get you a drink first?",
+      "replies": [
+        { "id": "menu_1", "text": "물만 주세요.", "pron": "mulman juseyo.", "trans": "Just water, please.", "next": "order" },
+        { "id": "menu_2", "text": "뭐가 맛있어요?", "pron": "mwoga masisseoyo?", "trans": "What's good here?", "next": "recommend" }
+      ]
+    },
+    {
+      "id": "recommend",
+      "stage": "메뉴 확인",
+      "text": "수제 레모네이드랑 오늘의 파스타가 제일 인기 많아요.",
+      "pron": "suje lemoneideurang oneurui paseutaga jeil ingi manayo.",
+      "trans": "Our homemade lemonade and the pasta of the day are the most popular.",
+      "replies": [
+        { "id": "recommend_1", "text": "그럼 레모네이드 주세요.", "pron": "geureom lemoneideu juseyo.", "trans": "Then the lemonade, please.", "next": "order" },
+        { "id": "recommend_2", "text": "파스타로 할게요.", "pron": "paseutaro halgeyo.", "trans": "I'll have the pasta.", "next": "order_more" }
+      ]
+    },
+    {
+      "id": "order",
+      "stage": "음식 주문",
+      "text": "주문하시겠어요?",
+      "pron": "jumunhasigesseoyo?",
+      "trans": "Are you ready to order?",
+      "replies": [
+        { "id": "order_1", "text": "치킨 샐러드 하나 주세요.", "pron": "chikin saelleodeu hana juseyo.", "trans": "One chicken salad, please.", "next": "order_more" },
+        { "id": "order_2", "text": "조금 이따가 주문할게요.", "pron": "jogeum ittaga jumunhalgeyo.", "trans": "I'll order in a little bit.", "next": "later" }
+      ]
+    },
+    {
+      "id": "later",
+      "stage": "음식 주문",
+      "text": "네, 천천히 보시고 불러 주세요.",
+      "pron": "ne, cheoncheonhi bosigo bulleo juseyo.",
+      "trans": "Sure, take your time and call me when you're ready.",
+      "replies": [
+        { "id": "later_1", "text": "저기요, 파스타 하나 주세요.", "pron": "jeogiyo, paseuta hana juseyo.", "trans": "Excuse me, one pasta, please.", "next": "order_more" }
+      ]
+    },
+    {
+      "id": "order_more",
+      "stage": "음식 주문",
+      "text": "네, 알겠습니다. 더 필요한 건 없으세요?",
+      "pron": "ne, algetseumnida. deo piryohan geon eopseuseyo?",
+      "trans": "Okay, got it. Do you need anything else?",
+      "replies": [
+        { "id": "order_more_1", "text": "그게 다예요.", "pron": "geuge dayeyo.", "trans": "That's all.", "next": "food" },
+        { "id": "order_more_2", "text": "빵 좀 더 주실 수 있어요?", "pron": "ppang jom deo jusil su isseoyo?", "trans": "Could I get some more bread?", "next": "extra" }
+      ]
+    },
+    {
+      "id": "extra",
+      "stage": "추가 요청",
+      "text": "네, 바로 갖다 드릴게요.",
+      "pron": "ne, baro gatda deurilgeyo.",
+      "trans": "Sure, I'll bring it right away.",
+      "replies": [
+        { "id": "extra_1", "text": "감사합니다.", "pron": "gamsahamnida.", "trans": "Thank you.", "next": "food" }
+      ]
+    },
+    {
+      "id": "food",
+      "stage": "식사",
+      "text": "주문하신 음식 나왔습니다. 맛있게 드세요!",
+      "pron": "jumunhasin eumsik nawatseumnida. masitge deuseyo!",
+      "trans": "Here's your order. Enjoy your meal!",
+      "replies": [
+        { "id": "food_1", "text": "와, 맛있겠다! 감사합니다.", "pron": "wa, masitgetda! gamsahamnida.", "trans": "Wow, it looks delicious! Thank you.", "next": "check_ask" }
+      ]
+    },
+    {
+      "id": "check_ask",
+      "stage": "추가 요청",
+      "text": "식사는 괜찮으셨어요? 더 필요한 건 없으세요?",
+      "pron": "siksaneun gwaenchaneusyeosseoyo? deo piryohan geon eopseuseyo?",
+      "trans": "How was your meal? Do you need anything else?",
+      "replies": [
+        { "id": "check_ask_1", "text": "계산해 주세요.", "pron": "gyesanhae juseyo.", "trans": "The check, please.", "next": "check" },
+        { "id": "check_ask_2", "text": "디저트 메뉴 볼 수 있을까요?", "pron": "dijeoteu menyu bol su isseulkkayo?", "trans": "Could I see the dessert menu?", "next": "dessert" },
+        { "id": "check_ask_3", "text": "남은 거 포장해 주실 수 있어요?", "pron": "nameun geo pojanghae jusil su isseoyo?", "trans": "Could you pack up the rest for me?", "next": "box" }
+      ]
+    },
+    {
+      "id": "dessert",
+      "stage": "추가 요청",
+      "text": "여기 있어요. 초콜릿 케이크가 제일 맛있어요.",
+      "pron": "yeogi isseoyo. chokollit keikeuga jeil masisseoyo.",
+      "trans": "Here you go. The chocolate cake is the best.",
+      "replies": [
+        { "id": "dessert_1", "text": "그럼 그거 하나 주세요. 계산도 같이요.", "pron": "geureom geugeo hana juseyo. gyesando gachiyo.", "trans": "Then one of those, please. And the check, too.", "next": "check" }
+      ]
+    },
+    {
+      "id": "box",
+      "stage": "추가 요청",
+      "text": "네, 포장 용기 갖다 드릴게요.",
+      "pron": "ne, pojang yonggi gatda deurilgeyo.",
+      "trans": "Sure, I'll bring you a to-go container.",
+      "replies": [
+        { "id": "box_1", "text": "감사합니다. 계산도 같이 해 주세요.", "pron": "gamsahamnida. gyesando gachi hae juseyo.", "trans": "Thank you. The check too, please.", "next": "check" }
+      ]
+    },
+    {
+      "id": "check",
+      "stage": "계산",
+      "text": "계산은 카드로 하시겠어요, 현금으로 하시겠어요?",
+      "pron": "gyesaneun kadeuro hasigesseoyo, hyeongeumeuro hasigesseoyo?",
+      "trans": "Will you pay by card or with cash?",
+      "replies": [
+        { "id": "check_1", "text": "카드로 할게요.", "pron": "kadeuro halgeyo.", "trans": "By card.", "next": "card" },
+        { "id": "check_2", "text": "현금으로 할게요.", "pron": "hyeongeumeuro halgeyo.", "trans": "With cash.", "next": "cash" }
+      ]
+    },
+    {
+      "id": "card",
+      "stage": "계산",
+      "text": "감사합니다. 영수증 여기 있습니다. 좋은 하루 보내세요!",
+      "pron": "gamsahamnida. yeongsujeung yeogi itseumnida. joeun haru bonaeseyo!",
+      "trans": "Thank you. Here's your receipt. Have a nice day!",
+      "replies": []
+    },
+    {
+      "id": "cash",
+      "stage": "계산",
+      "text": "감사합니다. 거스름돈 여기 있습니다. 또 오세요!",
+      "pron": "gamsahamnida. geoseureumdon yeogi itseumnida. tto oseyo!",
+      "trans": "Thank you. Here's your change. Please come again!",
+      "replies": []
+    },
+    {
+      "id": "end_leave",
+      "stage": "인원 확인",
+      "text": "네, 알겠습니다. 다음에 꼭 다시 오세요!",
+      "pron": "ne, algetseumnida. daeume kkok dasi oseyo!",
+      "trans": "Okay, I understand. Please be sure to come back next time!",
+      "replies": []
+    }
+  ]
+}

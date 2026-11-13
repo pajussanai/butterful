@@ -1,0 +1,161 @@
+{
+  "id": "hotel",
+  "lang": "en",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "프런트 도착",
+      "text": "Good evening, and welcome. Are you checking in?",
+      "pron": "굿 이브닝, 앤 웰컴. 아 유 체킹 인?",
+      "trans": "안녕하세요, 어서 오세요. 체크인하시나요?",
+      "replies": [
+        { "id": "greet_1", "text": "Yes, I have a reservation.", "pron": "예스, 아이 해브 어 레저베이션.", "trans": "네, 예약했어요.", "next": "name" },
+        { "id": "greet_2", "text": "No. Do you have any rooms available tonight?", "pron": "노. 두 유 해브 에니 룸즈 어베일러블 투나잇?", "trans": "아니요. 오늘 밤 빈방 있나요?", "next": "walkin" }
+      ]
+    },
+    {
+      "id": "name",
+      "stage": "예약 확인",
+      "text": "Great. May I have your name, please?",
+      "pron": "그레잇. 메이 아이 해브 유어 네임, 플리즈?",
+      "trans": "좋아요. 성함을 알려 주시겠어요?",
+      "replies": [
+        { "id": "name_1", "text": "Sure. It's Kim Minjun.", "pron": "슈어. 잇츠 킴 민준.", "trans": "네. 김민준이에요.", "next": "passport" }
+      ]
+    },
+    {
+      "id": "walkin",
+      "stage": "예약 확인",
+      "text": "Let me check. We have one double room left for tonight. Would you like it?",
+      "pron": "렛 미 체크. 위 해브 원 더블 룸 레프트 포 투나잇. 우쥬 라이크 잇?",
+      "trans": "확인해 볼게요. 오늘 밤 더블룸이 하나 남아 있어요. 그 방으로 하시겠어요?",
+      "replies": [
+        { "id": "walkin_1", "text": "Yes, I'll take it.", "pron": "예스, 아일 테이크 잇.", "trans": "네, 그 방으로 할게요.", "next": "passport" },
+        { "id": "walkin_2", "text": "Does it include breakfast?", "pron": "더즈 잇 인클루드 브렉퍼스트?", "trans": "조식 포함인가요?", "next": "breakfast_q" },
+        { "id": "walkin_3", "text": "Hmm, I think I'll look somewhere else. Thanks.", "pron": "흠, 아이 띵크 아일 룩 썸웨어 엘스. 땡스.", "trans": "음, 다른 곳을 알아볼게요. 고마워요.", "next": "end_other" }
+      ]
+    },
+    {
+      "id": "breakfast_q",
+      "stage": "예약 확인",
+      "text": "Yes, breakfast is included. It's served from seven to ten.",
+      "pron": "예스, 브렉퍼스트 이즈 인클루디드. 잇츠 서브드 프럼 세븐 투 텐.",
+      "trans": "네, 조식 포함이에요. 7시부터 10시까지 드실 수 있어요.",
+      "replies": [
+        { "id": "breakfast_q_1", "text": "Perfect. I'll take it.", "pron": "퍼펙트. 아일 테이크 잇.", "trans": "좋아요. 그 방으로 할게요.", "next": "passport" }
+      ]
+    },
+    {
+      "id": "passport",
+      "stage": "신분 확인",
+      "text": "Thank you. Could I see your passport, please?",
+      "pron": "땡큐. 쿠드 아이 씨 유어 패스포트, 플리즈?",
+      "trans": "감사합니다. 여권 좀 보여 주시겠어요?",
+      "replies": [
+        { "id": "passport_1", "text": "Here you are.", "pron": "히어 유 아.", "trans": "여기 있어요.", "next": "room_pref" }
+      ]
+    },
+    {
+      "id": "room_pref",
+      "stage": "객실 선택",
+      "text": "Would you like a room with a city view, or a quiet room facing the garden?",
+      "pron": "우쥬 라이크 어 룸 위드 어 시티 뷰, 오어 어 콰이엇 룸 페이싱 더 가든?",
+      "trans": "시내 전망 객실이 좋으세요, 아니면 정원 쪽 조용한 객실이 좋으세요?",
+      "replies": [
+        { "id": "room_pref_1", "text": "A city view, please.", "pron": "어 시티 뷰, 플리즈.", "trans": "시내 전망으로 주세요.", "next": "key" },
+        { "id": "room_pref_2", "text": "A quiet room, please.", "pron": "어 콰이엇 룸, 플리즈.", "trans": "조용한 방으로 주세요.", "next": "key" }
+      ]
+    },
+    {
+      "id": "key",
+      "stage": "키 받기",
+      "text": "Here's your key card. Your room is on the eighth floor.",
+      "pron": "히어즈 유어 키 카드. 유어 룸 이즈 온 디 에잇쓰 플로어.",
+      "trans": "카드 키 여기 있어요. 객실은 8층이에요.",
+      "replies": [
+        { "id": "key_1", "text": "What time is checkout?", "pron": "왓 타임 이즈 체크아웃?", "trans": "체크아웃은 몇 시예요?", "next": "checkout" },
+        { "id": "key_2", "text": "Where is the elevator?", "pron": "웨어 이즈 디 엘리베이터?", "trans": "엘리베이터는 어디 있어요?", "next": "elevator" },
+        { "id": "key_3", "text": "Is there Wi-Fi in the room?", "pron": "이즈 데어 와이파이 인 더 룸?", "trans": "방에 와이파이 있나요?", "next": "wifi" }
+      ]
+    },
+    {
+      "id": "checkout",
+      "stage": "이용 안내",
+      "text": "Checkout is at eleven in the morning.",
+      "pron": "체크아웃 이즈 앳 일레븐 인 더 모닝.",
+      "trans": "체크아웃은 오전 11시예요.",
+      "replies": [
+        { "id": "checkout_1", "text": "Can I leave my bags here after checkout?", "pron": "캔 아이 리브 마이 백즈 히어 애프터 체크아웃?", "trans": "체크아웃 후에 짐을 맡길 수 있나요?", "next": "luggage" },
+        { "id": "checkout_2", "text": "Got it. Thank you.", "pron": "갓 잇. 땡큐.", "trans": "알겠어요. 고마워요.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "luggage",
+      "stage": "이용 안내",
+      "text": "Of course. We can keep your bags at the front desk.",
+      "pron": "오브 코스. 위 캔 킵 유어 백즈 앳 더 프런트 데스크.",
+      "trans": "물론이죠. 프런트에서 짐을 보관해 드릴게요.",
+      "replies": [
+        { "id": "luggage_1", "text": "Perfect, thank you.", "pron": "퍼펙트, 땡큐.", "trans": "좋아요, 고마워요.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "elevator",
+      "stage": "이용 안내",
+      "text": "The elevator is just around the corner, on your right.",
+      "pron": "디 엘리베이터 이즈 저스트 어라운드 더 코너, 온 유어 라잇.",
+      "trans": "엘리베이터는 모퉁이 돌아서 바로 오른쪽에 있어요.",
+      "replies": [
+        { "id": "elevator_1", "text": "Thank you.", "pron": "땡큐.", "trans": "감사합니다.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "wifi",
+      "stage": "이용 안내",
+      "text": "Yes, it's free. The password is on the back of your key card.",
+      "pron": "예스, 잇츠 프리. 더 패스워드 이즈 온 더 백 오브 유어 키 카드.",
+      "trans": "네, 무료예요. 비밀번호는 카드 키 뒷면에 있어요.",
+      "replies": [
+        { "id": "wifi_1", "text": "Great, thanks.", "pron": "그레잇, 땡스.", "trans": "좋네요, 고마워요.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "anything",
+      "stage": "마무리",
+      "text": "Is there anything else I can help you with?",
+      "pron": "이즈 데어 에니띵 엘스 아이 캔 헬프 유 위드?",
+      "trans": "더 도와드릴 일이 있을까요?",
+      "replies": [
+        { "id": "anything_1", "text": "No, that's all. Thank you!", "pron": "노, 댓츠 올. 땡큐!", "trans": "아니요, 그게 다예요. 고마워요!", "next": "end_stay" },
+        { "id": "anything_2", "text": "Can you recommend a good restaurant nearby?", "pron": "캔 유 레커멘드 어 굿 레스토랑 니어바이?", "trans": "근처에 괜찮은 식당 추천해 주실 수 있나요?", "next": "nearby" }
+      ]
+    },
+    {
+      "id": "nearby",
+      "stage": "마무리",
+      "text": "There's a nice local place just two blocks away. I'll mark it on a map for you.",
+      "pron": "데어즈 어 나이스 로컬 플레이스 저스트 투 블록스 어웨이. 아일 마크 잇 온 어 맵 포 유.",
+      "trans": "두 블록 떨어진 곳에 괜찮은 현지 식당이 있어요. 지도에 표시해 드릴게요.",
+      "replies": [
+        { "id": "nearby_1", "text": "That would be great. Thanks!", "pron": "댓 우드 비 그레잇. 땡스!", "trans": "그러면 좋겠어요. 고마워요!", "next": "end_stay" }
+      ]
+    },
+    {
+      "id": "end_stay",
+      "stage": "마무리",
+      "text": "You're welcome. Enjoy your stay!",
+      "pron": "유어 웰컴. 인조이 유어 스테이!",
+      "trans": "천만에요. 즐거운 시간 보내세요!",
+      "replies": []
+    },
+    {
+      "id": "end_other",
+      "stage": "마무리",
+      "text": "No problem. Have a good night, and safe travels!",
+      "pron": "노 프라블럼. 해브 어 굿 나잇, 앤 세이프 트래블즈!",
+      "trans": "괜찮아요. 좋은 밤 되시고, 안전한 여행 되세요!",
+      "replies": []
+    }
+  ]
+}

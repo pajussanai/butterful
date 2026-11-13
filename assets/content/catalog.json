@@ -1,0 +1,29 @@
+{
+  "languages": [
+    { "code": "en", "name": "영어", "native": "English", "variant": "미국식", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
+    { "code": "ja", "name": "일본어", "native": "日本語", "variant": "도쿄 표준어", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
+    { "code": "ko", "name": "한국어", "native": "Korean", "variant": "서울 표준어", "pronLabel": "로마자 발음", "transLabel": "영어 번역", "content": ["restaurant", "hotel"] },
+    { "code": "zh", "name": "중국어", "native": "中文", "variant": "표준 보통화", "pronLabel": "병음", "transLabel": "한국어 번역", "content": [] },
+    { "code": "fr", "name": "프랑스어", "native": "Français", "variant": "프랑스 본토", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": [] },
+    { "code": "es", "name": "스페인어", "native": "Español", "variant": "스페인 본토", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": [] }
+  ],
+  "categories": [
+    { "id": "travel", "name": "여행" },
+    { "id": "restaurant", "name": "식당·카페" },
+    { "id": "shopping", "name": "쇼핑" },
+    { "id": "daily", "name": "일상생활" },
+    { "id": "work", "name": "직장·업무" }
+  ],
+  "scenarios": [
+    { "id": "restaurant", "category": "restaurant", "title": "식당에서 주문하기", "summary": "입장, 자리 안내, 메뉴, 주문, 추가 요청, 계산까지", "role": "식당 직원" },
+    { "id": "hotel", "category": "travel", "title": "호텔 체크인", "summary": "예약 확인, 여권, 객실 선택, 이용 안내까지", "role": "호텔 프런트 직원" }
+  ],
+  "characters": [
+    { "id": "mia", "name": "Mia", "nameKo": "미아", "personality": "밝고 다정해요", "style": "또박또박 친절하게 말해요", "voice": "F1", "speed": 1.0 },
+    { "id": "leo", "name": "Leo", "nameKo": "레오", "personality": "차분하고 여유로워요", "style": "천천히 부드럽게 말해요", "voice": "M1", "speed": 0.92 },
+    { "id": "hana", "name": "Hana", "nameKo": "하나", "personality": "꼼꼼하고 정중해요", "style": "격식 있게 또렷하게 말해요", "voice": "F2", "speed": 0.98 },
+    { "id": "theo", "name": "Theo", "nameKo": "테오", "personality": "유쾌하고 활기차요", "style": "밝고 경쾌하게 말해요", "voice": "M2", "speed": 1.06 },
+    { "id": "ellie", "name": "Ellie", "nameKo": "엘리", "personality": "느긋하고 상냥해요", "style": "편안한 속도로 다정하게 말해요", "voice": "F3", "speed": 0.95 }
+  ],
+  "guide": { "id": "guide", "voice": "M4", "speed": 0.97 }
+}
