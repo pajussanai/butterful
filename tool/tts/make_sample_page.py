@@ -35,7 +35,7 @@ def main() -> None:
 
     parts = []
     for lang, items in rows.items():
-        parts.append(f"<h2>{LANG[lang]}</h2><p class='t'>{html.escape(TEXT[lang])}</p><table>")
+        parts.append(f"<h2>{LANG[lang]}</h2><p class='t'>{html.escape(TEXT[lang])}</p><div class='wrap'><table>")
         parts.append("<tr><th>엔진</th><th>목소리</th><th>듣기</th><th>음성 길이</th><th>생성 시간(CPU)</th></tr>")
         for engine, voice, mp3, audio, gen, rtf in items:
             parts.append(
@@ -43,7 +43,7 @@ def main() -> None:
                 f"<td><audio controls preload='none' src='{mp3}'></audio></td>"
                 f"<td>{audio:.1f}초</td><td>{gen:.1f}초 (×{rtf:.1f})</td></tr>"
             )
-        parts.append("</table>")
+        parts.append("</table></div>")
 
     page = f"""<!DOCTYPE html>
 <html lang="ko"><head><meta charset="utf-8">
@@ -54,7 +54,7 @@ def main() -> None:
 body{{font-family:-apple-system,"Segoe UI",Roboto,"Noto Sans KR",sans-serif;background:#FFF9EE;color:#2A2420;margin:0;padding:24px 16px 60px}}
 main{{max-width:880px;margin:0 auto}} h1{{font-size:24px}} h2{{margin-top:36px;font-size:19px}}
 .t{{background:#fff;border:1px solid #EFE4D3;border-radius:14px;padding:12px 14px}}
-table{{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;font-size:14px}}
+.wrap{{overflow-x:auto;border-radius:14px}} table{{min-width:640px;width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;font-size:14px}}
 th,td{{padding:8px 10px;border-bottom:1px solid #EFE4D3;text-align:left}} th{{background:#FFF0BF}}
 audio{{width:220px;height:36px}} .note{{color:#6E5A4B;line-height:1.7;font-size:14px}}
 a{{color:#E46F3A}}
