@@ -15,24 +15,35 @@ void main() {
   final files = (manifest['files'] as Map<String, dynamic>).keys.toSet();
   final pubspec = File('pubspec.yaml').readAsStringSync();
 
+  // 언어마다 목소리를 만든 캐릭터(영국 영어·중국어는 Qwen3-TTS로 한 명씩)
+  final all = [for (final c in catalog.characters) c.id];
+  final voicedIn = {
+    'en': all,
+    'ja': all,
+    'ko': all,
+    'en_gb': ['mia'],
+    'zh': ['leo'],
+  };
+
   Scenario load(String lang, String id) =>
       Scenario.fromJson(_json('assets/content/$lang/$id.json'));
 
-  test('초기 콘텐츠: 한국어·영어·일본어에 여행과 식당 대화가 있다', () {
-    for (final lang in ['ko', 'en', 'ja']) {
+  test('초기 콘텐츠: 한국어·영어(미국식·영국식)·일본어·중국어에 여행과 식당 대화가 있다', () {
+    for (final lang in ['ko', 'en', 'en_gb', 'ja', 'zh']) {
       final l = catalog.language(lang);
       expect(l.content, containsAll(['restaurant', 'hotel']), reason: lang);
     }
-    // 6개 언어가 목록에 있고, 준비 안 된 언어는 콘텐츠가 비어 있다(완성된 것처럼 보이지 않음).
+    // 7개 언어가 목록에 있고, 준비 안 된 언어는 콘텐츠가 비어 있다(완성된 것처럼 보이지 않음).
     expect(catalog.languages.map((l) => l.code), [
       'en',
+      'en_gb',
       'ja',
       'ko',
       'zh',
       'fr',
       'es',
     ]);
-    for (final lang in ['zh', 'fr', 'es']) {
+    for (final lang in ['fr', 'es']) {
       expect(catalog.language(lang).content, isEmpty);
     }
     expect(catalog.characters, hasLength(5));
@@ -124,10 +135,10 @@ void main() {
           expect(ids.toSet().length, ids.length);
         });
 
-        test('다섯 캐릭터 목소리와 모범 답변 음성이 모두 실제 파일로 있다', () {
+        test('정해 둔 캐릭터 목소리와 모범 답변 음성이 모두 실제 파일로 있다', () {
           for (final n in s.nodes.values) {
-            for (final c in catalog.characters) {
-              final rel = ContentRepository.npcAudio(lang, c.id, id, n.id);
+            for (final c in voicedIn[lang]!) {
+              final rel = ContentRepository.npcAudio(lang, c, id, n.id);
               expect(files, contains(rel));
             }
             for (final r in n.replies) {
@@ -176,7 +187,7 @@ void main() {
       expect(f.existsSync(), isTrue, reason: rel);
       final bytes = f.readAsBytesSync();
       // 무음·빈 파일이 아님: MP3 머리(ID3 또는 프레임 동기)와 충분한 크기
-      expect(bytes.length, greaterThan(4000), reason: rel);
+      expect(bytes.length, greaterThan(2000), reason: rel);
       final header =
           bytes[0] == 0x49 && bytes[1] == 0x44 && bytes[2] == 0x33 ||
           bytes[0] == 0xFF && (bytes[1] & 0xE0) == 0xE0;

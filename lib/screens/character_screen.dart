@@ -98,7 +98,8 @@ class _CharacterScreenState extends State<CharacterScreen> {
   @override
   Widget build(BuildContext context) {
     final repo = widget.services.repo;
-    final characters = repo.catalog.characters;
+    // 언어마다 목소리가 준비된 캐릭터만 보여 준다(영국 영어·중국어는 한 명).
+    final characters = repo.voicedCharacters(widget.lang);
     final selected = _selected == null
         ? null
         : repo.catalog.character(_selected!);

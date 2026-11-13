@@ -1,0 +1,213 @@
+{
+  "id": "restaurant",
+  "lang": "en_gb",
+  "start": "welcome",
+  "nodes": [
+    {
+      "id": "welcome",
+      "stage": "입장",
+      "text": "Hello, welcome in! How many of you are there today?",
+      "pron": "헬로우, 웰컴 인! 하우 메니 오브 유 아- 데어 투데이?",
+      "trans": "안녕하세요, 어서 오세요! 오늘 몇 분이세요?",
+      "replies": [
+        { "id": "welcome_1", "text": "Just me, please.", "pron": "저스트 미, 플리-즈.", "trans": "저 혼자예요.", "next": "seat_solo" },
+        { "id": "welcome_2", "text": "Two of us, please.", "pron": "투- 오브 어스, 플리-즈.", "trans": "두 명이에요.", "next": "seat_two" },
+        { "id": "welcome_3", "text": "Have you got a table for four?", "pron": "해브 유 갓 어 테이블 포- 포-?", "trans": "네 명 앉을 자리 있나요?", "next": "full_four" }
+      ]
+    },
+    {
+      "id": "seat_solo",
+      "stage": "자리 안내",
+      "text": "Lovely. Would you prefer a table by the window, or a seat at the bar?",
+      "pron": "러블리. 우쥬 프리퍼- 어 테이블 바이 더 윈도우, 오- 어 씨-트 앳 더 바-?",
+      "trans": "좋아요. 창가 테이블이 좋으세요, 아니면 바 자리가 좋으세요?",
+      "replies": [
+        { "id": "seat_solo_1", "text": "By the window, please.", "pron": "바이 더 윈도우, 플리-즈.", "trans": "창가로 주세요.", "next": "menu" },
+        { "id": "seat_solo_2", "text": "The bar's fine, thanks.", "pron": "더 바-즈 파인, 땡스.", "trans": "바 자리도 괜찮아요, 고마워요.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "seat_two",
+      "stage": "자리 안내",
+      "text": "Brilliant. Follow me, please. Here's a table for two.",
+      "pron": "브릴리언트. 팔로우 미, 플리-즈. 히어즈 어 테이블 포- 투-.",
+      "trans": "좋습니다. 따라오세요. 두 분 자리 여기 있어요.",
+      "replies": [
+        { "id": "seat_two_1", "text": "Thank you.", "pron": "땡큐.", "trans": "감사합니다.", "next": "menu" },
+        { "id": "seat_two_2", "text": "Could we sit outside instead?", "pron": "쿠드 위 씻 아웃사이드 인스테드?", "trans": "대신 바깥에 앉아도 될까요?", "next": "outside" }
+      ]
+    },
+    {
+      "id": "full_four",
+      "stage": "인원 확인",
+      "text": "I'm sorry, we're quite busy at the moment. There's about a ten-minute wait. Is that all right?",
+      "pron": "아임 쏘리, 위어 콰잇 비지 앳 더 모먼트. 데어즈 어바웃 어 텐 미닛 웨잇. 이즈 댓 올- 라잇?",
+      "trans": "죄송해요, 지금 꽤 바빠서요. 10분 정도 기다리셔야 하는데 괜찮으세요?",
+      "replies": [
+        { "id": "full_four_1", "text": "That's fine, we'll wait.", "pron": "댓츠 파인, 윌 웨잇.", "trans": "괜찮아요, 기다릴게요.", "next": "after_wait" },
+        { "id": "full_four_2", "text": "Not to worry. Maybe another time.", "pron": "낫 투 워리. 메이비 어나더 타임.", "trans": "괜찮아요. 다음에 올게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "outside",
+      "stage": "자리 안내",
+      "text": "Of course. The garden's open today. Come this way.",
+      "pron": "오브 코-스. 더 가-든즈 오픈 투데이. 컴 디스 웨이.",
+      "trans": "물론이죠. 오늘은 정원 자리도 열려 있어요. 이쪽으로 오세요.",
+      "replies": [
+        { "id": "outside_1", "text": "Lovely, thanks.", "pron": "러블리, 땡스.", "trans": "좋네요, 고마워요.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "after_wait",
+      "stage": "자리 안내",
+      "text": "Thanks for waiting! Your table's ready now. This way, please.",
+      "pron": "땡스 포- 웨이팅! 유어 테이블즈 레디 나우. 디스 웨이, 플리-즈.",
+      "trans": "기다려 주셔서 감사해요! 자리가 준비됐어요. 이쪽으로 오세요.",
+      "replies": [
+        { "id": "after_wait_1", "text": "Thank you.", "pron": "땡큐.", "trans": "감사합니다.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "menu",
+      "stage": "메뉴 확인",
+      "text": "Here's the menu. Can I get you anything to drink to start with?",
+      "pron": "히어즈 더 메뉴-. 캔 아이 겟 유 에니띵 투 드링크 투 스타-트 위드?",
+      "trans": "메뉴 여기 있어요. 먼저 마실 것 좀 드릴까요?",
+      "replies": [
+        { "id": "menu_1", "text": "Just tap water, please.", "pron": "저스트 탭 워-터, 플리-즈.", "trans": "그냥 물만 주세요.", "next": "order" },
+        { "id": "menu_2", "text": "What would you recommend?", "pron": "왓 우쥬 레커멘드?", "trans": "뭘 추천하세요?", "next": "recommend" }
+      ]
+    },
+    {
+      "id": "recommend",
+      "stage": "메뉴 확인",
+      "text": "Our lemonade's homemade, and the pasta of the day is really popular.",
+      "pron": "아워 레머네이즈 홈메이드, 앤 더 패스터 오브 더 데이 이즈 리얼리 파퓰러.",
+      "trans": "레모네이드는 직접 만든 거고, 오늘의 파스타가 정말 인기 있어요.",
+      "replies": [
+        { "id": "recommend_1", "text": "I'll try the lemonade.", "pron": "아일 트라이 더 레머네이드.", "trans": "레모네이드 마셔 볼게요.", "next": "order" },
+        { "id": "recommend_2", "text": "Sounds good. I'll have the pasta.", "pron": "사운즈 굿. 아일 해브 더 패스터.", "trans": "좋네요. 파스타로 할게요.", "next": "order_more" }
+      ]
+    },
+    {
+      "id": "order",
+      "stage": "음식 주문",
+      "text": "Are you ready to order, or would you like a few more minutes?",
+      "pron": "아- 유 레디 투 오-더, 오- 우쥬 라이크 어 퓨- 모- 미니츠?",
+      "trans": "주문하시겠어요, 아니면 조금 더 보시겠어요?",
+      "replies": [
+        { "id": "order_1", "text": "I'll have the chicken salad, please.", "pron": "아일 해브 더 치킨 샐러드, 플리-즈.", "trans": "치킨 샐러드로 주세요.", "next": "order_more" },
+        { "id": "order_2", "text": "Could I have a few more minutes?", "pron": "쿠드 아이 해브 어 퓨- 모- 미니츠?", "trans": "조금만 더 볼게요.", "next": "later" }
+      ]
+    },
+    {
+      "id": "later",
+      "stage": "음식 주문",
+      "text": "No problem. Take your time, and just give me a shout when you're ready.",
+      "pron": "노우 프로블럼. 테이크 유어 타임, 앤 저스트 기브 미 어 샤웃 웬 유어 레디.",
+      "trans": "괜찮아요. 천천히 보시고 준비되면 불러 주세요.",
+      "replies": [
+        { "id": "later_1", "text": "Excuse me, I'll have the pasta, please.", "pron": "익스큐-즈 미, 아일 해브 더 패스터, 플리-즈.", "trans": "저기요, 파스타로 주세요.", "next": "order_more" }
+      ]
+    },
+    {
+      "id": "order_more",
+      "stage": "음식 주문",
+      "text": "Lovely choice. Anything else for you?",
+      "pron": "러블리 초이스. 에니띵 엘스 포- 유?",
+      "trans": "좋은 선택이에요. 더 필요하신 건요?",
+      "replies": [
+        { "id": "order_more_1", "text": "That's everything, thanks.", "pron": "댓츠 에브리띵, 땡스.", "trans": "그게 다예요, 고마워요.", "next": "food" },
+        { "id": "order_more_2", "text": "Could I have some extra bread?", "pron": "쿠드 아이 해브 썸 엑스트러 브레드?", "trans": "빵 좀 더 주실 수 있나요?", "next": "extra" }
+      ]
+    },
+    {
+      "id": "extra",
+      "stage": "추가 요청",
+      "text": "Of course. I'll bring some over straight away.",
+      "pron": "오브 코-스. 아일 브링 썸 오우버 스트레잇 어웨이.",
+      "trans": "물론이죠. 바로 가져다드릴게요.",
+      "replies": [
+        { "id": "extra_1", "text": "Thanks very much.", "pron": "땡스 베리 머치.", "trans": "정말 고마워요.", "next": "food" }
+      ]
+    },
+    {
+      "id": "food",
+      "stage": "식사",
+      "text": "Here's your food. Enjoy your meal!",
+      "pron": "히어즈 유어 푸-드. 인조이 유어 밀-!",
+      "trans": "음식 나왔습니다. 맛있게 드세요!",
+      "replies": [
+        { "id": "food_1", "text": "Thank you! It looks delicious.", "pron": "땡큐! 잇 룩스 딜리셔스.", "trans": "고마워요! 맛있어 보여요.", "next": "check_ask" }
+      ]
+    },
+    {
+      "id": "check_ask",
+      "stage": "추가 요청",
+      "text": "How was everything? Can I get you anything else?",
+      "pron": "하우 워즈 에브리띵? 캔 아이 겟 유 에니띵 엘스?",
+      "trans": "식사는 어떠셨어요? 더 필요한 거 있으세요?",
+      "replies": [
+        { "id": "check_ask_1", "text": "Could we have the bill, please?", "pron": "쿠드 위 해브 더 빌, 플리-즈?", "trans": "계산서 주시겠어요?", "next": "check" },
+        { "id": "check_ask_2", "text": "Could I see the dessert menu?", "pron": "쿠드 아이 씨- 더 디저-트 메뉴-?", "trans": "디저트 메뉴 볼 수 있을까요?", "next": "dessert" },
+        { "id": "check_ask_3", "text": "Could I take the rest away?", "pron": "쿠드 아이 테이크 더 레스트 어웨이?", "trans": "남은 거 포장해 갈 수 있을까요?", "next": "box" }
+      ]
+    },
+    {
+      "id": "dessert",
+      "stage": "추가 요청",
+      "text": "Here you are. The sticky toffee pudding is my favourite.",
+      "pron": "히어 유 아-. 더 스티키 토피 푸딩 이즈 마이 페이버릿.",
+      "trans": "여기 있어요. 저는 스티키 토피 푸딩을 제일 좋아해요.",
+      "replies": [
+        { "id": "dessert_1", "text": "I'll have that, and the bill, please.", "pron": "아일 해브 댓, 앤 더 빌, 플리-즈.", "trans": "그걸로 할게요. 계산서도 같이 주세요.", "next": "check" }
+      ]
+    },
+    {
+      "id": "box",
+      "stage": "추가 요청",
+      "text": "Of course, I'll get you a box for that.",
+      "pron": "오브 코-스, 아일 겟 유 어 박스 포- 댓.",
+      "trans": "물론이죠, 포장 용기 가져다드릴게요.",
+      "replies": [
+        { "id": "box_1", "text": "Thanks. And the bill, please.", "pron": "땡스. 앤 더 빌, 플리-즈.", "trans": "고마워요. 계산서도 주세요.", "next": "check" }
+      ]
+    },
+    {
+      "id": "check",
+      "stage": "계산",
+      "text": "Here's your bill. Would you like to pay by card or cash?",
+      "pron": "히어즈 유어 빌. 우쥬 라이크 투 페이 바이 카-드 오- 캐시?",
+      "trans": "계산서 여기 있어요. 카드로 하시겠어요, 현금으로 하시겠어요?",
+      "replies": [
+        { "id": "check_1", "text": "By card, please.", "pron": "바이 카-드, 플리-즈.", "trans": "카드로 할게요.", "next": "card" },
+        { "id": "check_2", "text": "Cash, please.", "pron": "캐시, 플리-즈.", "trans": "현금으로 할게요.", "next": "cash" }
+      ]
+    },
+    {
+      "id": "card",
+      "stage": "계산",
+      "text": "Thank you. Here's your receipt. Have a lovely day!",
+      "pron": "땡큐. 히어즈 유어 리씨-트. 해브 어 러블리 데이!",
+      "trans": "감사합니다. 영수증 여기 있어요. 좋은 하루 보내세요!",
+      "replies": []
+    },
+    {
+      "id": "cash",
+      "stage": "계산",
+      "text": "Thank you. Here's your change. Do come again!",
+      "pron": "땡큐. 히어즈 유어 체인지. 두 컴 어겐!",
+      "trans": "감사합니다. 거스름돈 여기 있어요. 꼭 또 오세요!",
+      "replies": []
+    },
+    {
+      "id": "end_leave",
+      "stage": "인원 확인",
+      "text": "Not a problem. Hope to see you soon. Have a lovely day!",
+      "pron": "낫 어 프로블럼. 호웁 투 씨- 유 쑨-. 해브 어 러블리 데이!",
+      "trans": "괜찮아요. 곧 또 뵙길 바라요. 좋은 하루 보내세요!",
+      "replies": []
+    }
+  ]
+}

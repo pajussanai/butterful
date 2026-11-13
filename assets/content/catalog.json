@@ -1,9 +1,10 @@
 {
   "languages": [
     { "code": "en", "name": "영어", "native": "English", "variant": "미국식", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
+    { "code": "en_gb", "name": "영어", "native": "English", "variant": "영국식", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
     { "code": "ja", "name": "일본어", "native": "日本語", "variant": "도쿄 표준어", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
     { "code": "ko", "name": "한국어", "native": "Korean", "variant": "서울 표준어", "pronLabel": "로마자 발음", "transLabel": "영어 번역", "content": ["restaurant", "hotel"] },
-    { "code": "zh", "name": "중국어", "native": "中文", "variant": "표준 보통화", "pronLabel": "병음", "transLabel": "한국어 번역", "content": [] },
+    { "code": "zh", "name": "중국어", "native": "中文", "variant": "표준 보통화", "pronLabel": "병음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
     { "code": "fr", "name": "프랑스어", "native": "Français", "variant": "프랑스 본토", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": [] },
     { "code": "es", "name": "스페인어", "native": "Español", "variant": "스페인 본토", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": [] }
   ],

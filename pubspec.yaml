@@ -28,6 +28,8 @@ flutter:
     - assets/content/en/
     - assets/content/ja/
     - assets/content/ko/
+    - assets/content/en_gb/
+    - assets/content/zh/
     - assets/audio/
     - assets/audio/en/mia/
     - assets/audio/en/leo/
@@ -47,3 +49,7 @@ flutter:
     - assets/audio/ko/theo/
     - assets/audio/ko/ellie/
     - assets/audio/ko/guide/
+    - assets/audio/en_gb/mia/
+    - assets/audio/en_gb/guide/
+    - assets/audio/zh/leo/
+    - assets/audio/zh/guide/

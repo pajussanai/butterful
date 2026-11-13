@@ -1127,6 +1127,516 @@
    "sec": 3.83,
    "voice": "M2"
   },
+  "en_gb/guide/hotel__anything_1.mp3": {
+   "hash": "c7ddd16a8294",
+   "sec": 2.8,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__anything_2.mp3": {
+   "hash": "823ca1e57b2b",
+   "sec": 2.24,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__breakfast_q_1.mp3": {
+   "hash": "1e3718c0dfe8",
+   "sec": 1.92,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__checkout_1.mp3": {
+   "hash": "a637c24721d7",
+   "sec": 2.8,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__checkout_2.mp3": {
+   "hash": "c29b49744659",
+   "sec": 1.04,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__elevator_1.mp3": {
+   "hash": "ea694aa17300",
+   "sec": 0.96,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__greet_1.mp3": {
+   "hash": "0d9fac9f2cb0",
+   "sec": 2.4,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__greet_2.mp3": {
+   "hash": "279db54695ca",
+   "sec": 2.8,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__key_1.mp3": {
+   "hash": "908507f7145b",
+   "sec": 1.52,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__key_2.mp3": {
+   "hash": "f36703487569",
+   "sec": 1.04,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__key_3.mp3": {
+   "hash": "653eabe57699",
+   "sec": 1.76,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__luggage_1.mp3": {
+   "hash": "85c7988eb2ee",
+   "sec": 1.52,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__name_1.mp3": {
+   "hash": "b09d5ffd96b1",
+   "sec": 2.72,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__nearby_1.mp3": {
+   "hash": "f731e9cf8577",
+   "sec": 2.08,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__passport_1.mp3": {
+   "hash": "1de115ebb765",
+   "sec": 1.2,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__room_pref_1.mp3": {
+   "hash": "e7510ff3c8e2",
+   "sec": 1.92,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__room_pref_2.mp3": {
+   "hash": "b3f58b1017b7",
+   "sec": 1.76,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__walkin_1.mp3": {
+   "hash": "8ed3f2396615",
+   "sec": 1.6,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__walkin_2.mp3": {
+   "hash": "342c6fcf153e",
+   "sec": 2.08,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__walkin_3.mp3": {
+   "hash": "b4d5f06c3843",
+   "sec": 3.2,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/hotel__wifi_1.mp3": {
+   "hash": "8c397270a454",
+   "sec": 1.6,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__after_wait_1.mp3": {
+   "hash": "ea694aa17300",
+   "sec": 0.8,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__box_1.mp3": {
+   "hash": "568fbadd92f0",
+   "sec": 2.08,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__check_1.mp3": {
+   "hash": "39161c79e97c",
+   "sec": 1.36,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__check_2.mp3": {
+   "hash": "fa627b1234f5",
+   "sec": 1.92,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__check_ask_1.mp3": {
+   "hash": "10e59d766c15",
+   "sec": 2.16,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__check_ask_2.mp3": {
+   "hash": "2c0c0cda5a8b",
+   "sec": 1.84,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__check_ask_3.mp3": {
+   "hash": "c67f14e4ca12",
+   "sec": 1.68,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__dessert_1.mp3": {
+   "hash": "3db54e588930",
+   "sec": 2.4,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__extra_1.mp3": {
+   "hash": "eed60ef466d9",
+   "sec": 1.6,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__food_1.mp3": {
+   "hash": "1c6eb58dfff7",
+   "sec": 2.4,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__full_four_1.mp3": {
+   "hash": "ba2ced5a8bdd",
+   "sec": 1.76,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__full_four_2.mp3": {
+   "hash": "efc699ac0641",
+   "sec": 2.48,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__later_1.mp3": {
+   "hash": "d8549974a018",
+   "sec": 2.64,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__menu_1.mp3": {
+   "hash": "1533e900fcb9",
+   "sec": 1.36,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__menu_2.mp3": {
+   "hash": "51ed4e722e8f",
+   "sec": 1.12,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__order_1.mp3": {
+   "hash": "a2f791de7242",
+   "sec": 2.24,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__order_2.mp3": {
+   "hash": "d66933447294",
+   "sec": 1.52,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__order_more_1.mp3": {
+   "hash": "5a7444bc9f1f",
+   "sec": 2.08,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__order_more_2.mp3": {
+   "hash": "2e925072b3fc",
+   "sec": 1.76,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__outside_1.mp3": {
+   "hash": "e4eb862337ff",
+   "sec": 1.6,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__recommend_1.mp3": {
+   "hash": "dec23d19dc4a",
+   "sec": 1.28,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__recommend_2.mp3": {
+   "hash": "2f21f05135d3",
+   "sec": 2.56,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__seat_solo_1.mp3": {
+   "hash": "a35a8d6b7d1a",
+   "sec": 1.6,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__seat_solo_2.mp3": {
+   "hash": "82a8b3b2205a",
+   "sec": 2.08,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__seat_two_1.mp3": {
+   "hash": "ea694aa17300",
+   "sec": 1.04,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__seat_two_2.mp3": {
+   "hash": "f97bc3f858dd",
+   "sec": 1.92,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__welcome_1.mp3": {
+   "hash": "6a0a9ff84d7f",
+   "sec": 1.52,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__welcome_2.mp3": {
+   "hash": "e36c91c7b503",
+   "sec": 1.84,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/guide/restaurant__welcome_3.mp3": {
+   "hash": "2f581d39e0f1",
+   "sec": 1.52,
+   "voice": "qwen:en_gb/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__anything.mp3": {
+   "hash": "e0e746f86713",
+   "sec": 2.08,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__breakfast_q.mp3": {
+   "hash": "69c2a08f9a77",
+   "sec": 4.4,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__checkout.mp3": {
+   "hash": "876a0e6db0bc",
+   "sec": 2.88,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__elevator.mp3": {
+   "hash": "b6b6b451d685",
+   "sec": 3.04,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__end_other.mp3": {
+   "hash": "25a1ec7f9781",
+   "sec": 3.92,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__end_stay.mp3": {
+   "hash": "400aabd59874",
+   "sec": 2.8,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__greet.mp3": {
+   "hash": "1d3638952667",
+   "sec": 4.08,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__key.mp3": {
+   "hash": "3877e255e96e",
+   "sec": 3.28,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__luggage.mp3": {
+   "hash": "296c3d181afc",
+   "sec": 3.2,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__name.mp3": {
+   "hash": "d00c07396758",
+   "sec": 3.52,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__nearby.mp3": {
+   "hash": "9a89b1092228",
+   "sec": 5.28,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__passport.mp3": {
+   "hash": "9bbe77b17743",
+   "sec": 2.4,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__room_pref.mp3": {
+   "hash": "3f6f7f6402a4",
+   "sec": 5.28,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__walkin.mp3": {
+   "hash": "fd925a070ee5",
+   "sec": 4.48,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/hotel__wifi.mp3": {
+   "hash": "04bae62a5561",
+   "sec": 3.36,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__after_wait.mp3": {
+   "hash": "005b826a13e5",
+   "sec": 3.68,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__box.mp3": {
+   "hash": "c69f19749ae9",
+   "sec": 2.0,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__card.mp3": {
+   "hash": "7f42ae16f6fb",
+   "sec": 4.88,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__cash.mp3": {
+   "hash": "aa1361b580a9",
+   "sec": 3.44,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__check.mp3": {
+   "hash": "a66ace3a84da",
+   "sec": 3.44,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__check_ask.mp3": {
+   "hash": "f4a1bba05546",
+   "sec": 3.2,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__dessert.mp3": {
+   "hash": "3342a35dcc67",
+   "sec": 3.68,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__end_leave.mp3": {
+   "hash": "e28926893454",
+   "sec": 3.6,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__extra.mp3": {
+   "hash": "b6d674e4d803",
+   "sec": 3.04,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__food.mp3": {
+   "hash": "f839d4123591",
+   "sec": 2.4,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__full_four.mp3": {
+   "hash": "465ea7547fe9",
+   "sec": 5.6,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__later.mp3": {
+   "hash": "849dee0eb0c8",
+   "sec": 4.0,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__menu.mp3": {
+   "hash": "18398a7b5d1a",
+   "sec": 3.44,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__order.mp3": {
+   "hash": "8542e26dacc1",
+   "sec": 2.96,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__order_more.mp3": {
+   "hash": "d3c8bd16f743",
+   "sec": 2.72,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__outside.mp3": {
+   "hash": "1b1bdbdeaf32",
+   "sec": 4.24,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__recommend.mp3": {
+   "hash": "15d03e52ea07",
+   "sec": 4.8,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__seat_solo.mp3": {
+   "hash": "09334cbea1aa",
+   "sec": 4.56,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__seat_two.mp3": {
+   "hash": "f26300d4108f",
+   "sec": 4.16,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "en_gb/mia/restaurant__welcome.mp3": {
+   "hash": "25ba716d9917",
+   "sec": 3.28,
+   "voice": "qwen:en_gb/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
   "ja/ellie/hotel__anything.mp3": {
    "hash": "bcb1baf96f42",
    "sec": 4.25,
@@ -3376,6 +3886,516 @@
    "hash": "3ac60851dcfa",
    "sec": 2.65,
    "voice": "M2"
+  },
+  "zh/guide/hotel__anything_1.mp3": {
+   "hash": "f684a227c982",
+   "sec": 2.32,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__anything_2.mp3": {
+   "hash": "7887ad6f4058",
+   "sec": 1.6,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__breakfast_q_1.mp3": {
+   "hash": "a3f069790254",
+   "sec": 1.76,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__checkout_1.mp3": {
+   "hash": "8df83b838960",
+   "sec": 2.56,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__checkout_2.mp3": {
+   "hash": "18bdc6ba02f9",
+   "sec": 1.52,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__elevator_1.mp3": {
+   "hash": "bbae93c07609",
+   "sec": 0.56,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__greet_1.mp3": {
+   "hash": "8e2756d70259",
+   "sec": 1.68,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__greet_2.mp3": {
+   "hash": "da217f5bf6b9",
+   "sec": 2.48,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__key_1.mp3": {
+   "hash": "0aecb009113d",
+   "sec": 0.96,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__key_2.mp3": {
+   "hash": "0e4f95d1987f",
+   "sec": 0.88,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__key_3.mp3": {
+   "hash": "0fa6be036b03",
+   "sec": 1.68,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__luggage_1.mp3": {
+   "hash": "45bad6de1f26",
+   "sec": 1.68,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__name_1.mp3": {
+   "hash": "b5599f9accb2",
+   "sec": 1.6,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__nearby_1.mp3": {
+   "hash": "24613579e949",
+   "sec": 1.84,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__passport_1.mp3": {
+   "hash": "b55871dedde6",
+   "sec": 0.64,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__room_pref_1.mp3": {
+   "hash": "28f7373562bb",
+   "sec": 1.52,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__room_pref_2.mp3": {
+   "hash": "2160d435fd2f",
+   "sec": 1.2,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__walkin_1.mp3": {
+   "hash": "efd634fa9799",
+   "sec": 1.6,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__walkin_2.mp3": {
+   "hash": "1c4ff46e457b",
+   "sec": 0.96,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__walkin_3.mp3": {
+   "hash": "fce2c397604f",
+   "sec": 3.68,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/hotel__wifi_1.mp3": {
+   "hash": "f2eec7730571",
+   "sec": 1.28,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__after_wait_1.mp3": {
+   "hash": "bbae93c07609",
+   "sec": 0.56,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__box_1.mp3": {
+   "hash": "bd27a820a9fe",
+   "sec": 2.16,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__check_1.mp3": {
+   "hash": "271842279a82",
+   "sec": 0.8,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__check_2.mp3": {
+   "hash": "b165dd3c0b2e",
+   "sec": 1.44,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__check_ask_1.mp3": {
+   "hash": "75794e216f97",
+   "sec": 1.12,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__check_ask_2.mp3": {
+   "hash": "ec8e57c8e04d",
+   "sec": 1.76,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__check_ask_3.mp3": {
+   "hash": "9826820c35f5",
+   "sec": 1.28,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__dessert_1.mp3": {
+   "hash": "54e28efb2c7e",
+   "sec": 2.08,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__extra_1.mp3": {
+   "hash": "fa727eba6b35",
+   "sec": 0.88,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__food_1.mp3": {
+   "hash": "8ce111ab88a3",
+   "sec": 2.32,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__full_four_1.mp3": {
+   "hash": "56b2569dec35",
+   "sec": 1.76,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__full_four_2.mp3": {
+   "hash": "e542e6b77e80",
+   "sec": 2.0,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__later_1.mp3": {
+   "hash": "cfe4d6724e02",
+   "sec": 2.16,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__menu_1.mp3": {
+   "hash": "3df67a115ea0",
+   "sec": 1.04,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__menu_2.mp3": {
+   "hash": "62d64cb6aa9f",
+   "sec": 1.2,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__order_1.mp3": {
+   "hash": "d1decc967964",
+   "sec": 2.08,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__order_2.mp3": {
+   "hash": "05e8515fd069",
+   "sec": 1.04,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__order_more_1.mp3": {
+   "hash": "33ad809303e2",
+   "sec": 1.76,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__order_more_2.mp3": {
+   "hash": "627d4600ae59",
+   "sec": 1.2,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__outside_1.mp3": {
+   "hash": "45bad6de1f26",
+   "sec": 1.36,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__recommend_1.mp3": {
+   "hash": "4bd724624f5e",
+   "sec": 1.44,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__recommend_2.mp3": {
+   "hash": "fcb3811f8375",
+   "sec": 2.48,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__seat_solo_1.mp3": {
+   "hash": "2d6583af1d37",
+   "sec": 0.8,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__seat_solo_2.mp3": {
+   "hash": "d9dc7ce18690",
+   "sec": 0.96,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__seat_two_1.mp3": {
+   "hash": "bbae93c07609",
+   "sec": 0.72,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__seat_two_2.mp3": {
+   "hash": "c10c12df8aef",
+   "sec": 1.04,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__welcome_1.mp3": {
+   "hash": "c34dfcbe6895",
+   "sec": 1.04,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__welcome_2.mp3": {
+   "hash": "950e55b15b22",
+   "sec": 0.88,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/guide/restaurant__welcome_3.mp3": {
+   "hash": "e5c600562977",
+   "sec": 2.0,
+   "voice": "qwen:zh/guide_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__anything.mp3": {
+   "hash": "4cfd529931a5",
+   "sec": 1.92,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__breakfast_q.mp3": {
+   "hash": "abbb6a2ad4c7",
+   "sec": 3.28,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__checkout.mp3": {
+   "hash": "e8e86ad1ecc3",
+   "sec": 2.24,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__elevator.mp3": {
+   "hash": "62852dc6dce9",
+   "sec": 2.72,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__end_other.mp3": {
+   "hash": "f727e4e9ba0c",
+   "sec": 3.52,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__end_stay.mp3": {
+   "hash": "080f7ec09ff3",
+   "sec": 2.56,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__greet.mp3": {
+   "hash": "61b38214fe3a",
+   "sec": 4.88,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__key.mp3": {
+   "hash": "7e7c9237e971",
+   "sec": 3.36,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__luggage.mp3": {
+   "hash": "2e7118ac82c0",
+   "sec": 3.36,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__name.mp3": {
+   "hash": "3f247a4b3401",
+   "sec": 2.64,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__nearby.mp3": {
+   "hash": "78e157f61cee",
+   "sec": 5.52,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__passport.mp3": {
+   "hash": "89853c063a7f",
+   "sec": 3.12,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__room_pref.mp3": {
+   "hash": "2353953c1b07",
+   "sec": 4.72,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__walkin.mp3": {
+   "hash": "6c8b59cb2418",
+   "sec": 4.8,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/hotel__wifi.mp3": {
+   "hash": "613ff182db93",
+   "sec": 3.84,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__after_wait.mp3": {
+   "hash": "99f7689b29f0",
+   "sec": 3.92,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__box.mp3": {
+   "hash": "a8e39a377467",
+   "sec": 2.96,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__card.mp3": {
+   "hash": "d406cfc46476",
+   "sec": 4.8,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__cash.mp3": {
+   "hash": "85c548ac16cc",
+   "sec": 4.16,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__check.mp3": {
+   "hash": "68b294a92f97",
+   "sec": 3.12,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__check_ask.mp3": {
+   "hash": "88b9dcaf844d",
+   "sec": 2.4,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__dessert.mp3": {
+   "hash": "9aeaed9f8ac6",
+   "sec": 3.6,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__end_leave.mp3": {
+   "hash": "ba10873a3cf9",
+   "sec": 3.52,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__extra.mp3": {
+   "hash": "3bdf910df53b",
+   "sec": 3.12,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__food.mp3": {
+   "hash": "1ae4b0499da6",
+   "sec": 2.48,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__full_four.mp3": {
+   "hash": "c59a474ddb8d",
+   "sec": 5.6,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__later.mp3": {
+   "hash": "1ff88f62b1c3",
+   "sec": 3.68,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__menu.mp3": {
+   "hash": "dcd3ba21c1bd",
+   "sec": 2.88,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__order.mp3": {
+   "hash": "718749d79354",
+   "sec": 4.56,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__order_more.mp3": {
+   "hash": "e40e30526577",
+   "sec": 2.16,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__outside.mp3": {
+   "hash": "8bdd40329e05",
+   "sec": 4.8,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__recommend.mp3": {
+   "hash": "fdd8ca93e18d",
+   "sec": 4.48,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__seat_solo.mp3": {
+   "hash": "79f9b2eedd1f",
+   "sec": 4.32,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__seat_two.mp3": {
+   "hash": "f8d32efbce93",
+   "sec": 3.36,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/leo/restaurant__welcome.mp3": {
+   "hash": "27b016906a86",
+   "sec": 2.64,
+   "voice": "qwen:zh/leo_0",
+   "engine": "qwen3-tts-0.6b-base"
   }
  }
 }

@@ -1,0 +1,161 @@
+{
+  "id": "hotel",
+  "lang": "zh",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "프런트 도착",
+      "text": "晚上好，欢迎光临。请问您是办理入住吗？",
+      "pron": "Wǎnshang hǎo, huānyíng guānglín. Qǐngwèn nín shì bànlǐ rùzhù ma?\n완상 하오, 환잉 광린. 칭원 닌 스 반리 루주 마?",
+      "trans": "안녕하세요, 어서 오세요. 체크인하시나요?",
+      "replies": [
+        { "id": "greet_1", "text": "是的，我有预订。", "pron": "Shì de, wǒ yǒu yùdìng.\n스 더, 워 여우 위딩.", "trans": "네, 예약했어요.", "next": "name" },
+        { "id": "greet_2", "text": "不是。今晚还有空房吗？", "pron": "Bú shì. Jīnwǎn hái yǒu kòngfáng ma?\n부 스. 진완 하이 여우 쿵팡 마?", "trans": "아니요. 오늘 밤 빈방 있나요?", "next": "walkin" }
+      ]
+    },
+    {
+      "id": "name",
+      "stage": "예약 확인",
+      "text": "好的，请问您贵姓？",
+      "pron": "Hǎo de, qǐngwèn nín guìxìng?\n하오 더, 칭원 닌 꾸이싱?",
+      "trans": "네, 성함이 어떻게 되세요?",
+      "replies": [
+        { "id": "name_1", "text": "我叫金民俊。", "pron": "Wǒ jiào Jīn Mínjùn.\n워 자오 진 민쥔.", "trans": "김민준이에요.", "next": "passport" }
+      ]
+    },
+    {
+      "id": "walkin",
+      "stage": "예약 확인",
+      "text": "我帮您查一下。今晚还剩一间大床房，您要吗？",
+      "pron": "Wǒ bāng nín chá yíxià. Jīnwǎn hái shèng yì jiān dàchuángfáng, nín yào ma?\n워 방 닌 차 이샤. 진완 하이 성 이 젠 따촹팡, 닌 야오 마?",
+      "trans": "확인해 드릴게요. 오늘 밤 더블룸이 하나 남아 있는데, 하시겠어요?",
+      "replies": [
+        { "id": "walkin_1", "text": "好，就要这间。", "pron": "Hǎo, jiù yào zhè jiān.\n하오, 지우 야오 저 젠.", "trans": "네, 그 방으로 할게요.", "next": "passport" },
+        { "id": "walkin_2", "text": "含早餐吗？", "pron": "Hán zǎocān ma?\n한 짜오찬 마?", "trans": "조식 포함인가요?", "next": "breakfast_q" },
+        { "id": "walkin_3", "text": "嗯，我再去别家看看吧，谢谢。", "pron": "Èng, wǒ zài qù bié jiā kànkan ba, xièxie.\n응, 워 짜이 취 볘 자 칸칸 바, 셰셰.", "trans": "음, 다른 데 좀 알아볼게요. 감사합니다.", "next": "end_other" }
+      ]
+    },
+    {
+      "id": "breakfast_q",
+      "stage": "예약 확인",
+      "text": "含早餐的，早上七点到十点供应。",
+      "pron": "Hán zǎocān de, zǎoshang qī diǎn dào shí diǎn gōngyìng.\n한 짜오찬 더, 짜오상 치 뎬 따오 스 뎬 궁잉.",
+      "trans": "조식 포함이에요. 아침 7시부터 10시까지예요.",
+      "replies": [
+        { "id": "breakfast_q_1", "text": "太好了，就要这间。", "pron": "Tài hǎo le, jiù yào zhè jiān.\n타이 하오 러, 지우 야오 저 젠.", "trans": "잘됐네요. 그 방으로 할게요.", "next": "passport" }
+      ]
+    },
+    {
+      "id": "passport",
+      "stage": "신분 확인",
+      "text": "好的，请出示一下您的护照。",
+      "pron": "Hǎo de, qǐng chūshì yíxià nín de hùzhào.\n하오 더, 칭 추스 이샤 닌 더 후자오.",
+      "trans": "네, 여권 좀 보여 주시겠어요?",
+      "replies": [
+        { "id": "passport_1", "text": "给您。", "pron": "Gěi nín.\n게이 닌.", "trans": "여기 있어요.", "next": "room_pref" }
+      ]
+    },
+    {
+      "id": "room_pref",
+      "stage": "객실 선택",
+      "text": "您想要能看到城市景色的房间，还是朝花园的安静房间？",
+      "pron": "Nín xiǎng yào néng kàndào chéngshì jǐngsè de fángjiān, háishi cháo huāyuán de ānjìng fángjiān?\n닌 샹 야오 넝 칸다오 청스 징써 더 팡젠, 하이스 차오 화위안 더 안징 팡젠?",
+      "trans": "시내가 보이는 방이 좋으세요, 아니면 정원 쪽 조용한 방이 좋으세요?",
+      "replies": [
+        { "id": "room_pref_1", "text": "要能看城市景色的。", "pron": "Yào néng kàn chéngshì jǐngsè de.\n야오 넝 칸 청스 징써 더.", "trans": "시내가 보이는 방으로 주세요.", "next": "key" },
+        { "id": "room_pref_2", "text": "要安静一点的。", "pron": "Yào ānjìng yìdiǎn de.\n야오 안징 이뎬 더.", "trans": "조용한 방으로 주세요.", "next": "key" }
+      ]
+    },
+    {
+      "id": "key",
+      "stage": "키 받기",
+      "text": "这是您的房卡，房间在八楼。",
+      "pron": "Zhè shì nín de fángkǎ, fángjiān zài bā lóu.\n저 스 닌 더 팡카, 팡젠 짜이 바 러우.",
+      "trans": "카드 키 여기 있어요. 방은 8층이에요.",
+      "replies": [
+        { "id": "key_1", "text": "几点退房？", "pron": "Jǐ diǎn tuìfáng?\n지 뎬 퉤이팡?", "trans": "체크아웃은 몇 시예요?", "next": "checkout" },
+        { "id": "key_2", "text": "电梯在哪儿？", "pron": "Diàntī zài nǎr?\n뎬티 짜이 날?", "trans": "엘리베이터는 어디예요?", "next": "elevator" },
+        { "id": "key_3", "text": "房间里有无线网吗？", "pron": "Fángjiān li yǒu wúxiànwǎng ma?\n팡젠 리 여우 우셴왕 마?", "trans": "방에 와이파이 있나요?", "next": "wifi" }
+      ]
+    },
+    {
+      "id": "checkout",
+      "stage": "이용 안내",
+      "text": "退房时间是上午十一点。",
+      "pron": "Tuìfáng shíjiān shì shàngwǔ shíyī diǎn.\n퉤이팡 스젠 스 상우 스이 뎬.",
+      "trans": "체크아웃은 오전 11시예요.",
+      "replies": [
+        { "id": "checkout_1", "text": "退房以后可以寄存行李吗？", "pron": "Tuìfáng yǐhòu kěyǐ jìcún xíngli ma?\n퉤이팡 이허우 커이 지춘 싱리 마?", "trans": "체크아웃 후에 짐을 맡길 수 있나요?", "next": "luggage" },
+        { "id": "checkout_2", "text": "知道了，谢谢。", "pron": "Zhīdào le, xièxie.\n즈다오 러, 셰셰.", "trans": "알겠어요, 감사합니다.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "luggage",
+      "stage": "이용 안내",
+      "text": "可以的，行李可以寄存在前台。",
+      "pron": "Kěyǐ de, xíngli kěyǐ jìcún zài qiántái.\n커이 더, 싱리 커이 지춘 짜이 첸타이.",
+      "trans": "네, 프런트에 짐을 맡기실 수 있어요.",
+      "replies": [
+        { "id": "luggage_1", "text": "太好了，谢谢。", "pron": "Tài hǎo le, xièxie.\n타이 하오 러, 셰셰.", "trans": "잘됐네요, 감사합니다.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "elevator",
+      "stage": "이용 안내",
+      "text": "电梯就在拐角那边，右手边。",
+      "pron": "Diàntī jiù zài guǎijiǎo nàbiān, yòushǒu biān.\n뎬티 지우 짜이 꽈이자오 나볜, 여우서우 볜.",
+      "trans": "엘리베이터는 저쪽 모퉁이 돌아서 오른쪽에 있어요.",
+      "replies": [
+        { "id": "elevator_1", "text": "谢谢。", "pron": "Xièxie.\n셰셰.", "trans": "감사합니다.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "wifi",
+      "stage": "이용 안내",
+      "text": "有的，免费使用。密码在房卡背面。",
+      "pron": "Yǒu de, miǎnfèi shǐyòng. Mìmǎ zài fángkǎ bèimiàn.\n여우 더, 몐페이 스융. 미마 짜이 팡카 뻬이몐.",
+      "trans": "네, 무료예요. 비밀번호는 카드 키 뒷면에 있어요.",
+      "replies": [
+        { "id": "wifi_1", "text": "好的，谢谢。", "pron": "Hǎo de, xièxie.\n하오 더, 셰셰.", "trans": "네, 감사합니다.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "anything",
+      "stage": "마무리",
+      "text": "还有什么需要帮忙的吗？",
+      "pron": "Hái yǒu shénme xūyào bāngmáng de ma?\n하이 여우 선머 쉬야오 방망 더 마?",
+      "trans": "더 도와드릴 일 있을까요?",
+      "replies": [
+        { "id": "anything_1", "text": "没有了，谢谢！", "pron": "Méiyǒu le, xièxie!\n메이여우 러, 셰셰!", "trans": "없어요, 감사합니다!", "next": "end_stay" },
+        { "id": "anything_2", "text": "附近有好吃的餐厅吗？", "pron": "Fùjìn yǒu hǎochī de cāntīng ma?\n푸진 여우 하오츠 더 찬팅 마?", "trans": "근처에 맛있는 식당 있어요?", "next": "nearby" }
+      ]
+    },
+    {
+      "id": "nearby",
+      "stage": "마무리",
+      "text": "隔两条街有一家很受欢迎的本地餐厅，我在地图上给您标一下。",
+      "pron": "Gé liǎng tiáo jiē yǒu yì jiā hěn shòu huānyíng de běndì cāntīng, wǒ zài dìtú shang gěi nín biāo yíxià.\n거 량 탸오 제 여우 이 자 헌 서우 환잉 더 번디 찬팅, 워 짜이 디투 상 게이 닌 뱌오 이샤.",
+      "trans": "두 블록 떨어진 곳에 인기 있는 현지 식당이 있어요. 지도에 표시해 드릴게요.",
+      "replies": [
+        { "id": "nearby_1", "text": "太好了，谢谢！", "pron": "Tài hǎo le, xièxie!\n타이 하오 러, 셰셰!", "trans": "잘됐네요, 감사합니다!", "next": "end_stay" }
+      ]
+    },
+    {
+      "id": "end_stay",
+      "stage": "마무리",
+      "text": "不客气，祝您入住愉快！",
+      "pron": "Bú kèqi, zhù nín rùzhù yúkuài!\n부 커치, 주 닌 루주 위콰이!",
+      "trans": "천만에요. 편안히 묵으세요!",
+      "replies": []
+    },
+    {
+      "id": "end_other",
+      "stage": "마무리",
+      "text": "好的，祝您一路顺利，晚安！",
+      "pron": "Hǎo de, zhù nín yílù shùnlì, wǎn'ān!\n하오 더, 주 닌 이루 순리, 완안!",
+      "trans": "알겠습니다. 가시는 길 순조롭길 바라요. 안녕히 주무세요!",
+      "replies": []
+    }
+  ]
+}

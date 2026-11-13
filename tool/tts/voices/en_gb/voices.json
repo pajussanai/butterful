@@ -1,0 +1,24 @@
+{
+ "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+ "ref_text": "Good afternoon, and welcome. I'll be looking after you today, so just let me know if you need anything at all.",
+ "voices": {
+  "mia": {
+   "instruct": "A young British woman in her twenties with a standard Southern English, Received Pronunciation accent. Bright, warm and friendly voice, clear articulation, natural conversational pace."
+  },
+  "hana": {
+   "instruct": "A British woman in her thirties with a polished Received Pronunciation accent. Polite, composed and precise, slightly formal, very clear diction."
+  },
+  "ellie": {
+   "instruct": "A British woman in her late twenties with a soft Southern English accent. Gentle, relaxed and kind, unhurried and warm."
+  },
+  "leo": {
+   "instruct": "A British man in his thirties with a standard Southern English, Received Pronunciation accent. Calm, mellow and reassuring low voice, unhurried."
+  },
+  "theo": {
+   "instruct": "A young British man in his twenties with a standard Southern English accent. Cheerful, upbeat and energetic, lively intonation."
+  },
+  "guide": {
+   "instruct": "A British man in his thirties with a neutral Received Pronunciation accent. Clear, steady and friendly, like a language teacher."
+  }
+ }
+}

@@ -111,10 +111,10 @@ void main() {
     await tester.pumpAndSettle();
     await tapKey(tester, 'languageCard');
     await tester.pumpAndSettle();
-    for (final code in ['en', 'ja', 'ko', 'zh', 'fr', 'es']) {
+    for (final code in ['en', 'en_gb', 'ja', 'ko', 'zh', 'fr', 'es']) {
       expect(find.byKey(Key('lang-$code')), findsOneWidget);
     }
-    expect(find.text('준비 중'), findsNWidgets(3));
+    expect(find.text('준비 중'), findsNWidgets(2));
     // 준비 안 된 언어는 눌러도 바뀌지 않는다.
     await tapKey(tester, 'lang-fr');
     await tester.pumpAndSettle();

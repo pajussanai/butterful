@@ -24,6 +24,8 @@ CONTENT = ROOT / "assets" / "content"
 AUDIO = ROOT / "assets" / "audio"
 MANIFEST = AUDIO / "manifest.json"
 ENGINE = "supertonic-3"
+# Supertonic이 지원하지 않아 qwen_audio.py로 만드는 언어(여기서는 건드리지 않는다)
+QWEN_LANGS = {"en_gb", "zh"}
 
 
 def text_hash(text: str, voice: str, speed: float) -> str:
@@ -38,7 +40,8 @@ def main() -> None:
     files: dict[str, dict] = {}
     # 이번에 고르지 않은 언어는 기존 목록을 그대로 둔다.
     for key, value in old_files.items():
-        if only and key.split("/")[0] not in only:
+        lang = key.split("/")[0]
+        if lang in QWEN_LANGS or (only and lang not in only):
             files[key] = value
 
     tts = TTS(auto_download=True)
@@ -52,7 +55,7 @@ def main() -> None:
     jobs = []
     for language in catalog["languages"]:
         lang = language["code"]
-        if only and lang not in only:
+        if lang in QWEN_LANGS or (only and lang not in only):
             continue
         for scenario_id in language["content"]:
             scenario = json.loads((CONTENT / lang / f"{scenario_id}.json").read_text(encoding="utf-8"))
@@ -87,7 +90,7 @@ def main() -> None:
 
     manifest = {
         "engine": ENGINE,
-        "license": "Supertonic 3 model: BigScience OpenRAIL-M (machine-generated voice)",
+        "license": "Supertonic 3 model: BigScience OpenRAIL-M; Qwen3-TTS (en_gb, zh): Apache-2.0 (machine-generated voice)",
         "files": dict(sorted(files.items())),
     }
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
