@@ -1,0 +1,213 @@
+{
+  "id": "restaurant",
+  "lang": "es",
+  "start": "welcome",
+  "nodes": [
+    {
+      "id": "welcome",
+      "stage": "입장",
+      "text": "¡Hola, buenas! Bienvenidos. ¿Para cuántas personas?",
+      "pron": "올라, 부에나스! 비엔베니도스. 빠라 꾸안따스 뻬르소나스?",
+      "trans": "안녕하세요, 어서 오세요! 몇 분이세요?",
+      "replies": [
+        { "id": "welcome_1", "text": "Solo yo, gracias.", "pron": "솔로 요, 그라씨아스.", "trans": "저 혼자예요.", "next": "seat_solo" },
+        { "id": "welcome_2", "text": "Dos, por favor.", "pron": "도스, 뽀르 파보르.", "trans": "두 명이에요.", "next": "seat_two" },
+        { "id": "welcome_3", "text": "¿Tenéis mesa para cuatro?", "pron": "떼네이스 메사 빠라 꾸아뜨로?", "trans": "네 명 앉을 자리 있나요?", "next": "full_four" }
+      ]
+    },
+    {
+      "id": "seat_solo",
+      "stage": "자리 안내",
+      "text": "Muy bien. ¿Prefiere una mesa junto a la ventana o un sitio en la barra?",
+      "pron": "무이 비엔. 쁘레피에레 우나 메사 훈또 아 라 벤따나 오 운 시띠오 엔 라 바라?",
+      "trans": "좋아요. 창가 테이블이 좋으세요, 아니면 바 자리가 좋으세요?",
+      "replies": [
+        { "id": "seat_solo_1", "text": "Junto a la ventana, por favor.", "pron": "훈또 아 라 벤따나, 뽀르 파보르.", "trans": "창가로 주세요.", "next": "menu" },
+        { "id": "seat_solo_2", "text": "En la barra está bien.", "pron": "엔 라 바라 에스따 비엔.", "trans": "바 자리도 괜찮아요.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "seat_two",
+      "stage": "자리 안내",
+      "text": "Perfecto. Pasen por aquí, por favor. Esta es su mesa para dos.",
+      "pron": "뻬르펙또. 빠센 뽀르 아끼, 뽀르 파보르. 에스따 에스 수 메사 빠라 도스.",
+      "trans": "좋습니다. 이쪽으로 오세요. 두 분 자리 여기 있어요.",
+      "replies": [
+        { "id": "seat_two_1", "text": "Gracias.", "pron": "그라씨아스.", "trans": "감사합니다.", "next": "menu" },
+        { "id": "seat_two_2", "text": "¿Podemos sentarnos en la terraza?", "pron": "뽀데모스 센따르노스 엔 라 떼라싸?", "trans": "대신 테라스에 앉아도 될까요?", "next": "outside" }
+      ]
+    },
+    {
+      "id": "full_four",
+      "stage": "인원 확인",
+      "text": "Lo siento, ahora mismo estamos llenos. Hay unos diez minutos de espera. ¿Les parece bien?",
+      "pron": "로 시엔또, 아오라 미스모 에스따모스 예노스. 아이 우노스 디에쓰 미누또스 데 에스뻬라. 레스 빠레쎄 비엔?",
+      "trans": "죄송해요, 지금은 자리가 다 찼어요. 10분 정도 기다리셔야 하는데 괜찮으세요?",
+      "replies": [
+        { "id": "full_four_1", "text": "Vale, esperamos.", "pron": "발레, 에스뻬라모스.", "trans": "네, 기다릴게요.", "next": "after_wait" },
+        { "id": "full_four_2", "text": "No pasa nada. Volvemos otro día.", "pron": "노 빠사 나다. 볼베모스 오뜨로 디아.", "trans": "괜찮아요. 다음에 올게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "outside",
+      "stage": "자리 안내",
+      "text": "Claro. Hoy tenemos la terraza abierta. Síganme, por favor.",
+      "pron": "끌라로. 오이 떼네모스 라 떼라싸 아비에르따. 시간메, 뽀르 파보르.",
+      "trans": "물론이죠. 오늘은 테라스도 열려 있어요. 저를 따라오세요.",
+      "replies": [
+        { "id": "outside_1", "text": "Genial, gracias.", "pron": "헤니알, 그라씨아스.", "trans": "좋아요, 고마워요.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "after_wait",
+      "stage": "자리 안내",
+      "text": "¡Gracias por esperar! Ya tienen la mesa lista. Por aquí, por favor.",
+      "pron": "그라씨아스 뽀르 에스뻬라르! 야 띠에넨 라 메사 리스따. 뽀르 아끼, 뽀르 파보르.",
+      "trans": "기다려 주셔서 감사해요! 자리가 준비됐어요. 이쪽으로 오세요.",
+      "replies": [
+        { "id": "after_wait_1", "text": "Gracias.", "pron": "그라씨아스.", "trans": "감사합니다.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "menu",
+      "stage": "메뉴 확인",
+      "text": "Aquí tiene la carta. ¿Quiere algo de beber primero?",
+      "pron": "아끼 띠에네 라 까르따. 끼에레 알고 데 베베르 쁘리메로?",
+      "trans": "메뉴 여기 있어요. 먼저 마실 것 좀 드릴까요?",
+      "replies": [
+        { "id": "menu_1", "text": "Solo agua, por favor.", "pron": "솔로 아구아, 뽀르 파보르.", "trans": "물만 주세요.", "next": "order" },
+        { "id": "menu_2", "text": "¿Qué me recomienda?", "pron": "께 메 레꼬미엔다?", "trans": "뭘 추천하세요?", "next": "recommend" }
+      ]
+    },
+    {
+      "id": "recommend",
+      "stage": "메뉴 확인",
+      "text": "La limonada es casera, y la paella de hoy tiene mucho éxito.",
+      "pron": "라 리모나다 에스 까세라, 이 라 빠에야 데 오이 띠에네 무초 엑시또.",
+      "trans": "레모네이드는 직접 만든 거고, 오늘의 파에야가 정말 인기 있어요.",
+      "replies": [
+        { "id": "recommend_1", "text": "Entonces pruebo la limonada.", "pron": "엔똔쎄스 쁘루에보 라 리모나다.", "trans": "그럼 레모네이드 마셔 볼게요.", "next": "order" },
+        { "id": "recommend_2", "text": "Muy bien. Para mí, la paella.", "pron": "무이 비엔. 빠라 미, 라 빠에야.", "trans": "좋네요. 저는 파에야로 할게요.", "next": "order_more" }
+      ]
+    },
+    {
+      "id": "order",
+      "stage": "음식 주문",
+      "text": "Muy bien. ¿Ya sabe qué va a pedir, o necesita unos minutos más?",
+      "pron": "무이 비엔. 야 사베 께 바 아 뻬디르, 오 네쎄시따 우노스 미누또스 마스?",
+      "trans": "네. 주문하시겠어요, 아니면 조금 더 보시겠어요?",
+      "replies": [
+        { "id": "order_1", "text": "Para mí, la ensalada de pollo, por favor.", "pron": "빠라 미, 라 엔살라다 데 뽀요, 뽀르 파보르.", "trans": "저는 치킨 샐러드로 주세요.", "next": "order_more" },
+        { "id": "order_2", "text": "Necesito unos minutos más.", "pron": "네쎄시또 우노스 미누또스 마스.", "trans": "조금만 더 볼게요.", "next": "later" }
+      ]
+    },
+    {
+      "id": "later",
+      "stage": "음식 주문",
+      "text": "No hay problema. Tómese su tiempo y me avisa cuando quiera.",
+      "pron": "노 아이 쁘로블레마. 또메세 수 띠엠뽀 이 메 아비사 꾸안도 끼에라.",
+      "trans": "괜찮아요. 천천히 보시고 준비되면 말씀해 주세요.",
+      "replies": [
+        { "id": "later_1", "text": "Perdone, ¿me pone la paella, por favor?", "pron": "뻬르도네, 메 뽀네 라 빠에야, 뽀르 파보르?", "trans": "저기요, 파에야로 주시겠어요?", "next": "order_more" }
+      ]
+    },
+    {
+      "id": "order_more",
+      "stage": "음식 주문",
+      "text": "Buena elección. ¿Algo más?",
+      "pron": "부에나 엘렉씨온. 알고 마스?",
+      "trans": "좋은 선택이에요. 더 필요하신 건요?",
+      "replies": [
+        { "id": "order_more_1", "text": "Nada más, gracias.", "pron": "나다 마스, 그라씨아스.", "trans": "그게 다예요, 고마워요.", "next": "food" },
+        { "id": "order_more_2", "text": "¿Me podría traer un poco más de pan?", "pron": "메 뽀드리아 뜨라에르 운 뽀꼬 마스 데 빤?", "trans": "빵 좀 더 주실 수 있나요?", "next": "extra" }
+      ]
+    },
+    {
+      "id": "extra",
+      "stage": "추가 요청",
+      "text": "Claro. Ahora mismo se lo traigo.",
+      "pron": "끌라로. 아오라 미스모 세 로 뜨라이고.",
+      "trans": "물론이죠. 바로 가져다드릴게요.",
+      "replies": [
+        { "id": "extra_1", "text": "Muchas gracias.", "pron": "무차스 그라씨아스.", "trans": "정말 고마워요.", "next": "food" }
+      ]
+    },
+    {
+      "id": "food",
+      "stage": "식사",
+      "text": "Aquí tiene. ¡Que aproveche!",
+      "pron": "아끼 띠에네. 께 아쁘로베체!",
+      "trans": "음식 나왔습니다. 맛있게 드세요!",
+      "replies": [
+        { "id": "food_1", "text": "¡Gracias! Tiene muy buena pinta.", "pron": "그라씨아스! 띠에네 무이 부에나 삔따.", "trans": "고마워요! 맛있어 보여요.", "next": "check_ask" }
+      ]
+    },
+    {
+      "id": "check_ask",
+      "stage": "추가 요청",
+      "text": "¿Qué tal todo? ¿Le traigo algo más?",
+      "pron": "께 딸 또도? 레 뜨라이고 알고 마스?",
+      "trans": "식사는 어떠셨어요? 더 필요한 거 있으세요?",
+      "replies": [
+        { "id": "check_ask_1", "text": "La cuenta, por favor.", "pron": "라 꾸엔따, 뽀르 파보르.", "trans": "계산서 주세요.", "next": "check" },
+        { "id": "check_ask_2", "text": "¿Me enseña la carta de postres?", "pron": "메 엔세냐 라 까르따 데 뽀스뜨레스?", "trans": "디저트 메뉴 볼 수 있을까요?", "next": "dessert" },
+        { "id": "check_ask_3", "text": "¿Me pone lo que queda para llevar?", "pron": "메 뽀네 로 께 께다 빠라 예바르?", "trans": "남은 거 포장해 주실 수 있나요?", "next": "box" }
+      ]
+    },
+    {
+      "id": "dessert",
+      "stage": "추가 요청",
+      "text": "Aquí tiene. La tarta de chocolate es mi favorita.",
+      "pron": "아끼 띠에네. 라 따르따 데 초꼴라떼 에스 미 파보리따.",
+      "trans": "여기 있어요. 저는 초콜릿 케이크를 제일 좋아해요.",
+      "replies": [
+        { "id": "dessert_1", "text": "Pues quiero esa, y la cuenta, por favor.", "pron": "뿌에스 끼에로 에사, 이 라 꾸엔따, 뽀르 파보르.", "trans": "그럼 그걸로 할게요. 계산서도 같이 주세요.", "next": "check" }
+      ]
+    },
+    {
+      "id": "box",
+      "stage": "추가 요청",
+      "text": "Claro, ahora se lo preparo para llevar.",
+      "pron": "끌라로, 아오라 세 로 쁘레빠로 빠라 예바르.",
+      "trans": "네, 바로 포장해 드릴게요.",
+      "replies": [
+        { "id": "box_1", "text": "Gracias. Y la cuenta, por favor.", "pron": "그라씨아스. 이 라 꾸엔따, 뽀르 파보르.", "trans": "고마워요. 계산서도 주세요.", "next": "check" }
+      ]
+    },
+    {
+      "id": "check",
+      "stage": "계산",
+      "text": "Aquí tiene la cuenta. ¿Va a pagar con tarjeta o en efectivo?",
+      "pron": "아끼 띠에네 라 꾸엔따. 바 아 빠가르 꼰 따르헤따 오 엔 에펙띠보?",
+      "trans": "계산서 여기 있어요. 카드로 하시겠어요, 현금으로 하시겠어요?",
+      "replies": [
+        { "id": "check_1", "text": "Con tarjeta, por favor.", "pron": "꼰 따르헤따, 뽀르 파보르.", "trans": "카드로 할게요.", "next": "card" },
+        { "id": "check_2", "text": "En efectivo, por favor.", "pron": "엔 에펙띠보, 뽀르 파보르.", "trans": "현금으로 할게요.", "next": "cash" }
+      ]
+    },
+    {
+      "id": "card",
+      "stage": "계산",
+      "text": "Gracias. Aquí tiene su tique. ¡Que tenga un buen día!",
+      "pron": "그라씨아스. 아끼 띠에네 수 띠께. 께 뗑가 운 부엔 디아!",
+      "trans": "감사합니다. 영수증 여기 있어요. 좋은 하루 보내세요!",
+      "replies": []
+    },
+    {
+      "id": "cash",
+      "stage": "계산",
+      "text": "Gracias. Aquí tiene la vuelta. ¡Vuelva pronto!",
+      "pron": "그라씨아스. 아끼 띠에네 라 부엘따. 부엘바 쁘론또!",
+      "trans": "감사합니다. 거스름돈 여기 있어요. 또 오세요!",
+      "replies": []
+    },
+    {
+      "id": "end_leave",
+      "stage": "인원 확인",
+      "text": "Muy bien, no pasa nada. ¡Les esperamos pronto! Que pasen un buen día.",
+      "pron": "무이 비엔, 노 빠사 나다. 레스 에스뻬라모스 쁘론또! 께 빠센 운 부엔 디아.",
+      "trans": "네, 괜찮아요. 곧 또 오세요! 좋은 하루 보내세요.",
+      "replies": []
+    }
+  ]
+}

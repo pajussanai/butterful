@@ -1,0 +1,213 @@
+{
+  "id": "restaurant",
+  "lang": "fr",
+  "start": "welcome",
+  "nodes": [
+    {
+      "id": "welcome",
+      "stage": "입장",
+      "text": "Bonjour, bienvenue ! Vous êtes combien aujourd'hui ?",
+      "pron": "봉주르, 비앵브뉘! 부 제트 콩비앵 오주르뒤?",
+      "trans": "안녕하세요, 어서 오세요! 오늘 몇 분이세요?",
+      "replies": [
+        { "id": "welcome_1", "text": "Une personne, s'il vous plaît.", "pron": "윈 페르손, 실 부 플레.", "trans": "저 혼자예요.", "next": "seat_solo" },
+        { "id": "welcome_2", "text": "Deux personnes, s'il vous plaît.", "pron": "되 페르손, 실 부 플레.", "trans": "두 명이에요.", "next": "seat_two" },
+        { "id": "welcome_3", "text": "Vous avez une table pour quatre ?", "pron": "부 자베 윈 타블 푸르 카트르?", "trans": "네 명 앉을 자리 있나요?", "next": "full_four" }
+      ]
+    },
+    {
+      "id": "seat_solo",
+      "stage": "자리 안내",
+      "text": "Très bien. Vous préférez une table près de la fenêtre, ou une place au comptoir ?",
+      "pron": "트레 비앵. 부 프레페레 윈 타블 프레 드 라 프네트르, 우 윈 플라스 오 콩투아르?",
+      "trans": "좋아요. 창가 테이블이 좋으세요, 아니면 카운터 자리가 좋으세요?",
+      "replies": [
+        { "id": "seat_solo_1", "text": "Près de la fenêtre, s'il vous plaît.", "pron": "프레 드 라 프네트르, 실 부 플레.", "trans": "창가로 주세요.", "next": "menu" },
+        { "id": "seat_solo_2", "text": "Le comptoir, ça me va.", "pron": "르 콩투아르, 사 므 바.", "trans": "카운터도 괜찮아요.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "seat_two",
+      "stage": "자리 안내",
+      "text": "Parfait. Suivez-moi, s'il vous plaît. Voici une table pour deux.",
+      "pron": "파르페. 쉬베 무아, 실 부 플레. 부아시 윈 타블 푸르 되.",
+      "trans": "좋습니다. 이쪽으로 오세요. 두 분 자리 여기 있어요.",
+      "replies": [
+        { "id": "seat_two_1", "text": "Merci.", "pron": "메르시.", "trans": "감사합니다.", "next": "menu" },
+        { "id": "seat_two_2", "text": "On pourrait plutôt s'installer en terrasse ?", "pron": "옹 푸레 플뤼토 생스탈레 앙 테라스?", "trans": "대신 바깥 테라스에 앉아도 될까요?", "next": "outside" }
+      ]
+    },
+    {
+      "id": "full_four",
+      "stage": "인원 확인",
+      "text": "Excusez-nous, il y a un peu de monde en ce moment. Il faut compter environ dix minutes d'attente. Ça vous va ?",
+      "pron": "엑스퀴제 누, 일 리 아 앵 푀 드 몽드 앙 스 모망. 일 포 콩테 앙비롱 디 미뉘트 다탕트. 사 부 바?",
+      "trans": "죄송해요, 지금 손님이 좀 많아서요. 10분 정도 기다리셔야 하는데 괜찮으세요?",
+      "replies": [
+        { "id": "full_four_1", "text": "Oui, on peut attendre.", "pron": "위, 옹 푀 타탕드르.", "trans": "네, 기다릴게요.", "next": "after_wait" },
+        { "id": "full_four_2", "text": "Ce n'est pas grave. Une prochaine fois, peut-être.", "pron": "스 네 파 그라브. 윈 프로셴 푸아, 푀테트르.", "trans": "괜찮아요. 다음에 올게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "outside",
+      "stage": "자리 안내",
+      "text": "Bien sûr. La terrasse est ouverte aujourd'hui. Suivez-moi, s'il vous plaît.",
+      "pron": "비앵 쉬르. 라 테라스 에 투베르트 오주르뒤. 쉬베 무아, 실 부 플레.",
+      "trans": "물론이죠. 오늘은 테라스도 열려 있어요. 저를 따라오세요.",
+      "replies": [
+        { "id": "outside_1", "text": "Super, merci.", "pron": "쉬페르, 메르시.", "trans": "좋아요, 고마워요.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "after_wait",
+      "stage": "자리 안내",
+      "text": "Merci d'avoir patienté ! Votre table est prête. Par ici, s'il vous plaît.",
+      "pron": "메르시 다부아르 파시앙테! 보트르 타블 에 프레트. 파르 이시, 실 부 플레.",
+      "trans": "기다려 주셔서 감사해요! 자리가 준비됐어요. 이쪽으로 오세요.",
+      "replies": [
+        { "id": "after_wait_1", "text": "Merci.", "pron": "메르시.", "trans": "감사합니다.", "next": "menu" }
+      ]
+    },
+    {
+      "id": "menu",
+      "stage": "메뉴 확인",
+      "text": "Voici la carte. Vous voulez boire quelque chose pour commencer ?",
+      "pron": "부아시 라 카르트. 부 불레 부아르 켈크 쇼즈 푸르 코망세?",
+      "trans": "메뉴 여기 있어요. 먼저 마실 것 좀 드릴까요?",
+      "replies": [
+        { "id": "menu_1", "text": "Juste une carafe d'eau, s'il vous plaît.", "pron": "쥐스트 윈 카라프 도, 실 부 플레.", "trans": "물 한 병만 주세요.", "next": "order" },
+        { "id": "menu_2", "text": "Qu'est-ce que vous me conseillez ?", "pron": "케스크 부 므 콩세이에?", "trans": "뭘 추천하세요?", "next": "recommend" }
+      ]
+    },
+    {
+      "id": "recommend",
+      "stage": "메뉴 확인",
+      "text": "Notre citronnade est faite maison, et les pâtes du jour ont beaucoup de succès.",
+      "pron": "노트르 시트로나드 에 페트 메종, 에 레 파트 뒤 주르 옹 보쿠 드 쉭세.",
+      "trans": "레모네이드는 직접 만든 거고, 오늘의 파스타가 정말 인기 있어요.",
+      "replies": [
+        { "id": "recommend_1", "text": "Je vais prendre la citronnade.", "pron": "주 베 프랑드르 라 시트로나드.", "trans": "레모네이드 마셔 볼게요.", "next": "order" },
+        { "id": "recommend_2", "text": "Ça a l'air bon. Je vais prendre les pâtes.", "pron": "사 아 레르 봉. 주 베 프랑드르 레 파트.", "trans": "좋네요. 파스타로 할게요.", "next": "order_more" }
+      ]
+    },
+    {
+      "id": "order",
+      "stage": "음식 주문",
+      "text": "Très bien. Vous avez choisi, ou vous voulez encore quelques minutes ?",
+      "pron": "트레 비앵. 부 자베 슈아지, 우 부 불레 앙코르 켈크 미뉘트?",
+      "trans": "네. 주문하시겠어요, 아니면 조금 더 보시겠어요?",
+      "replies": [
+        { "id": "order_1", "text": "Je vais prendre la salade au poulet, s'il vous plaît.", "pron": "주 베 프랑드르 라 살라드 오 풀레, 실 부 플레.", "trans": "치킨 샐러드로 주세요.", "next": "order_more" },
+        { "id": "order_2", "text": "Il me faut encore quelques minutes.", "pron": "일 므 포 앙코르 켈크 미뉘트.", "trans": "조금만 더 볼게요.", "next": "later" }
+      ]
+    },
+    {
+      "id": "later",
+      "stage": "음식 주문",
+      "text": "Pas de souci. Prenez votre temps, et faites-moi signe quand vous aurez choisi.",
+      "pron": "파 드 수시. 프르네 보트르 탕, 에 페트 무아 신뉴 캉 부 조레 슈아지.",
+      "trans": "괜찮아요. 천천히 보시고 정하시면 말씀해 주세요.",
+      "replies": [
+        { "id": "later_1", "text": "Excusez-moi, je vais prendre les pâtes, s'il vous plaît.", "pron": "엑스퀴제 무아, 주 베 프랑드르 레 파트, 실 부 플레.", "trans": "저기요, 파스타로 주세요.", "next": "order_more" }
+      ]
+    },
+    {
+      "id": "order_more",
+      "stage": "음식 주문",
+      "text": "Excellent choix. Vous désirez autre chose ?",
+      "pron": "엑셀랑 슈아. 부 데지레 오트르 쇼즈?",
+      "trans": "좋은 선택이에요. 더 필요하신 건요?",
+      "replies": [
+        { "id": "order_more_1", "text": "Ce sera tout, merci.", "pron": "스 스라 투, 메르시.", "trans": "그게 다예요, 고마워요.", "next": "food" },
+        { "id": "order_more_2", "text": "Je pourrais avoir un peu plus de pain ?", "pron": "주 푸레 자부아르 앵 푀 플뤼 드 팽?", "trans": "빵 좀 더 주실 수 있나요?", "next": "extra" }
+      ]
+    },
+    {
+      "id": "extra",
+      "stage": "추가 요청",
+      "text": "Bien sûr. Je vous en apporte tout de suite.",
+      "pron": "비앵 쉬르. 주 부 자나포르트 투 드 쉬트.",
+      "trans": "물론이죠. 바로 가져다드릴게요.",
+      "replies": [
+        { "id": "extra_1", "text": "Merci beaucoup.", "pron": "메르시 보쿠.", "trans": "정말 고마워요.", "next": "food" }
+      ]
+    },
+    {
+      "id": "food",
+      "stage": "식사",
+      "text": "Voilà pour vous. Bon appétit !",
+      "pron": "부알라 푸르 부. 보 나페티!",
+      "trans": "음식 나왔습니다. 맛있게 드세요!",
+      "replies": [
+        { "id": "food_1", "text": "Merci ! Ça a l'air délicieux.", "pron": "메르시! 사 아 레르 델리시외.", "trans": "고마워요! 맛있어 보여요.", "next": "check_ask" }
+      ]
+    },
+    {
+      "id": "check_ask",
+      "stage": "추가 요청",
+      "text": "Tout s'est bien passé ? Je vous apporte autre chose ?",
+      "pron": "투 세 비앵 파세? 주 부 자포르트 오트르 쇼즈?",
+      "trans": "식사는 어떠셨어요? 더 필요한 거 있으세요?",
+      "replies": [
+        { "id": "check_ask_1", "text": "Juste l'addition, s'il vous plaît.", "pron": "쥐스트 라디시옹, 실 부 플레.", "trans": "계산서만 주세요.", "next": "check" },
+        { "id": "check_ask_2", "text": "Je peux voir la carte des desserts ?", "pron": "주 푀 부아르 라 카르트 데 데세르?", "trans": "디저트 메뉴 볼 수 있을까요?", "next": "dessert" },
+        { "id": "check_ask_3", "text": "Je pourrais emporter le reste ?", "pron": "주 푸레 장포르테 르 레스트?", "trans": "남은 거 싸 갈 수 있을까요?", "next": "box" }
+      ]
+    },
+    {
+      "id": "dessert",
+      "stage": "추가 요청",
+      "text": "Voici. Le moelleux au chocolat, c'est mon préféré.",
+      "pron": "부아시. 르 무알뢰 오 쇼콜라, 세 몽 프레페레.",
+      "trans": "여기 있어요. 저는 초콜릿 케이크를 제일 좋아해요.",
+      "replies": [
+        { "id": "dessert_1", "text": "Je vais prendre ça, et l'addition, s'il vous plaît.", "pron": "주 베 프랑드르 사, 에 라디시옹, 실 부 플레.", "trans": "그걸로 할게요. 계산서도 같이 주세요.", "next": "check" }
+      ]
+    },
+    {
+      "id": "box",
+      "stage": "추가 요청",
+      "text": "Bien sûr, je vous prépare une boîte.",
+      "pron": "비앵 쉬르, 주 부 프레파르 윈 부아트.",
+      "trans": "네, 포장 용기에 담아 드릴게요.",
+      "replies": [
+        { "id": "box_1", "text": "Merci. Et l'addition, s'il vous plaît.", "pron": "메르시. 에 라디시옹, 실 부 플레.", "trans": "고마워요. 계산서도 주세요.", "next": "check" }
+      ]
+    },
+    {
+      "id": "check",
+      "stage": "계산",
+      "text": "Voici l'addition. Vous réglez par carte ou en espèces ?",
+      "pron": "부아시 라디시옹. 부 레글레 파르 카르트 우 앙네스페스?",
+      "trans": "계산서 여기 있어요. 카드로 하시겠어요, 현금으로 하시겠어요?",
+      "replies": [
+        { "id": "check_1", "text": "Par carte, s'il vous plaît.", "pron": "파르 카르트, 실 부 플레.", "trans": "카드로 할게요.", "next": "card" },
+        { "id": "check_2", "text": "En espèces, s'il vous plaît.", "pron": "앙네스페스, 실 부 플레.", "trans": "현금으로 할게요.", "next": "cash" }
+      ]
+    },
+    {
+      "id": "card",
+      "stage": "계산",
+      "text": "Merci. Voici votre ticket. Bonne journée !",
+      "pron": "메르시. 부아시 보트르 티케. 본 주르네!",
+      "trans": "감사합니다. 영수증 여기 있어요. 좋은 하루 보내세요!",
+      "replies": []
+    },
+    {
+      "id": "cash",
+      "stage": "계산",
+      "text": "Merci. Voici votre monnaie. À bientôt !",
+      "pron": "메르시. 부아시 보트르 모네. 아 비앵토!",
+      "trans": "감사합니다. 거스름돈 여기 있어요. 또 오세요!",
+      "replies": []
+    },
+    {
+      "id": "end_leave",
+      "stage": "인원 확인",
+      "text": "Pas de souci. À bientôt, j'espère. Bonne journée !",
+      "pron": "파 드 수시. 아 비앵토, 제스페르. 본 주르네!",
+      "trans": "괜찮아요. 곧 또 뵙길 바라요. 좋은 하루 보내세요!",
+      "replies": []
+    }
+  ]
+}

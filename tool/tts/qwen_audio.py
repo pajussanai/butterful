@@ -1,109 +1,132 @@
-"""Supertonic이 지원하지 않는 언어(영국 영어, 중국어)의 대화 음성을 Qwen3-TTS 목소리 복제로 만든다.
+"""Qwen3-TTS 목소리 복제로 대화 음성을 만든다(engines.json에서 engine이 "qwen"인 언어, 지금은 중국어).
 
-- 기준 목소리: tool/tts/voices/<언어>/<목소리>_0.wav (qwen_voices.py design으로 만든 것)
+- 기준 목소리: tool/tts/voices/<언어>/<목소리>.wav (qwen_voices.py design으로 만든 것)
 - 출력: assets/audio/<언어>/<캐릭터>/<시나리오>__<노드>.mp3, 모범 답변은 <언어>/guide/...
-- 목록: assets/audio/manifest.json에 파일마다 engine을 적어 합친다(파일 하나 만들 때마다 저장).
+- 목록: manifest_util로 파일 하나 만들 때마다 assets/audio/manifest.json에 합친다.
 
-캐릭터 대사를 먼저 모두 만들고, 모범 답변은 그 뒤에 만든다.
+캐릭터 대사를 먼저 모두 만들고, 모범 답변은 그 뒤에 만든다. 문장이 바뀌지 않은 파일은 다시 만들지 않는다.
 로컬 CPU 전용, 외부 API 호출 없음.
-사용법: .tts/venv-qwen/Scripts/python.exe tool/tts/qwen_audio.py
+사용법: .tts/venv-qwen/Scripts/python.exe tool/tts/qwen_audio.py [언어 ...]
 """
 
 import hashlib
 import json
+import sys
 import time
 from pathlib import Path
 
 import soundfile as sf
 import torch
 
+import manifest_util
+
 ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / "assets" / "content"
 AUDIO = ROOT / "assets" / "audio"
-MANIFEST = AUDIO / "manifest.json"
 VOICES = ROOT / "tool" / "tts" / "voices"
 ENGINE = "qwen3-tts-0.6b-base"
-MODEL = "Qwen/Qwen3-TTS-12Hz-0.6B-Base"
-
-# 언어마다 캐릭터 한 명(이 목록이 앱 카탈로그의 characters와 맞아야 한다)
-LANGS = {
-    "en_gb": {"language": "English", "character": "mia"},
-    "zh": {"language": "Chinese", "character": "leo"},
-}
-SCENARIOS = ["restaurant", "hotel"]
 # 길이 상한 계산용: 코덱은 초당 12토큰, 말하기 속도는 글자 수로 어림잡는다.
+# (모델이 끝을 못 내고 계속 소리를 만드는 경우가 있어 상한을 두고, 넘치면 다시 만든다)
 TOKENS_PER_SEC = 12
-CHARS_PER_SEC = {"en_gb": 14, "zh": 4}
+CHARS_PER_SEC = {"zh": 4, "en_gb": 14}
 
 
-def text_hash(text: str, voice: str) -> str:
-    return hashlib.sha1(f"{ENGINE}|{voice}|{text}".encode("utf-8")).hexdigest()[:12]
+def text_hash(text: str, voice: str, ref: str) -> str:
+    # 기준 목소리가 기본(<캐릭터>_0)이 아니면 해시에 넣어, 기준을 바꾸면 다시 만들게 한다.
+    key = voice if ref == f"{voice}_0" else f"{voice}@{ref}"
+    return hashlib.sha1(f"{ENGINE}|{key}|{text}".encode("utf-8")).hexdigest()[:12]
 
 
 def main() -> None:
     from qwen_tts import Qwen3TTSModel
 
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    files = manifest["files"]
+    langs = sys.argv[1:] or manifest_util.langs_for("qwen")
+    catalog = json.loads((CONTENT / "catalog.json").read_text(encoding="utf-8"))
+    files = manifest_util.read()
 
     npc_jobs, guide_jobs = [], []
-    for lang, spec in LANGS.items():
-        for sid in SCENARIOS:
+    for lang in langs:
+        spec = manifest_util.ENGINES[lang]
+        language = next(l for l in catalog["languages"] if l["code"] == lang)
+        for sid in language["content"]:
             scenario = json.loads((CONTENT / lang / f"{sid}.json").read_text(encoding="utf-8"))
             for node in scenario["nodes"]:
-                ch = spec["character"]
-                npc_jobs.append((f"{lang}/{ch}/{sid}__{node['id']}.mp3", lang, node["text"], ch))
+                for ch in spec["voices"]:
+                    if ch != "guide":
+                        npc_jobs.append((f"{lang}/{ch}/{sid}__{node['id']}.mp3", lang, node["text"], ch))
                 for reply in node["replies"]:
                     guide_jobs.append((f"{lang}/guide/{sid}__{reply['id']}.mp3", lang, reply["text"], "guide"))
-    jobs = npc_jobs + guide_jobs
+    jobs = [
+        j
+        for j in npc_jobs + guide_jobs
+        if not (
+            (prev := files.get(j[0]))
+            and prev.get("hash") == text_hash(j[2], j[3], manifest_util.ENGINES[j[1]]["voices"][j[3]])
+            and (AUDIO / j[0]).exists()
+            and (AUDIO / j[0]).stat().st_size > 0
+        )
+    ]
+    print(f"to make: {len(jobs)} (skip {len(npc_jobs) + len(guide_jobs) - len(jobs)})", flush=True)
+    if not jobs:
+        return
 
     torch.set_num_threads(12)
     t0 = time.perf_counter()
-    model = Qwen3TTSModel.from_pretrained(MODEL, device_map="cpu", dtype=torch.float32, attn_implementation="sdpa")
+    model = Qwen3TTSModel.from_pretrained(
+        manifest_util.ENGINES[langs[0]]["model"], device_map="cpu", dtype=torch.float32, attn_implementation="sdpa"
+    )
     print(f"model loaded: {time.perf_counter() - t0:.0f}s", flush=True)
 
     prompts: dict[tuple[str, str], object] = {}
 
-    def prompt(lang: str, voice: str):
-        if (lang, voice) not in prompts:
+    def prompt(lang: str, ch: str):
+        ref = manifest_util.ENGINES[lang]["voices"][ch]
+        if (lang, ref) not in prompts:
             meta = json.loads((VOICES / lang / "voices.json").read_text(encoding="utf-8"))
-            prompts[(lang, voice)] = model.create_voice_clone_prompt(
-                ref_audio=str(VOICES / lang / f"{voice}_0.wav"), ref_text=meta["ref_text"]
+            prompts[(lang, ref)] = model.create_voice_clone_prompt(
+                ref_audio=str(VOICES / lang / f"{ref}.wav"), ref_text=meta["ref_text"]
             )
-        return prompts[(lang, voice)]
+        return prompts[(lang, ref)]
 
-    made = skipped = 0
+    failed = []
     started = time.perf_counter()
-    for i, (rel, lang, text, voice) in enumerate(jobs, 1):
-        h = text_hash(text, voice)
-        path = AUDIO / rel
-        prev = files.get(rel)
-        if prev and prev.get("hash") == h and path.exists() and path.stat().st_size > 0:
-            skipped += 1
-            continue
-        # 모델이 끝을 못 내고 계속 소리를 만드는 경우가 있어, 문장 길이로 예상 길이를 잡고 넘치면 다시 만든다.
+    for i, (rel, lang, text, ch) in enumerate(jobs, 1):
+        spec = manifest_util.ENGINES[lang]
         expected = len(text) / CHARS_PER_SEC[lang]
         limit = expected * 2 + 2
+        ok = False
         for attempt in range(1, 5):
             wavs, sr = model.generate_voice_clone(
                 text=text,
-                language=LANGS[lang]["language"],
-                voice_clone_prompt=prompt(lang, voice),
+                language=spec["language"],
+                voice_clone_prompt=prompt(lang, ch),
                 max_new_tokens=int(TOKENS_PER_SEC * limit),
             )
             seconds = len(wavs[0]) / sr
             if expected * 0.3 <= seconds < limit * 0.97:
+                ok = True
                 break
             print(f"  retry {attempt}: {rel} {seconds:.1f}s (expected {expected:.1f}s)", flush=True)
+        if not ok:
+            failed.append(rel)
+            print(f"  FAILED: {rel}", flush=True)
+            continue
+        path = AUDIO / rel
         path.parent.mkdir(parents=True, exist_ok=True)
         sf.write(str(path), wavs[0], sr, format="MP3", compression_level=0.75)
-        files[rel] = {"hash": h, "sec": round(seconds, 2), "voice": f"qwen:{lang}/{voice}_0", "engine": ENGINE}
-        manifest["files"] = dict(sorted(files.items()))
-        MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
-        made += 1
+        manifest_util.update(
+            {
+                rel: {
+                    "hash": text_hash(text, ch, spec["voices"][ch]),
+                    "sec": round(seconds, 2),
+                    "voice": f"qwen:{lang}/{spec['voices'][ch]}",
+                    "engine": ENGINE,
+                }
+            }
+        )
         print(f"{i}/{len(jobs)} {rel} ({time.perf_counter() - started:.0f}s)", flush=True)
 
-    print(f"done: made={made}, skipped={skipped}, {time.perf_counter() - started:.0f}s", flush=True)
+    print(f"done: made={len(jobs) - len(failed)}, failed={failed}, {time.perf_counter() - started:.0f}s", flush=True)
 
 
 if __name__ == "__main__":

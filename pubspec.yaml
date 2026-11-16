@@ -30,6 +30,8 @@ flutter:
     - assets/content/ko/
     - assets/content/en_gb/
     - assets/content/zh/
+    - assets/content/fr/
+    - assets/content/es/
     - assets/audio/
     - assets/audio/en/mia/
     - assets/audio/en/leo/
@@ -50,6 +52,26 @@ flutter:
     - assets/audio/ko/ellie/
     - assets/audio/ko/guide/
     - assets/audio/en_gb/mia/
+    - assets/audio/en_gb/leo/
+    - assets/audio/en_gb/hana/
+    - assets/audio/en_gb/theo/
+    - assets/audio/en_gb/ellie/
     - assets/audio/en_gb/guide/
+    - assets/audio/zh/mia/
     - assets/audio/zh/leo/
+    - assets/audio/zh/hana/
+    - assets/audio/zh/theo/
+    - assets/audio/zh/ellie/
     - assets/audio/zh/guide/
+    - assets/audio/fr/mia/
+    - assets/audio/fr/leo/
+    - assets/audio/fr/hana/
+    - assets/audio/fr/theo/
+    - assets/audio/fr/ellie/
+    - assets/audio/fr/guide/
+    - assets/audio/es/mia/
+    - assets/audio/es/leo/
+    - assets/audio/es/hana/
+    - assets/audio/es/theo/
+    - assets/audio/es/ellie/
+    - assets/audio/es/guide/

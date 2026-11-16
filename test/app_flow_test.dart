@@ -104,7 +104,9 @@ void main() {
     expect(find.text('진행 중'), findsOneWidget);
   });
 
-  testWidgets('언어 선택: 준비된 언어만 고를 수 있고 나머지는 준비 중으로 보인다', (tester) async {
+  testWidgets('언어 선택: 7개 언어가 모두 준비되어 있고, 언어마다 캐릭터 다섯 명을 고를 수 있다', (
+    tester,
+  ) async {
     await phone(tester);
     final services = await makeServices(tester);
     await tester.pumpWidget(ButterfulApp(services: services));
@@ -114,15 +116,42 @@ void main() {
     for (final code in ['en', 'en_gb', 'ja', 'ko', 'zh', 'fr', 'es']) {
       expect(find.byKey(Key('lang-$code')), findsOneWidget);
     }
-    expect(find.text('준비 중'), findsNWidgets(2));
-    // 준비 안 된 언어는 눌러도 바뀌지 않는다.
-    await tapKey(tester, 'lang-fr');
-    await tester.pumpAndSettle();
-    expect(services.progress.language, 'en');
+    expect(find.text('준비 중'), findsNothing);
     await tapKey(tester, 'lang-ja');
     await tester.pumpAndSettle();
     expect(find.text('일본어 · 日本語'), findsOneWidget);
     expect(services.progress.language, 'ja');
+
+    for (final (code, title) in [
+      ('en_gb', '영어 · English'),
+      ('zh', '중국어 · 中文'),
+      ('fr', '프랑스어 · Français'),
+      ('es', '스페인어 · Español'),
+    ]) {
+      // 홈이 아래로 스크롤돼 있으면 맨 위의 언어 카드가 아직 그려지지 않았다.
+      await tester.scrollUntilVisible(
+        find.byKey(const Key('languageCard')),
+        -300,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await tapKey(tester, 'languageCard');
+      await tester.pumpAndSettle();
+      await tapKey(tester, 'lang-$code');
+      await tester.pumpAndSettle();
+      expect(services.progress.language, code);
+      expect(find.text(title), findsOneWidget);
+      await tapKey(tester, 'scenario-restaurant');
+      await tester.pumpAndSettle();
+      for (final id in ['mia', 'leo', 'hana', 'theo', 'ellie']) {
+        expect(
+          find.byKey(Key('character-$id')),
+          findsOneWidget,
+          reason: '$code/$id',
+        );
+      }
+      await tester.pageBack();
+      await tester.pumpAndSettle();
+    }
   });
 
   testWidgets('새로고침 뒤 이어서 하기: 저장된 위치에서 다시 시작한다', (tester) async {

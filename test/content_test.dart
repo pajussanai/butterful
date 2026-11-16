@@ -15,25 +15,23 @@ void main() {
   final files = (manifest['files'] as Map<String, dynamic>).keys.toSet();
   final pubspec = File('pubspec.yaml').readAsStringSync();
 
-  // 언어마다 목소리를 만든 캐릭터(영국 영어·중국어는 Qwen3-TTS로 한 명씩)
+  // 언어마다 목소리를 만든 캐릭터(모든 언어에 다섯 명)
   final all = [for (final c in catalog.characters) c.id];
   final voicedIn = {
     'en': all,
     'ja': all,
     'ko': all,
-    'en_gb': ['mia'],
-    'zh': ['leo'],
+    'en_gb': all,
+    'zh': all,
+    'fr': all,
+    'es': all,
   };
 
   Scenario load(String lang, String id) =>
       Scenario.fromJson(_json('assets/content/$lang/$id.json'));
 
-  test('초기 콘텐츠: 한국어·영어(미국식·영국식)·일본어·중국어에 여행과 식당 대화가 있다', () {
-    for (final lang in ['ko', 'en', 'en_gb', 'ja', 'zh']) {
-      final l = catalog.language(lang);
-      expect(l.content, containsAll(['restaurant', 'hotel']), reason: lang);
-    }
-    // 7개 언어가 목록에 있고, 준비 안 된 언어는 콘텐츠가 비어 있다(완성된 것처럼 보이지 않음).
+  test('초기 콘텐츠: 7개 언어 모두에 여행과 식당 대화가 있다', () {
+    // 7개 언어가 목록에 있고, 모두 대화가 준비되어 있다.
     expect(catalog.languages.map((l) => l.code), [
       'en',
       'en_gb',
@@ -43,8 +41,8 @@ void main() {
       'fr',
       'es',
     ]);
-    for (final lang in ['fr', 'es']) {
-      expect(catalog.language(lang).content, isEmpty);
+    for (final l in catalog.languages) {
+      expect(l.content, containsAll(['restaurant', 'hotel']), reason: l.code);
     }
     expect(catalog.characters, hasLength(5));
   });
@@ -175,6 +173,40 @@ void main() {
           );
         }
       }
+    }
+  });
+
+  test('음성 목록에 콘텐츠에 없는 파일이 없고, 언어마다 정해진 엔진으로 만들었다', () {
+    final engines = _json('tool/tts/engines.json');
+    const engineId = {
+      'supertonic': null, // 기존 항목에는 engine 필드가 없다(목록 머리의 supertonic-3)
+      'kokoro': 'kokoro-82m',
+      'qwen': 'qwen3-tts-0.6b-base',
+    };
+    final expected = <String>{};
+    for (final l in catalog.languages) {
+      for (final id in l.content) {
+        final s = load(l.code, id);
+        for (final n in s.nodes.values) {
+          for (final c in voicedIn[l.code]!) {
+            expected.add(ContentRepository.npcAudio(l.code, c, id, n.id));
+          }
+          for (final r in n.replies) {
+            expected.add(ContentRepository.guideAudio(l.code, id, r.id));
+          }
+        }
+      }
+    }
+    expect(files.difference(expected), isEmpty, reason: '콘텐츠에 없는 음성');
+    expect(expected.difference(files), isEmpty, reason: '빠진 음성');
+    final entries = manifest['files'] as Map<String, dynamic>;
+    for (final rel in files) {
+      final lang = rel.split('/').first;
+      final engine =
+          (engines[lang] as Map<String, dynamic>)['engine'] as String;
+      final meta = entries[rel] as Map<String, dynamic>;
+      expect(meta['engine'], engineId[engine], reason: rel);
+      expect((meta['sec'] as num).toDouble(), greaterThan(0.3), reason: rel);
     }
   });
 

@@ -1,0 +1,161 @@
+{
+  "id": "hotel",
+  "lang": "es",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "프런트 도착",
+      "text": "Buenas noches, bienvenido. ¿Tiene reserva?",
+      "pron": "부에나스 노체스, 비엔베니도. 띠에네 레세르바?",
+      "trans": "안녕하세요, 어서 오세요. 예약하셨나요?",
+      "replies": [
+        { "id": "greet_1", "text": "Sí, tengo una reserva.", "pron": "시, 뗑고 우나 레세르바.", "trans": "네, 예약했어요.", "next": "name" },
+        { "id": "greet_2", "text": "No. ¿Tienen alguna habitación libre para esta noche?", "pron": "노. 띠에넨 알구나 아비따씨온 리브레 빠라 에스따 노체?", "trans": "아니요. 오늘 밤 빈방 있나요?", "next": "walkin" }
+      ]
+    },
+    {
+      "id": "name",
+      "stage": "예약 확인",
+      "text": "Muy bien. ¿Me dice su nombre, por favor?",
+      "pron": "무이 비엔. 메 디쎄 수 놈브레, 뽀르 파보르?",
+      "trans": "좋아요. 성함을 알려 주시겠어요?",
+      "replies": [
+        { "id": "name_1", "text": "Sí, claro. Kim Minjun.", "pron": "시, 끌라로. 킴 민준.", "trans": "네. 김민준이에요.", "next": "passport" }
+      ]
+    },
+    {
+      "id": "walkin",
+      "stage": "예약 확인",
+      "text": "Déjeme mirar. Nos queda una habitación doble para esta noche. ¿La quiere?",
+      "pron": "데헤메 미라르. 노스 께다 우나 아비따씨온 도블레 빠라 에스따 노체. 라 끼에레?",
+      "trans": "확인해 볼게요. 오늘 밤 더블룸이 하나 남아 있어요. 그 방으로 하시겠어요?",
+      "replies": [
+        { "id": "walkin_1", "text": "Sí, me la quedo.", "pron": "시, 메 라 께도.", "trans": "네, 그 방으로 할게요.", "next": "passport" },
+        { "id": "walkin_2", "text": "¿El desayuno está incluido?", "pron": "엘 데사유노 에스따 인끌루이도?", "trans": "조식 포함인가요?", "next": "breakfast_q" },
+        { "id": "walkin_3", "text": "Pues creo que voy a mirar en otro sitio. Gracias.", "pron": "뿌에스 끄레오 께 보이 아 미라르 엔 오뜨로 시띠오. 그라씨아스.", "trans": "음, 다른 곳을 알아볼게요. 고마워요.", "next": "end_other" }
+      ]
+    },
+    {
+      "id": "breakfast_q",
+      "stage": "예약 확인",
+      "text": "Sí, el desayuno está incluido. Se sirve de siete a diez.",
+      "pron": "시, 엘 데사유노 에스따 인끌루이도. 세 시르베 데 시에떼 아 디에쓰.",
+      "trans": "네, 조식 포함이에요. 7시부터 10시까지 드실 수 있어요.",
+      "replies": [
+        { "id": "breakfast_q_1", "text": "Perfecto. Me la quedo.", "pron": "뻬르펙또. 메 라 께도.", "trans": "좋아요. 그 방으로 할게요.", "next": "passport" }
+      ]
+    },
+    {
+      "id": "passport",
+      "stage": "신분 확인",
+      "text": "Gracias. ¿Me permite su pasaporte, por favor?",
+      "pron": "그라씨아스. 메 뻬르미떼 수 빠사뽀르떼, 뽀르 파보르?",
+      "trans": "감사합니다. 여권 좀 보여 주시겠어요?",
+      "replies": [
+        { "id": "passport_1", "text": "Aquí tiene.", "pron": "아끼 띠에네.", "trans": "여기 있어요.", "next": "room_pref" }
+      ]
+    },
+    {
+      "id": "room_pref",
+      "stage": "객실 선택",
+      "text": "¿Prefiere una habitación con vistas a la ciudad, o una más tranquila que da al jardín?",
+      "pron": "쁘레피에레 우나 아비따씨온 꼰 비스따스 아 라 씨우다, 오 우나 마스 뜨랑낄라 께 다 알 하르딘?",
+      "trans": "시내 전망 객실이 좋으세요, 아니면 정원 쪽 조용한 객실이 좋으세요?",
+      "replies": [
+        { "id": "room_pref_1", "text": "Con vistas a la ciudad, por favor.", "pron": "꼰 비스따스 아 라 씨우다, 뽀르 파보르.", "trans": "시내 전망으로 주세요.", "next": "key" },
+        { "id": "room_pref_2", "text": "Una tranquila, por favor.", "pron": "우나 뜨랑낄라, 뽀르 파보르.", "trans": "조용한 방으로 주세요.", "next": "key" }
+      ]
+    },
+    {
+      "id": "key",
+      "stage": "키 받기",
+      "text": "Aquí tiene la tarjeta de la habitación. Está en la octava planta.",
+      "pron": "아끼 띠에네 라 따르헤따 데 라 아비따씨온. 에스따 엔 라 옥따바 쁠란따.",
+      "trans": "카드 키 여기 있어요. 객실은 8층이에요.",
+      "replies": [
+        { "id": "key_1", "text": "¿A qué hora es la salida?", "pron": "아 께 오라 에스 라 살리다?", "trans": "체크아웃은 몇 시예요?", "next": "checkout" },
+        { "id": "key_2", "text": "¿Dónde está el ascensor?", "pron": "돈데 에스따 엘 아스쎈소르?", "trans": "엘리베이터는 어디 있어요?", "next": "elevator" },
+        { "id": "key_3", "text": "¿Hay wifi en la habitación?", "pron": "아이 위피 엔 라 아비따씨온?", "trans": "방에 와이파이 있나요?", "next": "wifi" }
+      ]
+    },
+    {
+      "id": "checkout",
+      "stage": "이용 안내",
+      "text": "La salida es a las once de la mañana.",
+      "pron": "라 살리다 에스 아 라스 온쎄 데 라 마냐나.",
+      "trans": "체크아웃은 오전 11시예요.",
+      "replies": [
+        { "id": "checkout_1", "text": "¿Puedo dejar las maletas aquí después de la salida?", "pron": "뿌에도 데하르 라스 말레따스 아끼 데스뿌에스 데 라 살리다?", "trans": "체크아웃 후에 짐을 맡길 수 있나요?", "next": "luggage" },
+        { "id": "checkout_2", "text": "Vale. Gracias.", "pron": "발레. 그라씨아스.", "trans": "알겠어요. 고마워요.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "luggage",
+      "stage": "이용 안내",
+      "text": "Por supuesto. Se las guardamos en recepción.",
+      "pron": "뽀르 수뿌에스또. 세 라스 구아르다모스 엔 레쎕씨온.",
+      "trans": "물론이죠. 프런트에서 짐을 보관해 드릴게요.",
+      "replies": [
+        { "id": "luggage_1", "text": "Perfecto, gracias.", "pron": "뻬르펙또, 그라씨아스.", "trans": "좋아요, 고마워요.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "elevator",
+      "stage": "이용 안내",
+      "text": "El ascensor está justo al doblar la esquina, a la derecha.",
+      "pron": "엘 아스쎈소르 에스따 후스또 알 도블라르 라 에스끼나, 아 라 데레차.",
+      "trans": "엘리베이터는 모퉁이 돌아서 바로 오른쪽에 있어요.",
+      "replies": [
+        { "id": "elevator_1", "text": "Gracias.", "pron": "그라씨아스.", "trans": "감사합니다.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "wifi",
+      "stage": "이용 안내",
+      "text": "Sí, es gratis. La contraseña está detrás de la tarjeta.",
+      "pron": "시, 에스 그라띠스. 라 꼰뜨라세냐 에스따 데뜨라스 데 라 따르헤따.",
+      "trans": "네, 무료예요. 비밀번호는 카드 키 뒷면에 있어요.",
+      "replies": [
+        { "id": "wifi_1", "text": "Genial, gracias.", "pron": "헤니알, 그라씨아스.", "trans": "좋네요, 고마워요.", "next": "anything" }
+      ]
+    },
+    {
+      "id": "anything",
+      "stage": "마무리",
+      "text": "¿Le puedo ayudar en algo más?",
+      "pron": "레 뿌에도 아유다르 엔 알고 마스?",
+      "trans": "더 도와드릴 일이 있을까요?",
+      "replies": [
+        { "id": "anything_1", "text": "No, eso es todo. ¡Gracias!", "pron": "노, 에소 에스 또도. 그라씨아스!", "trans": "아니요, 그게 다예요. 고마워요!", "next": "end_stay" },
+        { "id": "anything_2", "text": "¿Me puede recomendar un buen restaurante por aquí cerca?", "pron": "메 뿌에데 레꼬멘다르 운 부엔 레스따우란떼 뽀르 아끼 쎄르까?", "trans": "근처에 괜찮은 식당 추천해 주실 수 있나요?", "next": "nearby" }
+      ]
+    },
+    {
+      "id": "nearby",
+      "stage": "마무리",
+      "text": "Hay un sitio de comida casera muy bueno a dos calles de aquí. Se lo marco en el mapa.",
+      "pron": "아이 운 시띠오 데 꼬미다 까세라 무이 부에노 아 도스 까예스 데 아끼. 세 로 마르꼬 엔 엘 마빠.",
+      "trans": "두 블록 떨어진 곳에 괜찮은 가정식 식당이 있어요. 지도에 표시해 드릴게요.",
+      "replies": [
+        { "id": "nearby_1", "text": "¡Estupendo! Gracias.", "pron": "에스뚜뻰도! 그라씨아스.", "trans": "그러면 좋겠어요. 고마워요!", "next": "end_stay" }
+      ]
+    },
+    {
+      "id": "end_stay",
+      "stage": "마무리",
+      "text": "De nada. ¡Que disfrute de su estancia!",
+      "pron": "데 나다. 께 디스프루떼 데 수 에스딴씨아!",
+      "trans": "천만에요. 즐거운 시간 보내세요!",
+      "replies": []
+    },
+    {
+      "id": "end_other",
+      "stage": "마무리",
+      "text": "No se preocupe. ¡Buenas noches y buen viaje!",
+      "pron": "노 세 쁘레오꾸뻬. 부에나스 노체스 이 부엔 비아헤!",
+      "trans": "괜찮아요. 좋은 밤 되시고, 안전한 여행 되세요!",
+      "replies": []
+    }
+  ]
+}

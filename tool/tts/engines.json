@@ -1,0 +1,25 @@
+{
+  "_comment": "언어별 음성 엔진과 캐릭터 목소리. 근거와 평가 결과는 tool/tts/VOICES.md",
+  "en": { "engine": "supertonic", "lang": "en" },
+  "ja": { "engine": "supertonic", "lang": "ja" },
+  "ko": { "engine": "supertonic", "lang": "ko" },
+  "fr": { "engine": "supertonic", "lang": "fr" },
+  "en_gb": {
+    "engine": "kokoro",
+    "model": "hexgrad/Kokoro-82M",
+    "lang_code": "b",
+    "voices": { "mia": "bf_emma", "hana": "bf_isabella", "ellie": "bf_lily", "leo": "bm_george", "theo": "bm_fable", "guide": "bm_lewis" }
+  },
+  "es": {
+    "engine": "kokoro",
+    "model": "hexgrad/Kokoro-82M",
+    "lang_code": "e",
+    "voices": { "mia": "ef_dora", "hana": "if_sara", "ellie": "af_heart:0.5+ef_dora:0.5", "leo": "em_santa", "theo": "em_alex", "guide": "im_nicola:0.35+em_alex:0.65" }
+  },
+  "zh": {
+    "engine": "qwen",
+    "model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "language": "Chinese",
+    "voices": { "mia": "mia_0", "hana": "hana_0", "ellie": "ellie_0", "leo": "leo_0", "theo": "theo_0", "guide": "guide_1" }
+  }
+}

@@ -21,25 +21,27 @@
 
 ## 지원 현황
 
-| 언어 | 발음 기준 | 상태 |
-|---|---|---|
-| 영어 | 미국식 | 식당·호텔 대화, 캐릭터 5명 음성 |
-| 영어 | 영국식 | 식당·호텔 대화, 캐릭터 1명(Mia) 음성 |
-| 일본어 | 도쿄 표준어 | 식당·호텔 대화, 캐릭터 5명 음성 |
-| 한국어 | 서울 표준어 | 식당·호텔 대화, 캐릭터 5명 음성 |
-| 중국어 | 표준 보통화 | 식당·호텔 대화, 캐릭터 1명(Leo) 음성 |
-| 프랑스어 | 프랑스 본토 | 준비 중 |
-| 스페인어 | 스페인 본토 | 준비 중 |
+| 언어 | 발음 기준 | 상태 | 음성 엔진 |
+|---|---|---|---|
+| 영어 | 미국식 | 식당·호텔 대화, 캐릭터 5명 음성 | Supertonic 3 |
+| 영어 | 영국식 | 식당·호텔 대화, 캐릭터 5명 음성 | Kokoro-82M (영국식 발음 사전·영국인 화자) |
+| 일본어 | 도쿄 표준어 | 식당·호텔 대화, 캐릭터 5명 음성 | Supertonic 3 |
+| 한국어 | 서울 표준어 | 식당·호텔 대화, 캐릭터 5명 음성 | Supertonic 3 |
+| 중국어 | 표준 보통화 | 식당·호텔 대화, 캐릭터 5명 음성 | Qwen3-TTS (목소리 설계·복제) |
+| 프랑스어 | 프랑스 본토 | 식당·호텔 대화, 캐릭터 5명 음성 | Supertonic 3 |
+| 스페인어 | 스페인 본토 | 식당·호텔 대화, 캐릭터 5명 음성 | Kokoro-82M (카스티야식 발음기호) |
 
 쇼핑, 일상생활, 직장·업무 상황도 같은 구조로 추가할 수 있으며 지금은 '준비 중'으로 표시됩니다.
 
 ## 음성
 
 - 대화 음성은 개발 PC에서 미리 만든 MP3입니다. 앱은 실행 중에 TTS API를 호출하지 않습니다.
-- 영어(미국식)·일본어·한국어: **Supertonic 3**(오픈 웨이트, CPU). `tool/tts/generate_audio.py`
-- 영어(영국식)·중국어: Supertonic이 지원하지 않아 **Qwen3-TTS**(오픈 웨이트, CPU)로 만듭니다. `tool/tts/qwen_voices.py design <언어>`로 캐릭터 목소리를 설계하고, `tool/tts/qwen_audio.py`로 그 목소리를 복제해 대사를 읽힙니다. 언어마다 캐릭터 1명과 모범 답변 목소리만 있습니다.
-- Supertonic 언어에서 캐릭터는 언어와 관계없이 같은 목소리를 씁니다: Mia=F1, Leo=M1, Hana=F2, Theo=M2, Ellie=F3, 모범 답변=M4.
-- 비교한 엔진: Supertonic 3, Qwen3-TTS(0.6B CustomVoice). 결과와 샘플은 위 비교 페이지에 있습니다.
+- 언어별 엔진과 캐릭터 목소리는 [tool/tts/engines.json](tool/tts/engines.json)에, 엔진을 고른 근거와 평가 결과는 [tool/tts/VOICES.md](tool/tts/VOICES.md)에 있습니다.
+- 생성 스크립트(문장이 바뀐 파일만 다시 만듦, 목록은 `manifest_util.py`로 안전하게 합침):
+  - Supertonic 3 (en, ja, ko, fr): `.tts/venv-st/Scripts/python.exe tool/tts/generate_audio.py [언어]`
+  - Kokoro-82M (en_gb, es): `.tts/venv-kokoro/Scripts/python.exe tool/tts/kokoro_audio.py [언어]`
+  - Qwen3-TTS (zh): `.tts/venv-qwen/Scripts/python.exe tool/tts/qwen_audio.py [언어]` (목소리 설계: `qwen_voices.py design zh`)
+- 평가 스크립트: `eval_voices.py`(억양 분류·받아쓰기 정확도), `eval_speakers.py`(캐릭터 목소리 구분), `eval_theta.py`(스페인어 θ 발음)
 - 라이선스 고지는 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)를 보세요.
 
 ## 구조
@@ -58,8 +60,8 @@ tool/generate_icons_test.dart      앱 아이콘·파비콘 생성
 ## 콘텐츠·음성 추가
 
 1. `assets/content/<언어>/<시나리오>.json`을 쓰고 `catalog.json`의 해당 언어 `content`에 시나리오 ID를 넣습니다.
-2. 음성 생성 도구(로컬): `.tts/venv-st`에 Python 3.12 가상 환경을 만들고 `pip install supertonic`
-3. `.tts/venv-st/Scripts/python.exe tool/tts/generate_audio.py <언어>` (바뀐 문장만 다시 만듭니다)
+2. 음성 생성 도구(로컬): 언어의 엔진(`tool/tts/engines.json`)에 맞는 가상 환경을 `.tts/` 아래에 만듭니다(Supertonic: `pip install supertonic`, Kokoro: `pip install kokoro`, Qwen: `pip install qwen-tts`).
+3. 해당 엔진의 생성 스크립트를 실행합니다(바뀐 문장만 다시 만듭니다).
 4. 새 폴더가 생겼으면 `pubspec.yaml`의 `assets`에 더합니다.
 5. `flutter test`가 분기 연결, 결말 도달, 언어 간 구조 일치, 모든 대사의 음성 파일 존재를 확인합니다.
 
