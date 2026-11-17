@@ -11,6 +11,7 @@
 
 import hashlib
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -68,11 +69,16 @@ def main() -> None:
             and (AUDIO / j[0]).stat().st_size > 0
         )
     ]
+    # QWEN_SHARD=i/n: 여러 프로세스가 작업을 나눠 만든다(목록 갱신은 manifest_util이 잠금으로 보호).
+    shard = os.environ.get("QWEN_SHARD")
+    if shard:
+        i, n = (int(x) for x in shard.split("/"))
+        jobs = jobs[i::n]
     print(f"to make: {len(jobs)} (skip {len(npc_jobs) + len(guide_jobs) + len(word_jobs) - len(jobs)})", flush=True)
     if not jobs:
         return
 
-    torch.set_num_threads(12)
+    torch.set_num_threads(int(os.environ.get("QWEN_THREADS", "12")))
     t0 = time.perf_counter()
     model = Qwen3TTSModel.from_pretrained(
         manifest_util.ENGINES[langs[0]]["model"], device_map="cpu", dtype=torch.float32, attn_implementation="sdpa"

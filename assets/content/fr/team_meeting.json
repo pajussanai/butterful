@@ -1,0 +1,177 @@
+{
+  "id": "team_meeting",
+  "lang": "fr",
+  "start": "ask_time",
+  "nodes": [
+    {
+      "id": "ask_time",
+      "stage": "일정 잡기",
+      "text": "Tu as deux minutes ? Il faudrait qu'on cale une réunion pour le nouveau projet. Jeudi après-midi, ça te va ?",
+      "pron": "튀 아 되 미뉘트? 일 포드레 콩 칼 윈 레위니옹 푸르 르 누보 프로제. 죄디 아프레미디, 사 트 바?",
+      "trans": "잠깐 시간 있어요? 새 프로젝트 건으로 회의를 잡아야 할 것 같아요. 목요일 오후 괜찮아요?",
+      "replies": [
+        { "id": "ask_time_1", "text": "Oui, jeudi, ça me va.", "pron": "위, 죄디, 사 므 바.", "trans": "네, 목요일 괜찮아요.", "next": "pick_place" },
+        { "id": "ask_time_2", "text": "Désolé, jeudi, je suis pas mal pris.", "pron": "데졸레, 죄디, 주 쉬 파 말 프리.", "trans": "미안해요, 목요일은 꽤 바빠요.", "next": "other_slot" },
+        { "id": "ask_time_3", "text": "Jeudi à quelle heure ?", "pron": "죄디 아 켈 뢰르?", "trans": "목요일 몇 시요?", "next": "time_detail" }
+      ]
+    },
+    {
+      "id": "time_detail",
+      "stage": "일정 잡기",
+      "text": "Quatorze heures, ça te dit ? Ça devrait durer une heure environ.",
+      "pron": "카토르죄르, 사 트 디? 사 드브레 뒤레 위뇌르 앙비롱.",
+      "trans": "오후 두 시 어때요? 한 시간 정도 걸릴 거예요.",
+      "replies": [
+        { "id": "time_detail_1", "text": "Quatorze heures, c'est parfait.", "pron": "카토르죄르, 세 파르페.", "trans": "두 시 좋아요.", "next": "pick_place" },
+        { "id": "time_detail_2", "text": "J'ai déjà une réunion à cette heure-là. On peut faire un autre jour ?", "pron": "제 데자 윈 레위니옹 아 세트 외르라. 옹 푀 페르 앵 노트르 주르?", "trans": "그 시간엔 이미 회의가 있어요. 다른 날 해도 될까요?", "next": "other_slot" }
+      ]
+    },
+    {
+      "id": "other_slot",
+      "stage": "일정 조정",
+      "text": "Pas de souci. Et vendredi matin, à dix heures ?",
+      "pron": "파 드 수시. 에 방드르디 마탱, 아 디죄르?",
+      "trans": "괜찮아요. 그럼 금요일 오전 열 시는요?",
+      "replies": [
+        { "id": "other_slot_1", "text": "Vendredi à dix heures, c'est parfait.", "pron": "방드르디 아 디죄르, 세 파르페.", "trans": "금요일 열 시 딱 좋아요.", "next": "pick_place" },
+        { "id": "other_slot_2", "text": "Vendredi, je suis en déplacement. On peut le faire en visio ?", "pron": "방드르디, 주 쉬 장 데플라스망. 옹 푀 르 페르 앙 비지오?", "trans": "금요일엔 출장이에요. 화상으로 해도 될까요?", "next": "online" }
+      ]
+    },
+    {
+      "id": "pick_place",
+      "stage": "장소 정하기",
+      "text": "Super. Je réserve une salle, ou on fait ça en visio ?",
+      "pron": "쉬페르. 주 레제르브 윈 살, 우 옹 페 사 앙 비지오?",
+      "trans": "좋아요. 회의실을 잡을까요, 아니면 화상으로 할까요?",
+      "replies": [
+        { "id": "pick_place_1", "text": "Réserve une salle, plutôt.", "pron": "레제르브 윈 살, 플뤼토.", "trans": "회의실로 잡아 줘요.", "next": "room" },
+        { "id": "pick_place_2", "text": "En visio, c'est plus simple pour moi.", "pron": "앙 비지오, 세 플뤼 생플 푸르 무아.", "trans": "저는 화상이 더 편해요.", "next": "online" }
+      ]
+    },
+    {
+      "id": "room",
+      "stage": "장소 정하기",
+      "text": "D'accord, je réserve la petite salle et je t'envoie une invitation.",
+      "pron": "다코르, 주 레제르브 라 프티트 살 에 주 탕부아 윈 앵비타시옹.",
+      "trans": "알겠어요, 작은 회의실 잡고 초대 보낼게요.",
+      "replies": [
+        { "id": "room_1", "text": "Merci. On se voit à la réunion.", "pron": "메르시. 옹 스 부아 알 라 레위니옹.", "trans": "고마워요. 회의 때 봐요.", "next": "meeting_start" },
+        { "id": "room_2", "text": "Je dois préparer quelque chose ?", "pron": "주 두아 프레파레 켈크 쇼즈?", "trans": "제가 뭐 준비해야 해요?", "next": "prepare" }
+      ]
+    },
+    {
+      "id": "online",
+      "stage": "장소 정하기",
+      "text": "Pas de problème, la visio, c'est très bien. Je t'envoie le lien par mail.",
+      "pron": "파 드 프로블렘, 라 비지오, 세 트레 비앵. 주 탕부아 르 리앵 파르 멜.",
+      "trans": "문제없어요, 화상도 좋아요. 링크 메일로 보낼게요.",
+      "replies": [
+        { "id": "online_1", "text": "Parfait, merci. À plus tard !", "pron": "파르페, 메르시. 아 플뤼 타르!", "trans": "좋아요, 고마워요. 이따 봐요!", "next": "meeting_start" },
+        { "id": "online_2", "text": "Je dois préparer quelque chose ?", "pron": "주 두아 프레파레 켈크 쇼즈?", "trans": "제가 뭐 준비해야 해요?", "next": "prepare" }
+      ]
+    },
+    {
+      "id": "prepare",
+      "stage": "회의 준비",
+      "text": "Jette juste un œil au plan du projet. Je te l'envoie aujourd'hui.",
+      "pron": "제트 쥐스트 앵 뇌유 오 플랑 뒤 프로제. 주 트 랑부아 오주르뒤.",
+      "trans": "프로젝트 기획안만 한번 봐 줘요. 오늘 보내 줄게요.",
+      "replies": [
+        { "id": "prepare_1", "text": "D'accord. Je le lis avant la réunion.", "pron": "다코르. 주 르 리 아방 라 레위니옹.", "trans": "알겠어요. 회의 전에 읽어 볼게요.", "next": "meeting_start" },
+        { "id": "prepare_2", "text": "Ok. Tu me dis s'il y a du changement.", "pron": "오케. 튀 므 디 실 리 아 뒤 샹주망.", "trans": "네. 바뀌는 거 있으면 알려 줘요.", "next": "meeting_start" }
+      ]
+    },
+    {
+      "id": "meeting_start",
+      "stage": "아이디어 듣기",
+      "text": "Merci d'être là. Alors voilà mon idée : on fait d'abord une appli mobile, et le site web plus tard. Qu'est-ce que tu en penses ?",
+      "pron": "메르시 데트르 라. 알로르 부알라 모 니데: 옹 페 다보르 윈 아플리 모빌, 에 르 시트 웨브 플뤼 타르. 케스크 튀 앙 팡스?",
+      "trans": "와 줘서 고마워요. 제 아이디어는요, 모바일 앱을 먼저 만들고 웹사이트는 나중에 하는 거예요. 어떻게 생각해요?",
+      "replies": [
+        { "id": "meeting_start_1", "text": "Je trouve que c'est une très bonne idée.", "pron": "주 트루브 크 세 튄 트레 본 니데.", "trans": "아주 좋은 아이디어 같아요.", "next": "agree" },
+        { "id": "meeting_start_2", "text": "J'aime bien, mais je pense qu'il nous faut plus de temps.", "pron": "젬 비앵, 메 주 팡스 킬 누 포 플뤼 드 탕.", "trans": "좋은데, 시간이 더 필요할 것 같아요.", "next": "partial" },
+        { "id": "meeting_start_3", "text": "Franchement, je ne suis pas sûr. La plupart de nos clients utilisent le site.", "pron": "프랑슈망, 주 느 쉬 파 쉬르. 라 플뤼파르 드 노 클리앙 쥐틸리즈 르 시트.", "trans": "솔직히 잘 모르겠어요. 고객 대부분이 웹사이트를 쓰거든요.", "next": "disagree" }
+      ]
+    },
+    {
+      "id": "agree",
+      "stage": "의견 말하기",
+      "text": "Génial, merci ! Tu pourrais m'aider sur le design ?",
+      "pron": "제니알, 메르시! 튀 푸레 메데 쉬르 르 디자인?",
+      "trans": "잘됐다, 고마워요! 디자인 좀 도와줄 수 있어요?",
+      "replies": [
+        { "id": "agree_1", "text": "Bien sûr, avec plaisir.", "pron": "비앵 쉬르, 아베크 플레지르.", "trans": "물론이죠, 기꺼이요.", "next": "next_steps" },
+        { "id": "agree_2", "text": "Ce mois-ci, je suis assez chargé, mais je peux relire.", "pron": "스 무아시, 주 쉬 자세 샤르제, 메 주 푀 를리르.", "trans": "이번 달엔 꽤 바쁘지만 검토는 할 수 있어요.", "next": "next_steps" }
+      ]
+    },
+    {
+      "id": "partial",
+      "stage": "의견 말하기",
+      "text": "C'est vrai. Et si on décalait le lancement d'un mois ?",
+      "pron": "세 브레. 에 시 옹 데칼레 르 랑스망 댕 무아?",
+      "trans": "맞아요. 출시를 한 달 미루면 어때요?",
+      "replies": [
+        { "id": "partial_1", "text": "Oui, ce serait mieux.", "pron": "위, 스 스레 미외.", "trans": "네, 그게 낫겠어요.", "next": "next_steps" },
+        { "id": "partial_2", "text": "Bonne idée. On demande aussi l'avis de l'équipe ?", "pron": "본 니데. 옹 드망드 오시 라비 드 레키프?", "trans": "좋아요. 팀 의견도 물어볼까요?", "next": "next_steps" }
+      ]
+    },
+    {
+      "id": "disagree",
+      "stage": "의견 말하기",
+      "text": "Hmm, je vois ce que tu veux dire. Donc tu commencerais par le site ?",
+      "pron": "음, 주 부아 스 크 튀 뵈 디르. 동크 튀 코망스레 파르 르 시트?",
+      "trans": "음, 무슨 말인지 알겠어요. 그럼 웹사이트부터 하자는 거죠?",
+      "replies": [
+        { "id": "disagree_1", "text": "Oui. L'appli pourrait venir après.", "pron": "위. 라플리 푸레 브니르 아프레.", "trans": "네. 앱은 그다음에 해도 될 것 같아요.", "next": "rethink" },
+        { "id": "disagree_2", "text": "Peut-être. Regardons d'abord les données clients.", "pron": "푀테트르. 르가르동 다보르 레 도네 클리앙.", "trans": "아마도요. 먼저 고객 데이터를 봐요.", "next": "rethink" }
+      ]
+    },
+    {
+      "id": "rethink",
+      "stage": "의견 조율",
+      "text": "C'est juste. Je vais revoir les chiffres et y réfléchir.",
+      "pron": "세 쥐스트. 주 베 르부아르 레 시프르 에 이 레플레시르.",
+      "trans": "맞는 말이에요. 숫자를 다시 보고 생각해 볼게요.",
+      "replies": [
+        { "id": "rethink_1", "text": "Ça marche. On en reparle la semaine prochaine.", "pron": "사 마르슈. 옹 낭 르파를 라 스멘 프로셴.", "trans": "좋아요. 다음 주에 다시 얘기해요.", "next": "end_followup" },
+        { "id": "rethink_2", "text": "Merci. Je m'occupe du compte rendu aujourd'hui.", "pron": "메르시. 주 모퀴프 뒤 콩트 랑뒤 오주르뒤.", "trans": "고마워요. 회의록은 제가 오늘 정리할게요.", "next": "end_minutes" }
+      ]
+    },
+    {
+      "id": "next_steps",
+      "stage": "마무리",
+      "text": "Parfait. Je fais le compte rendu et je l'envoie aujourd'hui. On se revoit lundi prochain ?",
+      "pron": "파르페. 주 페 르 콩트 랑뒤 에 주 랑부아 오주르뒤. 옹 스 르부아 룅디 프로섕?",
+      "trans": "좋아요. 회의록은 제가 써서 오늘 보낼게요. 다음 주 월요일에 다시 볼까요?",
+      "replies": [
+        { "id": "next_steps_1", "text": "Lundi, ça me va. Merci pour le compte rendu.", "pron": "룅디, 사 므 바. 메르시 푸르 르 콩트 랑뒤.", "trans": "월요일 좋아요. 회의록 고마워요.", "next": "end_agreed" },
+        { "id": "next_steps_2", "text": "Je peux faire le compte rendu, cette fois.", "pron": "주 푀 페르 르 콩트 랑뒤, 세트 푸아.", "trans": "이번엔 회의록 제가 쓸게요.", "next": "end_minutes" },
+        { "id": "next_steps_3", "text": "Lundi, c'est compliqué pour moi. Mardi, ça irait ?", "pron": "룅디, 세 콩플리케 푸르 무아. 마르디, 사 이레?", "trans": "월요일은 좀 어려워요. 화요일은 괜찮아요?", "next": "end_agreed" }
+      ]
+    },
+    {
+      "id": "end_agreed",
+      "stage": "끝인사",
+      "text": "Parfait, je t'envoie une invitation. Merci, c'était une bonne réunion !",
+      "pron": "파르페, 주 탕부아 윈 앵비타시옹. 메르시, 세테 튄 본 레위니옹!",
+      "trans": "좋아요, 초대 보낼게요. 고마워요, 좋은 회의였어요!",
+      "replies": []
+    },
+    {
+      "id": "end_minutes",
+      "stage": "끝인사",
+      "text": "Ah, merci ! Envoie-le à toute l'équipe. À la semaine prochaine !",
+      "pron": "아, 메르시! 앙부알르 아 투트 레키프. 아 라 스멘 프로셴!",
+      "trans": "아, 고마워요! 팀 전체한테 보내 줘요. 다음 주에 봐요!",
+      "replies": []
+    },
+    {
+      "id": "end_followup",
+      "stage": "끝인사",
+      "text": "Merci pour ta franchise. Je partage les données avant la prochaine réunion.",
+      "pron": "메르시 푸르 타 프랑시즈. 주 파르타주 레 도네 아방 라 프로셴 레위니옹.",
+      "trans": "솔직하게 말해 줘서 고마워요. 다음 회의 전에 데이터 공유할게요.",
+      "replies": []
+    }
+  ]
+}

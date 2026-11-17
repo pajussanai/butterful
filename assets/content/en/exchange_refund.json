@@ -1,0 +1,185 @@
+{
+  "id": "exchange_refund",
+  "lang": "en",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "인사",
+      "text": "Hi there! How can I help you?",
+      "pron": "하이 데어! 하우 캔 아이 헬프 유?",
+      "trans": "안녕하세요! 무엇을 도와드릴까요?",
+      "replies": [
+        { "id": "greet_1", "text": "Hi. I bought this sweater yesterday, but it's too small.", "pron": "하이. 아이 밧 디스 스웨터 예스터데이, 벗 잇츠 투 스몰.", "trans": "안녕하세요. 어제 이 스웨터를 샀는데 너무 작아요.", "next": "receipt" },
+        { "id": "greet_2", "text": "I'd like to return this, please.", "pron": "아이드 라이크 투 리턴 디스, 플리즈.", "trans": "이거 반품하고 싶어요.", "next": "reason" },
+        { "id": "greet_3", "text": "There's a hole in this sweater.", "pron": "데어즈 어 홀 인 디스 스웨터.", "trans": "이 스웨터에 구멍이 있어요.", "next": "defect" }
+      ]
+    },
+    {
+      "id": "reason",
+      "stage": "이유 설명",
+      "text": "Sure. Was there a problem with it?",
+      "pron": "슈어. 워즈 데어 어 프라블럼 위드 잇?",
+      "trans": "네. 무슨 문제가 있었나요?",
+      "replies": [
+        { "id": "reason_1", "text": "It doesn't fit me.", "pron": "잇 더즌트 핏 미.", "trans": "저한테 안 맞아요.", "next": "receipt" },
+        { "id": "reason_2", "text": "No, I just changed my mind.", "pron": "노, 아이 저스트 체인지드 마이 마인드.", "trans": "아니요, 그냥 마음이 바뀌었어요.", "next": "receipt" }
+      ]
+    },
+    {
+      "id": "defect",
+      "stage": "불량 확인",
+      "text": "Oh, I'm so sorry about that. Do you have the receipt?",
+      "pron": "오, 아임 쏘 쏘리 어바웃 댓. 두 유 해브 더 리씻?",
+      "trans": "아, 정말 죄송합니다. 영수증 있으세요?",
+      "replies": [
+        { "id": "defect_1", "text": "Yes, here it is.", "pron": "예스, 히어 잇 이즈.", "trans": "네, 여기 있어요.", "next": "options" },
+        { "id": "defect_2", "text": "No, I lost it.", "pron": "노, 아이 로스트 잇.", "trans": "아니요, 잃어버렸어요.", "next": "no_receipt" }
+      ]
+    },
+    {
+      "id": "receipt",
+      "stage": "영수증 확인",
+      "text": "Okay. Do you have the receipt?",
+      "pron": "오케이. 두 유 해브 더 리씻?",
+      "trans": "알겠습니다. 영수증 있으세요?",
+      "replies": [
+        { "id": "receipt_1", "text": "Yes, here you go.", "pron": "예스, 히어 유 고.", "trans": "네, 여기요.", "next": "options" },
+        { "id": "receipt_2", "text": "Sorry, I don't have it.", "pron": "쏘리, 아이 돈트 해브 잇.", "trans": "죄송해요, 영수증이 없어요.", "next": "no_receipt" }
+      ]
+    },
+    {
+      "id": "options",
+      "stage": "교환·환불 선택",
+      "text": "Thanks. Would you like to exchange it, or get a refund?",
+      "pron": "땡스. 우쥬 라이크 투 익스체인지 잇, 오어 겟 어 리펀드?",
+      "trans": "감사합니다. 교환하시겠어요, 아니면 환불하시겠어요?",
+      "replies": [
+        { "id": "options_1", "text": "Can I get it in a bigger size?", "pron": "캔 아이 겟 잇 인 어 비거 사이즈?", "trans": "더 큰 사이즈로 바꿀 수 있나요?", "next": "size" },
+        { "id": "options_2", "text": "Do you have it in another color?", "pron": "두 유 해브 잇 인 어나더 컬러?", "trans": "다른 색상 있나요?", "next": "colour" },
+        { "id": "options_3", "text": "I'd like a refund, please.", "pron": "아이드 라이크 어 리펀드, 플리즈.", "trans": "환불해 주세요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "size",
+      "stage": "사이즈 교환",
+      "text": "Let me check... Sorry, we're out of the large right now.",
+      "pron": "렛 미 체크... 쏘리, 위어 아웃 오브 더 라지 라잇 나우.",
+      "trans": "확인해 볼게요... 죄송해요, 지금 라지 사이즈가 품절이에요.",
+      "replies": [
+        { "id": "size_1", "text": "Do you have a large in another color?", "pron": "두 유 해브 어 라지 인 어나더 컬러?", "trans": "다른 색상으로 라지 있나요?", "next": "colour" },
+        { "id": "size_2", "text": "When will you get more?", "pron": "웬 윌 유 겟 모어?", "trans": "언제 다시 들어와요?", "next": "restock" },
+        { "id": "size_3", "text": "Then I'll just get a refund.", "pron": "덴 아일 저스트 겟 어 리펀드.", "trans": "그럼 그냥 환불할게요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "restock",
+      "stage": "재입고 문의",
+      "text": "We should get more next week. Want us to call you when it comes in?",
+      "pron": "위 슈드 겟 모어 넥스트 위크. 원트 어스 투 콜 유 웬 잇 컴즈 인?",
+      "trans": "다음 주에 들어올 거예요. 들어오면 전화드릴까요?",
+      "replies": [
+        { "id": "restock_1", "text": "Yes, please. Here's my number.", "pron": "예스, 플리즈. 히어즈 마이 넘버.", "trans": "네, 부탁해요. 제 번호 여기 있어요.", "next": "end_wait" },
+        { "id": "restock_2", "text": "No, thanks. I'll just take a refund.", "pron": "노, 땡스. 아일 저스트 테이크 어 리펀드.", "trans": "아니요, 괜찮아요. 그냥 환불할게요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "colour",
+      "stage": "색상 교환",
+      "text": "We have it in black and navy. Which one would you like?",
+      "pron": "위 해브 잇 인 블랙 앤 네이비. 위치 원 우쥬 라이크?",
+      "trans": "검은색이랑 남색이 있어요. 어느 걸로 하시겠어요?",
+      "replies": [
+        { "id": "colour_1", "text": "Black, please.", "pron": "블랙, 플리즈.", "trans": "검은색으로 주세요.", "next": "try_on" },
+        { "id": "colour_2", "text": "The navy one, please.", "pron": "더 네이비 원, 플리즈.", "trans": "남색으로 주세요.", "next": "try_on" }
+      ]
+    },
+    {
+      "id": "try_on",
+      "stage": "입어 보기",
+      "text": "Here you go. Do you want to try it on? The fitting room is right over there.",
+      "pron": "히어 유 고. 두 유 원트 투 트라이 잇 온? 더 피팅 룸 이즈 라잇 오버 데어.",
+      "trans": "여기 있습니다. 입어 보시겠어요? 탈의실은 바로 저쪽이에요.",
+      "replies": [
+        { "id": "try_on_1", "text": "Sure, I'll try it on.", "pron": "슈어, 아일 트라이 잇 온.", "trans": "네, 입어 볼게요.", "next": "fits" },
+        { "id": "try_on_2", "text": "No, that's okay. I'll take it.", "pron": "노, 댓츠 오케이. 아일 테이크 잇.", "trans": "아니요, 괜찮아요. 이걸로 할게요.", "next": "end_exchange" }
+      ]
+    },
+    {
+      "id": "fits",
+      "stage": "착용 확인",
+      "text": "How does it fit?",
+      "pron": "하우 더즈 잇 핏?",
+      "trans": "잘 맞으세요?",
+      "replies": [
+        { "id": "fits_1", "text": "It fits perfectly.", "pron": "잇 핏츠 퍼펙틀리.", "trans": "딱 맞아요.", "next": "end_exchange" },
+        { "id": "fits_2", "text": "Hmm, it's still not right. Can I just get a refund?", "pron": "흠, 잇츠 스틸 낫 라잇. 캔 아이 저스트 겟 어 리펀드?", "trans": "음, 그래도 잘 안 맞아요. 그냥 환불받을 수 있을까요?", "next": "refund" }
+      ]
+    },
+    {
+      "id": "refund",
+      "stage": "환불 처리",
+      "text": "No problem. It'll go back on the card you paid with. Can I see the card?",
+      "pron": "노 프라블럼. 잇일 고 백 온 더 카드 유 페이드 위드. 캔 아이 씨 더 카드?",
+      "trans": "알겠습니다. 결제하신 카드로 환불돼요. 카드 좀 주시겠어요?",
+      "replies": [
+        { "id": "refund_1", "text": "Sure, here it is.", "pron": "슈어, 히어 잇 이즈.", "trans": "네, 여기 있어요.", "next": "end_refund" },
+        { "id": "refund_2", "text": "Here. How long does it take?", "pron": "히어. 하우 롱 더즈 잇 테이크?", "trans": "여기요. 얼마나 걸려요?", "next": "end_refund" }
+      ]
+    },
+    {
+      "id": "no_receipt",
+      "stage": "영수증 없음",
+      "text": "Without a receipt, I can't do a refund. But I can give you store credit.",
+      "pron": "위다웃 어 리씻, 아이 캔트 두 어 리펀드. 벗 아이 캔 기브 유 스토어 크레딧.",
+      "trans": "영수증이 없으면 환불은 안 돼요. 대신 매장 적립금으로 드릴 수 있어요.",
+      "replies": [
+        { "id": "no_receipt_1", "text": "Okay, store credit is fine.", "pron": "오케이, 스토어 크레딧 이즈 파인.", "trans": "네, 적립금도 괜찮아요.", "next": "end_credit" },
+        { "id": "no_receipt_2", "text": "Can you look it up with my card?", "pron": "캔 유 룩 잇 업 위드 마이 카드?", "trans": "제 카드로 조회해 주실 수 있나요?", "next": "card_lookup" }
+      ]
+    },
+    {
+      "id": "card_lookup",
+      "stage": "결제 내역 조회",
+      "text": "Sure, let me try... Yep, found it. So, exchange or refund?",
+      "pron": "슈어, 렛 미 트라이... 옙, 파운드 잇. 쏘, 익스체인지 오어 리펀드?",
+      "trans": "네, 한번 볼게요... 네, 찾았어요. 그럼 교환하시겠어요, 환불하시겠어요?",
+      "replies": [
+        { "id": "card_lookup_1", "text": "Can I get a bigger size?", "pron": "캔 아이 겟 어 비거 사이즈?", "trans": "더 큰 사이즈로 바꿀 수 있나요?", "next": "size" },
+        { "id": "card_lookup_2", "text": "A refund, please.", "pron": "어 리펀드, 플리즈.", "trans": "환불해 주세요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "end_exchange",
+      "stage": "마무리",
+      "text": "You're all set! Here's your new receipt. Thanks for coming back!",
+      "pron": "유어 올 셋! 히어즈 유어 뉴 리씻. 땡스 포 커밍 백!",
+      "trans": "다 됐습니다! 새 영수증 여기 있어요. 다시 와 주셔서 감사합니다!",
+      "replies": []
+    },
+    {
+      "id": "end_refund",
+      "stage": "마무리",
+      "text": "All done. You'll see the refund on your card in three to five days. Have a great day!",
+      "pron": "올 던. 율 씨 더 리펀드 온 유어 카드 인 쓰리 투 파이브 데이즈. 해브 어 그레잇 데이!",
+      "trans": "다 됐습니다. 사흘에서 닷새 안에 카드로 환불될 거예요. 좋은 하루 보내세요!",
+      "replies": []
+    },
+    {
+      "id": "end_credit",
+      "stage": "마무리",
+      "text": "Here's your store credit. You can use it anytime within a year. Thanks for coming in!",
+      "pron": "히어즈 유어 스토어 크레딧. 유 캔 유즈 잇 애니타임 위딘 어 이어. 땡스 포 커밍 인!",
+      "trans": "적립금 여기 있습니다. 일 년 안에 언제든 쓰실 수 있어요. 와 주셔서 감사합니다!",
+      "replies": []
+    },
+    {
+      "id": "end_wait",
+      "stage": "마무리",
+      "text": "Great. We'll call you as soon as it comes in. Have a good one!",
+      "pron": "그레잇. 윌 콜 유 애즈 쑨 애즈 잇 컴즈 인. 해브 어 굿 원!",
+      "trans": "좋아요. 들어오는 대로 바로 전화드릴게요. 좋은 하루 보내세요!",
+      "replies": []
+    }
+  ]
+}

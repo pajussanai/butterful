@@ -1,0 +1,164 @@
+{
+  "id": "progress_deadline",
+  "lang": "fr",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "진행 확인",
+      "text": "Minjun, où en es-tu avec le rapport ?",
+      "pron": "민준, 우 앙 에 튀 아베크 르 라포르?",
+      "trans": "민준 씨, 보고서는 어디까지 했어요?",
+      "replies": [
+        { "id": "greet_1", "text": "Ça avance bien. J'ai presque fini.", "pron": "사 아방스 비앵. 제 프레스크 피니.", "trans": "잘 진행되고 있어요. 거의 끝났어요.", "next": "on_track" },
+        { "id": "greet_2", "text": "En fait, j'ai un peu de retard.", "pron": "앙 페트, 제 앵 푀 드 르타르.", "trans": "사실 조금 늦어지고 있어요.", "next": "behind" },
+        { "id": "greet_3", "text": "Pour être honnête, je suis bloqué.", "pron": "푸르 에트르 오네트, 즈 쉬 블로케.", "trans": "솔직히 말씀드리면, 막혀 있어요.", "next": "blocked" }
+      ]
+    },
+    {
+      "id": "on_track",
+      "stage": "진행 상황",
+      "text": "Super. Donc c'est bon pour vendredi soir ?",
+      "pron": "쉬페르. 동크 세 봉 푸르 방드르디 수아르?",
+      "trans": "좋아요. 그럼 금요일 저녁까지 괜찮은 거죠?",
+      "replies": [
+        { "id": "on_track_1", "text": "Oui, pas de problème.", "pron": "위, 파 드 프로블렘.", "trans": "네, 문제없어요.", "next": "end_friday" },
+        { "id": "on_track_2", "text": "Oui. Est-ce que je peux vous montrer un premier jet demain ?", "pron": "위. 에스 크 즈 푀 부 몽트레 앵 프르미에 제 드맹?", "trans": "네. 내일 초안을 먼저 보여 드려도 될까요?", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "behind",
+      "stage": "진행 상황",
+      "text": "Ah bon ? Qu'est-ce qui se passe ?",
+      "pron": "아 봉? 케스 키 스 파스?",
+      "trans": "아 그래요? 무슨 일 있어요?",
+      "replies": [
+        { "id": "behind_1", "text": "J'ai eu une urgence sur un autre projet.", "pron": "제 위 윈 위르장스 쉬르 앵 노트르 프로제.", "trans": "다른 프로젝트에 급한 일이 생겼어요.", "next": "behind_reason" },
+        { "id": "behind_2", "text": "J'attends encore les chiffres de l'équipe commerciale.", "pron": "자탕 앙코르 레 시프르 드 레키프 코메르시알.", "trans": "영업팀 수치를 아직 기다리고 있어요.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "blocked",
+      "stage": "진행 상황",
+      "text": "D'accord, merci de me le dire. Qu'est-ce qui bloque ?",
+      "pron": "다코르, 메르시 드 므 르 디르. 케스 키 블로크?",
+      "trans": "알겠어요, 말해 줘서 고마워요. 뭐가 막혀요?",
+      "replies": [
+        { "id": "blocked_1", "text": "Il me faut les chiffres du mois dernier de l'équipe commerciale.", "pron": "일 므 포 레 시프르 뒤 무아 데르니에 드 레키프 코메르시알.", "trans": "영업팀의 지난달 수치가 필요해요.", "next": "blocked_help" },
+        { "id": "blocked_2", "text": "Le marketing ne m'a pas encore envoyé les résultats de l'enquête.", "pron": "르 마르케팅 느 마 파 장코르 앙부아예 레 레쥘타 드 랑케트.", "trans": "마케팅팀이 아직 설문 결과를 안 보내 줬어요.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "behind_reason",
+      "stage": "마감 조율",
+      "text": "Je vois, ça arrive. Tu penses finir quand, alors ?",
+      "pron": "즈 부아, 사 아리브. 튀 팡스 피니르 캉, 알로르?",
+      "trans": "그렇군요, 그럴 수 있죠. 그럼 언제 끝낼 수 있을 것 같아요?",
+      "replies": [
+        { "id": "behind_reason_1", "text": "Est-ce que je pourrais avoir deux jours de plus ?", "pron": "에스 크 즈 푸레 아부아르 되 주르 드 플뤼스?", "trans": "이틀만 더 주실 수 있을까요?", "next": "extend_ask" },
+        { "id": "behind_reason_2", "text": "Je peux d'abord vous envoyer un premier jet demain.", "pron": "즈 푀 다보르 부 장부아예 앵 프르미에 제 드맹.", "trans": "우선 내일 초안부터 보내 드릴 수 있어요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "blocked_help",
+      "stage": "도움 요청",
+      "text": "Tu les as relancés ?",
+      "pron": "튀 레 자 를랑세?",
+      "trans": "그쪽에 다시 연락해 봤어요?",
+      "replies": [
+        { "id": "blocked_help_1", "text": "Oui, je leur ai écrit lundi, mais toujours pas de réponse.", "pron": "위, 즈 뢰르 에 에크리 룅디, 메 투주르 파 드 레퐁스.", "trans": "네, 월요일에 메일을 보냈는데 아직 답이 없어요.", "next": "manager_calls" },
+        { "id": "blocked_help_2", "text": "Pas encore. Je vais leur demander aujourd'hui.", "pron": "파 장코르. 즈 베 뢰르 드망데 오주르뒤.", "trans": "아직이요. 오늘 물어볼게요.", "next": "ask_today" }
+      ]
+    },
+    {
+      "id": "manager_calls",
+      "stage": "도움 요청",
+      "text": "D'accord, je vais en parler à leur responsable. Tu devrais les avoir demain.",
+      "pron": "다코르, 즈 베 앙 파를레 아 뢰르 레스퐁사블. 튀 드브레 레 자부아르 드맹.",
+      "trans": "알겠어요, 제가 그쪽 책임자한테 얘기할게요. 내일이면 받을 거예요.",
+      "replies": [
+        { "id": "manager_calls_1", "text": "Merci. Alors, est-ce que je pourrais rendre le rapport mardi prochain ?", "pron": "메르시. 알로르, 에스 크 즈 푸레 랑드르 르 라포르 마르디 프로생?", "trans": "감사합니다. 그럼 보고서를 다음 주 화요일에 내도 될까요?", "next": "extend_ask" },
+        { "id": "manager_calls_2", "text": "Merci. En attendant, je vous envoie un premier jet avec ce que j'ai.", "pron": "메르시. 앙 나탕당, 즈 부 장부아 앵 프르미에 제 아베크 스 크 제.", "trans": "감사합니다. 그동안 지금 있는 걸로 초안을 보내 드릴게요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "ask_today",
+      "stage": "도움 요청",
+      "text": "Oui, fais-le. Si tu n'as pas de réponse demain, dis-le-moi.",
+      "pron": "위, 페 르. 시 튀 나 파 드 레퐁스 드맹, 디 르 무아.",
+      "trans": "그래요, 그렇게 해요. 내일까지 답이 없으면 말해 줘요.",
+      "replies": [
+        { "id": "ask_today_1", "text": "D'accord. Mais j'aurai peut-être besoin d'un peu plus de temps.", "pron": "다코르. 메 조레 푀테트르 브주앵 댕 푀 플뤼 드 탕.", "trans": "알겠습니다. 그런데 시간이 조금 더 필요할 수도 있어요.", "next": "extend_ask" },
+        { "id": "ask_today_2", "text": "D'accord. Je vise toujours vendredi.", "pron": "다코르. 즈 비즈 투주르 방드르디.", "trans": "알겠습니다. 그래도 금요일을 목표로 할게요.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "extend_ask",
+      "stage": "마감 조율",
+      "text": "Hmm, la réunion avec le client, c'est lundi matin. Un premier jet vendredi et la version finale lundi à la première heure, ça te va ?",
+      "pron": "음, 라 레위니옹 아베크 르 클리앙, 세 룅디 마탱. 앵 프르미에 제 방드르디 에 라 베르시옹 피날 룅디 아 라 프르미에르 외르, 사 트 바?",
+      "trans": "음, 고객 회의가 월요일 오전이에요. 금요일에 초안, 월요일 아침 일찍 최종본, 이렇게 괜찮아요?",
+      "replies": [
+        { "id": "extend_ask_1", "text": "Oui, ça me va. Merci.", "pron": "위, 사 므 바. 메르시.", "trans": "네, 좋아요. 감사합니다.", "next": "recap" },
+        { "id": "extend_ask_2", "text": "C'est un peu juste. Quelqu'un pourrait m'aider pour les graphiques ?", "pron": "세 탱 푀 쥐스트. 켈캉 푸레 메데 푸르 레 그라피크?", "trans": "조금 빠듯해요. 그래프 작업을 누가 도와줄 수 있을까요?", "next": "help_offer" }
+      ]
+    },
+    {
+      "id": "help_offer",
+      "stage": "마감 조율",
+      "text": "Oui, je vais demander à quelqu'un de l'équipe. Du coup, vendredi, c'est faisable ?",
+      "pron": "위, 즈 베 드망데 아 켈캉 드 레키프. 뒤 쿠, 방드르디, 세 프자블?",
+      "trans": "그래요, 팀에서 누군가한테 부탁할게요. 그러면 금요일까지 가능해요?",
+      "replies": [
+        { "id": "help_offer_1", "text": "Oui, comme ça, je peux finir pour vendredi.", "pron": "위, 콤 사, 즈 푀 피니르 푸르 방드르디.", "trans": "네, 그러면 금요일까지 끝낼 수 있어요.", "next": "end_friday" },
+        { "id": "help_offer_2", "text": "Je vais essayer. Au cas où, je vous envoie un premier jet demain.", "pron": "즈 베 제세이에. 오 카 우, 즈 부 장부아 앵 프르미에 제 드맹.", "trans": "해 볼게요. 혹시 모르니 내일 초안을 보내 드릴게요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "draft_offer",
+      "stage": "마감 조율",
+      "text": "Bonne idée. Envoie-moi le premier jet demain, je te ferai un retour. Et la version finale, pour quand ?",
+      "pron": "본 이데. 앙부아 무아 르 프르미에 제 드맹, 즈 트 프레 앵 르투르. 에 라 베르시옹 피날, 푸르 캉?",
+      "trans": "좋은 생각이에요. 내일 초안 보내 주면 피드백 줄게요. 그럼 최종본은 언제까지 돼요?",
+      "replies": [
+        { "id": "draft_offer_1", "text": "Est-ce que lundi matin, ça irait ?", "pron": "에스 크 룅디 마탱, 사 이레?", "trans": "월요일 아침이면 괜찮을까요?", "next": "end_draft" },
+        { "id": "draft_offer_2", "text": "Vendredi soir au plus tard.", "pron": "방드르디 수아르 오 플뤼 타르.", "trans": "늦어도 금요일 저녁까지요.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "recap",
+      "stage": "다음 단계",
+      "text": "Très bien. Alors, on récapitule : c'est quoi, le plan ?",
+      "pron": "트레 비앵. 알로르, 옹 레카피튈: 세 쿠아, 르 플랑?",
+      "trans": "좋아요. 그럼 정리해 볼까요. 계획이 어떻게 되죠?",
+      "replies": [
+        { "id": "recap_1", "text": "Un premier jet vendredi après-midi, et la version finale lundi matin.", "pron": "앵 프르미에 제 방드르디 아프레미디, 에 라 베르시옹 피날 룅디 마탱.", "trans": "금요일 오후에 초안, 월요일 아침에 최종본이요.", "next": "end_compromise" },
+        { "id": "recap_2", "text": "Je vous envoie le premier jet vendredi, et la version finale avant la réunion.", "pron": "즈 부 장부아 르 프르미에 제 방드르디, 에 라 베르시옹 피날 아방 라 레위니옹.", "trans": "금요일에 초안을 보내고, 회의 전에 최종본을 보내 드릴게요.", "next": "end_compromise" }
+      ]
+    },
+    {
+      "id": "end_friday",
+      "stage": "마무리",
+      "text": "Parfait. Vendredi soir, alors. S'il y a le moindre souci, préviens-moi tout de suite.",
+      "pron": "파르페. 방드르디 수아르, 알로르. 실 리 아 르 무앵드르 수시, 프레비앵 무아 투 드 쉬트.",
+      "trans": "좋아요. 그럼 금요일 저녁까지예요. 조금이라도 문제가 생기면 바로 알려 줘요.",
+      "replies": []
+    },
+    {
+      "id": "end_compromise",
+      "stage": "마무리",
+      "text": "Très bien. Merci de m'en avoir parlé tôt, Minjun. Si tu as besoin d'aide, n'hésite pas.",
+      "pron": "트레 비앵. 메르시 드 망 나부아르 파를레 토, 민준. 시 튀 아 브주앵 데드, 네지트 파.",
+      "trans": "좋아요. 미리 말해 줘서 고마워요, 민준 씨. 도움이 필요하면 언제든 말해요.",
+      "replies": []
+    },
+    {
+      "id": "end_draft",
+      "stage": "마무리",
+      "text": "Lundi matin, ça marche, mais avant dix heures. Je regarde ton premier jet et je reviens vers toi.",
+      "pron": "룅디 마탱, 사 마르슈, 메 아방 디 죄르. 즈 르가르드 통 프르미에 제 에 즈 르비앵 베르 투아.",
+      "trans": "월요일 아침도 괜찮아요. 다만 열 시 전까지요. 초안 보고 다시 연락할게요.",
+      "replies": []
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "progress_deadline",
+  "lang": "es",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "진행 확인",
+      "text": "Minjun, ¿cómo llevas el informe?",
+      "pron": "민준, 꼬모 예바스 엘 인포르메?",
+      "trans": "민준 씨, 보고서 어떻게 돼 가요?",
+      "replies": [
+        { "id": "greet_1", "text": "Va bien. Ya casi lo tengo.", "pron": "바 비엔. 야 까시 로 뗑고.", "trans": "잘 되고 있어요. 거의 다 했어요.", "next": "on_track" },
+        { "id": "greet_2", "text": "La verdad, voy un poco retrasado.", "pron": "라 베르다, 보이 운 뽀꼬 레뜨라사도.", "trans": "사실 조금 늦어지고 있어요.", "next": "behind" },
+        { "id": "greet_3", "text": "Si te soy sincero, estoy atascado.", "pron": "시 떼 소이 신쎄로, 에스또이 아따스까도.", "trans": "솔직히 말하면, 막혀 있어요.", "next": "blocked" }
+      ]
+    },
+    {
+      "id": "on_track",
+      "stage": "진행 상황",
+      "text": "Genial. Entonces, ¿lo tienes para el viernes?",
+      "pron": "헤니알. 엔똔쎄스, 로 띠에네스 빠라 엘 비에르네스?",
+      "trans": "좋아요. 그럼 금요일까지 되는 거죠?",
+      "replies": [
+        { "id": "on_track_1", "text": "Sí, sin problema.", "pron": "시, 신 쁘로블레마.", "trans": "네, 문제없어요.", "next": "end_friday" },
+        { "id": "on_track_2", "text": "Sí. ¿Te puedo enseñar un borrador mañana primero?", "pron": "시. 떼 뿌에도 엔세냐르 운 보라도르 마냐나 쁘리메로?", "trans": "네. 내일 초안을 먼저 보여 드려도 될까요?", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "behind",
+      "stage": "진행 상황",
+      "text": "Vaya. ¿Qué ha pasado?",
+      "pron": "바야. 께 아 빠사도?",
+      "trans": "저런. 무슨 일 있었어요?",
+      "replies": [
+        { "id": "behind_1", "text": "Me ha surgido algo urgente en otro proyecto.", "pron": "메 아 수르히도 알고 우르헨떼 엔 오뜨로 쁘로옉또.", "trans": "다른 프로젝트에 급한 일이 생겼어요.", "next": "behind_reason" },
+        { "id": "behind_2", "text": "Todavía estoy esperando los datos del equipo comercial.", "pron": "또다비아 에스또이 에스뻬란도 로스 다또스 델 에끼뽀 꼬메르씨알.", "trans": "영업팀 데이터를 아직 기다리고 있어요.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "blocked",
+      "stage": "진행 상황",
+      "text": "Vale, gracias por decírmelo. ¿Cuál es el problema?",
+      "pron": "발레, 그라씨아스 뽀르 데씨르멜로. 꾸알 에스 엘 쁘로블레마?",
+      "trans": "알겠어요, 말해 줘서 고마워요. 뭐가 문제예요?",
+      "replies": [
+        { "id": "blocked_1", "text": "Necesito las cifras del mes pasado del equipo comercial.", "pron": "네쎄시또 라스 씨프라스 델 메스 빠사도 델 에끼뽀 꼬메르씨알.", "trans": "영업팀의 지난달 수치가 필요해요.", "next": "blocked_help" },
+        { "id": "blocked_2", "text": "Marketing todavía no me ha mandado los resultados de la encuesta.", "pron": "마르께띤 또다비아 노 메 아 만다도 로스 레술따도스 데 라 엔꾸에스따.", "trans": "마케팅팀이 아직 설문 결과를 안 보내 줬어요.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "behind_reason",
+      "stage": "마감 조율",
+      "text": "Entiendo, son cosas que pasan. ¿Y cuándo crees que lo puedes terminar?",
+      "pron": "엔띠엔도, 손 꼬사스 께 빠산. 이 꾸안도 끄레에스 께 로 뿌에데스 떼르미나르?",
+      "trans": "그렇군요, 그럴 수 있죠. 그럼 언제 끝낼 수 있을 것 같아요?",
+      "replies": [
+        { "id": "behind_reason_1", "text": "¿Me podrías dar dos días más?", "pron": "메 뽀드리아스 다르 도스 디아스 마스?", "trans": "이틀만 더 주실 수 있을까요?", "next": "extend_ask" },
+        { "id": "behind_reason_2", "text": "Puedo mandarte un borrador mañana primero.", "pron": "뿌에도 만다르떼 운 보라도르 마냐나 쁘리메로.", "trans": "우선 내일 초안부터 보내 드릴 수 있어요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "blocked_help",
+      "stage": "도움 요청",
+      "text": "¿Les has escrito?",
+      "pron": "레스 아스 에스끄리또?",
+      "trans": "그쪽에 연락해 봤어요?",
+      "replies": [
+        { "id": "blocked_help_1", "text": "Sí, les escribí el lunes, pero aún no me han contestado.", "pron": "시, 레스 에스끄리비 엘 루네스, 뻬로 아운 노 메 안 꼰떼스따도.", "trans": "네, 월요일에 메일을 보냈는데 아직 답이 없어요.", "next": "manager_calls" },
+        { "id": "blocked_help_2", "text": "Todavía no. Hoy les pregunto.", "pron": "또다비아 노. 오이 레스 쁘레군또.", "trans": "아직이요. 오늘 물어볼게요.", "next": "ask_today" }
+      ]
+    },
+    {
+      "id": "manager_calls",
+      "stage": "도움 요청",
+      "text": "Vale, hablo yo con su responsable. Mañana deberías tenerlo.",
+      "pron": "발레, 아블로 요 꼰 수 레스뽄사블레. 마냐나 데베리아스 떼네를로.",
+      "trans": "알겠어요, 제가 그쪽 책임자랑 얘기할게요. 내일이면 받을 거예요.",
+      "replies": [
+        { "id": "manager_calls_1", "text": "Gracias. Entonces, ¿podría entregarlo el martes que viene?", "pron": "그라씨아스. 엔똔쎄스, 뽀드리아 엔뜨레가를로 엘 마르떼스 께 비에네?", "trans": "감사합니다. 그럼 다음 주 화요일에 내도 될까요?", "next": "extend_ask" },
+        { "id": "manager_calls_2", "text": "Gracias. Mientras tanto, te mando un borrador con lo que tengo.", "pron": "그라씨아스. 미엔뜨라스 딴또, 떼 만도 운 보라도르 꼰 로 께 뗑고.", "trans": "감사합니다. 그동안 지금 있는 걸로 초안을 보내 드릴게요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "ask_today",
+      "stage": "도움 요청",
+      "text": "Sí, hazlo. Si mañana no te contestan, avísame.",
+      "pron": "시, 아쓸로. 시 마냐나 노 떼 꼰떼스딴, 아비사메.",
+      "trans": "그래요, 그렇게 해요. 내일까지 답이 없으면 알려 줘요.",
+      "replies": [
+        { "id": "ask_today_1", "text": "Vale. Pero puede que necesite un poco más de tiempo.", "pron": "발레. 뻬로 뿌에데 께 네쎄시떼 운 뽀꼬 마스 데 띠엠뽀.", "trans": "알겠습니다. 그런데 시간이 조금 더 필요할 수도 있어요.", "next": "extend_ask" },
+        { "id": "ask_today_2", "text": "Vale. Aun así, intento tenerlo para el viernes.", "pron": "발레. 아운 아시, 인뗀또 떼네를로 빠라 엘 비에르네스.", "trans": "알겠습니다. 그래도 금요일까지 해 볼게요.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "extend_ask",
+      "stage": "마감 조율",
+      "text": "Mmm, la reunión con el cliente es el lunes por la mañana. ¿Qué tal un borrador el viernes y la versión final el lunes a primera hora?",
+      "pron": "음, 라 레우니온 꼰 엘 끌리엔떼 에스 엘 루네스 뽀르 라 마냐나. 께 딸 운 보라도르 엘 비에르네스 이 라 베르시온 피날 엘 루네스 아 쁘리메라 오라?",
+      "trans": "음, 고객 회의가 월요일 오전이에요. 금요일에 초안, 월요일 아침 일찍 최종본, 이렇게 어때요?",
+      "replies": [
+        { "id": "extend_ask_1", "text": "Me parece bien. Gracias.", "pron": "메 빠레쎄 비엔. 그라씨아스.", "trans": "좋아요. 감사합니다.", "next": "recap" },
+        { "id": "extend_ask_2", "text": "Voy un poco justo. ¿Alguien me podría ayudar con los gráficos?", "pron": "보이 운 뽀꼬 후스또. 알기엔 메 뽀드리아 아유다르 꼰 로스 그라피꼬스?", "trans": "조금 빠듯해요. 그래프 작업을 누가 도와줄 수 있을까요?", "next": "help_offer" }
+      ]
+    },
+    {
+      "id": "help_offer",
+      "stage": "마감 조율",
+      "text": "Claro, se lo pido a alguien del equipo. Así, ¿llegas al viernes?",
+      "pron": "끌라로, 세 로 삐도 아 알기엔 델 에끼뽀. 아시, 예가스 알 비에르네스?",
+      "trans": "물론이죠, 팀에서 누군가한테 부탁할게요. 그러면 금요일까지 할 수 있겠어요?",
+      "replies": [
+        { "id": "help_offer_1", "text": "Sí, así lo termino para el viernes.", "pron": "시, 아시 로 떼르미노 빠라 엘 비에르네스.", "trans": "네, 그러면 금요일까지 끝낼 수 있어요.", "next": "end_friday" },
+        { "id": "help_offer_2", "text": "Lo intento. Por si acaso, te mando un borrador mañana.", "pron": "로 인뗀또. 뽀르 시 아까소, 떼 만도 운 보라도르 마냐나.", "trans": "해 볼게요. 혹시 모르니 내일 초안을 보내 드릴게요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "draft_offer",
+      "stage": "마감 조율",
+      "text": "Buena idea. Mándame el borrador mañana y te comento. ¿Y la versión final para cuándo?",
+      "pron": "부에나 이데아. 만다메 엘 보라도르 마냐나 이 떼 꼬멘또. 이 라 베르시온 피날 빠라 꾸안도?",
+      "trans": "좋은 생각이에요. 내일 초안 보내 주면 의견 줄게요. 그럼 최종본은 언제까지 돼요?",
+      "replies": [
+        { "id": "draft_offer_1", "text": "¿Te parece bien el lunes por la mañana?", "pron": "떼 빠레쎄 비엔 엘 루네스 뽀르 라 마냐나?", "trans": "월요일 아침이면 괜찮을까요?", "next": "end_draft" },
+        { "id": "draft_offer_2", "text": "Para el viernes por la tarde.", "pron": "빠라 엘 비에르네스 뽀르 라 따르데.", "trans": "금요일 오후까지요.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "recap",
+      "stage": "다음 단계",
+      "text": "Perfecto. A ver, para que quede claro, ¿cuál es el plan?",
+      "pron": "뻬르펙또. 아 베르, 빠라 께 께데 끌라로, 꾸알 에스 엘 쁠란?",
+      "trans": "좋아요. 자, 확실히 해 두게, 계획이 어떻게 되죠?",
+      "replies": [
+        { "id": "recap_1", "text": "El borrador el viernes por la tarde y la versión final el lunes por la mañana.", "pron": "엘 보라도르 엘 비에르네스 뽀르 라 따르데 이 라 베르시온 피날 엘 루네스 뽀르 라 마냐나.", "trans": "금요일 오후에 초안, 월요일 아침에 최종본이요.", "next": "end_compromise" },
+        { "id": "recap_2", "text": "Te mando el borrador el viernes y la versión final antes de la reunión.", "pron": "떼 만도 엘 보라도르 엘 비에르네스 이 라 베르시온 피날 안떼스 데 라 레우니온.", "trans": "금요일에 초안을 보내고, 회의 전에 최종본을 보내 드릴게요.", "next": "end_compromise" }
+      ]
+    },
+    {
+      "id": "end_friday",
+      "stage": "마무리",
+      "text": "Genial. Pues el viernes, entonces. Si surge cualquier cosa, avísame enseguida.",
+      "pron": "헤니알. 뿌에스 엘 비에르네스, 엔똔쎄스. 시 수르헤 꾸알끼에르 꼬사, 아비사메 엔세기다.",
+      "trans": "좋아요. 그럼 금요일까지예요. 무슨 일 생기면 바로 알려 줘요.",
+      "replies": []
+    },
+    {
+      "id": "end_compromise",
+      "stage": "마무리",
+      "text": "Perfecto. Gracias por avisarme con tiempo, Minjun. Si necesitas algo, dímelo.",
+      "pron": "뻬르펙또. 그라씨아스 뽀르 아비사르메 꼰 띠엠뽀, 민준. 시 네쎄시따스 알고, 디멜로.",
+      "trans": "좋아요. 미리 알려 줘서 고마워요, 민준 씨. 필요한 거 있으면 말해요.",
+      "replies": []
+    },
+    {
+      "id": "end_draft",
+      "stage": "마무리",
+      "text": "El lunes por la mañana vale, pero antes de las diez, ¿eh? Miro el borrador y te digo algo.",
+      "pron": "엘 루네스 뽀르 라 마냐나 발레, 뻬로 안떼스 데 라스 디에쓰, 에? 미로 엘 보라도르 이 떼 디고 알고.",
+      "trans": "월요일 아침도 괜찮아요. 다만 열 시 전까지예요, 알았죠? 초안 보고 연락할게요.",
+      "replies": []
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "id": "clothes_shop",
+  "lang": "zh",
+  "start": "welcome",
+  "nodes": [
+    {
+      "id": "welcome",
+      "stage": "입장",
+      "text": "欢迎光临！您想看点儿什么？",
+      "pron": "Huānyíng guānglín! Nín xiǎng kàn diǎnr shénme?\n환잉 광린! 닌 샹 칸 디얄 선머?",
+      "trans": "어서 오세요! 뭘 보러 오셨어요?",
+      "replies": [
+        { "id": "welcome_1", "text": "我想买件毛衣。", "pron": "Wǒ xiǎng mǎi jiàn máoyī.\n워 샹 마이 젠 마오이.", "trans": "스웨터를 사고 싶어요.", "next": "sweater" },
+        { "id": "welcome_2", "text": "有大衣吗？", "pron": "Yǒu dàyī ma?\n여우 따이 마?", "trans": "코트 있어요?", "next": "coat" },
+        { "id": "welcome_3", "text": "我先随便看看。", "pron": "Wǒ xiān suíbiàn kànkan.\n워 셴 쑤이볜 칸칸.", "trans": "일단 그냥 좀 둘러볼게요.", "next": "browse" }
+      ]
+    },
+    {
+      "id": "browse",
+      "stage": "둘러보기",
+      "text": "好的，您慢慢看。有需要就叫我。",
+      "pron": "Hǎo de, nín mànmàn kàn. Yǒu xūyào jiù jiào wǒ.\n하오 더, 닌 만만 칸. 여우 쉬야오 지우 자오 워.",
+      "trans": "네, 천천히 보세요. 필요하시면 불러 주세요.",
+      "replies": [
+        { "id": "browse_1", "text": "现在有打折的吗？", "pron": "Xiànzài yǒu dǎzhé de ma?\n셴짜이 여우 다저 더 마?", "trans": "지금 할인하는 거 있어요?", "next": "sale" },
+        { "id": "browse_2", "text": "对了，毛衣在哪儿？", "pron": "Duì le, máoyī zài nǎr?\n뚜이 러, 마오이 짜이 날?", "trans": "참, 스웨터는 어디 있어요?", "next": "sweater" }
+      ]
+    },
+    {
+      "id": "sale",
+      "stage": "할인 확인",
+      "text": "有，这排衣服都打七折。",
+      "pron": "Yǒu, zhè pái yīfu dōu dǎ qī zhé.\n여우, 저 파이 이푸 더우 다 치 저.",
+      "trans": "있어요, 이쪽 줄 옷은 전부 삼십 퍼센트 할인이에요.",
+      "replies": [
+        { "id": "sale_1", "text": "不错。有大衣吗？", "pron": "Búcuò. Yǒu dàyī ma?\n부춰. 여우 따이 마?", "trans": "좋네요. 코트도 있어요?", "next": "coat" },
+        { "id": "sale_2", "text": "好的，我待会儿再来。", "pron": "Hǎo de, wǒ dāi huìr zài lái.\n하오 더, 워 다이 훨 짜이 라이.", "trans": "알겠어요, 이따가 다시 올게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "sweater",
+      "stage": "상품 찾기",
+      "text": "毛衣都在这边。您想要什么颜色的？",
+      "pron": "Máoyī dōu zài zhèbiān. Nín xiǎng yào shénme yánsè de?\n마오이 더우 짜이 저볜. 닌 샹 야오 선머 옌써 더?",
+      "trans": "스웨터는 다 이쪽에 있어요. 어떤 색을 원하세요?",
+      "replies": [
+        { "id": "sweater_1", "text": "有黑色的吗？", "pron": "Yǒu hēisè de ma?\n여우 헤이써 더 마?", "trans": "검은색 있어요?", "next": "color" },
+        { "id": "sweater_2", "text": "我想要藏青色的。", "pron": "Wǒ xiǎng yào zàngqīngsè de.\n워 샹 야오 짱칭써 더.", "trans": "남색으로 하고 싶어요.", "next": "color" }
+      ]
+    },
+    {
+      "id": "coat",
+      "stage": "상품 찾기",
+      "text": "大衣在这边。您平时穿什么码？",
+      "pron": "Dàyī zài zhèbiān. Nín píngshí chuān shénme mǎ?\n따이 짜이 저볜. 닌 핑스 촨 선머 마?",
+      "trans": "코트는 이쪽이에요. 평소에 무슨 사이즈 입으세요?",
+      "replies": [
+        { "id": "coat_1", "text": "一般穿中号。", "pron": "Yìbān chuān zhōnghào.\n이반 촨 중하오.", "trans": "보통 M 사이즈 입어요.", "next": "fitting" },
+        { "id": "coat_2", "text": "不太清楚，大号吧？", "pron": "Bú tài qīngchu, dàhào ba?\n부 타이 칭추, 따하오 바?", "trans": "잘 모르겠어요, L일까요?", "next": "fitting" }
+      ]
+    },
+    {
+      "id": "color",
+      "stage": "색상·사이즈",
+      "text": "这款有黑色和藏青色。您要什么码？",
+      "pron": "Zhè kuǎn yǒu hēisè hé zàngqīngsè. Nín yào shénme mǎ?\n저 콴 여우 헤이써 허 짱칭써. 닌 야오 선머 마?",
+      "trans": "이 제품은 검은색이랑 남색이 있어요. 무슨 사이즈 드릴까요?",
+      "replies": [
+        { "id": "color_1", "text": "要中号的。", "pron": "Yào zhōnghào de.\n야오 중하오 더.", "trans": "M 사이즈로 주세요.", "next": "fitting" },
+        { "id": "color_2", "text": "黑色有大号的吗？", "pron": "Hēisè yǒu dàhào de ma?\n헤이써 여우 따하오 더 마?", "trans": "검은색 L 있어요?", "next": "size_out" }
+      ]
+    },
+    {
+      "id": "size_out",
+      "stage": "색상·사이즈",
+      "text": "不好意思，黑色大号卖完了。藏青色的还有。",
+      "pron": "Bù hǎoyìsi, hēisè dàhào màiwán le. Zàngqīngsè de hái yǒu.\n뿌 하오이쓰, 헤이써 따하오 마이완 러. 짱칭써 더 하이 여우.",
+      "trans": "죄송해요, 검은색 L은 다 팔렸어요. 남색은 아직 있어요.",
+      "replies": [
+        { "id": "size_out_1", "text": "那藏青色的也行。", "pron": "Nà zàngqīngsè de yě xíng.\n나 짱칭써 더 예 싱.", "trans": "그럼 남색도 괜찮아요.", "next": "fitting" },
+        { "id": "size_out_2", "text": "嗯，我再考虑一下。", "pron": "Ńg, wǒ zài kǎolǜ yíxià.\n응, 워 짜이 카오뤼 이샤.", "trans": "음, 좀 더 생각해 볼게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "fitting",
+      "stage": "입어 보기",
+      "text": "给您。要不要试一下？试衣间在那边。",
+      "pron": "Gěi nín. Yào bu yào shì yíxià? Shìyījiān zài nàbiān.\n게이 닌. 야오 부 야오 스 이샤? 스이젠 짜이 나볜.",
+      "trans": "여기요. 한번 입어 보실래요? 탈의실은 저쪽이에요.",
+      "replies": [
+        { "id": "fitting_1", "text": "好，我试试。", "pron": "Hǎo, wǒ shìshi.\n하오, 워 스스.", "trans": "네, 입어 볼게요.", "next": "fit_check" },
+        { "id": "fitting_2", "text": "不用了。多少钱？", "pron": "Búyòng le. Duōshao qián?\n부융 러. 둬사오 첸?", "trans": "괜찮아요. 얼마예요?", "next": "price" }
+      ]
+    },
+    {
+      "id": "fit_check",
+      "stage": "입어 보기",
+      "text": "怎么样？合身吗？",
+      "pron": "Zěnmeyàng? Héshēn ma?\n쩐머양? 허선 마?",
+      "trans": "어떠세요? 잘 맞으세요?",
+      "replies": [
+        { "id": "fit_check_1", "text": "正合适。", "pron": "Zhèng héshì.\n정 허스.", "trans": "딱 맞아요.", "next": "price" },
+        { "id": "fit_check_2", "text": "有点儿紧。有大一号的吗？", "pron": "Yǒudiǎnr jǐn. Yǒu dà yí hào de ma?\n여우디얄 진. 여우 따 이 하오 더 마?", "trans": "좀 끼어요. 한 치수 큰 거 있어요?", "next": "bigger" }
+      ]
+    },
+    {
+      "id": "bigger",
+      "stage": "입어 보기",
+      "text": "有，这是大一号的。您再试试。",
+      "pron": "Yǒu, zhè shì dà yí hào de. Nín zài shìshi.\n여우, 저 스 따 이 하오 더. 닌 짜이 스스.",
+      "trans": "있어요, 이게 한 치수 큰 거예요. 다시 입어 보세요.",
+      "replies": [
+        { "id": "bigger_1", "text": "这件好多了。", "pron": "Zhè jiàn hǎo duō le.\n저 젠 하오 둬 러.", "trans": "이게 훨씬 낫네요.", "next": "price" },
+        { "id": "bigger_2", "text": "还是不太合适，算了吧。", "pron": "Háishi bú tài héshì, suàn le ba.\n하이스 부 타이 허스, 쏸 러 바.", "trans": "그래도 잘 안 맞네요, 그만둘게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "price",
+      "stage": "가격·할인",
+      "text": "这件五百块。这周打八折。",
+      "pron": "Zhè jiàn wǔbǎi kuài. Zhè zhōu dǎ bā zhé.\n저 젠 우바이 콰이. 저 저우 다 바 저.",
+      "trans": "이건 오백 위안이에요. 이번 주에는 이십 퍼센트 할인해요.",
+      "replies": [
+        { "id": "price_1", "text": "好，我要这件。", "pron": "Hǎo, wǒ yào zhè jiàn.\n하오, 워 야오 저 젠.", "trans": "좋아요, 이걸로 할게요.", "next": "pay" },
+        { "id": "price_2", "text": "有便宜一点儿的吗？", "pron": "Yǒu piányi yìdiǎnr de ma?\n여우 피엔이 이디얄 더 마?", "trans": "좀 더 싼 거 있어요?", "next": "compare" },
+        { "id": "price_3", "text": "我再考虑考虑。", "pron": "Wǒ zài kǎolǜ kǎolǜ.\n워 짜이 카오뤼 카오뤼.", "trans": "좀 더 생각해 볼게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "compare",
+      "stage": "비교·추천",
+      "text": "这件三百块，不过料子薄一点儿。",
+      "pron": "Zhè jiàn sānbǎi kuài, búguò liàozi báo yìdiǎnr.\n저 젠 싼바이 콰이, 부궈 랴오쯔 바오 이디얄.",
+      "trans": "이건 삼백 위안인데, 원단이 좀 얇아요.",
+      "replies": [
+        { "id": "compare_1", "text": "你推荐哪件？", "pron": "Nǐ tuījiàn nǎ jiàn?\n니 투이젠 나 젠?", "trans": "어느 걸 추천하세요?", "next": "recommend" },
+        { "id": "compare_2", "text": "我要便宜的那件。", "pron": "Wǒ yào piányi de nà jiàn.\n워 야오 피엔이 더 나 젠.", "trans": "싼 걸로 할게요.", "next": "pay" }
+      ]
+    },
+    {
+      "id": "recommend",
+      "stage": "비교·추천",
+      "text": "我觉得第一件更好。更暖和，质量也好。",
+      "pron": "Wǒ juéde dì yī jiàn gèng hǎo. Gèng nuǎnhuo, zhìliàng yě hǎo.\n워 줴더 띠 이 젠 껑 하오. 껑 놘훠, 즈량 예 하오.",
+      "trans": "제 생각엔 첫 번째 게 더 나아요. 더 따뜻하고 품질도 좋아요.",
+      "replies": [
+        { "id": "recommend_1", "text": "那我就要那件吧。", "pron": "Nà wǒ jiù yào nà jiàn ba.\n나 워 지우 야오 나 젠 바.", "trans": "그럼 그걸로 할게요.", "next": "pay" },
+        { "id": "recommend_2", "text": "谢谢，我再想想。", "pron": "Xièxie, wǒ zài xiǎngxiang.\n셰셰, 워 짜이 샹샹.", "trans": "고마워요, 좀 더 생각해 볼게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "pay",
+      "stage": "계산",
+      "text": "好的。您刷卡还是付现金？",
+      "pron": "Hǎo de. Nín shuākǎ háishi fù xiànjīn?\n하오 더. 닌 솨카 하이스 푸 셴진?",
+      "trans": "네. 카드로 하세요, 현금으로 하세요?",
+      "replies": [
+        { "id": "pay_1", "text": "刷卡吧。", "pron": "Shuākǎ ba.\n솨카 바.", "trans": "카드로 할게요.", "next": "bag" },
+        { "id": "pay_2", "text": "付现金。给你。", "pron": "Fù xiànjīn. Gěi nǐ.\n푸 셴진. 게이 니.", "trans": "현금이요. 여기요.", "next": "bag" }
+      ]
+    },
+    {
+      "id": "bag",
+      "stage": "계산",
+      "text": "要袋子吗？小票要不要？",
+      "pron": "Yào dàizi ma? Xiǎopiào yào bu yào?\n야오 따이쯔 마? 샤오퍄오 야오 부 야오?",
+      "trans": "봉투 필요하세요? 영수증 드릴까요?",
+      "replies": [
+        { "id": "bag_1", "text": "都要，谢谢。", "pron": "Dōu yào, xièxie.\n더우 야오, 셰셰.", "trans": "둘 다 주세요, 고마워요.", "next": "end_buy" },
+        { "id": "bag_2", "text": "袋子不用，给我小票就行。", "pron": "Dàizi búyòng, gěi wǒ xiǎopiào jiù xíng.\n따이쯔 부융, 게이 워 샤오퍄오 지우 싱.", "trans": "봉투는 괜찮아요, 영수증만 주시면 돼요.", "next": "end_buy" }
+      ]
+    },
+    {
+      "id": "end_buy",
+      "stage": "마무리",
+      "text": "给您。谢谢光临，慢走！",
+      "pron": "Gěi nín. Xièxie guānglín, màn zǒu!\n게이 닌. 셰셰 광린, 만 쩌우!",
+      "trans": "여기 있어요. 와 주셔서 감사해요, 안녕히 가세요!",
+      "replies": []
+    },
+    {
+      "id": "end_leave",
+      "stage": "마무리",
+      "text": "没关系，欢迎下次再来！",
+      "pron": "Méi guānxi, huānyíng xiàcì zài lái!\n메이 관시, 환잉 샤츠 짜이 라이!",
+      "trans": "괜찮아요, 다음에 또 오세요!",
+      "replies": []
+    }
+  ]
+}

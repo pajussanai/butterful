@@ -1,0 +1,190 @@
+{
+  "id": "clothes_shop",
+  "lang": "fr",
+  "start": "welcome",
+  "nodes": [
+    {
+      "id": "welcome",
+      "stage": "입장",
+      "text": "Bonjour ! Vous cherchez quelque chose en particulier ?",
+      "pron": "봉주르! 부 셰르셰 켈크 쇼즈 앙 파르티퀼리에?",
+      "trans": "안녕하세요! 특별히 찾으시는 거 있으세요?",
+      "replies": [
+        { "id": "welcome_1", "text": "Je cherche un pull.", "pron": "주 셰르슈 앵 퓔.", "trans": "스웨터를 찾고 있어요.", "next": "sweater" },
+        { "id": "welcome_2", "text": "Vous avez des manteaux ?", "pron": "부 자베 데 망토?", "trans": "코트 있나요?", "next": "coat" },
+        { "id": "welcome_3", "text": "Je regarde juste, merci.", "pron": "주 르가르드 쥐스트, 메르시.", "trans": "그냥 보는 중이에요, 고마워요.", "next": "browse" }
+      ]
+    },
+    {
+      "id": "browse",
+      "stage": "둘러보기",
+      "text": "Pas de souci, prenez votre temps. N'hésitez pas si vous avez besoin.",
+      "pron": "파 드 수시, 프르네 보트르 탕. 네지테 파 시 부 자베 브주앵.",
+      "trans": "괜찮아요, 천천히 보세요. 필요하시면 언제든 말씀하세요.",
+      "replies": [
+        { "id": "browse_1", "text": "Il y a des articles en promo ?", "pron": "일 리 아 데 자르티클 앙 프로모?", "trans": "할인하는 상품 있어요?", "next": "sale" },
+        { "id": "browse_2", "text": "Au fait, ils sont où, les pulls ?", "pron": "오 페트, 일 송 우, 레 퓔?", "trans": "참, 스웨터는 어디 있어요?", "next": "sweater" }
+      ]
+    },
+    {
+      "id": "sale",
+      "stage": "할인 확인",
+      "text": "Oui, tout ce portant est à moins trente pour cent.",
+      "pron": "위, 투 스 포르탕 에 타 무앵 트랑트 푸르 상.",
+      "trans": "네, 이 행거에 있는 건 전부 삼십 퍼센트 할인이에요.",
+      "replies": [
+        { "id": "sale_1", "text": "Super. Il y a des manteaux ?", "pron": "쉬페르. 일 리 아 데 망토?", "trans": "좋네요. 코트도 있어요?", "next": "coat" },
+        { "id": "sale_2", "text": "D'accord, je repasserai plus tard.", "pron": "다코르, 주 르파스레 플뤼 타르.", "trans": "알겠어요, 나중에 다시 들를게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "sweater",
+      "stage": "상품 찾기",
+      "text": "Les pulls sont juste ici. Vous cherchez quelle couleur ?",
+      "pron": "레 퓔 송 쥐스트 이시. 부 셰르셰 켈 쿨뢰르?",
+      "trans": "스웨터는 바로 여기 있어요. 어떤 색 찾으세요?",
+      "replies": [
+        { "id": "sweater_1", "text": "Vous l'avez en noir ?", "pron": "부 라베 앙 누아르?", "trans": "검은색 있어요?", "next": "color" },
+        { "id": "sweater_2", "text": "Plutôt en bleu marine.", "pron": "플뤼토 앙 블뢰 마린.", "trans": "남색이 좋겠어요.", "next": "color" }
+      ]
+    },
+    {
+      "id": "coat",
+      "stage": "상품 찾기",
+      "text": "Bien sûr, les manteaux sont par ici. Vous faites quelle taille ?",
+      "pron": "비앵 쉬르, 레 망토 송 파르 이시. 부 페트 켈 타이?",
+      "trans": "그럼요, 코트는 이쪽이에요. 사이즈가 어떻게 되세요?",
+      "replies": [
+        { "id": "coat_1", "text": "Je fais du quarante, en général.", "pron": "주 페 뒤 카랑트, 앙 제네랄.", "trans": "보통 40 사이즈 입어요.", "next": "fitting" },
+        { "id": "coat_2", "text": "Je ne sais pas trop. Du quarante-deux, peut-être ?", "pron": "주 느 세 파 트로. 뒤 카랑트되, 푀테트르?", "trans": "잘 모르겠어요. 42일까요?", "next": "fitting" }
+      ]
+    },
+    {
+      "id": "color",
+      "stage": "색상·사이즈",
+      "text": "Ce modèle existe en noir et en bleu marine. Quelle taille vous faut-il ?",
+      "pron": "스 모델 에그지스트 앙 누아르 에 앙 블뢰 마린. 켈 타이 부 포틸?",
+      "trans": "이 제품은 검은색과 남색이 있어요. 어떤 사이즈가 필요하세요?",
+      "replies": [
+        { "id": "color_1", "text": "Du quarante, s'il vous plaît.", "pron": "뒤 카랑트, 실 부 플레.", "trans": "40으로 주세요.", "next": "fitting" },
+        { "id": "color_2", "text": "Vous l'avez en quarante-deux, en noir ?", "pron": "부 라베 앙 카랑트되, 앙 누아르?", "trans": "검은색 42 있어요?", "next": "size_out" }
+      ]
+    },
+    {
+      "id": "size_out",
+      "stage": "색상·사이즈",
+      "text": "Malheureusement, on n'a plus de quarante-deux en noir. Mais il nous reste du bleu marine.",
+      "pron": "말뢰뢰즈망, 옹 나 플뤼 드 카랑트되 앙 누아르. 메 일 누 레스트 뒤 블뢰 마린.",
+      "trans": "아쉽게도 검은색 42는 다 나갔어요. 그래도 남색은 남아 있어요.",
+      "replies": [
+        { "id": "size_out_1", "text": "Alors, le bleu marine, ça ira.", "pron": "알로르, 르 블뢰 마린, 사 이라.", "trans": "그럼 남색도 괜찮아요.", "next": "fitting" },
+        { "id": "size_out_2", "text": "Hmm, je vais réfléchir.", "pron": "음, 주 베 레플레시르.", "trans": "음, 생각해 볼게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "fitting",
+      "stage": "입어 보기",
+      "text": "Tenez. Vous voulez l'essayer ? La cabine est juste là.",
+      "pron": "트네. 부 불레 레세이에? 라 카빈 에 쥐스트 라.",
+      "trans": "여기 있어요. 입어 보시겠어요? 탈의실은 바로 저기예요.",
+      "replies": [
+        { "id": "fitting_1", "text": "Oui, je vais l'essayer.", "pron": "위, 주 베 레세이에.", "trans": "네, 입어 볼게요.", "next": "fit_check" },
+        { "id": "fitting_2", "text": "Non, ça ira. Il coûte combien ?", "pron": "농, 사 이라. 일 쿠트 콩비앵?", "trans": "아니요, 괜찮아요. 얼마예요?", "next": "price" }
+      ]
+    },
+    {
+      "id": "fit_check",
+      "stage": "입어 보기",
+      "text": "Alors, ça vous va ?",
+      "pron": "알로르, 사 부 바?",
+      "trans": "어떠세요, 잘 맞으세요?",
+      "replies": [
+        { "id": "fit_check_1", "text": "Oui, il me va parfaitement.", "pron": "위, 일 므 바 파르페트망.", "trans": "네, 딱 맞아요.", "next": "price" },
+        { "id": "fit_check_2", "text": "Il est un peu serré. Vous avez la taille au-dessus ?", "pron": "일 레 탱 푀 세레. 부 자베 라 타이 오 드쉬?", "trans": "좀 끼어요. 한 치수 큰 거 있어요?", "next": "bigger" }
+      ]
+    },
+    {
+      "id": "bigger",
+      "stage": "입어 보기",
+      "text": "Oui, voici la taille au-dessus. Essayez celui-ci.",
+      "pron": "위, 부아시 라 타이 오 드쉬. 에세이에 슬뤼시.",
+      "trans": "네, 여기 한 치수 큰 거예요. 이걸 입어 보세요.",
+      "replies": [
+        { "id": "bigger_1", "text": "Celui-ci est beaucoup mieux.", "pron": "슬뤼시 에 보쿠 미외.", "trans": "이게 훨씬 낫네요.", "next": "price" },
+        { "id": "bigger_2", "text": "Ça ne va toujours pas. Je vais le laisser, merci.", "pron": "사 느 바 투주르 파. 주 베 르 레세, 메르시.", "trans": "그래도 잘 안 맞네요. 이건 안 살게요, 고마워요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "price",
+      "stage": "가격·할인",
+      "text": "Il est à soixante euros. Mais cette semaine, il est à moins vingt pour cent.",
+      "pron": "일 레 타 수아상 퇴로. 메 세트 스멘, 일 레 타 무앵 뱅 푸르 상.",
+      "trans": "육십 유로예요. 그런데 이번 주에는 이십 퍼센트 할인이에요.",
+      "replies": [
+        { "id": "price_1", "text": "Parfait, je le prends.", "pron": "파르페, 주 르 프랑.", "trans": "좋아요, 이걸로 살게요.", "next": "pay" },
+        { "id": "price_2", "text": "Vous avez quelque chose de moins cher ?", "pron": "부 자베 켈크 쇼즈 드 무앵 셰르?", "trans": "더 싼 거 있어요?", "next": "compare" },
+        { "id": "price_3", "text": "Je vais réfléchir un peu.", "pron": "주 베 레플레시르 앵 푀.", "trans": "좀 생각해 볼게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "compare",
+      "stage": "비교·추천",
+      "text": "Ce modèle-là est à trente-cinq euros. Mais il est un peu plus fin.",
+      "pron": "스 모델 라 에 타 트랑트생 쾨로. 메 일 레 탱 푀 플뤼 팽.",
+      "trans": "이 제품은 삼십오 유로예요. 하지만 조금 더 얇아요.",
+      "replies": [
+        { "id": "compare_1", "text": "Lequel vous me conseillez ?", "pron": "르켈 부 므 콩세이에?", "trans": "어느 걸 추천하세요?", "next": "recommend" },
+        { "id": "compare_2", "text": "Je prends le moins cher.", "pron": "주 프랑 르 무앵 셰르.", "trans": "더 싼 걸로 할게요.", "next": "pay" }
+      ]
+    },
+    {
+      "id": "recommend",
+      "stage": "비교·추천",
+      "text": "Moi, je prendrais le premier. Il est plus chaud et de meilleure qualité.",
+      "pron": "무아, 주 프랑드레 르 프르미에. 일 레 플뤼 쇼 에 드 메이외르 칼리테.",
+      "trans": "저라면 첫 번째 걸 사겠어요. 더 따뜻하고 품질도 더 좋아요.",
+      "replies": [
+        { "id": "recommend_1", "text": "D'accord, je prends celui-là.", "pron": "다코르, 주 프랑 슬뤼라.", "trans": "좋아요, 그걸로 할게요.", "next": "pay" },
+        { "id": "recommend_2", "text": "Merci, je vais réfléchir.", "pron": "메르시, 주 베 레플레시르.", "trans": "고마워요, 생각해 볼게요.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "pay",
+      "stage": "계산",
+      "text": "Très bien, je vous encaisse ici. Carte ou espèces ?",
+      "pron": "트레 비앵, 주 부 장케스 이시. 카르트 우 에스페스?",
+      "trans": "좋아요, 여기서 계산해 드릴게요. 카드세요, 현금이세요?",
+      "replies": [
+        { "id": "pay_1", "text": "Par carte, s'il vous plaît.", "pron": "파르 카르트, 실 부 플레.", "trans": "카드로 할게요.", "next": "bag" },
+        { "id": "pay_2", "text": "En espèces. Tenez.", "pron": "앙 네스페스. 트네.", "trans": "현금이요. 여기 있어요.", "next": "bag" }
+      ]
+    },
+    {
+      "id": "bag",
+      "stage": "계산",
+      "text": "Merci. Vous voulez un sac ? Et le ticket de caisse ?",
+      "pron": "메르시. 부 불레 앵 삭? 에 르 티케 드 케스?",
+      "trans": "감사합니다. 봉투 필요하세요? 영수증도 드릴까요?",
+      "replies": [
+        { "id": "bag_1", "text": "Oui, les deux, s'il vous plaît.", "pron": "위, 레 되, 실 부 플레.", "trans": "네, 둘 다 주세요.", "next": "end_buy" },
+        { "id": "bag_2", "text": "Pas de sac, merci. Juste le ticket.", "pron": "파 드 삭, 메르시. 쥐스트 르 티케.", "trans": "봉투는 괜찮아요. 영수증만 주세요.", "next": "end_buy" }
+      ]
+    },
+    {
+      "id": "end_buy",
+      "stage": "마무리",
+      "text": "Voilà pour vous. Merci, et bonne journée !",
+      "pron": "부알라 푸르 부. 메르시, 에 본 주르네!",
+      "trans": "여기 있어요. 감사합니다, 좋은 하루 보내세요!",
+      "replies": []
+    },
+    {
+      "id": "end_leave",
+      "stage": "마무리",
+      "text": "Pas de problème ! Revenez quand vous voulez.",
+      "pron": "파 드 프로블렘! 르브네 캉 부 불레.",
+      "trans": "괜찮아요! 언제든지 다시 오세요.",
+      "replies": []
+    }
+  ]
+}

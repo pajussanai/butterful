@@ -1,0 +1,185 @@
+{
+  "id": "exchange_refund",
+  "lang": "fr",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "인사",
+      "text": "Bonjour ! Je peux vous aider ?",
+      "pron": "봉주르! 주 푀 부 제데?",
+      "trans": "안녕하세요! 도와드릴까요?",
+      "replies": [
+        { "id": "greet_1", "text": "Bonjour. J'ai acheté ce pull hier, mais il est trop petit.", "pron": "봉주르. 제 아슈테 스 퓔 이에르, 메 일 레 트로 프티.", "trans": "안녕하세요. 어제 이 스웨터를 샀는데 너무 작아요.", "next": "receipt" },
+        { "id": "greet_2", "text": "Bonjour, je voudrais rendre ce pull.", "pron": "봉주르, 주 부드레 랑드르 스 퓔.", "trans": "안녕하세요, 이 스웨터를 반품하고 싶어요.", "next": "reason" },
+        { "id": "greet_3", "text": "Il y a un trou dans ce pull.", "pron": "일 리 아 앵 트루 당 스 퓔.", "trans": "이 스웨터에 구멍이 있어요.", "next": "defect" }
+      ]
+    },
+    {
+      "id": "reason",
+      "stage": "이유 설명",
+      "text": "Bien sûr. Il y a un problème ?",
+      "pron": "비앵 쉬르. 일 리 아 앵 프로블렘?",
+      "trans": "네. 무슨 문제가 있나요?",
+      "replies": [
+        { "id": "reason_1", "text": "Il ne me va pas.", "pron": "일 느 므 바 파.", "trans": "저한테 안 맞아요.", "next": "receipt" },
+        { "id": "reason_2", "text": "Non, j'ai juste changé d'avis.", "pron": "농, 제 쥐스트 샹제 다비.", "trans": "아니요, 그냥 마음이 바뀌었어요.", "next": "receipt" }
+      ]
+    },
+    {
+      "id": "defect",
+      "stage": "불량 확인",
+      "text": "Oh, toutes nos excuses. Vous avez le ticket de caisse ?",
+      "pron": "오, 투트 노 젝스퀴즈. 부 자베 르 티케 드 케스?",
+      "trans": "아, 정말 죄송합니다. 영수증 있으세요?",
+      "replies": [
+        { "id": "defect_1", "text": "Oui, le voilà.", "pron": "위, 르 부알라.", "trans": "네, 여기 있어요.", "next": "options" },
+        { "id": "defect_2", "text": "Non, je l'ai perdu.", "pron": "농, 주 레 페르뒤.", "trans": "아니요, 잃어버렸어요.", "next": "no_receipt" }
+      ]
+    },
+    {
+      "id": "receipt",
+      "stage": "영수증 확인",
+      "text": "D'accord. Vous avez le ticket de caisse ?",
+      "pron": "다코르. 부 자베 르 티케 드 케스?",
+      "trans": "알겠습니다. 영수증 있으세요?",
+      "replies": [
+        { "id": "receipt_1", "text": "Oui, tenez.", "pron": "위, 트네.", "trans": "네, 여기요.", "next": "options" },
+        { "id": "receipt_2", "text": "Non, je ne l'ai plus.", "pron": "농, 주 느 레 플뤼.", "trans": "아니요, 이제 없어요.", "next": "no_receipt" }
+      ]
+    },
+    {
+      "id": "options",
+      "stage": "교환·환불 선택",
+      "text": "Merci. Vous voulez l'échanger ou vous faire rembourser ?",
+      "pron": "메르시. 부 불레 레샹제 우 부 페르 랑부르세?",
+      "trans": "감사합니다. 교환하시겠어요, 아니면 환불받으시겠어요?",
+      "replies": [
+        { "id": "options_1", "text": "Je peux l'échanger contre une taille au-dessus ?", "pron": "주 푀 레샹제 콩트르 윈 타유 오드쉬?", "trans": "한 사이즈 큰 걸로 바꿀 수 있나요?", "next": "size" },
+        { "id": "options_2", "text": "Vous l'avez dans une autre couleur ?", "pron": "부 라베 당 쥔 노트르 쿨뢰르?", "trans": "다른 색상 있나요?", "next": "colour" },
+        { "id": "options_3", "text": "Je voudrais être remboursé, s'il vous plaît.", "pron": "주 부드레 에트르 랑부르세, 실 부 플레.", "trans": "환불받고 싶어요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "size",
+      "stage": "사이즈 교환",
+      "text": "Je regarde... Ah, on n'a plus de L pour le moment.",
+      "pron": "주 르가르드... 아, 옹 나 플뤼 드 엘 푸르 르 모망.",
+      "trans": "확인해 볼게요... 아, 지금은 라지 사이즈가 없어요.",
+      "replies": [
+        { "id": "size_1", "text": "Vous avez du L dans une autre couleur ?", "pron": "부 자베 뒤 엘 당 쥔 노트르 쿨뢰르?", "trans": "다른 색상으로 라지 있나요?", "next": "colour" },
+        { "id": "size_2", "text": "Vous en recevez quand ?", "pron": "부 장 르스베 캉?", "trans": "언제 다시 들어와요?", "next": "restock" },
+        { "id": "size_3", "text": "Alors je préfère être remboursé.", "pron": "알로르 주 프레페르 에트르 랑부르세.", "trans": "그럼 환불받을게요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "restock",
+      "stage": "재입고 문의",
+      "text": "On en reçoit la semaine prochaine. On vous appelle quand il arrive ?",
+      "pron": "옹 낭 르수아 라 스멘 프로셴. 옹 부 자펠 캉 틸 라리브?",
+      "trans": "다음 주에 들어와요. 들어오면 전화드릴까요?",
+      "replies": [
+        { "id": "restock_1", "text": "Oui, volontiers. Voici mon numéro.", "pron": "위, 볼롱티에. 부아시 몽 뉘메로.", "trans": "네, 좋아요. 제 번호예요.", "next": "end_wait" },
+        { "id": "restock_2", "text": "Non merci, je préfère être remboursé.", "pron": "농 메르시, 주 프레페르 에트르 랑부르세.", "trans": "아니요, 괜찮아요. 환불받을게요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "colour",
+      "stage": "색상 교환",
+      "text": "On l'a en noir et en bleu marine. Vous préférez lequel ?",
+      "pron": "옹 라 앙 누아르 에 앙 블뢰 마린. 부 프레페레 르켈?",
+      "trans": "검은색이랑 남색이 있어요. 어느 쪽이 좋으세요?",
+      "replies": [
+        { "id": "colour_1", "text": "Le noir, s'il vous plaît.", "pron": "르 누아르, 실 부 플레.", "trans": "검은색으로 주세요.", "next": "try_on" },
+        { "id": "colour_2", "text": "Le bleu marine, s'il vous plaît.", "pron": "르 블뢰 마린, 실 부 플레.", "trans": "남색으로 주세요.", "next": "try_on" }
+      ]
+    },
+    {
+      "id": "try_on",
+      "stage": "입어 보기",
+      "text": "Voilà. Vous voulez l'essayer ? Les cabines sont juste là-bas.",
+      "pron": "부알라. 부 불레 레세예? 레 카빈 송 쥐스트 라바.",
+      "trans": "여기 있어요. 입어 보시겠어요? 탈의실은 바로 저쪽이에요.",
+      "replies": [
+        { "id": "try_on_1", "text": "Oui, je vais l'essayer.", "pron": "위, 주 베 레세예.", "trans": "네, 입어 볼게요.", "next": "fits" },
+        { "id": "try_on_2", "text": "Non, ça ira. Je le prends.", "pron": "농, 사 이라. 주 르 프랑.", "trans": "아니요, 괜찮아요. 이걸로 할게요.", "next": "end_exchange" }
+      ]
+    },
+    {
+      "id": "fits",
+      "stage": "착용 확인",
+      "text": "Alors, il vous va ?",
+      "pron": "알로르, 일 부 바?",
+      "trans": "어떠세요, 잘 맞으세요?",
+      "replies": [
+        { "id": "fits_1", "text": "Oui, il me va parfaitement.", "pron": "위, 일 므 바 파르페트망.", "trans": "네, 딱 맞아요.", "next": "end_exchange" },
+        { "id": "fits_2", "text": "Hmm, toujours pas. Je peux être remboursé ?", "pron": "음, 투주르 파. 주 푀 에트르 랑부르세?", "trans": "음, 그래도 안 맞아요. 환불받을 수 있나요?", "next": "refund" }
+      ]
+    },
+    {
+      "id": "refund",
+      "stage": "환불 처리",
+      "text": "Pas de souci. On vous rembourse sur la carte utilisée. Vous pouvez insérer votre carte ?",
+      "pron": "파 드 수시. 옹 부 랑부르스 쉬르 라 카르트 위틸리제. 부 푸베 앵세레 보트르 카르트?",
+      "trans": "문제없어요. 결제하신 카드로 환불해 드려요. 카드 넣어 주시겠어요?",
+      "replies": [
+        { "id": "refund_1", "text": "Oui, voilà.", "pron": "위, 부알라.", "trans": "네, 여기요.", "next": "end_refund" },
+        { "id": "refund_2", "text": "D'accord. Ça prend combien de temps ?", "pron": "다코르. 사 프랑 콩비앵 드 탕?", "trans": "네. 얼마나 걸려요?", "next": "end_refund" }
+      ]
+    },
+    {
+      "id": "no_receipt",
+      "stage": "영수증 없음",
+      "text": "Sans ticket, on ne peut pas vous rembourser. Mais on peut vous faire un avoir.",
+      "pron": "상 티케, 옹 느 푀 파 부 랑부르세. 메 옹 푀 부 페르 앵 나부아르.",
+      "trans": "영수증이 없으면 환불은 안 돼요. 대신 매장 적립금으로 드릴 수 있어요.",
+      "replies": [
+        { "id": "no_receipt_1", "text": "D'accord, un avoir, ça me va.", "pron": "다코르, 앵 나부아르, 사 므 바.", "trans": "네, 적립금도 괜찮아요.", "next": "end_credit" },
+        { "id": "no_receipt_2", "text": "Vous pouvez le retrouver avec ma carte ?", "pron": "부 푸베 르 르트루베 아베크 마 카르트?", "trans": "제 카드로 찾아 주실 수 있나요?", "next": "card_lookup" }
+      ]
+    },
+    {
+      "id": "card_lookup",
+      "stage": "결제 내역 조회",
+      "text": "Je vais essayer... Oui, je l'ai trouvé. Alors, échange ou remboursement ?",
+      "pron": "주 베 제세예... 위, 주 레 트루베. 알로르, 에샹주 우 랑부르스망?",
+      "trans": "한번 볼게요... 네, 찾았어요. 그럼 교환하시겠어요, 환불하시겠어요?",
+      "replies": [
+        { "id": "card_lookup_1", "text": "Un échange, une taille au-dessus.", "pron": "앵 네샹주, 윈 타유 오드쉬.", "trans": "교환이요, 한 사이즈 큰 걸로요.", "next": "size" },
+        { "id": "card_lookup_2", "text": "Le remboursement, s'il vous plaît.", "pron": "르 랑부르스망, 실 부 플레.", "trans": "환불해 주세요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "end_exchange",
+      "stage": "마무리",
+      "text": "C'est fait ! Voici votre nouveau ticket. Merci et bonne journée !",
+      "pron": "세 페! 부아시 보트르 누보 티케. 메르시 에 본 주르네!",
+      "trans": "다 됐어요! 새 영수증이에요. 감사합니다, 좋은 하루 보내세요!",
+      "replies": []
+    },
+    {
+      "id": "end_refund",
+      "stage": "마무리",
+      "text": "C'est fait. Le remboursement arrivera sur votre compte sous trois à cinq jours. Bonne journée !",
+      "pron": "세 페. 르 랑부르스망 아리브라 쉬르 보트르 콩트 수 트루아 아 생크 주르. 본 주르네!",
+      "trans": "다 됐어요. 사흘에서 닷새 안에 계좌로 환불될 거예요. 좋은 하루 보내세요!",
+      "replies": []
+    },
+    {
+      "id": "end_credit",
+      "stage": "마무리",
+      "text": "Voici votre avoir. Il est valable un an. Merci et à bientôt !",
+      "pron": "부아시 보트르 아부아르. 일 레 발라블 앵 낭. 메르시 에 아 비앵토!",
+      "trans": "적립금 여기 있어요. 일 년 동안 쓰실 수 있어요. 감사합니다, 또 오세요!",
+      "replies": []
+    },
+    {
+      "id": "end_wait",
+      "stage": "마무리",
+      "text": "Parfait. On vous appelle dès qu'il arrive. Bonne journée !",
+      "pron": "파르페. 옹 부 자펠 데 킬 라리브. 본 주르네!",
+      "trans": "좋아요. 들어오는 대로 전화드릴게요. 좋은 하루 보내세요!",
+      "replies": []
+    }
+  ]
+}

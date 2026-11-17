@@ -1,0 +1,177 @@
+{
+  "id": "team_meeting",
+  "lang": "zh",
+  "start": "ask_time",
+  "nodes": [
+    {
+      "id": "ask_time",
+      "stage": "일정 잡기",
+      "text": "现在有空吗？新项目的事得开个会。你周四下午方便吗？",
+      "pron": "Xiànzài yǒu kòng ma? Xīn xiàngmù de shì děi kāi ge huì. Nǐ zhōusì xiàwǔ fāngbiàn ma?\n셴짜이 여우 쿵 마? 신 샹무 더 스 데이 카이 거 후이. 니 저우쓰 샤우 팡볜 마?",
+      "trans": "지금 시간 있어요? 새 프로젝트 건으로 회의를 해야 해서요. 목요일 오후 괜찮아요?",
+      "replies": [
+        { "id": "ask_time_1", "text": "可以，周四没问题。", "pron": "Kěyǐ, zhōusì méi wèntí.\n커이, 저우쓰 메이 원티.", "trans": "네, 목요일 괜찮아요.", "next": "pick_place" },
+        { "id": "ask_time_2", "text": "不好意思，我周四有点忙。", "pron": "Bù hǎoyìsi, wǒ zhōusì yǒudiǎn máng.\n뿌 하오이쓰, 워 저우쓰 여우뎬 망.", "trans": "미안해요, 목요일은 좀 바빠요.", "next": "other_slot" },
+        { "id": "ask_time_3", "text": "周四几点？", "pron": "Zhōusì jǐ diǎn?\n저우쓰 지 뎬?", "trans": "목요일 몇 시요?", "next": "time_detail" }
+      ]
+    },
+    {
+      "id": "time_detail",
+      "stage": "일정 잡기",
+      "text": "两点怎么样？大概一个小时。",
+      "pron": "Liǎng diǎn zěnmeyàng? Dàgài yí ge xiǎoshí.\n량 뎬 전머양? 따가이 이 거 샤오스.",
+      "trans": "두 시 어때요? 한 시간쯤 걸려요.",
+      "replies": [
+        { "id": "time_detail_1", "text": "两点可以。", "pron": "Liǎng diǎn kěyǐ.\n량 뎬 커이.", "trans": "두 시 좋아요.", "next": "pick_place" },
+        { "id": "time_detail_2", "text": "那个时间我有别的会。能换一天吗？", "pron": "Nàge shíjiān wǒ yǒu bié de huì. Néng huàn yì tiān ma?\n나거 스젠 워 여우 볘 더 후이. 넝 환 이 톈 마?", "trans": "그 시간엔 다른 회의가 있어요. 다른 날로 바꿀 수 있을까요?", "next": "other_slot" }
+      ]
+    },
+    {
+      "id": "other_slot",
+      "stage": "일정 조정",
+      "text": "没事。那周五上午十点呢？",
+      "pron": "Méi shì. Nà zhōuwǔ shàngwǔ shí diǎn ne?\n메이 스. 나 저우우 상우 스 뎬 너?",
+      "trans": "괜찮아요. 그럼 금요일 오전 열 시는요?",
+      "replies": [
+        { "id": "other_slot_1", "text": "周五十点正好。", "pron": "Zhōuwǔ shí diǎn zhènghǎo.\n저우우 스 뎬 정하오.", "trans": "금요일 열 시 딱 좋아요.", "next": "pick_place" },
+        { "id": "other_slot_2", "text": "我周五要出去办事。线上开可以吗？", "pron": "Wǒ zhōuwǔ yào chūqu bàn shì. Xiànshàng kāi kěyǐ ma?\n워 저우우 야오 추취 반 스. 셴상 카이 커이 마?", "trans": "금요일엔 외근이에요. 온라인으로 해도 될까요?", "next": "online" }
+      ]
+    },
+    {
+      "id": "pick_place",
+      "stage": "장소 정하기",
+      "text": "好。那我订个会议室，还是直接线上开？",
+      "pron": "Hǎo. Nà wǒ dìng ge huìyìshì, háishi zhíjiē xiànshàng kāi?\n하오. 나 워 딩 거 후이이스, 하이스 즈제 셴상 카이?",
+      "trans": "좋아요. 그럼 회의실을 잡을까요, 아니면 그냥 온라인으로 할까요?",
+      "replies": [
+        { "id": "pick_place_1", "text": "订个会议室吧。", "pron": "Dìng ge huìyìshì ba.\n딩 거 후이이스 바.", "trans": "회의실 잡아요.", "next": "room" },
+        { "id": "pick_place_2", "text": "线上对我来说更方便。", "pron": "Xiànshàng duì wǒ lái shuō gèng fāngbiàn.\n셴상 두이 워 라이 숴 겅 팡볜.", "trans": "저는 온라인이 더 편해요.", "next": "online" }
+      ]
+    },
+    {
+      "id": "room",
+      "stage": "장소 정하기",
+      "text": "行，我订个小会议室，再给你发个邀请。",
+      "pron": "Xíng, wǒ dìng ge xiǎo huìyìshì, zài gěi nǐ fā ge yāoqǐng.\n싱, 워 딩 거 샤오 후이이스, 짜이 게이 니 파 거 야오칭.",
+      "trans": "그래요, 작은 회의실 잡고 초대 보낼게요.",
+      "replies": [
+        { "id": "room_1", "text": "谢谢，到时候见。", "pron": "Xièxie, dào shíhou jiàn.\n셰셰, 다오 스허우 젠.", "trans": "고마워요, 그때 봬요.", "next": "meeting_start" },
+        { "id": "room_2", "text": "我需要准备什么吗？", "pron": "Wǒ xūyào zhǔnbèi shénme ma?\n워 쉬야오 준베이 선머 마?", "trans": "제가 뭐 준비해야 해요?", "next": "prepare" }
+      ]
+    },
+    {
+      "id": "online",
+      "stage": "장소 정하기",
+      "text": "可以，线上也行。我把会议链接发你邮箱。",
+      "pron": "Kěyǐ, xiànshàng yě xíng. Wǒ bǎ huìyì liànjiē fā nǐ yóuxiāng.\n커이, 셴상 예 싱. 워 바 후이이 롄제 파 니 여우샹.",
+      "trans": "좋아요, 온라인도 괜찮아요. 회의 링크 메일로 보낼게요.",
+      "replies": [
+        { "id": "online_1", "text": "好的，谢谢。到时候聊。", "pron": "Hǎo de, xièxie. Dào shíhou liáo.\n하오 더, 셰셰. 다오 스허우 랴오.", "trans": "네, 고마워요. 그때 얘기해요.", "next": "meeting_start" },
+        { "id": "online_2", "text": "我需要准备什么吗？", "pron": "Wǒ xūyào zhǔnbèi shénme ma?\n워 쉬야오 준베이 선머 마?", "trans": "제가 뭐 준비해야 해요?", "next": "prepare" }
+      ]
+    },
+    {
+      "id": "prepare",
+      "stage": "회의 준비",
+      "text": "你先看一下项目方案就行，我今天发给你。",
+      "pron": "Nǐ xiān kàn yíxià xiàngmù fāng'àn jiù xíng, wǒ jīntiān fā gěi nǐ.\n니 셴 칸 이샤 샹무 팡안 주 싱, 워 진톈 파 게이 니.",
+      "trans": "프로젝트 기획안만 먼저 봐 주면 돼요. 오늘 보내 줄게요.",
+      "replies": [
+        { "id": "prepare_1", "text": "好的，开会前我看一下。", "pron": "Hǎo de, kāi huì qián wǒ kàn yíxià.\n하오 더, 카이 후이 첸 워 칸 이샤.", "trans": "알겠어요, 회의 전에 볼게요.", "next": "meeting_start" },
+        { "id": "prepare_2", "text": "好。有变化的话告诉我。", "pron": "Hǎo. Yǒu biànhuà de huà gàosu wǒ.\n하오. 여우 볜화 더 화 가오쑤 워.", "trans": "네. 바뀌는 거 있으면 알려 줘요.", "next": "meeting_start" }
+      ]
+    },
+    {
+      "id": "meeting_start",
+      "stage": "아이디어 듣기",
+      "text": "谢谢你来。我的想法是先做手机App，网站以后再做。你觉得怎么样？",
+      "pron": "Xièxie nǐ lái. Wǒ de xiǎngfǎ shì xiān zuò shǒujī App, wǎngzhàn yǐhòu zài zuò. Nǐ juéde zěnmeyàng?\n셰셰 니 라이. 워 더 샹파 스 셴 쭤 서우지 앱, 왕잔 이허우 짜이 쭤. 니 줴더 전머양?",
+      "trans": "와 줘서 고마워요. 제 생각은 스마트폰 앱을 먼저 만들고 웹사이트는 나중에 하는 거예요. 어떻게 생각해요?",
+      "replies": [
+        { "id": "meeting_start_1", "text": "我觉得这个想法很好。", "pron": "Wǒ juéde zhège xiǎngfǎ hěn hǎo.\n워 줴더 저거 샹파 헌 하오.", "trans": "좋은 생각 같아요.", "next": "agree" },
+        { "id": "meeting_start_2", "text": "挺好的，不过我觉得时间可能不太够。", "pron": "Tǐng hǎo de, búguò wǒ juéde shíjiān kěnéng bú tài gòu.\n팅 하오 더, 부궈 워 줴더 스젠 커넝 부 타이 거우.", "trans": "좋긴 한데, 시간이 좀 부족할 것 같아요.", "next": "partial" },
+        { "id": "meeting_start_3", "text": "说实话，我不太同意。我们的客户大多用网站。", "pron": "Shuō shíhuà, wǒ bú tài tóngyì. Wǒmen de kèhù dàduō yòng wǎngzhàn.\n숴 스화, 워 부 타이 퉁이. 워먼 더 커후 다둬 융 왕잔.", "trans": "솔직히 저는 좀 생각이 달라요. 우리 고객들은 대부분 웹사이트를 써요.", "next": "disagree" }
+      ]
+    },
+    {
+      "id": "agree",
+      "stage": "의견 말하기",
+      "text": "太好了！那你能帮忙做一下设计吗？",
+      "pron": "Tài hǎo le! Nà nǐ néng bāngmáng zuò yíxià shèjì ma?\n타이 하오 러! 나 니 넝 방망 쭤 이샤 서지 마?",
+      "trans": "잘됐다! 그럼 디자인 좀 도와줄 수 있어요?",
+      "replies": [
+        { "id": "agree_1", "text": "没问题，我来帮忙。", "pron": "Méi wèntí, wǒ lái bāngmáng.\n메이 원티, 워 라이 방망.", "trans": "문제없어요, 제가 도울게요.", "next": "next_steps" },
+        { "id": "agree_2", "text": "这个月我有点忙，不过可以帮你看看。", "pron": "Zhège yuè wǒ yǒudiǎn máng, búguò kěyǐ bāng nǐ kànkan.\n저거 웨 워 여우뎬 망, 부궈 커이 방 니 칸칸.", "trans": "이번 달엔 좀 바쁘지만, 한번 봐 줄 수는 있어요.", "next": "next_steps" }
+      ]
+    },
+    {
+      "id": "partial",
+      "stage": "의견 말하기",
+      "text": "有道理。那上线时间推迟一个月怎么样？",
+      "pron": "Yǒu dàoli. Nà shàngxiàn shíjiān tuīchí yí ge yuè zěnmeyàng?\n여우 다오리. 나 상셴 스젠 투이츠 이 거 웨 전머양?",
+      "trans": "일리 있네요. 그럼 출시를 한 달 미루면 어때요?",
+      "replies": [
+        { "id": "partial_1", "text": "这样更好。", "pron": "Zhèyàng gèng hǎo.\n저양 겅 하오.", "trans": "그게 더 좋겠어요.", "next": "next_steps" },
+        { "id": "partial_2", "text": "好啊，也问问团队其他人的意见吧。", "pron": "Hǎo a, yě wènwen tuánduì qítā rén de yìjiàn ba.\n하오 아, 예 원원 퇀두이 치타 런 더 이젠 바.", "trans": "좋아요, 팀 다른 사람들 의견도 물어봐요.", "next": "next_steps" }
+      ]
+    },
+    {
+      "id": "disagree",
+      "stage": "의견 말하기",
+      "text": "嗯，我明白你的意思。那你是觉得先做网站？",
+      "pron": "Ńg, wǒ míngbai nǐ de yìsi. Nà nǐ shì juéde xiān zuò wǎngzhàn?\n응, 워 밍바이 니 더 이쓰. 나 니 스 줴더 셴 쭤 왕잔?",
+      "trans": "음, 무슨 말인지 알겠어요. 그럼 웹사이트를 먼저 하자는 거예요?",
+      "replies": [
+        { "id": "disagree_1", "text": "对，App可以之后再做。", "pron": "Duì, App kěyǐ zhīhòu zài zuò.\n두이, 앱 커이 즈허우 짜이 쭤.", "trans": "네, 앱은 나중에 해도 돼요.", "next": "rethink" },
+        { "id": "disagree_2", "text": "我们先看看客户数据吧。", "pron": "Wǒmen xiān kànkan kèhù shùjù ba.\n워먼 셴 칸칸 커후 수쥐 바.", "trans": "우선 고객 데이터부터 봐요.", "next": "rethink" }
+      ]
+    },
+    {
+      "id": "rethink",
+      "stage": "의견 조율",
+      "text": "也是。我再看看数据，重新考虑一下。",
+      "pron": "Yě shì. Wǒ zài kànkan shùjù, chóngxīn kǎolǜ yíxià.\n예 스. 워 짜이 칸칸 수쥐, 충신 카오뤼 이샤.",
+      "trans": "그것도 그렇네요. 데이터를 다시 보고 다시 생각해 볼게요.",
+      "replies": [
+        { "id": "rethink_1", "text": "好的，下周再聊吧。", "pron": "Hǎo de, xià zhōu zài liáo ba.\n하오 더, 샤 저우 짜이 랴오 바.", "trans": "좋아요, 다음 주에 다시 얘기해요.", "next": "end_followup" },
+        { "id": "rethink_2", "text": "谢谢。会议纪要我今天发出来。", "pron": "Xièxie. Huìyì jìyào wǒ jīntiān fā chūlai.\n셰셰. 후이이 지야오 워 진톈 파 추라이.", "trans": "고마워요. 회의록은 제가 오늘 보낼게요.", "next": "end_minutes" }
+      ]
+    },
+    {
+      "id": "next_steps",
+      "stage": "마무리",
+      "text": "好，那就这么定了。会议纪要我来整理，今天发出来。下周一再开一次会吧？",
+      "pron": "Hǎo, nà jiù zhème dìng le. Huìyì jìyào wǒ lái zhěnglǐ, jīntiān fā chūlai. Xià zhōuyī zài kāi yí cì huì ba?\n하오, 나 주 저머 딩 러. 후이이 지야오 워 라이 정리, 진톈 파 추라이. 샤 저우이 짜이 카이 이 츠 후이 바?",
+      "trans": "좋아요, 그럼 그렇게 정해요. 회의록은 제가 정리해서 오늘 보낼게요. 다음 주 월요일에 한 번 더 회의할까요?",
+      "replies": [
+        { "id": "next_steps_1", "text": "周一可以。辛苦你写纪要了。", "pron": "Zhōuyī kěyǐ. Xīnkǔ nǐ xiě jìyào le.\n저우이 커이. 신쿠 니 셰 지야오 러.", "trans": "월요일 좋아요. 회의록 쓰느라 수고해요.", "next": "end_agreed" },
+        { "id": "next_steps_2", "text": "这次纪要我来写吧。", "pron": "Zhè cì jìyào wǒ lái xiě ba.\n저 츠 지야오 워 라이 셰 바.", "trans": "이번엔 회의록 제가 쓸게요.", "next": "end_minutes" },
+        { "id": "next_steps_3", "text": "周一我不太方便，周二怎么样？", "pron": "Zhōuyī wǒ bú tài fāngbiàn, zhōu'èr zěnmeyàng?\n저우이 워 부 타이 팡볜, 저우얼 전머양?", "trans": "월요일은 좀 어려워요. 화요일 어때요?", "next": "end_agreed" }
+      ]
+    },
+    {
+      "id": "end_agreed",
+      "stage": "끝인사",
+      "text": "好的，我在日历上发个邀请。今天辛苦了！",
+      "pron": "Hǎo de, wǒ zài rìlì shang fā ge yāoqǐng. Jīntiān xīnkǔ le!\n하오 더, 워 짜이 르리 상 파 거 야오칭. 진톈 신쿠 러!",
+      "trans": "좋아요, 캘린더로 초대 보낼게요. 오늘 수고했어요!",
+      "replies": []
+    },
+    {
+      "id": "end_minutes",
+      "stage": "끝인사",
+      "text": "哎，太感谢了！发给整个团队吧。下周见！",
+      "pron": "Āi, tài gǎnxiè le! Fā gěi zhěnggè tuánduì ba. Xià zhōu jiàn!\n아이, 타이 간셰 러! 파 게이 정거 퇀두이 바. 샤 저우 젠!",
+      "trans": "아, 정말 고마워요! 팀 전체한테 보내 줘요. 다음 주에 봐요!",
+      "replies": []
+    },
+    {
+      "id": "end_followup",
+      "stage": "끝인사",
+      "text": "谢谢你直接说出来。下次开会前我把数据发给大家。",
+      "pron": "Xièxie nǐ zhíjiē shuō chūlai. Xià cì kāi huì qián wǒ bǎ shùjù fā gěi dàjiā.\n셰셰 니 즈제 숴 추라이. 샤 츠 카이 후이 첸 워 바 수쥐 파 게이 다자.",
+      "trans": "솔직하게 말해 줘서 고마워요. 다음 회의 전에 데이터를 모두에게 보낼게요.",
+      "replies": []
+    }
+  ]
+}

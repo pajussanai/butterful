@@ -1,0 +1,164 @@
+{
+  "id": "progress_deadline",
+  "lang": "ko",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "진행 확인",
+      "text": "민준 씨, 보고서는 어떻게 돼 가요?",
+      "pron": "minjun ssi, bogoseoneun eotteoke dwae gayo?",
+      "trans": "Minjun, how's the report coming along?",
+      "replies": [
+        { "id": "greet_1", "text": "순조롭게 진행되고 있습니다. 거의 다 했어요.", "pron": "sunjoropge jinhaengdoego itseumnida. geoui da haesseoyo.", "trans": "It's going smoothly. I'm almost done.", "next": "on_track" },
+        { "id": "greet_2", "text": "사실 조금 늦어지고 있어요.", "pron": "sasil jogeum neujeojigo isseoyo.", "trans": "Actually, I'm a bit behind.", "next": "behind" },
+        { "id": "greet_3", "text": "솔직히 말씀드리면, 좀 막혀 있습니다.", "pron": "soljiki malsseumdeurimyeon, jom makyeo itseumnida.", "trans": "To be honest, I'm a bit stuck.", "next": "blocked" }
+      ]
+    },
+    {
+      "id": "on_track",
+      "stage": "진행 상황",
+      "text": "잘됐네요. 그럼 금요일 퇴근 전까지 괜찮죠?",
+      "pron": "jaldwaenneyo. geureom geumyoil toegeun jeonkkaji gwaenchanchyo?",
+      "trans": "Great. So we're still good for end of day Friday?",
+      "replies": [
+        { "id": "on_track_1", "text": "네, 문제없습니다.", "pron": "ne, munjeeopseumnida.", "trans": "Yes, no problem.", "next": "end_friday" },
+        { "id": "on_track_2", "text": "네. 내일 초안을 먼저 보여 드려도 될까요?", "pron": "ne. naeil choaneul meonjeo boyeo deuryeodo doelkkayo?", "trans": "Yes. Could I show you a draft tomorrow first?", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "behind",
+      "stage": "진행 상황",
+      "text": "아, 그래요? 무슨 일 있어요?",
+      "pron": "a, geuraeyo? museun il isseoyo?",
+      "trans": "Oh, really? What's going on?",
+      "replies": [
+        { "id": "behind_1", "text": "다른 프로젝트에 급한 일이 생겨서요.", "pron": "dareun peurojekteue geupan iri saenggyeoseoyo.", "trans": "Something urgent came up on another project.", "next": "behind_reason" },
+        { "id": "behind_2", "text": "영업팀 데이터를 아직 기다리고 있어요.", "pron": "yeongeoptim deiteoreul ajik gidarigo isseoyo.", "trans": "I'm still waiting for data from the sales team.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "blocked",
+      "stage": "진행 상황",
+      "text": "그래요, 말해 줘서 고마워요. 뭐가 문제예요?",
+      "pron": "geuraeyo, malhae jwoseo gomawoyo. mwoga munjeyeyo?",
+      "trans": "Okay, thanks for telling me. What's the problem?",
+      "replies": [
+        { "id": "blocked_1", "text": "영업팀에서 지난달 수치를 받아야 합니다.", "pron": "yeongeoptimeseo jinandal suchireul badaya hamnida.", "trans": "I need last month's figures from the sales team.", "next": "blocked_help" },
+        { "id": "blocked_2", "text": "마케팅팀에서 설문 결과를 아직 안 보내 줬어요.", "pron": "maketingtimeseo seolmun gyeolgwareul ajik an bonae jwosseoyo.", "trans": "Marketing hasn't sent me the survey results yet.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "behind_reason",
+      "stage": "마감 조율",
+      "text": "그렇군요. 그럴 수 있죠. 그럼 언제쯤 끝낼 수 있을 것 같아요?",
+      "pron": "geureokunyo. geureol su itjyo. geureom eonjejjeum kkeunnael su isseul geot gatayo?",
+      "trans": "I see. That happens. So when do you think you can finish?",
+      "replies": [
+        { "id": "behind_reason_1", "text": "이틀만 더 주실 수 있을까요?", "pron": "iteulman deo jusil su isseulkkayo?", "trans": "Could you give me two more days?", "next": "extend_ask" },
+        { "id": "behind_reason_2", "text": "우선 내일 초안부터 보내 드릴 수 있습니다.", "pron": "useon naeil choanbuteo bonae deuril su itseumnida.", "trans": "I can send you a draft tomorrow first.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "blocked_help",
+      "stage": "도움 요청",
+      "text": "그쪽에 연락은 해 봤어요?",
+      "pron": "geujjoge yeollageun hae bwasseoyo?",
+      "trans": "Have you reached out to them?",
+      "replies": [
+        { "id": "blocked_help_1", "text": "네, 월요일에 메일을 드렸는데 아직 답이 없어요.", "pron": "ne, woryoire meireul deuryeonneunde ajik dabi eopseoyo.", "trans": "Yes, I emailed them on Monday, but there's no reply yet.", "next": "manager_calls" },
+        { "id": "blocked_help_2", "text": "아직이요. 오늘 물어보겠습니다.", "pron": "ajigiyo. oneul mureobogetseumnida.", "trans": "Not yet. I'll ask them today.", "next": "ask_today" }
+      ]
+    },
+    {
+      "id": "manager_calls",
+      "stage": "도움 요청",
+      "text": "알겠어요. 그쪽 팀장님한테 제가 얘기해 볼게요. 내일까지는 받을 수 있을 거예요.",
+      "pron": "algesseoyo. geujjok timjangnimhante jega yaegihae bolgeyo. naeilkkajineun badeul su isseul geoyeyo.",
+      "trans": "Okay, I'll talk to their team lead. You should have it by tomorrow.",
+      "replies": [
+        { "id": "manager_calls_1", "text": "감사합니다. 그럼 마감을 다음 주 화요일로 미뤄도 될까요?", "pron": "gamsahamnida. geureom magameul daeum ju hwayoillo mirwodo doelkkayo?", "trans": "Thank you. Then could I push the deadline to next Tuesday?", "next": "extend_ask" },
+        { "id": "manager_calls_2", "text": "감사합니다. 우선 지금 있는 자료로 초안부터 보내 드리겠습니다.", "pron": "gamsahamnida. useon jigeum inneun jaryoro choanbuteo bonae deurigetseumnida.", "trans": "Thank you. I'll send you a draft with what I have first.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "ask_today",
+      "stage": "도움 요청",
+      "text": "그래요. 내일까지 답이 없으면 알려 줘요.",
+      "pron": "geuraeyo. naeilkkaji dabi eopseumyeon allyeo jwoyo.",
+      "trans": "Okay. If you don't hear back by tomorrow, let me know.",
+      "replies": [
+        { "id": "ask_today_1", "text": "알겠습니다. 그런데 시간이 조금 더 필요할 수도 있어요.", "pron": "algetseumnida. geureonde sigani jogeum deo piryohal sudo isseoyo.", "trans": "Understood. But I might need a little more time.", "next": "extend_ask" },
+        { "id": "ask_today_2", "text": "알겠습니다. 그래도 금요일까지 해 보겠습니다.", "pron": "algetseumnida. geuraedo geumyoilkkaji hae bogetseumnida.", "trans": "Understood. I'll still try to make Friday.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "extend_ask",
+      "stage": "마감 조율",
+      "text": "음, 고객사 미팅이 월요일 오전이라서요. 금요일에 초안, 월요일 아침 일찍 최종본, 이렇게 어때요?",
+      "pron": "eum, gogaeksa mitingi woryoil ojeoniraseoyo. geumyoire choan, woryoil achim iljjik choejongbon, ireoke eottaeyo?",
+      "trans": "Hmm, the client meeting is Monday morning. How about a draft on Friday and the final version first thing Monday?",
+      "replies": [
+        { "id": "extend_ask_1", "text": "네, 그렇게 하겠습니다. 감사합니다.", "pron": "ne, geureoke hagetseumnida. gamsahamnida.", "trans": "Sure, I'll do that. Thank you.", "next": "recap" },
+        { "id": "extend_ask_2", "text": "조금 빠듯해서요. 차트 작업을 누가 도와주실 수 있을까요?", "pron": "jogeum ppadeutaeseoyo. chateu jageobeul nuga dowajusil su isseulkkayo?", "trans": "It's a bit tight. Could someone help me with the charts?", "next": "help_offer" }
+      ]
+    },
+    {
+      "id": "help_offer",
+      "stage": "마감 조율",
+      "text": "그래요, 팀에서 한 명 붙여 줄게요. 그럼 금요일까지 되겠어요?",
+      "pron": "geuraeyo, timeseo han myeong buchyeo julgeyo. geureom geumyoilkkaji doegesseoyo?",
+      "trans": "Sure, I'll get someone on the team to help. Can you make Friday, then?",
+      "replies": [
+        { "id": "help_offer_1", "text": "네, 그러면 금요일까지 끝낼 수 있습니다.", "pron": "ne, geureomyeon geumyoilkkaji kkeunnael su itseumnida.", "trans": "Yes, then I can finish by Friday.", "next": "end_friday" },
+        { "id": "help_offer_2", "text": "해 보겠습니다. 혹시 모르니 내일 초안을 먼저 보내 드릴게요.", "pron": "hae bogetseumnida. hoksi moreuni naeil choaneul meonjeo bonae deurilgeyo.", "trans": "I'll try. Just in case, I'll send you a draft tomorrow.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "draft_offer",
+      "stage": "마감 조율",
+      "text": "좋은 생각이에요. 내일 초안 보내 주면 피드백 줄게요. 최종본은 언제 줄 수 있어요?",
+      "pron": "joeun saenggagieyo. naeil choan bonae jumyeon pideubaek julgeyo. choejongboneun eonje jul su isseoyo?",
+      "trans": "Good idea. Send me the draft tomorrow and I'll give you feedback. When can you get me the final version?",
+      "replies": [
+        { "id": "draft_offer_1", "text": "월요일 오전에 드려도 될까요?", "pron": "woryoil ojeone deuryeodo doelkkayo?", "trans": "Could I give it to you Monday morning?", "next": "end_draft" },
+        { "id": "draft_offer_2", "text": "금요일 퇴근 전까지 드리겠습니다.", "pron": "geumyoil toegeun jeonkkaji deurigetseumnida.", "trans": "I'll have it to you by end of day Friday.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "recap",
+      "stage": "다음 단계",
+      "text": "좋아요. 그럼 일정 한번 정리해 볼까요?",
+      "pron": "joayo. geureom iljeong hanbeon jeongnihae bolkkayo?",
+      "trans": "Good. So shall we go over the schedule once more?",
+      "replies": [
+        { "id": "recap_1", "text": "금요일 오후까지 초안, 월요일 오전에 최종본 드리겠습니다.", "pron": "geumyoil ohukkaji choan, woryoil ojeone choejongbon deurigetseumnida.", "trans": "A draft by Friday afternoon, and the final version Monday morning.", "next": "end_compromise" },
+        { "id": "recap_2", "text": "금요일에 초안 보내 드리고, 미팅 전에 최종본 드릴게요.", "pron": "geumyoire choan bonae deurigo, miting jeone choejongbon deurilgeyo.", "trans": "I'll send the draft on Friday and the final version before the meeting.", "next": "end_compromise" }
+      ]
+    },
+    {
+      "id": "end_friday",
+      "stage": "마무리",
+      "text": "좋아요. 그럼 금요일 퇴근 전까지예요. 무슨 일 생기면 바로 말해 줘요.",
+      "pron": "joayo. geureom geumyoil toegeun jeonkkajiyeyo. museun il saenggimyeon baro malhae jwoyo.",
+      "trans": "Great. End of day Friday, then. If anything comes up, tell me right away.",
+      "replies": []
+    },
+    {
+      "id": "end_compromise",
+      "stage": "마무리",
+      "text": "좋아요. 미리 말해 줘서 고마워요, 민준 씨. 도움이 필요하면 언제든 말해요.",
+      "pron": "joayo. miri malhae jwoseo gomawoyo, minjun ssi. doumi piryohamyeon eonjedeun malhaeyo.",
+      "trans": "Good. Thanks for telling me early, Minjun. If you need help, just say so.",
+      "replies": []
+    },
+    {
+      "id": "end_draft",
+      "stage": "마무리",
+      "text": "월요일 오전도 괜찮아요. 대신 열 시 전까지 부탁해요. 초안 보고 연락할게요.",
+      "pron": "woryoil ojeondo gwaenchanayo. daesin yeol si jeonkkaji butakaeyo. choan bogo yeollakalgeyo.",
+      "trans": "Monday morning is fine. But before ten, please. I'll look at the draft and get back to you.",
+      "replies": []
+    }
+  ]
+}

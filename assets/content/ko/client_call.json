@@ -1,0 +1,180 @@
+{
+  "id": "client_call",
+  "lang": "ko",
+  "start": "greeting",
+  "nodes": [
+    {
+      "id": "greeting",
+      "stage": "전화 받기",
+      "text": "안녕하세요, 선라이즈 무역입니다. 영업팀 맞습니까?",
+      "pron": "annyeonghaseyo, seollaijeu muyeogimnida. yeong-eoptim matseumnikka?",
+      "trans": "Hello, this is Sunrise Trading. Is this the sales team?",
+      "replies": [
+        { "id": "greeting_1", "text": "네, 영업팀 김민준입니다.", "pron": "ne, yeong-eoptim gim minjun-imnida.", "trans": "Yes, this is Kim Minjun from the sales team.", "next": "ask_manager" },
+        { "id": "greeting_2", "text": "네, 맞습니다. 무엇을 도와드릴까요?", "pron": "ne, matseumnida. mueoseul dowadeurilkkayo?", "trans": "Yes, it is. How can I help you?", "next": "ask_manager" },
+        { "id": "greeting_3", "text": "죄송하지만, 다시 한번 말씀해 주시겠어요?", "pron": "joesonghajiman, dasi hanbeon malsseumhae jusigesseoyo?", "trans": "Sorry, could you say that again?", "next": "repeat_name" }
+      ]
+    },
+    {
+      "id": "repeat_name",
+      "stage": "전화 받기",
+      "text": "아, 네. 선라이즈 무역입니다. 영업팀 맞으시죠?",
+      "pron": "a, ne. seollaijeu muyeogimnida. yeong-eoptim majeusijyo?",
+      "trans": "Oh, yes. This is Sunrise Trading. This is the sales team, right?",
+      "replies": [
+        { "id": "repeat_name_1", "text": "네, 맞습니다. 김민준입니다.", "pron": "ne, matseumnida. gim minjun-imnida.", "trans": "Yes, that's right. This is Kim Minjun.", "next": "ask_manager" },
+        { "id": "repeat_name_2", "text": "네, 죄송합니다. 말씀하세요.", "pron": "ne, joesonghamnida. malsseumhaseyo.", "trans": "Yes, sorry about that. Go ahead.", "next": "ask_manager" }
+      ]
+    },
+    {
+      "id": "ask_manager",
+      "stage": "담당자 찾기",
+      "text": "영업팀장님 계십니까?",
+      "pron": "yeong-eoptimjangnim gyesimnikka?",
+      "trans": "Is the sales team manager available?",
+      "replies": [
+        { "id": "ask_manager_1", "text": "실례지만, 무슨 일로 전화하셨어요?", "pron": "sillyejiman, museun illo jeonhwahasyeosseoyo?", "trans": "Excuse me, may I ask what you're calling about?", "next": "purpose" },
+        { "id": "ask_manager_2", "text": "죄송합니다. 팀장님은 지금 자리에 안 계십니다.", "pron": "joesonghamnida. timjangnimeun jigeum jarie an gyesimnida.", "trans": "I'm sorry. The manager is away from the desk right now.", "next": "not_at_desk" },
+        { "id": "ask_manager_3", "text": "죄송합니다. 팀장님은 지금 회의 중이십니다.", "pron": "joesonghamnida. timjangnimeun jigeum hoeui jung-isimnida.", "trans": "I'm sorry. The manager is in a meeting right now.", "next": "not_at_desk" }
+      ]
+    },
+    {
+      "id": "not_at_desk",
+      "stage": "부재 안내",
+      "text": "아, 그렇군요. 언제쯤 돌아오세요?",
+      "pron": "a, geureokungunyo. eonjejjeum doraoseyo?",
+      "trans": "Oh, I see. When will the manager be back?",
+      "replies": [
+        { "id": "not_at_desk_1", "text": "한 시간쯤 후에 오십니다. 메모 남겨 드릴까요?", "pron": "han sigan-jjeum hue osimnida. memo namgyeo deurilkkayo?", "trans": "In about an hour. Shall I take a message?", "next": "take_message" },
+        { "id": "not_at_desk_2", "text": "오후에 오십니다. 제가 도와드릴까요?", "pron": "ohue osimnida. jega dowadeurilkkayo?", "trans": "This afternoon. Can I help you instead?", "next": "purpose" }
+      ]
+    },
+    {
+      "id": "take_message",
+      "stage": "메시지 받기",
+      "text": "네, 부탁드립니다. 선라이즈 무역으로 전화 좀 달라고 전해 주세요.",
+      "pron": "ne, butakdeurimnida. seollaijeu muyeogeuro jeonhwa jom dallago jeonhae juseyo.",
+      "trans": "Yes, please. Please ask the manager to call Sunrise Trading back.",
+      "replies": [
+        { "id": "take_message_1", "text": "네, 알겠습니다. 연락처는 팀장님이 알고 계시죠?", "pron": "ne, algetseumnida. yeollakcheoneun timjangnimi algo gyesijyo?", "trans": "Sure. The manager has your number, right?", "next": "number_check" },
+        { "id": "take_message_2", "text": "네. 실례지만 어떤 일이세요?", "pron": "ne. sillyejiman eotteon iriseyo?", "trans": "Sure. May I ask what it's about?", "next": "purpose" }
+      ]
+    },
+    {
+      "id": "number_check",
+      "stage": "메시지 받기",
+      "text": "네, 알고 계실 거예요. 새 견적서 건입니다.",
+      "pron": "ne, algo gyesil geoyeyo. sae gyeonjeokseo geonimnida.",
+      "trans": "Yes, the manager should have it. It's about the new quote.",
+      "replies": [
+        { "id": "number_check_1", "text": "알겠습니다. 그렇게 전해 드리겠습니다.", "pron": "algetseumnida. geureoke jeonhae deurigetseumnida.", "trans": "Understood. I'll pass that on.", "next": "end_callback" },
+        { "id": "number_check_2", "text": "견적서는 제가 바로 보내 드릴 수 있습니다.", "pron": "gyeonjeokseoneun jega baro bonae deuril su itseumnida.", "trans": "I can send you the quote right away myself.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "purpose",
+      "stage": "용건 확인",
+      "text": "저희 주문 건 수정 견적서가 필요해서요.",
+      "pron": "jeohui jumun geon sujeong gyeonjeokseoga piryohaeseoyo.",
+      "trans": "We need the revised quote for our order.",
+      "replies": [
+        { "id": "purpose_1", "text": "그건 제가 보내 드릴 수 있습니다.", "pron": "geugeon jega bonae deuril su itseumnida.", "trans": "I can send that to you.", "next": "confirm_email" },
+        { "id": "purpose_2", "text": "어떤 제품 견적서인가요?", "pron": "eotteon jepum gyeonjeokseoingayo?", "trans": "Which product is the quote for?", "next": "product" },
+        { "id": "purpose_3", "text": "팀장님께 다시 전화드리라고 하겠습니다.", "pron": "timjangnimkke dasi jeonhwadeurirago hagetseumnida.", "trans": "I'll ask the manager to call you back.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "product",
+      "stage": "용건 확인",
+      "text": "사무용 의자요. 지난주에 주문했습니다.",
+      "pron": "samuyong uijayo. jinanjue jumunhaetseumnida.",
+      "trans": "The office chairs. We ordered them last week.",
+      "replies": [
+        { "id": "product_1", "text": "네. 언제까지 필요하세요?", "pron": "ne. eonjekkaji piryohaseyo?", "trans": "I see. When do you need it by?", "next": "deadline" },
+        { "id": "product_2", "text": "알겠습니다. 보내 드리겠습니다.", "pron": "algetseumnida. bonae deurigetseumnida.", "trans": "Understood. I'll send it to you.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "deadline",
+      "stage": "기한 확인",
+      "text": "가능하면 금요일까지 부탁드립니다.",
+      "pron": "ganeunghamyeon geumyoilkkaji butakdeurimnida.",
+      "trans": "By Friday, if possible.",
+      "replies": [
+        { "id": "deadline_1", "text": "금요일까지요. 알겠습니다.", "pron": "geumyoilkkajiyo. algetseumnida.", "trans": "By Friday. Understood.", "next": "confirm_email" },
+        { "id": "deadline_2", "text": "금요일은 좀 어려울 것 같은데, 월요일도 괜찮으세요?", "pron": "geumyoireun jom eoryeoul geot gateunde, woryoildo gwaenchaneuseyo?", "trans": "Friday might be a bit difficult. Would Monday be okay?", "next": "monday" }
+      ]
+    },
+    {
+      "id": "monday",
+      "stage": "기한 확인",
+      "text": "월요일 오전이면 괜찮습니다. 그보다 늦으면 안 됩니다.",
+      "pron": "woryoil ojeonimyeon gwaenchanseumnida. geuboda neujeumyeon an doemnida.",
+      "trans": "Monday morning is fine. But it can't be any later than that.",
+      "replies": [
+        { "id": "monday_1", "text": "월요일 오전이요. 알겠습니다.", "pron": "woryoil ojeoniyo. algetseumnida.", "trans": "Monday morning. Understood.", "next": "confirm_email" },
+        { "id": "monday_2", "text": "이해해 주셔서 감사합니다.", "pron": "ihaehae jusyeoseo gamsahamnida.", "trans": "Thank you for understanding.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "confirm_email",
+      "stage": "이메일 확인",
+      "text": "감사합니다. 이메일로 보내 주시겠어요?",
+      "pron": "gamsahamnida. imeillo bonae jusigesseoyo?",
+      "trans": "Thank you. Could you send it by email?",
+      "replies": [
+        { "id": "confirm_email_1", "text": "네. 이메일 주소가 어떻게 되세요?", "pron": "ne. imeil jusoga eotteoke doeseyo?", "trans": "Sure. What is your email address?", "next": "email_spell" },
+        { "id": "confirm_email_2", "text": "네. 지난번 주소로 보내 드리면 될까요?", "pron": "ne. jinanbeon jusoro bonae deurimyeon doelkkayo?", "trans": "Sure. Should I send it to the same address as last time?", "next": "email_same" }
+      ]
+    },
+    {
+      "id": "email_spell",
+      "stage": "이메일 확인",
+      "text": "세일즈 골뱅이 선라이즈 닷컴입니다.",
+      "pron": "seiljeu golbaeng-i seollaijeu datkeomimnida.",
+      "trans": "It's sales at sunrise dot com.",
+      "replies": [
+        { "id": "email_spell_1", "text": "세일즈 골뱅이 선라이즈 닷컴, 맞으시죠?", "pron": "seiljeu golbaeng-i seollaijeu datkeom, majeusijyo?", "trans": "Sales at sunrise dot com, is that right?", "next": "email_ok" },
+        { "id": "email_spell_2", "text": "다시 확인하겠습니다. 세일즈 골뱅이 선라이즈 닷컴이요?", "pron": "dasi hwaginhagetseumnida. seiljeu golbaeng-i seollaijeu datkeomiyo?", "trans": "Let me read that back. Sales at sunrise dot com?", "next": "email_ok" }
+      ]
+    },
+    {
+      "id": "email_ok",
+      "stage": "약속하기",
+      "text": "네, 맞습니다. 감사합니다.",
+      "pron": "ne, matseumnida. gamsahamnida.",
+      "trans": "Yes, that's right. Thank you.",
+      "replies": [
+        { "id": "email_ok_1", "text": "오늘 오후에 보내 드리겠습니다.", "pron": "oneul ohue bonae deurigetseumnida.", "trans": "I'll send it this afternoon.", "next": "end_sent" },
+        { "id": "email_ok_2", "text": "팀장님께 확인하고 다시 연락드리겠습니다.", "pron": "timjangnimkke hwaginhago dasi yeollakdeurigetseumnida.", "trans": "I'll check with the manager and get back to you.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "email_same",
+      "stage": "약속하기",
+      "text": "네, 같은 주소로 부탁드립니다.",
+      "pron": "ne, gateun jusoro butakdeurimnida.",
+      "trans": "Yes, the same address, please.",
+      "replies": [
+        { "id": "email_same_1", "text": "알겠습니다. 오늘 오후에 보내 드리겠습니다.", "pron": "algetseumnida. oneul ohue bonae deurigetseumnida.", "trans": "Understood. I'll send it this afternoon.", "next": "end_sent" },
+        { "id": "email_same_2", "text": "알겠습니다. 먼저 팀장님께 확인하고 다시 연락드리겠습니다.", "pron": "algetseumnida. meonjeo timjangnimkke hwaginhago dasi yeollakdeurigetseumnida.", "trans": "Understood. I'll check with the manager first and get back to you.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "end_sent",
+      "stage": "마무리",
+      "text": "감사합니다. 그럼 잘 부탁드립니다. 들어가세요.",
+      "pron": "gamsahamnida. geureom jal butakdeurimnida. deureogaseyo.",
+      "trans": "Thank you. I'll leave it with you, then. Goodbye.",
+      "replies": []
+    },
+    {
+      "id": "end_callback",
+      "stage": "마무리",
+      "text": "네, 연락 기다리겠습니다. 감사합니다.",
+      "pron": "ne, yeollak gidarigetseumnida. gamsahamnida.",
+      "trans": "All right, I'll wait to hear from you. Thank you.",
+      "replies": []
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "progress_deadline",
+  "lang": "zh",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "진행 확인",
+      "text": "小金，报告写得怎么样了？",
+      "pron": "Xiǎo Jīn, bàogào xiě de zěnmeyàng le?\n샤오 진, 바오가오 셰 더 전머양 러?",
+      "trans": "김 씨, 보고서 어떻게 돼 가요?",
+      "replies": [
+        { "id": "greet_1", "text": "挺顺利的，差不多快写完了。", "pron": "Tǐng shùnlì de, chàbuduō kuài xiěwán le.\n팅 순리 더, 차부둬 콰이 셰완 러.", "trans": "꽤 순조로워요. 거의 다 썼어요.", "next": "on_track" },
+        { "id": "greet_2", "text": "其实进度有点儿慢了。", "pron": "Qíshí jìndù yǒudiǎnr màn le.\n치스 진두 여우뎌얼 만 러.", "trans": "사실 진도가 좀 늦어졌어요.", "next": "behind" },
+        { "id": "greet_3", "text": "说实话，我卡住了。", "pron": "Shuō shíhuà, wǒ kǎzhù le.\n숴 스화, 워 카주 러.", "trans": "솔직히 말하면, 막혔어요.", "next": "blocked" }
+      ]
+    },
+    {
+      "id": "on_track",
+      "stage": "진행 상황",
+      "text": "不错。那周五下班前能交吗？",
+      "pron": "Búcuò. Nà zhōuwǔ xiàbān qián néng jiāo ma?\n부춰. 나 저우우 샤반 첸 넝 자오 마?",
+      "trans": "좋네요. 그럼 금요일 퇴근 전까지 낼 수 있어요?",
+      "replies": [
+        { "id": "on_track_1", "text": "可以，没问题。", "pron": "Kěyǐ, méi wèntí.\n커이, 메이 원티.", "trans": "네, 문제없어요.", "next": "end_friday" },
+        { "id": "on_track_2", "text": "可以。我明天先发您一版初稿看看，行吗？", "pron": "Kěyǐ. Wǒ míngtiān xiān fā nín yì bǎn chūgǎo kànkan, xíng ma?\n커이. 워 밍톈 셴 파 닌 이 반 추가오 칸칸, 싱 마?", "trans": "네. 내일 초안을 먼저 보내 드려서 보여 드려도 될까요?", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "behind",
+      "stage": "진행 상황",
+      "text": "哦，怎么了？",
+      "pron": "Ò, zěnme le?\n오, 전머 러?",
+      "trans": "아, 무슨 일 있어요?",
+      "replies": [
+        { "id": "behind_1", "text": "另一个项目突然来了个急活儿。", "pron": "Lìng yí ge xiàngmù tūrán lái le ge jí huór.\n링 이 거 샹무 투란 라이 러 거 지 훨.", "trans": "다른 프로젝트에 갑자기 급한 일이 생겼어요.", "next": "behind_reason" },
+        { "id": "behind_2", "text": "我还在等销售部的数据。", "pron": "Wǒ hái zài děng xiāoshòubù de shùjù.\n워 하이 짜이 덩 샤오서우부 더 수쥐.", "trans": "영업부 데이터를 아직 기다리고 있어요.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "blocked",
+      "stage": "진행 상황",
+      "text": "好，幸亏你说了。卡在哪儿了？",
+      "pron": "Hǎo, xìngkuī nǐ shuō le. Kǎ zài nǎr le?\n하오, 싱쿠이 니 숴 러. 카 짜이 날 러?",
+      "trans": "그래요, 말해 줘서 다행이에요. 어디서 막혔어요?",
+      "replies": [
+        { "id": "blocked_1", "text": "我需要销售部上个月的数据。", "pron": "Wǒ xūyào xiāoshòubù shàng ge yuè de shùjù.\n워 쉬야오 샤오서우부 상 거 웨 더 수쥐.", "trans": "영업부의 지난달 데이터가 필요해요.", "next": "blocked_help" },
+        { "id": "blocked_2", "text": "市场部的问卷结果还没发过来。", "pron": "Shìchǎngbù de wènjuàn jiéguǒ hái méi fā guòlai.\n스창부 더 원쥐안 제궈 하이 메이 파 궈라이.", "trans": "마케팅부의 설문 결과가 아직 안 왔어요.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "behind_reason",
+      "stage": "마감 조율",
+      "text": "明白，这也没办法。那你觉得什么时候能完成？",
+      "pron": "Míngbai, zhè yě méi bànfǎ. Nà nǐ juéde shénme shíhou néng wánchéng?\n밍바이, 저 예 메이 반파. 나 니 줴더 선머 스허우 넝 완청?",
+      "trans": "알겠어요, 그건 어쩔 수 없죠. 그럼 언제 끝낼 수 있을 것 같아요?",
+      "replies": [
+        { "id": "behind_reason_1", "text": "能再给我两天时间吗？", "pron": "Néng zài gěi wǒ liǎng tiān shíjiān ma?\n넝 짜이 게이 워 량 톈 스젠 마?", "trans": "이틀만 더 주실 수 있을까요?", "next": "extend_ask" },
+        { "id": "behind_reason_2", "text": "我明天可以先发您一版初稿。", "pron": "Wǒ míngtiān kěyǐ xiān fā nín yì bǎn chūgǎo.\n워 밍톈 커이 셴 파 닌 이 반 추가오.", "trans": "내일 우선 초안을 보내 드릴 수 있어요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "blocked_help",
+      "stage": "도움 요청",
+      "text": "你跟他们联系了吗？",
+      "pron": "Nǐ gēn tāmen liánxì le ma?\n니 건 타먼 롄시 러 마?",
+      "trans": "그쪽에 연락해 봤어요?",
+      "replies": [
+        { "id": "blocked_help_1", "text": "联系了，周一发了邮件，但是还没回复。", "pron": "Liánxì le, zhōuyī fā le yóujiàn, dànshì hái méi huífù.\n롄시 러, 저우이 파 러 여우젠, 단스 하이 메이 후이푸.", "trans": "했어요. 월요일에 메일을 보냈는데 아직 답이 없어요.", "next": "manager_calls" },
+        { "id": "blocked_help_2", "text": "还没有，我今天就去问。", "pron": "Hái méiyǒu, wǒ jīntiān jiù qù wèn.\n하이 메이여우, 워 진톈 지우 취 원.", "trans": "아직이요. 오늘 바로 물어볼게요.", "next": "ask_today" }
+      ]
+    },
+    {
+      "id": "manager_calls",
+      "stage": "도움 요청",
+      "text": "行，我去跟他们经理说一声。明天应该就能给你。",
+      "pron": "Xíng, wǒ qù gēn tāmen jīnglǐ shuō yì shēng. Míngtiān yīnggāi jiù néng gěi nǐ.\n싱, 워 취 건 타먼 징리 숴 이 성. 밍톈 잉가이 지우 넝 게이 니.",
+      "trans": "알겠어요, 제가 그쪽 팀장한테 한마디 할게요. 내일이면 받을 수 있을 거예요.",
+      "replies": [
+        { "id": "manager_calls_1", "text": "谢谢您。那截止日期能推到下周二吗？", "pron": "Xièxie nín. Nà jiézhǐ rìqī néng tuī dào xià zhōu'èr ma?\n셰셰 닌. 나 제즈 르치 넝 투이 다오 샤 저우얼 마?", "trans": "감사합니다. 그럼 마감을 다음 주 화요일로 미뤄도 될까요?", "next": "extend_ask" },
+        { "id": "manager_calls_2", "text": "谢谢您。我先用现有的数据做一版初稿发给您。", "pron": "Xièxie nín. Wǒ xiān yòng xiànyǒu de shùjù zuò yì bǎn chūgǎo fā gěi nín.\n셰셰 닌. 워 셴 융 셴여우 더 수쥐 쭤 이 반 추가오 파 게이 닌.", "trans": "감사합니다. 우선 지금 있는 데이터로 초안을 만들어 보내 드릴게요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "ask_today",
+      "stage": "도움 요청",
+      "text": "好，要是明天还没回复，跟我说。",
+      "pron": "Hǎo, yàoshi míngtiān hái méi huífù, gēn wǒ shuō.\n하오, 야오스 밍톈 하이 메이 후이푸, 건 워 숴.",
+      "trans": "좋아요, 내일까지 답이 없으면 나한테 말해요.",
+      "replies": [
+        { "id": "ask_today_1", "text": "好的。不过我可能需要多一点儿时间。", "pron": "Hǎo de. Búguò wǒ kěnéng xūyào duō yìdiǎnr shíjiān.\n하오 더. 부궈 워 커넝 쉬야오 둬 이뎌얼 스젠.", "trans": "알겠습니다. 그런데 시간이 조금 더 필요할 수도 있어요.", "next": "extend_ask" },
+        { "id": "ask_today_2", "text": "好的。我还是争取周五完成。", "pron": "Hǎo de. Wǒ háishi zhēngqǔ zhōuwǔ wánchéng.\n하오 더. 워 하이스 정취 저우우 완청.", "trans": "알겠습니다. 그래도 금요일에 끝내도록 해 볼게요.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "extend_ask",
+      "stage": "마감 조율",
+      "text": "嗯，跟客户的会是周一上午。周五先交初稿，周一一早交终稿，怎么样？",
+      "pron": "Ńg, gēn kèhù de huì shì zhōuyī shàngwǔ. Zhōuwǔ xiān jiāo chūgǎo, zhōuyī yì zǎo jiāo zhōnggǎo, zěnmeyàng?\n응, 건 커후 더 후이 스 저우이 상우. 저우우 셴 자오 추가오, 저우이 이 자오 자오 중가오, 전머양?",
+      "trans": "음, 고객과의 회의가 월요일 오전이에요. 금요일에 초안을 먼저 내고, 월요일 아침 일찍 최종본을 내는 건 어때요?",
+      "replies": [
+        { "id": "extend_ask_1", "text": "好的，就这么办。谢谢您。", "pron": "Hǎo de, jiù zhème bàn. Xièxie nín.\n하오 더, 지우 저머 반. 셰셰 닌.", "trans": "네, 그렇게 할게요. 감사합니다.", "next": "recap" },
+        { "id": "extend_ask_2", "text": "时间有点儿紧。能找人帮我做一下图表吗？", "pron": "Shíjiān yǒudiǎnr jǐn. Néng zhǎo rén bāng wǒ zuò yíxià túbiǎo ma?\n스젠 여우뎌얼 진. 넝 자오 런 방 워 쭤 이샤 투뱌오 마?", "trans": "시간이 좀 빠듯해요. 차트 작업을 도와줄 사람을 찾아 주실 수 있을까요?", "next": "help_offer" }
+      ]
+    },
+    {
+      "id": "help_offer",
+      "stage": "마감 조율",
+      "text": "行，我让组里的同事帮你。这样周五能交吗？",
+      "pron": "Xíng, wǒ ràng zǔ lǐ de tóngshì bāng nǐ. Zhèyàng zhōuwǔ néng jiāo ma?\n싱, 워 랑 쭈 리 더 퉁스 방 니. 저양 저우우 넝 자오 마?",
+      "trans": "알겠어요, 팀 동료한테 도와주라고 할게요. 그러면 금요일에 낼 수 있어요?",
+      "replies": [
+        { "id": "help_offer_1", "text": "能，这样周五就能完成。", "pron": "Néng, zhèyàng zhōuwǔ jiù néng wánchéng.\n넝, 저양 저우우 지우 넝 완청.", "trans": "네, 그러면 금요일에 끝낼 수 있어요.", "next": "end_friday" },
+        { "id": "help_offer_2", "text": "我尽量。保险起见，我明天先发您初稿。", "pron": "Wǒ jǐnliàng. Bǎoxiǎn qǐjiàn, wǒ míngtiān xiān fā nín chūgǎo.\n워 진량. 바오셴 치젠, 워 밍톈 셴 파 닌 추가오.", "trans": "최대한 해 볼게요. 혹시 모르니 내일 초안을 먼저 보내 드릴게요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "draft_offer",
+      "stage": "마감 조율",
+      "text": "好主意。明天把初稿发我，我给你提意见。终稿什么时候能交？",
+      "pron": "Hǎo zhǔyi. Míngtiān bǎ chūgǎo fā wǒ, wǒ gěi nǐ tí yìjiàn. Zhōnggǎo shénme shíhou néng jiāo?\n하오 주이. 밍톈 바 추가오 파 워, 워 게이 니 티 이젠. 중가오 선머 스허우 넝 자오?",
+      "trans": "좋은 생각이에요. 내일 초안 보내 주면 의견 줄게요. 최종본은 언제 낼 수 있어요?",
+      "replies": [
+        { "id": "draft_offer_1", "text": "周一上午交可以吗？", "pron": "Zhōuyī shàngwǔ jiāo kěyǐ ma?\n저우이 상우 자오 커이 마?", "trans": "월요일 오전에 내도 될까요?", "next": "end_draft" },
+        { "id": "draft_offer_2", "text": "周五下班前交给您。", "pron": "Zhōuwǔ xiàbān qián jiāo gěi nín.\n저우우 샤반 첸 자오 게이 닌.", "trans": "금요일 퇴근 전까지 드릴게요.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "recap",
+      "stage": "다음 단계",
+      "text": "好。那我们再确认一下安排。",
+      "pron": "Hǎo. Nà wǒmen zài quèrèn yíxià ānpái.\n하오. 나 워먼 짜이 췌런 이샤 안파이.",
+      "trans": "좋아요. 그럼 일정을 한 번 더 확인해요.",
+      "replies": [
+        { "id": "recap_1", "text": "周五下午前交初稿，周一上午交终稿。", "pron": "Zhōuwǔ xiàwǔ qián jiāo chūgǎo, zhōuyī shàngwǔ jiāo zhōnggǎo.\n저우우 샤우 첸 자오 추가오, 저우이 상우 자오 중가오.", "trans": "금요일 오후까지 초안, 월요일 오전에 최종본을 낼게요.", "next": "end_compromise" },
+        { "id": "recap_2", "text": "周五发初稿，开会前把终稿发给您。", "pron": "Zhōuwǔ fā chūgǎo, kāihuì qián bǎ zhōnggǎo fā gěi nín.\n저우우 파 추가오, 카이후이 첸 바 중가오 파 게이 닌.", "trans": "금요일에 초안을 보내고, 회의 전에 최종본을 보내 드릴게요.", "next": "end_compromise" }
+      ]
+    },
+    {
+      "id": "end_friday",
+      "stage": "마무리",
+      "text": "好，那就周五下班前。有什么情况随时跟我说。",
+      "pron": "Hǎo, nà jiù zhōuwǔ xiàbān qián. Yǒu shénme qíngkuàng suíshí gēn wǒ shuō.\n하오, 나 지우 저우우 샤반 첸. 여우 선머 칭쾅 쑤이스 건 워 숴.",
+      "trans": "좋아요, 그럼 금요일 퇴근 전까지예요. 무슨 일 있으면 언제든 말해요.",
+      "replies": []
+    },
+    {
+      "id": "end_compromise",
+      "stage": "마무리",
+      "text": "很好。小金，谢谢你提前告诉我。需要帮忙就说。",
+      "pron": "Hěn hǎo. Xiǎo Jīn, xièxie nǐ tíqián gàosu wǒ. Xūyào bāngmáng jiù shuō.\n헌 하오. 샤오 진, 셰셰 니 티첸 가오쑤 워. 쉬야오 방망 지우 숴.",
+      "trans": "좋아요. 김 씨, 미리 말해 줘서 고마워요. 도움이 필요하면 말해요.",
+      "replies": []
+    },
+    {
+      "id": "end_draft",
+      "stage": "마무리",
+      "text": "周一上午可以，不过十点前给我。我看完初稿再找你。",
+      "pron": "Zhōuyī shàngwǔ kěyǐ, búguò shí diǎn qián gěi wǒ. Wǒ kànwán chūgǎo zài zhǎo nǐ.\n저우이 상우 커이, 부궈 스 뎬 첸 게이 워. 워 칸완 추가오 짜이 자오 니.",
+      "trans": "월요일 오전도 괜찮아요. 다만 열 시 전까지 줘요. 초안 다 보고 다시 부를게요.",
+      "replies": []
+    }
+  ]
+}

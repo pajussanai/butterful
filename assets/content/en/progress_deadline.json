@@ -1,0 +1,164 @@
+{
+  "id": "progress_deadline",
+  "lang": "en",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "진행 확인",
+      "text": "Hi, Minjun. How's the report coming along?",
+      "pron": "하이, 민준. 하우즈 더 리포트 커밍 얼롱?",
+      "trans": "안녕하세요, 민준 씨. 보고서는 어떻게 돼 가요?",
+      "replies": [
+        { "id": "greet_1", "text": "It's going well. I'm almost done.", "pron": "잇츠 고잉 웰. 아임 올모스트 던.", "trans": "잘 되고 있어요. 거의 다 했어요.", "next": "on_track" },
+        { "id": "greet_2", "text": "Actually, I'm a bit behind.", "pron": "액추얼리, 아임 어 빗 비하인드.", "trans": "사실 조금 늦어지고 있어요.", "next": "behind" },
+        { "id": "greet_3", "text": "To be honest, I'm kind of stuck.", "pron": "투 비 아니스트, 아임 카인더브 스턱.", "trans": "솔직히 말씀드리면, 좀 막혀 있어요.", "next": "blocked" }
+      ]
+    },
+    {
+      "id": "on_track",
+      "stage": "진행 상황",
+      "text": "Great. So we're still good for end of day Friday?",
+      "pron": "그레잇. 쏘 위어 스틸 굿 포 엔드 오브 데이 프라이데이?",
+      "trans": "좋아요. 그럼 금요일 퇴근 전까지 그대로 가는 거죠?",
+      "replies": [
+        { "id": "on_track_1", "text": "Yes, no problem.", "pron": "예스, 노 프라블럼.", "trans": "네, 문제없어요.", "next": "end_friday" },
+        { "id": "on_track_2", "text": "Yes. Could I show you a draft tomorrow first?", "pron": "예스. 쿠드 아이 쇼 유 어 드래프트 투모로우 퍼스트?", "trans": "네. 내일 초안을 먼저 보여 드려도 될까요?", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "behind",
+      "stage": "진행 상황",
+      "text": "Oh, okay. What's going on?",
+      "pron": "오, 오케이. 왓츠 고잉 온?",
+      "trans": "아, 그래요. 무슨 일 있어요?",
+      "replies": [
+        { "id": "behind_1", "text": "Something urgent came up on another project.", "pron": "썸띵 어전트 케임 업 온 어나더 프로젝트.", "trans": "다른 프로젝트에 급한 일이 생겼어요.", "next": "behind_reason" },
+        { "id": "behind_2", "text": "I'm still waiting on data from the sales team.", "pron": "아임 스틸 웨이팅 온 데이터 프럼 더 세일즈 팀.", "trans": "영업팀 데이터를 아직 기다리고 있어요.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "blocked",
+      "stage": "진행 상황",
+      "text": "Okay, thanks for telling me. What's the problem?",
+      "pron": "오케이, 땡스 포 텔링 미. 왓츠 더 프라블럼?",
+      "trans": "그래요, 말해 줘서 고마워요. 뭐가 문제예요?",
+      "replies": [
+        { "id": "blocked_1", "text": "I need last month's numbers from the sales team.", "pron": "아이 니드 래스트 먼스 넘버즈 프럼 더 세일즈 팀.", "trans": "영업팀에서 지난달 수치를 받아야 해요.", "next": "blocked_help" },
+        { "id": "blocked_2", "text": "Marketing hasn't sent the survey results yet.", "pron": "마케팅 해즌트 센트 더 서베이 리절츠 옛.", "trans": "마케팅팀이 아직 설문 결과를 안 보내 줬어요.", "next": "blocked_help" }
+      ]
+    },
+    {
+      "id": "behind_reason",
+      "stage": "마감 조율",
+      "text": "I see. That happens. So when do you think you can finish?",
+      "pron": "아이 씨. 댓 해픈즈. 쏘 웬 두 유 띵크 유 캔 피니시?",
+      "trans": "그렇군요. 그럴 수 있죠. 그럼 언제쯤 끝낼 수 있을 것 같아요?",
+      "replies": [
+        { "id": "behind_reason_1", "text": "Could I have two more days?", "pron": "쿠드 아이 해브 투 모어 데이즈?", "trans": "이틀만 더 주실 수 있을까요?", "next": "extend_ask" },
+        { "id": "behind_reason_2", "text": "I can send you a draft tomorrow first.", "pron": "아이 캔 센드 유 어 드래프트 투모로우 퍼스트.", "trans": "우선 내일 초안부터 보내 드릴 수 있어요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "blocked_help",
+      "stage": "도움 요청",
+      "text": "Have you reached out to them?",
+      "pron": "해브 유 리치트 아웃 투 뎀?",
+      "trans": "그쪽에 연락은 해 봤어요?",
+      "replies": [
+        { "id": "blocked_help_1", "text": "Yes, I emailed them on Monday, but no reply yet.", "pron": "예스, 아이 이메일드 뎀 온 먼데이, 벗 노 리플라이 옛.", "trans": "네, 월요일에 메일을 보냈는데 아직 답이 없어요.", "next": "manager_calls" },
+        { "id": "blocked_help_2", "text": "Not yet. I'll ask them today.", "pron": "낫 옛. 아일 애스크 뎀 투데이.", "trans": "아직이요. 오늘 물어볼게요.", "next": "ask_today" }
+      ]
+    },
+    {
+      "id": "manager_calls",
+      "stage": "도움 요청",
+      "text": "Okay, I'll talk to their manager. You should have it by tomorrow.",
+      "pron": "오케이, 아일 토크 투 데어 매니저. 유 슈드 해브 잇 바이 투모로우.",
+      "trans": "알겠어요, 제가 그쪽 팀장님한테 얘기할게요. 내일까지는 받을 거예요.",
+      "replies": [
+        { "id": "manager_calls_1", "text": "Thank you. Then could I have until next Tuesday?", "pron": "땡큐. 덴 쿠드 아이 해브 언틸 넥스트 튜즈데이?", "trans": "감사합니다. 그럼 다음 주 화요일까지 해도 될까요?", "next": "extend_ask" },
+        { "id": "manager_calls_2", "text": "Thanks. I'll send you a draft with what I have first.", "pron": "땡스. 아일 센드 유 어 드래프트 위드 왓 아이 해브 퍼스트.", "trans": "감사합니다. 우선 지금 있는 걸로 초안부터 보내 드릴게요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "ask_today",
+      "stage": "도움 요청",
+      "text": "Please do. If you don't hear back by tomorrow, let me know.",
+      "pron": "플리즈 두. 이프 유 돈트 히어 백 바이 투모로우, 렛 미 노우.",
+      "trans": "그렇게 해요. 내일까지 답이 없으면 알려 줘요.",
+      "replies": [
+        { "id": "ask_today_1", "text": "Okay. But I might need a little more time.", "pron": "오케이. 벗 아이 마잇 니드 어 리틀 모어 타임.", "trans": "알겠습니다. 그런데 시간이 조금 더 필요할 수도 있어요.", "next": "extend_ask" },
+        { "id": "ask_today_2", "text": "Got it. I'll still aim for Friday.", "pron": "갓 잇. 아일 스틸 에임 포 프라이데이.", "trans": "알겠습니다. 그래도 금요일을 목표로 할게요.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "extend_ask",
+      "stage": "마감 조율",
+      "text": "Hmm, the client meeting is Monday morning. How about a draft on Friday and the final version first thing Monday?",
+      "pron": "흠, 더 클라이언트 미팅 이즈 먼데이 모닝. 하우 어바웃 어 드래프트 온 프라이데이 앤 더 파이널 버전 퍼스트 띵 먼데이?",
+      "trans": "음, 고객 미팅이 월요일 오전이에요. 금요일에 초안, 월요일 아침 일찍 최종본, 이렇게 어때요?",
+      "replies": [
+        { "id": "extend_ask_1", "text": "That works. Thank you.", "pron": "댓 웍스. 땡큐.", "trans": "그게 좋겠어요. 감사합니다.", "next": "recap" },
+        { "id": "extend_ask_2", "text": "That's a little tight. Could someone help me with the charts?", "pron": "댓츠 어 리틀 타잇. 쿠드 썸원 헬프 미 위드 더 차츠?", "trans": "조금 빠듯해요. 차트 작업을 누가 도와줄 수 있을까요?", "next": "help_offer" }
+      ]
+    },
+    {
+      "id": "help_offer",
+      "stage": "마감 조율",
+      "text": "Sure, I'll ask someone on the team. Then can you make Friday?",
+      "pron": "슈어, 아일 애스크 썸원 온 더 팀. 덴 캔 유 메이크 프라이데이?",
+      "trans": "그래요, 팀에서 누군가한테 부탁할게요. 그럼 금요일까지 가능해요?",
+      "replies": [
+        { "id": "help_offer_1", "text": "Yes, then I can finish by Friday.", "pron": "예스, 덴 아이 캔 피니시 바이 프라이데이.", "trans": "네, 그러면 금요일까지 끝낼 수 있어요.", "next": "end_friday" },
+        { "id": "help_offer_2", "text": "I'll try. I'll send you a draft tomorrow, just in case.", "pron": "아일 트라이. 아일 센드 유 어 드래프트 투모로우, 저스트 인 케이스.", "trans": "해 볼게요. 혹시 모르니 내일 초안을 보내 드릴게요.", "next": "draft_offer" }
+      ]
+    },
+    {
+      "id": "draft_offer",
+      "stage": "마감 조율",
+      "text": "Good idea. Send me the draft tomorrow, and I'll give you feedback. When can you get me the final version?",
+      "pron": "굿 아이디어. 센드 미 더 드래프트 투모로우, 앤 아일 기브 유 피드백. 웬 캔 유 겟 미 더 파이널 버전?",
+      "trans": "좋은 생각이에요. 내일 초안 보내 주면 피드백 줄게요. 최종본은 언제 줄 수 있어요?",
+      "replies": [
+        { "id": "draft_offer_1", "text": "Could I send it Monday morning?", "pron": "쿠드 아이 센드 잇 먼데이 모닝?", "trans": "월요일 아침에 보내 드려도 될까요?", "next": "end_draft" },
+        { "id": "draft_offer_2", "text": "By end of day Friday.", "pron": "바이 엔드 오브 데이 프라이데이.", "trans": "금요일 퇴근 전까지요.", "next": "end_friday" }
+      ]
+    },
+    {
+      "id": "recap",
+      "stage": "다음 단계",
+      "text": "Great. So just to confirm, what's the plan?",
+      "pron": "그레잇. 쏘 저스트 투 컨펌, 왓츠 더 플랜?",
+      "trans": "좋아요. 그럼 확인차 묻는데, 계획이 어떻게 되죠?",
+      "replies": [
+        { "id": "recap_1", "text": "A draft by Friday afternoon, and the final version Monday morning.", "pron": "어 드래프트 바이 프라이데이 애프터눈, 앤 더 파이널 버전 먼데이 모닝.", "trans": "금요일 오후까지 초안, 월요일 아침에 최종본이요.", "next": "end_compromise" },
+        { "id": "recap_2", "text": "I'll send the draft Friday and the final version before the meeting.", "pron": "아일 센드 더 드래프트 프라이데이 앤 더 파이널 버전 비포 더 미팅.", "trans": "금요일에 초안을 보내고, 미팅 전에 최종본을 보내 드릴게요.", "next": "end_compromise" }
+      ]
+    },
+    {
+      "id": "end_friday",
+      "stage": "마무리",
+      "text": "Great. End of day Friday, then. If anything comes up, let me know right away.",
+      "pron": "그레잇. 엔드 오브 데이 프라이데이, 덴. 이프 애니띵 컴즈 업, 렛 미 노우 라잇 어웨이.",
+      "trans": "좋아요. 그럼 금요일 퇴근 전까지예요. 무슨 일 생기면 바로 알려 줘요.",
+      "replies": []
+    },
+    {
+      "id": "end_compromise",
+      "stage": "마무리",
+      "text": "Perfect. Thanks for the heads-up, Minjun. Let me know if you need anything.",
+      "pron": "퍼펙트. 땡스 포 더 헤즈업, 민준. 렛 미 노우 이프 유 니드 애니띵.",
+      "trans": "좋아요. 미리 알려 줘서 고마워요, 민준 씨. 필요한 거 있으면 말해요.",
+      "replies": []
+    },
+    {
+      "id": "end_draft",
+      "stage": "마무리",
+      "text": "Monday morning works, but before ten, please. I'll look at the draft and get back to you.",
+      "pron": "먼데이 모닝 웍스, 벗 비포 텐, 플리즈. 아일 룩 앳 더 드래프트 앤 겟 백 투 유.",
+      "trans": "월요일 아침도 괜찮은데, 열 시 전까지 부탁해요. 초안 보고 다시 연락할게요.",
+      "replies": []
+    }
+  ]
+}

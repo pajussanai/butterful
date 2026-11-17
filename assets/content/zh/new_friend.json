@@ -1,0 +1,180 @@
+{
+  "id": "new_friend",
+  "lang": "zh",
+  "start": "hello",
+  "nodes": [
+    {
+      "id": "hello",
+      "stage": "인사",
+      "text": "嗨！我们好像没见过。你叫什么名字？",
+      "pron": "Hāi! Wǒmen hǎoxiàng méi jiànguo. Nǐ jiào shénme míngzi?\n하이! 워먼 하오샹 메이 젠궈. 니 자오 선머 밍쯔?",
+      "trans": "안녕하세요! 우리 처음 보는 것 같은데요. 이름이 뭐예요?",
+      "replies": [
+        { "id": "hello_1", "text": "你好，我叫民俊。很高兴认识你！", "pron": "Nǐ hǎo, wǒ jiào Mínjùn. Hěn gāoxìng rènshi nǐ!\n니 하오, 워 자오 민쥔. 헌 가오싱 런스 니!", "trans": "안녕하세요, 저는 민준이에요. 만나서 반가워요!", "next": "where_from" },
+        { "id": "hello_2", "text": "我叫民俊。我是第一次来这儿。", "pron": "Wǒ jiào Mínjùn. Wǒ shì dì-yī cì lái zhèr.\n워 자오 민쥔. 워 스 디이 츠 라이 절.", "trans": "민준이에요. 여기 처음 왔어요.", "next": "where_from" }
+      ]
+    },
+    {
+      "id": "where_from",
+      "stage": "인사",
+      "text": "民俊，很高兴认识你！你是哪里人？",
+      "pron": "Mínjùn, hěn gāoxìng rènshi nǐ! Nǐ shì nǎli rén?\n민쥔, 헌 가오싱 런스 니! 니 스 나리 런?",
+      "trans": "민준 씨, 반가워요! 어디 사람이에요?",
+      "replies": [
+        { "id": "where_from_1", "text": "我是韩国人，从首尔来的。", "pron": "Wǒ shì Hánguó rén, cóng Shǒu'ěr lái de.\n워 스 한궈 런, 충 서우얼 라이 더.", "trans": "한국 사람이에요. 서울에서 왔어요.", "next": "job" },
+        { "id": "where_from_2", "text": "我是韩国人，上个月刚搬过来。", "pron": "Wǒ shì Hánguó rén, shàng ge yuè gāng bān guòlai.\n워 스 한궈 런, 상 거 웨 강 반 궈라이.", "trans": "한국 사람이에요. 지난달에 막 이사 왔어요.", "next": "new_in_town" }
+      ]
+    },
+    {
+      "id": "new_in_town",
+      "stage": "자기소개",
+      "text": "哦，欢迎欢迎！在这边住得习惯吗？",
+      "pron": "Ò, huānyíng huānyíng! Zài zhèbiān zhù de xíguàn ma?\n오, 환잉 환잉! 짜이 저볜 주 더 시관 마?",
+      "trans": "오, 환영해요! 여기 생활은 적응됐어요?",
+      "replies": [
+        { "id": "new_in_town_1", "text": "挺习惯的，这儿的菜特别好吃！", "pron": "Tǐng xíguàn de, zhèr de cài tèbié hǎochī!\n팅 시관 더, 절 더 차이 터볘 하오츠!", "trans": "잘 적응했어요. 여기 음식이 정말 맛있어요!", "next": "job" },
+        { "id": "new_in_town_2", "text": "还不错，就是朋友还不多。", "pron": "Hái búcuò, jiùshi péngyou hái bù duō.\n하이 부춰, 지우스 펑여우 하이 부 둬.", "trans": "괜찮은데, 아직 친구가 별로 없어요.", "next": "job" }
+      ]
+    },
+    {
+      "id": "job",
+      "stage": "자기소개",
+      "text": "你是做什么的？我是做平面设计的。",
+      "pron": "Nǐ shì zuò shénme de? Wǒ shì zuò píngmiàn shèjì de.\n니 스 쭤 선머 더? 워 스 쭤 핑몐 서지 더.",
+      "trans": "무슨 일 해요? 저는 그래픽 디자인 일을 해요.",
+      "replies": [
+        { "id": "job_1", "text": "我是学生，学商科的。", "pron": "Wǒ shì xuésheng, xué shāngkē de.\n워 스 쉐성, 쉐 상커 더.", "trans": "학생이에요. 경영학을 공부해요.", "next": "hobbies" },
+        { "id": "job_2", "text": "我在一家IT公司上班。", "pron": "Wǒ zài yì jiā IT gōngsī shàngbān.\n워 짜이 이 자 아이티 궁쓰 상반.", "trans": "IT 회사에서 일해요.", "next": "hobbies" },
+        { "id": "job_3", "text": "我在学中文，所以来这儿练习。", "pron": "Wǒ zài xué Zhōngwén, suǒyǐ lái zhèr liànxí.\n워 짜이 쉐 중원, 쒀이 라이 절 롄시.", "trans": "중국어를 배우고 있어서 연습하러 왔어요.", "next": "hobbies" }
+      ]
+    },
+    {
+      "id": "hobbies",
+      "stage": "취미",
+      "text": "挺好的！那你平时喜欢干什么？",
+      "pron": "Tǐng hǎo de! Nà nǐ píngshí xǐhuan gàn shénme?\n팅 하오 더! 나 니 핑스 시환 깐 선머?",
+      "trans": "좋네요! 그럼 평소에 뭐 하는 거 좋아해요?",
+      "replies": [
+        { "id": "hobbies_1", "text": "我喜欢运动，经常踢足球。", "pron": "Wǒ xǐhuan yùndòng, jīngcháng tī zúqiú.\n워 시환 윈둥, 징창 티 쭈추.", "trans": "운동을 좋아해요. 축구를 자주 해요.", "next": "sports" },
+        { "id": "hobbies_2", "text": "我很喜欢看电影。", "pron": "Wǒ hěn xǐhuan kàn diànyǐng.\n워 헌 시환 칸 뎬잉.", "trans": "영화 보는 걸 정말 좋아해요.", "next": "movies" },
+        { "id": "hobbies_3", "text": "我喜欢做饭，主要做韩国菜。", "pron": "Wǒ xǐhuan zuò fàn, zhǔyào zuò Hánguó cài.\n워 시환 쭤 판, 주야오 쭤 한궈 차이.", "trans": "요리하는 걸 좋아해요. 주로 한국 음식이요.", "next": "cooking" }
+      ]
+    },
+    {
+      "id": "sports",
+      "stage": "취미",
+      "text": "真的？我们几个周末经常一起踢球，下次一起来吧？",
+      "pron": "Zhēn de? Wǒmen jǐ ge zhōumò jīngcháng yìqǐ tī qiú, xià cì yìqǐ lái ba?\n전 더? 워먼 지 거 저우모 징창 이치 티 추, 샤 츠 이치 라이 바?",
+      "trans": "정말요? 우리 몇 명이 주말마다 같이 축구하는데, 다음에 같이 할래요?",
+      "replies": [
+        { "id": "sports_1", "text": "好啊，我很想去！", "pron": "Hǎo a, wǒ hěn xiǎng qù!\n하오 아, 워 헌 샹 취!", "trans": "좋아요, 꼭 가고 싶어요!", "next": "plan_day" },
+        { "id": "sports_2", "text": "可以是可以，不过我踢得不太好。", "pron": "Kěyǐ shì kěyǐ, búguò wǒ tī de bú tài hǎo.\n커이 스 커이, 부궈 워 티 더 부 타이 하오.", "trans": "좋긴 한데, 저 축구 잘 못해요.", "next": "sports_easy" }
+      ]
+    },
+    {
+      "id": "sports_easy",
+      "stage": "취미",
+      "text": "没关系，就是玩玩儿。我们都踢得一般！",
+      "pron": "Méi guānxi, jiùshi wánwanr. Wǒmen dōu tī de yìbān!\n메이 관시, 지우스 완왈. 워먼 더우 티 더 이반!",
+      "trans": "괜찮아요, 그냥 재미로 하는 거예요. 우리도 다 그저 그래요!",
+      "replies": [
+        { "id": "sports_easy_1", "text": "哈哈，那好，算我一个！", "pron": "Hāha, nà hǎo, suàn wǒ yí ge!\n하하, 나 하오, 쏸 워 이 거!", "trans": "하하, 그럼 좋아요. 저도 낄게요!", "next": "plan_day" },
+        { "id": "sports_easy_2", "text": "我再想想吧。", "pron": "Wǒ zài xiǎngxiang ba.\n워 짜이 샹샹 바.", "trans": "좀 더 생각해 볼게요.", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "movies",
+      "stage": "취미",
+      "text": "我也是！你喜欢看什么电影？",
+      "pron": "Wǒ yě shì! Nǐ xǐhuan kàn shénme diànyǐng?\n워 예 스! 니 시환 칸 선머 뎬잉?",
+      "trans": "저도요! 어떤 영화 좋아해요?",
+      "replies": [
+        { "id": "movies_1", "text": "我最喜欢动作片。", "pron": "Wǒ zuì xǐhuan dòngzuòpiàn.\n워 쭈이 시환 둥쭤폔.", "trans": "액션 영화를 제일 좋아해요.", "next": "movie_invite" },
+        { "id": "movies_2", "text": "我喜欢喜剧片，看了心情好。", "pron": "Wǒ xǐhuan xǐjùpiàn, kàn le xīnqíng hǎo.\n워 시환 시쥐폔, 칸 러 신칭 하오.", "trans": "코미디 좋아해요. 보고 나면 기분이 좋아지거든요.", "next": "movie_invite" }
+      ]
+    },
+    {
+      "id": "movie_invite",
+      "stage": "약속",
+      "text": "最近有部新片挺好看的，要不要一起去看？",
+      "pron": "Zuìjìn yǒu bù xīn piàn tǐng hǎokàn de, yào bu yào yìqǐ qù kàn?\n쭈이진 여우 부 신 폔 팅 하오칸 더, 야오 부 야오 이치 취 칸?",
+      "trans": "요즘 새로 나온 영화가 괜찮던데, 같이 보러 갈래요?",
+      "replies": [
+        { "id": "movie_invite_1", "text": "好啊！什么时候？", "pron": "Hǎo a! Shénme shíhou?\n하오 아! 선머 스허우?", "trans": "좋아요! 언제요?", "next": "plan_day" },
+        { "id": "movie_invite_2", "text": "我很想去，不过这周有点儿忙。", "pron": "Wǒ hěn xiǎng qù, búguò zhè zhōu yǒudiǎnr máng.\n워 헌 샹 취, 부궈 저 저우 여우디알 망.", "trans": "가고 싶은데, 이번 주는 좀 바빠요.", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "cooking",
+      "stage": "취미",
+      "text": "真的吗？我超爱吃韩国菜！能教我做泡菜汤吗？",
+      "pron": "Zhēn de ma? Wǒ chāo ài chī Hánguó cài! Néng jiāo wǒ zuò pàocài tāng ma?\n전 더 마? 워 차오 아이 츠 한궈 차이! 넝 자오 워 쭤 파오차이 탕 마?",
+      "trans": "정말요? 저 한국 음식 엄청 좋아해요! 김치찌개 만드는 법 가르쳐 줄 수 있어요?",
+      "replies": [
+        { "id": "cooking_1", "text": "当然！下次一起做吧。", "pron": "Dāngrán! Xià cì yìqǐ zuò ba.\n당란! 샤 츠 이치 쭤 바.", "trans": "물론이죠! 다음에 같이 만들어요.", "next": "plan_day" },
+        { "id": "cooking_2", "text": "没问题，特别简单！", "pron": "Méi wèntí, tèbié jiǎndān!\n메이 원티, 터볘 젠단!", "trans": "그럼요, 진짜 쉬워요!", "next": "plan_day" }
+      ]
+    },
+    {
+      "id": "plan_day",
+      "stage": "약속",
+      "text": "太好了！这周六你有空吗？",
+      "pron": "Tài hǎo le! Zhè zhōuliù nǐ yǒu kòng ma?\n타이 하오 러! 저 저우류 니 여우 쿵 마?",
+      "trans": "잘됐다! 이번 주 토요일에 시간 있어요?",
+      "replies": [
+        { "id": "plan_day_1", "text": "有空，周六可以。", "pron": "Yǒu kòng, zhōuliù kěyǐ.\n여우 쿵, 저우류 커이.", "trans": "시간 있어요. 토요일 괜찮아요.", "next": "plan_time" },
+        { "id": "plan_day_2", "text": "周六不太行，周日怎么样？", "pron": "Zhōuliù bú tài xíng, zhōurì zěnmeyàng?\n저우류 부 타이 싱, 저우르 쩐머양?", "trans": "토요일은 좀 어려워요. 일요일은 어때요?", "next": "plan_time" },
+        { "id": "plan_day_3", "text": "我还不确定，回头再跟你说，行吗？", "pron": "Wǒ hái bú quèdìng, huítóu zài gēn nǐ shuō, xíng ma?\n워 하이 부 췌딩, 후이터우 짜이 껀 니 숴, 싱 마?", "trans": "아직 잘 모르겠어요. 나중에 다시 말해 줘도 될까요?", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "plan_time",
+      "stage": "약속",
+      "text": "行！那下午三点怎么样？",
+      "pron": "Xíng! Nà xiàwǔ sān diǎn zěnmeyàng?\n싱! 나 샤우 싼 뎬 쩐머양?",
+      "trans": "좋아요! 그럼 오후 세 시 어때요?",
+      "replies": [
+        { "id": "plan_time_1", "text": "好，就三点吧！", "pron": "Hǎo, jiù sān diǎn ba!\n하오, 지우 싼 뎬 바!", "trans": "좋아요, 세 시로 해요!", "next": "contact" },
+        { "id": "plan_time_2", "text": "能晚一点吗？五点左右？", "pron": "Néng wǎn yìdiǎn ma? Wǔ diǎn zuǒyòu?\n넝 완 이뎬 마? 우 뎬 쭤여우?", "trans": "조금 늦게 해도 돼요? 다섯 시쯤?", "next": "contact" }
+      ]
+    },
+    {
+      "id": "contact",
+      "stage": "연락처",
+      "text": "好嘞！那我们加个微信吧。",
+      "pron": "Hǎo lei! Nà wǒmen jiā ge Wēixìn ba.\n하오 레이! 나 워먼 자 거 웨이신 바.",
+      "trans": "좋아요! 그럼 우리 위챗 친구 추가해요.",
+      "replies": [
+        { "id": "contact_1", "text": "好，我扫你吧。", "pron": "Hǎo, wǒ sǎo nǐ ba.\n하오, 워 싸오 니 바.", "trans": "네, 제가 QR코드 스캔할게요.", "next": "end_plan" },
+        { "id": "contact_2", "text": "好啊，你扫我吧。", "pron": "Hǎo a, nǐ sǎo wǒ ba.\n하오 아, 니 싸오 워 바.", "trans": "좋아요, 제 QR코드 스캔하세요.", "next": "end_plan" }
+      ]
+    },
+    {
+      "id": "swap_numbers",
+      "stage": "연락처",
+      "text": "没事儿！那先加个微信吧，随时联系。",
+      "pron": "Méi shìr! Nà xiān jiā ge Wēixìn ba, suíshí liánxì.\n메이 셜! 나 셴 자 거 웨이신 바, 쑤이스 롄시.",
+      "trans": "괜찮아요! 그럼 일단 위챗 추가해요. 언제든 연락해요.",
+      "replies": [
+        { "id": "swap_numbers_1", "text": "好，你的二维码给我扫一下。", "pron": "Hǎo, nǐ de èrwéimǎ gěi wǒ sǎo yíxià.\n하오, 니 더 얼웨이마 게이 워 싸오 이샤.", "trans": "네, QR코드 좀 스캔할게요.", "next": "end_numbers" },
+        { "id": "swap_numbers_2", "text": "好主意，回头我给你发消息。", "pron": "Hǎo zhǔyi, huítóu wǒ gěi nǐ fā xiāoxi.\n하오 주이, 후이터우 워 게이 니 파 샤오시.", "trans": "좋아요. 나중에 메시지 보낼게요.", "next": "end_numbers" }
+      ]
+    },
+    {
+      "id": "end_plan",
+      "stage": "마무리",
+      "text": "那就周末见啦！今天认识你真开心。",
+      "pron": "Nà jiù zhōumò jiàn la! Jīntiān rènshi nǐ zhēn kāixīn.\n나 지우 저우모 젠 라! 진톈 런스 니 전 카이신.",
+      "trans": "그럼 주말에 봐요! 오늘 알게 돼서 정말 기뻐요.",
+      "replies": []
+    },
+    {
+      "id": "end_numbers",
+      "stage": "마무리",
+      "text": "民俊，今天聊得很开心。保持联系哦！",
+      "pron": "Mínjùn, jīntiān liáo de hěn kāixīn. Bǎochí liánxì o!\n민쥔, 진톈 랴오 더 헌 카이신. 바오츠 롄시 오!",
+      "trans": "민준 씨, 오늘 얘기해서 즐거웠어요. 계속 연락해요!",
+      "replies": []
+    }
+  ]
+}

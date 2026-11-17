@@ -1,0 +1,198 @@
+{
+  "id": "change_plans",
+  "lang": "ja",
+  "start": "call",
+  "nodes": [
+    {
+      "id": "call",
+      "stage": "전화 인사",
+      "text": "もしもし！天気予報見た？土曜、雨だって。",
+      "pron": "모시모시! 텡키요호- 미타? 도요-, 아메닷테.",
+      "trans": "여보세요! 일기예보 봤어? 토요일에 비 온대.",
+      "replies": [
+        { "id": "call_1", "text": "マジで？一日中？", "pron": "마지데? 이치니치쥬-?", "trans": "진짜? 하루 종일?", "next": "rain_all_day" },
+        { "id": "call_2", "text": "うん、見た。残念だね。", "pron": "응, 미타. 잔넨다네.", "trans": "응, 봤어. 아쉽다.", "next": "plan_rain" }
+      ]
+    },
+    {
+      "id": "rain_all_day",
+      "stage": "날씨 이야기",
+      "text": "うん、一日中。だから公園でピクニックは無理だね。",
+      "pron": "응, 이치니치쥬-. 다카라 코-엔데 피쿠닉쿠와 무리다네.",
+      "trans": "응, 하루 종일. 그래서 공원 피크닉은 못 하겠다.",
+      "replies": [
+        { "id": "rain_all_day_1", "text": "じゃあ、室内で何かしようよ。", "pron": "쟈-, 시츠나이데 나니카 시요-요.", "trans": "그럼 실내에서 뭐 하자.", "next": "plan_rain" },
+        { "id": "rain_all_day_2", "text": "日曜はどう？", "pron": "니치요-와 도-?", "trans": "일요일은 어때?", "next": "sunday_weather" }
+      ]
+    },
+    {
+      "id": "sunday_weather",
+      "stage": "날씨 이야기",
+      "text": "日曜は晴れるけど、バイトなんだ。",
+      "pron": "니치요-와 하레루케도, 바이토난다.",
+      "trans": "일요일은 맑은데, 나 알바 있어.",
+      "replies": [
+        { "id": "sunday_weather_1", "text": "そっか。じゃあ土曜に室内で会う？", "pron": "솟카. 쟈- 도요-니 시츠나이데 아우?", "trans": "그렇구나. 그럼 토요일에 실내에서 볼까?", "next": "plan_rain" },
+        { "id": "sunday_weather_2", "text": "じゃあ、来週にしよう。", "pron": "쟈-, 라이슈-니 시요-.", "trans": "그럼 다음 주로 하자.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "plan_rain",
+      "stage": "계획 바꾸기",
+      "text": "で、何する？映画？それともカフェ？",
+      "pron": "데, 나니스루? 에-가? 소레토모 카훼?",
+      "trans": "그래서 뭐 할래? 영화? 아니면 카페?",
+      "replies": [
+        { "id": "plan_rain_1", "text": "映画いいね。", "pron": "에-가 이-네.", "trans": "영화 좋다.", "next": "movie" },
+        { "id": "plan_rain_2", "text": "カフェでのんびりしよう。", "pron": "카훼데 논비리 시요-.", "trans": "카페에서 느긋하게 놀자.", "next": "cafe" },
+        { "id": "plan_rain_3", "text": "うーん、別の日にする？", "pron": "우-응, 베츠노 히니 스루?", "trans": "음, 다른 날로 할까?", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "movie",
+      "stage": "계획 바꾸기",
+      "text": "いいね！先にコーヒー飲もう。映画館の近くにいいカフェがあるんだ。",
+      "pron": "이-네! 사키니 코-히- 노모-. 에-가칸노 치카쿠니 이- 카훼가 아룬다.",
+      "trans": "좋아! 먼저 커피 마시자. 영화관 근처에 괜찮은 카페가 있거든.",
+      "replies": [
+        { "id": "movie_1", "text": "いいよ。", "pron": "이-요.", "trans": "좋아.", "next": "meet_time" },
+        { "id": "movie_2", "text": "うん、コーヒー飲みたい。", "pron": "응, 코-히- 노미타이.", "trans": "응, 커피 마시고 싶어.", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "cafe",
+      "stage": "계획 바꾸기",
+      "text": "いいね。駅の近くにかわいいカフェがあるから、そこ行こう。",
+      "pron": "이-네. 에키노 치카쿠니 카와이- 카훼가 아루카라, 소코 이코-.",
+      "trans": "좋아. 역 근처에 예쁜 카페가 있으니까 거기 가자.",
+      "replies": [
+        { "id": "cafe_1", "text": "いいよ。", "pron": "이-요.", "trans": "좋아.", "next": "meet_time" },
+        { "id": "cafe_2", "text": "いいね、カフェ好き。", "pron": "이-네, 카훼 스키.", "trans": "좋다, 나 카페 좋아해.", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "meet_time",
+      "stage": "시간 정하기",
+      "text": "何時にする？一時はどう？",
+      "pron": "난지니 스루? 이치지와 도-?",
+      "trans": "몇 시로 할까? 한 시 어때?",
+      "replies": [
+        { "id": "meet_time_1", "text": "一時で大丈夫。", "pron": "이치지데 다이죠-부.", "trans": "한 시 괜찮아.", "next": "directions" },
+        { "id": "meet_time_2", "text": "もうちょっと遅くてもいい？三時とか。", "pron": "모- 춋토 오소쿠테모 이-? 산지토카.", "trans": "조금 더 늦어도 돼? 세 시쯤?", "next": "later_time" },
+        { "id": "meet_time_3", "text": "ごめん、やっぱり土曜は無理かも。", "pron": "고멘, 얍파리 도요-와 무리카모.", "trans": "미안, 아무래도 토요일은 안 될 것 같아.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "later_time",
+      "stage": "시간 정하기",
+      "text": "三時？いいよ。行き方わかる？",
+      "pron": "산지? 이-요. 이키카타 와카루?",
+      "trans": "세 시? 좋아. 가는 길 알아?",
+      "replies": [
+        { "id": "later_time_1", "text": "ううん、どうやって行くの？", "pron": "우웅, 도-얏테 이쿠노?", "trans": "아니, 어떻게 가?", "next": "directions" },
+        { "id": "later_time_2", "text": "あんまりわからない。教えて。", "pron": "안마리 와카라나이. 오시에테.", "trans": "잘 모르겠어. 알려 줘.", "next": "directions" }
+      ]
+    },
+    {
+      "id": "directions",
+      "stage": "길 안내",
+      "text": "渋谷駅で降りて、三番出口から出て。それから左に曲がって。",
+      "pron": "시부야에키데 오리테, 삼반데구치카라 데테. 소레카라 히다리니 마갓테.",
+      "trans": "시부야역에서 내려서 삼 번 출구로 나와. 그다음에 왼쪽으로 돌아.",
+      "replies": [
+        { "id": "directions_1", "text": "三番出口を出て、左？", "pron": "삼반데구치오 데테, 히다리?", "trans": "삼 번 출구로 나와서 왼쪽?", "next": "directions2" },
+        { "id": "directions_2", "text": "ごめん、何番出口？", "pron": "고멘, 남반데구치?", "trans": "미안, 몇 번 출구라고?", "next": "repeat_exit" }
+      ]
+    },
+    {
+      "id": "repeat_exit",
+      "stage": "길 안내",
+      "text": "三番出口。出たら左に曲がって。",
+      "pron": "삼반데구치. 데타라 히다리니 마갓테.",
+      "trans": "삼 번 출구. 나와서 왼쪽으로 돌아.",
+      "replies": [
+        { "id": "repeat_exit_1", "text": "わかった。三番出口を出て、左ね。", "pron": "와캇타. 삼반데구치오 데테, 히다리네.", "trans": "알았어. 삼 번 출구로 나와서 왼쪽이지.", "next": "directions2" },
+        { "id": "repeat_exit_2", "text": "オッケー、メモしとく。", "pron": "옥케-, 메모 시토쿠.", "trans": "오케이, 메모해 둘게.", "next": "directions2" }
+      ]
+    },
+    {
+      "id": "directions2",
+      "stage": "길 안내",
+      "text": "そう。それから二分くらいまっすぐ来て。カフェは本屋のすぐ隣だよ。",
+      "pron": "소-. 소레카라 니훈쿠라이 맛스구 키테. 카훼와 홍야노 스구 토나리다요.",
+      "trans": "맞아. 그리고 이 분쯤 쭉 와. 카페는 서점 바로 옆이야.",
+      "replies": [
+        { "id": "directions2_1", "text": "本屋の隣ね。わかった！", "pron": "홍야노 토나리네. 와캇타!", "trans": "서점 옆이지. 알았어!", "next": "confirm" },
+        { "id": "directions2_2", "text": "どんなカフェ？", "pron": "돈나 카훼?", "trans": "어떤 카페야?", "next": "cafe_name" }
+      ]
+    },
+    {
+      "id": "cafe_name",
+      "stage": "길 안내",
+      "text": "小さくて、青いドアのお店。すぐわかるよ。",
+      "pron": "치-사쿠테, 아오이 도아노 오미세. 스구 와카루요.",
+      "trans": "작고, 문이 파란 가게야. 바로 알아볼 거야.",
+      "replies": [
+        { "id": "cafe_name_1", "text": "青いドアね。わかった。", "pron": "아오이 도아네. 와캇타.", "trans": "파란 문이지. 알았어.", "next": "confirm" },
+        { "id": "cafe_name_2", "text": "オッケー、探してみる。", "pron": "옥케-, 사가시테 미루.", "trans": "오케이, 찾아볼게.", "next": "confirm" }
+      ]
+    },
+    {
+      "id": "confirm",
+      "stage": "약속 확인",
+      "text": "よし。じゃあ土曜日ね！迷ったら電話して。",
+      "pron": "요시. 쟈- 도요-비네! 마욧타라 뎅와 시테.",
+      "trans": "좋아. 그럼 토요일에 봐! 길 헤매면 전화해.",
+      "replies": [
+        { "id": "confirm_1", "text": "うん、土曜日ね！", "pron": "응, 도요-비네!", "trans": "응, 토요일에 봐!", "next": "end_saturday" },
+        { "id": "confirm_2", "text": "ちょっと遅れるかも。大丈夫？", "pron": "춋토 오쿠레루카모. 다이죠-부?", "trans": "나 조금 늦을지도 몰라. 괜찮아?", "next": "late_ok" }
+      ]
+    },
+    {
+      "id": "late_ok",
+      "stage": "약속 확인",
+      "text": "大丈夫。連絡だけちょうだい。",
+      "pron": "다이죠-부. 렌라쿠다케 쵸-다이.",
+      "trans": "괜찮아. 연락만 줘.",
+      "replies": [
+        { "id": "late_ok_1", "text": "ありがとう。じゃあ、またね！", "pron": "아리가토-. 쟈-, 마타네!", "trans": "고마워. 그럼 그때 봐!", "next": "end_saturday" },
+        { "id": "late_ok_2", "text": "わかった、連絡する。", "pron": "와캇타, 렌라쿠 스루.", "trans": "알았어, 연락할게.", "next": "end_saturday" }
+      ]
+    },
+    {
+      "id": "next_week",
+      "stage": "약속 미루기",
+      "text": "いいよ。じゃあ来週の土曜はどう？",
+      "pron": "이-요. 쟈- 라이슈-노 도요-와 도-?",
+      "trans": "괜찮아. 그럼 다음 주 토요일은 어때?",
+      "replies": [
+        { "id": "next_week_1", "text": "来週の土曜、大丈夫。", "pron": "라이슈-노 도요-, 다이죠-부.", "trans": "다음 주 토요일 괜찮아.", "next": "end_next_week" },
+        { "id": "next_week_2", "text": "確認して連絡するね。", "pron": "카쿠닌시테 렌라쿠 스루네.", "trans": "확인해 보고 연락할게.", "next": "end_text" }
+      ]
+    },
+    {
+      "id": "end_saturday",
+      "stage": "마무리",
+      "text": "よかった！傘忘れないでね。じゃあね！",
+      "pron": "요캇타! 카사 와스레나이데네. 쟈-네!",
+      "trans": "잘됐다! 우산 잊지 마. 안녕!",
+      "replies": []
+    },
+    {
+      "id": "end_next_week",
+      "stage": "마무리",
+      "text": "じゃあ来週の土曜ね。晴れるといいね！",
+      "pron": "쟈- 라이슈-노 도요-네. 하레루토 이-네!",
+      "trans": "그럼 다음 주 토요일에 봐. 날씨 맑으면 좋겠다!",
+      "replies": []
+    },
+    {
+      "id": "end_text",
+      "stage": "마무리",
+      "text": "わかった、あとで連絡してね。またね！",
+      "pron": "와캇타, 아토데 렌라쿠 시테네. 마타네!",
+      "trans": "알았어, 이따 연락해. 안녕!",
+      "replies": []
+    }
+  ]
+}

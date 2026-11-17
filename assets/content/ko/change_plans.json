@@ -1,0 +1,198 @@
+{
+  "id": "change_plans",
+  "lang": "ko",
+  "start": "call",
+  "nodes": [
+    {
+      "id": "call",
+      "stage": "전화 인사",
+      "text": "여보세요? 날씨 봤어? 토요일에 비 온대.",
+      "pron": "yeoboseyo? nalssi bwasseo? toyoire bi ondae.",
+      "trans": "Hello? Did you see the weather? They say it's going to rain on Saturday.",
+      "replies": [
+        { "id": "call_1", "text": "진짜? 하루 종일?", "pron": "jinjja? haru jong-il?", "trans": "Really? All day?", "next": "rain_all_day" },
+        { "id": "call_2", "text": "응, 봤어. 아쉽다.", "pron": "eung, bwasseo. aswipda.", "trans": "Yeah, I saw. That's too bad.", "next": "plan_rain" }
+      ]
+    },
+    {
+      "id": "rain_all_day",
+      "stage": "날씨 이야기",
+      "text": "응, 하루 종일. 그래서 공원 피크닉은 못 하겠다.",
+      "pron": "eung, haru jong-il. geuraeseo gong-won pikeunigeun mot hagetda.",
+      "trans": "Yeah, all day. So the picnic in the park is off.",
+      "replies": [
+        { "id": "rain_all_day_1", "text": "그럼 실내에서 놀자.", "pron": "geureom sillaeeseo nolja.", "trans": "Then let's hang out somewhere indoors.", "next": "plan_rain" },
+        { "id": "rain_all_day_2", "text": "일요일은 어때?", "pron": "iryoireun eottae?", "trans": "What about Sunday?", "next": "sunday_weather" }
+      ]
+    },
+    {
+      "id": "sunday_weather",
+      "stage": "날씨 이야기",
+      "text": "일요일은 맑은데, 나 알바 있어.",
+      "pron": "iryoireun malgeunde, na alba isseo.",
+      "trans": "Sunday's going to be sunny, but I have my part-time job that day.",
+      "replies": [
+        { "id": "sunday_weather_1", "text": "아, 그렇구나. 그럼 토요일에 실내에서 볼까?", "pron": "a, geureokuna. geureom toyoire sillaeeseo bolkka?", "trans": "Oh, I see. Then should we meet indoors on Saturday?", "next": "plan_rain" },
+        { "id": "sunday_weather_2", "text": "그럼 다음 주로 미루자.", "pron": "geureom daeum juro miruja.", "trans": "Then let's push it to next week.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "plan_rain",
+      "stage": "계획 바꾸기",
+      "text": "그럼 뭐 할래? 영화 볼래, 아니면 카페 갈래?",
+      "pron": "geureom mwo hallae? yeonghwa bollae, animyeon kape gallae?",
+      "trans": "So what do you want to do? Watch a movie, or go to a café?",
+      "replies": [
+        { "id": "plan_rain_1", "text": "영화 보자.", "pron": "yeonghwa boja.", "trans": "Let's watch a movie.", "next": "movie" },
+        { "id": "plan_rain_2", "text": "카페에서 수다 떨자.", "pron": "kapeeseo suda tteolja.", "trans": "Let's just chat at a café.", "next": "cafe" },
+        { "id": "plan_rain_3", "text": "음, 다른 날 할까?", "pron": "eum, dareun nal halkka?", "trans": "Hmm, should we do it another day?", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "movie",
+      "stage": "계획 바꾸기",
+      "text": "좋아! 영화 보기 전에 커피 마시자. 영화관 근처에 괜찮은 카페 있어.",
+      "pron": "joa! yeonghwa bogi jeone keopi masija. yeonghwagwan geuncheoe gwaenchaneun kape isseo.",
+      "trans": "Great! Let's get coffee before the movie. There's a nice café near the theater.",
+      "replies": [
+        { "id": "movie_1", "text": "좋아.", "pron": "joa.", "trans": "Sounds good.", "next": "meet_time" },
+        { "id": "movie_2", "text": "그래, 커피 마시고 싶었어.", "pron": "geurae, keopi masigo sipeosseo.", "trans": "Sure, I've been wanting a coffee.", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "cafe",
+      "stage": "계획 바꾸기",
+      "text": "좋아. 역 근처에 예쁜 카페 있어. 거기 가자.",
+      "pron": "joa. yeok geuncheoe yeppeun kape isseo. geogi gaja.",
+      "trans": "Okay. There's a pretty café near the station. Let's go there.",
+      "replies": [
+        { "id": "cafe_1", "text": "좋아.", "pron": "joa.", "trans": "Sounds good.", "next": "meet_time" },
+        { "id": "cafe_2", "text": "좋다, 나 카페 좋아해.", "pron": "jota, na kape joahae.", "trans": "Nice, I love cafés.", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "meet_time",
+      "stage": "시간 정하기",
+      "text": "몇 시에 만날까? 한 시 어때?",
+      "pron": "myeot sie mannalkka? han si eottae?",
+      "trans": "What time should we meet? How about one?",
+      "replies": [
+        { "id": "meet_time_1", "text": "한 시 괜찮아.", "pron": "han si gwaenchana.", "trans": "One is fine.", "next": "directions" },
+        { "id": "meet_time_2", "text": "조금 늦게 만나도 돼? 세 시쯤?", "pron": "jogeum neutge mannado dwae? se sijjeum?", "trans": "Can we meet a bit later? Around three?", "next": "later_time" },
+        { "id": "meet_time_3", "text": "미안, 토요일은 안 될 것 같아.", "pron": "mian, toyoireun an doel geot gata.", "trans": "Sorry, I don't think Saturday works for me.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "later_time",
+      "stage": "시간 정하기",
+      "text": "세 시? 응, 괜찮아. 가는 길 알아?",
+      "pron": "se si? eung, gwaenchana. ganeun gil ara?",
+      "trans": "Three? Sure, that's fine. Do you know how to get there?",
+      "replies": [
+        { "id": "later_time_1", "text": "아니, 어떻게 가?", "pron": "ani, eotteoke ga?", "trans": "No, how do I get there?", "next": "directions" },
+        { "id": "later_time_2", "text": "잘 모르겠어. 알려 줘.", "pron": "jal moreugesseo. allyeo jwo.", "trans": "Not really. Tell me.", "next": "directions" }
+      ]
+    },
+    {
+      "id": "directions",
+      "stage": "길 안내",
+      "text": "시청역에서 내려서 삼 번 출구로 나와. 그리고 왼쪽으로 돌아.",
+      "pron": "sicheong-yeogeseo naeryeoseo sam beon chulguro nawa. geurigo oenjjogeuro dora.",
+      "trans": "Get off at City Hall Station and come out of exit three. Then turn left.",
+      "replies": [
+        { "id": "directions_1", "text": "삼 번 출구로 나와서 왼쪽?", "pron": "sam beon chulguro nawaseo oenjjok?", "trans": "Out of exit three, then left?", "next": "directions2" },
+        { "id": "directions_2", "text": "미안, 몇 번 출구라고?", "pron": "mian, myeot beon chulgurago?", "trans": "Sorry, which exit did you say?", "next": "repeat_exit" }
+      ]
+    },
+    {
+      "id": "repeat_exit",
+      "stage": "길 안내",
+      "text": "삼 번 출구. 나와서 왼쪽으로 돌아.",
+      "pron": "sam beon chulgu. nawaseo oenjjogeuro dora.",
+      "trans": "Exit three. When you come out, turn left.",
+      "replies": [
+        { "id": "repeat_exit_1", "text": "알았어. 삼 번 출구, 왼쪽.", "pron": "arasseo. sam beon chulgu, oenjjok.", "trans": "Got it. Exit three, left.", "next": "directions2" },
+        { "id": "repeat_exit_2", "text": "알았어, 적어 둘게.", "pron": "arasseo, jeogeo dulge.", "trans": "Okay, I'll write it down.", "next": "directions2" }
+      ]
+    },
+    {
+      "id": "directions2",
+      "stage": "길 안내",
+      "text": "응. 그리고 이 분쯤 쭉 와. 카페는 서점 바로 옆이야.",
+      "pron": "eung. geurigo i bunjjeum jjuk wa. kapeneun seojeom baro yeopiya.",
+      "trans": "Yep. Then walk straight for about two minutes. The café is right next to the bookstore.",
+      "replies": [
+        { "id": "directions2_1", "text": "서점 옆. 알았어!", "pron": "seojeom yeop. arasseo!", "trans": "Next to the bookstore. Got it!", "next": "confirm" },
+        { "id": "directions2_2", "text": "카페가 어떻게 생겼어?", "pron": "kapega eotteoke saenggyeosseo?", "trans": "What does the café look like?", "next": "cafe_name" }
+      ]
+    },
+    {
+      "id": "cafe_name",
+      "stage": "길 안내",
+      "text": "작고 문이 파란색이야. 바로 보일 거야.",
+      "pron": "jakgo muni paransaegiya. baro boil geoya.",
+      "trans": "It's small and the door is blue. You'll spot it right away.",
+      "replies": [
+        { "id": "cafe_name_1", "text": "파란 문. 알았어.", "pron": "paran mun. arasseo.", "trans": "A blue door. Got it.", "next": "confirm" },
+        { "id": "cafe_name_2", "text": "알았어, 찾아볼게.", "pron": "arasseo, chajabolge.", "trans": "Okay, I'll look for it.", "next": "confirm" }
+      ]
+    },
+    {
+      "id": "confirm",
+      "stage": "약속 확인",
+      "text": "좋아. 그럼 토요일에 봐! 길 잃으면 전화해.",
+      "pron": "joa. geureom toyoire bwa! gil ireumyeon jeonhwahae.",
+      "trans": "Great. See you Saturday, then! Call me if you get lost.",
+      "replies": [
+        { "id": "confirm_1", "text": "응, 토요일에 봐!", "pron": "eung, toyoire bwa!", "trans": "Yeah, see you Saturday!", "next": "end_saturday" },
+        { "id": "confirm_2", "text": "나 조금 늦을 수도 있어. 괜찮아?", "pron": "na jogeum neujeul sudo isseo. gwaenchana?", "trans": "I might be a little late. Is that okay?", "next": "late_ok" }
+      ]
+    },
+    {
+      "id": "late_ok",
+      "stage": "약속 확인",
+      "text": "괜찮아. 문자만 줘.",
+      "pron": "gwaenchana. munjaman jwo.",
+      "trans": "No problem. Just text me.",
+      "replies": [
+        { "id": "late_ok_1", "text": "고마워. 그때 봐!", "pron": "gomawo. geuttae bwa!", "trans": "Thanks. See you then!", "next": "end_saturday" },
+        { "id": "late_ok_2", "text": "알았어, 문자할게.", "pron": "arasseo, munjahalge.", "trans": "Okay, I'll text you.", "next": "end_saturday" }
+      ]
+    },
+    {
+      "id": "next_week",
+      "stage": "약속 미루기",
+      "text": "그래. 그럼 다음 주 토요일 어때?",
+      "pron": "geurae. geureom daeum ju toyoil eottae?",
+      "trans": "Sure. Then how about next Saturday?",
+      "replies": [
+        { "id": "next_week_1", "text": "다음 주 토요일 좋아.", "pron": "daeum ju toyoil joa.", "trans": "Next Saturday works.", "next": "end_next_week" },
+        { "id": "next_week_2", "text": "확인해 보고 문자할게.", "pron": "hwaginhae bogo munjahalge.", "trans": "Let me check and text you.", "next": "end_text" }
+      ]
+    },
+    {
+      "id": "end_saturday",
+      "stage": "마무리",
+      "text": "좋아! 우산 꼭 챙겨. 안녕!",
+      "pron": "joa! usan kkok chaenggyeo. annyeong!",
+      "trans": "Great! Don't forget your umbrella. Bye!",
+      "replies": []
+    },
+    {
+      "id": "end_next_week",
+      "stage": "마무리",
+      "text": "좋아, 그럼 다음 주 토요일에 봐. 날씨 좋았으면 좋겠다!",
+      "pron": "joa, geureom daeum ju toyoire bwa. nalssi joasseumyeon joketda!",
+      "trans": "Great, next Saturday then. Hope the weather's nice!",
+      "replies": []
+    },
+    {
+      "id": "end_text",
+      "stage": "마무리",
+      "text": "알았어, 이따 문자해. 안녕!",
+      "pron": "arasseo, itta munjahae. annyeong!",
+      "trans": "Okay, text me later. Bye!",
+      "replies": []
+    }
+  ]
+}

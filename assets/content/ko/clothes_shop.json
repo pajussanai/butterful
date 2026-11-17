@@ -1,0 +1,190 @@
+{
+  "id": "clothes_shop",
+  "lang": "ko",
+  "start": "welcome",
+  "nodes": [
+    {
+      "id": "welcome",
+      "stage": "입장",
+      "text": "어서 오세요! 찾으시는 거 있으세요?",
+      "pron": "eoseo oseyo! chajeusineun geo isseuseyo?",
+      "trans": "Welcome! Are you looking for anything?",
+      "replies": [
+        { "id": "welcome_1", "text": "니트 찾고 있어요.", "pron": "niteu chatgo isseoyo.", "trans": "I'm looking for a sweater.", "next": "sweater" },
+        { "id": "welcome_2", "text": "코트 있어요?", "pron": "koteu isseoyo?", "trans": "Do you have coats?", "next": "coat" },
+        { "id": "welcome_3", "text": "그냥 구경 좀 할게요.", "pron": "geunyang gugyeong jom halgeyo.", "trans": "I'm just looking around.", "next": "browse" }
+      ]
+    },
+    {
+      "id": "browse",
+      "stage": "둘러보기",
+      "text": "네, 편하게 보세요. 필요하신 거 있으면 불러 주세요.",
+      "pron": "ne, pyeonhage boseyo. piryohasin geo isseumyeon bulleo juseyo.",
+      "trans": "Sure, take your time. Call me if you need anything.",
+      "replies": [
+        { "id": "browse_1", "text": "지금 세일하는 거 있어요?", "pron": "jigeum seilhaneun geo isseoyo?", "trans": "Is anything on sale right now?", "next": "sale" },
+        { "id": "browse_2", "text": "아, 니트는 어디 있어요?", "pron": "a, niteuneun eodi isseoyo?", "trans": "Oh, where are the sweaters?", "next": "sweater" }
+      ]
+    },
+    {
+      "id": "sale",
+      "stage": "할인 확인",
+      "text": "네, 이쪽 옷은 전부 삼십 퍼센트 할인이에요.",
+      "pron": "ne, ijjok oseun jeonbu samsip peosenteu harinieyo.",
+      "trans": "Yes, everything over here is thirty percent off.",
+      "replies": [
+        { "id": "sale_1", "text": "좋네요. 코트도 있어요?", "pron": "jonneyo. koteudo isseoyo?", "trans": "Nice. Do you have coats too?", "next": "coat" },
+        { "id": "sale_2", "text": "네, 나중에 다시 올게요.", "pron": "ne, najunge dasi olgeyo.", "trans": "Okay, I'll come back later.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "sweater",
+      "stage": "상품 찾기",
+      "text": "니트는 이쪽이에요. 어떤 색 찾으세요?",
+      "pron": "niteuneun ijjogieyo. eotteon saek chajeuseyo?",
+      "trans": "The sweaters are over here. What color are you looking for?",
+      "replies": [
+        { "id": "sweater_1", "text": "검은색 있어요?", "pron": "geomeunsaek isseoyo?", "trans": "Do you have it in black?", "next": "color" },
+        { "id": "sweater_2", "text": "네이비 색이 좋아요.", "pron": "neibi saegi joayo.", "trans": "I'd like navy.", "next": "color" }
+      ]
+    },
+    {
+      "id": "coat",
+      "stage": "상품 찾기",
+      "text": "코트는 이쪽이에요. 평소에 어떤 사이즈 입으세요?",
+      "pron": "koteuneun ijjogieyo. pyeongsoe eotteon saijeu ibeuseyo?",
+      "trans": "The coats are this way. What size do you usually wear?",
+      "replies": [
+        { "id": "coat_1", "text": "보통 엠 사이즈 입어요.", "pron": "botong em saijeu ibeoyo.", "trans": "I usually wear a medium.", "next": "fitting" },
+        { "id": "coat_2", "text": "잘 모르겠어요. 엘일까요?", "pron": "jal moreugesseoyo. erilkkayo?", "trans": "I'm not sure. Maybe a large?", "next": "fitting" }
+      ]
+    },
+    {
+      "id": "color",
+      "stage": "색상·사이즈",
+      "text": "이건 검은색이랑 네이비가 있어요. 사이즈는 어떻게 드릴까요?",
+      "pron": "igeon geomeunsaegirang neibiga isseoyo. saijeuneun eotteoke deurilkkayo?",
+      "trans": "This one comes in black and navy. What size would you like?",
+      "replies": [
+        { "id": "color_1", "text": "엠으로 주세요.", "pron": "emeuro juseyo.", "trans": "A medium, please.", "next": "fitting" },
+        { "id": "color_2", "text": "검은색 엘 사이즈 있어요?", "pron": "geomeunsaek el saijeu isseoyo?", "trans": "Do you have a large in black?", "next": "size_out" }
+      ]
+    },
+    {
+      "id": "size_out",
+      "stage": "색상·사이즈",
+      "text": "죄송해요, 검은색 엘은 품절이에요. 네이비는 아직 있어요.",
+      "pron": "joesonghaeyo, geomeunsaek ereun pumjeorieyo. neibineun ajik isseoyo.",
+      "trans": "Sorry, the black one in large is sold out. We still have navy.",
+      "replies": [
+        { "id": "size_out_1", "text": "그럼 네이비로 할게요.", "pron": "geureom neibiro halgeyo.", "trans": "Then I'll go with navy.", "next": "fitting" },
+        { "id": "size_out_2", "text": "음, 좀 생각해 볼게요.", "pron": "eum, jom saenggakae bolgeyo.", "trans": "Hmm, I'll think about it.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "fitting",
+      "stage": "입어 보기",
+      "text": "여기 있습니다. 한번 입어 보시겠어요? 피팅룸은 저쪽이에요.",
+      "pron": "yeogi itseumnida. hanbeon ibeo bosigesseoyo? pitingrumeun jeojjogieyo.",
+      "trans": "Here you go. Would you like to try it on? The fitting room is over there.",
+      "replies": [
+        { "id": "fitting_1", "text": "네, 입어 볼게요.", "pron": "ne, ibeo bolgeyo.", "trans": "Yes, I'll try it on.", "next": "fit_check" },
+        { "id": "fitting_2", "text": "아니요, 괜찮아요. 얼마예요?", "pron": "aniyo, gwaenchanayo. eolmayeyo?", "trans": "No, that's okay. How much is it?", "next": "price" }
+      ]
+    },
+    {
+      "id": "fit_check",
+      "stage": "입어 보기",
+      "text": "어떠세요? 사이즈 잘 맞으세요?",
+      "pron": "eotteoseyo? saijeu jal majeuseyo?",
+      "trans": "How is it? Does it fit well?",
+      "replies": [
+        { "id": "fit_check_1", "text": "딱 맞아요.", "pron": "ttak majayo.", "trans": "It fits perfectly.", "next": "price" },
+        { "id": "fit_check_2", "text": "좀 끼네요. 한 치수 큰 거 있어요?", "pron": "jom kkineyo. han chisu keun geo isseoyo?", "trans": "It's a bit tight. Do you have one size up?", "next": "bigger" }
+      ]
+    },
+    {
+      "id": "bigger",
+      "stage": "입어 보기",
+      "text": "네, 한 치수 큰 거예요. 이걸로 입어 보세요.",
+      "pron": "ne, han chisu keun geoyeyo. igeollo ibeo boseyo.",
+      "trans": "Sure, this is one size up. Try this one.",
+      "replies": [
+        { "id": "bigger_1", "text": "이게 훨씬 낫네요.", "pron": "ige hwolssin nanneyo.", "trans": "This one is much better.", "next": "price" },
+        { "id": "bigger_2", "text": "그래도 잘 안 맞네요. 다음에 올게요.", "pron": "geuraedo jal an manneyo. daeume olgeyo.", "trans": "It still doesn't fit right. I'll come back another time.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "price",
+      "stage": "가격·할인",
+      "text": "이건 칠만 원인데요, 이번 주에 이십 퍼센트 할인돼요.",
+      "pron": "igeon chilman wonindeyo, ibeon jue isip peosenteu harindwaeyo.",
+      "trans": "This one is seventy thousand won, but it's twenty percent off this week.",
+      "replies": [
+        { "id": "price_1", "text": "좋아요, 이걸로 할게요.", "pron": "joayo, igeollo halgeyo.", "trans": "Great, I'll take it.", "next": "pay" },
+        { "id": "price_2", "text": "좀 더 싼 거 있어요?", "pron": "jom deo ssan geo isseoyo?", "trans": "Do you have anything cheaper?", "next": "compare" },
+        { "id": "price_3", "text": "좀 생각해 보고 올게요.", "pron": "jom saenggakae bogo olgeyo.", "trans": "I'll think about it and come back.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "compare",
+      "stage": "비교·추천",
+      "text": "이건 사만 원이에요. 대신 조금 얇아요.",
+      "pron": "igeon saman wonieyo. daesin jogeum yalbayo.",
+      "trans": "This one is forty thousand won. It's a little thinner, though.",
+      "replies": [
+        { "id": "compare_1", "text": "어떤 거 추천하세요?", "pron": "eotteon geo chucheonhaseyo?", "trans": "Which one would you recommend?", "next": "recommend" },
+        { "id": "compare_2", "text": "싼 걸로 할게요.", "pron": "ssan geollo halgeyo.", "trans": "I'll take the cheaper one.", "next": "pay" }
+      ]
+    },
+    {
+      "id": "recommend",
+      "stage": "비교·추천",
+      "text": "저는 처음 거 추천드려요. 더 따뜻하고 품질도 좋아요.",
+      "pron": "jeoneun cheoeum geo chucheondeuryeoyo. deo ttatteutago pumjildo joayo.",
+      "trans": "I'd recommend the first one. It's warmer and the quality is better.",
+      "replies": [
+        { "id": "recommend_1", "text": "그럼 그걸로 할게요.", "pron": "geureom geugeollo halgeyo.", "trans": "Then I'll take that one.", "next": "pay" },
+        { "id": "recommend_2", "text": "감사합니다. 좀 생각해 볼게요.", "pron": "gamsahamnida. jom saenggakae bolgeyo.", "trans": "Thank you. I'll think about it.", "next": "end_leave" }
+      ]
+    },
+    {
+      "id": "pay",
+      "stage": "계산",
+      "text": "네, 계산 도와드릴게요. 카드세요, 현금이세요?",
+      "pron": "ne, gyesan dowadeurilgeyo. kadeuseyo, hyeongeumiseyo?",
+      "trans": "Sure, I'll ring you up. Card or cash?",
+      "replies": [
+        { "id": "pay_1", "text": "카드로 할게요.", "pron": "kadeuro halgeyo.", "trans": "I'll pay by card.", "next": "bag" },
+        { "id": "pay_2", "text": "현금이요. 여기요.", "pron": "hyeongeumiyo. yeogiyo.", "trans": "Cash. Here you go.", "next": "bag" }
+      ]
+    },
+    {
+      "id": "bag",
+      "stage": "계산",
+      "text": "쇼핑백 필요하세요? 영수증도 드릴까요?",
+      "pron": "syopingbaek piryohaseyo? yeongsujeungdo deurilkkayo?",
+      "trans": "Do you need a bag? Would you like the receipt too?",
+      "replies": [
+        { "id": "bag_1", "text": "네, 둘 다 주세요.", "pron": "ne, dul da juseyo.", "trans": "Yes, both, please.", "next": "end_buy" },
+        { "id": "bag_2", "text": "쇼핑백은 괜찮아요. 영수증만 주세요.", "pron": "syopingbaegeun gwaenchanayo. yeongsujeungman juseyo.", "trans": "No bag, thanks. Just the receipt, please.", "next": "end_buy" }
+      ]
+    },
+    {
+      "id": "end_buy",
+      "stage": "마무리",
+      "text": "여기 있습니다. 감사합니다, 또 오세요!",
+      "pron": "yeogi itseumnida. gamsahamnida, tto oseyo!",
+      "trans": "Here you are. Thank you, come again!",
+      "replies": []
+    },
+    {
+      "id": "end_leave",
+      "stage": "마무리",
+      "text": "네, 괜찮아요! 언제든지 또 들러 주세요.",
+      "pron": "ne, gwaenchanayo! eonjedeunji tto deulleo juseyo.",
+      "trans": "Sure, no problem! Drop by again anytime.",
+      "replies": []
+    }
+  ]
+}

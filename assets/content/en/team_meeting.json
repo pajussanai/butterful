@@ -1,0 +1,177 @@
+{
+  "id": "team_meeting",
+  "lang": "en",
+  "start": "ask_time",
+  "nodes": [
+    {
+      "id": "ask_time",
+      "stage": "일정 잡기",
+      "text": "Hey, do you have a minute? We need to set up a meeting about the new project. Does Thursday afternoon work for you?",
+      "pron": "헤이, 두 유 해브 어 미닛? 위 니드 투 셋 업 어 미팅 어바웃 더 뉴 프라젝트. 더즈 써즈데이 애프터눈 워크 포 유?",
+      "trans": "저기, 잠깐 시간 돼요? 새 프로젝트 건으로 회의를 잡아야 해서요. 목요일 오후 괜찮아요?",
+      "replies": [
+        { "id": "ask_time_1", "text": "Sure, Thursday works for me.", "pron": "슈어, 써즈데이 웍스 포 미.", "trans": "네, 목요일 괜찮아요.", "next": "pick_place" },
+        { "id": "ask_time_2", "text": "Sorry, I'm busy on Thursday.", "pron": "쏘리, 아임 비지 온 써즈데이.", "trans": "미안해요, 목요일은 바빠요.", "next": "other_slot" },
+        { "id": "ask_time_3", "text": "What time on Thursday?", "pron": "왓 타임 온 써즈데이?", "trans": "목요일 몇 시요?", "next": "time_detail" }
+      ]
+    },
+    {
+      "id": "time_detail",
+      "stage": "일정 잡기",
+      "text": "How about two o'clock? It should take about an hour.",
+      "pron": "하우 어바웃 투 어클락? 잇 슈드 테이크 어바웃 언 아워.",
+      "trans": "두 시 어때요? 한 시간쯤 걸릴 거예요.",
+      "replies": [
+        { "id": "time_detail_1", "text": "Two o'clock is fine.", "pron": "투 어클락 이즈 파인.", "trans": "두 시 좋아요.", "next": "pick_place" },
+        { "id": "time_detail_2", "text": "I have another meeting then. Could we do another day?", "pron": "아이 해브 어나더 미팅 덴. 쿠드 위 두 어나더 데이?", "trans": "그때 다른 회의가 있어요. 다른 날 해도 될까요?", "next": "other_slot" }
+      ]
+    },
+    {
+      "id": "other_slot",
+      "stage": "일정 조정",
+      "text": "No problem. How about Friday morning at ten?",
+      "pron": "노 프라블럼. 하우 어바웃 프라이데이 모닝 앳 텐?",
+      "trans": "괜찮아요. 그럼 금요일 오전 열 시는 어때요?",
+      "replies": [
+        { "id": "other_slot_1", "text": "Friday at ten is perfect.", "pron": "프라이데이 앳 텐 이즈 퍼펙트.", "trans": "금요일 열 시 딱 좋아요.", "next": "pick_place" },
+        { "id": "other_slot_2", "text": "I'm out of the office on Friday. Can we meet online?", "pron": "아임 아웃 오브 디 오피스 온 프라이데이. 캔 위 밋 온라인?", "trans": "금요일엔 외근이에요. 온라인으로 만날 수 있을까요?", "next": "online" }
+      ]
+    },
+    {
+      "id": "pick_place",
+      "stage": "장소 정하기",
+      "text": "Great. Should I book a meeting room, or do you want to just do it online?",
+      "pron": "그레잇. 슈드 아이 북 어 미팅 룸, 오어 두 유 원 투 저스트 두 잇 온라인?",
+      "trans": "좋아요. 회의실을 잡을까요, 아니면 그냥 온라인으로 할까요?",
+      "replies": [
+        { "id": "pick_place_1", "text": "Let's book a meeting room.", "pron": "렛츠 북 어 미팅 룸.", "trans": "회의실 잡아요.", "next": "room" },
+        { "id": "pick_place_2", "text": "Online is easier for me.", "pron": "온라인 이즈 이지어 포 미.", "trans": "저는 온라인이 더 편해요.", "next": "online" }
+      ]
+    },
+    {
+      "id": "room",
+      "stage": "장소 정하기",
+      "text": "Okay, I'll book the small meeting room and send you an invite.",
+      "pron": "오케이, 아일 북 더 스몰 미팅 룸 앤 센드 유 언 인바잇.",
+      "trans": "알겠어요, 작은 회의실 잡고 초대 보낼게요.",
+      "replies": [
+        { "id": "room_1", "text": "Thanks. See you then.", "pron": "땡스. 씨 유 덴.", "trans": "고마워요. 그때 봬요.", "next": "meeting_start" },
+        { "id": "room_2", "text": "Should I prepare anything?", "pron": "슈드 아이 프리페어 애니띵?", "trans": "제가 뭐 준비할 거 있어요?", "next": "prepare" }
+      ]
+    },
+    {
+      "id": "online",
+      "stage": "장소 정하기",
+      "text": "Sure, online is fine. I'll email you a video call link.",
+      "pron": "슈어, 온라인 이즈 파인. 아일 이메일 유 어 비디오 콜 링크.",
+      "trans": "그래요, 온라인도 좋아요. 화상 회의 링크 메일로 보낼게요.",
+      "replies": [
+        { "id": "online_1", "text": "Great, thanks. Talk to you then.", "pron": "그레잇, 땡스. 토크 투 유 덴.", "trans": "좋아요, 고마워요. 그때 얘기해요.", "next": "meeting_start" },
+        { "id": "online_2", "text": "Should I prepare anything?", "pron": "슈드 아이 프리페어 애니띵?", "trans": "제가 뭐 준비할 거 있어요?", "next": "prepare" }
+      ]
+    },
+    {
+      "id": "prepare",
+      "stage": "회의 준비",
+      "text": "Just take a look at the project plan. I'll send it to you today.",
+      "pron": "저스트 테이크 어 룩 앳 더 프라젝트 플랜. 아일 센드 잇 투 유 투데이.",
+      "trans": "프로젝트 기획안만 한번 봐 주세요. 오늘 보내 줄게요.",
+      "replies": [
+        { "id": "prepare_1", "text": "Got it. I'll read it before the meeting.", "pron": "갓 잇. 아일 리드 잇 비포 더 미팅.", "trans": "알겠어요. 회의 전에 읽어 볼게요.", "next": "meeting_start" },
+        { "id": "prepare_2", "text": "Okay. Let me know if anything changes.", "pron": "오케이. 렛 미 노우 이프 애니띵 체인지즈.", "trans": "네. 바뀌는 거 있으면 알려 주세요.", "next": "meeting_start" }
+      ]
+    },
+    {
+      "id": "meeting_start",
+      "stage": "아이디어 듣기",
+      "text": "Thanks for joining. So here's my idea: we build a mobile app first, and do the website later. What do you think?",
+      "pron": "땡스 포 조이닝. 쏘 히어즈 마이 아이디어: 위 빌드 어 모바일 앱 퍼스트, 앤 두 더 웹사이트 레이터. 왓 두 유 띵크?",
+      "trans": "와 줘서 고마워요. 제 아이디어는요, 모바일 앱을 먼저 만들고 웹사이트는 나중에 하는 거예요. 어떻게 생각해요?",
+      "replies": [
+        { "id": "meeting_start_1", "text": "I think it's a great idea.", "pron": "아이 띵크 잇츠 어 그레잇 아이디어.", "trans": "좋은 아이디어 같아요.", "next": "agree" },
+        { "id": "meeting_start_2", "text": "I like it, but I think we need more time.", "pron": "아이 라이크 잇, 벗 아이 띵크 위 니드 모어 타임.", "trans": "좋은데, 시간이 더 필요할 것 같아요.", "next": "partial" },
+        { "id": "meeting_start_3", "text": "Honestly, I'm not sure. Most of our customers use the website.", "pron": "어니스틀리, 아임 낫 슈어. 모스트 오브 아워 커스터머즈 유즈 더 웹사이트.", "trans": "솔직히 잘 모르겠어요. 고객 대부분이 웹사이트를 쓰거든요.", "next": "disagree" }
+      ]
+    },
+    {
+      "id": "agree",
+      "stage": "의견 말하기",
+      "text": "Really? Thanks! Could you help out with the design?",
+      "pron": "리얼리? 땡스! 쿠쥬 헬프 아웃 위드 더 디자인?",
+      "trans": "정말요? 고마워요! 디자인 좀 도와줄 수 있어요?",
+      "replies": [
+        { "id": "agree_1", "text": "Sure, I'd be happy to.", "pron": "슈어, 아이드 비 해피 투.", "trans": "그럼요, 기꺼이요.", "next": "next_steps" },
+        { "id": "agree_2", "text": "I'm pretty busy this month, but I can review it.", "pron": "아임 프리티 비지 디스 먼쓰, 벗 아이 캔 리뷰 잇.", "trans": "이번 달엔 좀 바쁘지만 검토는 할 수 있어요.", "next": "next_steps" }
+      ]
+    },
+    {
+      "id": "partial",
+      "stage": "의견 말하기",
+      "text": "That's a good point. What if we push the launch back a month?",
+      "pron": "댓츠 어 굿 포인트. 왓 이프 위 푸쉬 더 런치 백 어 먼쓰?",
+      "trans": "좋은 지적이에요. 출시를 한 달 미루면 어때요?",
+      "replies": [
+        { "id": "partial_1", "text": "That sounds much better.", "pron": "댓 사운즈 머치 베터.", "trans": "그게 훨씬 낫겠네요.", "next": "next_steps" },
+        { "id": "partial_2", "text": "Good idea. Let's check with the rest of the team, too.", "pron": "굿 아이디어. 렛츠 첵 위드 더 레스트 오브 더 팀, 투.", "trans": "좋아요. 팀 다른 사람들한테도 물어봐요.", "next": "next_steps" }
+      ]
+    },
+    {
+      "id": "disagree",
+      "stage": "의견 말하기",
+      "text": "Hmm, I see what you mean. So you'd start with the website?",
+      "pron": "흠, 아이 씨 왓 유 민. 쏘 유드 스타트 위드 더 웹사이트?",
+      "trans": "음, 무슨 말인지 알겠어요. 그럼 웹사이트부터 시작하자는 거죠?",
+      "replies": [
+        { "id": "disagree_1", "text": "Yes. We could do the app after that.", "pron": "예스. 위 쿠드 두 디 앱 애프터 댓.", "trans": "네. 앱은 그다음에 해도 될 것 같아요.", "next": "rethink" },
+        { "id": "disagree_2", "text": "Maybe. Let's look at the customer data first.", "pron": "메이비. 렛츠 룩 앳 더 커스터머 데이터 퍼스트.", "trans": "아마도요. 먼저 고객 데이터를 봐요.", "next": "rethink" }
+      ]
+    },
+    {
+      "id": "rethink",
+      "stage": "의견 조율",
+      "text": "Fair enough. I'll take another look at the numbers and think it over.",
+      "pron": "페어 이너프. 아일 테이크 어나더 룩 앳 더 넘버즈 앤 띵크 잇 오버.",
+      "trans": "그럴 만하네요. 숫자를 다시 보고 생각해 볼게요.",
+      "replies": [
+        { "id": "rethink_1", "text": "Sounds good. Let's circle back next week.", "pron": "사운즈 굿. 렛츠 써클 백 넥스트 윅.", "trans": "좋아요. 다음 주에 다시 얘기해요.", "next": "end_followup" },
+        { "id": "rethink_2", "text": "Thanks. I'll send out the minutes today.", "pron": "땡스. 아일 센드 아웃 더 미닛츠 투데이.", "trans": "고마워요. 회의록은 제가 오늘 보낼게요.", "next": "end_minutes" }
+      ]
+    },
+    {
+      "id": "next_steps",
+      "stage": "마무리",
+      "text": "Great. So I'll write up the minutes and send them out today. Shall we meet again next Monday?",
+      "pron": "그레잇. 쏘 아일 라잇 업 더 미닛츠 앤 센드 뎀 아웃 투데이. 쉘 위 밋 어게인 넥스트 먼데이?",
+      "trans": "좋아요. 그럼 회의록은 제가 정리해서 오늘 보낼게요. 다음 주 월요일에 다시 만날까요?",
+      "replies": [
+        { "id": "next_steps_1", "text": "Monday works. Thanks for doing the minutes.", "pron": "먼데이 웍스. 땡스 포 두잉 더 미닛츠.", "trans": "월요일 좋아요. 회의록 써 줘서 고마워요.", "next": "end_agreed" },
+        { "id": "next_steps_2", "text": "Actually, I can do the minutes this time.", "pron": "액츄얼리, 아이 캔 두 더 미닛츠 디스 타임.", "trans": "이번엔 회의록 제가 쓸게요.", "next": "end_minutes" },
+        { "id": "next_steps_3", "text": "Monday's tough for me. How about Tuesday?", "pron": "먼데이즈 터프 포 미. 하우 어바웃 튜즈데이?", "trans": "월요일은 좀 힘들어요. 화요일 어때요?", "next": "end_agreed" }
+      ]
+    },
+    {
+      "id": "end_agreed",
+      "stage": "끝인사",
+      "text": "Perfect. I'll send a calendar invite. Good meeting today!",
+      "pron": "퍼펙트. 아일 센드 어 캘린더 인바잇. 굿 미팅 투데이!",
+      "trans": "좋아요. 캘린더 초대 보낼게요. 오늘 회의 좋았어요!",
+      "replies": []
+    },
+    {
+      "id": "end_minutes",
+      "stage": "끝인사",
+      "text": "Oh, thank you! Please send them to the whole team. See you next week!",
+      "pron": "오, 땡큐! 플리즈 센드 뎀 투 더 홀 팀. 씨 유 넥스트 윅!",
+      "trans": "아, 고마워요! 팀 전체한테 보내 주세요. 다음 주에 봐요!",
+      "replies": []
+    },
+    {
+      "id": "end_followup",
+      "stage": "끝인사",
+      "text": "Thanks for being honest. I'll share the data before our next meeting.",
+      "pron": "땡스 포 빙 어니스트. 아일 셰어 더 데이터 비포 아워 넥스트 미팅.",
+      "trans": "솔직하게 말해 줘서 고마워요. 다음 회의 전에 데이터 공유할게요.",
+      "replies": []
+    }
+  ]
+}

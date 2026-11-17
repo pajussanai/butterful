@@ -1,0 +1,198 @@
+{
+  "id": "change_plans",
+  "lang": "en",
+  "start": "call",
+  "nodes": [
+    {
+      "id": "call",
+      "stage": "전화 인사",
+      "text": "Hey! Did you see the weather? It's supposed to rain on Saturday.",
+      "pron": "헤이! 디쥬 씨 더 웨더? 잇츠 서포즈드 투 레인 온 쌔러데이.",
+      "trans": "야! 날씨 봤어? 토요일에 비 온대.",
+      "replies": [
+        { "id": "call_1", "text": "Really? All day?", "pron": "리얼리? 올 데이?", "trans": "진짜? 하루 종일?", "next": "rain_all_day" },
+        { "id": "call_2", "text": "Yeah, I saw. That's a bummer.", "pron": "예, 아이 쏘. 댓츠 어 버머.", "trans": "응, 봤어. 아쉽다.", "next": "plan_rain" }
+      ]
+    },
+    {
+      "id": "rain_all_day",
+      "stage": "날씨 이야기",
+      "text": "Yeah, all day. So no picnic in the park.",
+      "pron": "예, 올 데이. 쏘 노 피크닉 인 더 파크.",
+      "trans": "응, 하루 종일. 그래서 공원 피크닉은 못 하겠다.",
+      "replies": [
+        { "id": "rain_all_day_1", "text": "Then let's do something inside.", "pron": "덴 레츠 두 썸띵 인사이드.", "trans": "그럼 실내에서 뭐 하자.", "next": "plan_rain" },
+        { "id": "rain_all_day_2", "text": "What about Sunday?", "pron": "왓 어바웃 썬데이?", "trans": "일요일은 어때?", "next": "sunday_weather" }
+      ]
+    },
+    {
+      "id": "sunday_weather",
+      "stage": "날씨 이야기",
+      "text": "Sunday's going to be sunny, but I have to work.",
+      "pron": "썬데이즈 고잉 투 비 써니, 벗 아이 해프 투 워크.",
+      "trans": "일요일은 맑대. 근데 나 일해야 돼.",
+      "replies": [
+        { "id": "sunday_weather_1", "text": "Oh, okay. Then Saturday, but inside?", "pron": "오, 오케이. 덴 쌔러데이, 벗 인사이드?", "trans": "아, 그렇구나. 그럼 토요일에 실내에서 볼까?", "next": "plan_rain" },
+        { "id": "sunday_weather_2", "text": "Then let's just do next weekend.", "pron": "덴 레츠 저스트 두 넥스트 위켄드.", "trans": "그럼 그냥 다음 주말에 하자.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "plan_rain",
+      "stage": "계획 바꾸기",
+      "text": "So what do you want to do? A movie, or just a café?",
+      "pron": "쏘 왓 두 유 원 투 두? 어 무비, 오어 저스트 어 캐페이?",
+      "trans": "그럼 뭐 할래? 영화 볼래, 아니면 그냥 카페 갈래?",
+      "replies": [
+        { "id": "plan_rain_1", "text": "A movie sounds good.", "pron": "어 무비 사운즈 굿.", "trans": "영화 좋다.", "next": "movie" },
+        { "id": "plan_rain_2", "text": "Let's just hang out at a café.", "pron": "레츠 저스트 행 아웃 앳 어 캐페이.", "trans": "그냥 카페에서 놀자.", "next": "cafe" },
+        { "id": "plan_rain_3", "text": "Hmm, maybe another day?", "pron": "흠, 메이비 어나더 데이?", "trans": "음, 다른 날 할까?", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "movie",
+      "stage": "계획 바꾸기",
+      "text": "Nice! Let's grab coffee first. I know a good café near the theater.",
+      "pron": "나이스! 레츠 그랩 커피 퍼스트. 아이 노우 어 굿 캐페이 니어 더 띠어터.",
+      "trans": "좋아! 먼저 커피 마시자. 영화관 근처에 괜찮은 카페 알아.",
+      "replies": [
+        { "id": "movie_1", "text": "Sounds good.", "pron": "사운즈 굿.", "trans": "좋아.", "next": "meet_time" },
+        { "id": "movie_2", "text": "Sure, I need coffee.", "pron": "슈어, 아이 니드 커피.", "trans": "좋지, 커피 마셔야 돼.", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "cafe",
+      "stage": "계획 바꾸기",
+      "text": "Cool. There's a cute café by the station. Let's go there.",
+      "pron": "쿨. 데어즈 어 큐트 캐페이 바이 더 스테이션. 레츠 고 데어.",
+      "trans": "좋아. 역 근처에 예쁜 카페 있어. 거기 가자.",
+      "replies": [
+        { "id": "cafe_1", "text": "Sounds good.", "pron": "사운즈 굿.", "trans": "좋아.", "next": "meet_time" },
+        { "id": "cafe_2", "text": "Great, I love cafés.", "pron": "그레잇, 아이 러브 캐페이즈.", "trans": "좋다, 나 카페 좋아해.", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "meet_time",
+      "stage": "시간 정하기",
+      "text": "So what time? How about one?",
+      "pron": "쏘 왓 타임? 하우 어바웃 원?",
+      "trans": "그럼 몇 시에 볼까? 한 시 어때?",
+      "replies": [
+        { "id": "meet_time_1", "text": "One works for me.", "pron": "원 웍스 포 미.", "trans": "한 시 괜찮아.", "next": "directions" },
+        { "id": "meet_time_2", "text": "Can we make it a little later? Like three?", "pron": "캔 위 메이킷 어 리틀 레이러? 라이크 쓰리?", "trans": "조금 늦게 봐도 돼? 세 시쯤?", "next": "later_time" },
+        { "id": "meet_time_3", "text": "Actually, I can't make it on Saturday. Sorry.", "pron": "액추얼리, 아이 캔트 메이킷 온 쌔러데이. 쏘리.", "trans": "사실 나 토요일에 안 될 것 같아. 미안.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "later_time",
+      "stage": "시간 정하기",
+      "text": "Three? Sure, that's fine. Do you know how to get there?",
+      "pron": "쓰리? 슈어, 댓츠 파인. 두 유 노우 하우 투 겟 데어?",
+      "trans": "세 시? 응, 괜찮아. 거기 가는 길 알아?",
+      "replies": [
+        { "id": "later_time_1", "text": "No, how do I get there?", "pron": "노, 하우 두 아이 겟 데어?", "trans": "아니, 어떻게 가?", "next": "directions" },
+        { "id": "later_time_2", "text": "Not really. Can you tell me?", "pron": "낫 리얼리. 캔 유 텔 미?", "trans": "잘 몰라. 알려 줄래?", "next": "directions" }
+      ]
+    },
+    {
+      "id": "directions",
+      "stage": "길 안내",
+      "text": "Okay. Get off at Central Station and take exit three. Then turn left.",
+      "pron": "오케이. 겟 오프 앳 센트럴 스테이션 앤 테이크 엑싯 쓰리. 덴 턴 레프트.",
+      "trans": "알았어. 센트럴역에서 내려서 삼 번 출구로 나와. 그다음에 왼쪽으로 돌아.",
+      "replies": [
+        { "id": "directions_1", "text": "Exit three, then left?", "pron": "엑싯 쓰리, 덴 레프트?", "trans": "삼 번 출구, 그다음에 왼쪽?", "next": "directions2" },
+        { "id": "directions_2", "text": "Sorry, which exit?", "pron": "쏘리, 위치 엑싯?", "trans": "미안, 몇 번 출구라고?", "next": "repeat_exit" }
+      ]
+    },
+    {
+      "id": "repeat_exit",
+      "stage": "길 안내",
+      "text": "Exit three. When you come out, turn left.",
+      "pron": "엑싯 쓰리. 웬 유 컴 아웃, 턴 레프트.",
+      "trans": "삼 번 출구. 나와서 왼쪽으로 돌아.",
+      "replies": [
+        { "id": "repeat_exit_1", "text": "Got it. Exit three, then left.", "pron": "갓 잇. 엑싯 쓰리, 덴 레프트.", "trans": "알았어. 삼 번 출구, 그다음에 왼쪽.", "next": "directions2" },
+        { "id": "repeat_exit_2", "text": "Okay, let me write that down.", "pron": "오케이, 렛 미 라잇 댓 다운.", "trans": "알았어, 적어 둘게.", "next": "directions2" }
+      ]
+    },
+    {
+      "id": "directions2",
+      "stage": "길 안내",
+      "text": "Yep. Then go straight for about two minutes. The café is right next to the bookstore.",
+      "pron": "옙. 덴 고 스트레잇 포 어바웃 투 미닛츠. 더 캐페이 이즈 라잇 넥스트 투 더 북스토어.",
+      "trans": "응. 그리고 이 분 정도 쭉 와. 카페는 서점 바로 옆이야.",
+      "replies": [
+        { "id": "directions2_1", "text": "Next to the bookstore. Okay!", "pron": "넥스트 투 더 북스토어. 오케이!", "trans": "서점 옆. 알았어!", "next": "confirm" },
+        { "id": "directions2_2", "text": "What does the café look like?", "pron": "왓 더즈 더 캐페이 룩 라이크?", "trans": "카페가 어떻게 생겼어?", "next": "cafe_name" }
+      ]
+    },
+    {
+      "id": "cafe_name",
+      "stage": "길 안내",
+      "text": "It's small, with a blue door. You can't miss it.",
+      "pron": "잇츠 스몰, 위드 어 블루 도어. 유 캔트 미스 잇.",
+      "trans": "작고, 문이 파란색이야. 바로 보일 거야.",
+      "replies": [
+        { "id": "cafe_name_1", "text": "A blue door. Got it.", "pron": "어 블루 도어. 갓 잇.", "trans": "파란 문. 알았어.", "next": "confirm" },
+        { "id": "cafe_name_2", "text": "Okay, I'll find it.", "pron": "오케이, 아일 파인드 잇.", "trans": "알았어, 찾아갈게.", "next": "confirm" }
+      ]
+    },
+    {
+      "id": "confirm",
+      "stage": "약속 확인",
+      "text": "Perfect. See you Saturday! Call me if you get lost.",
+      "pron": "퍼펙트. 씨 유 쌔러데이! 콜 미 이프 유 겟 로스트.",
+      "trans": "좋아. 토요일에 봐! 길 잃으면 전화해.",
+      "replies": [
+        { "id": "confirm_1", "text": "Okay, see you Saturday!", "pron": "오케이, 씨 유 쌔러데이!", "trans": "응, 토요일에 봐!", "next": "end_saturday" },
+        { "id": "confirm_2", "text": "I might be a little late. Is that okay?", "pron": "아이 마잇 비 어 리틀 레잇. 이즈 댓 오케이?", "trans": "나 조금 늦을 수도 있어. 괜찮아?", "next": "late_ok" }
+      ]
+    },
+    {
+      "id": "late_ok",
+      "stage": "약속 확인",
+      "text": "No problem. Just text me.",
+      "pron": "노 프라블럼. 저스트 텍스트 미.",
+      "trans": "괜찮아. 그냥 문자 줘.",
+      "replies": [
+        { "id": "late_ok_1", "text": "Thanks. See you then!", "pron": "땡스. 씨 유 덴!", "trans": "고마워. 그때 봐!", "next": "end_saturday" },
+        { "id": "late_ok_2", "text": "Okay, I'll text you.", "pron": "오케이, 아일 텍스트 유.", "trans": "알았어, 문자할게.", "next": "end_saturday" }
+      ]
+    },
+    {
+      "id": "next_week",
+      "stage": "약속 미루기",
+      "text": "Sure. Then how about next Saturday?",
+      "pron": "슈어. 덴 하우 어바웃 넥스트 쌔러데이?",
+      "trans": "그래. 그럼 다음 주 토요일은 어때?",
+      "replies": [
+        { "id": "next_week_1", "text": "Next Saturday works.", "pron": "넥스트 쌔러데이 웍스.", "trans": "다음 주 토요일 좋아.", "next": "end_next_week" },
+        { "id": "next_week_2", "text": "Let me check and text you.", "pron": "렛 미 첵 앤 텍스트 유.", "trans": "확인해 보고 문자할게.", "next": "end_text" }
+      ]
+    },
+    {
+      "id": "end_saturday",
+      "stage": "마무리",
+      "text": "Great! Don't forget your umbrella. Bye!",
+      "pron": "그레잇! 돈 포겟 유어 엄브렐라. 바이!",
+      "trans": "좋아! 우산 잊지 마. 안녕!",
+      "replies": []
+    },
+    {
+      "id": "end_next_week",
+      "stage": "마무리",
+      "text": "Awesome, next Saturday then. Hope it's sunny!",
+      "pron": "어썸, 넥스트 쌔러데이 덴. 호프 잇츠 써니!",
+      "trans": "좋다, 그럼 다음 주 토요일에 봐. 날씨 좋으면 좋겠다!",
+      "replies": []
+    },
+    {
+      "id": "end_text",
+      "stage": "마무리",
+      "text": "Okay, text me later. Bye!",
+      "pron": "오케이, 텍스트 미 레이러. 바이!",
+      "trans": "알았어, 이따 문자해. 안녕!",
+      "replies": []
+    }
+  ]
+}

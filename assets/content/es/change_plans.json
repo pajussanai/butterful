@@ -1,0 +1,198 @@
+{
+  "id": "change_plans",
+  "lang": "es",
+  "start": "call",
+  "nodes": [
+    {
+      "id": "call",
+      "stage": "전화 인사",
+      "text": "¡Hola! ¿Has visto el tiempo? Dicen que el sábado va a llover.",
+      "pron": "올라! 아스 비스또 엘 띠엠뽀? 디쎈 께 엘 사바도 바 아 요베르.",
+      "trans": "안녕! 날씨 봤어? 토요일에 비 온대.",
+      "replies": [
+        { "id": "call_1", "text": "¿En serio? ¿Todo el día?", "pron": "엔 세리오? 또도 엘 디아?", "trans": "진짜? 하루 종일?", "next": "rain_all_day" },
+        { "id": "call_2", "text": "Sí, lo he visto. ¡Qué pena!", "pron": "시, 로 에 비스또. 께 뻬나!", "trans": "응, 봤어. 아쉽다!", "next": "plan_rain" }
+      ]
+    },
+    {
+      "id": "rain_all_day",
+      "stage": "날씨 이야기",
+      "text": "Sí, todo el día. Así que nada de pícnic en el parque.",
+      "pron": "시, 또도 엘 디아. 아시 께 나다 데 삑닉 엔 엘 빠르께.",
+      "trans": "응, 하루 종일. 그러니까 공원 피크닉은 안 되겠다.",
+      "replies": [
+        { "id": "rain_all_day_1", "text": "Pues hacemos algo dentro, ¿no?", "pron": "뿌에스 아쎄모스 알고 덴뜨로, 노?", "trans": "그럼 실내에서 뭐 하자, 응?", "next": "plan_rain" },
+        { "id": "rain_all_day_2", "text": "¿Y el domingo?", "pron": "이 엘 도밍고?", "trans": "일요일은?", "next": "sunday_weather" }
+      ]
+    },
+    {
+      "id": "sunday_weather",
+      "stage": "날씨 이야기",
+      "text": "El domingo va a hacer sol, pero me toca trabajar.",
+      "pron": "엘 도밍고 바 아 아쎄르 솔, 뻬로 메 또까 뜨라바하르.",
+      "trans": "일요일은 맑대. 근데 나 일해야 돼.",
+      "replies": [
+        { "id": "sunday_weather_1", "text": "Ah, vale. ¿Entonces el sábado, pero dentro?", "pron": "아, 발레. 엔똔쎄스 엘 사바도, 뻬로 덴뜨로?", "trans": "아, 알았어. 그럼 토요일에 실내에서 볼까?", "next": "plan_rain" },
+        { "id": "sunday_weather_2", "text": "Pues lo dejamos para el finde que viene.", "pron": "뿌에스 로 데하모스 빠라 엘 핀데 께 비에네.", "trans": "그럼 다음 주말로 미루자.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "plan_rain",
+      "stage": "계획 바꾸기",
+      "text": "¿Y qué te apetece? ¿Cine o un café tranquilo?",
+      "pron": "이 께 떼 아뻬떼쎄? 씨네 오 운 까페 뜨랑낄로?",
+      "trans": "그럼 뭐 하고 싶어? 영화 볼래, 아니면 카페에서 느긋하게 있을래?",
+      "replies": [
+        { "id": "plan_rain_1", "text": "Me apetece ir al cine.", "pron": "메 아뻬떼쎄 이르 알 씨네.", "trans": "영화 보러 가고 싶어.", "next": "movie" },
+        { "id": "plan_rain_2", "text": "Mejor un café y charlamos.", "pron": "메호르 운 까페 이 차를라모스.", "trans": "카페 가서 수다 떠는 게 좋겠어.", "next": "cafe" },
+        { "id": "plan_rain_3", "text": "Mmm, ¿y si lo dejamos para otro día?", "pron": "음, 이 시 로 데하모스 빠라 오뜨로 디아?", "trans": "음, 다른 날로 미룰까?", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "movie",
+      "stage": "계획 바꾸기",
+      "text": "¡Genial! Antes tomamos un café. Conozco una cafetería muy buena cerca del cine.",
+      "pron": "헤니알! 안떼스 또마모스 운 까페. 꼬노쓰꼬 우나 까페떼리아 무이 부에나 쎄르까 델 씨네.",
+      "trans": "좋아! 먼저 커피 마시자. 영화관 근처에 진짜 괜찮은 카페 알아.",
+      "replies": [
+        { "id": "movie_1", "text": "Vale, perfecto.", "pron": "발레, 뻬르펙또.", "trans": "응, 좋아.", "next": "meet_time" },
+        { "id": "movie_2", "text": "Sí, que necesito un café.", "pron": "시, 께 네쎄시또 운 까페.", "trans": "응, 나 커피 필요해.", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "cafe",
+      "stage": "계획 바꾸기",
+      "text": "Guay. Hay una cafetería muy mona cerca del metro. ¿Vamos ahí?",
+      "pron": "과이. 아이 우나 까페떼리아 무이 모나 쎄르까 델 메뜨로. 바모스 아이?",
+      "trans": "좋아. 지하철역 근처에 엄청 예쁜 카페 있어. 거기 갈까?",
+      "replies": [
+        { "id": "cafe_1", "text": "Vale, perfecto.", "pron": "발레, 뻬르펙또.", "trans": "응, 좋아.", "next": "meet_time" },
+        { "id": "cafe_2", "text": "¡Genial, me encantan las cafeterías!", "pron": "헤니알, 메 엥깐딴 라스 까페떼리아스!", "trans": "좋다, 나 카페 진짜 좋아해!", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "meet_time",
+      "stage": "시간 정하기",
+      "text": "¿A qué hora quedamos? ¿A la una?",
+      "pron": "아 께 오라 께다모스? 아 라 우나?",
+      "trans": "몇 시에 만날까? 한 시?",
+      "replies": [
+        { "id": "meet_time_1", "text": "A la una me va bien.", "pron": "아 라 우나 메 바 비엔.", "trans": "한 시 괜찮아.", "next": "directions" },
+        { "id": "meet_time_2", "text": "¿Podemos quedar un poco más tarde? ¿A las tres?", "pron": "뽀데모스 께다르 운 뽀꼬 마스 따르데? 아 라스 뜨레스?", "trans": "조금 늦게 만나도 돼? 세 시에?", "next": "later_time" },
+        { "id": "meet_time_3", "text": "Oye, al final el sábado no puedo. Lo siento.", "pron": "오예, 알 피날 엘 사바도 노 뿌에도. 로 시엔또.", "trans": "있잖아, 결국 토요일은 안 되겠어. 미안.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "later_time",
+      "stage": "시간 정하기",
+      "text": "¿A las tres? Vale, sin problema. ¿Sabes cómo llegar?",
+      "pron": "아 라스 뜨레스? 발레, 신 쁘로블레마. 사베스 꼬모 예가르?",
+      "trans": "세 시? 응, 괜찮아. 가는 길 알아?",
+      "replies": [
+        { "id": "later_time_1", "text": "No, ¿cómo llego?", "pron": "노, 꼬모 예고?", "trans": "아니, 어떻게 가?", "next": "directions" },
+        { "id": "later_time_2", "text": "No mucho. ¿Me lo explicas?", "pron": "노 무초. 메 로 엑스쁠리까스?", "trans": "잘 몰라. 설명해 줄래?", "next": "directions" }
+      ]
+    },
+    {
+      "id": "directions",
+      "stage": "길 안내",
+      "text": "Mira, te bajas en Sol y sales por la salida tres. Luego giras a la izquierda.",
+      "pron": "미라, 떼 바하스 엔 솔 이 살레스 뽀르 라 살리다 뜨레스. 루에고 히라스 아 라 이쓰끼에르다.",
+      "trans": "잘 들어, 솔역에서 내려서 삼 번 출구로 나와. 그다음에 왼쪽으로 돌아.",
+      "replies": [
+        { "id": "directions_1", "text": "Salida tres y luego a la izquierda, ¿no?", "pron": "살리다 뜨레스 이 루에고 아 라 이쓰끼에르다, 노?", "trans": "삼 번 출구, 그다음에 왼쪽 맞지?", "next": "directions2" },
+        { "id": "directions_2", "text": "Perdona, ¿qué salida?", "pron": "뻬르도나, 께 살리다?", "trans": "미안, 몇 번 출구라고?", "next": "repeat_exit" }
+      ]
+    },
+    {
+      "id": "repeat_exit",
+      "stage": "길 안내",
+      "text": "La salida tres. Al salir, giras a la izquierda.",
+      "pron": "라 살리다 뜨레스. 알 살리르, 히라스 아 라 이쓰끼에르다.",
+      "trans": "삼 번 출구. 나와서 왼쪽으로 돌아.",
+      "replies": [
+        { "id": "repeat_exit_1", "text": "Vale. Salida tres y a la izquierda.", "pron": "발레. 살리다 뜨레스 이 아 라 이쓰끼에르다.", "trans": "알았어. 삼 번 출구, 그리고 왼쪽.", "next": "directions2" },
+        { "id": "repeat_exit_2", "text": "Vale, me lo apunto.", "pron": "발레, 메 로 아뿐또.", "trans": "알았어, 적어 둘게.", "next": "directions2" }
+      ]
+    },
+    {
+      "id": "directions2",
+      "stage": "길 안내",
+      "text": "Eso es. Luego sigues recto unos dos minutos. La cafetería está justo al lado de la librería.",
+      "pron": "에소 에스. 루에고 시게스 렉또 우노스 도스 미누또스. 라 까페떼리아 에스따 후스또 알 라도 데 라 리브레리아.",
+      "trans": "맞아. 그다음에 이 분 정도 쭉 와. 카페는 서점 바로 옆이야.",
+      "replies": [
+        { "id": "directions2_1", "text": "Al lado de la librería. ¡Vale!", "pron": "알 라도 데 라 리브레리아. 발레!", "trans": "서점 옆. 알았어!", "next": "confirm" },
+        { "id": "directions2_2", "text": "¿Y cómo es la cafetería?", "pron": "이 꼬모 에스 라 까페떼리아?", "trans": "그 카페 어떻게 생겼어?", "next": "cafe_name" }
+      ]
+    },
+    {
+      "id": "cafe_name",
+      "stage": "길 안내",
+      "text": "Es pequeñita, con una puerta azul. No tiene pérdida.",
+      "pron": "에스 뻬께니따, 꼰 우나 뿌에르따 아쑬. 노 띠에네 뻬르디다.",
+      "trans": "자그마하고, 문이 파란색이야. 금방 찾을 거야.",
+      "replies": [
+        { "id": "cafe_name_1", "text": "Una puerta azul. Vale.", "pron": "우나 뿌에르따 아쑬. 발레.", "trans": "파란 문. 알았어.", "next": "confirm" },
+        { "id": "cafe_name_2", "text": "Vale, ya la encontraré.", "pron": "발레, 야 라 엥꼰뜨라레.", "trans": "알았어, 찾아갈게.", "next": "confirm" }
+      ]
+    },
+    {
+      "id": "confirm",
+      "stage": "약속 확인",
+      "text": "Perfecto. ¡Nos vemos el sábado! Si te pierdes, llámame.",
+      "pron": "뻬르펙또. 노스 베모스 엘 사바도! 시 떼 삐에르데스, 야마메.",
+      "trans": "좋아. 토요일에 봐! 길 잃으면 전화해.",
+      "replies": [
+        { "id": "confirm_1", "text": "¡Vale, hasta el sábado!", "pron": "발레, 아스따 엘 사바도!", "trans": "응, 토요일에 봐!", "next": "end_saturday" },
+        { "id": "confirm_2", "text": "Igual llego un poco tarde. ¿Te importa?", "pron": "이괄 예고 운 뽀꼬 따르데. 떼 임뽀르따?", "trans": "나 조금 늦을 수도 있어. 괜찮아?", "next": "late_ok" }
+      ]
+    },
+    {
+      "id": "late_ok",
+      "stage": "약속 확인",
+      "text": "No pasa nada. Mándame un mensaje.",
+      "pron": "노 빠사 나다. 만다메 운 멘사헤.",
+      "trans": "괜찮아. 문자 하나 보내 줘.",
+      "replies": [
+        { "id": "late_ok_1", "text": "Gracias. ¡Nos vemos!", "pron": "그라씨아스. 노스 베모스!", "trans": "고마워. 그때 봐!", "next": "end_saturday" },
+        { "id": "late_ok_2", "text": "Vale, te escribo.", "pron": "발레, 떼 에스끄리보.", "trans": "알았어, 문자할게.", "next": "end_saturday" }
+      ]
+    },
+    {
+      "id": "next_week",
+      "stage": "약속 미루기",
+      "text": "Vale, tranqui. ¿Y el sábado que viene?",
+      "pron": "발레, 뜨랑끼. 이 엘 사바도 께 비에네?",
+      "trans": "그래, 괜찮아. 그럼 다음 주 토요일은?",
+      "replies": [
+        { "id": "next_week_1", "text": "El sábado que viene me va bien.", "pron": "엘 사바도 께 비에네 메 바 비엔.", "trans": "다음 주 토요일 좋아.", "next": "end_next_week" },
+        { "id": "next_week_2", "text": "Lo miro y te escribo.", "pron": "로 미로 이 떼 에스끄리보.", "trans": "확인해 보고 문자할게.", "next": "end_text" }
+      ]
+    },
+    {
+      "id": "end_saturday",
+      "stage": "마무리",
+      "text": "¡Genial! No te olvides el paraguas. ¡Hasta luego!",
+      "pron": "헤니알! 노 떼 올비데스 엘 빠라과스. 아스따 루에고!",
+      "trans": "좋아! 우산 잊지 마. 안녕!",
+      "replies": []
+    },
+    {
+      "id": "end_next_week",
+      "stage": "마무리",
+      "text": "Genial, pues el sábado que viene. ¡A ver si hace sol!",
+      "pron": "헤니알, 뿌에스 엘 사바도 께 비에네. 아 베르 시 아쎄 솔!",
+      "trans": "좋다, 그럼 다음 주 토요일에 봐. 날씨 좋았으면 좋겠다!",
+      "replies": []
+    },
+    {
+      "id": "end_text",
+      "stage": "마무리",
+      "text": "Vale, ya me dices. ¡Hasta luego!",
+      "pron": "발레, 야 메 디쎄스. 아스따 루에고!",
+      "trans": "알았어, 나중에 알려 줘. 안녕!",
+      "replies": []
+    }
+  ]
+}

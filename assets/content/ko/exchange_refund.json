@@ -1,0 +1,185 @@
+{
+  "id": "exchange_refund",
+  "lang": "ko",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "인사",
+      "text": "어서 오세요. 뭘 도와드릴까요?",
+      "pron": "eoseo oseyo. mwol dowadeurilkkayo?",
+      "trans": "Welcome. How can I help you?",
+      "replies": [
+        { "id": "greet_1", "text": "어제 이 니트를 샀는데 너무 작아요.", "pron": "eoje i niteureul sanneunde neomu jagayo.", "trans": "I bought this sweater yesterday, but it's too small.", "next": "receipt" },
+        { "id": "greet_2", "text": "이거 환불하고 싶어서 왔어요.", "pron": "igeo hwanbulhago sipeoseo wasseoyo.", "trans": "I'm here to return this.", "next": "reason" },
+        { "id": "greet_3", "text": "이 니트에 구멍이 났어요.", "pron": "i niteue gumeong-i nasseoyo.", "trans": "There's a hole in this sweater.", "next": "defect" }
+      ]
+    },
+    {
+      "id": "reason",
+      "stage": "이유 설명",
+      "text": "네, 혹시 무슨 문제가 있으세요?",
+      "pron": "ne, hoksi museun munjega isseuseyo?",
+      "trans": "Sure. Is there a problem with it?",
+      "replies": [
+        { "id": "reason_1", "text": "사이즈가 안 맞아요.", "pron": "saijeuga an majayo.", "trans": "It doesn't fit.", "next": "receipt" },
+        { "id": "reason_2", "text": "아니요, 그냥 마음이 바뀌었어요.", "pron": "aniyo, geunyang ma-eumi bakkwieosseoyo.", "trans": "No, I just changed my mind.", "next": "receipt" }
+      ]
+    },
+    {
+      "id": "defect",
+      "stage": "불량 확인",
+      "text": "아, 정말 죄송합니다. 영수증 가지고 계세요?",
+      "pron": "a, jeongmal joesonghamnida. yeongsujeung gajigo gyeseyo?",
+      "trans": "Oh, I'm really sorry. Do you have the receipt?",
+      "replies": [
+        { "id": "defect_1", "text": "네, 여기 있어요.", "pron": "ne, yeogi isseoyo.", "trans": "Yes, here it is.", "next": "options" },
+        { "id": "defect_2", "text": "아니요, 잃어버렸어요.", "pron": "aniyo, ireobeoryeosseoyo.", "trans": "No, I lost it.", "next": "no_receipt" }
+      ]
+    },
+    {
+      "id": "receipt",
+      "stage": "영수증 확인",
+      "text": "네, 영수증 있으세요?",
+      "pron": "ne, yeongsujeung isseuseyo?",
+      "trans": "Okay. Do you have the receipt?",
+      "replies": [
+        { "id": "receipt_1", "text": "네, 여기요.", "pron": "ne, yeogiyo.", "trans": "Yes, here you go.", "next": "options" },
+        { "id": "receipt_2", "text": "죄송한데 영수증이 없어요.", "pron": "joesonghande yeongsujeung-i eopseoyo.", "trans": "Sorry, I don't have the receipt.", "next": "no_receipt" }
+      ]
+    },
+    {
+      "id": "options",
+      "stage": "교환·환불 선택",
+      "text": "감사합니다. 교환해 드릴까요, 환불해 드릴까요?",
+      "pron": "gamsahamnida. gyohwanhae deurilkkayo, hwanbulhae deurilkkayo?",
+      "trans": "Thank you. Would you like an exchange or a refund?",
+      "replies": [
+        { "id": "options_1", "text": "한 사이즈 큰 걸로 바꿀 수 있어요?", "pron": "han saijeu keun geollo bakkul su isseoyo?", "trans": "Can I swap it for one size up?", "next": "size" },
+        { "id": "options_2", "text": "다른 색깔도 있어요?", "pron": "dareun saekkkaldo isseoyo?", "trans": "Do you have other colors?", "next": "colour" },
+        { "id": "options_3", "text": "환불해 주세요.", "pron": "hwanbulhae juseyo.", "trans": "A refund, please.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "size",
+      "stage": "사이즈 교환",
+      "text": "잠시만요... 죄송해요, 지금 라지 사이즈가 품절이에요.",
+      "pron": "jamsimanyo... joesonghaeyo, jigeum raji saijeuga pumjeorieyo.",
+      "trans": "One moment... Sorry, the large is sold out right now.",
+      "replies": [
+        { "id": "size_1", "text": "다른 색깔로 라지는 있어요?", "pron": "dareun saekkkallo rajineun isseoyo?", "trans": "Is there a large in another color?", "next": "colour" },
+        { "id": "size_2", "text": "언제 다시 들어와요?", "pron": "eonje dasi deureowayo?", "trans": "When will it be back in stock?", "next": "restock" },
+        { "id": "size_3", "text": "그럼 그냥 환불할게요.", "pron": "geureom geunyang hwanbulhalgeyo.", "trans": "Then I'll just get a refund.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "restock",
+      "stage": "재입고 문의",
+      "text": "다음 주에 들어올 거예요. 들어오면 연락드릴까요?",
+      "pron": "da-eum jue deureool geoyeyo. deureomyeon yeollakdeurilkkayo?",
+      "trans": "It should come in next week. Shall we call you when it arrives?",
+      "replies": [
+        { "id": "restock_1", "text": "네, 연락 주세요. 제 번호 알려 드릴게요.", "pron": "ne, yeollak juseyo. je beonho allyeo deurilgeyo.", "trans": "Yes, please call me. I'll give you my number.", "next": "end_wait" },
+        { "id": "restock_2", "text": "아니요, 그냥 환불할게요.", "pron": "aniyo, geunyang hwanbulhalgeyo.", "trans": "No, I'll just get a refund.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "colour",
+      "stage": "색상 교환",
+      "text": "검정이랑 네이비가 있어요. 어떤 걸로 하시겠어요?",
+      "pron": "geomjeong-irang neibiga isseoyo. eotteon geollo hasigesseoyo?",
+      "trans": "We have black and navy. Which one would you like?",
+      "replies": [
+        { "id": "colour_1", "text": "검정으로 주세요.", "pron": "geomjeong-euro juseyo.", "trans": "Black, please.", "next": "try_on" },
+        { "id": "colour_2", "text": "네이비로 할게요.", "pron": "neibiro halgeyo.", "trans": "I'll go with navy.", "next": "try_on" }
+      ]
+    },
+    {
+      "id": "try_on",
+      "stage": "입어 보기",
+      "text": "여기 있습니다. 한번 입어 보시겠어요? 탈의실은 저쪽이에요.",
+      "pron": "yeogi itseumnida. hanbeon ibeo bosigesseoyo? taruisireun jeojjogieyo.",
+      "trans": "Here you go. Would you like to try it on? The fitting room is over there.",
+      "replies": [
+        { "id": "try_on_1", "text": "네, 입어 볼게요.", "pron": "ne, ibeo bolgeyo.", "trans": "Sure, I'll try it on.", "next": "fits" },
+        { "id": "try_on_2", "text": "괜찮아요. 그냥 이걸로 할게요.", "pron": "gwaenchanayo. geunyang igeollo halgeyo.", "trans": "That's okay. I'll just take this one.", "next": "end_exchange" }
+      ]
+    },
+    {
+      "id": "fits",
+      "stage": "착용 확인",
+      "text": "어떠세요? 잘 맞으세요?",
+      "pron": "eotteoseyo? jal majeuseyo?",
+      "trans": "How is it? Does it fit?",
+      "replies": [
+        { "id": "fits_1", "text": "딱 맞아요.", "pron": "ttak majayo.", "trans": "It fits perfectly.", "next": "end_exchange" },
+        { "id": "fits_2", "text": "음, 그래도 안 맞네요. 그냥 환불해 주실 수 있어요?", "pron": "eum, geuraedo an manneyo. geunyang hwanbulhae jusil su isseoyo?", "trans": "Hmm, it still doesn't fit. Could I just get a refund?", "next": "refund" }
+      ]
+    },
+    {
+      "id": "refund",
+      "stage": "환불 처리",
+      "text": "네, 결제하신 카드로 환불해 드릴게요. 카드 주시겠어요?",
+      "pron": "ne, gyeoljehasin kadeuro hwanbulhae deurilgeyo. kadeu jusigesseoyo?",
+      "trans": "Sure, we'll refund it to the card you paid with. Could I have the card?",
+      "replies": [
+        { "id": "refund_1", "text": "네, 여기 있어요.", "pron": "ne, yeogi isseoyo.", "trans": "Sure, here it is.", "next": "end_refund" },
+        { "id": "refund_2", "text": "여기요. 환불은 언제 돼요?", "pron": "yeogiyo. hwanbureun eonje dwaeyo?", "trans": "Here. When will the refund go through?", "next": "end_refund" }
+      ]
+    },
+    {
+      "id": "no_receipt",
+      "stage": "영수증 없음",
+      "text": "영수증이 없으면 환불은 어려워요. 대신 적립금으로 드릴 수 있어요.",
+      "pron": "yeongsujeung-i eopseumyeon hwanbureun eoryeowoyo. daesin jeongnipgeumeuro deuril su isseoyo.",
+      "trans": "Without a receipt we can't do a refund. But we can give you store credit.",
+      "replies": [
+        { "id": "no_receipt_1", "text": "네, 적립금도 괜찮아요.", "pron": "ne, jeongnipgeumdo gwaenchanayo.", "trans": "Okay, store credit is fine.", "next": "end_credit" },
+        { "id": "no_receipt_2", "text": "제 카드로 조회해 주실 수 있어요?", "pron": "je kadeuro johoehae jusil su isseoyo?", "trans": "Could you look it up with my card?", "next": "card_lookup" }
+      ]
+    },
+    {
+      "id": "card_lookup",
+      "stage": "결제 내역 조회",
+      "text": "네, 한번 볼게요... 아, 찾았어요. 그럼 교환하실래요, 환불하실래요?",
+      "pron": "ne, hanbeon bolgeyo... a, chajasseoyo. geureom gyohwanhasillaeyo, hwanbulhasillaeyo?",
+      "trans": "Sure, let me check... Oh, found it. So, exchange or refund?",
+      "replies": [
+        { "id": "card_lookup_1", "text": "한 사이즈 큰 걸로 바꿔 주세요.", "pron": "han saijeu keun geollo bakkwo juseyo.", "trans": "Please swap it for one size up.", "next": "size" },
+        { "id": "card_lookup_2", "text": "환불해 주세요.", "pron": "hwanbulhae juseyo.", "trans": "A refund, please.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "end_exchange",
+      "stage": "마무리",
+      "text": "교환 다 됐습니다. 새 영수증 여기 있어요. 감사합니다!",
+      "pron": "gyohwan da dwaetseumnida. sae yeongsujeung yeogi isseoyo. gamsahamnida!",
+      "trans": "Your exchange is done. Here's your new receipt. Thank you!",
+      "replies": []
+    },
+    {
+      "id": "end_refund",
+      "stage": "마무리",
+      "text": "환불 처리됐습니다. 카드사에 따라 삼 일에서 오 일 정도 걸려요. 안녕히 가세요!",
+      "pron": "hwanbul cheoridwaetseumnida. kadeusa-e ttara sam ireseo o il jeongdo geollyeoyo. annyeonghi gaseyo!",
+      "trans": "Your refund is done. It takes about three to five days, depending on your card company. Goodbye!",
+      "replies": []
+    },
+    {
+      "id": "end_credit",
+      "stage": "마무리",
+      "text": "적립금 넣어 드렸어요. 일 년 동안 쓰실 수 있어요. 감사합니다!",
+      "pron": "jeongnipgeum neoeo deuryeosseoyo. il nyeon dong-an sseusil su isseoyo. gamsahamnida!",
+      "trans": "I've added the store credit. You can use it for a year. Thank you!",
+      "replies": []
+    },
+    {
+      "id": "end_wait",
+      "stage": "마무리",
+      "text": "네, 들어오면 바로 연락드릴게요. 안녕히 가세요!",
+      "pron": "ne, deureomyeon baro yeollakdeurilgeyo. annyeonghi gaseyo!",
+      "trans": "Sure, we'll call you as soon as it comes in. Goodbye!",
+      "replies": []
+    }
+  ]
+}

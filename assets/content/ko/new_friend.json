@@ -1,0 +1,180 @@
+{
+  "id": "new_friend",
+  "lang": "ko",
+  "start": "hello",
+  "nodes": [
+    {
+      "id": "hello",
+      "stage": "인사",
+      "text": "안녕하세요! 처음 보는 것 같은데, 이름이 뭐예요?",
+      "pron": "annyeonghaseyo! cheoeum boneun geot gateunde, ireumi mwoyeyo?",
+      "trans": "Hi! I don't think we've met. What's your name?",
+      "replies": [
+        { "id": "hello_1", "text": "안녕하세요, 김민준이에요. 반가워요.", "pron": "annyeonghaseyo, gimminjunieyo. bangawoyo.", "trans": "Hi, I'm Kim Minjun. Nice to meet you.", "next": "where_from" },
+        { "id": "hello_2", "text": "민준이에요. 여기는 오늘 처음 왔어요.", "pron": "minjunieyo. yeogineun oneul cheoeum wasseoyo.", "trans": "I'm Minjun. It's my first time here.", "next": "where_from" }
+      ]
+    },
+    {
+      "id": "where_from",
+      "stage": "인사",
+      "text": "민준 씨, 반가워요! 고향이 어디예요?",
+      "pron": "minjun ssi, bangawoyo! gohyang-i eodiyeyo?",
+      "trans": "Nice to meet you, Minjun! Where are you from?",
+      "replies": [
+        { "id": "where_from_1", "text": "서울이에요. 쭉 서울에서 살았어요.", "pron": "seourieyo. jjuk seoureseo sarasseoyo.", "trans": "Seoul. I've always lived in Seoul.", "next": "job" },
+        { "id": "where_from_2", "text": "부산이요. 지난달에 서울로 이사 왔어요.", "pron": "busan-iyo. jinandare seoullo isa wasseoyo.", "trans": "Busan. I moved to Seoul last month.", "next": "new_in_town" }
+      ]
+    },
+    {
+      "id": "new_in_town",
+      "stage": "자기소개",
+      "text": "아, 그렇구나! 서울 생활은 어때요?",
+      "pron": "a, geureokuna! seoul saenghwareun eottaeyo?",
+      "trans": "Oh, I see! How do you like life in Seoul?",
+      "replies": [
+        { "id": "new_in_town_1", "text": "너무 좋아요. 맛집이 진짜 많아요!", "pron": "neomu joayo. matjibi jinjja manayo!", "trans": "I love it. There are so many good restaurants!", "next": "job" },
+        { "id": "new_in_town_2", "text": "좋은데, 아직 친구가 별로 없어요.", "pron": "joeunde, ajik chin-guga byeollo eopseoyo.", "trans": "It's nice, but I don't have many friends yet.", "next": "job" }
+      ]
+    },
+    {
+      "id": "job",
+      "stage": "자기소개",
+      "text": "민준 씨는 무슨 일 해요? 저는 디자인 일 해요.",
+      "pron": "minjun ssineun museun il haeyo? jeoneun dijain il haeyo.",
+      "trans": "What do you do, Minjun? I work in design.",
+      "replies": [
+        { "id": "job_1", "text": "대학생이에요. 경영학 전공해요.", "pron": "daehaksaeng-ieyo. gyeong-yeonghak jeon-gonghaeyo.", "trans": "I'm a college student. I major in business.", "next": "hobbies" },
+        { "id": "job_2", "text": "IT 회사 다녀요.", "pron": "aiti hoesa danyeoyo.", "trans": "I work at an IT company.", "next": "hobbies" },
+        { "id": "job_3", "text": "영어 배우고 싶어서 언어 교환하러 왔어요.", "pron": "yeong-eo baeugo sipeoseo eoneo gyohwanhareo wasseoyo.", "trans": "I want to learn English, so I came for the language exchange.", "next": "hobbies" }
+      ]
+    },
+    {
+      "id": "hobbies",
+      "stage": "취미",
+      "text": "오, 멋있다! 쉬는 날에는 보통 뭐 해요?",
+      "pron": "o, meositda! swineun nareneun botong mwo haeyo?",
+      "trans": "Oh, cool! What do you usually do on your days off?",
+      "replies": [
+        { "id": "hobbies_1", "text": "운동 좋아해요. 축구 자주 해요.", "pron": "undong joahaeyo. chukgu jaju haeyo.", "trans": "I like sports. I play soccer a lot.", "next": "sports" },
+        { "id": "hobbies_2", "text": "영화 많이 봐요.", "pron": "yeonghwa mani bwayo.", "trans": "I watch a lot of movies.", "next": "movies" },
+        { "id": "hobbies_3", "text": "요리하는 거 좋아해요. 주로 한식이요.", "pron": "yorihaneun geo joahaeyo. juro hansigiyo.", "trans": "I like cooking. Mostly Korean food.", "next": "cooking" }
+      ]
+    },
+    {
+      "id": "sports",
+      "stage": "취미",
+      "text": "와, 저도요! 친구들이랑 주말마다 축구하는데, 언제 같이 할래요?",
+      "pron": "wa, jeodoyo! chin-gudeurirang jumalmada chukguhaneunde, eonje gachi hallaeyo?",
+      "trans": "Wow, me too! I play with friends every weekend. Want to join us sometime?",
+      "replies": [
+        { "id": "sports_1", "text": "좋아요, 꼭 같이 해요!", "pron": "joayo, kkok gachi haeyo!", "trans": "Sure, let's definitely play together!", "next": "plan_day" },
+        { "id": "sports_2", "text": "음, 저 잘 못하는데요.", "pron": "eum, jeo jal motaneundeyo.", "trans": "Hmm, I'm not very good, though.", "next": "sports_easy" }
+      ]
+    },
+    {
+      "id": "sports_easy",
+      "stage": "취미",
+      "text": "괜찮아요, 그냥 재미로 하는 거예요. 다들 잘 못해요!",
+      "pron": "gwaenchanayo, geunyang jaemiro haneun geoyeyo. dadeul jal motaeyo!",
+      "trans": "Don't worry, it's just for fun. None of us are very good!",
+      "replies": [
+        { "id": "sports_easy_1", "text": "하하, 그럼 저도 낄게요!", "pron": "haha, geureom jeodo kkilgeyo!", "trans": "Haha, then count me in!", "next": "plan_day" },
+        { "id": "sports_easy_2", "text": "한번 생각해 볼게요.", "pron": "hanbeon saenggakae bolgeyo.", "trans": "Let me think about it.", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "movies",
+      "stage": "취미",
+      "text": "저도 영화 진짜 좋아해요! 어떤 영화 좋아해요?",
+      "pron": "jeodo yeonghwa jinjja joahaeyo! eotteon yeonghwa joahaeyo?",
+      "trans": "I really love movies too! What kind of movies do you like?",
+      "replies": [
+        { "id": "movies_1", "text": "액션 영화요!", "pron": "aeksyeon yeonghwayo!", "trans": "Action movies!", "next": "movie_invite" },
+        { "id": "movies_2", "text": "코미디 좋아해요. 웃긴 게 좋아요.", "pron": "komidi joahaeyo. utgin ge joayo.", "trans": "I like comedies. I like funny stuff.", "next": "movie_invite" }
+      ]
+    },
+    {
+      "id": "movie_invite",
+      "stage": "약속",
+      "text": "요즘 재밌는 영화 하던데, 같이 보러 갈래요?",
+      "pron": "yojeum jaeminneun yeonghwa hadeonde, gachi boreo gallaeyo?",
+      "trans": "There's a fun movie out these days. Want to go see it together?",
+      "replies": [
+        { "id": "movie_invite_1", "text": "좋아요! 언제요?", "pron": "joayo! eonjeyo?", "trans": "Sounds good! When?", "next": "plan_day" },
+        { "id": "movie_invite_2", "text": "가고 싶은데, 이번 주는 좀 바빠요.", "pron": "gago sipeunde, ibeon juneun jom bappayo.", "trans": "I'd love to, but I'm a bit busy this week.", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "cooking",
+      "stage": "취미",
+      "text": "진짜요? 저 요리 완전 못하는데, 김치찌개 만드는 법 좀 알려 줄래요?",
+      "pron": "jinjjayo? jeo yori wanjeon motaneunde, gimchijjigae mandeuneun beop jom allyeo jullaeyo?",
+      "trans": "Really? I'm terrible at cooking. Could you show me how to make kimchi stew?",
+      "replies": [
+        { "id": "cooking_1", "text": "그럼요! 언제 같이 만들어요.", "pron": "geureomyo! eonje gachi mandeureoyo.", "trans": "Of course! Let's make it together sometime.", "next": "plan_day" },
+        { "id": "cooking_2", "text": "좋아요. 진짜 쉬워요!", "pron": "joayo. jinjja swiwoyo!", "trans": "Sure. It's really easy!", "next": "plan_day" }
+      ]
+    },
+    {
+      "id": "plan_day",
+      "stage": "약속",
+      "text": "잘됐다! 이번 주 토요일에 시간 돼요?",
+      "pron": "jaldwaetda! ibeon ju toyoire sigan dwaeyo?",
+      "trans": "Great! Are you free this Saturday?",
+      "replies": [
+        { "id": "plan_day_1", "text": "네, 토요일 괜찮아요.", "pron": "ne, toyoil gwaenchanayo.", "trans": "Yes, Saturday is fine.", "next": "plan_time" },
+        { "id": "plan_day_2", "text": "토요일은 좀 어려워요. 일요일은 어때요?", "pron": "toyoireun jom eoryeowoyo. iryoireun eottaeyo?", "trans": "Saturday is a bit hard for me. How about Sunday?", "next": "plan_time" },
+        { "id": "plan_day_3", "text": "아직 잘 모르겠어요. 나중에 연락해도 돼요?", "pron": "ajik jal moreugesseoyo. najung-e yeollakaedo dwaeyo?", "trans": "I'm not sure yet. Can I get back to you later?", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "plan_time",
+      "stage": "약속",
+      "text": "그래요! 그럼 오후 세 시 어때요?",
+      "pron": "geuraeyo! geureom ohu se si eottaeyo?",
+      "trans": "Okay! Then how about three in the afternoon?",
+      "replies": [
+        { "id": "plan_time_1", "text": "좋아요. 세 시에 봐요!", "pron": "joayo. se sie bwayo!", "trans": "Sounds good. See you at three!", "next": "contact" },
+        { "id": "plan_time_2", "text": "조금 늦게 만나도 돼요? 다섯 시쯤이요.", "pron": "jogeum neutge mannado dwaeyo? daseot sijjeumiyo.", "trans": "Could we meet a little later? Around five.", "next": "contact" }
+      ]
+    },
+    {
+      "id": "contact",
+      "stage": "연락처",
+      "text": "딱 좋네요! 그럼 우리 카톡 친구 추가해요.",
+      "pron": "ttak jonneyo! geureom uri katok chin-gu chugahaeyo.",
+      "trans": "Perfect! Then let's add each other on KakaoTalk.",
+      "replies": [
+        { "id": "contact_1", "text": "네, 제 전화번호 알려 줄게요.", "pron": "ne, je jeonhwabeonho allyeo julgeyo.", "trans": "Sure, I'll give you my phone number.", "next": "end_plan" },
+        { "id": "contact_2", "text": "인스타도 해요? 맞팔해요!", "pron": "inseutado haeyo? matpalhaeyo!", "trans": "Are you on Instagram too? Let's follow each other!", "next": "end_plan" }
+      ]
+    },
+    {
+      "id": "swap_numbers",
+      "stage": "연락처",
+      "text": "괜찮아요! 그럼 일단 번호 교환해요. 언제든 연락 줘요.",
+      "pron": "gwaenchanayo! geureom ildan beonho gyohwanhaeyo. eonjedeun yeollak jwoyo.",
+      "trans": "No worries! Let's swap numbers for now, then. Message me anytime.",
+      "replies": [
+        { "id": "swap_numbers_1", "text": "네, 여기 제 번호예요.", "pron": "ne, yeogi je beonhoyeyo.", "trans": "Sure, here's my number.", "next": "end_numbers" },
+        { "id": "swap_numbers_2", "text": "좋아요. 이따 문자할게요.", "pron": "joayo. itta munjahalgeyo.", "trans": "Sounds good. I'll text you later.", "next": "end_numbers" }
+      ]
+    },
+    {
+      "id": "end_plan",
+      "stage": "마무리",
+      "text": "그럼 주말에 봐요! 오늘 만나서 진짜 반가웠어요.",
+      "pron": "geureom jumare bwayo! oneul mannaseo jinjja bangawosseoyo.",
+      "trans": "See you this weekend, then! It was really nice meeting you today.",
+      "replies": []
+    },
+    {
+      "id": "end_numbers",
+      "stage": "마무리",
+      "text": "민준 씨, 오늘 얘기 재밌었어요. 또 연락해요!",
+      "pron": "minjun ssi, oneul yaegi jaemisseosseoyo. tto yeollakaeyo!",
+      "trans": "Minjun, I had fun talking today. Let's keep in touch!",
+      "replies": []
+    }
+  ]
+}

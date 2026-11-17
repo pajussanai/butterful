@@ -1,0 +1,180 @@
+{
+  "id": "client_call",
+  "lang": "fr",
+  "start": "greeting",
+  "nodes": [
+    {
+      "id": "greeting",
+      "stage": "전화 받기",
+      "text": "Bonjour, ici Sunrise Commerce. Je suis bien au service commercial ?",
+      "pron": "봉주르, 이씨 선라이즈 코메르스. 주 쉬 비앵 오 세르비스 코메르시알?",
+      "trans": "안녕하세요, 선라이즈 코메르스입니다. 영업부 맞나요?",
+      "replies": [
+        { "id": "greeting_1", "text": "Oui, service commercial, Minjun Kim à l'appareil.", "pron": "위, 세르비스 코메르시알, 민준 킴 아 라파레이.", "trans": "네, 영업부 김민준입니다.", "next": "ask_manager" },
+        { "id": "greeting_2", "text": "Oui, c'est bien ça. Que puis-je faire pour vous ?", "pron": "위, 세 비앵 사. 크 퓌주 페르 푸르 부?", "trans": "네, 맞습니다. 무엇을 도와드릴까요?", "next": "ask_manager" },
+        { "id": "greeting_3", "text": "Pardon, vous pouvez répéter, s'il vous plaît ?", "pron": "파르동, 부 푸베 레페테, 실 부 플레?", "trans": "죄송하지만, 다시 말씀해 주시겠어요?", "next": "repeat_name" }
+      ]
+    },
+    {
+      "id": "repeat_name",
+      "stage": "전화 받기",
+      "text": "Oui, c'est Sunrise Commerce. C'est bien le service commercial ?",
+      "pron": "위, 세 선라이즈 코메르스. 세 비앵 르 세르비스 코메르시알?",
+      "trans": "네, 선라이즈 코메르스입니다. 영업부 맞으시죠?",
+      "replies": [
+        { "id": "repeat_name_1", "text": "Oui, tout à fait. Minjun Kim à l'appareil.", "pron": "위, 투 타 페. 민준 킴 아 라파레이.", "trans": "네, 맞습니다. 김민준입니다.", "next": "ask_manager" },
+        { "id": "repeat_name_2", "text": "Oui, excusez-moi. Je vous écoute.", "pron": "위, 엑스퀴제무아. 주 부 제쿠트.", "trans": "네, 죄송합니다. 말씀하세요.", "next": "ask_manager" }
+      ]
+    },
+    {
+      "id": "ask_manager",
+      "stage": "담당자 찾기",
+      "text": "Merci. Je pourrais parler au responsable commercial, s'il vous plaît ?",
+      "pron": "메르시. 주 푸레 파를레 오 레스퐁사블 코메르시알, 실 부 플레?",
+      "trans": "감사합니다. 영업 담당자님과 통화할 수 있을까요?",
+      "replies": [
+        { "id": "ask_manager_1", "text": "C'est à quel sujet ?", "pron": "세 타 켈 쉬제?", "trans": "어떤 일로 전화하셨나요?", "next": "purpose" },
+        { "id": "ask_manager_2", "text": "Je suis désolé, le responsable n'est pas à son bureau.", "pron": "주 쉬 데졸레, 르 레스퐁사블 네 파 자 송 뷔로.", "trans": "죄송합니다, 담당자님이 지금 자리에 안 계세요.", "next": "not_at_desk" },
+        { "id": "ask_manager_3", "text": "Je suis désolé, le responsable est en réunion.", "pron": "주 쉬 데졸레, 르 레스퐁사블 에 탕 레위니옹.", "trans": "죄송합니다, 담당자님은 지금 회의 중이세요.", "next": "not_at_desk" }
+      ]
+    },
+    {
+      "id": "not_at_desk",
+      "stage": "부재 안내",
+      "text": "D'accord. Vous savez quand le responsable sera de retour ?",
+      "pron": "다코르. 부 사베 캉 르 레스퐁사블 스라 드 르투르?",
+      "trans": "그렇군요. 담당자님이 언제 돌아오시는지 아세요?",
+      "replies": [
+        { "id": "not_at_desk_1", "text": "Dans une heure environ. Je peux prendre un message ?", "pron": "당 쥐 뇌르 앙비롱. 주 푀 프랑드르 앵 메사주?", "trans": "한 시간쯤 후에요. 메시지 남겨 드릴까요?", "next": "take_message" },
+        { "id": "not_at_desk_2", "text": "Seulement cet après-midi. Je peux peut-être vous aider ?", "pron": "쇨르망 세 타프레미디. 주 푀 푀테트르 부 제데?", "trans": "오후에나 돌아오세요. 혹시 제가 도와드릴 수 있을까요?", "next": "purpose" }
+      ]
+    },
+    {
+      "id": "take_message",
+      "stage": "메시지 받기",
+      "text": "Oui, merci. Vous pouvez demander au responsable de rappeler Sunrise Commerce ?",
+      "pron": "위, 메르시. 부 푸베 드망데 오 레스퐁사블 드 라플레 선라이즈 코메르스?",
+      "trans": "네, 감사합니다. 담당자님께 선라이즈 코메르스로 다시 전화 달라고 전해 주시겠어요?",
+      "replies": [
+        { "id": "take_message_1", "text": "Bien sûr. Le responsable a votre numéro ?", "pron": "비앵 쉬르. 르 레스퐁사블 아 보트르 뉘메로?", "trans": "물론이죠. 담당자님이 그쪽 번호를 알고 계신가요?", "next": "number_check" },
+        { "id": "take_message_2", "text": "Bien sûr. C'est à quel sujet ?", "pron": "비앵 쉬르. 세 타 켈 쉬제?", "trans": "물론이죠. 어떤 용건이신가요?", "next": "purpose" }
+      ]
+    },
+    {
+      "id": "number_check",
+      "stage": "메시지 받기",
+      "text": "Oui, le responsable l'a. C'est au sujet du nouveau devis.",
+      "pron": "위, 르 레스퐁사블 라. 세 토 쉬제 뒤 누보 드비.",
+      "trans": "네, 담당자님이 알고 계세요. 새 견적서 건이에요.",
+      "replies": [
+        { "id": "number_check_1", "text": "Très bien. Je transmets le message.", "pron": "트레 비앵. 주 트랑스메 르 메사주.", "trans": "알겠습니다. 메시지 전해 드릴게요.", "next": "end_callback" },
+        { "id": "number_check_2", "text": "En fait, je peux vous envoyer le devis moi-même.", "pron": "앙 페트, 주 푀 부 장부아예 르 드비 무아멤.", "trans": "사실 견적서는 제가 직접 보내 드릴 수 있어요.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "purpose",
+      "stage": "용건 확인",
+      "text": "Nous avons besoin du devis mis à jour pour notre commande.",
+      "pron": "누 자봉 브주앵 뒤 드비 미 자 주르 푸르 노트르 코망드.",
+      "trans": "저희 주문 건의 수정된 견적서가 필요해서요.",
+      "replies": [
+        { "id": "purpose_1", "text": "Je peux vous l'envoyer.", "pron": "주 푀 부 랑부아예.", "trans": "그건 제가 보내 드릴 수 있어요.", "next": "confirm_email" },
+        { "id": "purpose_2", "text": "C'est pour quel produit ?", "pron": "세 푸르 켈 프로뒤?", "trans": "어떤 제품 견적서인가요?", "next": "product" },
+        { "id": "purpose_3", "text": "Je vais demander au responsable de vous rappeler.", "pron": "주 베 드망데 오 레스퐁사블 드 부 라플레.", "trans": "담당자님께 다시 전화드리라고 할게요.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "product",
+      "stage": "용건 확인",
+      "text": "Les chaises de bureau. Nous les avons commandées la semaine dernière.",
+      "pron": "레 셰즈 드 뷔로. 누 레 자봉 코망데 라 스멘 데르니에르.",
+      "trans": "사무용 의자요. 지난주에 주문했어요.",
+      "replies": [
+        { "id": "product_1", "text": "D'accord. Il vous le faut pour quand ?", "pron": "다코르. 일 부 르 포 푸르 캉?", "trans": "알겠습니다. 언제까지 필요하세요?", "next": "deadline" },
+        { "id": "product_2", "text": "Très bien. Je vous l'envoie.", "pron": "트레 비앵. 주 부 랑부아.", "trans": "알겠습니다. 보내 드릴게요.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "deadline",
+      "stage": "기한 확인",
+      "text": "Avant vendredi, si possible.",
+      "pron": "아방 방드르디, 시 포시블.",
+      "trans": "가능하면 금요일 전에요.",
+      "replies": [
+        { "id": "deadline_1", "text": "Avant vendredi. Pas de problème.", "pron": "아방 방드르디. 파 드 프로블렘.", "trans": "금요일 전까지요. 문제없습니다.", "next": "confirm_email" },
+        { "id": "deadline_2", "text": "Vendredi, ça risque d'être difficile. Lundi, ça vous va ?", "pron": "방드르디, 사 리스크 데트르 디피실. 랭디, 사 부 바?", "trans": "금요일은 어려울 수도 있어요. 월요일도 괜찮으세요?", "next": "monday" }
+      ]
+    },
+    {
+      "id": "monday",
+      "stage": "기한 확인",
+      "text": "Lundi matin, c'est bon. Mais pas plus tard, s'il vous plaît.",
+      "pron": "랭디 마탱, 세 봉. 메 파 플뤼 타르, 실 부 플레.",
+      "trans": "월요일 오전이면 괜찮아요. 하지만 그보다 늦으면 안 돼요.",
+      "replies": [
+        { "id": "monday_1", "text": "Lundi matin. C'est noté.", "pron": "랭디 마탱. 세 노테.", "trans": "월요일 오전이요. 알겠습니다.", "next": "confirm_email" },
+        { "id": "monday_2", "text": "Merci de votre compréhension.", "pron": "메르시 드 보트르 콩프레앙시옹.", "trans": "양해해 주셔서 감사합니다.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "confirm_email",
+      "stage": "이메일 확인",
+      "text": "Parfait, merci. Vous pouvez me l'envoyer par e-mail ?",
+      "pron": "파르페, 메르시. 부 푸베 므 랑부아예 파르 이메일?",
+      "trans": "좋아요, 감사합니다. 이메일로 보내 주시겠어요?",
+      "replies": [
+        { "id": "confirm_email_1", "text": "Bien sûr. Quelle est votre adresse e-mail ?", "pron": "비앵 쉬르. 켈 레 보트르 아드레스 이메일?", "trans": "물론이죠. 이메일 주소가 어떻게 되세요?", "next": "email_spell" },
+        { "id": "confirm_email_2", "text": "Bien sûr. À la même adresse que la dernière fois ?", "pron": "비앵 쉬르. 아 라 멤 아드레스 크 라 데르니에르 푸아?", "trans": "물론이죠. 지난번과 같은 주소로 보내면 될까요?", "next": "email_same" }
+      ]
+    },
+    {
+      "id": "email_spell",
+      "stage": "이메일 확인",
+      "text": "C'est sales arobase sunrise point com.",
+      "pron": "세 세일즈 아로바즈 선라이즈 푸앵 콤.",
+      "trans": "sales@sunrise.com이에요.",
+      "replies": [
+        { "id": "email_spell_1", "text": "Sales arobase sunrise point com, c'est bien ça ?", "pron": "세일즈 아로바즈 선라이즈 푸앵 콤, 세 비앵 사?", "trans": "sales@sunrise.com, 맞나요?", "next": "email_ok" },
+        { "id": "email_spell_2", "text": "Je répète : sales arobase sunrise point com.", "pron": "주 레페트: 세일즈 아로바즈 선라이즈 푸앵 콤.", "trans": "다시 확인할게요. sales@sunrise.com.", "next": "email_ok" }
+      ]
+    },
+    {
+      "id": "email_ok",
+      "stage": "약속하기",
+      "text": "Oui, c'est ça. Merci.",
+      "pron": "위, 세 사. 메르시.",
+      "trans": "네, 맞아요. 감사합니다.",
+      "replies": [
+        { "id": "email_ok_1", "text": "Je vous l'envoie cet après-midi.", "pron": "주 부 랑부아 세 타프레미디.", "trans": "오늘 오후에 보내 드릴게요.", "next": "end_sent" },
+        { "id": "email_ok_2", "text": "Je vérifie avec le responsable et je vous rappelle.", "pron": "주 베리피 아베크 르 레스퐁사블 에 주 부 라펠.", "trans": "담당자님께 확인하고 다시 전화드릴게요.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "email_same",
+      "stage": "약속하기",
+      "text": "Oui, la même adresse, s'il vous plaît.",
+      "pron": "위, 라 멤 아드레스, 실 부 플레.",
+      "trans": "네, 같은 주소로 부탁드려요.",
+      "replies": [
+        { "id": "email_same_1", "text": "Entendu. Je vous l'envoie cet après-midi.", "pron": "앙탕뒤. 주 부 랑부아 세 타프레미디.", "trans": "알겠습니다. 오늘 오후에 보내 드릴게요.", "next": "end_sent" },
+        { "id": "email_same_2", "text": "Entendu. Je vérifie d'abord avec le responsable et je vous rappelle.", "pron": "앙탕뒤. 주 베리피 다보르 아베크 르 레스퐁사블 에 주 부 라펠.", "trans": "알겠습니다. 먼저 담당자님께 확인하고 다시 전화드릴게요.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "end_sent",
+      "stage": "마무리",
+      "text": "Parfait. Ce sera tout pour l'instant. Merci pour votre aide. Au revoir.",
+      "pron": "파르페. 스 스라 투 푸르 랭스탕. 메르시 푸르 보트르 에드. 오 르부아르.",
+      "trans": "좋아요. 지금은 이게 다예요. 도와주셔서 감사합니다. 안녕히 계세요.",
+      "replies": []
+    },
+    {
+      "id": "end_callback",
+      "stage": "마무리",
+      "text": "Merci. J'attends votre appel. Bonne journée, au revoir.",
+      "pron": "메르시. 자탕 보트르 아펠. 본 주르네, 오 르부아르.",
+      "trans": "감사합니다. 전화 기다릴게요. 좋은 하루 보내세요, 안녕히 계세요.",
+      "replies": []
+    }
+  ]
+}

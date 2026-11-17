@@ -1,0 +1,180 @@
+{
+  "id": "client_call",
+  "lang": "zh",
+  "start": "greeting",
+  "nodes": [
+    {
+      "id": "greeting",
+      "stage": "전화 받기",
+      "text": "您好，我是日升贸易的。请问是销售部吗？",
+      "pron": "Nín hǎo, wǒ shì Rìshēng Màoyì de. Qǐngwèn shì xiāoshòu bù ma?\n닌 하오, 워 스 르성 마오이 더. 칭원 스 샤오서우 부 마?",
+      "trans": "안녕하세요, 일승무역입니다. 영업부인가요?",
+      "replies": [
+        { "id": "greeting_1", "text": "是的，我是销售部的金民俊。", "pron": "Shì de, wǒ shì xiāoshòu bù de Jīn Mínjùn.\n스 더, 워 스 샤오서우 부 더 진 민쥔.", "trans": "네, 영업부 김민준입니다.", "next": "ask_manager" },
+        { "id": "greeting_2", "text": "对，您好。请问有什么事吗？", "pron": "Duì, nín hǎo. Qǐngwèn yǒu shénme shì ma?\n두이, 닌 하오. 칭원 여우 선머 스 마?", "trans": "네, 안녕하세요. 무슨 일이신가요?", "next": "ask_manager" },
+        { "id": "greeting_3", "text": "不好意思，您能再说一遍吗？", "pron": "Bù hǎoyìsi, nín néng zài shuō yí biàn ma?\n부 하오이쓰, 닌 넝 짜이 숴 이 볜 마?", "trans": "죄송하지만, 다시 한번 말씀해 주시겠어요?", "next": "repeat_name" }
+      ]
+    },
+    {
+      "id": "repeat_name",
+      "stage": "전화 받기",
+      "text": "我是日升贸易的。请问这里是销售部吗？",
+      "pron": "Wǒ shì Rìshēng Màoyì de. Qǐngwèn zhèlǐ shì xiāoshòu bù ma?\n워 스 르성 마오이 더. 칭원 저리 스 샤오서우 부 마?",
+      "trans": "일승무역입니다. 거기 영업부 맞나요?",
+      "replies": [
+        { "id": "repeat_name_1", "text": "是的，我是金民俊。", "pron": "Shì de, wǒ shì Jīn Mínjùn.\n스 더, 워 스 진 민쥔.", "trans": "네, 김민준입니다.", "next": "ask_manager" },
+        { "id": "repeat_name_2", "text": "是的，不好意思。您请说。", "pron": "Shì de, bù hǎoyìsi. Nín qǐng shuō.\n스 더, 부 하오이쓰. 닌 칭 숴.", "trans": "네, 죄송합니다. 말씀하세요.", "next": "ask_manager" }
+      ]
+    },
+    {
+      "id": "ask_manager",
+      "stage": "담당자 찾기",
+      "text": "请问销售经理在吗？",
+      "pron": "Qǐngwèn xiāoshòu jīnglǐ zài ma?\n칭원 샤오서우 징리 짜이 마?",
+      "trans": "영업 매니저님 계신가요?",
+      "replies": [
+        { "id": "ask_manager_1", "text": "请问您有什么事？", "pron": "Qǐngwèn nín yǒu shénme shì?\n칭원 닌 여우 선머 스?", "trans": "실례지만 무슨 일이신가요?", "next": "purpose" },
+        { "id": "ask_manager_2", "text": "不好意思，经理现在不在座位上。", "pron": "Bù hǎoyìsi, jīnglǐ xiànzài bú zài zuòwèi shang.\n부 하오이쓰, 징리 셴짜이 부 짜이 쭤웨이 상.", "trans": "죄송합니다, 매니저님은 지금 자리에 안 계세요.", "next": "not_at_desk" },
+        { "id": "ask_manager_3", "text": "不好意思，经理正在开会。", "pron": "Bù hǎoyìsi, jīnglǐ zhèngzài kāihuì.\n부 하오이쓰, 징리 정짜이 카이후이.", "trans": "죄송합니다, 매니저님은 지금 회의 중이세요.", "next": "not_at_desk" }
+      ]
+    },
+    {
+      "id": "not_at_desk",
+      "stage": "부재 안내",
+      "text": "这样啊。经理大概什么时候回来？",
+      "pron": "Zhèyàng a. Jīnglǐ dàgài shénme shíhou huílai?\n저양 아. 징리 다가이 선머 스허우 후이라이?",
+      "trans": "그렇군요. 매니저님은 대략 언제 돌아오세요?",
+      "replies": [
+        { "id": "not_at_desk_1", "text": "大概一个小时以后。需要我帮您转告吗？", "pron": "Dàgài yí ge xiǎoshí yǐhòu. Xūyào wǒ bāng nín zhuǎngào ma?\n다가이 이 거 샤오스 이허우. 쉬야오 워 방 닌 좐가오 마?", "trans": "한 시간쯤 후에요. 제가 전해 드릴까요?", "next": "take_message" },
+        { "id": "not_at_desk_2", "text": "下午才回来。要不我先帮您看看？", "pron": "Xiàwǔ cái huílai. Yàobù wǒ xiān bāng nín kànkan?\n샤우 차이 후이라이. 야오부 워 셴 방 닌 칸칸?", "trans": "오후에나 돌아오세요. 괜찮으시면 제가 먼저 봐 드릴까요?", "next": "purpose" }
+      ]
+    },
+    {
+      "id": "take_message",
+      "stage": "메시지 받기",
+      "text": "好的，麻烦您让经理给日升贸易回个电话。",
+      "pron": "Hǎo de, máfan nín ràng jīnglǐ gěi Rìshēng Màoyì huí ge diànhuà.\n하오 더, 마판 닌 랑 징리 게이 르성 마오이 후이 거 뎬화.",
+      "trans": "네, 번거로우시겠지만 매니저님께 일승무역으로 전화 한 통 달라고 해 주세요.",
+      "replies": [
+        { "id": "take_message_1", "text": "好的。经理有您的电话号码吗？", "pron": "Hǎo de. Jīnglǐ yǒu nín de diànhuà hàomǎ ma?\n하오 더. 징리 여우 닌 더 뎬화 하오마 마?", "trans": "알겠습니다. 매니저님이 그쪽 전화번호를 알고 계신가요?", "next": "number_check" },
+        { "id": "take_message_2", "text": "好的。请问是什么事呢？", "pron": "Hǎo de. Qǐngwèn shì shénme shì ne?\n하오 더. 칭원 스 선머 스 너?", "trans": "알겠습니다. 실례지만 무슨 일이신가요?", "next": "purpose" }
+      ]
+    },
+    {
+      "id": "number_check",
+      "stage": "메시지 받기",
+      "text": "有的，经理知道。是关于新报价单的事。",
+      "pron": "Yǒu de, jīnglǐ zhīdào. Shì guānyú xīn bàojiàdān de shì.\n여우 더, 징리 즈다오. 스 관위 신 바오자단 더 스.",
+      "trans": "네, 매니저님이 아세요. 새 견적서 건이에요.",
+      "replies": [
+        { "id": "number_check_1", "text": "好的，我会转告经理。", "pron": "Hǎo de, wǒ huì zhuǎngào jīnglǐ.\n하오 더, 워 후이 좐가오 징리.", "trans": "알겠습니다. 매니저님께 전해 드릴게요.", "next": "end_callback" },
+        { "id": "number_check_2", "text": "其实报价单我可以直接发给您。", "pron": "Qíshí bàojiàdān wǒ kěyǐ zhíjiē fā gěi nín.\n치스 바오자단 워 커이 즈제 파 게이 닌.", "trans": "사실 견적서는 제가 직접 보내 드릴 수 있어요.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "purpose",
+      "stage": "용건 확인",
+      "text": "我们需要那笔订单的最新报价单。",
+      "pron": "Wǒmen xūyào nà bǐ dìngdān de zuìxīn bàojiàdān.\n워먼 쉬야오 나 비 딩단 더 쭈이신 바오자단.",
+      "trans": "저희 주문 건의 최신 견적서가 필요해서요.",
+      "replies": [
+        { "id": "purpose_1", "text": "这个我可以发给您。", "pron": "Zhège wǒ kěyǐ fā gěi nín.\n저거 워 커이 파 게이 닌.", "trans": "그건 제가 보내 드릴 수 있어요.", "next": "confirm_email" },
+        { "id": "purpose_2", "text": "请问是哪个产品的报价单？", "pron": "Qǐngwèn shì nǎge chǎnpǐn de bàojiàdān?\n칭원 스 나거 찬핀 더 바오자단?", "trans": "어떤 제품 견적서인가요?", "next": "product" },
+        { "id": "purpose_3", "text": "我让经理给您回电话。", "pron": "Wǒ ràng jīnglǐ gěi nín huí diànhuà.\n워 랑 징리 게이 닌 후이 뎬화.", "trans": "매니저님이 다시 전화드리도록 할게요.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "product",
+      "stage": "용건 확인",
+      "text": "办公椅。我们上周下的单。",
+      "pron": "Bàngōng yǐ. Wǒmen shàng zhōu xià de dān.\n반궁 이. 워먼 상 저우 샤 더 단.",
+      "trans": "사무용 의자요. 지난주에 주문했어요.",
+      "replies": [
+        { "id": "product_1", "text": "好的。您什么时候需要？", "pron": "Hǎo de. Nín shénme shíhou xūyào?\n하오 더. 닌 선머 스허우 쉬야오?", "trans": "알겠습니다. 언제까지 필요하세요?", "next": "deadline" },
+        { "id": "product_2", "text": "明白了，我发给您。", "pron": "Míngbai le, wǒ fā gěi nín.\n밍바이 러, 워 파 게이 닌.", "trans": "알겠습니다. 보내 드릴게요.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "deadline",
+      "stage": "기한 확인",
+      "text": "最好周五之前。",
+      "pron": "Zuìhǎo zhōuwǔ zhīqián.\n쭈이하오 저우우 즈첸.",
+      "trans": "가능하면 금요일 전까지요.",
+      "replies": [
+        { "id": "deadline_1", "text": "周五之前，没问题。", "pron": "Zhōuwǔ zhīqián, méi wèntí.\n저우우 즈첸, 메이 원티.", "trans": "금요일 전까지요. 문제없습니다.", "next": "confirm_email" },
+        { "id": "deadline_2", "text": "周五可能有点儿难。周一可以吗？", "pron": "Zhōuwǔ kěnéng yǒudiǎnr nán. Zhōuyī kěyǐ ma?\n저우우 커넝 여우뎌얼 난. 저우이 커이 마?", "trans": "금요일은 좀 어려울 것 같아요. 월요일도 괜찮으세요?", "next": "monday" }
+      ]
+    },
+    {
+      "id": "monday",
+      "stage": "기한 확인",
+      "text": "周一上午可以。但是不能再晚了。",
+      "pron": "Zhōuyī shàngwǔ kěyǐ. Dànshì bù néng zài wǎn le.\n저우이 상우 커이. 단스 부 넝 짜이 완 러.",
+      "trans": "월요일 오전이면 괜찮아요. 하지만 더 늦으면 안 돼요.",
+      "replies": [
+        { "id": "monday_1", "text": "周一上午，明白了。", "pron": "Zhōuyī shàngwǔ, míngbai le.\n저우이 상우, 밍바이 러.", "trans": "월요일 오전이요. 알겠습니다.", "next": "confirm_email" },
+        { "id": "monday_2", "text": "谢谢您的理解。", "pron": "Xièxie nín de lǐjiě.\n셰셰 닌 더 리제.", "trans": "이해해 주셔서 감사합니다.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "confirm_email",
+      "stage": "이메일 확인",
+      "text": "好的，谢谢。能发到我的邮箱吗？",
+      "pron": "Hǎo de, xièxie. Néng fā dào wǒ de yóuxiāng ma?\n하오 더, 셰셰. 넝 파 다오 워 더 여우샹 마?",
+      "trans": "좋아요, 감사합니다. 제 이메일로 보내 주실 수 있나요?",
+      "replies": [
+        { "id": "confirm_email_1", "text": "可以。请问您的邮箱地址是？", "pron": "Kěyǐ. Qǐngwèn nín de yóuxiāng dìzhǐ shì?\n커이. 칭원 닌 더 여우샹 디즈 스?", "trans": "네. 이메일 주소가 어떻게 되세요?", "next": "email_spell" },
+        { "id": "confirm_email_2", "text": "可以。还是发到上次那个邮箱吗？", "pron": "Kěyǐ. Háishi fā dào shàng cì nàge yóuxiāng ma?\n커이. 하이스 파 다오 상 츠 나거 여우샹 마?", "trans": "네. 지난번 그 이메일로 보내면 될까요?", "next": "email_same" }
+      ]
+    },
+    {
+      "id": "email_spell",
+      "stage": "이메일 확인",
+      "text": "是 sales at sunrise 点 com。",
+      "pron": "Shì sales at sunrise diǎn com.\n스 세일즈 앳 선라이즈 뎬 컴.",
+      "trans": "sales@sunrise.com이에요.",
+      "replies": [
+        { "id": "email_spell_1", "text": "sales at sunrise 点 com，对吗？", "pron": "sales at sunrise diǎn com, duì ma?\n세일즈 앳 선라이즈 뎬 컴, 두이 마?", "trans": "sales@sunrise.com, 맞나요?", "next": "email_ok" },
+        { "id": "email_spell_2", "text": "我重复一下：sales at sunrise 点 com。", "pron": "Wǒ chóngfù yíxià: sales at sunrise diǎn com.\n워 충푸 이샤: 세일즈 앳 선라이즈 뎬 컴.", "trans": "다시 확인할게요. sales@sunrise.com.", "next": "email_ok" }
+      ]
+    },
+    {
+      "id": "email_ok",
+      "stage": "약속하기",
+      "text": "对，没错。谢谢。",
+      "pron": "Duì, méi cuò. Xièxie.\n두이, 메이 춰. 셰셰.",
+      "trans": "네, 맞아요. 감사합니다.",
+      "replies": [
+        { "id": "email_ok_1", "text": "我今天下午发给您。", "pron": "Wǒ jīntiān xiàwǔ fā gěi nín.\n워 진톈 샤우 파 게이 닌.", "trans": "오늘 오후에 보내 드릴게요.", "next": "end_sent" },
+        { "id": "email_ok_2", "text": "我跟经理确认一下，再给您回电话。", "pron": "Wǒ gēn jīnglǐ quèrèn yíxià, zài gěi nín huí diànhuà.\n워 건 징리 취런 이샤, 짜이 게이 닌 후이 뎬화.", "trans": "매니저님께 확인하고 다시 전화드릴게요.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "email_same",
+      "stage": "약속하기",
+      "text": "对，还是那个邮箱。",
+      "pron": "Duì, háishi nàge yóuxiāng.\n두이, 하이스 나거 여우샹.",
+      "trans": "네, 그 이메일 그대로요.",
+      "replies": [
+        { "id": "email_same_1", "text": "好的。我今天下午发给您。", "pron": "Hǎo de. Wǒ jīntiān xiàwǔ fā gěi nín.\n하오 더. 워 진톈 샤우 파 게이 닌.", "trans": "알겠습니다. 오늘 오후에 보내 드릴게요.", "next": "end_sent" },
+        { "id": "email_same_2", "text": "好的。我先跟经理确认一下，再给您回电话。", "pron": "Hǎo de. Wǒ xiān gēn jīnglǐ quèrèn yíxià, zài gěi nín huí diànhuà.\n하오 더. 워 셴 건 징리 취런 이샤, 짜이 게이 닌 후이 뎬화.", "trans": "알겠습니다. 먼저 매니저님께 확인하고 다시 전화드릴게요.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "end_sent",
+      "stage": "마무리",
+      "text": "太好了，那就麻烦您了。谢谢，再见。",
+      "pron": "Tài hǎo le, nà jiù máfan nín le. Xièxie, zàijiàn.\n타이 하오 러, 나 지우 마판 닌 러. 셰셰, 짜이젠.",
+      "trans": "잘됐네요. 그럼 부탁드릴게요. 감사합니다, 안녕히 계세요.",
+      "replies": []
+    },
+    {
+      "id": "end_callback",
+      "stage": "마무리",
+      "text": "好的，我等您的电话。谢谢，再见。",
+      "pron": "Hǎo de, wǒ děng nín de diànhuà. Xièxie, zàijiàn.\n하오 더, 워 덩 닌 더 뎬화. 셰셰, 짜이젠.",
+      "trans": "네, 전화 기다릴게요. 감사합니다, 안녕히 계세요.",
+      "replies": []
+    }
+  ]
+}

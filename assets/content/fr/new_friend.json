@@ -1,0 +1,180 @@
+{
+  "id": "new_friend",
+  "lang": "fr",
+  "start": "hello",
+  "nodes": [
+    {
+      "id": "hello",
+      "stage": "인사",
+      "text": "Salut ! On ne s'est jamais vus, je crois. Tu t'appelles comment ?",
+      "pron": "살뤼! 옹 느 세 자메 뷔, 즈 크루아. 튀 타펠 코망?",
+      "trans": "안녕하세요! 우리 처음 보는 것 같아요. 이름이 뭐예요?",
+      "replies": [
+        { "id": "hello_1", "text": "Salut, moi, c'est Minjun. Enchanté !", "pron": "살뤼, 무아, 세 민준. 앙샹테!", "trans": "안녕하세요, 저는 민준이에요. 반가워요!", "next": "where_from" },
+        { "id": "hello_2", "text": "Moi, c'est Minjun. C'est ma première fois ici.", "pron": "무아, 세 민준. 세 마 프르미에르 푸아 이시.", "trans": "민준이에요. 여기 처음 왔어요.", "next": "where_from" }
+      ]
+    },
+    {
+      "id": "where_from",
+      "stage": "인사",
+      "text": "Cool, Minjun ! Et tu viens d'où ?",
+      "pron": "쿨, 민준! 에 튀 비앵 두?",
+      "trans": "반가워요, 민준 씨! 어디서 왔어요?",
+      "replies": [
+        { "id": "where_from_1", "text": "Je viens de Séoul, en Corée.", "pron": "즈 비앵 드 세울, 앙 코레.", "trans": "한국 서울에서 왔어요.", "next": "job" },
+        { "id": "where_from_2", "text": "Je suis coréen. Je suis arrivé ici le mois dernier.", "pron": "즈 쉬 코레앵. 즈 쉬 자리베 이시 르 무아 데르니에.", "trans": "한국 사람이에요. 지난달에 여기 왔어요.", "next": "new_in_town" }
+      ]
+    },
+    {
+      "id": "new_in_town",
+      "stage": "자기소개",
+      "text": "Ah, bienvenue ! Ça te plaît ici ?",
+      "pron": "아, 비앵브뉘! 사 트 플레 이시?",
+      "trans": "아, 환영해요! 여기 마음에 들어요?",
+      "replies": [
+        { "id": "new_in_town_1", "text": "J'adore ! On mange super bien ici.", "pron": "자도르! 옹 망주 쉬페르 비앵 이시.", "trans": "정말 좋아요! 여기 음식이 정말 맛있어요.", "next": "job" },
+        { "id": "new_in_town_2", "text": "C'est sympa, mais je n'ai pas encore beaucoup d'amis.", "pron": "세 생파, 메 즈 네 파 장코르 보쿠 다미.", "trans": "좋은데, 아직 친구가 별로 없어요.", "next": "job" }
+      ]
+    },
+    {
+      "id": "job",
+      "stage": "자기소개",
+      "text": "Et tu fais quoi dans la vie ? Moi, je travaille dans le graphisme.",
+      "pron": "에 튀 페 쿠아 당 라 비? 무아, 즈 트라바유 당 르 그라피슴.",
+      "trans": "무슨 일 해요? 저는 그래픽 디자인 일을 해요.",
+      "replies": [
+        { "id": "job_1", "text": "Je suis étudiant. Je fais une école de commerce.", "pron": "즈 쉬 제튀디앙. 즈 페 윈 에콜 드 코메르스.", "trans": "학생이에요. 경영대학에 다녀요.", "next": "hobbies" },
+        { "id": "job_2", "text": "Je travaille dans une boîte d'informatique.", "pron": "즈 트라바유 당 쥔 부아트 댕포르마티크.", "trans": "IT 회사에서 일해요.", "next": "hobbies" },
+        { "id": "job_3", "text": "J'apprends le français, alors je viens pratiquer.", "pron": "자프랑 르 프랑세, 알로르 즈 비앵 프라티케.", "trans": "프랑스어를 배우고 있어서 연습하러 왔어요.", "next": "hobbies" }
+      ]
+    },
+    {
+      "id": "hobbies",
+      "stage": "취미",
+      "text": "Sympa ! Et qu'est-ce que tu aimes faire pendant ton temps libre ?",
+      "pron": "생파! 에 케스 크 튀 엠 페르 팡당 통 탕 리브르?",
+      "trans": "좋네요! 그럼 쉴 때 뭐 하는 거 좋아해요?",
+      "replies": [
+        { "id": "hobbies_1", "text": "J'adore le sport. Je joue au foot.", "pron": "자도르 르 스포르. 즈 주 오 풋.", "trans": "운동을 좋아해요. 축구를 해요.", "next": "sports" },
+        { "id": "hobbies_2", "text": "Je regarde plein de films.", "pron": "즈 르가르드 플랭 드 필름.", "trans": "영화를 엄청 많이 봐요.", "next": "movies" },
+        { "id": "hobbies_3", "text": "J'aime cuisiner. Surtout des plats coréens.", "pron": "젬 퀴지네. 쉬르투 데 플라 코레앵.", "trans": "요리하는 걸 좋아해요. 주로 한국 음식이요.", "next": "cooking" }
+      ]
+    },
+    {
+      "id": "sports",
+      "stage": "취미",
+      "text": "Trop bien ! On joue entre potes le week-end. Tu veux venir un de ces jours ?",
+      "pron": "트로 비앵! 옹 주 앙트르 포트 르 위켄드. 튀 뵈 브니르 앵 드 세 주르?",
+      "trans": "좋네요! 우리 친구들끼리 주말마다 하는데, 언제 같이 올래요?",
+      "replies": [
+        { "id": "sports_1", "text": "Oui, avec plaisir !", "pron": "위, 아베크 플레지르!", "trans": "네, 좋아요!", "next": "plan_day" },
+        { "id": "sports_2", "text": "Peut-être. Mais je ne suis pas très bon.", "pron": "푀테트르. 메 즈 느 쉬 파 트레 봉.", "trans": "글쎄요. 저 잘하진 못하는데요.", "next": "sports_easy" }
+      ]
+    },
+    {
+      "id": "sports_easy",
+      "stage": "취미",
+      "text": "T'inquiète, c'est juste pour s'amuser. Personne n'est vraiment fort !",
+      "pron": "탱키에트, 세 쥐스트 푸르 사뮈제. 페르손 네 브레망 포르!",
+      "trans": "걱정 마요, 그냥 재미로 하는 거예요. 아무도 잘하지 않아요!",
+      "replies": [
+        { "id": "sports_easy_1", "text": "D'accord, ça marche. Je viens !", "pron": "다코르, 사 마르슈. 즈 비앵!", "trans": "알겠어요, 좋아요. 저도 갈게요!", "next": "plan_day" },
+        { "id": "sports_easy_2", "text": "Je vais y réfléchir.", "pron": "즈 베 지 레플레시르.", "trans": "생각해 볼게요.", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "movies",
+      "stage": "취미",
+      "text": "Moi aussi, j'adore le ciné ! Tu aimes quoi comme films ?",
+      "pron": "무아 오시, 자도르 르 시네! 튀 엠 쿠아 콤 필름?",
+      "trans": "저도 영화 정말 좋아해요! 어떤 영화 좋아해요?",
+      "replies": [
+        { "id": "movies_1", "text": "Les films d'action, surtout.", "pron": "레 필름 닥시옹, 쉬르투.", "trans": "주로 액션 영화요.", "next": "movie_invite" },
+        { "id": "movies_2", "text": "Les comédies. J'aime bien rigoler.", "pron": "레 코메디. 젬 비앵 리골레.", "trans": "코미디요. 웃는 걸 좋아해요.", "next": "movie_invite" }
+      ]
+    },
+    {
+      "id": "movie_invite",
+      "stage": "약속",
+      "text": "Il y a un bon film qui vient de sortir. On se fait un ciné ensemble ?",
+      "pron": "일 리 아 앵 봉 필름 키 비앵 드 소르티르. 옹 스 페 앵 시네 앙상블?",
+      "trans": "괜찮은 영화가 막 개봉했어요. 같이 영화 보러 갈래요?",
+      "replies": [
+        { "id": "movie_invite_1", "text": "Carrément ! Quand ?", "pron": "카레망! 캉?", "trans": "완전 좋아요! 언제요?", "next": "plan_day" },
+        { "id": "movie_invite_2", "text": "J'aimerais bien, mais cette semaine, je suis pris.", "pron": "제므레 비앵, 메 세트 스멘, 즈 쉬 프리.", "trans": "가고 싶은데, 이번 주는 바빠요.", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "cooking",
+      "stage": "취미",
+      "text": "C'est vrai ? J'adore la cuisine coréenne ! Tu peux m'apprendre à faire un ragoût de kimchi ?",
+      "pron": "세 브레? 자도르 라 퀴진 코레엔! 튀 푀 마프랑드르 아 페르 앵 라구 드 킴치?",
+      "trans": "정말요? 저 한국 음식 정말 좋아해요! 김치찌개 만드는 법 가르쳐 줄래요?",
+      "replies": [
+        { "id": "cooking_1", "text": "Bien sûr ! On cuisine ensemble un de ces jours.", "pron": "비앵 쉬르! 옹 퀴진 앙상블 앵 드 세 주르.", "trans": "물론이죠! 언제 같이 요리해요.", "next": "plan_day" },
+        { "id": "cooking_2", "text": "Oui, c'est super facile !", "pron": "위, 세 쉬페르 파실!", "trans": "네, 진짜 쉬워요!", "next": "plan_day" }
+      ]
+    },
+    {
+      "id": "plan_day",
+      "stage": "약속",
+      "text": "Génial ! T'es dispo ce samedi ?",
+      "pron": "제니알! 테 디스포 스 삼디?",
+      "trans": "잘됐다! 이번 주 토요일에 시간 돼요?",
+      "replies": [
+        { "id": "plan_day_1", "text": "Oui, samedi, ça me va.", "pron": "위, 삼디, 사 므 바.", "trans": "네, 토요일 괜찮아요.", "next": "plan_time" },
+        { "id": "plan_day_2", "text": "Samedi, je ne peux pas. Et dimanche ?", "pron": "삼디, 즈 느 푀 파. 에 디망슈?", "trans": "토요일은 안 돼요. 일요일은요?", "next": "plan_time" },
+        { "id": "plan_day_3", "text": "Je ne sais pas encore. Je t'envoie un message ?", "pron": "즈 느 세 파 장코르. 즈 탕부아 앵 메사주?", "trans": "아직 모르겠어요. 메시지 보내도 될까요?", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "plan_time",
+      "stage": "약속",
+      "text": "Ça marche ! Vers quinze heures, ça te va ?",
+      "pron": "사 마르슈! 베르 캥즈 외르, 사 트 바?",
+      "trans": "좋아요! 오후 세 시쯤 어때요?",
+      "replies": [
+        { "id": "plan_time_1", "text": "Parfait. À quinze heures, alors !", "pron": "파르페. 아 캥즈 외르, 알로르!", "trans": "딱 좋아요. 그럼 세 시에 봐요!", "next": "contact" },
+        { "id": "plan_time_2", "text": "Un peu plus tard, c'est possible ? Vers dix-sept heures ?", "pron": "앵 푀 플뤼 타르, 세 포시블? 베르 디세트 외르?", "trans": "조금 늦게도 돼요? 다섯 시쯤?", "next": "contact" }
+      ]
+    },
+    {
+      "id": "contact",
+      "stage": "연락처",
+      "text": "Super ! On s'échange nos numéros ?",
+      "pron": "쉬페르! 옹 세샹주 노 뉘메로?",
+      "trans": "좋아요! 우리 번호 교환할래요?",
+      "replies": [
+        { "id": "contact_1", "text": "Oui, tiens, voilà mon numéro.", "pron": "위, 티앵, 부알라 몽 뉘메로.", "trans": "네, 여기 제 번호예요.", "next": "end_plan" },
+        { "id": "contact_2", "text": "T'as Insta ? On se suit ?", "pron": "타 앵스타? 옹 스 쉬이?", "trans": "인스타 해요? 서로 팔로우할래요?", "next": "end_plan" }
+      ]
+    },
+    {
+      "id": "swap_numbers",
+      "stage": "연락처",
+      "text": "Pas de souci ! On s'échange nos numéros quand même. Écris-moi quand tu veux.",
+      "pron": "파 드 수시! 옹 세샹주 노 뉘메로 캉 멤. 에크리무아 캉 튀 뵈.",
+      "trans": "괜찮아요! 그래도 번호는 교환해요. 언제든 메시지 줘요.",
+      "replies": [
+        { "id": "swap_numbers_1", "text": "D'accord. Tiens, voilà.", "pron": "다코르. 티앵, 부알라.", "trans": "좋아요. 여기요.", "next": "end_numbers" },
+        { "id": "swap_numbers_2", "text": "Bonne idée. Je t'écris plus tard.", "pron": "본 이데. 즈 테크리 플뤼 타르.", "trans": "좋은 생각이에요. 나중에 메시지할게요.", "next": "end_numbers" }
+      ]
+    },
+    {
+      "id": "end_plan",
+      "stage": "마무리",
+      "text": "Top ! Alors à ce week-end. Ça m'a fait trop plaisir de te rencontrer !",
+      "pron": "토프! 알로르 아 스 위켄드. 사 마 페 트로 플레지르 드 트 랑콩트레!",
+      "trans": "좋아요! 그럼 주말에 봐요. 만나서 정말 반가웠어요!",
+      "replies": []
+    },
+    {
+      "id": "end_numbers",
+      "stage": "마무리",
+      "text": "Super ! C'était trop sympa de te rencontrer, Minjun. À bientôt !",
+      "pron": "쉬페르! 세테 트로 생파 드 트 랑콩트레, 민준. 아 비앵토!",
+      "trans": "좋아요! 만나서 정말 즐거웠어요, 민준 씨. 또 봐요!",
+      "replies": []
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": "exchange_refund",
+  "lang": "zh",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "stage": "인사",
+      "text": "您好，有什么可以帮您的？",
+      "pron": "Nín hǎo, yǒu shénme kěyǐ bāng nín de?\n닌 하오, 여우 선머 커이 방 닌 더?",
+      "trans": "안녕하세요, 무엇을 도와드릴까요?",
+      "replies": [
+        { "id": "greet_1", "text": "你好，我昨天在这儿买了这件毛衣，太小了。", "pron": "Nǐ hǎo, wǒ zuótiān zài zhèr mǎile zhè jiàn máoyī, tài xiǎo le.\n니 하오, 워 쭤톈 짜이 절 마이러 저 젠 마오이, 타이 샤오 러.", "trans": "안녕하세요, 어제 여기서 이 스웨터를 샀는데 너무 작아요.", "next": "receipt" },
+        { "id": "greet_2", "text": "你好，这个我想退货。", "pron": "Nǐ hǎo, zhège wǒ xiǎng tuìhuò.\n니 하오, 저거 워 샹 투이훠.", "trans": "안녕하세요, 이거 반품하고 싶어요.", "next": "reason" },
+        { "id": "greet_3", "text": "这件毛衣上有个洞。", "pron": "Zhè jiàn máoyī shang yǒu ge dòng.\n저 젠 마오이 상 여우 거 둥.", "trans": "이 스웨터에 구멍이 있어요.", "next": "defect" }
+      ]
+    },
+    {
+      "id": "reason",
+      "stage": "이유 설명",
+      "text": "好的。是有什么问题吗？",
+      "pron": "Hǎo de. Shì yǒu shénme wèntí ma?\n하오 더. 스 여우 선머 원티 마?",
+      "trans": "네. 무슨 문제가 있으세요?",
+      "replies": [
+        { "id": "reason_1", "text": "尺码不合适。", "pron": "Chǐmǎ bù héshì.\n츠마 부 허스.", "trans": "사이즈가 안 맞아요.", "next": "receipt" },
+        { "id": "reason_2", "text": "没什么问题，就是不想要了。", "pron": "Méi shénme wèntí, jiùshì bù xiǎng yào le.\n메이 선머 원티, 지우스 부 샹 야오 러.", "trans": "문제는 없고, 그냥 필요 없어졌어요.", "next": "receipt" }
+      ]
+    },
+    {
+      "id": "defect",
+      "stage": "불량 확인",
+      "text": "真不好意思。小票还在吗？",
+      "pron": "Zhēn bù hǎoyìsi. Xiǎopiào hái zài ma?\n전 부 하오이쓰. 샤오퍄오 하이 짜이 마?",
+      "trans": "정말 죄송해요. 영수증 아직 있으세요?",
+      "replies": [
+        { "id": "defect_1", "text": "在，给你。", "pron": "Zài, gěi nǐ.\n짜이, 게이 니.", "trans": "있어요, 여기요.", "next": "options" },
+        { "id": "defect_2", "text": "不好意思，弄丢了。", "pron": "Bù hǎoyìsi, nòng diū le.\n부 하오이쓰, 눙 디우 러.", "trans": "죄송해요, 잃어버렸어요.", "next": "no_receipt" }
+      ]
+    },
+    {
+      "id": "receipt",
+      "stage": "영수증 확인",
+      "text": "好的，您带小票了吗？",
+      "pron": "Hǎo de, nín dài xiǎopiào le ma?\n하오 더, 닌 다이 샤오퍄오 러 마?",
+      "trans": "네, 영수증 가져오셨어요?",
+      "replies": [
+        { "id": "receipt_1", "text": "带了，给你。", "pron": "Dài le, gěi nǐ.\n다이 러, 게이 니.", "trans": "가져왔어요, 여기요.", "next": "options" },
+        { "id": "receipt_2", "text": "不好意思，没带。", "pron": "Bù hǎoyìsi, méi dài.\n부 하오이쓰, 메이 다이.", "trans": "죄송해요, 안 가져왔어요.", "next": "no_receipt" }
+      ]
+    },
+    {
+      "id": "options",
+      "stage": "교환·환불 선택",
+      "text": "谢谢。您是想换货还是退货？",
+      "pron": "Xièxie. Nín shì xiǎng huànhuò háishi tuìhuò?\n셰셰. 닌 스 샹 환훠 하이스 투이훠?",
+      "trans": "감사합니다. 교환하시겠어요, 아니면 반품하시겠어요?",
+      "replies": [
+        { "id": "options_1", "text": "能换个大一号的吗？", "pron": "Néng huàn ge dà yí hào de ma?\n넝 환 거 다 이 하오 더 마?", "trans": "한 사이즈 큰 걸로 바꿀 수 있어요?", "next": "size" },
+        { "id": "options_2", "text": "有别的颜色吗？", "pron": "Yǒu bié de yánsè ma?\n여우 비에 더 옌써 마?", "trans": "다른 색상 있어요?", "next": "colour" },
+        { "id": "options_3", "text": "我还是退了吧。", "pron": "Wǒ háishi tuì le ba.\n워 하이스 투이 러 바.", "trans": "그냥 환불할게요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "size",
+      "stage": "사이즈 교환",
+      "text": "我帮您看一下……不好意思，大号现在没货了。",
+      "pron": "Wǒ bāng nín kàn yíxià... Bù hǎoyìsi, dàhào xiànzài méi huò le.\n워 방 닌 칸 이샤... 부 하오이쓰, 다하오 셴짜이 메이 훠 러.",
+      "trans": "확인해 볼게요... 죄송해요, 라지 사이즈가 지금 품절이에요.",
+      "replies": [
+        { "id": "size_1", "text": "别的颜色有大号吗？", "pron": "Bié de yánsè yǒu dàhào ma?\n비에 더 옌써 여우 다하오 마?", "trans": "다른 색상으로 라지 있어요?", "next": "colour" },
+        { "id": "size_2", "text": "什么时候到货？", "pron": "Shénme shíhou dào huò?\n선머 스허우 다오 훠?", "trans": "언제 들어와요?", "next": "restock" },
+        { "id": "size_3", "text": "那我还是退了吧。", "pron": "Nà wǒ háishi tuì le ba.\n나 워 하이스 투이 러 바.", "trans": "그럼 그냥 환불할게요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "restock",
+      "stage": "재입고 문의",
+      "text": "下周应该能到。到货了给您打电话，行吗？",
+      "pron": "Xià zhōu yīnggāi néng dào. Dào huò le gěi nín dǎ diànhuà, xíng ma?\n샤 저우 잉가이 넝 다오. 다오 훠 러 게이 닌 다 뎬화, 싱 마?",
+      "trans": "다음 주에 들어올 거예요. 들어오면 전화드릴까요?",
+      "replies": [
+        { "id": "restock_1", "text": "行，麻烦你了。这是我的电话。", "pron": "Xíng, máfan nǐ le. Zhè shì wǒ de diànhuà.\n싱, 마판 니 러. 저 스 워 더 뎬화.", "trans": "네, 부탁해요. 제 전화번호예요.", "next": "end_wait" },
+        { "id": "restock_2", "text": "不用了，我还是退了吧。", "pron": "Búyòng le, wǒ háishi tuì le ba.\n부융 러, 워 하이스 투이 러 바.", "trans": "괜찮아요, 그냥 환불할게요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "colour",
+      "stage": "색상 교환",
+      "text": "有黑色和藏青色的，您要哪个？",
+      "pron": "Yǒu hēisè hé zàngqīngsè de, nín yào nǎge?\n여우 헤이써 허 짱칭써 더, 닌 야오 나거?",
+      "trans": "검은색이랑 남색이 있어요. 어느 걸로 하시겠어요?",
+      "replies": [
+        { "id": "colour_1", "text": "要黑色的。", "pron": "Yào hēisè de.\n야오 헤이써 더.", "trans": "검은색으로 할게요.", "next": "try_on" },
+        { "id": "colour_2", "text": "藏青色的吧。", "pron": "Zàngqīngsè de ba.\n짱칭써 더 바.", "trans": "남색으로 할게요.", "next": "try_on" }
+      ]
+    },
+    {
+      "id": "try_on",
+      "stage": "입어 보기",
+      "text": "给您。要不要试一下？试衣间在那边。",
+      "pron": "Gěi nín. Yào bu yào shì yíxià? Shìyījiān zài nàbiān.\n게이 닌. 야오 부 야오 스 이샤? 스이젠 짜이 나볜.",
+      "trans": "여기 있어요. 입어 보시겠어요? 탈의실은 저쪽이에요.",
+      "replies": [
+        { "id": "try_on_1", "text": "好，我试一下。", "pron": "Hǎo, wǒ shì yíxià.\n하오, 워 스 이샤.", "trans": "네, 입어 볼게요.", "next": "fits" },
+        { "id": "try_on_2", "text": "不用了，就要这件。", "pron": "Búyòng le, jiù yào zhè jiàn.\n부융 러, 지우 야오 저 젠.", "trans": "괜찮아요, 이걸로 할게요.", "next": "end_exchange" }
+      ]
+    },
+    {
+      "id": "fits",
+      "stage": "착용 확인",
+      "text": "怎么样？合身吗？",
+      "pron": "Zěnmeyàng? Héshēn ma?\n쩐머양? 허선 마?",
+      "trans": "어떠세요? 잘 맞으세요?",
+      "replies": [
+        { "id": "fits_1", "text": "正好，挺合适的。", "pron": "Zhènghǎo, tǐng héshì de.\n정하오, 팅 허스 더.", "trans": "딱 맞아요, 잘 맞네요.", "next": "end_exchange" },
+        { "id": "fits_2", "text": "还是不太合适。能退吗？", "pron": "Háishi bú tài héshì. Néng tuì ma?\n하이스 부 타이 허스. 넝 투이 마?", "trans": "그래도 잘 안 맞아요. 환불돼요?", "next": "refund" }
+      ]
+    },
+    {
+      "id": "refund",
+      "stage": "환불 처리",
+      "text": "没问题，钱会原路退回到您的卡上。麻烦把卡给我一下。",
+      "pron": "Méi wèntí, qián huì yuánlù tuìhuí dào nín de kǎ shang. Máfan bǎ kǎ gěi wǒ yíxià.\n메이 원티, 첸 후이 위안루 투이후이 다오 닌 더 카 상. 마판 바 카 게이 워 이샤.",
+      "trans": "문제없어요. 결제하신 카드로 환불돼요. 카드 좀 주시겠어요?",
+      "replies": [
+        { "id": "refund_1", "text": "好，给你。", "pron": "Hǎo, gěi nǐ.\n하오, 게이 니.", "trans": "네, 여기요.", "next": "end_refund" },
+        { "id": "refund_2", "text": "给你。多久能到账？", "pron": "Gěi nǐ. Duōjiǔ néng dào zhàng?\n게이 니. 둬주 넝 다오 장?", "trans": "여기요. 언제 들어와요?", "next": "end_refund" }
+      ]
+    },
+    {
+      "id": "no_receipt",
+      "stage": "영수증 없음",
+      "text": "没有小票的话，退不了款。不过可以给您开一张代金券。",
+      "pron": "Méiyǒu xiǎopiào dehuà, tuì bu liǎo kuǎn. Búguò kěyǐ gěi nín kāi yì zhāng dàijīnquàn.\n메이여우 샤오퍄오 더화, 투이 부 랴오 콴. 부궈 커이 게이 닌 카이 이 장 다이진취안.",
+      "trans": "영수증이 없으면 환불은 안 돼요. 대신 상품권으로 드릴 수 있어요.",
+      "replies": [
+        { "id": "no_receipt_1", "text": "好吧，代金券也行。", "pron": "Hǎo ba, dàijīnquàn yě xíng.\n하오 바, 다이진취안 예 싱.", "trans": "좋아요, 상품권도 괜찮아요.", "next": "end_credit" },
+        { "id": "no_receipt_2", "text": "能用我的卡查一下吗？", "pron": "Néng yòng wǒ de kǎ chá yíxià ma?\n넝 융 워 더 카 차 이샤 마?", "trans": "제 카드로 조회해 주실 수 있어요?", "next": "card_lookup" }
+      ]
+    },
+    {
+      "id": "card_lookup",
+      "stage": "결제 내역 조회",
+      "text": "我试试……查到了。那您是换货还是退货？",
+      "pron": "Wǒ shìshi... Chá dào le. Nà nín shì huànhuò háishi tuìhuò?\n워 스스... 차 다오 러. 나 닌 스 환훠 하이스 투이훠?",
+      "trans": "한번 볼게요... 찾았어요. 그럼 교환하시겠어요, 반품하시겠어요?",
+      "replies": [
+        { "id": "card_lookup_1", "text": "换个大一号的吧。", "pron": "Huàn ge dà yí hào de ba.\n환 거 다 이 하오 더 바.", "trans": "한 사이즈 큰 걸로 바꿀게요.", "next": "size" },
+        { "id": "card_lookup_2", "text": "退货吧。", "pron": "Tuìhuò ba.\n투이훠 바.", "trans": "반품할게요.", "next": "refund" }
+      ]
+    },
+    {
+      "id": "end_exchange",
+      "stage": "마무리",
+      "text": "好了，给您换好了。这是新的小票。欢迎下次光临！",
+      "pron": "Hǎo le, gěi nín huàn hǎo le. Zhè shì xīn de xiǎopiào. Huānyíng xiàcì guānglín!\n하오 러, 게이 닌 환 하오 러. 저 스 신 더 샤오퍄오. 환잉 샤츠 광린!",
+      "trans": "다 바꿔 드렸어요. 새 영수증이에요. 또 오세요!",
+      "replies": []
+    },
+    {
+      "id": "end_refund",
+      "stage": "마무리",
+      "text": "办好了。钱三到五个工作日到账。您慢走！",
+      "pron": "Bàn hǎo le. Qián sān dào wǔ ge gōngzuòrì dào zhàng. Nín màn zǒu!\n반 하오 러. 첸 싼 다오 우 거 궁쭤르 다오 장. 닌 만 쩌우!",
+      "trans": "처리됐어요. 영업일로 사흘에서 닷새 안에 들어갈 거예요. 안녕히 가세요!",
+      "replies": []
+    },
+    {
+      "id": "end_credit",
+      "stage": "마무리",
+      "text": "这是您的代金券，一年内都能用。欢迎下次光临！",
+      "pron": "Zhè shì nín de dàijīnquàn, yì nián nèi dōu néng yòng. Huānyíng xiàcì guānglín!\n저 스 닌 더 다이진취안, 이 녠 네이 더우 넝 융. 환잉 샤츠 광린!",
+      "trans": "상품권 여기 있어요. 일 년 안에 언제든 쓰실 수 있어요. 또 오세요!",
+      "replies": []
+    },
+    {
+      "id": "end_wait",
+      "stage": "마무리",
+      "text": "好的，一到货马上给您打电话。您慢走！",
+      "pron": "Hǎo de, yí dào huò mǎshàng gěi nín dǎ diànhuà. Nín màn zǒu!\n하오 더, 이 다오 훠 마상 게이 닌 다 뎬화. 닌 만 쩌우!",
+      "trans": "네, 들어오면 바로 전화드릴게요. 안녕히 가세요!",
+      "replies": []
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "id": "client_call",
+  "lang": "en",
+  "start": "greeting",
+  "nodes": [
+    {
+      "id": "greeting",
+      "stage": "전화 받기",
+      "text": "Hi, this is Sunrise Trading. Is this the sales team?",
+      "pron": "하이, 디스 이즈 선라이즈 트레이딩. 이즈 디스 더 세일즈 팀?",
+      "trans": "안녕하세요, 선라이즈 무역입니다. 영업팀 맞나요?",
+      "replies": [
+        { "id": "greeting_1", "text": "Yes, this is Minjun Kim in sales.", "pron": "예스, 디스 이즈 민준 킴 인 세일즈.", "trans": "네, 영업팀 김민준입니다.", "next": "ask_manager" },
+        { "id": "greeting_2", "text": "Yes, it is. How can I help you?", "pron": "예스, 잇 이즈. 하우 캔 아이 헬프 유?", "trans": "네, 맞습니다. 무엇을 도와드릴까요?", "next": "ask_manager" },
+        { "id": "greeting_3", "text": "Sorry, could you say that again?", "pron": "쏘리, 쿠쥬 세이 댓 어겐?", "trans": "죄송하지만, 다시 한번 말씀해 주시겠어요?", "next": "repeat_name" }
+      ]
+    },
+    {
+      "id": "repeat_name",
+      "stage": "전화 받기",
+      "text": "Sure. This is Sunrise Trading. Am I speaking to the sales team?",
+      "pron": "슈어. 디스 이즈 선라이즈 트레이딩. 앰 아이 스피킹 투 더 세일즈 팀?",
+      "trans": "네. 선라이즈 무역입니다. 영업팀과 통화 중인 게 맞나요?",
+      "replies": [
+        { "id": "repeat_name_1", "text": "Yes, you are. This is Minjun Kim speaking.", "pron": "예스, 유 아. 디스 이즈 민준 킴 스피킹.", "trans": "네, 맞습니다. 김민준입니다.", "next": "ask_manager" },
+        { "id": "repeat_name_2", "text": "Yes, sorry about that. How can I help you?", "pron": "예스, 쏘리 어바웃 댓. 하우 캔 아이 헬프 유?", "trans": "네, 죄송합니다. 무엇을 도와드릴까요?", "next": "ask_manager" }
+      ]
+    },
+    {
+      "id": "ask_manager",
+      "stage": "담당자 찾기",
+      "text": "Thanks. Could I speak to your sales manager, please?",
+      "pron": "땡스. 쿠드 아이 스픽 투 유어 세일즈 매니저, 플리즈?",
+      "trans": "감사합니다. 영업 매니저님과 통화할 수 있을까요?",
+      "replies": [
+        { "id": "ask_manager_1", "text": "May I ask what this is about?", "pron": "메이 아이 애스크 왓 디스 이즈 어바웃?", "trans": "어떤 일로 전화하셨는지 여쭤봐도 될까요?", "next": "purpose" },
+        { "id": "ask_manager_2", "text": "I'm sorry, our manager is away from the desk right now.", "pron": "아임 쏘리, 아워 매니저 이즈 어웨이 프롬 더 데스크 라잇 나우.", "trans": "죄송합니다, 매니저님이 지금 자리에 안 계세요.", "next": "not_at_desk" },
+        { "id": "ask_manager_3", "text": "I'm sorry, our manager is in a meeting right now.", "pron": "아임 쏘리, 아워 매니저 이즈 인 어 미팅 라잇 나우.", "trans": "죄송합니다, 매니저님은 지금 회의 중이세요.", "next": "not_at_desk" }
+      ]
+    },
+    {
+      "id": "not_at_desk",
+      "stage": "부재 안내",
+      "text": "I see. Do you know when the manager will be back?",
+      "pron": "아이 씨. 두 유 노우 웬 더 매니저 윌 비 백?",
+      "trans": "그렇군요. 매니저님이 언제 돌아오시는지 아세요?",
+      "replies": [
+        { "id": "not_at_desk_1", "text": "In about an hour. Can I take a message?", "pron": "인 어바웃 언 아워. 캔 아이 테이크 어 메시지?", "trans": "한 시간쯤 후에요. 메시지 남겨 드릴까요?", "next": "take_message" },
+        { "id": "not_at_desk_2", "text": "Not until this afternoon. Maybe I can help you?", "pron": "낫 언틸 디스 애프터눈. 메이비 아이 캔 헬프 유?", "trans": "오후에나 돌아오세요. 혹시 제가 도와드릴 수 있을까요?", "next": "purpose" }
+      ]
+    },
+    {
+      "id": "take_message",
+      "stage": "메시지 받기",
+      "text": "Yes, please. Could you ask the manager to call Sunrise Trading back?",
+      "pron": "예스, 플리즈. 쿠쥬 애스크 더 매니저 투 콜 선라이즈 트레이딩 백?",
+      "trans": "네, 부탁드려요. 매니저님께 선라이즈 무역으로 다시 전화 달라고 전해 주시겠어요?",
+      "replies": [
+        { "id": "take_message_1", "text": "Of course. Does the manager have your number?", "pron": "오브 코스. 더즈 더 매니저 해브 유어 넘버?", "trans": "물론이죠. 매니저님이 그쪽 전화번호를 알고 계신가요?", "next": "number_check" },
+        { "id": "take_message_2", "text": "Sure. May I ask what it's about?", "pron": "슈어. 메이 아이 애스크 왓 잇츠 어바웃?", "trans": "네. 어떤 용건인지 여쭤봐도 될까요?", "next": "purpose" }
+      ]
+    },
+    {
+      "id": "number_check",
+      "stage": "메시지 받기",
+      "text": "Yes, the manager has it. It's about our new quote.",
+      "pron": "예스, 더 매니저 해즈 잇. 잇츠 어바웃 아워 뉴 쿼트.",
+      "trans": "네, 알고 계세요. 새 견적서 건이에요.",
+      "replies": [
+        { "id": "number_check_1", "text": "Got it. I'll pass on the message.", "pron": "갓 잇. 아일 패스 온 더 메시지.", "trans": "알겠습니다. 메시지 전해 드릴게요.", "next": "end_callback" },
+        { "id": "number_check_2", "text": "Actually, I can send you the quote myself.", "pron": "액추얼리, 아이 캔 센드 유 더 쿼트 마이셀프.", "trans": "사실 견적서는 제가 직접 보내 드릴 수 있어요.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "purpose",
+      "stage": "용건 확인",
+      "text": "We need the updated quote for our order.",
+      "pron": "위 니드 디 업데이티드 쿼트 포 아워 오더.",
+      "trans": "저희 주문 건의 수정된 견적서가 필요해서요.",
+      "replies": [
+        { "id": "purpose_1", "text": "I can send that to you.", "pron": "아이 캔 센드 댓 투 유.", "trans": "그건 제가 보내 드릴 수 있어요.", "next": "confirm_email" },
+        { "id": "purpose_2", "text": "Which product is it for?", "pron": "위치 프로덕트 이즈 잇 포?", "trans": "어떤 제품 견적서인가요?", "next": "product" },
+        { "id": "purpose_3", "text": "I'll have the manager call you back.", "pron": "아일 해브 더 매니저 콜 유 백.", "trans": "매니저님이 다시 전화드리도록 할게요.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "product",
+      "stage": "용건 확인",
+      "text": "The office chairs. We ordered them last week.",
+      "pron": "디 오피스 체어즈. 위 오더드 뎀 래스트 위크.",
+      "trans": "사무용 의자요. 지난주에 주문했어요.",
+      "replies": [
+        { "id": "product_1", "text": "I see. When do you need it by?", "pron": "아이 씨. 웬 두 유 니드 잇 바이?", "trans": "그렇군요. 언제까지 필요하세요?", "next": "deadline" },
+        { "id": "product_2", "text": "Got it. I'll send it to you.", "pron": "갓 잇. 아일 센드 잇 투 유.", "trans": "알겠습니다. 보내 드릴게요.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "deadline",
+      "stage": "기한 확인",
+      "text": "By Friday, if possible.",
+      "pron": "바이 프라이데이, 이프 파서블.",
+      "trans": "가능하면 금요일까지요.",
+      "replies": [
+        { "id": "deadline_1", "text": "By Friday. No problem.", "pron": "바이 프라이데이. 노 프라블럼.", "trans": "금요일까지요. 문제없습니다.", "next": "confirm_email" },
+        { "id": "deadline_2", "text": "Friday might be hard. Is Monday okay?", "pron": "프라이데이 마잇 비 하드. 이즈 먼데이 오케이?", "trans": "금요일은 어려울 수도 있어요. 월요일도 괜찮으세요?", "next": "monday" }
+      ]
+    },
+    {
+      "id": "monday",
+      "stage": "기한 확인",
+      "text": "Monday morning is fine. But no later than that, please.",
+      "pron": "먼데이 모닝 이즈 파인. 벗 노 레이터 댄 댓, 플리즈.",
+      "trans": "월요일 오전이면 괜찮아요. 하지만 그보다 늦으면 안 돼요.",
+      "replies": [
+        { "id": "monday_1", "text": "Monday morning. Got it.", "pron": "먼데이 모닝. 갓 잇.", "trans": "월요일 오전이요. 알겠습니다.", "next": "confirm_email" },
+        { "id": "monday_2", "text": "Thank you for understanding.", "pron": "땡큐 포 언더스탠딩.", "trans": "양해해 주셔서 감사합니다.", "next": "confirm_email" }
+      ]
+    },
+    {
+      "id": "confirm_email",
+      "stage": "이메일 확인",
+      "text": "Great, thank you. Could you send it by email?",
+      "pron": "그레잇, 땡큐. 쿠쥬 센드 잇 바이 이메일?",
+      "trans": "좋아요, 감사합니다. 이메일로 보내 주시겠어요?",
+      "replies": [
+        { "id": "confirm_email_1", "text": "Sure. Could I have your email address?", "pron": "슈어. 쿠드 아이 해브 유어 이메일 어드레스?", "trans": "네. 이메일 주소를 알려 주시겠어요?", "next": "email_spell" },
+        { "id": "confirm_email_2", "text": "Sure. To the same address as last time?", "pron": "슈어. 투 더 세임 어드레스 애즈 래스트 타임?", "trans": "네. 지난번과 같은 주소로 보내면 될까요?", "next": "email_same" }
+      ]
+    },
+    {
+      "id": "email_spell",
+      "stage": "이메일 확인",
+      "text": "It's sales at sunrise dot com.",
+      "pron": "잇츠 세일즈 앳 선라이즈 닷 컴.",
+      "trans": "sales@sunrise.com이에요.",
+      "replies": [
+        { "id": "email_spell_1", "text": "Sales at sunrise dot com. Is that right?", "pron": "세일즈 앳 선라이즈 닷 컴. 이즈 댓 라잇?", "trans": "sales@sunrise.com. 맞나요?", "next": "email_ok" },
+        { "id": "email_spell_2", "text": "Let me read that back. Sales at sunrise dot com?", "pron": "렛 미 리드 댓 백. 세일즈 앳 선라이즈 닷 컴?", "trans": "다시 읽어 볼게요. sales@sunrise.com 맞죠?", "next": "email_ok" }
+      ]
+    },
+    {
+      "id": "email_ok",
+      "stage": "약속하기",
+      "text": "Yes, that's right. Thank you.",
+      "pron": "예스, 댓츠 라잇. 땡큐.",
+      "trans": "네, 맞아요. 감사합니다.",
+      "replies": [
+        { "id": "email_ok_1", "text": "I'll send it this afternoon.", "pron": "아일 센드 잇 디스 애프터눈.", "trans": "오늘 오후에 보내 드릴게요.", "next": "end_sent" },
+        { "id": "email_ok_2", "text": "I'll check with the manager and call you back.", "pron": "아일 첵 위드 더 매니저 앤 콜 유 백.", "trans": "매니저님께 확인하고 다시 전화드릴게요.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "email_same",
+      "stage": "약속하기",
+      "text": "Yes, the same address, please.",
+      "pron": "예스, 더 세임 어드레스, 플리즈.",
+      "trans": "네, 같은 주소로 부탁드려요.",
+      "replies": [
+        { "id": "email_same_1", "text": "Understood. I'll send it this afternoon.", "pron": "언더스투드. 아일 센드 잇 디스 애프터눈.", "trans": "알겠습니다. 오늘 오후에 보내 드릴게요.", "next": "end_sent" },
+        { "id": "email_same_2", "text": "Understood. I'll check with the manager first and call you back.", "pron": "언더스투드. 아일 첵 위드 더 매니저 퍼스트 앤 콜 유 백.", "trans": "알겠습니다. 먼저 매니저님께 확인하고 다시 전화드릴게요.", "next": "end_callback" }
+      ]
+    },
+    {
+      "id": "end_sent",
+      "stage": "마무리",
+      "text": "Perfect. That's all for now. Thanks for your help. Bye.",
+      "pron": "퍼펙트. 댓츠 올 포 나우. 땡스 포 유어 헬프. 바이.",
+      "trans": "좋아요. 지금은 이게 다예요. 도와주셔서 감사합니다. 안녕히 계세요.",
+      "replies": []
+    },
+    {
+      "id": "end_callback",
+      "stage": "마무리",
+      "text": "Thank you. I'll wait for the call. Have a good day.",
+      "pron": "땡큐. 아일 웨잇 포 더 콜. 해브 어 굿 데이.",
+      "trans": "감사합니다. 전화 기다릴게요. 좋은 하루 보내세요.",
+      "replies": []
+    }
+  ]
+}

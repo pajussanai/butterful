@@ -1,0 +1,198 @@
+{
+  "id": "change_plans",
+  "lang": "zh",
+  "start": "call",
+  "nodes": [
+    {
+      "id": "call",
+      "stage": "전화 인사",
+      "text": "喂！你看天气预报了吗？周六要下雨。",
+      "pron": "Wéi! Nǐ kàn tiānqì yùbào le ma? Zhōuliù yào xià yǔ.\n웨이! 니 칸 톈치 위바오 러 마? 저우류 야오 샤 위.",
+      "trans": "여보세요! 일기예보 봤어? 토요일에 비 온대.",
+      "replies": [
+        { "id": "call_1", "text": "真的吗？下一整天？", "pron": "Zhēn de ma? Xià yì zhěng tiān?\n전 더 마? 샤 이 정 톈?", "trans": "진짜? 하루 종일 와?", "next": "rain_all_day" },
+        { "id": "call_2", "text": "嗯，看了。好可惜啊。", "pron": "Ńg, kàn le. Hǎo kěxī a.\n응, 칸 러. 하오 커시 아.", "trans": "응, 봤어. 너무 아쉽다.", "next": "plan_rain" }
+      ]
+    },
+    {
+      "id": "rain_all_day",
+      "stage": "날씨 이야기",
+      "text": "对，下一整天。公园野餐去不成了。",
+      "pron": "Duì, xià yì zhěng tiān. Gōngyuán yěcān qù bu chéng le.\n두이, 샤 이 정 톈. 궁위안 예찬 취 부 청 러.",
+      "trans": "응, 하루 종일. 공원 피크닉은 못 가겠다.",
+      "replies": [
+        { "id": "rain_all_day_1", "text": "那我们在室内玩吧。", "pron": "Nà wǒmen zài shìnèi wán ba.\n나 워먼 짜이 스네이 완 바.", "trans": "그럼 실내에서 놀자.", "next": "plan_rain" },
+        { "id": "rain_all_day_2", "text": "那周日呢？", "pron": "Nà zhōurì ne?\n나 저우르 너?", "trans": "그럼 일요일은?", "next": "sunday_weather" }
+      ]
+    },
+    {
+      "id": "sunday_weather",
+      "stage": "날씨 이야기",
+      "text": "周日是晴天，但我要上班。",
+      "pron": "Zhōurì shì qíngtiān, dàn wǒ yào shàngbān.\n저우르 스 칭톈, 단 워 야오 상반.",
+      "trans": "일요일은 맑은데, 나 출근해야 돼.",
+      "replies": [
+        { "id": "sunday_weather_1", "text": "哦，好吧。那周六在室内玩？", "pron": "Ò, hǎo ba. Nà zhōuliù zài shìnèi wán?\n오, 하오 바. 나 저우류 짜이 스네이 완?", "trans": "아, 그렇구나. 그럼 토요일에 실내에서 놀까?", "next": "plan_rain" },
+        { "id": "sunday_weather_2", "text": "那我们下周再约吧。", "pron": "Nà wǒmen xià zhōu zài yuē ba.\n나 워먼 샤 저우 짜이 웨 바.", "trans": "그럼 다음 주에 다시 약속 잡자.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "plan_rain",
+      "stage": "계획 바꾸기",
+      "text": "那你想干吗？看电影，还是去咖啡馆？",
+      "pron": "Nà nǐ xiǎng gàn má? Kàn diànyǐng, háishi qù kāfēiguǎn?\n나 니 샹 간 마? 칸 뎬잉, 하이스 취 카페이관?",
+      "trans": "그럼 뭐 하고 싶어? 영화 볼래, 아니면 카페 갈래?",
+      "replies": [
+        { "id": "plan_rain_1", "text": "看电影吧。", "pron": "Kàn diànyǐng ba.\n칸 뎬잉 바.", "trans": "영화 보자.", "next": "movie" },
+        { "id": "plan_rain_2", "text": "去咖啡馆聊聊天吧。", "pron": "Qù kāfēiguǎn liáoliao tiān ba.\n취 카페이관 랴오랴오 톈 바.", "trans": "카페 가서 수다 떨자.", "next": "cafe" },
+        { "id": "plan_rain_3", "text": "嗯，要不改天吧？", "pron": "Ńg, yàobù gǎitiān ba?\n응, 야오부 가이톈 바?", "trans": "음, 아니면 다른 날 할까?", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "movie",
+      "stage": "계획 바꾸기",
+      "text": "好啊！先喝杯咖啡吧。电影院附近有家不错的咖啡馆。",
+      "pron": "Hǎo a! Xiān hē bēi kāfēi ba. Diànyǐngyuàn fùjìn yǒu jiā búcuò de kāfēiguǎn.\n하오 아! 셴 허 베이 카페이 바. 뎬잉위안 푸진 여우 자 부춰 더 카페이관.",
+      "trans": "좋아! 먼저 커피 한잔하자. 영화관 근처에 괜찮은 카페 있어.",
+      "replies": [
+        { "id": "movie_1", "text": "好啊。", "pron": "Hǎo a.\n하오 아.", "trans": "좋아.", "next": "meet_time" },
+        { "id": "movie_2", "text": "行，我正想喝咖啡。", "pron": "Xíng, wǒ zhèng xiǎng hē kāfēi.\n싱, 워 정 샹 허 카페이.", "trans": "그래, 마침 커피 마시고 싶었어.", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "cafe",
+      "stage": "계획 바꾸기",
+      "text": "好。地铁站附近有家很可爱的咖啡馆，就去那儿吧。",
+      "pron": "Hǎo. Dìtiězhàn fùjìn yǒu jiā hěn kě'ài de kāfēiguǎn, jiù qù nàr ba.\n하오. 디톄잔 푸진 여우 자 헌 커아이 더 카페이관, 지우 취 날 바.",
+      "trans": "좋아. 지하철역 근처에 예쁜 카페 있어. 거기 가자.",
+      "replies": [
+        { "id": "cafe_1", "text": "好啊。", "pron": "Hǎo a.\n하오 아.", "trans": "좋아.", "next": "meet_time" },
+        { "id": "cafe_2", "text": "太好了，我最喜欢咖啡馆了。", "pron": "Tài hǎo le, wǒ zuì xǐhuan kāfēiguǎn le.\n타이 하오 러, 워 쭈이 시환 카페이관 러.", "trans": "잘됐다, 나 카페 진짜 좋아해.", "next": "meet_time" }
+      ]
+    },
+    {
+      "id": "meet_time",
+      "stage": "시간 정하기",
+      "text": "几点见？一点怎么样？",
+      "pron": "Jǐ diǎn jiàn? Yì diǎn zěnmeyàng?\n지 뎬 젠? 이 뎬 전머양?",
+      "trans": "몇 시에 볼까? 한 시 어때?",
+      "replies": [
+        { "id": "meet_time_1", "text": "一点可以。", "pron": "Yì diǎn kěyǐ.\n이 뎬 커이.", "trans": "한 시 괜찮아.", "next": "directions" },
+        { "id": "meet_time_2", "text": "能晚一点吗？三点左右？", "pron": "Néng wǎn yìdiǎn ma? Sān diǎn zuǒyòu?\n넝 완 이뎬 마? 싼 뎬 쭤여우?", "trans": "조금 늦게 해도 돼? 세 시쯤?", "next": "later_time" },
+        { "id": "meet_time_3", "text": "不好意思，我周六去不了了。", "pron": "Bù hǎoyìsi, wǒ zhōuliù qù bu liǎo le.\n부 하오이쓰, 워 저우류 취 부 랴오 러.", "trans": "미안, 나 토요일에 못 갈 것 같아.", "next": "next_week" }
+      ]
+    },
+    {
+      "id": "later_time",
+      "stage": "시간 정하기",
+      "text": "三点？行，没问题。你知道怎么走吗？",
+      "pron": "Sān diǎn? Xíng, méi wèntí. Nǐ zhīdào zěnme zǒu ma?\n싼 뎬? 싱, 메이 원티. 니 즈다오 전머 쩌우 마?",
+      "trans": "세 시? 그래, 괜찮아. 어떻게 가는지 알아?",
+      "replies": [
+        { "id": "later_time_1", "text": "不知道，怎么走？", "pron": "Bù zhīdào, zěnme zǒu?\n부 즈다오, 전머 쩌우?", "trans": "몰라, 어떻게 가?", "next": "directions" },
+        { "id": "later_time_2", "text": "不太清楚。你告诉我吧。", "pron": "Bú tài qīngchu. Nǐ gàosu wǒ ba.\n부 타이 칭추. 니 가오쑤 워 바.", "trans": "잘 모르겠어. 알려 줘.", "next": "directions" }
+      ]
+    },
+    {
+      "id": "directions",
+      "stage": "길 안내",
+      "text": "好。你在人民广场站下车，从三号口出来，然后左转。",
+      "pron": "Hǎo. Nǐ zài Rénmín Guǎngchǎng zhàn xià chē, cóng sān hào kǒu chūlai, ránhòu zuǒ zhuǎn.\n하오. 니 짜이 런민 광창 잔 샤 처, 충 싼 하오 커우 추라이, 란허우 쭤 좐.",
+      "trans": "알았어. 인민광장역에서 내려서 삼 번 출구로 나와. 그다음에 왼쪽으로 돌아.",
+      "replies": [
+        { "id": "directions_1", "text": "三号口出来，然后左转？", "pron": "Sān hào kǒu chūlai, ránhòu zuǒ zhuǎn?\n싼 하오 커우 추라이, 란허우 쭤 좐?", "trans": "삼 번 출구로 나와서 왼쪽으로 돌라고?", "next": "directions2" },
+        { "id": "directions_2", "text": "不好意思，几号口？", "pron": "Bù hǎoyìsi, jǐ hào kǒu?\n부 하오이쓰, 지 하오 커우?", "trans": "미안, 몇 번 출구라고?", "next": "repeat_exit" }
+      ]
+    },
+    {
+      "id": "repeat_exit",
+      "stage": "길 안내",
+      "text": "三号口。出来以后往左转。",
+      "pron": "Sān hào kǒu. Chūlai yǐhòu wǎng zuǒ zhuǎn.\n싼 하오 커우. 추라이 이허우 왕 쭤 좐.",
+      "trans": "삼 번 출구. 나와서 왼쪽으로 돌아.",
+      "replies": [
+        { "id": "repeat_exit_1", "text": "明白了。三号口，然后左转。", "pron": "Míngbai le. Sān hào kǒu, ránhòu zuǒ zhuǎn.\n밍바이 러. 싼 하오 커우, 란허우 쭤 좐.", "trans": "알았어. 삼 번 출구, 그다음에 왼쪽.", "next": "directions2" },
+        { "id": "repeat_exit_2", "text": "好，我记一下。", "pron": "Hǎo, wǒ jì yíxià.\n하오, 워 지 이샤.", "trans": "응, 적어 둘게.", "next": "directions2" }
+      ]
+    },
+    {
+      "id": "directions2",
+      "stage": "길 안내",
+      "text": "对。然后一直走，大概两分钟。咖啡馆就在书店旁边。",
+      "pron": "Duì. Ránhòu yìzhí zǒu, dàgài liǎng fēnzhōng. Kāfēiguǎn jiù zài shūdiàn pángbiān.\n두이. 란허우 이즈 쩌우, 다가이 량 펀중. 카페이관 지우 짜이 수뎬 팡볜.",
+      "trans": "맞아. 그리고 쭉 와, 이 분 정도. 카페는 서점 바로 옆이야.",
+      "replies": [
+        { "id": "directions2_1", "text": "书店旁边。知道了！", "pron": "Shūdiàn pángbiān. Zhīdào le!\n수뎬 팡볜. 즈다오 러!", "trans": "서점 옆. 알았어!", "next": "confirm" },
+        { "id": "directions2_2", "text": "那家咖啡馆长什么样？", "pron": "Nà jiā kāfēiguǎn zhǎng shénme yàng?\n나 자 카페이관 장 선머 양?", "trans": "그 카페 어떻게 생겼어?", "next": "cafe_name" }
+      ]
+    },
+    {
+      "id": "cafe_name",
+      "stage": "길 안내",
+      "text": "小小的，门是蓝色的。一眼就能看到。",
+      "pron": "Xiǎoxiǎo de, mén shì lánsè de. Yì yǎn jiù néng kàndào.\n샤오샤오 더, 먼 스 란써 더. 이 옌 지우 넝 칸다오.",
+      "trans": "자그마하고, 문이 파란색이야. 바로 눈에 띌 거야.",
+      "replies": [
+        { "id": "cafe_name_1", "text": "蓝色的门。记住了。", "pron": "Lánsè de mén. Jìzhù le.\n란써 더 먼. 지주 러.", "trans": "파란 문. 기억했어.", "next": "confirm" },
+        { "id": "cafe_name_2", "text": "好，我会找到的。", "pron": "Hǎo, wǒ huì zhǎodào de.\n하오, 워 후이 자오다오 더.", "trans": "응, 찾아갈게.", "next": "confirm" }
+      ]
+    },
+    {
+      "id": "confirm",
+      "stage": "약속 확인",
+      "text": "太好了。那周六见！找不到就给我打电话。",
+      "pron": "Tài hǎo le. Nà zhōuliù jiàn! Zhǎo bu dào jiù gěi wǒ dǎ diànhuà.\n타이 하오 러. 나 저우류 젠! 자오 부 다오 지우 게이 워 다 뎬화.",
+      "trans": "좋아. 그럼 토요일에 봐! 못 찾겠으면 전화해.",
+      "replies": [
+        { "id": "confirm_1", "text": "好，周六见！", "pron": "Hǎo, zhōuliù jiàn!\n하오, 저우류 젠!", "trans": "응, 토요일에 봐!", "next": "end_saturday" },
+        { "id": "confirm_2", "text": "我可能会晚一点到，没关系吧？", "pron": "Wǒ kěnéng huì wǎn yìdiǎn dào, méi guānxi ba?\n워 커넝 후이 완 이뎬 다오, 메이 관시 바?", "trans": "나 조금 늦게 도착할 수도 있는데, 괜찮지?", "next": "late_ok" }
+      ]
+    },
+    {
+      "id": "late_ok",
+      "stage": "약속 확인",
+      "text": "没事。到时候给我发个微信就行。",
+      "pron": "Méishì. Dào shíhou gěi wǒ fā ge Wēixìn jiù xíng.\n메이스. 다오 스허우 게이 워 파 거 웨이신 지우 싱.",
+      "trans": "괜찮아. 그때 위챗 하나만 보내 줘.",
+      "replies": [
+        { "id": "late_ok_1", "text": "谢谢。到时候见！", "pron": "Xièxie. Dào shíhou jiàn!\n셰셰. 다오 스허우 젠!", "trans": "고마워. 그때 봐!", "next": "end_saturday" },
+        { "id": "late_ok_2", "text": "好，我给你发微信。", "pron": "Hǎo, wǒ gěi nǐ fā Wēixìn.\n하오, 워 게이 니 파 웨이신.", "trans": "응, 위챗 보낼게.", "next": "end_saturday" }
+      ]
+    },
+    {
+      "id": "next_week",
+      "stage": "약속 미루기",
+      "text": "没关系。那下周六怎么样？",
+      "pron": "Méi guānxi. Nà xià zhōuliù zěnmeyàng?\n메이 관시. 나 샤 저우류 전머양?",
+      "trans": "괜찮아. 그럼 다음 주 토요일은 어때?",
+      "replies": [
+        { "id": "next_week_1", "text": "下周六可以。", "pron": "Xià zhōuliù kěyǐ.\n샤 저우류 커이.", "trans": "다음 주 토요일 좋아.", "next": "end_next_week" },
+        { "id": "next_week_2", "text": "我看一下，再给你发消息。", "pron": "Wǒ kàn yíxià, zài gěi nǐ fā xiāoxi.\n워 칸 이샤, 짜이 게이 니 파 샤오시.", "trans": "확인해 보고 메시지 보낼게.", "next": "end_text" }
+      ]
+    },
+    {
+      "id": "end_saturday",
+      "stage": "마무리",
+      "text": "好嘞！别忘了带伞。拜拜！",
+      "pron": "Hǎo lei! Bié wàng le dài sǎn. Báibái!\n하오 레이! 볘 왕 러 다이 싼. 바이바이!",
+      "trans": "좋아! 우산 챙기는 거 잊지 마. 안녕!",
+      "replies": []
+    },
+    {
+      "id": "end_next_week",
+      "stage": "마무리",
+      "text": "好，那就下周六。希望是晴天！",
+      "pron": "Hǎo, nà jiù xià zhōuliù. Xīwàng shì qíngtiān!\n하오, 나 지우 샤 저우류. 시왕 스 칭톈!",
+      "trans": "좋아, 그럼 다음 주 토요일로 하자. 날씨 맑으면 좋겠다!",
+      "replies": []
+    },
+    {
+      "id": "end_text",
+      "stage": "마무리",
+      "text": "好，那你晚点给我发消息。拜拜！",
+      "pron": "Hǎo, nà nǐ wǎndiǎn gěi wǒ fā xiāoxi. Báibái!\n하오, 나 니 완뎬 게이 워 파 샤오시. 바이바이!",
+      "trans": "알았어, 그럼 이따 메시지 줘. 안녕!",
+      "replies": []
+    }
+  ]
+}

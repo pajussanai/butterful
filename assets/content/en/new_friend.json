@@ -1,0 +1,180 @@
+{
+  "id": "new_friend",
+  "lang": "en",
+  "start": "hello",
+  "nodes": [
+    {
+      "id": "hello",
+      "stage": "인사",
+      "text": "Hi! I don't think we've met yet. What's your name?",
+      "pron": "하이! 아이 돈트 띵크 위브 멧 옛. 왓츠 유어 네임?",
+      "trans": "안녕하세요! 우리 처음 보는 것 같은데요. 이름이 뭐예요?",
+      "replies": [
+        { "id": "hello_1", "text": "Hi, I'm Minjun. Nice to meet you.", "pron": "하이, 아임 민준. 나이스 투 밋 유.", "trans": "안녕하세요, 저는 민준이에요. 만나서 반가워요.", "next": "where_from" },
+        { "id": "hello_2", "text": "I'm Minjun. It's my first time here.", "pron": "아임 민준. 잇츠 마이 퍼스트 타임 히어.", "trans": "민준이에요. 여기 처음 왔어요.", "next": "where_from" }
+      ]
+    },
+    {
+      "id": "where_from",
+      "stage": "인사",
+      "text": "Nice to meet you, Minjun! So, where are you from?",
+      "pron": "나이스 투 밋 유, 민준! 쏘, 웨어 아 유 프럼?",
+      "trans": "반가워요, 민준 씨! 그럼 어디서 왔어요?",
+      "replies": [
+        { "id": "where_from_1", "text": "I'm from Seoul, in Korea.", "pron": "아임 프럼 서울, 인 코리아.", "trans": "한국 서울에서 왔어요.", "next": "job" },
+        { "id": "where_from_2", "text": "I'm from Korea. I just moved here last month.", "pron": "아임 프럼 코리아. 아이 저스트 무브드 히어 래스트 먼스.", "trans": "한국에서 왔어요. 지난달에 막 이사 왔어요.", "next": "new_in_town" }
+      ]
+    },
+    {
+      "id": "new_in_town",
+      "stage": "자기소개",
+      "text": "Oh, welcome! How do you like it here so far?",
+      "pron": "오, 웰컴! 하우 두 유 라이크 잇 히어 쏘 파?",
+      "trans": "오, 환영해요! 지금까지 여기 생활은 어때요?",
+      "replies": [
+        { "id": "new_in_town_1", "text": "I love it. The food is great!", "pron": "아이 러브 잇. 더 푸드 이즈 그레잇!", "trans": "정말 좋아요. 음식이 맛있어요!", "next": "job" },
+        { "id": "new_in_town_2", "text": "It's nice, but I don't have many friends yet.", "pron": "잇츠 나이스, 벗 아이 돈트 해브 메니 프렌즈 옛.", "trans": "좋은데, 아직 친구가 별로 없어요.", "next": "job" }
+      ]
+    },
+    {
+      "id": "job",
+      "stage": "자기소개",
+      "text": "So what do you do, Minjun? I work in graphic design.",
+      "pron": "쏘 왓 두 유 두, 민준? 아이 워크 인 그래픽 디자인.",
+      "trans": "민준 씨는 무슨 일 해요? 저는 그래픽 디자인 일을 해요.",
+      "replies": [
+        { "id": "job_1", "text": "I'm a student. I study business.", "pron": "아임 어 스튜던트. 아이 스터디 비즈니스.", "trans": "학생이에요. 경영학을 공부해요.", "next": "hobbies" },
+        { "id": "job_2", "text": "I work at an IT company.", "pron": "아이 워크 앳 언 아이티 컴퍼니.", "trans": "IT 회사에서 일해요.", "next": "hobbies" },
+        { "id": "job_3", "text": "I'm learning English, so I came here to practice.", "pron": "아임 러닝 잉글리시, 쏘 아이 케임 히어 투 프랙티스.", "trans": "영어를 배우고 있어서 연습하러 왔어요.", "next": "hobbies" }
+      ]
+    },
+    {
+      "id": "hobbies",
+      "stage": "취미",
+      "text": "Cool! So what do you like to do for fun?",
+      "pron": "쿨! 쏘 왓 두 유 라이크 투 두 포 펀?",
+      "trans": "멋지네요! 그럼 쉴 때는 뭐 하는 거 좋아해요?",
+      "replies": [
+        { "id": "hobbies_1", "text": "I love sports. I play soccer.", "pron": "아이 러브 스포츠. 아이 플레이 사커.", "trans": "운동을 좋아해요. 축구를 해요.", "next": "sports" },
+        { "id": "hobbies_2", "text": "I watch a lot of movies.", "pron": "아이 워치 어 랏 오브 무비즈.", "trans": "영화를 많이 봐요.", "next": "movies" },
+        { "id": "hobbies_3", "text": "I like cooking. Mostly Korean food.", "pron": "아이 라이크 쿠킹. 모스틀리 코리안 푸드.", "trans": "요리하는 걸 좋아해요. 주로 한국 음식이요.", "next": "cooking" }
+      ]
+    },
+    {
+      "id": "sports",
+      "stage": "취미",
+      "text": "Oh, nice! A few of us play on weekends. Want to join us sometime?",
+      "pron": "오, 나이스! 어 퓨 오브 어스 플레이 온 위켄즈. 원트 투 조인 어스 썸타임?",
+      "trans": "오, 좋네요! 우리 몇 명이서 주말마다 하는데, 언제 같이 할래요?",
+      "replies": [
+        { "id": "sports_1", "text": "Sure, I'd love to!", "pron": "슈어, 아이드 러브 투!", "trans": "좋아요, 꼭 하고 싶어요!", "next": "plan_day" },
+        { "id": "sports_2", "text": "Maybe. I'm not very good, though.", "pron": "메이비. 아임 낫 베리 굿, 도우.", "trans": "글쎄요. 저 잘하진 못하는데요.", "next": "sports_easy" }
+      ]
+    },
+    {
+      "id": "sports_easy",
+      "stage": "취미",
+      "text": "Don't worry, it's just for fun. None of us are very good!",
+      "pron": "돈트 워리, 잇츠 저스트 포 펀. 넌 오브 어스 아 베리 굿!",
+      "trans": "걱정 마요, 그냥 재미로 하는 거예요. 우리도 다 잘 못해요!",
+      "replies": [
+        { "id": "sports_easy_1", "text": "Haha, okay. Count me in!", "pron": "하하, 오케이. 카운트 미 인!", "trans": "하하, 알겠어요. 저도 낄게요!", "next": "plan_day" },
+        { "id": "sports_easy_2", "text": "Let me think about it.", "pron": "렛 미 띵크 어바웃 잇.", "trans": "좀 생각해 볼게요.", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "movies",
+      "stage": "취미",
+      "text": "Me too! What kind of movies do you like?",
+      "pron": "미 투! 왓 카인드 오브 무비즈 두 유 라이크?",
+      "trans": "저도요! 어떤 영화 좋아해요?",
+      "replies": [
+        { "id": "movies_1", "text": "Action movies, for sure.", "pron": "액션 무비즈, 포 슈어.", "trans": "당연히 액션 영화죠.", "next": "movie_invite" },
+        { "id": "movies_2", "text": "I like comedies. I love to laugh.", "pron": "아이 라이크 카미디즈. 아이 러브 투 래프.", "trans": "코미디 좋아해요. 웃는 걸 좋아하거든요.", "next": "movie_invite" }
+      ]
+    },
+    {
+      "id": "movie_invite",
+      "stage": "약속",
+      "text": "There's a good one out right now. Do you want to go see it together?",
+      "pron": "데어즈 어 굿 원 아웃 라잇 나우. 두 유 원트 투 고 씨 잇 투게더?",
+      "trans": "지금 괜찮은 영화 하나 하던데요. 같이 보러 갈래요?",
+      "replies": [
+        { "id": "movie_invite_1", "text": "Sounds great! When?", "pron": "싸운즈 그레잇! 웬?", "trans": "좋아요! 언제요?", "next": "plan_day" },
+        { "id": "movie_invite_2", "text": "I'd love to, but I'm busy this week.", "pron": "아이드 러브 투, 벗 아임 비지 디스 위크.", "trans": "가고 싶은데, 이번 주는 바빠요.", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "cooking",
+      "stage": "취미",
+      "text": "No way! I love Korean food. Can you teach me how to make kimchi stew?",
+      "pron": "노 웨이! 아이 러브 코리안 푸드. 캔 유 티치 미 하우 투 메이크 김치 스튜?",
+      "trans": "진짜요? 저 한국 음식 정말 좋아해요. 김치찌개 만드는 법 좀 가르쳐 줄래요?",
+      "replies": [
+        { "id": "cooking_1", "text": "Sure! Let's cook together sometime.", "pron": "슈어! 렛츠 쿡 투게더 썸타임.", "trans": "좋아요! 언제 같이 요리해요.", "next": "plan_day" },
+        { "id": "cooking_2", "text": "Of course. It's really easy!", "pron": "오브 코스. 잇츠 리얼리 이지!", "trans": "물론이죠. 진짜 쉬워요!", "next": "plan_day" }
+      ]
+    },
+    {
+      "id": "plan_day",
+      "stage": "약속",
+      "text": "Awesome! Are you free this Saturday?",
+      "pron": "어썸! 아 유 프리 디스 새터데이?",
+      "trans": "잘됐다! 이번 주 토요일에 시간 있어요?",
+      "replies": [
+        { "id": "plan_day_1", "text": "Yes, Saturday works for me.", "pron": "예스, 새터데이 웍스 포 미.", "trans": "네, 토요일 괜찮아요.", "next": "plan_time" },
+        { "id": "plan_day_2", "text": "Saturday's not good. How about Sunday?", "pron": "새터데이즈 낫 굿. 하우 어바웃 선데이?", "trans": "토요일은 안 돼요. 일요일은 어때요?", "next": "plan_time" },
+        { "id": "plan_day_3", "text": "I'm not sure yet. Can I text you?", "pron": "아임 낫 슈어 옛. 캔 아이 텍스트 유?", "trans": "아직 잘 모르겠어요. 문자로 연락해도 될까요?", "next": "swap_numbers" }
+      ]
+    },
+    {
+      "id": "plan_time",
+      "stage": "약속",
+      "text": "Okay, that works! How about three in the afternoon?",
+      "pron": "오케이, 댓 웍스! 하우 어바웃 쓰리 인 디 애프터눈?",
+      "trans": "네, 좋아요! 오후 세 시 어때요?",
+      "replies": [
+        { "id": "plan_time_1", "text": "Perfect. Three o'clock it is!", "pron": "퍼펙트. 쓰리 어클락 잇 이즈!", "trans": "딱 좋아요. 세 시로 해요!", "next": "contact" },
+        { "id": "plan_time_2", "text": "Can we make it a little later? Like five?", "pron": "캔 위 메이크 잇 어 리틀 레이터? 라이크 파이브?", "trans": "조금 늦게 해도 될까요? 다섯 시쯤?", "next": "contact" }
+      ]
+    },
+    {
+      "id": "contact",
+      "stage": "연락처",
+      "text": "Great! Let's swap numbers so we can text.",
+      "pron": "그레잇! 렛츠 스왑 넘버즈 쏘 위 캔 텍스트.",
+      "trans": "좋아요! 연락할 수 있게 번호 교환해요.",
+      "replies": [
+        { "id": "contact_1", "text": "Sure. Here's my number.", "pron": "슈어. 히어즈 마이 넘버.", "trans": "그래요. 이게 제 번호예요.", "next": "end_plan" },
+        { "id": "contact_2", "text": "Are you on Instagram? Let's follow each other.", "pron": "아 유 온 인스타그램? 렛츠 팔로우 이치 아더.", "trans": "인스타그램 해요? 서로 팔로우해요.", "next": "end_plan" }
+      ]
+    },
+    {
+      "id": "swap_numbers",
+      "stage": "연락처",
+      "text": "No worries! Let's swap numbers anyway. Text me anytime.",
+      "pron": "노 워리즈! 렛츠 스왑 넘버즈 에니웨이. 텍스트 미 에니타임.",
+      "trans": "괜찮아요! 그래도 번호는 교환해요. 언제든 문자 줘요.",
+      "replies": [
+        { "id": "swap_numbers_1", "text": "Sure. Here you go.", "pron": "슈어. 히어 유 고.", "trans": "그래요. 여기요.", "next": "end_numbers" },
+        { "id": "swap_numbers_2", "text": "Good idea. I'll text you later.", "pron": "굿 아이디어. 아일 텍스트 유 레이터.", "trans": "좋아요. 나중에 문자할게요.", "next": "end_numbers" }
+      ]
+    },
+    {
+      "id": "end_plan",
+      "stage": "마무리",
+      "text": "Got it! See you this weekend, then. It was really nice meeting you!",
+      "pron": "갓 잇! 씨 유 디스 위켄드, 덴. 잇 워즈 리얼리 나이스 미팅 유!",
+      "trans": "알겠어요! 그럼 이번 주말에 봐요. 만나서 정말 반가웠어요!",
+      "replies": []
+    },
+    {
+      "id": "end_numbers",
+      "stage": "마무리",
+      "text": "Great! It was really nice meeting you, Minjun. Talk soon!",
+      "pron": "그레잇! 잇 워즈 리얼리 나이스 미팅 유, 민준. 톡 쑨!",
+      "trans": "좋아요! 만나서 정말 반가웠어요, 민준 씨. 또 연락해요!",
+      "replies": []
+    }
+  ]
+}
