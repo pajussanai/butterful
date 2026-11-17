@@ -28,32 +28,29 @@ class ContentRepository {
       jsonDecode(await _bundle.loadString('assets/content/catalog.json'))
           as Map<String, dynamic>,
     );
-    final manifest = jsonDecode(
-      await _bundle.loadString('assets/audio/manifest.json'),
-    ) as Map<String, dynamic>;
-    engine = manifest['engine'] as String;
-    final files = manifest['files'] as Map<String, dynamic>;
-    audioFiles = files.keys.toSet();
-    _seconds = {
-      for (final e in files.entries)
-        e.key: ((e.value as Map<String, dynamic>)['sec'] as num).toDouble(),
-    };
-    for (final lang in catalog.languages) {
-      for (final id in lang.content) {
-        _scenarios['${lang.code}/$id'] = Scenario.fromJson(
-          jsonDecode(
-            await _bundle.loadString('assets/content/${lang.code}/$id.json'),
-          ) as Map<String, dynamic>,
-        );
-      }
-      if (lang.words) {
-        _words[lang.code] = WordBook.fromJson(
-          jsonDecode(
-            await _bundle.loadString('assets/content/${lang.code}/words.json'),
-          ) as Map<String, dynamic>,
-        );
-      }
-    }
+    Future<Map<String, dynamic>> json(String path) async =>
+        jsonDecode(await _bundle.loadString(path)) as Map<String, dynamic>;
+    // 웹에서는 파일마다 내려받으므로 한꺼번에 요청한다(차례로 받으면 첫 화면이 늦게 뜬다).
+    await Future.wait([
+      json('assets/audio/manifest.json').then((manifest) {
+        engine = manifest['engine'] as String;
+        final files = manifest['files'] as Map<String, dynamic>;
+        audioFiles = files.keys.toSet();
+        _seconds = {
+          for (final e in files.entries)
+            e.key: ((e.value as Map<String, dynamic>)['sec'] as num).toDouble(),
+        };
+      }),
+      for (final lang in catalog.languages) ...[
+        for (final id in lang.content)
+          json(
+            'assets/content/${lang.code}/$id.json',
+          ).then((j) => _scenarios['${lang.code}/$id'] = Scenario.fromJson(j)),
+        if (lang.words)
+          json('assets/content/${lang.code}/words.json')
+              .then((j) => _words[lang.code] = WordBook.fromJson(j)),
+      ],
+    ]);
   }
 
   /// 초급 기초 단어(없는 언어는 빈 목록)
