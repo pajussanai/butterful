@@ -8,6 +8,7 @@ class Language {
     required this.pronLabel,
     required this.transLabel,
     required this.content,
+    this.words = false,
   });
 
   factory Language.fromJson(Map<String, dynamic> j) => Language(
@@ -18,6 +19,7 @@ class Language {
     pronLabel: j['pronLabel'] as String,
     transLabel: j['transLabel'] as String,
     content: List<String>.from(j['content'] as List),
+    words: j['words'] as bool? ?? false,
   );
 
   final String code;
@@ -35,6 +37,9 @@ class Language {
 
   /// 이 언어로 준비된 시나리오 ID
   final List<String> content;
+
+  /// 초급 기초 단어가 있는지(assets/content/<언어>/words.json)
+  final bool words;
 }
 
 /// 학습 상황 묶음(여행, 식당·카페 …)
@@ -75,12 +80,11 @@ class ScenarioInfo {
   final String role;
 }
 
-/// 대화 상대
+/// 대화 상대. ID·목소리는 모든 언어에서 같고, 화면에 보이는 이름만 언어마다 다르다.
 class Character {
   const Character({
     required this.id,
-    required this.name,
-    required this.nameKo,
+    required this.names,
     required this.personality,
     required this.style,
     required this.voice,
@@ -89,8 +93,10 @@ class Character {
 
   factory Character.fromJson(Map<String, dynamic> j) => Character(
     id: j['id'] as String,
-    name: j['name'] as String,
-    nameKo: j['nameKo'] as String,
+    names: {
+      for (final e in (j['names'] as Map<String, dynamic>).entries)
+        e.key: LocalName.fromJson(e.value as List),
+    },
     personality: j['personality'] as String,
     style: j['style'] as String,
     voice: j['voice'] as String,
@@ -98,16 +104,111 @@ class Character {
   );
 
   final String id;
-  final String name;
-  final String nameKo;
+
+  /// 언어별 이름(현지 표기, 한글 표기)
+  final Map<String, LocalName> names;
   final String personality;
   final String style;
 
-  /// 음성 엔진의 목소리 이름(모든 언어에서 같은 목소리)
+  /// Supertonic 목소리 이름(언어별 엔진·목소리는 tool/tts/engines.json)
   final String voice;
 
   /// 생성할 때 쓴 말하기 속도
   final double speed;
+
+  LocalName nameIn(String lang) {
+    final n = names[lang];
+    if (n == null) throw StateError('이름이 없는 캐릭터: $id ($lang)');
+    return n;
+  }
+}
+
+/// 한 언어에서 쓰는 캐릭터 이름
+class LocalName {
+  const LocalName(this.native, this.korean);
+
+  factory LocalName.fromJson(List j) =>
+      LocalName(j[0] as String, j[1] as String);
+
+  /// 현지 표기(예: Lucía, 結衣)
+  final String native;
+
+  /// 한글 표기(예: 루시아, 유이)
+  final String korean;
+
+  /// 카드에 쓰는 이름(한국어 이름은 한 번만)
+  String get label => native == korean ? native : '$native · $korean';
+
+  /// 한글 이름 + 와/과(예: 루시아와, 하은과)
+  String get withAnd => '$korean${hasFinalConsonant(korean) ? '과' : '와'}';
+}
+
+/// 마지막 글자가 받침으로 끝나는 한글인지
+bool hasFinalConsonant(String word) {
+  if (word.isEmpty) return false;
+  final c = word.runes.last;
+  if (c < 0xAC00 || c > 0xD7A3) return false;
+  return (c - 0xAC00) % 28 != 0;
+}
+
+/// 초급 기초 단어의 주제(인사, 숫자와 시간 …)
+class WordCategory {
+  const WordCategory({required this.id, required this.name});
+
+  factory WordCategory.fromJson(Map<String, dynamic> j) =>
+      WordCategory(id: j['id'] as String, name: j['name'] as String);
+
+  final String id;
+  final String name;
+}
+
+/// 기초 단어 하나와 예문
+class WordItem {
+  const WordItem({
+    required this.id,
+    required this.text,
+    required this.pron,
+    required this.meaning,
+    required this.example,
+    required this.exampleTrans,
+  });
+
+  factory WordItem.fromJson(Map<String, dynamic> j) => WordItem(
+    id: j['id'] as String,
+    text: j['text'] as String,
+    pron: j['pron'] as String,
+    meaning: j['meaning'] as String,
+    example: j['example'] as String,
+    exampleTrans: j['exampleTrans'] as String,
+  );
+
+  final String id;
+  final String text;
+  final String pron;
+
+  /// 뜻(한국어. 한국어 과정은 영어)
+  final String meaning;
+  final String example;
+  final String exampleTrans;
+}
+
+/// 한 언어의 기초 단어(주제 ID → 단어 목록)
+class WordBook {
+  WordBook(this.lang, this.categories);
+
+  factory WordBook.fromJson(Map<String, dynamic> j) =>
+      WordBook(j['lang'] as String, {
+        for (final c in j['categories'] as List)
+          (c as Map<String, dynamic>)['id'] as String: [
+            for (final w in c['items'] as List)
+              WordItem.fromJson(w as Map<String, dynamic>),
+          ],
+      });
+
+  final String lang;
+  final Map<String, List<WordItem>> categories;
+
+  List<WordItem> words(String category) => categories[category] ?? const [];
 }
 
 /// 학습자가 고를 수 있는 대답
@@ -211,6 +312,7 @@ class Catalog {
     required this.categories,
     required this.scenarios,
     required this.characters,
+    required this.wordCategories,
   });
 
   factory Catalog.fromJson(Map<String, dynamic> j) => Catalog(
@@ -230,12 +332,17 @@ class Catalog {
       for (final c in j['characters'] as List)
         Character.fromJson(c as Map<String, dynamic>),
     ],
+    wordCategories: [
+      for (final c in j['wordCategories'] as List)
+        WordCategory.fromJson(c as Map<String, dynamic>),
+    ],
   );
 
   final List<Language> languages;
   final List<Category> categories;
   final List<ScenarioInfo> scenarios;
   final List<Character> characters;
+  final List<WordCategory> wordCategories;
 
   Language language(String code) => languages.firstWhere((l) => l.code == code);
   ScenarioInfo scenario(String id) => scenarios.firstWhere((s) => s.id == id);

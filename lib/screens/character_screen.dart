@@ -6,7 +6,7 @@ import '../audio/voice_player.dart';
 import '../data/content_repository.dart';
 import '../data/models.dart';
 import '../widgets/character_avatar.dart';
-import 'home_screen.dart';
+import 'conversation_screen.dart';
 
 /// 대화 상대 고르기(목소리 미리 듣기)
 class CharacterScreen extends StatefulWidget {
@@ -78,20 +78,12 @@ class _CharacterScreenState extends State<CharacterScreen> {
     await _player.stop();
     await widget.services.progress.setCharacter(id);
     if (!mounted) return;
-    final session = widget.services.progress.session(
-      widget.lang,
-      widget.info.id,
-    );
     await openConversation(
       context,
       widget.services,
       lang: widget.lang,
       scenario: widget.info.id,
       character: id,
-      // 같은 캐릭터와 하다 만 대화가 있으면 이어서
-      resume: session != null && !session.done && session.character == id
-          ? session.choices
-          : const [],
     );
   }
 
@@ -119,6 +111,7 @@ class _CharacterScreenState extends State<CharacterScreen> {
             for (final c in characters) ...[
               _CharacterCard(
                 character: c,
+                lang: widget.lang,
                 voiced: repo.isVoiced(widget.lang, c.id),
                 selected: c.id == _selected,
                 previewing: c.id == _previewing,
@@ -146,7 +139,7 @@ class _CharacterScreenState extends State<CharacterScreen> {
                   label: Text(
                     selected == null
                         ? '대화 상대를 골라 주세요'
-                        : '${selected.name}와 대화 시작',
+                        : '${selected.nameIn(widget.lang).withAnd} 대화 시작',
                   ),
                 ),
               ),
@@ -161,6 +154,7 @@ class _CharacterScreenState extends State<CharacterScreen> {
 class _CharacterCard extends StatelessWidget {
   const _CharacterCard({
     required this.character,
+    required this.lang,
     required this.voiced,
     required this.selected,
     required this.previewing,
@@ -169,6 +163,7 @@ class _CharacterCard extends StatelessWidget {
   });
 
   final Character character;
+  final String lang;
   final bool voiced;
   final bool selected;
   final bool previewing;
@@ -196,7 +191,7 @@ class _CharacterCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '${character.name} · ${character.nameKo}',
+                  character.nameIn(lang).label,
                   style: const TextStyle(
                     fontSize: 16.5,
                     fontWeight: FontWeight.w800,

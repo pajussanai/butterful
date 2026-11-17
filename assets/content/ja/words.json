@@ -1,0 +1,125 @@
+{
+  "lang": "ja",
+  "categories": [
+    { "id": "greetings", "items": [
+      {"id": "hello", "text": "こんにちは", "pron": "곤니치와", "meaning": "안녕하세요(낮 인사)", "example": "こんにちは、お元気ですか？", "exampleTrans": "안녕하세요, 잘 지내세요?"},
+      {"id": "goodbye", "text": "さようなら", "pron": "사요-나라", "meaning": "안녕히 가세요/잘 가요", "example": "さようなら、また明日。", "exampleTrans": "잘 가요, 내일 또 봐요."},
+      {"id": "thank_you", "text": "ありがとうございます", "pron": "아리가토- 고자이마스", "meaning": "고마워요/감사합니다", "example": "本当にありがとうございます。", "exampleTrans": "정말 고마워요."},
+      {"id": "sorry", "text": "ごめんなさい", "pron": "고멘나사이", "meaning": "미안해요", "example": "遅れてごめんなさい。", "exampleTrans": "늦어서 미안해요."},
+      {"id": "excuse_me", "text": "すみません", "pron": "스미마센", "meaning": "실례합니다/저기요", "example": "すみません、駅はどこですか？", "exampleTrans": "저기요, 역이 어디예요?"},
+      {"id": "please", "text": "お願いします", "pron": "오네가이시마스", "meaning": "부탁해요/…주세요", "example": "お水、お願いします。", "exampleTrans": "물 주세요."},
+      {"id": "yes", "text": "はい", "pron": "하이", "meaning": "네", "example": "はい、そうです。", "exampleTrans": "네, 맞아요."},
+      {"id": "no", "text": "いいえ", "pron": "이-에", "meaning": "아니요", "example": "いいえ、違います。", "exampleTrans": "아니요, 아니에요."},
+      {"id": "nice_to_meet", "text": "はじめまして", "pron": "하지메마시테", "meaning": "처음 뵙겠습니다(만나서 반가워요)", "example": "はじめまして、よろしくお願いします。", "exampleTrans": "처음 뵙겠습니다, 잘 부탁해요."},
+      {"id": "good_morning", "text": "おはようございます", "pron": "오하요- 고자이마스", "meaning": "좋은 아침이에요(아침 인사)", "example": "おはようございます、いい天気ですね。", "exampleTrans": "좋은 아침이에요, 날씨가 좋네요."}
+    ] },
+    { "id": "numbers_time", "items": [
+      {"id": "one", "text": "いち", "pron": "이치", "meaning": "일, 1", "example": "答えはいちです。", "exampleTrans": "답은 1이에요."},
+      {"id": "two", "text": "に", "pron": "니", "meaning": "이, 2", "example": "いちたすいちは、にです。", "exampleTrans": "1 더하기 1은 2예요."},
+      {"id": "three", "text": "さん", "pron": "산", "meaning": "삼, 3", "example": "さんがつに日本へ行きます。", "exampleTrans": "3월에 일본에 가요."},
+      {"id": "ten", "text": "じゅう", "pron": "쥬-", "meaning": "십, 10", "example": "じゅうじに寝ます。", "exampleTrans": "10시에 자요."},
+      {"id": "hundred", "text": "ひゃく", "pron": "햐쿠", "meaning": "백, 100", "example": "これはひゃくえんです。", "exampleTrans": "이건 100엔이에요."},
+      {"id": "now", "text": "今", "pron": "이마", "meaning": "지금", "example": "今、忙しいです。", "exampleTrans": "지금 바빠요."},
+      {"id": "today", "text": "今日", "pron": "쿄-", "meaning": "오늘", "example": "今日は暑いですね。", "exampleTrans": "오늘 덥네요."},
+      {"id": "tomorrow", "text": "明日", "pron": "아시타", "meaning": "내일", "example": "明日、また来ます。", "exampleTrans": "내일 또 올게요."},
+      {"id": "yesterday", "text": "昨日", "pron": "키노-", "meaning": "어제", "example": "昨日は休みでした。", "exampleTrans": "어제는 쉬는 날이었어요."},
+      {"id": "minute", "text": "ふん", "pron": "훈", "meaning": "분(시간 단위)", "example": "あとごふん待ってください。", "exampleTrans": "5분만 더 기다려 주세요."}
+    ] },
+    { "id": "people_family", "items": [
+      {"id": "person", "text": "ひと", "pron": "히토", "meaning": "사람", "example": "あの人は先生です。", "exampleTrans": "저 사람은 선생님이에요."},
+      {"id": "man", "text": "男の人", "pron": "오토코노 히토", "meaning": "남자", "example": "男の人が来ました。", "exampleTrans": "남자가 왔어요."},
+      {"id": "woman", "text": "女の人", "pron": "온나노 히토", "meaning": "여자", "example": "女の人が歌っています。", "exampleTrans": "여자가 노래하고 있어요."},
+      {"id": "child", "text": "子ども", "pron": "코도모", "meaning": "아이", "example": "子どもが公園で遊んでいます。", "exampleTrans": "아이가 공원에서 놀고 있어요."},
+      {"id": "friend", "text": "友だち", "pron": "토모다치", "meaning": "친구", "example": "友だちと映画を見ます。", "exampleTrans": "친구와 영화를 봐요."},
+      {"id": "family", "text": "家族", "pron": "카조쿠", "meaning": "가족", "example": "家族と旅行します。", "exampleTrans": "가족과 여행해요."},
+      {"id": "mother", "text": "お母さん", "pron": "오카-상", "meaning": "어머니/엄마", "example": "お母さんは料理が上手です。", "exampleTrans": "어머니는 요리를 잘해요."},
+      {"id": "father", "text": "お父さん", "pron": "오토-상", "meaning": "아버지/아빠", "example": "お父さんは会社員です。", "exampleTrans": "아버지는 회사원이에요."},
+      {"id": "name", "text": "名前", "pron": "나마에", "meaning": "이름", "example": "お名前は何ですか？", "exampleTrans": "이름이 뭐예요?"},
+      {"id": "colleague", "text": "同僚", "pron": "도-료-", "meaning": "동료", "example": "同僚と昼ご飯を食べます。", "exampleTrans": "동료와 점심을 먹어요."}
+    ] },
+    { "id": "food_drink", "items": [
+      {"id": "water", "text": "お水", "pron": "오미즈", "meaning": "물", "example": "お水をください。", "exampleTrans": "물 주세요."},
+      {"id": "coffee", "text": "コーヒー", "pron": "코-히-", "meaning": "커피", "example": "朝はコーヒーを飲みます。", "exampleTrans": "아침에는 커피를 마셔요."},
+      {"id": "tea", "text": "お茶", "pron": "오차", "meaning": "차", "example": "お茶をどうぞ。", "exampleTrans": "차 드세요."},
+      {"id": "beer", "text": "ビール", "pron": "비-루", "meaning": "맥주", "example": "冷たいビールが好きです。", "exampleTrans": "시원한 맥주를 좋아해요."},
+      {"id": "bread", "text": "パン", "pron": "판", "meaning": "빵", "example": "朝ご飯にパンを食べます。", "exampleTrans": "아침으로 빵을 먹어요."},
+      {"id": "rice", "text": "ご飯", "pron": "고항", "meaning": "밥", "example": "ご飯を食べましょう。", "exampleTrans": "밥 먹어요."},
+      {"id": "meat", "text": "肉", "pron": "니쿠", "meaning": "고기", "example": "肉が好きです。", "exampleTrans": "고기를 좋아해요."},
+      {"id": "fish", "text": "魚", "pron": "사카나", "meaning": "생선/물고기", "example": "魚を焼きます。", "exampleTrans": "생선을 구워요."},
+      {"id": "vegetable", "text": "野菜", "pron": "야사이", "meaning": "채소", "example": "野菜をたくさん食べます。", "exampleTrans": "채소를 많이 먹어요."},
+      {"id": "fruit", "text": "果物", "pron": "쿠다모노", "meaning": "과일", "example": "果物が好きです。", "exampleTrans": "과일을 좋아해요."}
+    ] },
+    { "id": "places_directions", "items": [
+      {"id": "station", "text": "駅", "pron": "에키", "meaning": "역", "example": "駅はどこですか？", "exampleTrans": "역은 어디예요?"},
+      {"id": "hotel", "text": "ホテル", "pron": "호테루", "meaning": "호텔", "example": "ホテルに泊まります。", "exampleTrans": "호텔에 묵어요."},
+      {"id": "toilet", "text": "トイレ", "pron": "토이레", "meaning": "화장실", "example": "トイレはどこですか？", "exampleTrans": "화장실은 어디예요?"},
+      {"id": "hospital", "text": "病院", "pron": "뵤-인", "meaning": "병원", "example": "病院へ行きます。", "exampleTrans": "병원에 가요."},
+      {"id": "bank", "text": "銀行", "pron": "깅코-", "meaning": "은행", "example": "銀行は何時までですか？", "exampleTrans": "은행은 몇 시까지예요?"},
+      {"id": "left", "text": "左", "pron": "히다리", "meaning": "왼쪽", "example": "左に曲がってください。", "exampleTrans": "왼쪽으로 돌아 주세요."},
+      {"id": "right", "text": "右", "pron": "미기", "meaning": "오른쪽", "example": "駅は右にあります。", "exampleTrans": "역은 오른쪽에 있어요."},
+      {"id": "straight", "text": "まっすぐ", "pron": "맛스구", "meaning": "똑바로/곧장", "example": "まっすぐ行ってください。", "exampleTrans": "곧장 가 주세요."},
+      {"id": "here", "text": "ここ", "pron": "코코", "meaning": "여기", "example": "ここに座ってください。", "exampleTrans": "여기 앉으세요."},
+      {"id": "there", "text": "あそこ", "pron": "아소코", "meaning": "저기", "example": "あそこに銀行があります。", "exampleTrans": "저기에 은행이 있어요."}
+    ] },
+    { "id": "transport", "items": [
+      {"id": "bus", "text": "バス", "pron": "바스", "meaning": "버스", "example": "バスで学校へ行きます。", "exampleTrans": "버스로 학교에 가요."},
+      {"id": "train", "text": "電車", "pron": "덴샤", "meaning": "기차/전철", "example": "電車が来ました。", "exampleTrans": "전철이 왔어요."},
+      {"id": "subway", "text": "地下鉄", "pron": "치카테츠", "meaning": "지하철", "example": "地下鉄に乗ります。", "exampleTrans": "지하철을 타요."},
+      {"id": "taxi", "text": "タクシー", "pron": "타쿠시-", "meaning": "택시", "example": "タクシーを呼んでください。", "exampleTrans": "택시를 불러 주세요."},
+      {"id": "car", "text": "車", "pron": "쿠루마", "meaning": "자동차", "example": "車で行きます。", "exampleTrans": "차로 가요."},
+      {"id": "bicycle", "text": "自転車", "pron": "지텐샤", "meaning": "자전거", "example": "自転車に乗ります。", "exampleTrans": "자전거를 타요."},
+      {"id": "airplane", "text": "飛行機", "pron": "히코-키", "meaning": "비행기", "example": "飛行機で東京へ行きます。", "exampleTrans": "비행기로 도쿄에 가요."},
+      {"id": "airport", "text": "空港", "pron": "쿠-코-", "meaning": "공항", "example": "空港までお願いします。", "exampleTrans": "공항까지 가 주세요."},
+      {"id": "ticket", "text": "切符", "pron": "킵푸", "meaning": "표", "example": "切符を買います。", "exampleTrans": "표를 사요."},
+      {"id": "stop", "text": "バス停", "pron": "바스테-", "meaning": "버스 정류장", "example": "バス停はどこですか？", "exampleTrans": "버스 정류장은 어디예요?"}
+    ] },
+    { "id": "shopping_money", "items": [
+      {"id": "shop", "text": "お店", "pron": "오미세", "meaning": "가게", "example": "このお店は安いです。", "exampleTrans": "이 가게는 싸요."},
+      {"id": "money", "text": "お金", "pron": "오카네", "meaning": "돈", "example": "お金がありません。", "exampleTrans": "돈이 없어요."},
+      {"id": "price", "text": "値段", "pron": "네단", "meaning": "가격", "example": "値段はいくらですか？", "exampleTrans": "가격이 얼마예요?"},
+      {"id": "card", "text": "カード", "pron": "카-도", "meaning": "카드", "example": "カードで払えますか？", "exampleTrans": "카드로 계산할 수 있어요?"},
+      {"id": "cash", "text": "現金", "pron": "겡킨", "meaning": "현금", "example": "現金で払います。", "exampleTrans": "현금으로 낼게요."},
+      {"id": "receipt", "text": "レシート", "pron": "레시-토", "meaning": "영수증", "example": "レシートをください。", "exampleTrans": "영수증 주세요."},
+      {"id": "discount", "text": "割引", "pron": "와리비키", "meaning": "할인", "example": "学生割引はありますか？", "exampleTrans": "학생 할인 있어요?"},
+      {"id": "size", "text": "サイズ", "pron": "사이즈", "meaning": "사이즈", "example": "もっと大きいサイズはありますか？", "exampleTrans": "더 큰 사이즈 있어요?"},
+      {"id": "bag", "text": "袋", "pron": "후쿠로", "meaning": "봉투/봉지", "example": "袋はいりますか？", "exampleTrans": "봉투 필요하세요?"},
+      {"id": "change", "text": "おつり", "pron": "오츠리", "meaning": "거스름돈", "example": "おつりをどうぞ。", "exampleTrans": "거스름돈 여기 있어요."}
+    ] },
+    { "id": "verbs", "items": [
+      {"id": "go", "text": "行く", "pron": "이쿠", "meaning": "가다", "example": "学校へ行きます。", "exampleTrans": "학교에 가요."},
+      {"id": "come", "text": "来る", "pron": "쿠루", "meaning": "오다", "example": "友だちが家に来ます。", "exampleTrans": "친구가 집에 와요."},
+      {"id": "eat", "text": "食べる", "pron": "타베루", "meaning": "먹다", "example": "お寿司を食べます。", "exampleTrans": "초밥을 먹어요."},
+      {"id": "drink", "text": "飲む", "pron": "노무", "meaning": "마시다", "example": "お茶を飲みます。", "exampleTrans": "차를 마셔요."},
+      {"id": "see", "text": "見る", "pron": "미루", "meaning": "보다", "example": "テレビを見ます。", "exampleTrans": "텔레비전을 봐요."},
+      {"id": "buy", "text": "買う", "pron": "카우", "meaning": "사다", "example": "パンを買います。", "exampleTrans": "빵을 사요."},
+      {"id": "want", "text": "欲しい", "pron": "호시-", "meaning": "갖고 싶다/원하다", "example": "新しい靴が欲しいです。", "exampleTrans": "새 신발을 갖고 싶어요."},
+      {"id": "know", "text": "知る", "pron": "시루", "meaning": "알다", "example": "その人を知っています。", "exampleTrans": "그 사람을 알아요."},
+      {"id": "speak", "text": "話す", "pron": "하나스", "meaning": "말하다", "example": "日本語を話します。", "exampleTrans": "일본어를 말해요."},
+      {"id": "wait", "text": "待つ", "pron": "마츠", "meaning": "기다리다", "example": "ここで待ちます。", "exampleTrans": "여기서 기다릴게요."}
+    ] },
+    { "id": "adjectives", "items": [
+      {"id": "good", "text": "いい", "pron": "이-", "meaning": "좋다", "example": "今日はいい天気ですね。", "exampleTrans": "오늘 날씨가 좋네요."},
+      {"id": "bad", "text": "悪い", "pron": "와루이", "meaning": "나쁘다", "example": "天気が悪いです。", "exampleTrans": "날씨가 나빠요."},
+      {"id": "big", "text": "大きい", "pron": "오-키-", "meaning": "크다", "example": "この靴は大きいです。", "exampleTrans": "이 신발은 커요."},
+      {"id": "small", "text": "小さい", "pron": "치-사이", "meaning": "작다", "example": "小さいかばんです。", "exampleTrans": "작은 가방이에요."},
+      {"id": "hot", "text": "暑い", "pron": "아츠이", "meaning": "덥다(날씨)", "example": "夏は暑いです。", "exampleTrans": "여름은 더워요."},
+      {"id": "cold", "text": "寒い", "pron": "사무이", "meaning": "춥다(날씨)", "example": "冬は寒いです。", "exampleTrans": "겨울은 추워요."},
+      {"id": "cheap", "text": "安い", "pron": "야스이", "meaning": "싸다", "example": "このシャツは安いです。", "exampleTrans": "이 셔츠는 싸요."},
+      {"id": "expensive", "text": "高い", "pron": "타카이", "meaning": "비싸다", "example": "このかばんは高いです。", "exampleTrans": "이 가방은 비싸요."},
+      {"id": "delicious", "text": "おいしい", "pron": "오이시-", "meaning": "맛있다", "example": "このラーメンはおいしいです。", "exampleTrans": "이 라멘은 맛있어요."},
+      {"id": "fast", "text": "速い", "pron": "하야이", "meaning": "빠르다", "example": "新幹線は速いです。", "exampleTrans": "신칸센은 빨라요."}
+    ] },
+    { "id": "questions", "items": [
+      {"id": "what", "text": "なに", "pron": "나니", "meaning": "무엇", "example": "これは何ですか？", "exampleTrans": "이건 뭐예요?"},
+      {"id": "who", "text": "誰", "pron": "다레", "meaning": "누구", "example": "あの人は誰ですか？", "exampleTrans": "저 사람은 누구예요?"},
+      {"id": "where", "text": "どこ", "pron": "도코", "meaning": "어디", "example": "ここはどこですか？", "exampleTrans": "여기는 어디예요?"},
+      {"id": "when", "text": "いつ", "pron": "이츠", "meaning": "언제", "example": "誕生日はいつですか？", "exampleTrans": "생일이 언제예요?"},
+      {"id": "why", "text": "どうして", "pron": "도-시테", "meaning": "왜", "example": "どうして日本に来ましたか？", "exampleTrans": "왜 일본에 왔어요?"},
+      {"id": "how", "text": "どうやって", "pron": "도-얏테", "meaning": "어떻게(방법)", "example": "駅までどうやって行きますか？", "exampleTrans": "역까지 어떻게 가요?"},
+      {"id": "how_much", "text": "いくら", "pron": "이쿠라", "meaning": "얼마(값)", "example": "これはいくらですか？", "exampleTrans": "이건 얼마예요?"},
+      {"id": "which", "text": "どれ", "pron": "도레", "meaning": "어느 것", "example": "どれがいいですか？", "exampleTrans": "어느 게 좋아요?"},
+      {"id": "how_many", "text": "いくつ", "pron": "이쿠츠", "meaning": "몇 개", "example": "りんごはいくつありますか？", "exampleTrans": "사과는 몇 개 있어요?"},
+      {"id": "what_time", "text": "何時", "pron": "난지", "meaning": "몇 시", "example": "会議は何時からですか？", "exampleTrans": "회의는 몇 시부터예요?"}
+    ] }
+  ]
+}

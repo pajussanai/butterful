@@ -5,7 +5,6 @@ import 'package:flutter/foundation.dart';
 import '../audio/voice_player.dart';
 import '../data/content_repository.dart';
 import '../data/models.dart';
-import '../data/progress_store.dart';
 
 /// 지나간 대화 한 줄(캐릭터 대사 + 내가 고른 대답)
 class Exchange {
@@ -33,26 +32,16 @@ enum SpeakState {
 class ConversationController extends ChangeNotifier {
   ConversationController({
     required this.repo,
-    required this.progress,
     required this.player,
     required this.lang,
     required this.scenarioId,
     required this.character,
-    List<String> resumeChoices = const [],
     this.repeatTimes = 3,
   }) : scenario = repo.scenario(lang, scenarioId) {
     _current = scenario.node(scenario.start);
-    // 이어서 하기: 저장된 대답을 처음부터 따라가 같은 위치로 간다.
-    for (final id in resumeChoices) {
-      final reply = _current.replies.where((r) => r.id == id).firstOrNull;
-      if (reply == null) break;
-      history.add(Exchange(_current, reply));
-      _current = scenario.node(reply.next);
-    }
   }
 
   final ContentRepository repo;
-  final ProgressStore progress;
   final VoicePlayer player;
   final String lang;
   final String scenarioId;
@@ -94,14 +83,6 @@ class ConversationController extends ChangeNotifier {
     final token = ++_token;
     playingGuide = null;
     await player.stop();
-    await progress.record(
-      lang: lang,
-      scenario: scenarioId,
-      character: character.id,
-      choices: choices,
-      nodeId: _current.id,
-      isEnd: _current.isEnd,
-    );
     final times = repeat ? repeatTimes : 1;
     for (var i = 1; i <= times; i++) {
       if (token != _token) return;

@@ -1,0 +1,125 @@
+{
+  "lang": "zh",
+  "categories": [
+    { "id": "greetings", "items": [
+      { "id": "hello", "text": "你好", "pron": "Nǐ hǎo\n니 하오", "meaning": "안녕하세요", "example": "你好，很高兴认识你。", "exampleTrans": "안녕하세요, 만나서 반가워요." },
+      { "id": "goodbye", "text": "再见", "pron": "Zàijiàn\n짜이젠", "meaning": "안녕히 가세요, 잘 가요", "example": "再见，明天见！", "exampleTrans": "잘 가요, 내일 봐요!" },
+      { "id": "thank_you", "text": "谢谢", "pron": "Xièxie\n셰셰", "meaning": "고마워요", "example": "谢谢你的帮助。", "exampleTrans": "도와줘서 고마워요." },
+      { "id": "sorry", "text": "对不起", "pron": "Duìbuqǐ\n두이부치", "meaning": "미안해요", "example": "对不起，我来晚了。", "exampleTrans": "미안해요, 제가 늦었어요." },
+      { "id": "excuse_me", "text": "不好意思", "pron": "Bù hǎoyìsi\n부 하오이쓰", "meaning": "실례합니다, 저기요", "example": "不好意思，请让一下。", "exampleTrans": "실례지만, 좀 지나갈게요." },
+      { "id": "please", "text": "请", "pron": "Qǐng\n칭", "meaning": "~해 주세요, 부탁해요", "example": "请给我菜单。", "exampleTrans": "메뉴판 좀 주세요." },
+      { "id": "yes", "text": "是", "pron": "Shì\n스", "meaning": "네, 그래요", "example": "是，我是韩国人。", "exampleTrans": "네, 저는 한국 사람이에요." },
+      { "id": "no", "text": "不是", "pron": "Bú shì\n부 스", "meaning": "아니요", "example": "不是，我不是中国人。", "exampleTrans": "아니요, 저는 중국 사람이 아니에요." },
+      { "id": "nice_to_meet", "text": "很高兴认识你", "pron": "Hěn gāoxìng rènshi nǐ\n헌 가오싱 런스 니", "meaning": "만나서 반가워요", "example": "我叫小明，很高兴认识你。", "exampleTrans": "저는 샤오밍이에요, 만나서 반가워요." },
+      { "id": "good_morning", "text": "早上好", "pron": "Zǎoshang hǎo\n짜오상 하오", "meaning": "좋은 아침이에요", "example": "早上好，吃早饭了吗？", "exampleTrans": "좋은 아침이에요, 아침 먹었어요?" }
+    ] },
+    { "id": "numbers_time", "items": [
+      { "id": "one", "text": "一", "pron": "Yī\n이", "meaning": "하나, 일", "example": "我要一个苹果。", "exampleTrans": "사과 하나 주세요." },
+      { "id": "two", "text": "二", "pron": "Èr\n얼", "meaning": "둘, 이 (개수를 셀 때는 两)", "example": "我住在二楼。", "exampleTrans": "저는 이 층에 살아요." },
+      { "id": "three", "text": "三", "pron": "Sān\n싼", "meaning": "셋, 삼", "example": "我们三个人。", "exampleTrans": "우리는 세 명이에요." },
+      { "id": "ten", "text": "十", "pron": "Shí\n스", "meaning": "열, 십", "example": "现在十点。", "exampleTrans": "지금 열 시예요." },
+      { "id": "hundred", "text": "一百", "pron": "Yìbǎi\n이바이", "meaning": "백", "example": "这个一百块。", "exampleTrans": "이건 백 위안이에요." },
+      { "id": "now", "text": "现在", "pron": "Xiànzài\n셴짜이", "meaning": "지금", "example": "我现在很忙。", "exampleTrans": "저는 지금 바빠요." },
+      { "id": "today", "text": "今天", "pron": "Jīntiān\n진톈", "meaning": "오늘", "example": "今天星期几？", "exampleTrans": "오늘 무슨 요일이에요?" },
+      { "id": "tomorrow", "text": "明天", "pron": "Míngtiān\n밍톈", "meaning": "내일", "example": "我们明天见吧。", "exampleTrans": "우리 내일 만나요." },
+      { "id": "yesterday", "text": "昨天", "pron": "Zuótiān\n쭤톈", "meaning": "어제", "example": "昨天我很累。", "exampleTrans": "어제 저는 피곤했어요." },
+      { "id": "minute", "text": "分钟", "pron": "Fēnzhōng\n펀중", "meaning": "분 (시간)", "example": "走路十分钟就到。", "exampleTrans": "걸어서 십 분이면 도착해요." }
+    ] },
+    { "id": "people_family", "items": [
+      { "id": "person", "text": "人", "pron": "Rén\n런", "meaning": "사람", "example": "这里人很多。", "exampleTrans": "여기는 사람이 많아요." },
+      { "id": "man", "text": "男人", "pron": "Nánrén\n난런", "meaning": "남자", "example": "那个男人是老师。", "exampleTrans": "저 남자는 선생님이에요." },
+      { "id": "woman", "text": "女人", "pron": "Nǚrén\n뉘런", "meaning": "여자", "example": "那个女人是医生。", "exampleTrans": "저 여자는 의사예요." },
+      { "id": "child", "text": "孩子", "pron": "Háizi\n하이쯔", "meaning": "아이", "example": "我有两个孩子。", "exampleTrans": "저는 아이가 둘 있어요." },
+      { "id": "friend", "text": "朋友", "pron": "Péngyou\n펑여우", "meaning": "친구", "example": "他是我的好朋友。", "exampleTrans": "그는 제 친한 친구예요." },
+      { "id": "family", "text": "家人", "pron": "Jiārén\n자런", "meaning": "가족", "example": "我很想家人。", "exampleTrans": "가족이 많이 보고 싶어요." },
+      { "id": "mother", "text": "妈妈", "pron": "Māma\n마마", "meaning": "엄마, 어머니", "example": "我妈妈是老师。", "exampleTrans": "우리 엄마는 선생님이에요." },
+      { "id": "father", "text": "爸爸", "pron": "Bàba\n바바", "meaning": "아빠, 아버지", "example": "我爸爸很高。", "exampleTrans": "우리 아빠는 키가 커요." },
+      { "id": "name", "text": "名字", "pron": "Míngzi\n밍쯔", "meaning": "이름", "example": "你叫什么名字？", "exampleTrans": "이름이 뭐예요?" },
+      { "id": "colleague", "text": "同事", "pron": "Tóngshì\n퉁스", "meaning": "동료", "example": "他是我的同事。", "exampleTrans": "그는 제 동료예요." }
+    ] },
+    { "id": "food_drink", "items": [
+      { "id": "water", "text": "水", "pron": "Shuǐ\n수이", "meaning": "물", "example": "我想喝水。", "exampleTrans": "물 마시고 싶어요." },
+      { "id": "coffee", "text": "咖啡", "pron": "Kāfēi\n카페이", "meaning": "커피", "example": "我每天喝咖啡。", "exampleTrans": "저는 매일 커피를 마셔요." },
+      { "id": "tea", "text": "茶", "pron": "Chá\n차", "meaning": "차 (마시는 차)", "example": "你喝茶吗？", "exampleTrans": "차 마실래요?" },
+      { "id": "beer", "text": "啤酒", "pron": "Píjiǔ\n피지우", "meaning": "맥주", "example": "来两瓶啤酒。", "exampleTrans": "맥주 두 병 주세요." },
+      { "id": "bread", "text": "面包", "pron": "Miànbāo\n몐바오", "meaning": "빵", "example": "我早上吃面包。", "exampleTrans": "저는 아침에 빵을 먹어요." },
+      { "id": "rice", "text": "米饭", "pron": "Mǐfàn\n미판", "meaning": "밥", "example": "我要一碗米饭。", "exampleTrans": "밥 한 공기 주세요." },
+      { "id": "meat", "text": "肉", "pron": "Ròu\n러우", "meaning": "고기", "example": "我不吃肉。", "exampleTrans": "저는 고기를 안 먹어요." },
+      { "id": "fish", "text": "鱼", "pron": "Yú\n위", "meaning": "생선, 물고기", "example": "我喜欢吃鱼。", "exampleTrans": "저는 생선을 좋아해요." },
+      { "id": "vegetable", "text": "蔬菜", "pron": "Shūcài\n수차이", "meaning": "채소", "example": "这些蔬菜很新鲜。", "exampleTrans": "이 채소들은 신선해요." },
+      { "id": "fruit", "text": "水果", "pron": "Shuǐguǒ\n수이궈", "meaning": "과일", "example": "我喜欢吃水果。", "exampleTrans": "저는 과일을 좋아해요." }
+    ] },
+    { "id": "places_directions", "items": [
+      { "id": "station", "text": "火车站", "pron": "Huǒchēzhàn\n훠처잔", "meaning": "기차역", "example": "火车站离这儿远吗？", "exampleTrans": "기차역은 여기서 멀어요?" },
+      { "id": "hotel", "text": "酒店", "pron": "Jiǔdiàn\n지우뎬", "meaning": "호텔", "example": "我住在这家酒店。", "exampleTrans": "저는 이 호텔에 묵어요." },
+      { "id": "toilet", "text": "洗手间", "pron": "Xǐshǒujiān\n시서우젠", "meaning": "화장실", "example": "洗手间在哪里？", "exampleTrans": "화장실은 어디예요?" },
+      { "id": "hospital", "text": "医院", "pron": "Yīyuàn\n이위안", "meaning": "병원", "example": "我要去医院。", "exampleTrans": "저 병원에 가야 해요." },
+      { "id": "bank", "text": "银行", "pron": "Yínháng\n인항", "meaning": "은행", "example": "我去银行取钱。", "exampleTrans": "은행에 가서 돈을 찾아요." },
+      { "id": "left", "text": "左边", "pron": "Zuǒbian\n쭤볜", "meaning": "왼쪽", "example": "洗手间在左边。", "exampleTrans": "화장실은 왼쪽에 있어요." },
+      { "id": "right", "text": "右边", "pron": "Yòubian\n여우볜", "meaning": "오른쪽", "example": "银行在右边。", "exampleTrans": "은행은 오른쪽에 있어요." },
+      { "id": "straight", "text": "一直走", "pron": "Yìzhí zǒu\n이즈 쩌우", "meaning": "쭉 가요, 곧장 가요", "example": "一直走就到了。", "exampleTrans": "쭉 가면 도착해요." },
+      { "id": "here", "text": "这里", "pron": "Zhèlǐ\n저리", "meaning": "여기", "example": "我在这里。", "exampleTrans": "저 여기 있어요." },
+      { "id": "there", "text": "那里", "pron": "Nàlǐ\n나리", "meaning": "저기, 거기", "example": "那里很安静。", "exampleTrans": "저기는 조용해요." }
+    ] },
+    { "id": "transport", "items": [
+      { "id": "bus", "text": "公交车", "pron": "Gōngjiāochē\n궁자오처", "meaning": "버스", "example": "我坐公交车上班。", "exampleTrans": "저는 버스로 출근해요." },
+      { "id": "train", "text": "火车", "pron": "Huǒchē\n훠처", "meaning": "기차", "example": "我坐火车去北京。", "exampleTrans": "기차 타고 베이징에 가요." },
+      { "id": "subway", "text": "地铁", "pron": "Dìtiě\n디톄", "meaning": "지하철", "example": "坐地铁很方便。", "exampleTrans": "지하철을 타면 편해요." },
+      { "id": "taxi", "text": "出租车", "pron": "Chūzūchē\n추쭈처", "meaning": "택시", "example": "我们坐出租车吧。", "exampleTrans": "우리 택시 타요." },
+      { "id": "car", "text": "汽车", "pron": "Qìchē\n치처", "meaning": "자동차", "example": "这是我的汽车。", "exampleTrans": "이건 제 차예요." },
+      { "id": "bicycle", "text": "自行车", "pron": "Zìxíngchē\n쯔싱처", "meaning": "자전거", "example": "我骑自行车上学。", "exampleTrans": "저는 자전거를 타고 학교에 가요." },
+      { "id": "airplane", "text": "飞机", "pron": "Fēijī\n페이지", "meaning": "비행기", "example": "飞机快起飞了。", "exampleTrans": "비행기가 곧 이륙해요." },
+      { "id": "airport", "text": "机场", "pron": "Jīchǎng\n지창", "meaning": "공항", "example": "去机场要多久？", "exampleTrans": "공항까지 얼마나 걸려요?" },
+      { "id": "ticket", "text": "票", "pron": "Piào\n퍄오", "meaning": "표", "example": "我买了两张票。", "exampleTrans": "표를 두 장 샀어요." },
+      { "id": "stop", "text": "站", "pron": "Zhàn\n잔", "meaning": "정류장, 역", "example": "我在下一站下车。", "exampleTrans": "저는 다음 정류장에서 내려요." }
+    ] },
+    { "id": "shopping_money", "items": [
+      { "id": "shop", "text": "商店", "pron": "Shāngdiàn\n상뎬", "meaning": "가게", "example": "附近有商店吗？", "exampleTrans": "근처에 가게 있어요?" },
+      { "id": "money", "text": "钱", "pron": "Qián\n첸", "meaning": "돈", "example": "我没带钱。", "exampleTrans": "돈을 안 가져왔어요." },
+      { "id": "price", "text": "价格", "pron": "Jiàgé\n자거", "meaning": "가격", "example": "这个价格不错。", "exampleTrans": "이 가격 괜찮네요." },
+      { "id": "card", "text": "卡", "pron": "Kǎ\n카", "meaning": "카드", "example": "可以刷卡吗？", "exampleTrans": "카드로 결제돼요?" },
+      { "id": "cash", "text": "现金", "pron": "Xiànjīn\n셴진", "meaning": "현금", "example": "我只有现金。", "exampleTrans": "저는 현금밖에 없어요." },
+      { "id": "receipt", "text": "小票", "pron": "Xiǎopiào\n샤오퍄오", "meaning": "영수증", "example": "请给我小票。", "exampleTrans": "영수증 주세요." },
+      { "id": "discount", "text": "打折", "pron": "Dǎzhé\n다저", "meaning": "할인하다", "example": "这件衣服打折吗？", "exampleTrans": "이 옷 할인해요?" },
+      { "id": "size", "text": "尺码", "pron": "Chǐmǎ\n츠마", "meaning": "사이즈", "example": "有大一点的尺码吗？", "exampleTrans": "더 큰 사이즈 있어요?" },
+      { "id": "bag", "text": "袋子", "pron": "Dàizi\n다이쯔", "meaning": "봉투, 봉지", "example": "需要袋子吗？", "exampleTrans": "봉투 필요하세요?" },
+      { "id": "change", "text": "找零", "pron": "Zhǎolíng\n자오링", "meaning": "거스름돈", "example": "请拿好找零。", "exampleTrans": "거스름돈 챙기세요." }
+    ] },
+    { "id": "verbs", "items": [
+      { "id": "go", "text": "去", "pron": "Qù\n취", "meaning": "가다", "example": "我们去吃饭吧。", "exampleTrans": "우리 밥 먹으러 가요." },
+      { "id": "come", "text": "来", "pron": "Lái\n라이", "meaning": "오다", "example": "快来吃饭！", "exampleTrans": "빨리 와서 밥 먹어요!" },
+      { "id": "eat", "text": "吃", "pron": "Chī\n츠", "meaning": "먹다", "example": "你吃饭了吗？", "exampleTrans": "밥 먹었어요?" },
+      { "id": "drink", "text": "喝", "pron": "Hē\n허", "meaning": "마시다", "example": "你想喝什么？", "exampleTrans": "뭐 마실래요?" },
+      { "id": "see", "text": "看", "pron": "Kàn\n칸", "meaning": "보다", "example": "我们去看电影吧。", "exampleTrans": "우리 영화 보러 가요." },
+      { "id": "buy", "text": "买", "pron": "Mǎi\n마이", "meaning": "사다", "example": "我想买这个。", "exampleTrans": "이거 사고 싶어요." },
+      { "id": "want", "text": "要", "pron": "Yào\n야오", "meaning": "원하다, 필요하다", "example": "我要一杯咖啡。", "exampleTrans": "커피 한 잔 주세요." },
+      { "id": "know", "text": "知道", "pron": "Zhīdào\n즈다오", "meaning": "알다", "example": "我不知道。", "exampleTrans": "저는 몰라요." },
+      { "id": "speak", "text": "说", "pron": "Shuō\n숴", "meaning": "말하다", "example": "你会说中文吗？", "exampleTrans": "중국어 할 줄 알아요?" },
+      { "id": "wait", "text": "等", "pron": "Děng\n덩", "meaning": "기다리다", "example": "请等一下。", "exampleTrans": "잠깐만 기다려 주세요." }
+    ] },
+    { "id": "adjectives", "items": [
+      { "id": "good", "text": "好", "pron": "Hǎo\n하오", "meaning": "좋다", "example": "今天天气很好。", "exampleTrans": "오늘 날씨가 좋아요." },
+      { "id": "bad", "text": "坏", "pron": "Huài\n화이", "meaning": "나쁘다", "example": "他不是坏人。", "exampleTrans": "그는 나쁜 사람이 아니에요." },
+      { "id": "big", "text": "大", "pron": "Dà\n다", "meaning": "크다", "example": "这个房间很大。", "exampleTrans": "이 방은 커요." },
+      { "id": "small", "text": "小", "pron": "Xiǎo\n샤오", "meaning": "작다", "example": "这件衣服太小了。", "exampleTrans": "이 옷은 너무 작아요." },
+      { "id": "hot", "text": "热", "pron": "Rè\n러", "meaning": "덥다, 뜨겁다", "example": "今天太热了。", "exampleTrans": "오늘 너무 더워요." },
+      { "id": "cold", "text": "冷", "pron": "Lěng\n렁", "meaning": "춥다, 차갑다", "example": "外面很冷。", "exampleTrans": "밖은 추워요." },
+      { "id": "cheap", "text": "便宜", "pron": "Piányi\n폔이", "meaning": "싸다", "example": "这个很便宜。", "exampleTrans": "이거 싸요." },
+      { "id": "expensive", "text": "贵", "pron": "Guì\n구이", "meaning": "비싸다", "example": "太贵了，便宜一点吧。", "exampleTrans": "너무 비싸요, 좀 깎아 주세요." },
+      { "id": "delicious", "text": "好吃", "pron": "Hǎochī\n하오츠", "meaning": "맛있다 (음식)", "example": "这个菜很好吃。", "exampleTrans": "이 요리 맛있어요." },
+      { "id": "fast", "text": "快", "pron": "Kuài\n콰이", "meaning": "빠르다", "example": "地铁比公交车快。", "exampleTrans": "지하철이 버스보다 빨라요." }
+    ] },
+    { "id": "questions", "items": [
+      { "id": "what", "text": "什么", "pron": "Shénme\n선머", "meaning": "무엇", "example": "这是什么？", "exampleTrans": "이건 뭐예요?" },
+      { "id": "who", "text": "谁", "pron": "Shéi\n세이", "meaning": "누구", "example": "他是谁？", "exampleTrans": "그는 누구예요?" },
+      { "id": "where", "text": "哪里", "pron": "Nǎlǐ\n나리", "meaning": "어디", "example": "你住在哪里？", "exampleTrans": "어디 살아요?" },
+      { "id": "when", "text": "什么时候", "pron": "Shénme shíhou\n선머 스허우", "meaning": "언제", "example": "你什么时候回家？", "exampleTrans": "언제 집에 가요?" },
+      { "id": "why", "text": "为什么", "pron": "Wèishénme\n웨이선머", "meaning": "왜", "example": "你为什么学中文？", "exampleTrans": "왜 중국어를 배워요?" },
+      { "id": "how", "text": "怎么", "pron": "Zěnme\n쩐머", "meaning": "어떻게", "example": "去机场怎么走？", "exampleTrans": "공항은 어떻게 가요?" },
+      { "id": "how_much", "text": "多少钱", "pron": "Duōshao qián\n둬사오 첸", "meaning": "얼마예요 (값)", "example": "这个多少钱？", "exampleTrans": "이거 얼마예요?" },
+      { "id": "which", "text": "哪个", "pron": "Nǎge\n나거", "meaning": "어느 것", "example": "你要哪个？", "exampleTrans": "어느 걸로 할래요?" },
+      { "id": "how_many", "text": "几", "pron": "Jǐ\n지", "meaning": "몇 (작은 수)", "example": "你有几个孩子？", "exampleTrans": "아이가 몇 명 있어요?" },
+      { "id": "what_time", "text": "几点", "pron": "Jǐ diǎn\n지 뎬", "meaning": "몇 시", "example": "现在几点？", "exampleTrans": "지금 몇 시예요?" }
+    ] }
+  ]
+}

@@ -46,7 +46,15 @@ def update(add: dict | None = None, remove: set | None = None) -> None:
         manifest = {**HEADER, "files": dict(sorted(files.items()))}
         tmp = MANIFEST.with_suffix(".tmp")
         tmp.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
-        os.replace(tmp, MANIFEST)
+        # 윈도우에서는 다른 프로세스가 목록을 읽는 순간 바꿔치기가 거부될 수 있어 잠시 뒤 다시 시도한다.
+        for attempt in range(100):
+            try:
+                os.replace(tmp, MANIFEST)
+                break
+            except PermissionError:
+                if attempt == 99:
+                    raise
+                time.sleep(0.1)
     finally:
         os.close(fd)
         os.remove(LOCK)
@@ -54,3 +62,21 @@ def update(add: dict | None = None, remove: set | None = None) -> None:
 
 def langs_for(engine: str) -> list[str]:
     return [lang for lang, spec in ENGINES.items() if spec["engine"] == engine]
+
+
+# 초급 기초 단어는 언어마다 이 캐릭터의 목소리로 읽는다(단어·예문 모두).
+WORD_VOICE = "mia"
+
+
+def word_jobs(lang: str) -> list[tuple[str, str]]:
+    """assets/content/<언어>/words.json의 (음성 경로, 읽을 글) 목록. 파일이 없으면 빈 목록."""
+    path = ROOT / "assets" / "content" / lang / "words.json"
+    if not path.exists():
+        return []
+    book = json.loads(path.read_text(encoding="utf-8"))
+    jobs = []
+    for cat in book["categories"]:
+        for w in cat["items"]:
+            jobs.append((f"{lang}/words/{cat['id']}__{w['id']}.mp3", w["text"]))
+            jobs.append((f"{lang}/words/{cat['id']}__{w['id']}__ex.mp3", w["example"]))
+    return jobs

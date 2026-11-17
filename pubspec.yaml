@@ -75,3 +75,10 @@ flutter:
     - assets/audio/es/theo/
     - assets/audio/es/ellie/
     - assets/audio/es/guide/
+    - assets/audio/en/words/
+    - assets/audio/en_gb/words/
+    - assets/audio/ja/words/
+    - assets/audio/ko/words/
+    - assets/audio/zh/words/
+    - assets/audio/fr/words/
+    - assets/audio/es/words/

@@ -1,0 +1,125 @@
+{
+  "lang": "es",
+  "categories": [
+    { "id": "greetings", "items": [
+      { "id": "hello", "text": "Hola", "pron": "올라", "meaning": "안녕하세요", "example": "¡Hola! ¿Qué tal?", "exampleTrans": "안녕하세요! 잘 지내요?" },
+      { "id": "goodbye", "text": "Adiós", "pron": "아디오스", "meaning": "안녕히 가세요, 잘 가요", "example": "¡Adiós! Hasta mañana.", "exampleTrans": "잘 가요! 내일 봐요." },
+      { "id": "thank_you", "text": "Gracias", "pron": "그라씨아스", "meaning": "고마워요", "example": "Muchas gracias por tu ayuda.", "exampleTrans": "도와줘서 정말 고마워요." },
+      { "id": "sorry", "text": "Lo siento", "pron": "로 시엔또", "meaning": "미안해요", "example": "Lo siento, llego tarde.", "exampleTrans": "미안해요, 늦었어요." },
+      { "id": "excuse_me", "text": "Perdone", "pron": "뻬르도네", "meaning": "실례합니다, 저기요", "example": "Perdone, ¿dónde está el metro?", "exampleTrans": "저기요, 지하철역이 어디예요?" },
+      { "id": "please", "text": "Por favor", "pron": "뽀르 파보르", "meaning": "부탁해요, …주세요", "example": "Un café, por favor.", "exampleTrans": "커피 한 잔 주세요." },
+      { "id": "yes", "text": "Sí", "pron": "시", "meaning": "네", "example": "Sí, claro.", "exampleTrans": "네, 물론이죠." },
+      { "id": "no", "text": "No", "pron": "노", "meaning": "아니요", "example": "No, gracias.", "exampleTrans": "아니요, 괜찮아요." },
+      { "id": "nice_to_meet", "text": "Encantado", "pron": "엔깐따도", "meaning": "만나서 반가워요(여자는 Encantada)", "example": "Encantado, me llamo Carlos.", "exampleTrans": "반가워요, 저는 카를로스예요." },
+      { "id": "good_morning", "text": "Buenos días", "pron": "부에노스 디아스", "meaning": "좋은 아침이에요, 안녕하세요(오전 인사)", "example": "¡Buenos días! ¿Has dormido bien?", "exampleTrans": "좋은 아침이에요! 잘 잤어요?" }
+    ] },
+    { "id": "numbers_time", "items": [
+      { "id": "one", "text": "uno", "pron": "우노", "meaning": "하나, 일", "example": "Solo quiero uno, gracias.", "exampleTrans": "하나만 주세요, 고마워요." },
+      { "id": "two", "text": "dos", "pron": "도스", "meaning": "둘, 이", "example": "Dos cafés, por favor.", "exampleTrans": "커피 두 잔 주세요." },
+      { "id": "three", "text": "tres", "pron": "뜨레스", "meaning": "셋, 삼", "example": "Tengo tres hermanos.", "exampleTrans": "저는 형제가 세 명이에요." },
+      { "id": "ten", "text": "diez", "pron": "디에쓰", "meaning": "열, 십", "example": "Son las diez de la mañana.", "exampleTrans": "오전 열 시예요." },
+      { "id": "hundred", "text": "cien", "pron": "씨엔", "meaning": "백", "example": "Cuesta cien euros.", "exampleTrans": "백 유로예요." },
+      { "id": "now", "text": "ahora", "pron": "아오라", "meaning": "지금", "example": "Ahora no puedo, lo siento.", "exampleTrans": "지금은 안 돼요, 미안해요." },
+      { "id": "today", "text": "hoy", "pron": "오이", "meaning": "오늘", "example": "Hoy hace mucho calor.", "exampleTrans": "오늘 정말 더워요." },
+      { "id": "tomorrow", "text": "mañana", "pron": "마냐나", "meaning": "내일", "example": "Nos vemos mañana.", "exampleTrans": "내일 봐요." },
+      { "id": "yesterday", "text": "ayer", "pron": "아예르", "meaning": "어제", "example": "Ayer fui al cine con mi hermana.", "exampleTrans": "어제 여동생이랑 영화관에 갔어요." },
+      { "id": "minute", "text": "el minuto", "pron": "엘 미누또", "meaning": "분(시간 단위)", "example": "Espera un minuto, por favor.", "exampleTrans": "잠깐만 기다려 주세요." }
+    ] },
+    { "id": "people_family", "items": [
+      { "id": "person", "text": "la persona", "pron": "라 뻬르소나", "meaning": "사람", "example": "Es una persona muy simpática.", "exampleTrans": "정말 친절한 사람이에요." },
+      { "id": "man", "text": "el hombre", "pron": "엘 옴브레", "meaning": "남자", "example": "Ese hombre es mi profesor.", "exampleTrans": "저 남자는 제 선생님이에요." },
+      { "id": "woman", "text": "la mujer", "pron": "라 무헤르", "meaning": "여자", "example": "La mujer de la tienda es muy amable.", "exampleTrans": "가게 여자분이 정말 친절해요." },
+      { "id": "child", "text": "el niño", "pron": "엘 니뇨", "meaning": "아이, 남자아이", "example": "El niño está jugando en el parque.", "exampleTrans": "아이가 공원에서 놀고 있어요." },
+      { "id": "friend", "text": "el amigo", "pron": "엘 아미고", "meaning": "친구", "example": "Esta noche ceno con un amigo.", "exampleTrans": "오늘 저녁에 친구랑 밥 먹어요." },
+      { "id": "family", "text": "la familia", "pron": "라 파밀리아", "meaning": "가족", "example": "Mi familia vive en Sevilla.", "exampleTrans": "우리 가족은 세비야에 살아요." },
+      { "id": "mother", "text": "la madre", "pron": "라 마드레", "meaning": "어머니", "example": "Mi madre cocina muy bien.", "exampleTrans": "우리 어머니는 요리를 정말 잘해요." },
+      { "id": "father", "text": "el padre", "pron": "엘 빠드레", "meaning": "아버지", "example": "Mi padre trabaja en Madrid.", "exampleTrans": "우리 아버지는 마드리드에서 일해요." },
+      { "id": "name", "text": "el nombre", "pron": "엘 놈브레", "meaning": "이름", "example": "¿Cuál es tu nombre?", "exampleTrans": "이름이 뭐예요?" },
+      { "id": "colleague", "text": "el compañero de trabajo", "pron": "엘 꼼빠녜로 데 뜨라바호", "meaning": "직장 동료", "example": "Mi compañero de trabajo es de Valencia.", "exampleTrans": "제 직장 동료는 발렌시아 출신이에요." }
+    ] },
+    { "id": "food_drink", "items": [
+      { "id": "water", "text": "el agua", "pron": "엘 아구아", "meaning": "물", "example": "¿Me pones un vaso de agua?", "exampleTrans": "물 한 잔 줄래요?" },
+      { "id": "coffee", "text": "el café", "pron": "엘 까페", "meaning": "커피", "example": "Un café con leche, por favor.", "exampleTrans": "카페 콘 레체(밀크 커피) 한 잔 주세요." },
+      { "id": "tea", "text": "el té", "pron": "엘 떼", "meaning": "차", "example": "¿Quieres un té?", "exampleTrans": "차 마실래요?" },
+      { "id": "beer", "text": "la cerveza", "pron": "라 쎄르베싸", "meaning": "맥주", "example": "Ponme una cerveza, por favor.", "exampleTrans": "맥주 한 잔 주세요." },
+      { "id": "bread", "text": "el pan", "pron": "엘 빤", "meaning": "빵", "example": "Compro pan todas las mañanas.", "exampleTrans": "매일 아침 빵을 사요." },
+      { "id": "rice", "text": "el arroz", "pron": "엘 아로쓰", "meaning": "쌀, 밥", "example": "La paella se hace con arroz.", "exampleTrans": "파에야는 쌀로 만들어요." },
+      { "id": "meat", "text": "la carne", "pron": "라 까르네", "meaning": "고기", "example": "No como carne.", "exampleTrans": "저는 고기를 안 먹어요." },
+      { "id": "fish", "text": "el pescado", "pron": "엘 뻬스까도", "meaning": "생선", "example": "Aquí el pescado es muy fresco.", "exampleTrans": "여기 생선은 정말 신선해요." },
+      { "id": "vegetable", "text": "la verdura", "pron": "라 베르두라", "meaning": "채소", "example": "Tengo que comer más verdura.", "exampleTrans": "채소를 더 먹어야 해요." },
+      { "id": "fruit", "text": "la fruta", "pron": "라 프루따", "meaning": "과일", "example": "Me encanta la fruta de verano.", "exampleTrans": "여름 과일을 정말 좋아해요." }
+    ] },
+    { "id": "places_directions", "items": [
+      { "id": "station", "text": "la estación", "pron": "라 에스따씨온", "meaning": "역", "example": "¿Dónde está la estación de tren?", "exampleTrans": "기차역이 어디예요?" },
+      { "id": "hotel", "text": "el hotel", "pron": "엘 오뗄", "meaning": "호텔", "example": "El hotel está cerca de la playa.", "exampleTrans": "호텔은 해변 근처에 있어요." },
+      { "id": "toilet", "text": "los servicios", "pron": "로스 세르비씨오스", "meaning": "화장실(식당·가게 등)", "example": "Perdone, ¿dónde están los servicios?", "exampleTrans": "저기요, 화장실이 어디예요?" },
+      { "id": "hospital", "text": "el hospital", "pron": "엘 오스삐딸", "meaning": "병원", "example": "El hospital está al final de la calle.", "exampleTrans": "병원은 길 끝에 있어요." },
+      { "id": "bank", "text": "el banco", "pron": "엘 방꼬", "meaning": "은행", "example": "El banco cierra a las dos.", "exampleTrans": "은행은 두 시에 문을 닫아요." },
+      { "id": "left", "text": "la izquierda", "pron": "라 이쓰끼에르다", "meaning": "왼쪽", "example": "Gira a la izquierda en la esquina.", "exampleTrans": "모퉁이에서 왼쪽으로 도세요." },
+      { "id": "right", "text": "la derecha", "pron": "라 데레차", "meaning": "오른쪽", "example": "La farmacia está a la derecha.", "exampleTrans": "약국은 오른쪽에 있어요." },
+      { "id": "straight", "text": "todo recto", "pron": "또도 렉또", "meaning": "똑바로, 쭉", "example": "Sigue todo recto hasta la plaza.", "exampleTrans": "광장까지 쭉 직진하세요." },
+      { "id": "here", "text": "aquí", "pron": "아끼", "meaning": "여기", "example": "Vivo aquí desde hace un año.", "exampleTrans": "여기 산 지 일 년 됐어요." },
+      { "id": "there", "text": "allí", "pron": "아이", "meaning": "저기, 거기", "example": "El metro está allí, a la derecha.", "exampleTrans": "지하철역은 저기 오른쪽에 있어요." }
+    ] },
+    { "id": "transport", "items": [
+      { "id": "bus", "text": "el autobús", "pron": "엘 아우또부스", "meaning": "버스", "example": "Cojo el autobús para ir a clase.", "exampleTrans": "수업 갈 때 버스를 타요." },
+      { "id": "train", "text": "el tren", "pron": "엘 뜨렌", "meaning": "기차", "example": "El tren sale a las ocho.", "exampleTrans": "기차는 여덟 시에 출발해요." },
+      { "id": "subway", "text": "el metro", "pron": "엘 메뜨로", "meaning": "지하철", "example": "Voy al trabajo en metro.", "exampleTrans": "지하철로 출근해요." },
+      { "id": "taxi", "text": "el taxi", "pron": "엘 딱시", "meaning": "택시", "example": "¿Cogemos un taxi?", "exampleTrans": "택시 탈까요?" },
+      { "id": "car", "text": "el coche", "pron": "엘 꼬체", "meaning": "자동차", "example": "Mi coche es pequeño pero cómodo.", "exampleTrans": "제 차는 작지만 편해요." },
+      { "id": "bicycle", "text": "la bicicleta", "pron": "라 비씨끌레따", "meaning": "자전거", "example": "Voy a la universidad en bicicleta.", "exampleTrans": "자전거로 대학교에 가요." },
+      { "id": "airplane", "text": "el avión", "pron": "엘 아비온", "meaning": "비행기", "example": "El avión llega a Barcelona por la tarde.", "exampleTrans": "비행기는 오후에 바르셀로나에 도착해요." },
+      { "id": "airport", "text": "el aeropuerto", "pron": "엘 아에로뿌에르또", "meaning": "공항", "example": "¿Cómo voy al aeropuerto?", "exampleTrans": "공항에 어떻게 가요?" },
+      { "id": "ticket", "text": "el billete", "pron": "엘 비예떼", "meaning": "표, 승차권", "example": "Un billete para Toledo, por favor.", "exampleTrans": "톨레도행 표 한 장 주세요." },
+      { "id": "stop", "text": "la parada", "pron": "라 빠라다", "meaning": "정류장", "example": "La parada del autobús está aquí.", "exampleTrans": "버스 정류장은 여기 있어요." }
+    ] },
+    { "id": "shopping_money", "items": [
+      { "id": "shop", "text": "la tienda", "pron": "라 띠엔다", "meaning": "가게", "example": "La tienda abre a las diez.", "exampleTrans": "가게는 열 시에 문을 열어요." },
+      { "id": "money", "text": "el dinero", "pron": "엘 디네로", "meaning": "돈", "example": "No llevo mucho dinero.", "exampleTrans": "돈을 많이 안 갖고 있어요." },
+      { "id": "price", "text": "el precio", "pron": "엘 쁘레씨오", "meaning": "가격", "example": "El precio está en la etiqueta.", "exampleTrans": "가격은 라벨에 적혀 있어요." },
+      { "id": "card", "text": "la tarjeta", "pron": "라 따르헤따", "meaning": "카드", "example": "¿Puedo pagar con tarjeta?", "exampleTrans": "카드로 계산해도 돼요?" },
+      { "id": "cash", "text": "el efectivo", "pron": "엘 에펙띠보", "meaning": "현금", "example": "Solo aceptamos efectivo.", "exampleTrans": "현금만 받아요." },
+      { "id": "receipt", "text": "el tique", "pron": "엘 띠께", "meaning": "영수증", "example": "¿Me das el tique, por favor?", "exampleTrans": "영수증 좀 줄래요?" },
+      { "id": "discount", "text": "el descuento", "pron": "엘 데스꾸엔또", "meaning": "할인", "example": "¿Hay descuento para estudiantes?", "exampleTrans": "학생 할인 있어요?" },
+      { "id": "size", "text": "la talla", "pron": "라 따야", "meaning": "사이즈(옷)", "example": "¿Tiene esta camiseta en otra talla?", "exampleTrans": "이 티셔츠 다른 사이즈 있어요?" },
+      { "id": "bag", "text": "la bolsa", "pron": "라 볼사", "meaning": "봉투, 비닐봉지", "example": "¿Me da una bolsa, por favor?", "exampleTrans": "봉투 하나 주시겠어요?" },
+      { "id": "change", "text": "la vuelta", "pron": "라 부엘따", "meaning": "거스름돈", "example": "Quédese con la vuelta.", "exampleTrans": "거스름돈은 가지세요." }
+    ] },
+    { "id": "verbs", "items": [
+      { "id": "go", "text": "ir", "pron": "이르", "meaning": "가다", "example": "Mañana vamos a ir a la playa.", "exampleTrans": "내일 우리 해변에 갈 거예요." },
+      { "id": "come", "text": "venir", "pron": "베니르", "meaning": "오다", "example": "¿Queréis venir a mi casa?", "exampleTrans": "다들 우리 집에 올래요?" },
+      { "id": "eat", "text": "comer", "pron": "꼬메르", "meaning": "먹다", "example": "¿Dónde queréis comer hoy?", "exampleTrans": "오늘 어디서 먹고 싶어요?" },
+      { "id": "drink", "text": "beber", "pron": "베베르", "meaning": "마시다", "example": "¿Qué quieres beber?", "exampleTrans": "뭐 마실래요?" },
+      { "id": "see", "text": "ver", "pron": "베르", "meaning": "보다", "example": "Quiero ver esa película.", "exampleTrans": "그 영화 보고 싶어요." },
+      { "id": "buy", "text": "comprar", "pron": "꼼쁘라르", "meaning": "사다", "example": "Tengo que comprar pan.", "exampleTrans": "빵을 사야 해요." },
+      { "id": "want", "text": "querer", "pron": "께레르", "meaning": "원하다", "example": "Quiero un café con leche.", "exampleTrans": "카페 콘 레체 한 잔 마시고 싶어요." },
+      { "id": "know", "text": "saber", "pron": "사베르", "meaning": "알다", "example": "No sé dónde está el hotel.", "exampleTrans": "호텔이 어디 있는지 모르겠어요." },
+      { "id": "speak", "text": "hablar", "pron": "아블라르", "meaning": "말하다", "example": "¿Habláis inglés?", "exampleTrans": "다들 영어 할 줄 알아요?" },
+      { "id": "wait", "text": "esperar", "pron": "에스뻬라르", "meaning": "기다리다", "example": "Te espero en la parada.", "exampleTrans": "정류장에서 기다릴게요." }
+    ] },
+    { "id": "adjectives", "items": [
+      { "id": "good", "text": "bueno", "pron": "부에노", "meaning": "좋다", "example": "Este vino es muy bueno.", "exampleTrans": "이 와인 정말 좋아요." },
+      { "id": "bad", "text": "malo", "pron": "말로", "meaning": "나쁘다", "example": "Esta película es muy mala.", "exampleTrans": "이 영화 정말 별로예요." },
+      { "id": "big", "text": "grande", "pron": "그란데", "meaning": "크다", "example": "Madrid es una ciudad muy grande.", "exampleTrans": "마드리드는 정말 큰 도시예요." },
+      { "id": "small", "text": "pequeño", "pron": "뻬께뇨", "meaning": "작다", "example": "Mi piso es pequeño pero bonito.", "exampleTrans": "제 아파트는 작지만 예뻐요." },
+      { "id": "hot", "text": "caliente", "pron": "깔리엔떼", "meaning": "뜨겁다(날씨가 덥다는 hace calor)", "example": "Cuidado, la sopa está muy caliente.", "exampleTrans": "조심해요, 수프가 정말 뜨거워요." },
+      { "id": "cold", "text": "frío", "pron": "프리오", "meaning": "차갑다, 춥다", "example": "El agua del mar está muy fría.", "exampleTrans": "바닷물이 정말 차가워요." },
+      { "id": "cheap", "text": "barato", "pron": "바라또", "meaning": "싸다", "example": "Este bar es bueno y barato.", "exampleTrans": "이 바는 괜찮고 싸요." },
+      { "id": "expensive", "text": "caro", "pron": "까로", "meaning": "비싸다", "example": "Este bolso es demasiado caro.", "exampleTrans": "이 가방은 너무 비싸요." },
+      { "id": "delicious", "text": "rico", "pron": "리꼬", "meaning": "맛있다", "example": "¡Qué rica está la tortilla!", "exampleTrans": "토르티야 정말 맛있어요!" },
+      { "id": "fast", "text": "rápido", "pron": "라삐도", "meaning": "빠르다", "example": "Este tren es muy rápido.", "exampleTrans": "이 기차는 정말 빨라요." }
+    ] },
+    { "id": "questions", "items": [
+      { "id": "what", "text": "qué", "pron": "께", "meaning": "무엇", "example": "¿Qué es esto?", "exampleTrans": "이건 뭐예요?" },
+      { "id": "who", "text": "quién", "pron": "끼엔", "meaning": "누구", "example": "¿Quién es esa chica?", "exampleTrans": "저 여자애는 누구예요?" },
+      { "id": "where", "text": "dónde", "pron": "돈데", "meaning": "어디", "example": "¿Dónde está la parada?", "exampleTrans": "정류장이 어디예요?" },
+      { "id": "when", "text": "cuándo", "pron": "꾸안도", "meaning": "언제", "example": "¿Cuándo llegáis a Madrid?", "exampleTrans": "다들 마드리드에 언제 도착해요?" },
+      { "id": "why", "text": "por qué", "pron": "뽀르 께", "meaning": "왜", "example": "¿Por qué no venís a la fiesta?", "exampleTrans": "다들 왜 파티에 안 와요?" },
+      { "id": "how", "text": "cómo", "pron": "꼬모", "meaning": "어떻게", "example": "¿Cómo se dice esto en español?", "exampleTrans": "이거 스페인어로 어떻게 말해요?" },
+      { "id": "how_much", "text": "cuánto cuesta", "pron": "꾸안또 꾸에스따", "meaning": "얼마예요(값)", "example": "¿Cuánto cuesta este billete?", "exampleTrans": "이 표는 얼마예요?" },
+      { "id": "which", "text": "cuál", "pron": "꾸알", "meaning": "어느 것, 어떤 것", "example": "¿Cuál prefieres, el rojo o el azul?", "exampleTrans": "빨간 거랑 파란 거 중에 어느 게 좋아요?" },
+      { "id": "how_many", "text": "cuántos", "pron": "꾸안또스", "meaning": "몇 개, 몇", "example": "¿Cuántos años tienes?", "exampleTrans": "몇 살이에요?" },
+      { "id": "what_time", "text": "a qué hora", "pron": "아 께 오라", "meaning": "몇 시에", "example": "¿A qué hora sale el tren?", "exampleTrans": "기차는 몇 시에 출발해요?" }
+    ] }
+  ]
+}

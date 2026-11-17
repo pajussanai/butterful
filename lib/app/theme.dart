@@ -164,3 +164,34 @@ class SectionTitle extends StatelessWidget {
     ),
   );
 }
+
+/// 작은 상태 표시(예: 준비 중)
+class Tag extends StatelessWidget {
+  const Tag(
+    this.text, {
+    super.key,
+    this.color = Palette.line,
+    this.textColor = Palette.cocoa,
+  });
+
+  final String text;
+  final Color color;
+  final Color textColor;
+
+  @override
+  Widget build(BuildContext context) => Container(
+    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+    decoration: BoxDecoration(
+      color: color,
+      borderRadius: BorderRadius.circular(20),
+    ),
+    child: Text(
+      text,
+      style: TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w700,
+        color: textColor,
+      ),
+    ),
+  );
+}

@@ -64,6 +64,9 @@ def main() -> None:
                         jobs.append((f"{lang}/{ch}/{sid}__{node['id']}.mp3", node["text"], ch))
                 for reply in node["replies"]:
                     jobs.append((f"{lang}/guide/{sid}__{reply['id']}.mp3", reply["text"], "guide"))
+        # 초급 기초 단어(단어·예문)
+        for rel, text in manifest_util.word_jobs(lang):
+            jobs.append((rel, text, manifest_util.WORD_VOICE))
 
         wanted = {j[0] for j in jobs}
         stale = {k for k in old_files if k.split("/")[0] == lang and k not in wanted}

@@ -1,12 +1,12 @@
 {
   "languages": [
-    { "code": "en", "name": "영어", "native": "English", "variant": "미국식", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
-    { "code": "en_gb", "name": "영어", "native": "English", "variant": "영국식", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
-    { "code": "ja", "name": "일본어", "native": "日本語", "variant": "도쿄 표준어", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
-    { "code": "ko", "name": "한국어", "native": "Korean", "variant": "서울 표준어", "pronLabel": "로마자 발음", "transLabel": "영어 번역", "content": ["restaurant", "hotel"] },
-    { "code": "zh", "name": "중국어", "native": "中文", "variant": "표준 보통화", "pronLabel": "병음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
-    { "code": "fr", "name": "프랑스어", "native": "Français", "variant": "프랑스 본토", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] },
-    { "code": "es", "name": "스페인어", "native": "Español", "variant": "스페인 본토", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"] }
+    { "code": "en", "name": "영어", "native": "English", "variant": "미국식", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"], "words": true },
+    { "code": "en_gb", "name": "영어", "native": "English", "variant": "영국식", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"], "words": true },
+    { "code": "ja", "name": "일본어", "native": "日本語", "variant": "도쿄 표준어", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"], "words": true },
+    { "code": "ko", "name": "한국어", "native": "Korean", "variant": "서울 표준어", "pronLabel": "로마자 발음", "transLabel": "영어 번역", "content": ["restaurant", "hotel"], "words": true },
+    { "code": "zh", "name": "중국어", "native": "中文", "variant": "표준 보통화", "pronLabel": "병음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"], "words": true },
+    { "code": "fr", "name": "프랑스어", "native": "Français", "variant": "프랑스 본토", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"], "words": true },
+    { "code": "es", "name": "스페인어", "native": "Español", "variant": "스페인 본토", "pronLabel": "한글 발음", "transLabel": "한국어 번역", "content": ["restaurant", "hotel"], "words": true }
   ],
   "categories": [
     { "id": "travel", "name": "여행" },
@@ -20,11 +20,23 @@
     { "id": "hotel", "category": "travel", "title": "호텔 체크인", "summary": "예약 확인, 여권, 객실 선택, 이용 안내까지", "role": "호텔 프런트 직원" }
   ],
   "characters": [
-    { "id": "mia", "name": "Mia", "nameKo": "미아", "personality": "밝고 다정해요", "style": "또박또박 친절하게 말해요", "voice": "F1", "speed": 1.0 },
-    { "id": "leo", "name": "Leo", "nameKo": "레오", "personality": "차분하고 여유로워요", "style": "천천히 부드럽게 말해요", "voice": "M1", "speed": 0.92 },
-    { "id": "hana", "name": "Hana", "nameKo": "하나", "personality": "꼼꼼하고 정중해요", "style": "격식 있게 또렷하게 말해요", "voice": "F2", "speed": 0.98 },
-    { "id": "theo", "name": "Theo", "nameKo": "테오", "personality": "유쾌하고 활기차요", "style": "밝고 경쾌하게 말해요", "voice": "M2", "speed": 1.06 },
-    { "id": "ellie", "name": "Ellie", "nameKo": "엘리", "personality": "느긋하고 상냥해요", "style": "편안한 속도로 다정하게 말해요", "voice": "F3", "speed": 0.95 }
+    { "id": "mia", "names": {"ko": ["하은", "하은"], "en": ["Emily", "에밀리"], "en_gb": ["Charlotte", "샬럿"], "ja": ["結衣", "유이"], "zh": ["晓雨", "샤오위"], "fr": ["Chloé", "클로에"], "es": ["Lucía", "루시아"]}, "personality": "밝고 다정해요", "style": "또박또박 친절하게 말해요", "voice": "F1", "speed": 1.0 },
+    { "id": "leo", "names": {"ko": ["도윤", "도윤"], "en": ["Jacob", "제이컵"], "en_gb": ["Oliver", "올리버"], "ja": ["蒼太", "소타"], "zh": ["浩然", "하오란"], "fr": ["Thomas", "토마"], "es": ["Javier", "하비에르"]}, "personality": "차분하고 여유로워요", "style": "천천히 부드럽게 말해요", "voice": "M1", "speed": 0.92 },
+    { "id": "hana", "names": {"ko": ["서연", "서연"], "en": ["Grace", "그레이스"], "en_gb": ["Imogen", "이모전"], "ja": ["美咲", "미사키"], "zh": ["静怡", "징이"], "fr": ["Claire", "클레르"], "es": ["Carmen", "카르멘"]}, "personality": "꼼꼼하고 정중해요", "style": "격식 있게 또렷하게 말해요", "voice": "F2", "speed": 0.98 },
+    { "id": "theo", "names": {"ko": ["준호", "준호"], "en": ["Ryan", "라이언"], "en_gb": ["Harry", "해리"], "ja": ["蓮", "렌"], "zh": ["子轩", "쯔쉬안"], "fr": ["Julien", "쥘리앵"], "es": ["Pablo", "파블로"]}, "personality": "유쾌하고 활기차요", "style": "밝고 경쾌하게 말해요", "voice": "M2", "speed": 1.06 },
+    { "id": "ellie", "names": {"ko": ["수아", "수아"], "en": ["Olivia", "올리비아"], "en_gb": ["Poppy", "포피"], "ja": ["遥", "하루카"], "zh": ["佳慧", "자후이"], "fr": ["Léa", "레아"], "es": ["Marta", "마르타"]}, "personality": "느긋하고 상냥해요", "style": "편안한 속도로 다정하게 말해요", "voice": "F3", "speed": 0.95 }
+  ],
+  "wordCategories": [
+    { "id": "greetings", "name": "인사와 기본 표현" },
+    { "id": "numbers_time", "name": "숫자와 시간" },
+    { "id": "people_family", "name": "사람과 가족" },
+    { "id": "food_drink", "name": "음식과 음료" },
+    { "id": "places_directions", "name": "장소와 방향" },
+    { "id": "transport", "name": "교통" },
+    { "id": "shopping_money", "name": "쇼핑과 돈" },
+    { "id": "verbs", "name": "일상 동사" },
+    { "id": "adjectives", "name": "기본 형용사" },
+    { "id": "questions", "name": "질문과 의문 표현" }
   ],
   "guide": { "id": "guide", "voice": "M4", "speed": 0.97 }
 }

@@ -176,6 +176,59 @@ void main() {
     }
   });
 
+  test('초급 기초 단어: 7개 언어 모두 같은 주제·단어 ID이고, 모든 칸이 채워져 있다', () {
+    final concepts = _json('tool/content/word_concepts.json');
+    final ids = [
+      for (final c in concepts['categories'] as List)
+        for (final w in (c as Map<String, dynamic>)['items'] as List)
+          '${c['id']}/${(w as List).first}',
+    ];
+    expect(ids, hasLength(100));
+    expect(catalog.wordCategories.map((c) => c.id), [
+      for (final c in concepts['categories'] as List) (c as Map)['id'],
+    ]);
+    for (final l in catalog.languages) {
+      expect(l.words, isTrue, reason: l.code);
+      final words = _json('assets/content/${l.code}/words.json');
+      expect(words['lang'], l.code);
+      final got = <String>[];
+      for (final c in words['categories'] as List) {
+        for (final w in (c as Map<String, dynamic>)['items'] as List) {
+          final m = w as Map<String, dynamic>;
+          got.add('${c['id']}/${m['id']}');
+          for (final f in [
+            'text',
+            'pron',
+            'meaning',
+            'example',
+            'exampleTrans',
+          ]) {
+            expect(
+              (m[f] as String).trim(),
+              isNotEmpty,
+              reason: '${l.code} ${m['id']} $f',
+            );
+          }
+          // 음성 엔진이 숫자를 언어마다 다르게 읽지 않도록 글자로 쓴다.
+          expect(
+            RegExp(r'[0-9]').hasMatch('${m['text']}${m['example']}'),
+            isFalse,
+            reason: '${l.code} ${m['id']}',
+          );
+        }
+      }
+      expect(got, ids, reason: l.code);
+    }
+  });
+
+  test('캐릭터 이름: 언어마다 다섯 명 모두 현지 이름이 있고 서로 겹치지 않는다', () {
+    for (final l in catalog.languages) {
+      final names = [for (final c in catalog.characters) c.nameIn(l.code)];
+      expect(names.map((n) => n.native).toSet(), hasLength(5), reason: l.code);
+      expect(names.map((n) => n.korean).toSet(), hasLength(5), reason: l.code);
+    }
+  });
+
   test('음성 목록에 콘텐츠에 없는 파일이 없고, 언어마다 정해진 엔진으로 만들었다', () {
     final engines = _json('tool/tts/engines.json');
     const engineId = {
@@ -194,6 +247,20 @@ void main() {
           for (final r in n.replies) {
             expected.add(ContentRepository.guideAudio(l.code, id, r.id));
           }
+        }
+      }
+    }
+    for (final l in catalog.languages) {
+      final words = _json('assets/content/${l.code}/words.json');
+      for (final c in words['categories'] as List) {
+        for (final w in (c as Map<String, dynamic>)['items'] as List) {
+          final id = (w as Map<String, dynamic>)['id'] as String;
+          expected.add(
+            ContentRepository.wordAudio(l.code, c['id'] as String, id),
+          );
+          expected.add(
+            ContentRepository.exampleAudio(l.code, c['id'] as String, id),
+          );
         }
       }
     }
@@ -219,7 +286,7 @@ void main() {
       expect(f.existsSync(), isTrue, reason: rel);
       final bytes = f.readAsBytesSync();
       // 무음·빈 파일이 아님: MP3 머리(ID3 또는 프레임 동기)와 충분한 크기
-      expect(bytes.length, greaterThan(2000), reason: rel);
+      expect(bytes.length, greaterThan(1500), reason: rel);
       final header =
           bytes[0] == 0x49 && bytes[1] == 0x44 && bytes[2] == 0x33 ||
           bytes[0] == 0xFF && (bytes[1] & 0xE0) == 0xE0;

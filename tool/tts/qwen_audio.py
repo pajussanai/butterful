@@ -56,9 +56,11 @@ def main() -> None:
                         npc_jobs.append((f"{lang}/{ch}/{sid}__{node['id']}.mp3", lang, node["text"], ch))
                 for reply in node["replies"]:
                     guide_jobs.append((f"{lang}/guide/{sid}__{reply['id']}.mp3", lang, reply["text"], "guide"))
+    # 초급 기초 단어(단어·예문)
+    word_jobs = [(rel, lang, text, manifest_util.WORD_VOICE) for lang in langs for rel, text in manifest_util.word_jobs(lang)]
     jobs = [
         j
-        for j in npc_jobs + guide_jobs
+        for j in npc_jobs + guide_jobs + word_jobs
         if not (
             (prev := files.get(j[0]))
             and prev.get("hash") == text_hash(j[2], j[3], manifest_util.ENGINES[j[1]]["voices"][j[3]])
@@ -66,7 +68,7 @@ def main() -> None:
             and (AUDIO / j[0]).stat().st_size > 0
         )
     ]
-    print(f"to make: {len(jobs)} (skip {len(npc_jobs) + len(guide_jobs) - len(jobs)})", flush=True)
+    print(f"to make: {len(jobs)} (skip {len(npc_jobs) + len(guide_jobs) + len(word_jobs) - len(jobs)})", flush=True)
     if not jobs:
         return
 
@@ -93,7 +95,7 @@ def main() -> None:
     for i, (rel, lang, text, ch) in enumerate(jobs, 1):
         spec = manifest_util.ENGINES[lang]
         expected = len(text) / CHARS_PER_SEC[lang]
-        limit = expected * 2 + 2
+        limit = expected * 2 + 2.5
         ok = False
         for attempt in range(1, 5):
             wavs, sr = model.generate_voice_clone(

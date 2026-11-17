@@ -6,6 +6,23 @@ import '../conversation/conversation_controller.dart';
 import '../data/models.dart';
 import '../widgets/character_avatar.dart';
 
+Future<void> openConversation(
+  BuildContext context,
+  Services services, {
+  required String lang,
+  required String scenario,
+  required String character,
+}) => Navigator.of(context).push(
+  MaterialPageRoute<void>(
+    builder: (_) => ConversationScreen(
+      services: services,
+      lang: lang,
+      scenarioId: scenario,
+      character: services.repo.catalog.character(character),
+    ),
+  ),
+);
+
 /// 대화 학습: 듣기 → 따라 말하기 → 대답 고르기 → 다음 대사
 class ConversationScreen extends StatefulWidget {
   const ConversationScreen({
@@ -14,14 +31,12 @@ class ConversationScreen extends StatefulWidget {
     required this.lang,
     required this.scenarioId,
     required this.character,
-    this.resumeChoices = const [],
   });
 
   final Services services;
   final String lang;
   final String scenarioId;
   final Character character;
-  final List<String> resumeChoices;
 
   @override
   State<ConversationScreen> createState() => _ConversationScreenState();
@@ -30,12 +45,10 @@ class ConversationScreen extends StatefulWidget {
 class _ConversationScreenState extends State<ConversationScreen> {
   late final ConversationController c = ConversationController(
     repo: widget.services.repo,
-    progress: widget.services.progress,
     player: widget.services.newPlayer(),
     lang: widget.lang,
     scenarioId: widget.scenarioId,
     character: widget.character,
-    resumeChoices: widget.resumeChoices,
   );
   final _scroll = ScrollController();
   int _lastLength = -1;
@@ -91,7 +104,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
           children: [
             Text(info.title),
             Text(
-              '${language.name} · ${widget.character.name}',
+              '${language.name} · ${widget.character.nameIn(widget.lang).native}',
               style: const TextStyle(
                 fontSize: 12.5,
                 color: Palette.cocoa,
@@ -247,7 +260,7 @@ class _CurrentLine extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          c.character.name,
+                          c.character.nameIn(c.lang).native,
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w800,
@@ -551,8 +564,6 @@ class _EndCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final endings = c.scenario.nodes.values.where((n) => n.isEnd).length;
-    final reached = c.progress.endings(c.lang, c.scenarioId).length;
     return Container(
       key: const Key('endCard'),
       padding: const EdgeInsets.all(20),
@@ -569,7 +580,7 @@ class _EndCard extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            '대답을 ${c.history.length}번 했어요. 지금까지 만난 결말 $reached/$endings개.\n다른 대답을 고르면 다른 대화로 이어져요.',
+            '대답을 ${c.history.length}번 했어요.\n다른 대답을 고르면 다른 대화로 이어져요.',
             style: const TextStyle(height: 1.55),
           ),
           const SizedBox(height: 14),

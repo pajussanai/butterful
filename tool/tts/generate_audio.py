@@ -64,6 +64,10 @@ def main() -> None:
                     guide = catalog["guide"]
                     rel = f"{lang}/guide/{scenario_id}__{reply['id']}.mp3"
                     jobs.append((rel, lang, reply["text"], guide["voice"], guide["speed"]))
+        # 초급 기초 단어(단어·예문)는 정해 둔 캐릭터 목소리로 읽는다.
+        word_voice = next(c for c in catalog["characters"] if c["id"] == manifest_util.WORD_VOICE)
+        for rel, text in manifest_util.word_jobs(lang):
+            jobs.append((rel, lang, text, word_voice["voice"], word_voice["speed"]))
 
     wanted = {j[0] for j in jobs}
     stale = {k for k in old_files if k.split("/")[0] in langs and k not in wanted}

@@ -1,31 +1,23 @@
 import 'package:butterful/conversation/conversation_controller.dart';
-import 'package:butterful/data/progress_store.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'helpers.dart';
 
 void main() {
-  Future<(ConversationController, FakePlayer, ProgressStore)> make(
+  Future<(ConversationController, FakePlayer, Null)> make(
     WidgetTester tester, {
     String lang = 'en',
-    List<String> resume = const [],
   }) async {
-    SharedPreferences.setMockInitialValues({});
-    final prefs = await SharedPreferences.getInstance();
     final repo = await loadRepo(tester);
-    final progress = ProgressStore(prefs);
     final player = FakePlayer();
     final c = ConversationController(
       repo: repo,
-      progress: progress,
       player: player,
       lang: lang,
       scenarioId: 'restaurant',
       character: repo.catalog.character('mia'),
-      resumeChoices: resume,
     );
-    return (c, player, progress);
+    return (c, player, null);
   }
 
   testWidgets('듣기: 지금 대사의 캐릭터 음성을 보통 속도로 한 번 재생한다', (tester) async {
@@ -97,35 +89,15 @@ void main() {
     expect(player.played.single.$1, 'ja/guide/restaurant__${r.id}.mp3');
   });
 
-  testWidgets('진행 저장과 이어서 하기: 고른 대답을 따라가 같은 위치로 돌아간다', (tester) async {
-    final (c, _, progress) = await make(tester);
-    for (final id in ['welcome_2', 'seat_two_2']) {
-      final f = c.choose(c.current.replies.firstWhere((r) => r.id == id));
-      await tester.pump(const Duration(milliseconds: 400));
-      await f;
-    }
-    expect(c.current.id, 'outside');
-    final saved = progress.session('en', 'restaurant')!;
-    expect(saved.choices, ['welcome_2', 'seat_two_2']);
-    expect(saved.done, isFalse);
-    expect(progress.resumable?.scenario, 'restaurant');
-
-    final (resumed, _, _) = await make(tester, resume: saved.choices);
-    expect(resumed.current.id, 'outside');
-    expect(resumed.history, hasLength(2));
-  });
-
-  testWidgets('결말에 닿으면 완료로 기록된다', (tester) async {
-    final (c, _, progress) = await make(tester);
+  testWidgets('대답을 고르면 그 대답의 분기로 이어지고, 결말에서 대화가 끝난다', (tester) async {
+    final (c, _, _) = await make(tester);
     for (final id in ['welcome_3', 'full_four_2']) {
       final f = c.choose(c.current.replies.firstWhere((r) => r.id == id));
       await tester.pump(const Duration(milliseconds: 400));
       await f;
     }
     expect(c.isEnd, isTrue);
-    expect(progress.session('en', 'restaurant')!.done, isTrue);
-    expect(progress.completions('en', 'restaurant'), 1);
-    expect(progress.endings('en', 'restaurant'), {'end_leave'});
-    expect(progress.resumable, isNull);
+    expect(c.current.id, 'end_leave');
+    expect(c.choices, ['welcome_3', 'full_four_2']);
   });
 }

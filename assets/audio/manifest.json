@@ -1127,6 +1127,1006 @@
    "sec": 3.83,
    "voice": "M2"
   },
+  "en/words/adjectives__bad.mp3": {
+   "hash": "be09328f940a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/adjectives__bad__ex.mp3": {
+   "hash": "a9da3fee75b7",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "en/words/adjectives__big.mp3": {
+   "hash": "69d2667e963b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/adjectives__big__ex.mp3": {
+   "hash": "97a048b82a7c",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "en/words/adjectives__cheap.mp3": {
+   "hash": "f8cd1b1273c1",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/adjectives__cheap__ex.mp3": {
+   "hash": "6a106d560569",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "en/words/adjectives__cold.mp3": {
+   "hash": "0fc596f714b6",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/adjectives__cold__ex.mp3": {
+   "hash": "d9d4728e60de",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "en/words/adjectives__delicious.mp3": {
+   "hash": "12ebbb9fa171",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/adjectives__delicious__ex.mp3": {
+   "hash": "0cdbdc28ee22",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "en/words/adjectives__expensive.mp3": {
+   "hash": "bc3ef993980c",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/adjectives__expensive__ex.mp3": {
+   "hash": "91156b36c15a",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "en/words/adjectives__fast.mp3": {
+   "hash": "8c601e110c11",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/adjectives__fast__ex.mp3": {
+   "hash": "2bd1d38ab50d",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "en/words/adjectives__good.mp3": {
+   "hash": "8d1ef8f2457a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/adjectives__good__ex.mp3": {
+   "hash": "7d5b660767f3",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "en/words/adjectives__hot.mp3": {
+   "hash": "399903414a23",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/adjectives__hot__ex.mp3": {
+   "hash": "604918dac61c",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "en/words/adjectives__small.mp3": {
+   "hash": "d1db3e8a4b4b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/adjectives__small__ex.mp3": {
+   "hash": "e780e0a89c0a",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "en/words/food_drink__beer.mp3": {
+   "hash": "2b58e8993f6a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/food_drink__beer__ex.mp3": {
+   "hash": "902ca82c4cee",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "en/words/food_drink__bread.mp3": {
+   "hash": "acb0b9326938",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/food_drink__bread__ex.mp3": {
+   "hash": "8dd7902ed7ce",
+   "sec": 2.58,
+   "voice": "F1"
+  },
+  "en/words/food_drink__coffee.mp3": {
+   "hash": "a166c9692548",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/food_drink__coffee__ex.mp3": {
+   "hash": "ce261b96345c",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "en/words/food_drink__fish.mp3": {
+   "hash": "611e450f682c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/food_drink__fish__ex.mp3": {
+   "hash": "c565d06c25b0",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "en/words/food_drink__fruit.mp3": {
+   "hash": "2df6b70aa70a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/food_drink__fruit__ex.mp3": {
+   "hash": "dd5a47e74a25",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/food_drink__meat.mp3": {
+   "hash": "882ba6ccd975",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/food_drink__meat__ex.mp3": {
+   "hash": "4d4039f5953a",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "en/words/food_drink__rice.mp3": {
+   "hash": "8ccedb48390c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/food_drink__rice__ex.mp3": {
+   "hash": "f7f8d72b7c2e",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "en/words/food_drink__tea.mp3": {
+   "hash": "7a78863fe5de",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/food_drink__tea__ex.mp3": {
+   "hash": "076615803cc8",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "en/words/food_drink__vegetable.mp3": {
+   "hash": "66ba134aa9db",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/food_drink__vegetable__ex.mp3": {
+   "hash": "f0408cfc70fb",
+   "sec": 2.65,
+   "voice": "F1"
+  },
+  "en/words/food_drink__water.mp3": {
+   "hash": "13d3057fdb3e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/food_drink__water__ex.mp3": {
+   "hash": "95102eaaa908",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "en/words/greetings__excuse_me.mp3": {
+   "hash": "9ab7ce3559cd",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/greetings__excuse_me__ex.mp3": {
+   "hash": "b6c3c143acb1",
+   "sec": 2.58,
+   "voice": "F1"
+  },
+  "en/words/greetings__good_morning.mp3": {
+   "hash": "12529f7c4c55",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/greetings__good_morning__ex.mp3": {
+   "hash": "a5f46f6fddeb",
+   "sec": 3.0,
+   "voice": "F1"
+  },
+  "en/words/greetings__goodbye.mp3": {
+   "hash": "fea968f79ef0",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/greetings__goodbye__ex.mp3": {
+   "hash": "68589e24df8d",
+   "sec": 2.65,
+   "voice": "F1"
+  },
+  "en/words/greetings__hello.mp3": {
+   "hash": "a1f9cf49aaaf",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/greetings__hello__ex.mp3": {
+   "hash": "3329be1e343a",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "en/words/greetings__nice_to_meet.mp3": {
+   "hash": "46ebcc1795f0",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "en/words/greetings__nice_to_meet__ex.mp3": {
+   "hash": "ef99fb90dcb0",
+   "sec": 2.79,
+   "voice": "F1"
+  },
+  "en/words/greetings__no.mp3": {
+   "hash": "9174fe11f313",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/greetings__no__ex.mp3": {
+   "hash": "7dcfcfcf83fe",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "en/words/greetings__please.mp3": {
+   "hash": "2a838a453b31",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/greetings__please__ex.mp3": {
+   "hash": "ecc881de63ba",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "en/words/greetings__sorry.mp3": {
+   "hash": "438bfb22156c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/greetings__sorry__ex.mp3": {
+   "hash": "012f6b149ecc",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "en/words/greetings__thank_you.mp3": {
+   "hash": "46ba8f8a6bf1",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/greetings__thank_you__ex.mp3": {
+   "hash": "b81e6ff16341",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/greetings__yes.mp3": {
+   "hash": "25697a932880",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/greetings__yes__ex.mp3": {
+   "hash": "b4b7dafdb2c6",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__hundred.mp3": {
+   "hash": "967451819656",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__hundred__ex.mp3": {
+   "hash": "b7593aeeafbe",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__minute.mp3": {
+   "hash": "312bdae6fee9",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__minute__ex.mp3": {
+   "hash": "3c870de4f9d6",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__now.mp3": {
+   "hash": "2e14fd32128b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__now__ex.mp3": {
+   "hash": "759f21555610",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__one.mp3": {
+   "hash": "fd50ff86e729",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__one__ex.mp3": {
+   "hash": "94c05f9bf7af",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__ten.mp3": {
+   "hash": "a5bf73de6300",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__ten__ex.mp3": {
+   "hash": "776bded9cf2d",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__three.mp3": {
+   "hash": "f5cee0e81efb",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__three__ex.mp3": {
+   "hash": "cbf2f3780bbf",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__today.mp3": {
+   "hash": "45829e8f1551",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__today__ex.mp3": {
+   "hash": "d0934e7f61d7",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__tomorrow.mp3": {
+   "hash": "35fb009725ec",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__tomorrow__ex.mp3": {
+   "hash": "8a9648c45477",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__two.mp3": {
+   "hash": "227c40fff246",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__two__ex.mp3": {
+   "hash": "6cef37ddb732",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__yesterday.mp3": {
+   "hash": "e2f90daa2034",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/numbers_time__yesterday__ex.mp3": {
+   "hash": "701f10c14631",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/people_family__child.mp3": {
+   "hash": "30142df6c2bd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__child__ex.mp3": {
+   "hash": "4da9b738591f",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "en/words/people_family__colleague.mp3": {
+   "hash": "8a0b8fb57007",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__colleague__ex.mp3": {
+   "hash": "e6766b14abf1",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "en/words/people_family__family.mp3": {
+   "hash": "57824fe312ac",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__family__ex.mp3": {
+   "hash": "3847f1b3ed2c",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "en/words/people_family__father.mp3": {
+   "hash": "bb3ca740d976",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__father__ex.mp3": {
+   "hash": "ebddf8874183",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "en/words/people_family__friend.mp3": {
+   "hash": "8a5c36f16789",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__friend__ex.mp3": {
+   "hash": "1a68dd659c89",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "en/words/people_family__man.mp3": {
+   "hash": "51a7d34b5d23",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__man__ex.mp3": {
+   "hash": "de7f7a888e36",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "en/words/people_family__mother.mp3": {
+   "hash": "8c875175aaf5",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__mother__ex.mp3": {
+   "hash": "f4d8776cfb1d",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "en/words/people_family__name.mp3": {
+   "hash": "45b4661518a1",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__name__ex.mp3": {
+   "hash": "42879653f35d",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "en/words/people_family__person.mp3": {
+   "hash": "70973b08933d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__person__ex.mp3": {
+   "hash": "e3cb2b198c11",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "en/words/people_family__woman.mp3": {
+   "hash": "1d744899ee0e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/people_family__woman__ex.mp3": {
+   "hash": "d83a456ca48a",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "en/words/places_directions__bank.mp3": {
+   "hash": "0b9072ba9aff",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/places_directions__bank__ex.mp3": {
+   "hash": "318c6df623f5",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "en/words/places_directions__here.mp3": {
+   "hash": "5e9cb37feccc",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/places_directions__here__ex.mp3": {
+   "hash": "97be1ee505d6",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "en/words/places_directions__hospital.mp3": {
+   "hash": "7be3f1024911",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/places_directions__hospital__ex.mp3": {
+   "hash": "1603d8aa524a",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "en/words/places_directions__hotel.mp3": {
+   "hash": "484649858d0f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/places_directions__hotel__ex.mp3": {
+   "hash": "45d66545f716",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "en/words/places_directions__left.mp3": {
+   "hash": "805596074739",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/places_directions__left__ex.mp3": {
+   "hash": "b223e889478f",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/places_directions__right.mp3": {
+   "hash": "e81b0d2acbcf",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/places_directions__right__ex.mp3": {
+   "hash": "a5183690082b",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "en/words/places_directions__station.mp3": {
+   "hash": "5162c75371bb",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/places_directions__station__ex.mp3": {
+   "hash": "8de81b5359d5",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "en/words/places_directions__straight.mp3": {
+   "hash": "940a6524c0c3",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/places_directions__straight__ex.mp3": {
+   "hash": "9d252a000b07",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "en/words/places_directions__there.mp3": {
+   "hash": "a0e053f1759f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/places_directions__there__ex.mp3": {
+   "hash": "b0c0702ece2c",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "en/words/places_directions__toilet.mp3": {
+   "hash": "e6f31a1065f4",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/places_directions__toilet__ex.mp3": {
+   "hash": "58c5775fb0f6",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "en/words/questions__how.mp3": {
+   "hash": "5feb02124671",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__how__ex.mp3": {
+   "hash": "a5e5d16a86aa",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "en/words/questions__how_many.mp3": {
+   "hash": "73ba0428a765",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__how_many__ex.mp3": {
+   "hash": "b9473555261b",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "en/words/questions__how_much.mp3": {
+   "hash": "73fa4c6faf6a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__how_much__ex.mp3": {
+   "hash": "65970754e73a",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "en/words/questions__what.mp3": {
+   "hash": "aaa921053098",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__what__ex.mp3": {
+   "hash": "b660ee5520a7",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/questions__what_time.mp3": {
+   "hash": "2cbf54110322",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__what_time__ex.mp3": {
+   "hash": "f86b1d8fa667",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "en/words/questions__when.mp3": {
+   "hash": "30b6b77534fc",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__when__ex.mp3": {
+   "hash": "3d785494b3d7",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/questions__where.mp3": {
+   "hash": "4fa1a753fed8",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__where__ex.mp3": {
+   "hash": "96fa5c3c46fc",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "en/words/questions__which.mp3": {
+   "hash": "797ff73bd1b7",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__which__ex.mp3": {
+   "hash": "d360c8023308",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "en/words/questions__who.mp3": {
+   "hash": "0906938875d2",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__who__ex.mp3": {
+   "hash": "76225f1e2474",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/questions__why.mp3": {
+   "hash": "17a5c51da2a6",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/questions__why__ex.mp3": {
+   "hash": "1294e52704a1",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__bag.mp3": {
+   "hash": "c62627cc0982",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__bag__ex.mp3": {
+   "hash": "87579972ec8e",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__card.mp3": {
+   "hash": "ae954accdfa2",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__card__ex.mp3": {
+   "hash": "f942d23aa32b",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__cash.mp3": {
+   "hash": "fca793bea361",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__cash__ex.mp3": {
+   "hash": "2ce69b483569",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__change.mp3": {
+   "hash": "8b6813348407",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__change__ex.mp3": {
+   "hash": "68be29ed066d",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__discount.mp3": {
+   "hash": "509415ed7771",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__discount__ex.mp3": {
+   "hash": "a5911f84edfe",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__money.mp3": {
+   "hash": "2d979eb4e2cd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__money__ex.mp3": {
+   "hash": "e7a672a5c460",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__price.mp3": {
+   "hash": "6e2880d0711f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__price__ex.mp3": {
+   "hash": "81e15cc3f6d3",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__receipt.mp3": {
+   "hash": "829b4452951c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__receipt__ex.mp3": {
+   "hash": "09715e5e5fd0",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__shop.mp3": {
+   "hash": "8e675c6e62a7",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__shop__ex.mp3": {
+   "hash": "5e5e81872469",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__size.mp3": {
+   "hash": "db1f7c864819",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/shopping_money__size__ex.mp3": {
+   "hash": "7c6dfa261342",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "en/words/transport__airplane.mp3": {
+   "hash": "1f113d4fd119",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/transport__airplane__ex.mp3": {
+   "hash": "3fece0e15447",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "en/words/transport__airport.mp3": {
+   "hash": "51d5e9b22737",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/transport__airport__ex.mp3": {
+   "hash": "5d9a241f6cba",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "en/words/transport__bicycle.mp3": {
+   "hash": "867a494b82c6",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/transport__bicycle__ex.mp3": {
+   "hash": "a7f1e2195d3e",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "en/words/transport__bus.mp3": {
+   "hash": "a7c92d3edcf9",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/transport__bus__ex.mp3": {
+   "hash": "e2183b20d9f4",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/transport__car.mp3": {
+   "hash": "4209692e68fc",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/transport__car__ex.mp3": {
+   "hash": "1e55d583eb01",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "en/words/transport__stop.mp3": {
+   "hash": "fb47d169e279",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/transport__stop__ex.mp3": {
+   "hash": "f0a3d5952cd0",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "en/words/transport__subway.mp3": {
+   "hash": "93f2792718a4",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/transport__subway__ex.mp3": {
+   "hash": "bc8e02bb69ef",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "en/words/transport__taxi.mp3": {
+   "hash": "8803d9b35a27",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/transport__taxi__ex.mp3": {
+   "hash": "0cd9c15c9eda",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/transport__ticket.mp3": {
+   "hash": "59b489074443",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/transport__ticket__ex.mp3": {
+   "hash": "7f57b6600f95",
+   "sec": 3.13,
+   "voice": "F1"
+  },
+  "en/words/transport__train.mp3": {
+   "hash": "0621016b5d83",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/transport__train__ex.mp3": {
+   "hash": "9a62ff9d7b34",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "en/words/verbs__buy.mp3": {
+   "hash": "70a2984cff9a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__buy__ex.mp3": {
+   "hash": "e9d294c4c7a4",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "en/words/verbs__come.mp3": {
+   "hash": "dfc6cf20ccfd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__come__ex.mp3": {
+   "hash": "20d7b3bc4a3c",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "en/words/verbs__drink.mp3": {
+   "hash": "b07fdd593854",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__drink__ex.mp3": {
+   "hash": "c14469c7f625",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "en/words/verbs__eat.mp3": {
+   "hash": "d614fe6bcb09",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__eat__ex.mp3": {
+   "hash": "f186b100e7b8",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "en/words/verbs__go.mp3": {
+   "hash": "be369fb968be",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__go__ex.mp3": {
+   "hash": "54b16ad20372",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "en/words/verbs__know.mp3": {
+   "hash": "a2dd49193997",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__know__ex.mp3": {
+   "hash": "915413ef3d5d",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "en/words/verbs__see.mp3": {
+   "hash": "1a1c2e4cfae8",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__see__ex.mp3": {
+   "hash": "c5362a5c465e",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "en/words/verbs__speak.mp3": {
+   "hash": "feb026f52666",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__speak__ex.mp3": {
+   "hash": "65d01810d930",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "en/words/verbs__wait.mp3": {
+   "hash": "a150484aeb52",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__wait__ex.mp3": {
+   "hash": "205341c778ce",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "en/words/verbs__want.mp3": {
+   "hash": "cd4cc9b52c73",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "en/words/verbs__want__ex.mp3": {
+   "hash": "4eaca6f3cfd2",
+   "sec": 1.88,
+   "voice": "F1"
+  },
   "en_gb/ellie/hotel__anything.mp3": {
    "hash": "11601ab30270",
    "sec": 3.3,
@@ -2475,6 +3475,1206 @@
    "hash": "e82f23ed7b3c",
    "sec": 3.6,
    "voice": "kokoro:bm_fable",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__bad.mp3": {
+   "hash": "122cc69d6bf8",
+   "sec": 0.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__bad__ex.mp3": {
+   "hash": "0debb71dc719",
+   "sec": 2.6,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__big.mp3": {
+   "hash": "812d69ec30c1",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__big__ex.mp3": {
+   "hash": "05fdd1b23652",
+   "sec": 2.42,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__cheap.mp3": {
+   "hash": "a1bfc2dd5fba",
+   "sec": 0.75,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__cheap__ex.mp3": {
+   "hash": "2c432adcb24c",
+   "sec": 2.5,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__cold.mp3": {
+   "hash": "fb430fbffade",
+   "sec": 0.85,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__cold__ex.mp3": {
+   "hash": "ec9bd3d288dd",
+   "sec": 2.58,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__delicious.mp3": {
+   "hash": "952cc97f81fb",
+   "sec": 1.1,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__delicious__ex.mp3": {
+   "hash": "8062e72583be",
+   "sec": 2.9,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__expensive.mp3": {
+   "hash": "33d6b3a5c09f",
+   "sec": 1.15,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__expensive__ex.mp3": {
+   "hash": "04e3072fe27a",
+   "sec": 2.6,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__fast.mp3": {
+   "hash": "6eb17d296aa8",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__fast__ex.mp3": {
+   "hash": "934fd40d5e21",
+   "sec": 2.5,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__good.mp3": {
+   "hash": "565295bcfdfc",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__good__ex.mp3": {
+   "hash": "5b587a498254",
+   "sec": 2.42,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__hot.mp3": {
+   "hash": "04433f49ee46",
+   "sec": 0.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__hot__ex.mp3": {
+   "hash": "d5060d18cfd6",
+   "sec": 2.25,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__small.mp3": {
+   "hash": "29c6774a570f",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/adjectives__small__ex.mp3": {
+   "hash": "e46f9fe38916",
+   "sec": 2.35,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__beer.mp3": {
+   "hash": "94a1292a7a33",
+   "sec": 0.68,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__beer__ex.mp3": {
+   "hash": "78fba7a1c7dc",
+   "sec": 2.27,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__bread.mp3": {
+   "hash": "5ff394e282f2",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__bread__ex.mp3": {
+   "hash": "ce7c2e7269d3",
+   "sec": 2.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__coffee.mp3": {
+   "hash": "bb46287935db",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__coffee__ex.mp3": {
+   "hash": "e9fb44f7d672",
+   "sec": 1.93,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__fish.mp3": {
+   "hash": "bb4c8714a0b3",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__fish__ex.mp3": {
+   "hash": "cb696df2d752",
+   "sec": 2.17,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__fruit.mp3": {
+   "hash": "8c751487c09f",
+   "sec": 0.78,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__fruit__ex.mp3": {
+   "hash": "4d51989eff1b",
+   "sec": 2.33,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__meat.mp3": {
+   "hash": "a441008ec016",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__meat__ex.mp3": {
+   "hash": "746d70bb3603",
+   "sec": 2.25,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__rice.mp3": {
+   "hash": "02065c1fea23",
+   "sec": 0.78,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__rice__ex.mp3": {
+   "hash": "9ffe98963ff3",
+   "sec": 2.62,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__tea.mp3": {
+   "hash": "ea8965a1731e",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__tea__ex.mp3": {
+   "hash": "8b09de18ab73",
+   "sec": 2.62,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__vegetable.mp3": {
+   "hash": "218c8d01dd10",
+   "sec": 1.15,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__vegetable__ex.mp3": {
+   "hash": "29f579a5c588",
+   "sec": 3.23,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__water.mp3": {
+   "hash": "52b81761e206",
+   "sec": 0.93,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/food_drink__water__ex.mp3": {
+   "hash": "a855d011dcaa",
+   "sec": 2.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__excuse_me.mp3": {
+   "hash": "7de079f1d3e2",
+   "sec": 1.62,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__excuse_me__ex.mp3": {
+   "hash": "c522c26a9e10",
+   "sec": 2.6,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__good_morning.mp3": {
+   "hash": "e7082389cfb1",
+   "sec": 1.55,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__good_morning__ex.mp3": {
+   "hash": "f6f1d38166db",
+   "sec": 2.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__goodbye.mp3": {
+   "hash": "6319c1f9b6a1",
+   "sec": 0.88,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__goodbye__ex.mp3": {
+   "hash": "0b9c3f13ec7a",
+   "sec": 2.42,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__hello.mp3": {
+   "hash": "933c81bb683d",
+   "sec": 0.82,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__hello__ex.mp3": {
+   "hash": "cc627fcf7b64",
+   "sec": 2.35,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__nice_to_meet.mp3": {
+   "hash": "f7b95c2af03f",
+   "sec": 1.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__nice_to_meet__ex.mp3": {
+   "hash": "b41f45918272",
+   "sec": 2.67,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__no.mp3": {
+   "hash": "752dcf651d1b",
+   "sec": 0.68,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__no__ex.mp3": {
+   "hash": "70d11a2fe02b",
+   "sec": 2.3,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__please.mp3": {
+   "hash": "4a01d23c3193",
+   "sec": 0.88,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__please__ex.mp3": {
+   "hash": "3833ad2f8e72",
+   "sec": 2.2,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__sorry.mp3": {
+   "hash": "3038db3b8be9",
+   "sec": 0.78,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__sorry__ex.mp3": {
+   "hash": "b1d1a007935c",
+   "sec": 2.4,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__thank_you.mp3": {
+   "hash": "7b2e64da1532",
+   "sec": 1.2,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__thank_you__ex.mp3": {
+   "hash": "6315a51db3c3",
+   "sec": 2.5,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__yes.mp3": {
+   "hash": "0c2fdc83700c",
+   "sec": 0.78,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/greetings__yes__ex.mp3": {
+   "hash": "01223103a4b1",
+   "sec": 1.77,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__hundred.mp3": {
+   "hash": "ebaef3632f0e",
+   "sec": 0.97,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__hundred__ex.mp3": {
+   "hash": "e3187e7dcff1",
+   "sec": 2.5,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__minute.mp3": {
+   "hash": "c4d5a3ea2c51",
+   "sec": 0.93,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__minute__ex.mp3": {
+   "hash": "b078c9cb058d",
+   "sec": 2.67,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__now.mp3": {
+   "hash": "60c393d43b26",
+   "sec": 0.68,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__now__ex.mp3": {
+   "hash": "88cde32c5a60",
+   "sec": 1.85,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__one.mp3": {
+   "hash": "792ffadd075e",
+   "sec": 0.68,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__one__ex.mp3": {
+   "hash": "b11c0d9cfb4c",
+   "sec": 2.38,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__ten.mp3": {
+   "hash": "5709eb56c17d",
+   "sec": 0.75,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__ten__ex.mp3": {
+   "hash": "5c73d427cb5c",
+   "sec": 2.25,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__three.mp3": {
+   "hash": "c9e696026719",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__three__ex.mp3": {
+   "hash": "5b2835468180",
+   "sec": 2.35,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__today.mp3": {
+   "hash": "932157e588e0",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__today__ex.mp3": {
+   "hash": "7638ca967b01",
+   "sec": 2.25,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__tomorrow.mp3": {
+   "hash": "34605defcc24",
+   "sec": 1.18,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__tomorrow__ex.mp3": {
+   "hash": "f6ebc4830ed3",
+   "sec": 2.15,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__two.mp3": {
+   "hash": "d74312fc63a3",
+   "sec": 0.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__two__ex.mp3": {
+   "hash": "c7353b8c5506",
+   "sec": 2.05,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__yesterday.mp3": {
+   "hash": "fc5dd321f80c",
+   "sec": 1.27,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/numbers_time__yesterday__ex.mp3": {
+   "hash": "825ddadaca28",
+   "sec": 2.15,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__child.mp3": {
+   "hash": "dd47d59469da",
+   "sec": 0.88,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__child__ex.mp3": {
+   "hash": "cb702d6e120d",
+   "sec": 2.67,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__colleague.mp3": {
+   "hash": "a874f226cadf",
+   "sec": 1.0,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__colleague__ex.mp3": {
+   "hash": "bd5a0250a2b3",
+   "sec": 2.42,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__family.mp3": {
+   "hash": "957202639499",
+   "sec": 0.9,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__family__ex.mp3": {
+   "hash": "8b1f8ad9dce0",
+   "sec": 2.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__father.mp3": {
+   "hash": "9a92b1ef5a30",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__father__ex.mp3": {
+   "hash": "223b51710289",
+   "sec": 3.23,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__friend.mp3": {
+   "hash": "dda54c2caee2",
+   "sec": 0.85,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__friend__ex.mp3": {
+   "hash": "ba2b23a7c802",
+   "sec": 2.4,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__man.mp3": {
+   "hash": "60461bf71bac",
+   "sec": 0.78,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__man__ex.mp3": {
+   "hash": "eedcddb110d3",
+   "sec": 2.35,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__mother.mp3": {
+   "hash": "c34e77e066b8",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__mother__ex.mp3": {
+   "hash": "f62748169c4e",
+   "sec": 2.4,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__name.mp3": {
+   "hash": "5322b99a1c96",
+   "sec": 0.82,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__name__ex.mp3": {
+   "hash": "7d5aa3143cbd",
+   "sec": 2.17,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__person.mp3": {
+   "hash": "c276a7bc47c4",
+   "sec": 0.95,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__person__ex.mp3": {
+   "hash": "722a3bbbc390",
+   "sec": 2.23,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__woman.mp3": {
+   "hash": "86819a3b4d29",
+   "sec": 0.85,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/people_family__woman__ex.mp3": {
+   "hash": "a3ad64b4b668",
+   "sec": 2.25,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__bank.mp3": {
+   "hash": "e9e5f782fcd3",
+   "sec": 0.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__bank__ex.mp3": {
+   "hash": "4b9dee0391b3",
+   "sec": 2.58,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__here.mp3": {
+   "hash": "5e7fc66b91b2",
+   "sec": 0.75,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__here__ex.mp3": {
+   "hash": "1c8e65211540",
+   "sec": 2.02,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__hospital.mp3": {
+   "hash": "160b2f452353",
+   "sec": 1.07,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__hospital__ex.mp3": {
+   "hash": "da96d979a7d0",
+   "sec": 2.62,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__hotel.mp3": {
+   "hash": "78fa9a57c169",
+   "sec": 0.97,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__hotel__ex.mp3": {
+   "hash": "b0f2d571d31c",
+   "sec": 2.83,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__left.mp3": {
+   "hash": "edb0ed3753e6",
+   "sec": 0.78,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__left__ex.mp3": {
+   "hash": "9f545c4a5313",
+   "sec": 2.42,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__right.mp3": {
+   "hash": "112263b6c980",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__right__ex.mp3": {
+   "hash": "c6bd877860a8",
+   "sec": 2.52,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__station.mp3": {
+   "hash": "b17532f26ecd",
+   "sec": 0.95,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__station__ex.mp3": {
+   "hash": "eae40516ef3f",
+   "sec": 2.52,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__straight.mp3": {
+   "hash": "3e7e3bcbd8e0",
+   "sec": 1.0,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__straight__ex.mp3": {
+   "hash": "7bee487fc624",
+   "sec": 2.52,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__there.mp3": {
+   "hash": "f320d366a773",
+   "sec": 0.6,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__there__ex.mp3": {
+   "hash": "6a6a1b5637b2",
+   "sec": 2.55,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__toilet.mp3": {
+   "hash": "e96b6bf3d69f",
+   "sec": 0.88,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/places_directions__toilet__ex.mp3": {
+   "hash": "4c211b035c66",
+   "sec": 2.58,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__how.mp3": {
+   "hash": "1402d313db45",
+   "sec": 0.62,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__how__ex.mp3": {
+   "hash": "20ed2bbd1eb1",
+   "sec": 2.52,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__how_many.mp3": {
+   "hash": "c362a7813bcd",
+   "sec": 1.23,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__how_many__ex.mp3": {
+   "hash": "39a52860f981",
+   "sec": 2.27,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__how_much.mp3": {
+   "hash": "97dc2cb4da06",
+   "sec": 1.18,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__how_much__ex.mp3": {
+   "hash": "f8d8cd27c66d",
+   "sec": 2.58,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__what.mp3": {
+   "hash": "997f67c4500a",
+   "sec": 0.68,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__what__ex.mp3": {
+   "hash": "557f705f7eef",
+   "sec": 1.45,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__what_time.mp3": {
+   "hash": "d8bf733bb0b4",
+   "sec": 1.18,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__what_time__ex.mp3": {
+   "hash": "47dc492f87b0",
+   "sec": 2.42,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__when.mp3": {
+   "hash": "25cc858e1d45",
+   "sec": 0.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__when__ex.mp3": {
+   "hash": "e02c62176ddf",
+   "sec": 2.25,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__where.mp3": {
+   "hash": "54de58eec0af",
+   "sec": 0.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__where__ex.mp3": {
+   "hash": "1b461db65999",
+   "sec": 2.45,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__which.mp3": {
+   "hash": "5fc9524999ea",
+   "sec": 0.75,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__which__ex.mp3": {
+   "hash": "67988c6e5fff",
+   "sec": 2.55,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__who.mp3": {
+   "hash": "f6de65da6a24",
+   "sec": 0.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__who__ex.mp3": {
+   "hash": "5601d4ecac5e",
+   "sec": 2.17,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__why.mp3": {
+   "hash": "4151d981a46c",
+   "sec": 0.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/questions__why__ex.mp3": {
+   "hash": "f8cb26d2dc2c",
+   "sec": 2.33,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__bag.mp3": {
+   "hash": "b10476d3c4f2",
+   "sec": 0.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__bag__ex.mp3": {
+   "hash": "6c8bee8100aa",
+   "sec": 2.4,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__card.mp3": {
+   "hash": "aadeb241bd80",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__card__ex.mp3": {
+   "hash": "74329c0a26d5",
+   "sec": 2.62,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__cash.mp3": {
+   "hash": "7b27f1f217db",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__cash__ex.mp3": {
+   "hash": "088652c0cd4f",
+   "sec": 2.45,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__change.mp3": {
+   "hash": "eb57df641d5a",
+   "sec": 0.97,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__change__ex.mp3": {
+   "hash": "7f9ebe784108",
+   "sec": 1.93,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__discount.mp3": {
+   "hash": "3212205050f2",
+   "sec": 1.0,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__discount__ex.mp3": {
+   "hash": "47ec1a4ce289",
+   "sec": 2.35,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__money.mp3": {
+   "hash": "1094a03d1b86",
+   "sec": 0.82,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__money__ex.mp3": {
+   "hash": "1a000f401de1",
+   "sec": 2.58,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__price.mp3": {
+   "hash": "790f29278d48",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__price__ex.mp3": {
+   "hash": "8afeb887a658",
+   "sec": 2.85,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__receipt.mp3": {
+   "hash": "0546139af348",
+   "sec": 0.95,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__receipt__ex.mp3": {
+   "hash": "564047f75a9d",
+   "sec": 2.3,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__shop.mp3": {
+   "hash": "448e1cd360cf",
+   "sec": 0.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__shop__ex.mp3": {
+   "hash": "73ccd6efcc33",
+   "sec": 2.55,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__size.mp3": {
+   "hash": "af041321e9de",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/shopping_money__size__ex.mp3": {
+   "hash": "d5ec97c2c1be",
+   "sec": 2.85,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__airplane.mp3": {
+   "hash": "f3af95ae14dd",
+   "sec": 0.78,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__airplane__ex.mp3": {
+   "hash": "d725031b748a",
+   "sec": 2.27,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__airport.mp3": {
+   "hash": "016d0a4c31c9",
+   "sec": 0.88,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__airport__ex.mp3": {
+   "hash": "c8bc9c7828bf",
+   "sec": 2.9,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__bicycle.mp3": {
+   "hash": "a07a606b4f6f",
+   "sec": 0.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__bicycle__ex.mp3": {
+   "hash": "af6a02893cd2",
+   "sec": 2.25,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__bus.mp3": {
+   "hash": "478b7a9937c8",
+   "sec": 0.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__bus__ex.mp3": {
+   "hash": "db8e6396f8f4",
+   "sec": 2.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__car.mp3": {
+   "hash": "6dbc05eb8f58",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__car__ex.mp3": {
+   "hash": "879ca6c86dcd",
+   "sec": 2.23,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__stop.mp3": {
+   "hash": "592fd356d1cc",
+   "sec": 0.68,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__stop__ex.mp3": {
+   "hash": "567c9fbd60bd",
+   "sec": 2.0,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__subway.mp3": {
+   "hash": "6914a07f4dc8",
+   "sec": 1.55,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__subway__ex.mp3": {
+   "hash": "227d6448c408",
+   "sec": 2.85,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__taxi.mp3": {
+   "hash": "13b73f5f5bbf",
+   "sec": 0.9,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__taxi__ex.mp3": {
+   "hash": "c668996d6ca5",
+   "sec": 2.25,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__ticket.mp3": {
+   "hash": "439f74c689c7",
+   "sec": 0.85,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__ticket__ex.mp3": {
+   "hash": "d3e6baefa380",
+   "sec": 2.83,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__train.mp3": {
+   "hash": "3411b7e5cd7e",
+   "sec": 0.82,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/transport__train__ex.mp3": {
+   "hash": "b9b4c58a0791",
+   "sec": 2.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__buy.mp3": {
+   "hash": "d92dfd6de77a",
+   "sec": 0.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__buy__ex.mp3": {
+   "hash": "1894887e8f8f",
+   "sec": 2.38,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__come.mp3": {
+   "hash": "1b128b5d3c54",
+   "sec": 0.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__come__ex.mp3": {
+   "hash": "27a50ac2e6b5",
+   "sec": 2.58,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__drink.mp3": {
+   "hash": "b147274f5cee",
+   "sec": 0.8,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__drink__ex.mp3": {
+   "hash": "b4edb609e5c0",
+   "sec": 2.15,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__eat.mp3": {
+   "hash": "1b8ffddab886",
+   "sec": 0.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__eat__ex.mp3": {
+   "hash": "ef205dfb48db",
+   "sec": 2.2,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__go.mp3": {
+   "hash": "8bcbc1559f44",
+   "sec": 0.65,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__go__ex.mp3": {
+   "hash": "89eaf8f79135",
+   "sec": 2.23,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__know.mp3": {
+   "hash": "c530fb98f362",
+   "sec": 0.68,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__know__ex.mp3": {
+   "hash": "1d85bd28598b",
+   "sec": 2.48,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__see.mp3": {
+   "hash": "ca2846692069",
+   "sec": 0.7,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__see__ex.mp3": {
+   "hash": "9809afe45a43",
+   "sec": 2.23,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__speak.mp3": {
+   "hash": "c9045f65d65a",
+   "sec": 0.75,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__speak__ex.mp3": {
+   "hash": "d1dde19f45d0",
+   "sec": 2.62,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__wait.mp3": {
+   "hash": "f32a760ce342",
+   "sec": 0.72,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__wait__ex.mp3": {
+   "hash": "4aa744609b83",
+   "sec": 2.15,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__want.mp3": {
+   "hash": "990b5aacc0ba",
+   "sec": 0.78,
+   "voice": "kokoro:bf_emma",
+   "engine": "kokoro-82m"
+  },
+  "en_gb/words/verbs__want__ex.mp3": {
+   "hash": "0daa34a3f1e0",
+   "sec": 2.0,
+   "voice": "kokoro:bf_emma",
    "engine": "kokoro-82m"
   },
   "es/ellie/hotel__anything.mp3": {
@@ -3827,6 +6027,1206 @@
    "voice": "kokoro:em_alex",
    "engine": "kokoro-82m"
   },
+  "es/words/adjectives__bad.mp3": {
+   "hash": "aa1dad66165d",
+   "sec": 0.68,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__bad__ex.mp3": {
+   "hash": "b1b372da5933",
+   "sec": 2.0,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__big.mp3": {
+   "hash": "4fd557f9d735",
+   "sec": 0.8,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__big__ex.mp3": {
+   "hash": "4f5f48124234",
+   "sec": 2.35,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__cheap.mp3": {
+   "hash": "34c2440bcfe5",
+   "sec": 0.82,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__cheap__ex.mp3": {
+   "hash": "5114491378cc",
+   "sec": 1.95,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__cold.mp3": {
+   "hash": "a80539382b67",
+   "sec": 0.68,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__cold__ex.mp3": {
+   "hash": "8694d42945d1",
+   "sec": 2.23,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__delicious.mp3": {
+   "hash": "8d6c411644ae",
+   "sec": 0.72,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__delicious__ex.mp3": {
+   "hash": "b9c9c4edb9f6",
+   "sec": 1.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__expensive.mp3": {
+   "hash": "397182c8787d",
+   "sec": 0.62,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__expensive__ex.mp3": {
+   "hash": "2ca865804f3e",
+   "sec": 2.27,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__fast.mp3": {
+   "hash": "2deea2f428dc",
+   "sec": 0.82,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__fast__ex.mp3": {
+   "hash": "05cd48149c1b",
+   "sec": 1.95,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__good.mp3": {
+   "hash": "a3f57c8533f4",
+   "sec": 0.68,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__good__ex.mp3": {
+   "hash": "8cfcab9a42f3",
+   "sec": 1.8,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__hot.mp3": {
+   "hash": "b4431e472384",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__hot__ex.mp3": {
+   "hash": "7eda31c1bc72",
+   "sec": 2.5,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__small.mp3": {
+   "hash": "cb051c2a92a9",
+   "sec": 0.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/adjectives__small__ex.mp3": {
+   "hash": "d008c2271972",
+   "sec": 2.23,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__beer.mp3": {
+   "hash": "f2c0cbf77e64",
+   "sec": 1.02,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__beer__ex.mp3": {
+   "hash": "f32a40198427",
+   "sec": 2.1,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__bread.mp3": {
+   "hash": "851652b55ba6",
+   "sec": 0.78,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__bread__ex.mp3": {
+   "hash": "9d089d743642",
+   "sec": 2.17,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__coffee.mp3": {
+   "hash": "879c5bebfd7c",
+   "sec": 0.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__coffee__ex.mp3": {
+   "hash": "d9897f387271",
+   "sec": 2.15,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__fish.mp3": {
+   "hash": "a1e607a6f9b4",
+   "sec": 1.02,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__fish__ex.mp3": {
+   "hash": "02e66e7dbb6e",
+   "sec": 2.12,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__fruit.mp3": {
+   "hash": "553760c71bda",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__fruit__ex.mp3": {
+   "hash": "e073c459c7ce",
+   "sec": 2.15,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__meat.mp3": {
+   "hash": "a2dd9f55db9c",
+   "sec": 0.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__meat__ex.mp3": {
+   "hash": "32eed4a14bb9",
+   "sec": 1.23,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__rice.mp3": {
+   "hash": "349acb62407a",
+   "sec": 0.9,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__rice__ex.mp3": {
+   "hash": "77a1051383ed",
+   "sec": 2.0,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__tea.mp3": {
+   "hash": "6fd7d28e3675",
+   "sec": 0.7,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__tea__ex.mp3": {
+   "hash": "6794dad8880d",
+   "sec": 1.12,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__vegetable.mp3": {
+   "hash": "6290814f205a",
+   "sec": 0.95,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__vegetable__ex.mp3": {
+   "hash": "bbee92a65aa0",
+   "sec": 2.08,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__water.mp3": {
+   "hash": "a24e942631e1",
+   "sec": 0.82,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/food_drink__water__ex.mp3": {
+   "hash": "76c787205f88",
+   "sec": 2.0,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__excuse_me.mp3": {
+   "hash": "33215627c0d6",
+   "sec": 0.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__excuse_me__ex.mp3": {
+   "hash": "a51027504770",
+   "sec": 2.08,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__good_morning.mp3": {
+   "hash": "c8bd65eb3984",
+   "sec": 1.12,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__good_morning__ex.mp3": {
+   "hash": "4a3f65f42149",
+   "sec": 2.23,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__goodbye.mp3": {
+   "hash": "758f9af9d0bc",
+   "sec": 0.75,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__goodbye__ex.mp3": {
+   "hash": "f7f988b8f82d",
+   "sec": 1.55,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__hello.mp3": {
+   "hash": "1d61739ad077",
+   "sec": 0.62,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__hello__ex.mp3": {
+   "hash": "cb5789f93c81",
+   "sec": 1.18,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__nice_to_meet.mp3": {
+   "hash": "f54427974523",
+   "sec": 1.1,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__nice_to_meet__ex.mp3": {
+   "hash": "f7d0dcff5246",
+   "sec": 2.08,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__no.mp3": {
+   "hash": "0fe3106f374d",
+   "sec": 0.55,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__no__ex.mp3": {
+   "hash": "89abefc95d3d",
+   "sec": 1.2,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__please.mp3": {
+   "hash": "8debc930644c",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__please__ex.mp3": {
+   "hash": "1c9f055cbf2b",
+   "sec": 1.62,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__sorry.mp3": {
+   "hash": "b8767b411a9d",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__sorry__ex.mp3": {
+   "hash": "a7bc4f87da08",
+   "sec": 1.82,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__thank_you.mp3": {
+   "hash": "befac95dd9d1",
+   "sec": 0.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__thank_you__ex.mp3": {
+   "hash": "b88f6a412311",
+   "sec": 2.15,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__yes.mp3": {
+   "hash": "6ab236d753d0",
+   "sec": 0.47,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/greetings__yes__ex.mp3": {
+   "hash": "941402e7d6da",
+   "sec": 1.0,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__hundred.mp3": {
+   "hash": "2ae67d5da58f",
+   "sec": 0.6,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__hundred__ex.mp3": {
+   "hash": "e443a4614525",
+   "sec": 1.48,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__minute.mp3": {
+   "hash": "8f81dea3e5a7",
+   "sec": 1.0,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__minute__ex.mp3": {
+   "hash": "8975e1cd4856",
+   "sec": 2.05,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__now.mp3": {
+   "hash": "7a77491f0628",
+   "sec": 0.7,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__now__ex.mp3": {
+   "hash": "79a01d8e6185",
+   "sec": 1.9,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__one.mp3": {
+   "hash": "692566ff7ffd",
+   "sec": 0.62,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__one__ex.mp3": {
+   "hash": "2bbe031e520e",
+   "sec": 1.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__ten.mp3": {
+   "hash": "1c81d4940b90",
+   "sec": 0.65,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__ten__ex.mp3": {
+   "hash": "46f353bd948a",
+   "sec": 1.82,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__three.mp3": {
+   "hash": "d28642cb83b2",
+   "sec": 0.68,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__three__ex.mp3": {
+   "hash": "5237b6da364a",
+   "sec": 1.6,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__today.mp3": {
+   "hash": "5c14a48766d5",
+   "sec": 0.53,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__today__ex.mp3": {
+   "hash": "b88529ee0d04",
+   "sec": 1.6,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__tomorrow.mp3": {
+   "hash": "625c144cc0b7",
+   "sec": 0.9,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__tomorrow__ex.mp3": {
+   "hash": "85ccb8d6ee52",
+   "sec": 1.45,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__two.mp3": {
+   "hash": "f0655683e274",
+   "sec": 0.6,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__two__ex.mp3": {
+   "hash": "541ff75e3ba1",
+   "sec": 1.77,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__yesterday.mp3": {
+   "hash": "c26840be28e2",
+   "sec": 0.7,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/numbers_time__yesterday__ex.mp3": {
+   "hash": "4d034c153d31",
+   "sec": 2.1,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__child.mp3": {
+   "hash": "a9c28dbc869a",
+   "sec": 0.9,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__child__ex.mp3": {
+   "hash": "f2f41a363ac2",
+   "sec": 2.35,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__colleague.mp3": {
+   "hash": "a0609b181fe9",
+   "sec": 1.77,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__colleague__ex.mp3": {
+   "hash": "912e9689a38b",
+   "sec": 2.67,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__family.mp3": {
+   "hash": "696bbb70a624",
+   "sec": 1.05,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__family__ex.mp3": {
+   "hash": "83eef625132a",
+   "sec": 1.98,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__father.mp3": {
+   "hash": "46b3df545445",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__father__ex.mp3": {
+   "hash": "7de6cb52389a",
+   "sec": 2.08,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__friend.mp3": {
+   "hash": "75b51c833b7e",
+   "sec": 0.95,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__friend__ex.mp3": {
+   "hash": "3d548834a291",
+   "sec": 2.02,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__man.mp3": {
+   "hash": "fff6fdf60374",
+   "sec": 0.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__man__ex.mp3": {
+   "hash": "952b48a9f40b",
+   "sec": 2.0,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__mother.mp3": {
+   "hash": "fa76ba0523a6",
+   "sec": 0.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__mother__ex.mp3": {
+   "hash": "e239996cab52",
+   "sec": 1.9,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__name.mp3": {
+   "hash": "27f2f3940e51",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__name__ex.mp3": {
+   "hash": "fdef47c66dc4",
+   "sec": 1.38,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__person.mp3": {
+   "hash": "eef1464fa381",
+   "sec": 1.05,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__person__ex.mp3": {
+   "hash": "84e675ecf6f5",
+   "sec": 2.2,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__woman.mp3": {
+   "hash": "f26bbb0d5cb6",
+   "sec": 0.85,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/people_family__woman__ex.mp3": {
+   "hash": "545470fea36d",
+   "sec": 2.45,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__bank.mp3": {
+   "hash": "04f4f59fef90",
+   "sec": 0.95,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__bank__ex.mp3": {
+   "hash": "1a08acf428d9",
+   "sec": 1.9,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__here.mp3": {
+   "hash": "b16848f3bee0",
+   "sec": 0.6,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__here__ex.mp3": {
+   "hash": "b9bc50e47b8d",
+   "sec": 2.05,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__hospital.mp3": {
+   "hash": "9a81cf50290e",
+   "sec": 1.0,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__hospital__ex.mp3": {
+   "hash": "737d6049f48e",
+   "sec": 2.5,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__hotel.mp3": {
+   "hash": "a18d6fe17f3c",
+   "sec": 0.85,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__hotel__ex.mp3": {
+   "hash": "7d771320c20f",
+   "sec": 2.25,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__left.mp3": {
+   "hash": "27f13cfbc5b7",
+   "sec": 1.1,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__left__ex.mp3": {
+   "hash": "b5b740a8235d",
+   "sec": 2.12,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__right.mp3": {
+   "hash": "713574fe4053",
+   "sec": 1.02,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__right__ex.mp3": {
+   "hash": "a8f24fd144f4",
+   "sec": 2.2,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__station.mp3": {
+   "hash": "2341fb25d17c",
+   "sec": 1.02,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__station__ex.mp3": {
+   "hash": "6e2263d907c4",
+   "sec": 2.15,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__straight.mp3": {
+   "hash": "7e00887c7530",
+   "sec": 1.07,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__straight__ex.mp3": {
+   "hash": "f0d2e6df7ab5",
+   "sec": 2.33,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__there.mp3": {
+   "hash": "2d5aecfed77f",
+   "sec": 0.62,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__there__ex.mp3": {
+   "hash": "6598285a9e01",
+   "sec": 2.2,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__toilet.mp3": {
+   "hash": "8bb385219e7a",
+   "sec": 1.15,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/places_directions__toilet__ex.mp3": {
+   "hash": "b8f2827dd63f",
+   "sec": 2.38,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__how.mp3": {
+   "hash": "f23bc3f705db",
+   "sec": 0.68,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__how__ex.mp3": {
+   "hash": "ad75def421b1",
+   "sec": 2.08,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__how_many.mp3": {
+   "hash": "8f20aa6391f7",
+   "sec": 0.85,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__how_many__ex.mp3": {
+   "hash": "e95b4f21b48c",
+   "sec": 1.65,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__how_much.mp3": {
+   "hash": "419caa8942d9",
+   "sec": 1.27,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__how_much__ex.mp3": {
+   "hash": "5b3c1d6c036d",
+   "sec": 2.08,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__what.mp3": {
+   "hash": "4f89d9d22f81",
+   "sec": 0.45,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__what__ex.mp3": {
+   "hash": "7063a0a42a16",
+   "sec": 1.15,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__what_time.mp3": {
+   "hash": "e026a530954b",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__what_time__ex.mp3": {
+   "hash": "9e95d17d6281",
+   "sec": 1.68,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__when.mp3": {
+   "hash": "7e75c1e82bba",
+   "sec": 0.8,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__when__ex.mp3": {
+   "hash": "c90d8d807d53",
+   "sec": 1.82,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__where.mp3": {
+   "hash": "2190dc132853",
+   "sec": 0.78,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__where__ex.mp3": {
+   "hash": "0f387e053f60",
+   "sec": 1.68,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__which.mp3": {
+   "hash": "f0eacfdcbe4b",
+   "sec": 0.6,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__which__ex.mp3": {
+   "hash": "add589ee627c",
+   "sec": 2.58,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__who.mp3": {
+   "hash": "82776415b873",
+   "sec": 0.62,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__who__ex.mp3": {
+   "hash": "ca95027e152b",
+   "sec": 1.52,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__why.mp3": {
+   "hash": "4c12dc780c54",
+   "sec": 0.7,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/questions__why__ex.mp3": {
+   "hash": "70474bdbf32e",
+   "sec": 2.02,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__bag.mp3": {
+   "hash": "dcb4788a5e9b",
+   "sec": 0.97,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__bag__ex.mp3": {
+   "hash": "757295298b00",
+   "sec": 2.02,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__card.mp3": {
+   "hash": "045d9c75eaef",
+   "sec": 1.05,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__card__ex.mp3": {
+   "hash": "cda7a3f5c9ea",
+   "sec": 1.82,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__cash.mp3": {
+   "hash": "fa80a680256c",
+   "sec": 1.1,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__cash__ex.mp3": {
+   "hash": "f49ed056bcda",
+   "sec": 1.85,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__change.mp3": {
+   "hash": "a7f7bcdae131",
+   "sec": 0.95,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__change__ex.mp3": {
+   "hash": "f432312aa6f0",
+   "sec": 1.6,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__discount.mp3": {
+   "hash": "661fadf7e972",
+   "sec": 1.15,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__discount__ex.mp3": {
+   "hash": "b3eac091fb56",
+   "sec": 2.05,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__money.mp3": {
+   "hash": "3413545a3c09",
+   "sec": 1.02,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__money__ex.mp3": {
+   "hash": "9cbd748b698e",
+   "sec": 1.75,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__price.mp3": {
+   "hash": "c4334c15eff3",
+   "sec": 0.97,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__price__ex.mp3": {
+   "hash": "0b69247ce49d",
+   "sec": 2.1,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__receipt.mp3": {
+   "hash": "99fdcd1ce051",
+   "sec": 0.9,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__receipt__ex.mp3": {
+   "hash": "2b77a3bdd272",
+   "sec": 1.98,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__shop.mp3": {
+   "hash": "efc5175dd725",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__shop__ex.mp3": {
+   "hash": "9f6c8c59c061",
+   "sec": 1.9,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__size.mp3": {
+   "hash": "3d7e0739f477",
+   "sec": 0.9,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/shopping_money__size__ex.mp3": {
+   "hash": "828ce6445b5d",
+   "sec": 2.38,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__airplane.mp3": {
+   "hash": "4e1dec65b2ef",
+   "sec": 0.85,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__airplane__ex.mp3": {
+   "hash": "f92df484b2ce",
+   "sec": 2.7,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__airport.mp3": {
+   "hash": "387e0282abe7",
+   "sec": 1.23,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__airport__ex.mp3": {
+   "hash": "4ad06a7cd6a1",
+   "sec": 1.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__bicycle.mp3": {
+   "hash": "338d1787ce06",
+   "sec": 1.15,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__bicycle__ex.mp3": {
+   "hash": "206f27dc1833",
+   "sec": 2.3,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__bus.mp3": {
+   "hash": "9c732e02b7ed",
+   "sec": 1.02,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__bus__ex.mp3": {
+   "hash": "9f40d489bfd4",
+   "sec": 2.25,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__car.mp3": {
+   "hash": "9dd0ae017e15",
+   "sec": 0.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__car__ex.mp3": {
+   "hash": "d8f4cffd47c7",
+   "sec": 2.2,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__stop.mp3": {
+   "hash": "629331b0ac77",
+   "sec": 0.95,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__stop__ex.mp3": {
+   "hash": "89b14c5ca180",
+   "sec": 2.3,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__subway.mp3": {
+   "hash": "2986ca92cbed",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__subway__ex.mp3": {
+   "hash": "8f70b0477e85",
+   "sec": 1.8,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__taxi.mp3": {
+   "hash": "b64fe786c730",
+   "sec": 0.93,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__taxi__ex.mp3": {
+   "hash": "e9a346ad0369",
+   "sec": 1.55,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__ticket.mp3": {
+   "hash": "10310163837e",
+   "sec": 1.05,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__ticket__ex.mp3": {
+   "hash": "21527e5fbea3",
+   "sec": 2.35,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__train.mp3": {
+   "hash": "c8d5190c96c9",
+   "sec": 0.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/transport__train__ex.mp3": {
+   "hash": "107f286a294d",
+   "sec": 1.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__buy.mp3": {
+   "hash": "eca4039b2777",
+   "sec": 0.78,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__buy__ex.mp3": {
+   "hash": "2a94afa64360",
+   "sec": 1.7,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__come.mp3": {
+   "hash": "5c34e902be0c",
+   "sec": 0.68,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__come__ex.mp3": {
+   "hash": "e6846b2c80f2",
+   "sec": 1.8,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__drink.mp3": {
+   "hash": "ba7951034125",
+   "sec": 0.7,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__drink__ex.mp3": {
+   "hash": "385d63146dbd",
+   "sec": 1.38,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__eat.mp3": {
+   "hash": "a185a443716a",
+   "sec": 0.68,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__eat__ex.mp3": {
+   "hash": "0594edcffd85",
+   "sec": 1.75,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__go.mp3": {
+   "hash": "2f0761afcd45",
+   "sec": 0.55,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__go__ex.mp3": {
+   "hash": "59f12fbc8997",
+   "sec": 2.3,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__know.mp3": {
+   "hash": "291fa5fd5564",
+   "sec": 0.72,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__know__ex.mp3": {
+   "hash": "c6b18ae61b3f",
+   "sec": 2.0,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__see.mp3": {
+   "hash": "1fd7cc10ded3",
+   "sec": 0.57,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__see__ex.mp3": {
+   "hash": "5c405de9ee08",
+   "sec": 1.88,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__speak.mp3": {
+   "hash": "4764840d510c",
+   "sec": 0.7,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__speak__ex.mp3": {
+   "hash": "01ad1406c87a",
+   "sec": 1.3,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__wait.mp3": {
+   "hash": "8c7ea2198491",
+   "sec": 0.85,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__wait__ex.mp3": {
+   "hash": "f69e862f34e1",
+   "sec": 1.65,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__want.mp3": {
+   "hash": "3e61ffbfa0d5",
+   "sec": 0.72,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
+  "es/words/verbs__want__ex.mp3": {
+   "hash": "647c597ca9a5",
+   "sec": 1.8,
+   "voice": "kokoro:ef_dora",
+   "engine": "kokoro-82m"
+  },
   "fr/ellie/hotel__anything.mp3": {
    "hash": "89d1788fdf07",
    "sec": 3.2,
@@ -4951,6 +8351,1006 @@
    "hash": "2de3e51b553a",
    "sec": 4.04,
    "voice": "M2"
+  },
+  "fr/words/adjectives__bad.mp3": {
+   "hash": "b22658e676ed",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__bad__ex.mp3": {
+   "hash": "fec341d95f50",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__big.mp3": {
+   "hash": "1e3d3c63a5f5",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__big__ex.mp3": {
+   "hash": "d1f67f3d62db",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__cheap.mp3": {
+   "hash": "e7387cd1edcc",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__cheap__ex.mp3": {
+   "hash": "81d5c1629e96",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__cold.mp3": {
+   "hash": "171d1dc228b7",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__cold__ex.mp3": {
+   "hash": "5e6893460684",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__delicious.mp3": {
+   "hash": "228f998b57e6",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__delicious__ex.mp3": {
+   "hash": "7e538194bd09",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__expensive.mp3": {
+   "hash": "8ee1c4ff6684",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__expensive__ex.mp3": {
+   "hash": "c0a24f05c0aa",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__fast.mp3": {
+   "hash": "625d187de389",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__fast__ex.mp3": {
+   "hash": "5cf62505e74c",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__good.mp3": {
+   "hash": "02b6e96c0c9f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__good__ex.mp3": {
+   "hash": "72aa5bdda3b3",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__hot.mp3": {
+   "hash": "bd98f05197e8",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__hot__ex.mp3": {
+   "hash": "b5b6d47595f7",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__small.mp3": {
+   "hash": "f97493ca7960",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/adjectives__small__ex.mp3": {
+   "hash": "41b70b26c2c9",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__beer.mp3": {
+   "hash": "374f9d85ad3d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__beer__ex.mp3": {
+   "hash": "a54b0510f325",
+   "sec": 2.86,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__bread.mp3": {
+   "hash": "598da2d8e9f3",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__bread__ex.mp3": {
+   "hash": "618eb7ddd74b",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__coffee.mp3": {
+   "hash": "7111addc5327",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__coffee__ex.mp3": {
+   "hash": "1642ac86859b",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__fish.mp3": {
+   "hash": "4a0a863ab53e",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__fish__ex.mp3": {
+   "hash": "4c9361751684",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__fruit.mp3": {
+   "hash": "b67ab8c1dffc",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__fruit__ex.mp3": {
+   "hash": "9b9b0e4d6d09",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__meat.mp3": {
+   "hash": "f53b36b22c22",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__meat__ex.mp3": {
+   "hash": "c65af3944f06",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__rice.mp3": {
+   "hash": "a705a8f61589",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__rice__ex.mp3": {
+   "hash": "2c9cf163746e",
+   "sec": 2.65,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__tea.mp3": {
+   "hash": "901c07bb3d7f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__tea__ex.mp3": {
+   "hash": "281567a26b67",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__vegetable.mp3": {
+   "hash": "103bbd878ecb",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__vegetable__ex.mp3": {
+   "hash": "50b6e2b3debc",
+   "sec": 2.93,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__water.mp3": {
+   "hash": "d935b0e29484",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/food_drink__water__ex.mp3": {
+   "hash": "3ceb923cbb75",
+   "sec": 2.79,
+   "voice": "F1"
+  },
+  "fr/words/greetings__excuse_me.mp3": {
+   "hash": "de63ec6b298d",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "fr/words/greetings__excuse_me__ex.mp3": {
+   "hash": "46319fe4964f",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "fr/words/greetings__good_morning.mp3": {
+   "hash": "b712cf2f9129",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "fr/words/greetings__good_morning__ex.mp3": {
+   "hash": "7e6e7c1a054e",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/greetings__goodbye.mp3": {
+   "hash": "fc23bf769439",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/greetings__goodbye__ex.mp3": {
+   "hash": "e1accb800dac",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/greetings__hello.mp3": {
+   "hash": "7259c914a4fc",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/greetings__hello__ex.mp3": {
+   "hash": "f0a9cedf59d0",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "fr/words/greetings__nice_to_meet.mp3": {
+   "hash": "2a46cb5fe7b1",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/greetings__nice_to_meet__ex.mp3": {
+   "hash": "8b8beebaa44e",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "fr/words/greetings__no.mp3": {
+   "hash": "b6d9cab6d97d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/greetings__no__ex.mp3": {
+   "hash": "15cfd86cb363",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/greetings__please.mp3": {
+   "hash": "99fd2eebf924",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "fr/words/greetings__please__ex.mp3": {
+   "hash": "af05b9db1339",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "fr/words/greetings__sorry.mp3": {
+   "hash": "b23e0751bd40",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/greetings__sorry__ex.mp3": {
+   "hash": "061c2632ecba",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "fr/words/greetings__thank_you.mp3": {
+   "hash": "97ed7dcdca02",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/greetings__thank_you__ex.mp3": {
+   "hash": "56467a1ed5fc",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "fr/words/greetings__yes.mp3": {
+   "hash": "d02867fa7687",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/greetings__yes__ex.mp3": {
+   "hash": "5cc9ceadd4ba",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__hundred.mp3": {
+   "hash": "e9ffa60b553b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__hundred__ex.mp3": {
+   "hash": "b79d58b96c92",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__minute.mp3": {
+   "hash": "0a6445bad5e7",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__minute__ex.mp3": {
+   "hash": "c939870cd711",
+   "sec": 2.86,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__now.mp3": {
+   "hash": "1f5a74b1e0ca",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__now__ex.mp3": {
+   "hash": "5358d1416637",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__one.mp3": {
+   "hash": "acdeaec36ab2",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__one__ex.mp3": {
+   "hash": "35a63aa48702",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__ten.mp3": {
+   "hash": "9b0fb124c508",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__ten__ex.mp3": {
+   "hash": "e56954dd44f4",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__three.mp3": {
+   "hash": "87686bab54af",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__three__ex.mp3": {
+   "hash": "dd3106f969fb",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__today.mp3": {
+   "hash": "df353d38b12b",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__today__ex.mp3": {
+   "hash": "d348160c31df",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__tomorrow.mp3": {
+   "hash": "82615d220c71",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__tomorrow__ex.mp3": {
+   "hash": "183a73eae87c",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__two.mp3": {
+   "hash": "bd63cd6e6099",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__two__ex.mp3": {
+   "hash": "6bc8048d7367",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__yesterday.mp3": {
+   "hash": "1c60a60c4748",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/numbers_time__yesterday__ex.mp3": {
+   "hash": "6c77d51f6f84",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/people_family__child.mp3": {
+   "hash": "29f5f554ff23",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/people_family__child__ex.mp3": {
+   "hash": "0d276af1d91e",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "fr/words/people_family__colleague.mp3": {
+   "hash": "ae3143013255",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/people_family__colleague__ex.mp3": {
+   "hash": "9585c66e6f91",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "fr/words/people_family__family.mp3": {
+   "hash": "7df6d67d8c3f",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/people_family__family__ex.mp3": {
+   "hash": "aea7da13f580",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "fr/words/people_family__father.mp3": {
+   "hash": "03e0b1a0dddc",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/people_family__father__ex.mp3": {
+   "hash": "df561d702c21",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "fr/words/people_family__friend.mp3": {
+   "hash": "8d8aed9fbda3",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/people_family__friend__ex.mp3": {
+   "hash": "f3c3d57d6fc7",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "fr/words/people_family__man.mp3": {
+   "hash": "27adfa0c434a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/people_family__man__ex.mp3": {
+   "hash": "13a521c9715a",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "fr/words/people_family__mother.mp3": {
+   "hash": "189fe1da4b4c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/people_family__mother__ex.mp3": {
+   "hash": "9088516289b2",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "fr/words/people_family__name.mp3": {
+   "hash": "f0d45f311206",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/people_family__name__ex.mp3": {
+   "hash": "5500ee9bf1d2",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "fr/words/people_family__person.mp3": {
+   "hash": "442e588f015b",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "fr/words/people_family__person__ex.mp3": {
+   "hash": "befe8193dcee",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "fr/words/people_family__woman.mp3": {
+   "hash": "2600b3ae5c5a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/people_family__woman__ex.mp3": {
+   "hash": "45f400ef2de6",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__bank.mp3": {
+   "hash": "bf6c218d90b6",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__bank__ex.mp3": {
+   "hash": "1e2df788de5e",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__here.mp3": {
+   "hash": "cde794625b38",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__here__ex.mp3": {
+   "hash": "36d1e8f48163",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__hospital.mp3": {
+   "hash": "bb27500fb000",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__hospital__ex.mp3": {
+   "hash": "5ca1b66f71fd",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__hotel.mp3": {
+   "hash": "2b6f61fd2dc2",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__hotel__ex.mp3": {
+   "hash": "a936f1d19300",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__left.mp3": {
+   "hash": "1c53bedc66e0",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__left__ex.mp3": {
+   "hash": "d253b3c6d975",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__right.mp3": {
+   "hash": "7075d06952a7",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__right__ex.mp3": {
+   "hash": "5e8f55c2904c",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__station.mp3": {
+   "hash": "37252251f920",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__station__ex.mp3": {
+   "hash": "9a52349dc4b1",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__straight.mp3": {
+   "hash": "589d7a945e86",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__straight__ex.mp3": {
+   "hash": "9999c3786e0e",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__there.mp3": {
+   "hash": "2de06eac55cf",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__there__ex.mp3": {
+   "hash": "6160eda52e15",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__toilet.mp3": {
+   "hash": "172a6920625e",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "fr/words/places_directions__toilet__ex.mp3": {
+   "hash": "6d4c574f92db",
+   "sec": 2.93,
+   "voice": "F1"
+  },
+  "fr/words/questions__how.mp3": {
+   "hash": "19d99d6ef563",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/questions__how__ex.mp3": {
+   "hash": "cb2788738f1b",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "fr/words/questions__how_many.mp3": {
+   "hash": "ca3fdfbe09f2",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/questions__how_many__ex.mp3": {
+   "hash": "ac3405a57615",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "fr/words/questions__how_much.mp3": {
+   "hash": "c1523639620c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/questions__how_much__ex.mp3": {
+   "hash": "423bc63823bb",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/questions__what.mp3": {
+   "hash": "6af904f0fbe8",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/questions__what__ex.mp3": {
+   "hash": "c2692d0ca15c",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "fr/words/questions__what_time.mp3": {
+   "hash": "4e81d79e8be8",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "fr/words/questions__what_time__ex.mp3": {
+   "hash": "9070e7ba1bd1",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "fr/words/questions__when.mp3": {
+   "hash": "dfb46aaa9e02",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/questions__when__ex.mp3": {
+   "hash": "4c72ad5ead15",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/questions__where.mp3": {
+   "hash": "bf26397797b5",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/questions__where__ex.mp3": {
+   "hash": "b1d6daab5ad2",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "fr/words/questions__which.mp3": {
+   "hash": "47759f347599",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/questions__which__ex.mp3": {
+   "hash": "ac9cedc39752",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "fr/words/questions__who.mp3": {
+   "hash": "705187ce424e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/questions__who__ex.mp3": {
+   "hash": "61087a78e60a",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/questions__why.mp3": {
+   "hash": "1de1f306c77d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/questions__why__ex.mp3": {
+   "hash": "889f27b81fa7",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__bag.mp3": {
+   "hash": "496f8cb9be43",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__bag__ex.mp3": {
+   "hash": "160ee8aa6412",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__card.mp3": {
+   "hash": "acd109cbb1ae",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__card__ex.mp3": {
+   "hash": "87d3ce317117",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__cash.mp3": {
+   "hash": "e8be339f8f8c",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__cash__ex.mp3": {
+   "hash": "4add1dfdd8e8",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__change.mp3": {
+   "hash": "1592bf3fec20",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__change__ex.mp3": {
+   "hash": "8da8ea2feb4a",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__discount.mp3": {
+   "hash": "4f5a4f8088a4",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__discount__ex.mp3": {
+   "hash": "3e8ed1d128b4",
+   "sec": 3.27,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__money.mp3": {
+   "hash": "309f4be63684",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__money__ex.mp3": {
+   "hash": "7bb69d2f4f7b",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__price.mp3": {
+   "hash": "51b915f48d11",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__price__ex.mp3": {
+   "hash": "178f5b04604b",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__receipt.mp3": {
+   "hash": "c21c7fcfe526",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__receipt__ex.mp3": {
+   "hash": "c34f371b5eb4",
+   "sec": 2.65,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__shop.mp3": {
+   "hash": "d2e6801e6e39",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__shop__ex.mp3": {
+   "hash": "35c4b23069c0",
+   "sec": 2.58,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__size.mp3": {
+   "hash": "d14463574541",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/shopping_money__size__ex.mp3": {
+   "hash": "2c860a8e4512",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "fr/words/transport__airplane.mp3": {
+   "hash": "3a1bb459e8dc",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/transport__airplane__ex.mp3": {
+   "hash": "05825de4312b",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "fr/words/transport__airport.mp3": {
+   "hash": "1e9767efb08c",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/transport__airport__ex.mp3": {
+   "hash": "1f2515757216",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "fr/words/transport__bicycle.mp3": {
+   "hash": "396ad749f6dd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/transport__bicycle__ex.mp3": {
+   "hash": "f71bc1897e43",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "fr/words/transport__bus.mp3": {
+   "hash": "5efd0d2ce055",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/transport__bus__ex.mp3": {
+   "hash": "29fc308e12ae",
+   "sec": 3.13,
+   "voice": "F1"
+  },
+  "fr/words/transport__car.mp3": {
+   "hash": "e33e56dc8a82",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/transport__car__ex.mp3": {
+   "hash": "43c76a8ad41d",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "fr/words/transport__stop.mp3": {
+   "hash": "a00109b900a0",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/transport__stop__ex.mp3": {
+   "hash": "bc3f2dfc3f7c",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "fr/words/transport__subway.mp3": {
+   "hash": "83ac8a5a03f7",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/transport__subway__ex.mp3": {
+   "hash": "3c62ca0179aa",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "fr/words/transport__taxi.mp3": {
+   "hash": "a0bdc59a6b22",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/transport__taxi__ex.mp3": {
+   "hash": "cac8001e7c35",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "fr/words/transport__ticket.mp3": {
+   "hash": "80af2089999d",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "fr/words/transport__ticket__ex.mp3": {
+   "hash": "45462730fbe1",
+   "sec": 2.79,
+   "voice": "F1"
+  },
+  "fr/words/transport__train.mp3": {
+   "hash": "1867cd153175",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/transport__train__ex.mp3": {
+   "hash": "138cef1db768",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "fr/words/verbs__buy.mp3": {
+   "hash": "57a2eceec9b9",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__buy__ex.mp3": {
+   "hash": "592e02d4a7d3",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "fr/words/verbs__come.mp3": {
+   "hash": "3631a74a7488",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__come__ex.mp3": {
+   "hash": "c50b2ceb0e72",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "fr/words/verbs__drink.mp3": {
+   "hash": "618d097ae290",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__drink__ex.mp3": {
+   "hash": "2e1493dc6006",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "fr/words/verbs__eat.mp3": {
+   "hash": "39a3ba00b16b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__eat__ex.mp3": {
+   "hash": "5a2ecd6ce69e",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "fr/words/verbs__go.mp3": {
+   "hash": "262042074ad8",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__go__ex.mp3": {
+   "hash": "a4f28ee2ef3c",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "fr/words/verbs__know.mp3": {
+   "hash": "205cb2a2c795",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__know__ex.mp3": {
+   "hash": "6b17629c7a24",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "fr/words/verbs__see.mp3": {
+   "hash": "ae63164f1921",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__see__ex.mp3": {
+   "hash": "8d65169f6dd0",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "fr/words/verbs__speak.mp3": {
+   "hash": "3b9d52b22f58",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__speak__ex.mp3": {
+   "hash": "039a1fc1c9ae",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "fr/words/verbs__wait.mp3": {
+   "hash": "1fb7a2f6ddf0",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__wait__ex.mp3": {
+   "hash": "fca18dbb012d",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "fr/words/verbs__want.mp3": {
+   "hash": "6212e6d20f61",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "fr/words/verbs__want__ex.mp3": {
+   "hash": "e2c3e10e1752",
+   "sec": 1.74,
+   "voice": "F1"
   },
   "ja/ellie/hotel__anything.mp3": {
    "hash": "bcb1baf96f42",
@@ -6077,6 +10477,1006 @@
    "sec": 2.3,
    "voice": "M2"
   },
+  "ja/words/adjectives__bad.mp3": {
+   "hash": "8864e75dfe2a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__bad__ex.mp3": {
+   "hash": "6a112559591c",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__big.mp3": {
+   "hash": "7f053a77c612",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__big__ex.mp3": {
+   "hash": "f3faf2f08870",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__cheap.mp3": {
+   "hash": "8e570b9814eb",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__cheap__ex.mp3": {
+   "hash": "1cf9476f9478",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__cold.mp3": {
+   "hash": "54344f35eaed",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__cold__ex.mp3": {
+   "hash": "29c2dc4d59cb",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__delicious.mp3": {
+   "hash": "d80fa3094773",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__delicious__ex.mp3": {
+   "hash": "e38e81349151",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__expensive.mp3": {
+   "hash": "7e0119e074e0",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__expensive__ex.mp3": {
+   "hash": "adc45b3701c7",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__fast.mp3": {
+   "hash": "67269b49776b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__fast__ex.mp3": {
+   "hash": "d0ac2ae63718",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__good.mp3": {
+   "hash": "8e23cf5f6acd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__good__ex.mp3": {
+   "hash": "01b9f809de25",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__hot.mp3": {
+   "hash": "d5c1924783fc",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__hot__ex.mp3": {
+   "hash": "7dd24e3f055f",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__small.mp3": {
+   "hash": "ad7dc4a8bf5f",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/adjectives__small__ex.mp3": {
+   "hash": "a49d6738536f",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__beer.mp3": {
+   "hash": "1d7887853f44",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__beer__ex.mp3": {
+   "hash": "59584922a1cf",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__bread.mp3": {
+   "hash": "aea7cc338c71",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__bread__ex.mp3": {
+   "hash": "4b2b0606e6b4",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__coffee.mp3": {
+   "hash": "9ed419f87a18",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__coffee__ex.mp3": {
+   "hash": "bab4ae04d35d",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__fish.mp3": {
+   "hash": "49d36a4ce6b9",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__fish__ex.mp3": {
+   "hash": "bc3ba2275e3a",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__fruit.mp3": {
+   "hash": "642e4b161cbb",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__fruit__ex.mp3": {
+   "hash": "c2c5ba363d43",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__meat.mp3": {
+   "hash": "317947cd0277",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__meat__ex.mp3": {
+   "hash": "800b821348ba",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__rice.mp3": {
+   "hash": "f23b3c0f5c38",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__rice__ex.mp3": {
+   "hash": "71029270492f",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__tea.mp3": {
+   "hash": "ddd32b07def4",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__tea__ex.mp3": {
+   "hash": "db759933e43d",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__vegetable.mp3": {
+   "hash": "05bf42381bdd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__vegetable__ex.mp3": {
+   "hash": "5f2cf6eeef4d",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__water.mp3": {
+   "hash": "ea587df0b842",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/food_drink__water__ex.mp3": {
+   "hash": "9dacc7f93d5e",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ja/words/greetings__excuse_me.mp3": {
+   "hash": "723050be88de",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ja/words/greetings__excuse_me__ex.mp3": {
+   "hash": "0823d2f17a0b",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ja/words/greetings__good_morning.mp3": {
+   "hash": "b8b5d0546e0e",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ja/words/greetings__good_morning__ex.mp3": {
+   "hash": "bf8d37b192d9",
+   "sec": 3.27,
+   "voice": "F1"
+  },
+  "ja/words/greetings__goodbye.mp3": {
+   "hash": "3545a198430c",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ja/words/greetings__goodbye__ex.mp3": {
+   "hash": "b89c5270f6a1",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/greetings__hello.mp3": {
+   "hash": "395209cad4f4",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ja/words/greetings__hello__ex.mp3": {
+   "hash": "067174242676",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ja/words/greetings__nice_to_meet.mp3": {
+   "hash": "669f6517dc50",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ja/words/greetings__nice_to_meet__ex.mp3": {
+   "hash": "e8ac8d0367ed",
+   "sec": 3.13,
+   "voice": "F1"
+  },
+  "ja/words/greetings__no.mp3": {
+   "hash": "c94f9ac879a6",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/greetings__no__ex.mp3": {
+   "hash": "ba6a0751071e",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/greetings__please.mp3": {
+   "hash": "a597f78fa497",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ja/words/greetings__please__ex.mp3": {
+   "hash": "41f212c7f59c",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/greetings__sorry.mp3": {
+   "hash": "85e5eac196b0",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ja/words/greetings__sorry__ex.mp3": {
+   "hash": "a6172f4668a1",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ja/words/greetings__thank_you.mp3": {
+   "hash": "2eee838a18da",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/greetings__thank_you__ex.mp3": {
+   "hash": "a70360d03fe9",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "ja/words/greetings__yes.mp3": {
+   "hash": "4f07ef68ddcd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/greetings__yes__ex.mp3": {
+   "hash": "9672bb2bc1bd",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__hundred.mp3": {
+   "hash": "4e7104f4b7cf",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__hundred__ex.mp3": {
+   "hash": "c8bbc35b2019",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__minute.mp3": {
+   "hash": "8f7c87c110ec",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__minute__ex.mp3": {
+   "hash": "844c8aff936a",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__now.mp3": {
+   "hash": "d6bd27af8ee2",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__now__ex.mp3": {
+   "hash": "64fbfd47f431",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__one.mp3": {
+   "hash": "6d9717b33ac8",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__one__ex.mp3": {
+   "hash": "f2ba913bda9e",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__ten.mp3": {
+   "hash": "3b201b921e3e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__ten__ex.mp3": {
+   "hash": "4aaae1f6d169",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__three.mp3": {
+   "hash": "d4e5e509cb08",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__three__ex.mp3": {
+   "hash": "9583dfe4dab2",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__today.mp3": {
+   "hash": "0292c7800388",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__today__ex.mp3": {
+   "hash": "4e733ef1ba16",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__tomorrow.mp3": {
+   "hash": "621a437981dc",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__tomorrow__ex.mp3": {
+   "hash": "787aa931b890",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__two.mp3": {
+   "hash": "ed6cea3c10f1",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__two__ex.mp3": {
+   "hash": "3403f0269c8f",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__yesterday.mp3": {
+   "hash": "85f111d46cf5",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/numbers_time__yesterday__ex.mp3": {
+   "hash": "27a2f26a492d",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ja/words/people_family__child.mp3": {
+   "hash": "1360c525b0a4",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/people_family__child__ex.mp3": {
+   "hash": "384cc8cec2d4",
+   "sec": 2.93,
+   "voice": "F1"
+  },
+  "ja/words/people_family__colleague.mp3": {
+   "hash": "d2d7bc3dff36",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/people_family__colleague__ex.mp3": {
+   "hash": "5758deeb75ce",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ja/words/people_family__family.mp3": {
+   "hash": "fab2724e427b",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/people_family__family__ex.mp3": {
+   "hash": "a74a0c97bd08",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ja/words/people_family__father.mp3": {
+   "hash": "afbe35e0850c",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/people_family__father__ex.mp3": {
+   "hash": "6c22776ef074",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ja/words/people_family__friend.mp3": {
+   "hash": "692ed31586a1",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/people_family__friend__ex.mp3": {
+   "hash": "7b420853a68b",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/people_family__man.mp3": {
+   "hash": "33d0c1c709ef",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/people_family__man__ex.mp3": {
+   "hash": "30613ee00301",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ja/words/people_family__mother.mp3": {
+   "hash": "95330858a96f",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/people_family__mother__ex.mp3": {
+   "hash": "2abe105347f9",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "ja/words/people_family__name.mp3": {
+   "hash": "ad146a271ddb",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/people_family__name__ex.mp3": {
+   "hash": "5d7af94cd70e",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ja/words/people_family__person.mp3": {
+   "hash": "2bb2c597d082",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/people_family__person__ex.mp3": {
+   "hash": "e846f733a233",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/people_family__woman.mp3": {
+   "hash": "b43d8bcc7f38",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/people_family__woman__ex.mp3": {
+   "hash": "6d6448284324",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__bank.mp3": {
+   "hash": "1d711b94f37f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__bank__ex.mp3": {
+   "hash": "ef40144c5aec",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__here.mp3": {
+   "hash": "8a4247070794",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__here__ex.mp3": {
+   "hash": "593ae1073475",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__hospital.mp3": {
+   "hash": "43488f72cbc7",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__hospital__ex.mp3": {
+   "hash": "12e3f9161482",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__hotel.mp3": {
+   "hash": "e3630d07a4c3",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__hotel__ex.mp3": {
+   "hash": "f0edfc412252",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__left.mp3": {
+   "hash": "e3fb6905aec3",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__left__ex.mp3": {
+   "hash": "82f5e696f545",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__right.mp3": {
+   "hash": "949d41f297b1",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__right__ex.mp3": {
+   "hash": "8e55d7b34c28",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__station.mp3": {
+   "hash": "7c6de3d8f07d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__station__ex.mp3": {
+   "hash": "76e99bf993da",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__straight.mp3": {
+   "hash": "d12bc65e3190",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__straight__ex.mp3": {
+   "hash": "07e8f38bc71a",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__there.mp3": {
+   "hash": "61faf1078c69",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__there__ex.mp3": {
+   "hash": "11cf9678d6fd",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__toilet.mp3": {
+   "hash": "8edcaa1c2f09",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/places_directions__toilet__ex.mp3": {
+   "hash": "f1a96a7a0227",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/questions__how.mp3": {
+   "hash": "ef0354194419",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ja/words/questions__how__ex.mp3": {
+   "hash": "99f245de0306",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ja/words/questions__how_many.mp3": {
+   "hash": "34ee60c47a65",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/questions__how_many__ex.mp3": {
+   "hash": "a26445c10b92",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/questions__how_much.mp3": {
+   "hash": "ffcf3e75eb63",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/questions__how_much__ex.mp3": {
+   "hash": "74f381973601",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ja/words/questions__what.mp3": {
+   "hash": "2c3b88e619da",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/questions__what__ex.mp3": {
+   "hash": "31b782caf4a3",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ja/words/questions__what_time.mp3": {
+   "hash": "9b83b655164a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/questions__what_time__ex.mp3": {
+   "hash": "f7c3d35b01f9",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ja/words/questions__when.mp3": {
+   "hash": "4e083354ec5d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/questions__when__ex.mp3": {
+   "hash": "573b0ef36859",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ja/words/questions__where.mp3": {
+   "hash": "bc5e82a0125e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/questions__where__ex.mp3": {
+   "hash": "8d94a187edad",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ja/words/questions__which.mp3": {
+   "hash": "7582f0d03ecf",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/questions__which__ex.mp3": {
+   "hash": "9044f1b13237",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ja/words/questions__who.mp3": {
+   "hash": "f44742e74138",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/questions__who__ex.mp3": {
+   "hash": "61180d50184b",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/questions__why.mp3": {
+   "hash": "71d993a77b3d",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/questions__why__ex.mp3": {
+   "hash": "a1ddd82b4edc",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__bag.mp3": {
+   "hash": "3bad5ef67c72",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__bag__ex.mp3": {
+   "hash": "244d40040b09",
+   "sec": 1.6,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__card.mp3": {
+   "hash": "c30c96540c83",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__card__ex.mp3": {
+   "hash": "8be5e70446f4",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__cash.mp3": {
+   "hash": "a557dd44b76f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__cash__ex.mp3": {
+   "hash": "1d431f95a5b1",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__change.mp3": {
+   "hash": "70a803c22c0f",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__change__ex.mp3": {
+   "hash": "2452104fe8d7",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__discount.mp3": {
+   "hash": "ce1d8dd0c41d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__discount__ex.mp3": {
+   "hash": "c5e2accd2999",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__money.mp3": {
+   "hash": "2b8d4713c2bd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__money__ex.mp3": {
+   "hash": "ecbb30ae8ced",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__price.mp3": {
+   "hash": "20257a8d99e9",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__price__ex.mp3": {
+   "hash": "1b83af27741c",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__receipt.mp3": {
+   "hash": "36c0f6482194",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__receipt__ex.mp3": {
+   "hash": "c092ca20077d",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__shop.mp3": {
+   "hash": "7aa78869d50e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__shop__ex.mp3": {
+   "hash": "1af8b0e87e21",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__size.mp3": {
+   "hash": "4c0883495609",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/shopping_money__size__ex.mp3": {
+   "hash": "bcca21503060",
+   "sec": 2.65,
+   "voice": "F1"
+  },
+  "ja/words/transport__airplane.mp3": {
+   "hash": "e9190386450e",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/transport__airplane__ex.mp3": {
+   "hash": "1602fa726fc2",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ja/words/transport__airport.mp3": {
+   "hash": "12eb32e2ce14",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/transport__airport__ex.mp3": {
+   "hash": "d1ed254d60ff",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ja/words/transport__bicycle.mp3": {
+   "hash": "29735c6321ca",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/transport__bicycle__ex.mp3": {
+   "hash": "edc8419f5201",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/transport__bus.mp3": {
+   "hash": "c7f67169255c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/transport__bus__ex.mp3": {
+   "hash": "b40321763846",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/transport__car.mp3": {
+   "hash": "222511a92010",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/transport__car__ex.mp3": {
+   "hash": "9ea1dc4f1f4e",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ja/words/transport__stop.mp3": {
+   "hash": "1c3194ae676d",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/transport__stop__ex.mp3": {
+   "hash": "275c6bca0d41",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ja/words/transport__subway.mp3": {
+   "hash": "e35166d14e52",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/transport__subway__ex.mp3": {
+   "hash": "c2e97e1d5aa3",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ja/words/transport__taxi.mp3": {
+   "hash": "955c80fad4d5",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/transport__taxi__ex.mp3": {
+   "hash": "9314cd432417",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "ja/words/transport__ticket.mp3": {
+   "hash": "764b817ecf56",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/transport__ticket__ex.mp3": {
+   "hash": "124d2bcb1863",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/transport__train.mp3": {
+   "hash": "feb9e41c9c05",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/transport__train__ex.mp3": {
+   "hash": "5ec1026530b6",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ja/words/verbs__buy.mp3": {
+   "hash": "34f292bdee4b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/verbs__buy__ex.mp3": {
+   "hash": "9e27ee91c6ea",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ja/words/verbs__come.mp3": {
+   "hash": "5d382b70006c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/verbs__come__ex.mp3": {
+   "hash": "62bf474a0e1a",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ja/words/verbs__drink.mp3": {
+   "hash": "3ede178dffb5",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/verbs__drink__ex.mp3": {
+   "hash": "5eb84ddb0349",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/verbs__eat.mp3": {
+   "hash": "02b5ddd0bbfc",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ja/words/verbs__eat__ex.mp3": {
+   "hash": "9508fa351fb0",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ja/words/verbs__go.mp3": {
+   "hash": "12e94d63d5f2",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/verbs__go__ex.mp3": {
+   "hash": "6bdf28832c44",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/verbs__know.mp3": {
+   "hash": "caf669ed628e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/verbs__know__ex.mp3": {
+   "hash": "aedc5bd76ff4",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ja/words/verbs__see.mp3": {
+   "hash": "1e88c57413ce",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/verbs__see__ex.mp3": {
+   "hash": "796ebddb7b60",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/verbs__speak.mp3": {
+   "hash": "328b4921f7b0",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/verbs__speak__ex.mp3": {
+   "hash": "0b7f560f3aee",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ja/words/verbs__wait.mp3": {
+   "hash": "9c2e5ed98c8a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/verbs__wait__ex.mp3": {
+   "hash": "742986cd0078",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ja/words/verbs__want.mp3": {
+   "hash": "578213070e9d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ja/words/verbs__want__ex.mp3": {
+   "hash": "f47d5b065230",
+   "sec": 2.23,
+   "voice": "F1"
+  },
   "ko/ellie/hotel__anything.mp3": {
    "hash": "9f4ae3c416db",
    "sec": 2.37,
@@ -7201,6 +12601,1006 @@
    "hash": "3ac60851dcfa",
    "sec": 2.65,
    "voice": "M2"
+  },
+  "ko/words/adjectives__bad.mp3": {
+   "hash": "a5e11a7867b4",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__bad__ex.mp3": {
+   "hash": "90f91fc9a729",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__big.mp3": {
+   "hash": "c83d04798f5d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__big__ex.mp3": {
+   "hash": "b33995711981",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__cheap.mp3": {
+   "hash": "191f5505e3fd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__cheap__ex.mp3": {
+   "hash": "b691f14c2d24",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__cold.mp3": {
+   "hash": "e9b4a6dd6d2d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__cold__ex.mp3": {
+   "hash": "02aa24387caf",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__delicious.mp3": {
+   "hash": "f9049854e05d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__delicious__ex.mp3": {
+   "hash": "e2210c0de506",
+   "sec": 2.65,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__expensive.mp3": {
+   "hash": "09ea70676084",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__expensive__ex.mp3": {
+   "hash": "71970367e79f",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__fast.mp3": {
+   "hash": "50a3a058224e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__fast__ex.mp3": {
+   "hash": "2e4e4781090d",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__good.mp3": {
+   "hash": "d1e138014df9",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__good__ex.mp3": {
+   "hash": "1622666e08f1",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__hot.mp3": {
+   "hash": "624b7c191de3",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__hot__ex.mp3": {
+   "hash": "26eb558b96ee",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__small.mp3": {
+   "hash": "be4aa0eb0dae",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/adjectives__small__ex.mp3": {
+   "hash": "5ed2e20268fd",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__beer.mp3": {
+   "hash": "c0e6949040c6",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__beer__ex.mp3": {
+   "hash": "7b8e7f546e04",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__bread.mp3": {
+   "hash": "f0d8a72d1825",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__bread__ex.mp3": {
+   "hash": "6f10d16db703",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__coffee.mp3": {
+   "hash": "60286b0d54a6",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__coffee__ex.mp3": {
+   "hash": "ca909fca9652",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__fish.mp3": {
+   "hash": "1c132bb036cf",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__fish__ex.mp3": {
+   "hash": "16c5877ed848",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__fruit.mp3": {
+   "hash": "f8285f3b9b3a",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__fruit__ex.mp3": {
+   "hash": "0aebbd7b7bda",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__meat.mp3": {
+   "hash": "a783f540f00f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__meat__ex.mp3": {
+   "hash": "a6a6047fa385",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__rice.mp3": {
+   "hash": "09117a2be6c5",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__rice__ex.mp3": {
+   "hash": "40c5111c2258",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__tea.mp3": {
+   "hash": "b083df67c893",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__tea__ex.mp3": {
+   "hash": "6e16125133e2",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__vegetable.mp3": {
+   "hash": "26949203f1c8",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__vegetable__ex.mp3": {
+   "hash": "0e3d9d3476f0",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__water.mp3": {
+   "hash": "2a5f4d22a58b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/food_drink__water__ex.mp3": {
+   "hash": "82e768f1dcfd",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ko/words/greetings__excuse_me.mp3": {
+   "hash": "dff418b0cfad",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/greetings__excuse_me__ex.mp3": {
+   "hash": "b5de95dce624",
+   "sec": 2.58,
+   "voice": "F1"
+  },
+  "ko/words/greetings__good_morning.mp3": {
+   "hash": "1ad7aca88452",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ko/words/greetings__good_morning__ex.mp3": {
+   "hash": "b7f7c24eb2ba",
+   "sec": 3.07,
+   "voice": "F1"
+  },
+  "ko/words/greetings__goodbye.mp3": {
+   "hash": "702cf6c91828",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ko/words/greetings__goodbye__ex.mp3": {
+   "hash": "dcdf4738c8e5",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "ko/words/greetings__hello.mp3": {
+   "hash": "3d1124a9c96e",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ko/words/greetings__hello__ex.mp3": {
+   "hash": "94862cf28ca1",
+   "sec": 2.72,
+   "voice": "F1"
+  },
+  "ko/words/greetings__nice_to_meet.mp3": {
+   "hash": "490c23e2a597",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ko/words/greetings__nice_to_meet__ex.mp3": {
+   "hash": "4a49f0a3e7f6",
+   "sec": 3.41,
+   "voice": "F1"
+  },
+  "ko/words/greetings__no.mp3": {
+   "hash": "735bed2bd2c9",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/greetings__no__ex.mp3": {
+   "hash": "6f9fe596aec5",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ko/words/greetings__please.mp3": {
+   "hash": "b74333c9e70d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/greetings__please__ex.mp3": {
+   "hash": "bbcc4b5d8bb1",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ko/words/greetings__sorry.mp3": {
+   "hash": "196a45bad3c5",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ko/words/greetings__sorry__ex.mp3": {
+   "hash": "ad36324ba61d",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ko/words/greetings__thank_you.mp3": {
+   "hash": "706d7d797e8b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/greetings__thank_you__ex.mp3": {
+   "hash": "454db405a1b2",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ko/words/greetings__yes.mp3": {
+   "hash": "0d47e163a232",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/greetings__yes__ex.mp3": {
+   "hash": "384f36299525",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__hundred.mp3": {
+   "hash": "ebed4be3d6dd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__hundred__ex.mp3": {
+   "hash": "9fca09800d77",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__minute.mp3": {
+   "hash": "4225e2d51795",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__minute__ex.mp3": {
+   "hash": "8a787b58f9d4",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__now.mp3": {
+   "hash": "ee0c3024ee09",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__now__ex.mp3": {
+   "hash": "d3a72689ede4",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__one.mp3": {
+   "hash": "6b4dbac35cbf",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__one__ex.mp3": {
+   "hash": "d2e5c0e51fbb",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__ten.mp3": {
+   "hash": "9227e0ce7a68",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__ten__ex.mp3": {
+   "hash": "e024eb7a8c8e",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__three.mp3": {
+   "hash": "4c69967ffce9",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__three__ex.mp3": {
+   "hash": "85b4a3f841be",
+   "sec": 2.65,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__today.mp3": {
+   "hash": "2f6d84798f07",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__today__ex.mp3": {
+   "hash": "7afe2a1608e1",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__tomorrow.mp3": {
+   "hash": "b28d23de2c6e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__tomorrow__ex.mp3": {
+   "hash": "02087e973e85",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__two.mp3": {
+   "hash": "1db209063dc4",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__two__ex.mp3": {
+   "hash": "0f8309b9ac7f",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__yesterday.mp3": {
+   "hash": "2bd78d6fa6c4",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/numbers_time__yesterday__ex.mp3": {
+   "hash": "ccbd87347d22",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/people_family__child.mp3": {
+   "hash": "031a9086d607",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__child__ex.mp3": {
+   "hash": "38cfb552ec00",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "ko/words/people_family__colleague.mp3": {
+   "hash": "a30b3ea73425",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__colleague__ex.mp3": {
+   "hash": "127bdfe11e8e",
+   "sec": 2.58,
+   "voice": "F1"
+  },
+  "ko/words/people_family__family.mp3": {
+   "hash": "cbc6c56356b4",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__family__ex.mp3": {
+   "hash": "35ff8fc6d33b",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ko/words/people_family__father.mp3": {
+   "hash": "f492131bfaa3",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__father__ex.mp3": {
+   "hash": "c7c68a575723",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ko/words/people_family__friend.mp3": {
+   "hash": "7ccec1313e5c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__friend__ex.mp3": {
+   "hash": "82b0269e7cda",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ko/words/people_family__man.mp3": {
+   "hash": "41748bb7382e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__man__ex.mp3": {
+   "hash": "ea2f5efdb9bf",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/people_family__mother.mp3": {
+   "hash": "d2b44ed24802",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__mother__ex.mp3": {
+   "hash": "b86521926b61",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "ko/words/people_family__name.mp3": {
+   "hash": "cf15bd504624",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__name__ex.mp3": {
+   "hash": "d7be3ce5e062",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ko/words/people_family__person.mp3": {
+   "hash": "6abb8c748ed2",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__person__ex.mp3": {
+   "hash": "67954617f050",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ko/words/people_family__woman.mp3": {
+   "hash": "180ae210b96e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/people_family__woman__ex.mp3": {
+   "hash": "cf4234b31065",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__bank.mp3": {
+   "hash": "1132092e4d8f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__bank__ex.mp3": {
+   "hash": "6ed2d9687de5",
+   "sec": 2.58,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__here.mp3": {
+   "hash": "45794afd6a06",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__here__ex.mp3": {
+   "hash": "efc7ceea7e06",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__hospital.mp3": {
+   "hash": "6256543316cd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__hospital__ex.mp3": {
+   "hash": "988a74c67eff",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__hotel.mp3": {
+   "hash": "abf8010977ca",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__hotel__ex.mp3": {
+   "hash": "afe87b4996d5",
+   "sec": 2.3,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__left.mp3": {
+   "hash": "4af72a81e3ca",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__left__ex.mp3": {
+   "hash": "65dd80ab436f",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__right.mp3": {
+   "hash": "4ea36ce5c556",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__right__ex.mp3": {
+   "hash": "a6b4408c61a8",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__station.mp3": {
+   "hash": "1e0fef290834",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__station__ex.mp3": {
+   "hash": "6c29a0c67a93",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__straight.mp3": {
+   "hash": "7d058164a147",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__straight__ex.mp3": {
+   "hash": "5792b8ed1435",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__there.mp3": {
+   "hash": "910d3c50aae3",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__there__ex.mp3": {
+   "hash": "96ad2ee9e354",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__toilet.mp3": {
+   "hash": "2a11ee8f8f69",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/places_directions__toilet__ex.mp3": {
+   "hash": "54e34e8f19e5",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ko/words/questions__how.mp3": {
+   "hash": "3b84fa047cf3",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__how__ex.mp3": {
+   "hash": "6a726f88ddfe",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ko/words/questions__how_many.mp3": {
+   "hash": "2f1c57eeefc5",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__how_many__ex.mp3": {
+   "hash": "f28eb74c4656",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ko/words/questions__how_much.mp3": {
+   "hash": "ce89c72eea28",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__how_much__ex.mp3": {
+   "hash": "bfe1b86ad7d7",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ko/words/questions__what.mp3": {
+   "hash": "499611a1c02c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__what__ex.mp3": {
+   "hash": "d482a213965a",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ko/words/questions__what_time.mp3": {
+   "hash": "b4bc0aa8f6f6",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__what_time__ex.mp3": {
+   "hash": "085330423768",
+   "sec": 1.67,
+   "voice": "F1"
+  },
+  "ko/words/questions__when.mp3": {
+   "hash": "631ea3064590",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__when__ex.mp3": {
+   "hash": "e6515f642c13",
+   "sec": 1.81,
+   "voice": "F1"
+  },
+  "ko/words/questions__where.mp3": {
+   "hash": "c68cefb03e3c",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__where__ex.mp3": {
+   "hash": "d749782c0b9a",
+   "sec": 1.53,
+   "voice": "F1"
+  },
+  "ko/words/questions__which.mp3": {
+   "hash": "c509988e31cc",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__which__ex.mp3": {
+   "hash": "284f90601917",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/questions__who.mp3": {
+   "hash": "e8ecf237e7e0",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__who__ex.mp3": {
+   "hash": "7c76bbf5b6df",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ko/words/questions__why.mp3": {
+   "hash": "d9b02ab46a4b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/questions__why__ex.mp3": {
+   "hash": "8a1dcedfc235",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__bag.mp3": {
+   "hash": "b815d2a0ccfe",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__bag__ex.mp3": {
+   "hash": "fe362287038b",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__card.mp3": {
+   "hash": "3682358bc429",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__card__ex.mp3": {
+   "hash": "c2435426b4f0",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__cash.mp3": {
+   "hash": "37bb10daaea0",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__cash__ex.mp3": {
+   "hash": "a4c48409dc4e",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__change.mp3": {
+   "hash": "1656bdd28bd2",
+   "sec": 1.46,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__change__ex.mp3": {
+   "hash": "7f5fc5ff5cf2",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__discount.mp3": {
+   "hash": "931c00e1dd13",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__discount__ex.mp3": {
+   "hash": "f07466f84c34",
+   "sec": 1.74,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__money.mp3": {
+   "hash": "1b8c9f7b48ed",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__money__ex.mp3": {
+   "hash": "3a438f90e9f1",
+   "sec": 1.95,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__price.mp3": {
+   "hash": "65b6791eedde",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__price__ex.mp3": {
+   "hash": "b07c616be9a9",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__receipt.mp3": {
+   "hash": "2bb626238de1",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__receipt__ex.mp3": {
+   "hash": "fa28b35b05a9",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__shop.mp3": {
+   "hash": "3f793768ac6b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__shop__ex.mp3": {
+   "hash": "172b336ad57c",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__size.mp3": {
+   "hash": "13dde9dcb1be",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/shopping_money__size__ex.mp3": {
+   "hash": "dfa1e6cf180e",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ko/words/transport__airplane.mp3": {
+   "hash": "e73dc971a15b",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__airplane__ex.mp3": {
+   "hash": "2c4dcae2bcc7",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/transport__airport.mp3": {
+   "hash": "cfc2e0208306",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__airport__ex.mp3": {
+   "hash": "d4fa9babf2dc",
+   "sec": 2.37,
+   "voice": "F1"
+  },
+  "ko/words/transport__bicycle.mp3": {
+   "hash": "a0825b6359f8",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__bicycle__ex.mp3": {
+   "hash": "c32a39bec26f",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/transport__bus.mp3": {
+   "hash": "3b6a990ec2c1",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__bus__ex.mp3": {
+   "hash": "c6748c25ce48",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ko/words/transport__car.mp3": {
+   "hash": "14747681ac9d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__car__ex.mp3": {
+   "hash": "efdada18d0aa",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/transport__stop.mp3": {
+   "hash": "4e2e6a0b4c07",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__stop__ex.mp3": {
+   "hash": "389a17738ec5",
+   "sec": 2.16,
+   "voice": "F1"
+  },
+  "ko/words/transport__subway.mp3": {
+   "hash": "5325780bf4c5",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__subway__ex.mp3": {
+   "hash": "956b5c0219b5",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ko/words/transport__taxi.mp3": {
+   "hash": "7b1515d2861f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__taxi__ex.mp3": {
+   "hash": "20934455d786",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/transport__ticket.mp3": {
+   "hash": "ef65cec73456",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__ticket__ex.mp3": {
+   "hash": "84681c65c66c",
+   "sec": 2.58,
+   "voice": "F1"
+  },
+  "ko/words/transport__train.mp3": {
+   "hash": "b5cfb18af4be",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/transport__train__ex.mp3": {
+   "hash": "b894abc7da2e",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/verbs__buy.mp3": {
+   "hash": "0d7d63d6fbb7",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__buy__ex.mp3": {
+   "hash": "898aad00a8ea",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ko/words/verbs__come.mp3": {
+   "hash": "8921ba65eedd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__come__ex.mp3": {
+   "hash": "76557d9afad3",
+   "sec": 2.23,
+   "voice": "F1"
+  },
+  "ko/words/verbs__drink.mp3": {
+   "hash": "57c5367a2f09",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__drink__ex.mp3": {
+   "hash": "3cf924dab8eb",
+   "sec": 1.88,
+   "voice": "F1"
+  },
+  "ko/words/verbs__eat.mp3": {
+   "hash": "5435f31d070f",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__eat__ex.mp3": {
+   "hash": "d8f46f132305",
+   "sec": 2.44,
+   "voice": "F1"
+  },
+  "ko/words/verbs__go.mp3": {
+   "hash": "d07775ee502d",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__go__ex.mp3": {
+   "hash": "96261f83c1e4",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/verbs__know.mp3": {
+   "hash": "beca5728c606",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__know__ex.mp3": {
+   "hash": "4c788e8dc257",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ko/words/verbs__see.mp3": {
+   "hash": "fbebdc8bc4dd",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__see__ex.mp3": {
+   "hash": "b6e5b2bfefac",
+   "sec": 2.09,
+   "voice": "F1"
+  },
+  "ko/words/verbs__speak.mp3": {
+   "hash": "fd65908c7683",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__speak__ex.mp3": {
+   "hash": "2e289e7380cd",
+   "sec": 2.02,
+   "voice": "F1"
+  },
+  "ko/words/verbs__wait.mp3": {
+   "hash": "3418b1a1850e",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__wait__ex.mp3": {
+   "hash": "e7afa4f3027f",
+   "sec": 2.51,
+   "voice": "F1"
+  },
+  "ko/words/verbs__want.mp3": {
+   "hash": "3eb97f73bc73",
+   "sec": 1.39,
+   "voice": "F1"
+  },
+  "ko/words/verbs__want__ex.mp3": {
+   "hash": "b17683418a93",
+   "sec": 2.58,
+   "voice": "F1"
   },
   "zh/ellie/hotel__anything.mp3": {
    "hash": "90a8b03a9a48",
@@ -8550,6 +14950,1206 @@
    "hash": "eac85a082c84",
    "sec": 1.76,
    "voice": "qwen:zh/theo_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__bad.mp3": {
+   "hash": "1244359d287d",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__bad__ex.mp3": {
+   "hash": "fdfa0fe7308b",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__big.mp3": {
+   "hash": "101ab9101371",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__big__ex.mp3": {
+   "hash": "d0440c3dddbe",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__cheap.mp3": {
+   "hash": "fce891cf3c92",
+   "sec": 1.52,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__cheap__ex.mp3": {
+   "hash": "8387e94dd644",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__cold.mp3": {
+   "hash": "37eeb54ec900",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__cold__ex.mp3": {
+   "hash": "edd7a2d4a9c5",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__delicious.mp3": {
+   "hash": "94a070edb525",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__delicious__ex.mp3": {
+   "hash": "17bd575a00b2",
+   "sec": 1.52,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__expensive.mp3": {
+   "hash": "66c10d8fa3c0",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__expensive__ex.mp3": {
+   "hash": "8fc341728f32",
+   "sec": 1.92,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__fast.mp3": {
+   "hash": "4d616b284298",
+   "sec": 0.56,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__fast__ex.mp3": {
+   "hash": "8752ef3a188c",
+   "sec": 1.52,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__good.mp3": {
+   "hash": "36ebd4b1804a",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__good__ex.mp3": {
+   "hash": "9e3dab076f63",
+   "sec": 1.68,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__hot.mp3": {
+   "hash": "e5060fc77fa4",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__hot__ex.mp3": {
+   "hash": "8e7384ad3a35",
+   "sec": 1.2,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__small.mp3": {
+   "hash": "ad366b31e46b",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/adjectives__small__ex.mp3": {
+   "hash": "a0a1c2041e04",
+   "sec": 1.6,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__beer.mp3": {
+   "hash": "75f4aba07508",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__beer__ex.mp3": {
+   "hash": "5261462c1c1b",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__bread.mp3": {
+   "hash": "be8bf9d568b2",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__bread__ex.mp3": {
+   "hash": "15db25cfaf1e",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__coffee.mp3": {
+   "hash": "36b618d7e2db",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__coffee__ex.mp3": {
+   "hash": "038598a7b188",
+   "sec": 1.44,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__fish.mp3": {
+   "hash": "bf2ac6599379",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__fish__ex.mp3": {
+   "hash": "369ea67d8c55",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__fruit.mp3": {
+   "hash": "cc626755682c",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__fruit__ex.mp3": {
+   "hash": "08e4e8dca1d0",
+   "sec": 1.44,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__meat.mp3": {
+   "hash": "f5e9305a4f07",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__meat__ex.mp3": {
+   "hash": "7804463e1316",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__rice.mp3": {
+   "hash": "8916a93f76bc",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__rice__ex.mp3": {
+   "hash": "da2fb18b3017",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__tea.mp3": {
+   "hash": "8e459c4ee33a",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__tea__ex.mp3": {
+   "hash": "960f96e21d9b",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__vegetable.mp3": {
+   "hash": "816d2ce0b806",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__vegetable__ex.mp3": {
+   "hash": "52d4df610f7c",
+   "sec": 1.68,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__water.mp3": {
+   "hash": "111493f7c920",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/food_drink__water__ex.mp3": {
+   "hash": "05ede1e1b0f7",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__excuse_me.mp3": {
+   "hash": "66556cd75058",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__excuse_me__ex.mp3": {
+   "hash": "a5f0307447a4",
+   "sec": 1.76,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__good_morning.mp3": {
+   "hash": "4c359d61ec1c",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__good_morning__ex.mp3": {
+   "hash": "82b13a41046d",
+   "sec": 1.92,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__goodbye.mp3": {
+   "hash": "5782d836ec64",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__goodbye__ex.mp3": {
+   "hash": "8b5395c98acc",
+   "sec": 1.52,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__hello.mp3": {
+   "hash": "1ae0cf34c4cd",
+   "sec": 1.6,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__hello__ex.mp3": {
+   "hash": "f23992197631",
+   "sec": 2.0,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__nice_to_meet.mp3": {
+   "hash": "38f5752d4e73",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__nice_to_meet__ex.mp3": {
+   "hash": "e486ed6a9a88",
+   "sec": 2.4,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__no.mp3": {
+   "hash": "53181e9e39e8",
+   "sec": 1.2,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__no__ex.mp3": {
+   "hash": "ed8e44850f1b",
+   "sec": 2.08,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__please.mp3": {
+   "hash": "0acd395ee147",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__please__ex.mp3": {
+   "hash": "407cc1d234bf",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__sorry.mp3": {
+   "hash": "d40b17859edd",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__sorry__ex.mp3": {
+   "hash": "5c8e387bd367",
+   "sec": 1.84,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__thank_you.mp3": {
+   "hash": "3f38850907fd",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__thank_you__ex.mp3": {
+   "hash": "8b3dcd0db3f9",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__yes.mp3": {
+   "hash": "57361d0468e0",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/greetings__yes__ex.mp3": {
+   "hash": "e2c21241a0f0",
+   "sec": 1.92,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__hundred.mp3": {
+   "hash": "665b4b915289",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__hundred__ex.mp3": {
+   "hash": "e6a286925918",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__minute.mp3": {
+   "hash": "0277debd2445",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__minute__ex.mp3": {
+   "hash": "57e42f47c72e",
+   "sec": 1.44,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__now.mp3": {
+   "hash": "838160fec92b",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__now__ex.mp3": {
+   "hash": "4c30ead13be9",
+   "sec": 1.2,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__one.mp3": {
+   "hash": "e7a3ecbb24dd",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__one__ex.mp3": {
+   "hash": "42e0ae4c3c18",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__ten.mp3": {
+   "hash": "6b1db8acc01c",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__ten__ex.mp3": {
+   "hash": "100508e0a625",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__three.mp3": {
+   "hash": "b6848ae62fba",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__three__ex.mp3": {
+   "hash": "5fb5c0e12edb",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__today.mp3": {
+   "hash": "37dac312570b",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__today__ex.mp3": {
+   "hash": "1d053408a4e1",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__tomorrow.mp3": {
+   "hash": "18d565d04325",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__tomorrow__ex.mp3": {
+   "hash": "356baf7644bc",
+   "sec": 1.52,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__two.mp3": {
+   "hash": "d29147d1013f",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__two__ex.mp3": {
+   "hash": "3ac551522d9f",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__yesterday.mp3": {
+   "hash": "5354282be001",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/numbers_time__yesterday__ex.mp3": {
+   "hash": "226b7f4cae2f",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__child.mp3": {
+   "hash": "d411be9d1528",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__child__ex.mp3": {
+   "hash": "2ec38f47d7cc",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__colleague.mp3": {
+   "hash": "60de29544455",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__colleague__ex.mp3": {
+   "hash": "e1caab73cc13",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__family.mp3": {
+   "hash": "3c1f74abb3f1",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__family__ex.mp3": {
+   "hash": "c79b57741870",
+   "sec": 1.2,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__father.mp3": {
+   "hash": "5ddd63f4067d",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__father__ex.mp3": {
+   "hash": "1340612dfd33",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__friend.mp3": {
+   "hash": "9b8b88fe832d",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__friend__ex.mp3": {
+   "hash": "1fd8221f5041",
+   "sec": 1.44,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__man.mp3": {
+   "hash": "822370a46c70",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__man__ex.mp3": {
+   "hash": "ab882e772bcf",
+   "sec": 1.52,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__mother.mp3": {
+   "hash": "ec52c72f366b",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__mother__ex.mp3": {
+   "hash": "85c5530eb34c",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__name.mp3": {
+   "hash": "803437314ddb",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__name__ex.mp3": {
+   "hash": "b047267710f3",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__person.mp3": {
+   "hash": "5af0f70635b9",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__person__ex.mp3": {
+   "hash": "8d3f1b344b9d",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__woman.mp3": {
+   "hash": "4dd31b3da2cf",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/people_family__woman__ex.mp3": {
+   "hash": "fec5e7234e12",
+   "sec": 1.6,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__bank.mp3": {
+   "hash": "07d7782c6fb8",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__bank__ex.mp3": {
+   "hash": "97d2374bffd6",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__here.mp3": {
+   "hash": "8f601b992cba",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__here__ex.mp3": {
+   "hash": "7197d5abf1ec",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__hospital.mp3": {
+   "hash": "5eb164512c55",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__hospital__ex.mp3": {
+   "hash": "06c2a48829ba",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__hotel.mp3": {
+   "hash": "19cc24e65e69",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__hotel__ex.mp3": {
+   "hash": "dcc395d177c0",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__left.mp3": {
+   "hash": "2e7874238e7a",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__left__ex.mp3": {
+   "hash": "44f839777fc2",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__right.mp3": {
+   "hash": "d8b63efbfef1",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__right__ex.mp3": {
+   "hash": "5b5220a62359",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__station.mp3": {
+   "hash": "7919a8120357",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__station__ex.mp3": {
+   "hash": "49dece3a62a9",
+   "sec": 1.84,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__straight.mp3": {
+   "hash": "67fe8111b8d8",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__straight__ex.mp3": {
+   "hash": "f543c492d3d3",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__there.mp3": {
+   "hash": "0ce13f696bcb",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__there__ex.mp3": {
+   "hash": "9ed5df412a15",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__toilet.mp3": {
+   "hash": "a36835025907",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/places_directions__toilet__ex.mp3": {
+   "hash": "2293d7226edb",
+   "sec": 1.44,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__how.mp3": {
+   "hash": "2c86a2817dec",
+   "sec": 2.0,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__how__ex.mp3": {
+   "hash": "8472d8ec768c",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__how_many.mp3": {
+   "hash": "039470e28798",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__how_many__ex.mp3": {
+   "hash": "b7fc2d8583e1",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__how_much.mp3": {
+   "hash": "54acede86ec3",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__how_much__ex.mp3": {
+   "hash": "85664ac66e02",
+   "sec": 1.6,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__what.mp3": {
+   "hash": "bdacdbe2e5d4",
+   "sec": 0.56,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__what__ex.mp3": {
+   "hash": "3e36ac6b6ba5",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__what_time.mp3": {
+   "hash": "7362bbfcc9e7",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__what_time__ex.mp3": {
+   "hash": "b41d021052e4",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__when.mp3": {
+   "hash": "1f790e61a2ce",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__when__ex.mp3": {
+   "hash": "704d3ee9380c",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__where.mp3": {
+   "hash": "6164d7947d85",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__where__ex.mp3": {
+   "hash": "fc7c23ce4708",
+   "sec": 1.2,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__which.mp3": {
+   "hash": "59d9a9f360fe",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__which__ex.mp3": {
+   "hash": "ed760353ed35",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__who.mp3": {
+   "hash": "7e204daa6ed5",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__who__ex.mp3": {
+   "hash": "5fd2cfd5d3aa",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__why.mp3": {
+   "hash": "43c65a2948ea",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/questions__why__ex.mp3": {
+   "hash": "a3d4e92c27e2",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__bag.mp3": {
+   "hash": "508e76a96ae8",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__bag__ex.mp3": {
+   "hash": "f36cbe9cd4f4",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__card.mp3": {
+   "hash": "4a720cc4ab42",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__card__ex.mp3": {
+   "hash": "52f5e5341ec8",
+   "sec": 1.2,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__cash.mp3": {
+   "hash": "03f640dfead5",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__cash__ex.mp3": {
+   "hash": "44687da26c4c",
+   "sec": 1.44,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__change.mp3": {
+   "hash": "29561fc72299",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__change__ex.mp3": {
+   "hash": "ff355894264e",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__discount.mp3": {
+   "hash": "41b37550791e",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__discount__ex.mp3": {
+   "hash": "8c40180ae09e",
+   "sec": 1.6,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__money.mp3": {
+   "hash": "d8bfb917ee8f",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__money__ex.mp3": {
+   "hash": "0779f9a8a511",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__price.mp3": {
+   "hash": "80ff436de524",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__price__ex.mp3": {
+   "hash": "b081d77765ff",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__receipt.mp3": {
+   "hash": "630fbc1b149d",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__receipt__ex.mp3": {
+   "hash": "133ff74541a5",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__shop.mp3": {
+   "hash": "60e7ef2505b4",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__shop__ex.mp3": {
+   "hash": "05fdb26bd4da",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__size.mp3": {
+   "hash": "a5154d00a7f6",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/shopping_money__size__ex.mp3": {
+   "hash": "786fed057872",
+   "sec": 1.44,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__airplane.mp3": {
+   "hash": "7b9b3283cf18",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__airplane__ex.mp3": {
+   "hash": "1515128b841d",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__airport.mp3": {
+   "hash": "136d5e908fdf",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__airport__ex.mp3": {
+   "hash": "13605d1573fa",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__bicycle.mp3": {
+   "hash": "e5a6790c6136",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__bicycle__ex.mp3": {
+   "hash": "433daa65e07c",
+   "sec": 1.68,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__bus.mp3": {
+   "hash": "7165eeae9fbb",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__bus__ex.mp3": {
+   "hash": "9df579b1380a",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__car.mp3": {
+   "hash": "283230b3dad8",
+   "sec": 0.8,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__car__ex.mp3": {
+   "hash": "5f15c7a35dfc",
+   "sec": 1.36,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__stop.mp3": {
+   "hash": "e904f09e1eda",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__stop__ex.mp3": {
+   "hash": "d4bf4e2c201a",
+   "sec": 1.52,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__subway.mp3": {
+   "hash": "98031d3e4c62",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__subway__ex.mp3": {
+   "hash": "6a44cd9420a6",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__taxi.mp3": {
+   "hash": "3cfb24da03e5",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__taxi__ex.mp3": {
+   "hash": "f12b723a7dc2",
+   "sec": 1.44,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__ticket.mp3": {
+   "hash": "b4ec4b3bde9f",
+   "sec": 0.48,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__ticket__ex.mp3": {
+   "hash": "607cc7d7d78a",
+   "sec": 1.52,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__train.mp3": {
+   "hash": "07c0a630694c",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/transport__train__ex.mp3": {
+   "hash": "4ff2e868a1ab",
+   "sec": 1.52,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__buy.mp3": {
+   "hash": "3e2b1ae8f3d6",
+   "sec": 0.56,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__buy__ex.mp3": {
+   "hash": "e24fa9c4bb29",
+   "sec": 1.2,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__come.mp3": {
+   "hash": "8baf4d363197",
+   "sec": 0.56,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__come__ex.mp3": {
+   "hash": "00dd15c72a3f",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__drink.mp3": {
+   "hash": "316a133370e5",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__drink__ex.mp3": {
+   "hash": "1d8f8922f1bb",
+   "sec": 0.96,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__eat.mp3": {
+   "hash": "65b2ba06af94",
+   "sec": 0.48,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__eat__ex.mp3": {
+   "hash": "7d9b6b8bb680",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__go.mp3": {
+   "hash": "ac00e03a04cf",
+   "sec": 0.56,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__go__ex.mp3": {
+   "hash": "b1d8806ef284",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__know.mp3": {
+   "hash": "330e426c087c",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__know__ex.mp3": {
+   "hash": "def3571de56c",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__see.mp3": {
+   "hash": "89d72cba8e6d",
+   "sec": 0.64,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__see__ex.mp3": {
+   "hash": "fe0d91ca90c3",
+   "sec": 1.2,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__speak.mp3": {
+   "hash": "e249aec2e321",
+   "sec": 0.72,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__speak__ex.mp3": {
+   "hash": "b285b0710073",
+   "sec": 1.28,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__wait.mp3": {
+   "hash": "a582bcaf83a1",
+   "sec": 1.12,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__wait__ex.mp3": {
+   "hash": "ed1f6bfae70e",
+   "sec": 1.04,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__want.mp3": {
+   "hash": "d920e6da0fc2",
+   "sec": 0.88,
+   "voice": "qwen:zh/mia_0",
+   "engine": "qwen3-tts-0.6b-base"
+  },
+  "zh/words/verbs__want__ex.mp3": {
+   "hash": "0850213b4666",
+   "sec": 1.2,
+   "voice": "qwen:zh/mia_0",
    "engine": "qwen3-tts-0.6b-base"
   }
  }

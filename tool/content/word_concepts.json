@@ -1,0 +1,46 @@
+{
+  "_comment": "초급 기초 단어의 공통 개념 목록. 언어마다 같은 ID를 쓰고, 각 언어에서 자연스러운 단어·예문으로 채운다(assets/content/<언어>/words.json).",
+  "categories": [
+    { "id": "greetings", "name": "인사와 기본 표현", "items": [
+      ["hello", "안녕하세요(만났을 때)"], ["goodbye", "안녕히 가세요/잘 가요(헤어질 때)"], ["thank_you", "고마워요"],
+      ["sorry", "미안해요"], ["excuse_me", "실례합니다/저기요(부를 때)"], ["please", "부탁해요(…주세요)"],
+      ["yes", "네"], ["no", "아니요"], ["nice_to_meet", "만나서 반가워요"], ["good_morning", "좋은 아침이에요/아침 인사"]
+    ] },
+    { "id": "numbers_time", "name": "숫자와 시간", "items": [
+      ["one", "하나, 1"], ["two", "둘, 2"], ["three", "셋, 3"], ["ten", "열, 10"], ["hundred", "백, 100"],
+      ["now", "지금"], ["today", "오늘"], ["tomorrow", "내일"], ["yesterday", "어제"], ["minute", "분(시간 단위)"]
+    ] },
+    { "id": "people_family", "name": "사람과 가족", "items": [
+      ["person", "사람"], ["man", "남자"], ["woman", "여자"], ["child", "아이"], ["friend", "친구"],
+      ["family", "가족"], ["mother", "어머니"], ["father", "아버지"], ["name", "이름"], ["colleague", "동료"]
+    ] },
+    { "id": "food_drink", "name": "음식과 음료", "items": [
+      ["water", "물"], ["coffee", "커피"], ["tea", "차"], ["beer", "맥주"], ["bread", "빵"],
+      ["rice", "밥/쌀"], ["meat", "고기"], ["fish", "생선"], ["vegetable", "채소"], ["fruit", "과일"]
+    ] },
+    { "id": "places_directions", "name": "장소와 방향", "items": [
+      ["station", "역"], ["hotel", "호텔"], ["toilet", "화장실"], ["hospital", "병원"], ["bank", "은행"],
+      ["left", "왼쪽"], ["right", "오른쪽"], ["straight", "똑바로/곧장"], ["here", "여기"], ["there", "저기/거기"]
+    ] },
+    { "id": "transport", "name": "교통", "items": [
+      ["bus", "버스"], ["train", "기차"], ["subway", "지하철"], ["taxi", "택시"], ["car", "자동차"],
+      ["bicycle", "자전거"], ["airplane", "비행기"], ["airport", "공항"], ["ticket", "표"], ["stop", "정류장"]
+    ] },
+    { "id": "shopping_money", "name": "쇼핑과 돈", "items": [
+      ["shop", "가게"], ["money", "돈"], ["price", "가격"], ["card", "카드"], ["cash", "현금"],
+      ["receipt", "영수증"], ["discount", "할인"], ["size", "사이즈"], ["bag", "봉투/가방"], ["change", "거스름돈"]
+    ] },
+    { "id": "verbs", "name": "일상 동사", "items": [
+      ["go", "가다"], ["come", "오다"], ["eat", "먹다"], ["drink", "마시다"], ["see", "보다"],
+      ["buy", "사다"], ["want", "원하다"], ["know", "알다"], ["speak", "말하다"], ["wait", "기다리다"]
+    ] },
+    { "id": "adjectives", "name": "기본 형용사", "items": [
+      ["good", "좋다"], ["bad", "나쁘다"], ["big", "크다"], ["small", "작다"], ["hot", "덥다/뜨겁다"],
+      ["cold", "춥다/차갑다"], ["cheap", "싸다"], ["expensive", "비싸다"], ["delicious", "맛있다"], ["fast", "빠르다"]
+    ] },
+    { "id": "questions", "name": "질문과 의문 표현", "items": [
+      ["what", "무엇"], ["who", "누구"], ["where", "어디"], ["when", "언제"], ["why", "왜"],
+      ["how", "어떻게"], ["how_much", "얼마(값)"], ["which", "어느/어떤 것"], ["how_many", "몇 개/몇"], ["what_time", "몇 시"]
+    ] }
+  ]
+}

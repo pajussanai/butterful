@@ -17,6 +17,7 @@ class ContentRepository {
   /// 음성 엔진 이름(manifest.json)
   late String engine;
   final Map<String, Scenario> _scenarios = {};
+  final Map<String, WordBook> _words = {};
   Map<String, double> _seconds = {};
 
   /// 음성 길이(초). 따라 말할 시간을 정할 때 쓴다.
@@ -45,8 +46,24 @@ class ContentRepository {
           ) as Map<String, dynamic>,
         );
       }
+      if (lang.words) {
+        _words[lang.code] = WordBook.fromJson(
+          jsonDecode(
+            await _bundle.loadString('assets/content/${lang.code}/words.json'),
+          ) as Map<String, dynamic>,
+        );
+      }
     }
   }
+
+  /// 초급 기초 단어(없는 언어는 빈 목록)
+  WordBook words(String lang) => _words[lang] ?? WordBook(lang, const {});
+
+  static String wordAudio(String lang, String category, String word) =>
+      '$lang/words/${category}__$word.mp3';
+
+  static String exampleAudio(String lang, String category, String word) =>
+      '$lang/words/${category}__${word}__ex.mp3';
 
   Scenario scenario(String lang, String id) {
     final s = _scenarios['$lang/$id'];
