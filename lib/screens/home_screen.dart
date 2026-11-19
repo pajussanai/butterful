@@ -96,8 +96,9 @@ class HomeScreen extends StatelessWidget {
           ],
           const SizedBox(height: 22),
           const Text(
-            '음성은 공개 음성 모델(Supertonic 3, Kokoro, Qwen3-TTS)로 미리 만든 AI 음성이에요. '
-            '버터풀은 내 목소리를 녹음하거나 저장하지 않아요.',
+            '음성은 공개 음성 모델(Supertonic 3, Kokoro, Qwen3-TTS)로 만든 AI 음성이에요. '
+            '초급은 내 목소리를 쓰지 않아요. 중급 AI 회화는 말한 음성을 Google Gemini로 보내 분석하며, '
+            '버터풀은 내 음성과 대화를 저장하지 않아요.',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 12.5, color: Palette.muted, height: 1.6),
           ),

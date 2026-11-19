@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../app/app.dart';
 import '../app/theme.dart';
 import 'beginner_screen.dart';
+import 'intermediate_setup_screen.dart';
 
 /// 학습 단계. 고르기 위한 구분일 뿐이고, 승급·평가·잠금은 없다.
 enum Level {
@@ -47,8 +48,8 @@ enum Level {
   final Color soft;
   final Color deep;
 
-  /// 지금 쓸 수 있는 단계(중급·고급은 아직 준비 중)
-  bool get available => this == Level.beginner;
+  /// 지금 쓸 수 있는 단계(고급은 아직 준비 중)
+  bool get available => this != Level.advanced;
 }
 
 /// 언어를 고른 뒤 초급·중급·고급 중 하나를 고른다. 어느 단계든 언제든 들어갈 수 있다.
@@ -92,15 +93,27 @@ class LevelScreen extends StatelessWidget {
             for (final level in Level.values) ...[
               _LevelCard(
                 level: level,
+                // 중급은 AI 서버가 연결되어야 실제로 대화할 수 있다.
+                ready:
+                    level.available &&
+                    (level != Level.intermediate || services.aiApi.configured),
                 onTap: () => Navigator.of(context).push(
                   MaterialPageRoute<void>(
-                    builder: (_) => level == Level.beginner
-                        ? BeginnerScreen(services: services, lang: lang)
-                        : _ComingSoonScreen(
-                            services: services,
-                            lang: lang,
-                            level: level,
-                          ),
+                    builder: (_) => switch (level) {
+                      Level.beginner => BeginnerScreen(
+                        services: services,
+                        lang: lang,
+                      ),
+                      Level.intermediate => IntermediateSetupScreen(
+                        services: services,
+                        lang: lang,
+                      ),
+                      Level.advanced => _ComingSoonScreen(
+                        services: services,
+                        lang: lang,
+                        level: level,
+                      ),
+                    },
                   ),
                 ),
               ),
@@ -114,9 +127,14 @@ class LevelScreen extends StatelessWidget {
 }
 
 class _LevelCard extends StatelessWidget {
-  const _LevelCard({required this.level, required this.onTap});
+  const _LevelCard({
+    required this.level,
+    required this.ready,
+    required this.onTap,
+  });
 
   final Level level;
+  final bool ready;
   final VoidCallback onTap;
 
   @override
@@ -151,7 +169,7 @@ class _LevelCard extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 8),
-                  if (!level.available) const Tag('준비 중'),
+                  if (!ready) const Tag('준비 중'),
                 ],
               ),
               const SizedBox(height: 2),
@@ -193,7 +211,7 @@ class _LevelCard extends StatelessWidget {
   );
 }
 
-/// 중급·고급: 아직 학습 기능이 없어 무엇을 하게 될지만 보여 준다(가짜 기능을 만들지 않는다).
+/// 고급: 아직 학습 기능이 없어 무엇을 하게 될지만 보여 준다(가짜 기능을 만들지 않는다).
 class _ComingSoonScreen extends StatelessWidget {
   const _ComingSoonScreen({
     required this.services,

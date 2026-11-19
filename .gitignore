@@ -52,3 +52,9 @@ app.*.map.json
 
 # 음성 엔진 비교용 원본 WAV(로컬 전용, 웹 비교 페이지에는 MP3로 들어간다)
 /voice_samples/
+
+# Supabase 비밀값·로컬 상태(API 키는 절대 커밋하지 않는다)
+/supabase/.env
+/supabase/.temp/
+/supabase/.branches/
+*.secret.env

@@ -1,0 +1,9 @@
+# BUTTERFUL 전용 Supabase 프로젝트 설정(Edge Functions만 사용, DB·로그인 없음)
+project_id = "butterful"
+
+# 로그인 없는 앱이라 JWT 대신 함수 안에서 허용 출처·사용량 제한으로 검사한다.
+[functions.intermediate-turn]
+verify_jwt = false
+
+[functions.tts]
+verify_jwt = false

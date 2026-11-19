@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'ai/ai_consent.dart';
 import 'app/app.dart';
 import 'app/theme.dart';
 import 'data/content_repository.dart';
@@ -14,7 +15,11 @@ Future<void> main() async {
     final prefs = await SharedPreferences.getInstance();
     runApp(
       ButterfulApp(
-        services: Services(repo: repo, progress: ProgressStore(prefs)),
+        services: Services(
+          repo: repo,
+          progress: ProgressStore(prefs),
+          aiConsent: AiConsent(prefs),
+        ),
       ),
     );
   } on Object catch (e) {

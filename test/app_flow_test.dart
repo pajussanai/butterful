@@ -90,15 +90,17 @@ void main() {
     expect(find.byKey(const Key('endCard')), findsOneWidget);
   });
 
-  testWidgets('중급·고급도 언제든 고를 수 있고, 준비 중 안내에서 초급으로 갈 수 있다', (tester) async {
+  testWidgets('중급은 AI 회화 설정으로, 고급은 준비 중 안내에서 초급으로 갈 수 있다', (tester) async {
     await openApp(tester);
     await tapAndSettle(tester, 'lang-fr');
-    for (final (level, label) in [('intermediate', '중급'), ('advanced', '고급')]) {
-      await tapAndSettle(tester, 'level-$level');
-      expect(find.text('$label 학습은 준비 중이에요'), findsOneWidget);
-      await tester.pageBack();
-      await tester.pumpAndSettle();
-    }
+    await tapAndSettle(tester, 'level-intermediate');
+    expect(find.byKey(const Key('intermediateSetup')), findsOneWidget);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+    await tapAndSettle(tester, 'level-advanced');
+    expect(find.text('고급 학습은 준비 중이에요'), findsOneWidget);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
     await tapAndSettle(tester, 'level-advanced');
     await tapAndSettle(tester, 'goBeginner');
     expect(find.byKey(const Key('wordCategory-greetings')), findsOneWidget);
